@@ -183,30 +183,6 @@
 		},
 		{
 			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
-			"image": "bitwardenrs/server:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/bitwarden.png",
-			"name": "bitwardenrs",
-			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
-			"platform": "linux",
-			"ports": [
-				"80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Bitwarden RS",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Bitwarden-rs",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Books",
 				"Other"
 			],
