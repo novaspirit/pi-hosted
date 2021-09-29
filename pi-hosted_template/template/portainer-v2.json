@@ -3892,9 +3892,9 @@
 					"default": "192.168.0.0/16"
 				}
 			],
-			"image": "sgtsquiggs/deluge-openvpn:arm32v7-latest",
+			"image": "olirav/deluge-openvpn:latest",
 			"name": "deluge-openvpn",
-			"platform": "linux/arm",
+			"platform": "linux",
 			"ports": [
 				"8112:8112/tcp"
 			],
