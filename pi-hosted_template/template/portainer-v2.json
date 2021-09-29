@@ -3894,7 +3894,7 @@
 			],
 			"image": "dynomitecentral/deluge-openvpn:latest",
 			"name": "deluge-openvpn",
-			"platform": "linux",
+			"platform": "linux/arm",
 			"ports": [
 				"8112:8112/tcp"
 			],
