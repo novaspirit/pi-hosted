@@ -3869,7 +3869,7 @@
 				},
 				{
 					"default": "MULLVAD",
-					"description": "see https://hub.docker.com/r/dynomitecentral/deluge-openvpn",
+					"description": "see https://github.com/sgtsquiggs/docker-deluge-openvpn",
 					"label": "OPENVPN_PROVIDER",
 					"name": "OPENVPN_PROVIDER"
 				},
@@ -3892,7 +3892,7 @@
 					"default": "192.168.0.0/16"
 				}
 			],
-			"image": "dynomitecentral/deluge-openvpn:latest",
+			"image": "sgtsquiggs/deluge-openvpn:arm32v7-latest",
 			"name": "deluge-openvpn",
 			"platform": "linux/arm",
 			"ports": [
