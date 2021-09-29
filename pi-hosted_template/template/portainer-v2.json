@@ -3892,7 +3892,7 @@
 					"default": "192.168.0.0/16"
 				}
 			],
-			"image": "olirav/docker-deluge-openvpn:latest",
+			"image": "sgtsquiggs/docker-openvpn:arm32v7-latest",
 			"name": "deluge-openvpn",
 			"platform": "linux",
 			"ports": [
