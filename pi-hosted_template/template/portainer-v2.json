@@ -3869,7 +3869,7 @@
 				},
 				{
 					"default": "MULLVAD",
-					"description": "see https://github.com/sgtsquiggs/docker-deluge-openvpn",
+					"description": "see https://hub.docker.com/r/dynomitecentral/deluge-openvpn",
 					"label": "OPENVPN_PROVIDER",
 					"name": "OPENVPN_PROVIDER"
 				},
@@ -3880,9 +3880,19 @@
 				{
 					"label": "OPENVPN_PASSWORD",
 					"name": "OPENVPN_PASSWORD"
+				},
+				{
+					"label": "OPENVPN_CONFIG",
+					"name": "OPENVPN_CONFIG",
+					"default": "CA Toronto"
+				},
+				{
+					"label": "LOCAL_NETWORK",
+					"name": "LOCAL_NETWORK",
+					"default": "192.168.0.0/16"
 				}
 			],
-			"image": "sgtsquiggs/deluge-openvpn:arm32v7-latest",
+			"image": "dynomitecentral/deluge-openvpn:latest",
 			"name": "deluge-openvpn",
 			"platform": "linux",
 			"ports": [
