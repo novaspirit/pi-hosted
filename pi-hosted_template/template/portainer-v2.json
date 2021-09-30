@@ -3411,6 +3411,10 @@
 			"ports": [
 				"9091:9091/tcp"
 			],
+			"cap_add": [
+				"NET_ADMIN"
+			],
+			"privileged": true,
 			"restart_policy": "unless-stopped",
 			"title": "Transmission-OpenVPN",
 			"type": 1,
