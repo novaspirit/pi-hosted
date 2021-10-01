@@ -5,3 +5,12 @@
 install_docker.sh -> this script will install docker and add user pi to the docker group
 
 install_portainer.sh -> this script will install portainer
+
+### Pi-hosted Youtube series
+#### Part 1: Installing docker and portainer
+[![Part 1: Installing docker and portainer](https://i.ytimg.com/vi/cO2-gQ09Jj0/hqdefault.jpg)](https://www.youtube.com/watch?v=cO2-gQ09Jj0 "Installing docker and portainer")
+#### Part 2: Installing and configuring homer
+
+[![Part 2: Installing and configuring homer](https://i.ytimg.com/vi/_d3J88ootYo/hqdefault.jpg)](https://www.youtube.com/watch?v=_d3J88ootYo "Part 2: Installing and configuring homer")
+
+
