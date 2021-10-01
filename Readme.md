@@ -8,7 +8,7 @@ install_docker.sh -> this script will install docker and add user pi to the dock
 
 install_portainer.sh -> this script will install portainer
 
-[(https://github.com/novaspirit/pi-hosted/blob/main/apptemplate.png?raw=true)]
+![alt text](https://github.com/novaspirit/pi-hosted/blob/main/apptemplate.png?raw=true)
 
 
 ### Pi-hosted Youtube series
