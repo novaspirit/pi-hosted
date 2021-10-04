@@ -31,7 +31,7 @@ Youtube Playlist
 
 ### Contributors
 
-See List of [contributors](https://githuib.oom/novaspirit/pi-hosted/contributors) who participated in this project.
+See List of [contributors](https://github.com/novaspirit/pi-hosted/graphs/contributors) who participated in this project.
 
 ### Acknowledgment
 * based template on [SelfHosted](https://github.com/SelfhostedPro/selfhosted_templates) Portainer App Template
