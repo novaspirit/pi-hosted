@@ -3788,7 +3788,7 @@
 					"container": "/config"
 				}
 			]
-    },
+    		},
 		{
 			"categories": [
 				"Other",
@@ -3932,8 +3932,8 @@
 			"restart_policy": "unless-stopped",
 			"title": "Dradis",
 			"type": 1
-		}
-				{
+		},
+		{
 			"categories": [
 				"Other",
 				"Tools"
@@ -3945,7 +3945,7 @@
 			"note": "Alternative Implementation of the Bitwarden Server API in Rust, including web vault.",
 			"platform": "linux",
 			"ports": [
-				"8010:80/tcp"
+				"8010:80/tcp",
 				"3012:3012/tcp"
 			],
 			"restart_policy": "unless-stopped",
