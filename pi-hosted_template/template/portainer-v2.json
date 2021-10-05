@@ -3933,5 +3933,30 @@
 			"title": "Dradis",
 			"type": 1
 		}
+				{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
+			"image": "vaultwarden/server:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/bitwarden.png",
+			"name": "vaultwarden",
+			"note": "Alternative Implementation of the Bitwarden Server API in Rust, including web vault.",
+			"platform": "linux",
+			"ports": [
+				"8010:80/tcp"
+				"3012:3012/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Vaultwarden",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Bitwarden",
+					"container": "/config"
+				}
+			]
+		}
 	]
 }
