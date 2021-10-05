@@ -3932,7 +3932,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Dradis",
 			"type": 1
-		}
+		},
 				{
 			"categories": [
 				"Other",
