@@ -2675,7 +2675,7 @@
 					"name": "WIREGUARD"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/pritunl/Images/pritunl.png",
+			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/Images/pritunl.png",
 			"name": "pritunl",
 			"note": "Documentation on this containier can be found here: \u003ca href=https://hub.docker.com/r/goofball222/pritunl\u003ehttps://hub.docker.com/r/goofball222/pritunl\u003c/a\u003e",
 			"platform": "linux",
