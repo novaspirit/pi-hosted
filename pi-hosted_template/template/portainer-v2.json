@@ -13,7 +13,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "100",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -28,7 +28,7 @@
 					"set": "-Xms256m -Xmx512m"
 				}
 			],
-			"image": "linuxserver/airsonic:latest",
+			"image": "linuxserver/airsonic:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/airsonic-logo.png",
 			"name": "airsonic",
 			"platform": "linux",
