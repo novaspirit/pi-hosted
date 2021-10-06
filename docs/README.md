@@ -20,6 +20,9 @@ wget -qO- https://git.io/JwUnf | bash
 # to update portainer, run this command
 wget -qO- https://git.io/JwUlY | bash
 ```
+Click Settings, in the bottom-left corner, and paste the Portainer v2 json file link from below into the "App Templates" box.
+
+You're done! Now just click App Templates and deploy applications!
 
 #### Versions
 | Application  | URL |
