@@ -484,17 +484,18 @@
 					"name": "PUID"
 				},
 				{
-					"default": "100",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
 			],
-			"image": "Lsioarmhf/kodi-headless:latest",
+			"image": "lsioarmhf/kodi-headless:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/kodi-icon.png",
 			"name": "kodi-headless",
 			"platform": "linux",
 			"ports": [
-				"8080/tcp",
+				"8081:8080/tcp",
+				"9090:9090/tcp",
 				"9777/udp"
 			],
 			"restart_policy": "unless-stopped",
@@ -503,7 +504,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/Kodi",
-					"container": "/config"
+					"container": "/config/.kodi"
 				}
 			]
 		},
