@@ -1996,7 +1996,7 @@
 			],
 			"image": "linuxserver/deluge:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/deluge-icon.png",
-			"namme": "deluge",
+			"name": "deluge",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"title": "Deluge",
