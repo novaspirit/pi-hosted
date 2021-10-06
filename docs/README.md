@@ -4,7 +4,7 @@
 
 This repository is a collection of tutorials for hosting a variety of server applications using Docker and [Portainer](https://github.com/portainer/portainer).
 
-### App Template for Portainer.io
+### App Template for Portainer
 ![alt text](https://github.com/novaspirit/pi-hosted/blob/main/apptemplate.png?raw=true)
 
 ### Installation
@@ -20,9 +20,6 @@ wget -qO- https://git.io/JwUnf | bash
 # to update portainer, run this command
 wget -qO- https://git.io/JwUlY | bash
 ```
-After installing Portainer, open the web browser of your choice and visit http://<pi-ip-address>:9000/ (you'll need to be on the same network as the Pi). Go ahead and set up Portainer, choose a username and password and log in.
-  
-
 
 #### Versions
 | Application  | URL |
