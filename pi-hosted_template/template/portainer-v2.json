@@ -1425,7 +1425,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "organizrtools/organizr-v2:php-fpm",
+			"image": "organizr/organizr:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/organizr-icon.png",
 			"name": "organizr-v2",
 			"platform": "linux",
