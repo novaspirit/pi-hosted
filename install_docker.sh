@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 function error {
   echo -e "\\e[91m$1\\e[39m"
