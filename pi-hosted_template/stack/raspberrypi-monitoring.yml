@@ -1,0 +1,79 @@
+version: "3"
+services:
+  cadvisor:
+    container_name: monitoring-cadvisor
+    devices:
+      - /dev/kmsg:/dev/kmsg
+    expose:
+      - 8080
+    hostname: rpi-cadvisor
+    image: braingamer/cadvisor-arm:latest
+    ipc: shareable
+    networks:
+      - rpimonitor_default
+    privileged: true
+    restart: unless-stopped
+    security_opt:
+      - label=disable
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      
+  grafana:
+    container_name: monitoring-grafana
+    environment:
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_PATHS_CONFIG=/etc/grafana/grafana.ini
+      - GF_PATHS_DATA=/var/lib/grafana
+      - GF_PATHS_HOME=/usr/share/grafana
+      - GF_PATHS_LOGS=/var/log/grafana
+      - GF_PATHS_PLUGINS=/var/lib/grafana/plugins
+      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+    hostname: rpi-grafana
+    image: grafana/grafana:latest
+    networks:
+      - rpimonitor_default
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    volumes:
+      # to be modified depending on your needs
+      - /portainer/Files/AppData/Config/grafana/data:/var/lib/grafana
+      - /portainer/Files/AppData/Config/grafana/grafana.ini:/etc/grafana/grafana.ini
+      - /portainer/Files/AppData/Config/grafana/provisioning:/etc/grafana/provisioning
+
+  node-exporter:
+    container_name: monitoring-node-exporter
+    expose:
+      - 9100
+    hostname: rpi-exporter
+    image: prom/node-exporter:latest
+    networks:
+      - rpimonitor_default
+    restart: unless-stopped
+
+  prometheus:
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    container_name: monitoring-prometheus
+    expose:
+      - 9090
+    hostname: rpi-prom
+    image: prom/prometheus:latest
+    networks:
+      - rpimonitor_default
+    restart: unless-stopped
+    volumes:
+      # to be modified depending on your needs
+      - /portainer/Files/AppData/Config/prometheus/data:/prometheus
+      - /portainer/Files/AppData/Config/prometheus/config:/etc/prometheus/
+    links:
+      - cadvisor:cadvisor
+      - node-exporter:node-exporter
+
+networks:
+  rpimonitor_default:
+    external: true
