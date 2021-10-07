@@ -1222,7 +1222,7 @@
 			],
 			"description": "Monitor your Raspberry Pi and Dockers using Grafana developed by oijkn. Please download grafana configs from his git https://github.com/oijkn/Docker-Raspberry-PI-Monitoring",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/rpi_monitor.png",
-			"name": "Raspberry Pi Docker Monitor",
+			"name": "RaspberryPi-Docker-Monitor",
 			"platform": "linux",
 			"ports": [
 				"3000:3000/tcp"
