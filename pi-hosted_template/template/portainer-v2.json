@@ -4078,7 +4078,7 @@
 			"name": "speedtest-tracker",
 			"platform": "linux",
 			"ports": [
-				"8765:80/tcp",
+				"8765:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Speedtest Tracker",
