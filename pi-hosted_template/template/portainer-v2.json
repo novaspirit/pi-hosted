@@ -671,27 +671,27 @@
 					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
-				}
+				},
 				{
                                         "label": "DB_HOST",
                                         "name": "DB_HOST",
                                         "set": "mariadb"
-                                }
+                                },
                                 {
                                         "label": "DB_USERNAME",
                                         "name": "DB_USERNAME",
                                         "set": "lychee"
-                                }
+                                },
                                 {
                                         "label": "DB_PASSWORD",
                                         "name": "DB_PASSWORD",
                                         "set": "dbpassword_that_was_set_in_lychee-mariadb"
-                                }
+                                },
                                 {
                                         "label": "DB_DATABASE",
                                         "name": "DB_DATABASE",
                                         "set": "lychee"
-                                }
+                                },
                                 {
                                         "label": "DB_PORT",
                                         "name": "DB_PORT",
@@ -740,17 +740,17 @@
                                         "label": "MYSQL_ROOT_PASSWORD",
                                         "name": "MYSQL_ROOT_PASSWORD",
                                         "set": "rootpassword"
-                                }
+                                },
 				{
                                         "label": "MYSQL_DATABASE",
                                         "name": "MYSQL_DATABASE",
                                         "set": "lychee"
-                                }
+                                },
 				{
 					"label": "MYSQL_USER",
 					"name": "MYSQL_USER",
 					"set": "lychee"
-				}
+				},
 				{
                                         "label": "MYSQL_PASSWORD",
                                         "name": "MYSQL_PASSWORD",
@@ -2504,6 +2504,38 @@
 				},
 				{
 					"bind": "/portainer/Files/AppData/Config/PiHole/DNS",
+					"container": "/etc/dnsmasq.d"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole with both DoH (DNS over HTTPS) and DoT (DNS over TLS) clients.",
+			"image": "oijkn/pihole-doh-dot:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/pihole_doh-dot.png",
+			"name": "pihole DoH/DoT",
+			"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article \u003ca href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'\u003ehere\u003c/a\u003e if you run into issues binding to port 53.",
+			"platform": "linux",
+			"ports": [
+				"53:53/tcp",
+				"53:53/udp",
+				"67:67/udp",
+				"1010:80/tcp",
+				"4443:443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Pi-Hole DoH/DoT",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/PiHole_DoH-DoT",
+					"container": "/etc/pihole"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/PiHole_DoH-DoT/DNS",
 					"container": "/etc/dnsmasq.d"
 				}
 			]
