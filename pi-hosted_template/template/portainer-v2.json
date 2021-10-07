@@ -1230,15 +1230,26 @@
 				"81:8181/tcp",
 				"443:4443/tcp"
 			],
+			"env": [
+				{
+					"default": "password",
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"default": "password",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
+				}
+				
+			],
 			"restart_policy": "unless-stopped",
 			"title": "Nginx Proxy Manager",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Nginx-Proxy",
-					"container": "/config"
-				}
-			]
+			"type": 3,
+			"repository": {
+				"stackfile": "pi-hosted_template/stack/nginx-proxy-manager.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			}
 		},
 		{
 			"categories": [
