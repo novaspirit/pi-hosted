@@ -5,7 +5,7 @@
 This repository is a collection of tutorials for hosting a variety of server applications using Docker and [Portainer](https://github.com/portainer/portainer).
 
 ### App Template for Portainer
-![alt text](https://github.com/novaspirit/pi-hosted/blob/main/apptemplate.png?raw=true)
+![alt text](https://github.com/novaspirit/pi-hosted/blob/master/apptemplate.png?raw=true)
 
 ### Installation
 Run `install-docker.sh`, to install docker, and add the user pi to the docker usergroup.
