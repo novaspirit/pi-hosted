@@ -484,17 +484,18 @@
 					"name": "PUID"
 				},
 				{
-					"default": "100",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
 			],
-			"image": "Lsioarmhf/kodi-headless:latest",
+			"image": "lsioarmhf/kodi-headless:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/kodi-icon.png",
 			"name": "kodi-headless",
 			"platform": "linux",
 			"ports": [
-				"8080/tcp",
+				"8081:8080/tcp",
+				"9090:9090/tcp",
 				"9777/udp"
 			],
 			"restart_policy": "unless-stopped",
@@ -503,7 +504,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/Kodi",
-					"container": "/config"
+					"container": "/config/.kodi"
 				}
 			]
 		},
@@ -623,12 +624,24 @@
 				"Tools"
 			],
 			"description": "A Free and Open Source Speedtest for HTML5 and more.",
-			"image": "linuxserver/librespeed:latest",
+			"env": [
+                                {
+                                        "default": "1000",
+                                        "label": "PUID",
+                                        "name": "PUID"
+                                },
+                                {
+                                        "default": "1000",
+                                        "label": "PGID",
+                                        "name": "PGID"
+                                }
+                        ],
+			"image": "linuxserver/librespeed:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/speedtest.png",
 			"name": "librespeed",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"83:83/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "LibreSpeed",
@@ -655,17 +668,42 @@
 					"name": "PUID"
 				},
 				{
-					"default": "100",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
+				{
+                                        "label": "DB_HOST",
+                                        "name": "DB_HOST",
+                                        "set": "mariadb"
+                                }
+                                {
+                                        "label": "DB_USERNAME",
+                                        "name": "DB_USERNAME",
+                                        "set": "lychee"
+                                }
+                                {
+                                        "label": "DB_PASSWORD",
+                                        "name": "DB_PASSWORD",
+                                        "set": "dbpassword_that_was_set_in_lychee-mariadb"
+                                }
+                                {
+                                        "label": "DB_DATABASE",
+                                        "name": "DB_DATABASE",
+                                        "set": "lychee"
+                                }
+                                {
+                                        "label": "DB_PORT",
+                                        "name": "DB_PORT",
+                                        "set": "3306"
+                                }
 			],
-			"image": "linuxserver/lychee:latest",
+			"image": "linuxserver/lychee:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/lychee-icon.png",
 			"name": "lychee",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"84:84/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Lychee",
@@ -694,19 +732,34 @@
 					"name": "PUID"
 				},
 				{
-					"default": "100",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
 				{
-					"label": "MYSQL_ROOT_PASSWORD",
-					"name": "MYSQL_ROOT_PASSWORD",
-					"set": ""
+                                        "label": "MYSQL_ROOT_PASSWORD",
+                                        "name": "MYSQL_ROOT_PASSWORD",
+                                        "set": "rootpassword"
+                                }
+				{
+                                        "label": "MYSQL_DATABASE",
+                                        "name": "MYSQL_DATABASE",
+                                        "set": "lychee"
+                                }
+				{
+					"label": "MYSQL_USER",
+					"name": "MYSQL_USER",
+					"set": "lychee"
 				}
+				{
+                                        "label": "MYSQL_PASSWORD",
+                                        "name": "MYSQL_PASSWORD",
+                                        "set": "dbpassword"
+                                }
 			],
-			"image": "linuxserver/mariadb:latest",
+			"image": "linuxserver/mariadb:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/mariadb-icon.png",
-			"name": "mariadb",
+			"name": "lychee-mariadb",
 			"platform": "linux",
 			"ports": [
 				"3306:3306/tcp"
