@@ -27,7 +27,7 @@ You're done! Now just click App Templates and deploy applications!
 #### Versions
 | Application  | URL |
 | ------------- | ------------- |
-| Portainer v2 | https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/template/portainer-v2.json |
+| Portainer v2 | https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/template/portainer-v2.json |
 
 ### Pi-Hosted YouTube series
 
