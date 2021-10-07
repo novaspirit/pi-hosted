@@ -4039,7 +4039,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/Bitwarden",
-					"container": "/config"
+					"container": "/data"
 				}
 			]
 		}
