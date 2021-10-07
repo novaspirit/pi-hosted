@@ -671,27 +671,27 @@
 					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
-				}
+				},
 				{
                                         "label": "DB_HOST",
                                         "name": "DB_HOST",
                                         "set": "mariadb"
-                                }
+                                },
                                 {
                                         "label": "DB_USERNAME",
                                         "name": "DB_USERNAME",
                                         "set": "lychee"
-                                }
+                                },
                                 {
                                         "label": "DB_PASSWORD",
                                         "name": "DB_PASSWORD",
                                         "set": "dbpassword_that_was_set_in_lychee-mariadb"
-                                }
+                                },
                                 {
                                         "label": "DB_DATABASE",
                                         "name": "DB_DATABASE",
                                         "set": "lychee"
-                                }
+                                },
                                 {
                                         "label": "DB_PORT",
                                         "name": "DB_PORT",
@@ -740,17 +740,17 @@
                                         "label": "MYSQL_ROOT_PASSWORD",
                                         "name": "MYSQL_ROOT_PASSWORD",
                                         "set": "rootpassword"
-                                }
+                                },
 				{
                                         "label": "MYSQL_DATABASE",
                                         "name": "MYSQL_DATABASE",
                                         "set": "lychee"
-                                }
+                                },
 				{
 					"label": "MYSQL_USER",
 					"name": "MYSQL_USER",
 					"set": "lychee"
-				}
+				},
 				{
                                         "label": "MYSQL_PASSWORD",
                                         "name": "MYSQL_PASSWORD",
