@@ -2719,8 +2719,9 @@
 			"name": "privatebin",
 			"platform": "linux",
 			"ports": [
-				"8080/tcp"
+				"8080:8080/tcp"
 			],
+			"privileged": true,
 			"restart_policy": "unless-stopped",
 			"title": "PrivateBin",
 			"type": 1,
