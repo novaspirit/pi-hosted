@@ -63,6 +63,7 @@ services:
       - 9090
     hostname: rpi-prom
     image: prom/prometheus:latest
+    user: root
     networks:
       - rpimonitor_default
     restart: unless-stopped
