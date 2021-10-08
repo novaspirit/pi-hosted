@@ -2699,6 +2699,47 @@
 				"Cloud",
 				"Productivity",
 				"Tools",
+				"Web"
+			],
+			"description": "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data!\n  ",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "privatebin/nginx-fpm-alpine:latest",
+			"logo": "https://raw.githubusercontent.com/Dschorim/pi-hosted/main/pi-hosted_template/images/privatebin.png",
+			"name": "privatebin",
+			"platform": "linux",
+			"ports": [
+				"8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "PrivateBin",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/PrivateBin",
+					"container": "/srv/data"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/PrivateBin",
+					"container": "/srv/cfg"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Cloud",
+				"Productivity",
+				"Tools",
 				"Other"
 			],
 			"description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!\n  ",
