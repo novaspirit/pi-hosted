@@ -2715,7 +2715,7 @@
 				}
 			],
 			"image": "privatebin/nginx-fpm-alpine:latest",
-			"logo": "https://raw.githubusercontent.com/Dschorim/pi-hosted/main/pi-hosted_template/images/privatebin.png",
+			"logo": "https://raw.githubusercontent.com/Dschorim/pi-hosted/master/pi-hosted_template/images/privatebin.png",
 			"name": "privatebin",
 			"platform": "linux",
 			"ports": [
