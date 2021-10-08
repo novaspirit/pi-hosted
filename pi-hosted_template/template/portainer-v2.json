@@ -4091,7 +4091,7 @@
 					"default": "100",
 					"label": "PGID",
 					"name": "PGID"
-				}
+				},
 				{
 					"label": "OOKLA_EULA_GDPR",
 					"name": "OOKLA_EULA_GDPR",
