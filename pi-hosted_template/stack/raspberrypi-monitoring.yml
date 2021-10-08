@@ -77,4 +77,4 @@ services:
 networks:
   rpimonitor_default:
     external: true
-      name: bridge
+    name: "bridge"
