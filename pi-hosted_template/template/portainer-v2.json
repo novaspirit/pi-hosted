@@ -759,7 +759,7 @@
 			],
 			"image": "linuxserver/mariadb:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/mariadb-icon.png",
-			"name": "lychee-mariadb",
+			"name": "mariadb",
 			"platform": "linux",
 			"ports": [
 				"3306:3306/tcp"
