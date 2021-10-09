@@ -4091,6 +4091,11 @@
 					"default": "100",
 					"label": "PGID",
 					"name": "PGID"
+				},
+				{
+					"label": "OOKLA_EULA_GDPR",
+					"name": "OOKLA_EULA_GDPR",
+					"set": "true"
 				}
 			],
 			"image": "henrywhitaker3/speedtest-tracker:latest-arm",
