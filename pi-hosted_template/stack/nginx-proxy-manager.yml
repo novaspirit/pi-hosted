@@ -10,9 +10,7 @@ services:
       DB_MYSQL_PASSWORD: ${DATABASE_PASSWORD}
       DB_MYSQL_NAME: 'npm'
     volumes:
-      # only needed for advanced configuration, enabling it needs a ./config.json
-      # see https://nginxproxymanager.com/setup/#configuration-file for more details
-      # - ./config.json:/app/config/production.json
+      - ./config.json:/app/config/production.json
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
     depends_on:
