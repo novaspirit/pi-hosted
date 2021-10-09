@@ -21,7 +21,7 @@ services:
       - 81:81
     restart: unless-stopped
   db:
-    image: yobasystems/alpine-mariadb:latest
+    image: arm64v8/mariadb:10.5
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
