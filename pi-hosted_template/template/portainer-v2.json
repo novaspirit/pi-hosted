@@ -13,7 +13,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "100",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -28,7 +28,7 @@
 					"default": "-Xms256m -Xmx512m"
 				}
 			],
-			"image": "linuxserver/airsonic:latest",
+			"image": "linuxserver/airsonic:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/airsonic-logo.png",
 			"name": "airsonic",
 			"platform": "linux",
@@ -484,17 +484,18 @@
 					"name": "PUID"
 				},
 				{
-					"default": "100",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				}
 			],
-			"image": "Lsioarmhf/kodi-headless:latest",
+			"image": "lsioarmhf/kodi-headless:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/kodi-icon.png",
 			"name": "kodi-headless",
 			"platform": "linux",
 			"ports": [
-				"8080/tcp",
+				"8081:8080/tcp",
+				"9090:9090/tcp",
 				"9777/udp"
 			],
 			"restart_policy": "unless-stopped",
@@ -503,7 +504,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/Kodi",
-					"container": "/config"
+					"container": "/config/.kodi"
 				}
 			]
 		},
@@ -623,12 +624,24 @@
 				"Tools"
 			],
 			"description": "A Free and Open Source Speedtest for HTML5 and more.",
-			"image": "linuxserver/librespeed:latest",
+			"env": [
+                                {
+                                        "default": "1000",
+                                        "label": "PUID",
+                                        "name": "PUID"
+                                },
+                                {
+                                        "default": "1000",
+                                        "label": "PGID",
+                                        "name": "PGID"
+                                }
+                        ],
+			"image": "linuxserver/librespeed:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/speedtest.png",
 			"name": "librespeed",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"83:83/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "LibreSpeed",
@@ -655,17 +668,42 @@
 					"name": "PUID"
 				},
 				{
-					"default": "100",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
-				}
+				},
+				{
+                                        "label": "DB_HOST",
+                                        "name": "DB_HOST",
+                                        "set": "mariadb"
+                                },
+                                {
+                                        "label": "DB_USERNAME",
+                                        "name": "DB_USERNAME",
+                                        "set": "lychee"
+                                },
+                                {
+                                        "label": "DB_PASSWORD",
+                                        "name": "DB_PASSWORD",
+                                        "set": "dbpassword_that_was_set_in_lychee-mariadb"
+                                },
+                                {
+                                        "label": "DB_DATABASE",
+                                        "name": "DB_DATABASE",
+                                        "set": "lychee"
+                                },
+                                {
+                                        "label": "DB_PORT",
+                                        "name": "DB_PORT",
+                                        "set": "3306"
+                                }
 			],
-			"image": "linuxserver/lychee:latest",
+			"image": "linuxserver/lychee:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/lychee-icon.png",
 			"name": "lychee",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"84:84/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Lychee",
@@ -694,17 +732,32 @@
 					"name": "PUID"
 				},
 				{
-					"default": "100",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
 				},
 				{
-					"label": "MYSQL_ROOT_PASSWORD",
-					"name": "MYSQL_ROOT_PASSWORD",
-					"default": ""
-				}
+          "label": "MYSQL_ROOT_PASSWORD",
+          "name": "MYSQL_ROOT_PASSWORD",
+          "default": "rootpassword"
+        },
+				{
+          "label": "MYSQL_DATABASE",
+          "name": "MYSQL_DATABASE",
+          "default": "lychee"
+        },
+				{
+					"label": "MYSQL_USER",
+					"name": "MYSQL_USER",
+					"default": "lychee"
+				},
+				{
+          "label": "MYSQL_PASSWORD",
+          "name": "MYSQL_PASSWORD",
+          "default": "dbpassword"
+        }
 			],
-			"image": "linuxserver/mariadb:latest",
+			"image": "linuxserver/mariadb:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/mariadb-icon.png",
 			"name": "mariadb",
 			"platform": "linux",
@@ -1164,11 +1217,30 @@
 		},
 		{
 			"categories": [
+				"Monitor",
+				"Tools"
+			],
+			"description": "Monitor your Raspberry Pi and Dockers using Grafana developed by oijkn. Please download grafana configs from his git https://github.com/oijkn/Docker-Raspberry-PI-Monitoring",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/rpi_monitor.png",
+			"name": "RaspberryPi-Docker-Monitor",
+			"platform": "linux",
+			"ports": [
+				"3000:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Raspberry Pi Docker Monitor",
+			"type": 3,
+			"repository": {
+				"stackfile": "pi-hosted_template/stack/raspberrypi-monitoring.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			}
+		},
+		{
+			"categories": [
 				"Proxy",
 				"Tools"
 			],
 			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
-			"image": "jlesage/nginx-proxy-manager",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/proxy_mgr.png",
 			"name": "nginx-proxy-manager",
 			"platform": "linux",
@@ -1177,16 +1249,28 @@
 				"81:8181/tcp",
 				"443:4443/tcp"
 			],
-			"restart_policy": "unless-stopped",
-			"title": "Nginx Proxy Manager",
-			"type": 1,
-			"volumes": [
+			"env": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Nginx-Proxy",
-					"container": "/config"
+					"default": "password",
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"default": "password",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
 				}
-			]
-		},
+				
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Proxy Ngnix Manager",
+			"type": 3,
+			"repository": {
+				"stackfile": "pi-hosted_template/stack/nginx-proxy-manager.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			}
+		},		
+
 		{
 			"categories": [
 				"Downloaders"
@@ -1361,7 +1445,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "organizrtools/organizr-v2:php-fpm",
+			"image": "organizr/organizr:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/organizr-icon.png",
 			"name": "organizr-v2",
 			"platform": "linux",
@@ -1996,7 +2080,7 @@
 			],
 			"image": "linuxserver/deluge:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/deluge-icon.png",
-			"namme": "deluge",
+			"name": "deluge",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"title": "Deluge",
@@ -2457,6 +2541,38 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole with both DoH (DNS over HTTPS) and DoT (DNS over TLS) clients.",
+			"image": "oijkn/pihole-doh-dot:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/pihole_doh-dot.png",
+			"name": "pihole DoH/DoT",
+			"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article \u003ca href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'\u003ehere\u003c/a\u003e if you run into issues binding to port 53.",
+			"platform": "linux",
+			"ports": [
+				"53:53/tcp",
+				"53:53/udp",
+				"67:67/udp",
+				"1010:80/tcp",
+				"4443:443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Pi-Hole DoH/DoT",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/PiHole_DoH-DoT",
+					"container": "/etc/pihole"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/PiHole_DoH-DoT/DNS",
+					"container": "/etc/dnsmasq.d"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Photos"
 			],
 			"description": "Piwigo is photo gallery software for the web, built by an active community of users and developers.",
@@ -2583,6 +2699,48 @@
 				"Cloud",
 				"Productivity",
 				"Tools",
+				"Web"
+			],
+			"description": "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data!\n  ",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "privatebin/nginx-fpm-alpine:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/privatebin.png",
+			"name": "privatebin",
+			"platform": "linux",
+			"ports": [
+				"8080:8080/tcp"
+			],
+			"privileged": true,
+			"restart_policy": "unless-stopped",
+			"title": "PrivateBin",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/PrivateBin",
+					"container": "/srv/data"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/PrivateBin",
+					"container": "/srv/cfg"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Cloud",
+				"Productivity",
+				"Tools",
 				"Other"
 			],
 			"description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!\n  ",
@@ -2675,7 +2833,7 @@
 					"name": "WIREGUARD"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/pritunl/Images/pritunl.png",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/pritunl.png",
 			"name": "pritunl",
 			"note": "Documentation on this containier can be found here: \u003ca href=https://hub.docker.com/r/goofball222/pritunl\u003ehttps://hub.docker.com/r/goofball222/pritunl\u003c/a\u003e",
 			"platform": "linux",
@@ -3954,7 +4112,72 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/Bitwarden",
+					"container": "/data"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Tools",
+				"Web",
+				"Other"
+			],
+			"description": "Run a Speedtest every hour and graph the results.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"label": "OOKLA_EULA_GDPR",
+					"name": "OOKLA_EULA_GDPR",
+					"set": "true"
+				}
+			],
+			"image": "henrywhitaker3/speedtest-tracker:latest-arm",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/speedtest-tracker.png",
+			"name": "speedtest-tracker",
+			"platform": "linux",
+			"ports": [
+				"8765:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Speedtest Tracker",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/speedtest-tracker",
 					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Dozzle is a real-time log viewer for docker containers.",
+			"image": "amir20/dozzle:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/dozzle.png",
+			"name": "dozzle",
+			"note": "View logs for docker containers.",
+			"platform": "linux",
+			"ports": [
+				"8888:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Dozzle",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
 				}
 			]
 		}
