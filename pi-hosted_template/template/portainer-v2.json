@@ -437,22 +437,17 @@
 					"name": "PUID"
 				},
 				{
-					"default": "100",
+					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
-				},
-				{
-					"label": "TZ",
-					"name": "TZ"
 				}
 			],
-			"image": "linuxserver/jellyfin:latest",
+			"image": "linuxserver/jellyfin:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/jellyfin.png",
 			"name": "jellyfin",
 			"platform": "linux",
 			"ports": [
-				"8096:8096/tcp",
-				"8920:8920/tcp"
+				"8096:8096/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Jellyfin",
