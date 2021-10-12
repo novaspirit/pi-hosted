@@ -8,7 +8,7 @@ This repository is a collection of tutorials for hosting a variety of server app
 ![alt text](https://github.com/novaspirit/pi-hosted/blob/master/apptemplate.png?raw=true)
 
 ### Installation
-Run `install-docker.sh`, to install docker, and add the user pi to the docker usergroup.
+Run `install-docker.sh`, to install docker, and add the current user to the docker usergroup.
 ```
 wget -qO- https://git.io/JwUkc | bash
 # need to reboot/logout for changes to take effect
