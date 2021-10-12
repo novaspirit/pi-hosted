@@ -4188,7 +4188,7 @@
 				"Productivity"
 			],
 			"description": "Paperless is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents. https://github.com/jonaswinkler/paperless-ng",
-			"image": "jonaswinkler/paperless-ng:latest",
+			"image": "lscr.io/linuxserver/paperless-ng",
 			"logo": "https://raw.githubusercontent.com/Dschorim/pi-hosted/master/pi-hosted_template/images/paperless.png",
 			"name": "paperless",
 			"platform": "linux",
@@ -4198,22 +4198,26 @@
 			"restart_policy": "unless-stopped",
 			"title": "Paperless",
 			"type": 1,
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
 			"volumes": [
 				{
+					"bind": "/portainer/Files/AppData/Config/paperless/config",
+					"container": "/config"
+				},
+				{
 					"bind": "/portainer/Files/AppData/Config/paperless/data",
-					"container": "/usr/src/paperless/dat"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/paperless/media",
-					"container": "/usr/src/paperless/media"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/paperless/export",
-					"container": "/usr/src/paperless/export"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/paperless/consume",
-					"container": "/usr/src/paperless/consume"
+					"container": "/data"
 				}
 			]
 		}
