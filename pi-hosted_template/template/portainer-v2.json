@@ -4189,7 +4189,7 @@
 			],
 			"description": "Paperless is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents. https://github.com/jonaswinkler/paperless-ng",
 			"image": "jonaswinkler/paperless-ng:latest",
-			"logo": "https://raw.githubusercontent.com/Dschorim/pi-hosted/main/pi-hosted_template/images/paperless.png",
+			"logo": "https://raw.githubusercontent.com/Dschorim/pi-hosted/master/pi-hosted_template/images/paperless.png",
 			"name": "paperless",
 			"platform": "linux",
 			"ports": [
