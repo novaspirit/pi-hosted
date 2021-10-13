@@ -17,6 +17,10 @@
 					"label": "PGID",
 					"name": "PGID"
 				},
+                                {
+                                        "label": "TZ",
+                                        "name": "TZ"
+                                },
 				{
 					"label": "CONTEXT_PATH",
 					"name": "CONTEXT_PATH",
