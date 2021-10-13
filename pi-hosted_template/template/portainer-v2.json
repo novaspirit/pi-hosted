@@ -1200,7 +1200,6 @@
 					"name": "PGID"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/main/pi-hosted_template/images/nextcloud-icon.png",
 			"name": "nextcloudpi",
 			"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
 			"platform": "linux",
