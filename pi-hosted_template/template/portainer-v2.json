@@ -645,7 +645,7 @@
 			"name": "librespeed",
 			"platform": "linux",
 			"ports": [
-				"80:80/tcp"
+				"83:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "LibreSpeed",
