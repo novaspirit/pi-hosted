@@ -971,6 +971,7 @@
 				"1883:1883/tcp"
 			],
 			"restart_policy": "unless-stopped",
+			"hostname": "rpi-mosquitto",
 			"title": "Eclipse Mosquitto",
 			"type": 1,
 			"volumes": [
