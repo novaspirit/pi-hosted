@@ -398,7 +398,6 @@
 				"8086:8086/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"hostname": "rpi-influxdb1810",
 			"title": "Influxdb 1.8.10",
 			"type": 1,
 			"volumes": [
