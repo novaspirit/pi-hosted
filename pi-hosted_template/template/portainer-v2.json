@@ -403,7 +403,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Influxdb",
+					"bind": "/portainer/Files/AppData/Config/Influxdb/data",
+					"container": "/var/lib/influxdb"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Influxdb/config",
 					"container": "/var/lib/influxdb"
 				}
 			]
