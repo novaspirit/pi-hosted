@@ -98,7 +98,7 @@ Done You are ready to goto next step in the install document
 ## Install the App Template.<br>
 
 [comment]: # (FixMe)
-![alt text](https://raw.githubusercontent.com/rmiddle/pi-hosted/docker_monitor/docs/images/rpi_docker_monitor-AppTemplatesList.png)
+![alt text](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-AppTemplatesList.png)
 
 Goto App Templates and install "Raspberry Pi Docker Monitor"
 
@@ -122,7 +122,7 @@ Grafana > Configuration > Data Sources > Prometheus
 ```
 **It is important that you set the URL to http://monitoring-prometheus:9090/**<br><br>
 
-![image](https://raw.githubusercontent.com/rmiddle/pi-hosted/docker_monitor/docs/images/rpi_docker_monitor-DataSource.png)
+![image](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-DataSource.png)
 
 ### Setup the Dashboard
 Grafana is not preconfigured with dashboard, so you have to import it from the  [json](https://github.com/oijkn/Docker-Raspberry-PI-Monitoring/blob/main/grafana/dashboard_by_oijkn.json) file.
@@ -131,16 +131,16 @@ Grafana is not preconfigured with dashboard, so you have to import it from the  
 Grafana > + > Import 
 ```
 
-![image](https://raw.githubusercontent.com/rmiddle/pi-hosted/docker_monitor/docs/images/rpi_docker_monitor-Dashboard-Menu-Import.png)
+![image](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-Dashboard-Menu-Import.png)
 
 Now we open the [json](https://github.com/oijkn/Docker-Raspberry-PI-Monitoring/blob/main/grafana/dashboard_by_oijkn.json) file and Click on the "raw" button to copy the content from the json file.
 
-(!["raw" button](https://raw.githubusercontent.com/rmiddle/pi-hosted/docker_monitor/docs/images/rpi_docker_monitor-Raw.png))
+(!["raw" button](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-Raw.png))
 
 
  Once copied into the bigger of the 2 boxes Click Load.
 
-![image](https://raw.githubusercontent.com/rmiddle/pi-hosted/docker_monitor/docs/images/rpi_docker_monitor-Dashboard-Import.png)
+![image](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-Dashboard-Import.png)
 
 
 Now we can display the dashboard
@@ -148,20 +148,20 @@ Now we can display the dashboard
 ```
 Grafana > Dashboard > Manage
 ```
-![image](https://raw.githubusercontent.com/rmiddle/pi-hosted/docker_monitor/docs/images/rpi_docker_monitor-Menu-Dashboard-Manage.png)
+![image](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-Menu-Dashboard-Manage.png)
 
 There should be just the one item list.  Select "Docker and OS Metrics" from the list and you should see the dashboard listed below.
 
-![image](https://raw.githubusercontent.com/rmiddle/pi-hosted/docker_monitor/docs/images/rpi_docker_monitor-Dashboard-Manage.png)
+![image](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-Dashboard-Manage.png)
 
 ![screencapture-192-168-1-100-1013-d-Ss3q6hSZk-docker-and-os-metrics-2021-10-13-21_35_57](https://user-images.githubusercontent.com/18188407/137201307-a47cf9c3-fe8b-4792-8bd1-3fc02f89893b.png)
 
 
 > Hint: Well the Dashboard is displayed you can select your profile > Preferences and change the default Dashboard to the new Dashboard you just create and it will always display the new Dashboad when you login.
 
-![image](https://raw.githubusercontent.com/rmiddle/pi-hosted/docker_monitor/docs/images/rpi_docker_monitor-Menu-User-Preferences.png)
+![image](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-Menu-User-Preferences.png)
 
-![image](https://raw.githubusercontent.com/rmiddle/pi-hosted/docker_monitor/docs/images/rpi_docker_monitor-Preferences-Dashboard.png)
+![image](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-Preferences-Dashboard.png)
 
 
 ## Pi Hosted : Raspberry Pi Docker Monitoring Part 7
