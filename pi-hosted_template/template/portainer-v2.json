@@ -4257,8 +4257,9 @@
 			],
 			"description": "A self-hosted recipe manager and meal planner",
 			"image": "hkotel/mealie:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/uptime-kuma.png",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/mealie.png",
 			"name": "mealie",
+			"note": "Default Credentials: Username: changeme@email.com Password: MyPassword. Documentation is Available \u003ca href='https://hay-kot.github.io/mealie/documentation/getting-started/install/'\u003ehere\u003c/a\u003e.",
 			"platform": "linux",
 			"ports": [
 				"9925:80/tcp"
