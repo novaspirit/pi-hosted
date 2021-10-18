@@ -17,6 +17,10 @@
 					"label": "PGID",
 					"name": "PGID"
 				},
+                                {
+                                        "label": "TZ",
+                                        "name": "TZ"
+                                },
 				{
 					"label": "CONTEXT_PATH",
 					"name": "CONTEXT_PATH",
@@ -641,7 +645,7 @@
 			"name": "librespeed",
 			"platform": "linux",
 			"ports": [
-				"83:83/tcp"
+				"83:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "LibreSpeed",
