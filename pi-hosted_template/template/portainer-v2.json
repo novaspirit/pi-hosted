@@ -4293,7 +4293,7 @@
 					"container": "/app/data"
 				}
 			]
-		}
+		},
 		{
 			"categories": [
 				"Other",
@@ -4347,14 +4347,14 @@
 					"default": "192.168.15.0/24, 10.0.1.0/24",
 					"label": "WG_ALLOWED_IPS",
 					"name": "WG_ALLOWED_IPS"
-				},
+				}
 			],
 			"cap_add": [
 				"NET_ADMIN",
 				"SYS_MODULE"
 			],
 			"sysctls": [
-				"net.ipv4.ip_forward=1"
+				"net.ipv4.ip_forward=1",
 				"net.ipv4.conf.all.src_valid_mark=1"
 			]
 		}
