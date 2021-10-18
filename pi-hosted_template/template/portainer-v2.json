@@ -4310,7 +4310,7 @@
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Wireguard Server",
-			"type": 1,
+			"type": 3,
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/wireguard",
@@ -4349,10 +4349,10 @@
 					"name": "WG_ALLOWED_IPS"
 				}
 			],
-			"cap_add": [
-				"NET_ADMIN",
-				"SYS_MODULE"
-			],
+			"repository": {
+				"stackfile": "pi-hosted_template/stack/wireguard-easy.yml",
+				"url": "https://github.com/Dschorim/pi-hosted"
+			}
 		}
 	]
 }
