@@ -27,4 +27,3 @@ sudo touch /portainer/Files/AppData/Config/grafana/grafana.ini || error "Failed 
 echo "Setting permissions..."
 sudo chown -R 472:472 /portainer/Files/AppData/Config/grafana/data || error "Failed to set permissions for Grafana data!"
 echo "Done You are ready to goto next step in the install document"
-

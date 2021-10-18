@@ -16,7 +16,7 @@ name: Lint Code Base
 #############################
 on:
   push:
-    branches-ignore: [beta, main]
+    branches-ignore: [beta, master]
     # Remove the line above to run when pushing to master
 
 ###############
