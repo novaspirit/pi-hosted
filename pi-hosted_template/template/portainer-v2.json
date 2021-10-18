@@ -4294,5 +4294,69 @@
 				}
 			]
 		}
+		{
+			"categories": [
+				"Other",
+				"VPN"
+			],
+			"description": "You have found the easiest way to install & manage WireGuard on any Linux host!",
+			"image": "weejewel/wg-easy",
+			"logo": "https://raw.githubusercontent.com/Dschorim/pi-hosted/master/pi-hosted_template/images/wireguard.png",
+			"name": "wg-easy",
+			"platform": "linux",
+			"ports": [
+				"51820:51820/udp",
+				"51821:51821/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Wireguard Server",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/wireguard",
+					"container": "/etc/wireguard"
+				}
+			],
+			"env": [
+				{
+					"default": "raspberrypi.local",
+					"label": "WG_HOST",
+					"name": "WG_HOST"
+				},
+				{
+					"default": "foobar123",
+					"label": "PASSWORD",
+					"name": "PASSWORD"
+				},
+				{
+					"default": "51820",
+					"label": "WG_PORT",
+					"name": "WG_PORT"
+				},
+				{
+					"default": "10.8.0.x",
+					"label": "WG_DEFAULT_ADDRESS",
+					"name": "WG_DEFAULT_ADDRESS"
+				},
+				{
+					"default": "1.1.1.1",
+					"label": "WG_DEFAULT_DNS",
+					"name": "WG_DEFAULT_DNS"
+				},
+				{
+					"default": "192.168.15.0/24, 10.0.1.0/24",
+					"label": "WG_ALLOWED_IPS",
+					"name": "WG_ALLOWED_IPS"
+				},
+			],
+			"cap_add": [
+				"NET_ADMIN",
+				"SYS_MODULE"
+			],
+			"sysctls": [
+				"net.ipv4.ip_forward=1"
+				"net.ipv4.conf.all.src_valid_mark=1"
+			]
+		}
 	]
 }
