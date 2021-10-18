@@ -4348,7 +4348,11 @@
 					"label": "WG_ALLOWED_IPS",
 					"name": "WG_ALLOWED_IPS"
 				}
-			]
+			],
+			"cap_add": [
+				"NET_ADMIN",
+				"SYS_MODULE"
+			],
 		}
 	]
 }
