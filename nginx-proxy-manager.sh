@@ -12,3 +12,4 @@ sudo mkdir -p /portainer/Files/AppData/Config/nginx-proxy-manager/database || er
 echo "Creating a blank nginx-proxy-manager config files"
 sudo touch /portainer/Files/AppData/Config/nginx-proxy-manager/config.json || error "Failed to touch config.json file!"
 echo "Setup complete. You can now install the stack using the App Template."
+
