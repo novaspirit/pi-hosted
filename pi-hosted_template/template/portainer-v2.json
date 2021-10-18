@@ -4174,14 +4174,9 @@
 			"description": "Run a Speedtest every hour and graph the results.",
 			"env": [
 				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "100",
-					"label": "PGID",
-					"name": "PGID"
+					"default": "arch",
+					"label": "arch",
+					"set": "x86_64"
 				},
 				{
 					"label": "OOKLA_EULA_GDPR",
@@ -4189,7 +4184,7 @@
 					"set": "true"
 				}
 			],
-			"image": "henrywhitaker3/speedtest-tracker:latest-arm",
+			"image": "henrywhitaker3/speedtest-tracker:dev-arm",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/speedtest-tracker.png",
 			"name": "speedtest-tracker",
 			"platform": "linux",
