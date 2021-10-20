@@ -4344,6 +4344,7 @@
 					"name": "PGID"
 				},
                                 {
+					"default": "America/New_York",
                                         "label": "TZ",
                                         "name": "TZ"
                                 }
@@ -4353,6 +4354,9 @@
 			"name": "webtop",
 			"note": "An OS in a browser.",
 			"platform": "linux",
+			"ports": [
+				"3008:3000/tcp"
+			],
 			"restart_policy": "unless-stopped",
 			"title": "Webtop",
 			"type": 1,
