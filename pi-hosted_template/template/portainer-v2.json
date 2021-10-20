@@ -4349,7 +4349,7 @@
                                         "name": "TZ"
                                 }
 			],
-			"image": "lscr.io/linuxserver/webtop",
+			"image": "lscr.io/linuxserver/webtop::arm32v7-ubuntu-kde",
 			"logo": "https://miro.medium.com/max/512/1*PqFpM5ZrM7pv9Z0KeZHBJQ.png",
 			"name": "webtop",
 			"note": "An OS in a browser.",
