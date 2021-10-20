@@ -4325,6 +4325,43 @@
 			"restart_policy": "unless-stopped",
 			"title": "CloudFlare DDNS",
 			"type": 1
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A Containerized OS in a browser",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                                {
+                                        "label": "TZ",
+                                        "name": "TZ"
+                                }
+			],
+			"image": "lscr.io/linuxserver/webtop",
+			"logo": "https://www.cloudflare.com/img/cf-facebook-card.png",
+			"name": "webtop",
+			"note": "An OS in a browser.",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Webtop",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Webtop",
+					"container": "/config"
+				}
+			]
 		}
 	]
 }
