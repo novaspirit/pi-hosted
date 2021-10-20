@@ -4299,57 +4299,24 @@
 				"Other",
 				"Tools"
 			],
-			"description": "A Containerized OS in a browser",
+			"description": "It is a self-hosted CloudFlare DDNS. This will update your IP Address into your CloudFlare",
 			"env": [
 				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
+					"default": "yourAPIkey",
+					"label": "API_KEY",
+					"name": "API_KEY"
 				},
 				{
-					"default": "100",
-					"label": "PGID",
-					"name": "PGID"
+					"default": "yourdomain.com",
+					"label": "ZONE",
+					"name": "ZONE"
 				},
-				{
-					"default": "America/New_York",
-					"label": "TZ",
-					"name": "TZ"
+                                {
+					"default": "false",
+					"label": "PROXIED",
+					"name": "PROXIED"
 				}
 			],
-			"image": "lscr.io/linuxserver/webtop",
-			"logo": "https://miro.medium.com/max/512/1*PqFpM5ZrM7pv9Z0KeZHBJQ.png",
-			"name": "webtop",
-			"note": "A fancy self-hosted OS in A Browser.",
-			"platform": "linux",
-			"shm_size": "2gb",
-			"privileged": "true",
-    			"security_opt": [
-      				"seccomp": "unconfined"
-			],
-			"ports": [
-				"3000:3000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "WebTop",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/WebTop",
-					"container": "/config"
-				},
-				{
-					"bind": "/var/run/docker.sock",
-					"container": "/var/run/docker.sock"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "It is a self-hosted CloudFlare DDNS. This will update your IP Address into your CloudFlare",
 			"image": "oznu/cloudflare-ddns:latest",
 			"logo": "https://www.cloudflare.com/img/cf-facebook-card.png",
 			"name": "cloudflare-ddns",
