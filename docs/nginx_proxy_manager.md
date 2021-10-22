@@ -185,3 +185,6 @@ Assuming there are no errors your new host has been created and you will be retu
 ## Pi Hosted : Nginx Proxy Manager Part TBD
 TBD
 
+# Additional documentation
+
+Additional documentation can be found at https://nginxproxymanager.com/guide/ .
