@@ -97,7 +97,9 @@ Set the password to something you like and save the changes.
 
 ## Update Default Screen
 
-When going to the proxy with a new domain or in some cases where you used wildcard DNS and someone goes using a DNS you don't haven't setup yet they will see the default screen.  By default this is the Congratulations Screen as shown below.  It is useful for confirming you are setup correctly but in production I prefer a 404 page or a custom page of some kind so we will go though how to set that up.
+When going to the proxy with a new domain or in some cases where you used *wildcard DNS and someone goes using a DNS you don't haven't setup yet they will see the default screen.  By default this is the Congratulations Screen as shown below.  It is useful for confirming you are setup correctly but in production I prefer a 404 page or a custom page of some kind so we will go though how to set that up.
+
+* Wildcard DNS can have security issues make sure you reach these before using them.
 
 ![Congratulations Screen](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-Congratulations-Screen.png)
 
