@@ -343,7 +343,7 @@
 			"name": "home assistant",
 			"platform": "linux",
 			"ports": [
-				"8999:8080/tcp"
+				"8999:8123/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Home Assistant",
