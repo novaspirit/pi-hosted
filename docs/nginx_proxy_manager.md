@@ -97,7 +97,7 @@ Set the password to something you like and save the changes.
 
 ## Update Default Screen
 
-We going to the proxy with a new domain or in cases were you used wildcard DNS and someone goes using a DNS you don't have setup yet the will see the default screen.  By default it is the Congratulations Screen as shown below.  It is useful for confirming you are setup correctly but in production I prefer a 404 page or a custom page of some kind so we will go though how to set that up.
+When going to the proxy with a new domain or in some cases where you used wildcard DNS and someone goes using a DNS you don't haven't setup yet they will see the default screen.  By default this is the Congratulations Screen as shown below.  It is useful for confirming you are setup correctly but in production I prefer a 404 page or a custom page of some kind so we will go though how to set that up.
 
 ![Congratulations Screen](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-Congratulations-Screen.png)
 
@@ -121,7 +121,7 @@ So now when someone goes to a site that isn't setup yet they will see a 404 page
 
 ![404 Page](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-404-page.png)
 
-Great Ngnix Proxy Manager is now all setup.  In the next sections we are going to walk though setting up your first proxy host.
+Great Nginx Proxy Manager is now all setup.  In the next sections we are going to walk though setting up your first proxy host.
 
 ## First Proxy Host Setup
 
@@ -136,7 +136,7 @@ Select Add Proxy Hosts
 
 ![Proxy Hosts](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-Menu-Add-Proxy-Host.png)
 
-We need to enter the proxy information.  In this example we are going to use the following informaiton.
+We need to enter the proxy information.  In this example we are going to use the following information.
 
 Secure External connections to the service using https.<br>
 Domain Name: homer.example.com<br>
@@ -150,33 +150,33 @@ Accesss List: Publicly Accessible<br>
 
 > Most of these options should be self explanatory if you aren't sure what they do it is likely best to leave them disabled.
 
-Most import options.
+The most import options.<br>  
 Domain Name is the public Domain name that will point at your host.<br>
 Forward Hostname/IP is the server running the resource.<br>
-Port is the port the service is runnning on that server.<br>
+Port is the port the service is running on that server.<br>
 
 ![Proxy Hosts](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-New-Proxy-Host.png)
 
-> Hint: Generating Certificates can be complaited I will be outlining one of the simplest ways to generate one.  There are other ways not outlined here.
+> Hint: Generating Certificates can be complicated I will be outlining one of the simplest ways to generate one.  There are other ways not outlined here.
 
 Now we need to setup our secure https connection to the server.  Select the SSL tab.  Under SSL Certificates we are going to select Request a new SSL Certificate
 
-I am also going to select Force SSL this will prevent none secure connections from being used.  
+I am also going to select Force SSL this will prevent non-secure connections from being used.  
 
 I will agree to the terms after reading them you should at least review them once so you understand the terms of service.
 
-It should have you correct email lists if it doesn't please fix as this is were you will get alerts if there is an issue with the cert.
+It should have your correct email address listed if it doesn't please fix as this is where you will get alerts if there is an issue with the Certificate.
 
 ![Proxy Hosts](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-New-Proxy-Host-SSL.png)
 
 Once you click Save it will generate a new certificate this can take a few minutes to do.
 
-Assuming there are no errors you new host has been created and you will be returned to the proxy host screen.  Below is an example of what the screen will look like with several hosts added.
+Assuming there are no errors your new host has been created and you will be returned to the proxy host screen.  Below is an example of what the screen will look like with several hosts added.
 
 ![NPM Screenshot](https://nginxproxymanager.com/screenshots/proxy-hosts.png)
 
 
 
-## Pi Hosted : Ngnix Proxy Manager Part TBD
+## Pi Hosted : Nginx Proxy Manager Part TBD
 TBD
 
