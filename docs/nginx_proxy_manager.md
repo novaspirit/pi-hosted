@@ -88,7 +88,7 @@ Fix your user infomation and save the changes.
 
 ![User Menu](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-User-Edit-Details.png)
 
-Now it is time to change your password.  Select the User menu again and select Change Password
+Now it is time to change your password.  Select the User menu again and select Change Password <br>
 ![User Menu](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-User-Menu.png)
 
 Set the password to something you like and save the changes.
