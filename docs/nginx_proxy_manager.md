@@ -155,6 +155,11 @@ Domain Name is the public Domain name that will point at your host.<br>
 Forward Hostname/IP is the server running the resource.<br>
 Port is the port the service is running on that server.<br>
 
+Two options you might want to enable are Cachie Assets and Block Common Exploits they will help protect and reduce the load on your sites but they can cause problems for some sites so be aware of this before enabling.
+
+Some applications will use Websockets if they app uses this you will need to enable it but very few applications do so.  To put it simply if you don't what it is than leave it disabled.
+
+
 ![Proxy Hosts](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-New-Proxy-Host.png)
 
 > Hint: Generating Certificates can be complicated I will be outlining one of the simplest ways to generate one.  There are other ways not outlined here.
