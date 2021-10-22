@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Nginx Proxy Manager (NPM) is a easy way to accomplish reverse proxying hosts with SSL termination and as the author put it "It has to be so easy that a monkey could do it". 
+Nginx Proxy Manager (NPM) is an easy way to accomplish reverse proxying hosts with SSL termination and as the author puts it "It has to be so easy that a monkey could do it". 
 
 ## Screenshot
 
@@ -35,13 +35,13 @@ Setup complete. You can now install the stack using the App Template.
 
 ![App Template](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-AppTemplatesList.png)
 
-Goto App Templates and install "Proxy Ngnix Manager"
+Goto App Templates and install "Proxy Nginx Manager"
 
 ![App Template](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-AppTemplates-Deploy.png)
 
-You need to enter in both a Database Password and Mysql Root Password.  These will be needed if you every have to access the database but not needed in the day to day operations of the system.
+You need to enter in both a Database Password and Mysql Root Password.  These will be needed if you ever have to access the database but not needed in the day to day operations of the system.
 
-> If you fail to enter password for both the both the Database Password and Mysql Root Password your install will fail and you will get an error Bad Gateway witch means the NPM can't talk to your mysql server.
+> If you fail to enter password for both the Database Password and Mysql Root Password your install will fail and you will get an error Bad Gateway which means that NPM can't talk to your mysql server.
 
 This should all be good now so **Deploy the Stack**
 
@@ -49,41 +49,41 @@ This should all be good now so **Deploy the Stack**
 <br><br>
 
 ## Stack Info
-When Complete we should see a list of all our deplyed stacks sample list below.<br>
+When Complete we should see a list of all our deployed stacks sample list below.<br>
 ![Stack List]((https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-Stack-List.png))
 
-We want to select nginx-proxy-manager from the list.  This will display lots of information regarding you stack but the section we are looking for is labelled Containers
+We want to select nginx-proxy-manager from the list.  This will display lots of information regarding your stack but the section we are looking for is labelled Containers
 
 ![Stack Container Details](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-Stack-Details.png)
 
 You will notice 3 ports listed.  Port 80, 443, and port 81.  Ports 80 and 443 are for managing your services and really shouldn't be changed.  Port 81 is for managing your lists of hosts.  It can be changed but for the reminder of this install we are going to assume it to be port 81.
 
-> It is import before you go to the next step that you get you public IP forward though your firewall for port 80 and 443 to your NPM install.  You also need to have your DNS pointing at the IP address.  There are many ways to do this and outside the scope of this install documentant.  If you are not sure where to start feel free to login to the Dicord chat and ask someone will help point you at different options for your setuo.
+> It is important before you go to the next step that you get you public IP forward though your firewall for port 80 and 443 to your NPM install.  You also need to have your DNS pointing at the IP address.  There are many ways to do this and outside the scope of this install document.  If you are not sure where to start feel free to login to the Discord chat and ask someone will help point you at different options for your setup.
 
 ## Post Install Setup
 
-### Login in to the site<br>
+### Login to the site<br>
 
-Now that it is installed let setup our first proxy host.  First thing we need to do is login to the site.  Click on port 81 in the list and you will see the login screen below.
+Now that it is installed lets setup our first proxy host.  First thing we need to do is login to the site.  Click on port 81 in the list and you will see the login screen below.
 
 ![Login](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-Login.png)
 
 The Default Email Address is: admin@example.com
 The Default Password is: changeme
 
-Please login and we will than change those to our own settings.
+Please login and we will then change those to our own settings.
 
 > If you get a Bad Gateway error you likely forgot to run the script on the host to setup the folders / files first although it can also happen if you leave one of the database password blank as well.  Delete the Stack and start back from the beginning.
 
 ![First Login](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-First-Login.png)
 
 ### Update Your Email address and Password
-1
+
 First we need to select the User menu and select Edit Details
 
 ![User Menu](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-User-Menu.png)
 
-Fix your user infomation and save the changes.
+Fix your user information and save the changes.
 
 
 ![User Menu](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-User-Edit-Details.png)
