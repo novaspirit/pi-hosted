@@ -1,4 +1,4 @@
-# Install and setup instructions for the RPI Docker Monitor
+# Install and setup instructions for Nginx Proxy Manager (NPM)
 
 ## Introduction
 
