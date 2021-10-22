@@ -143,7 +143,7 @@ Domain Name: homer.example.com<br>
 Scheme: http<br>
 Forward Hostname/IP address: 192.168.1.23<br>
 Port: 8902<br>
-Cachie Assets: Disabled<br>
+Cache Assets: Disabled<br>
 Block Common Exploits: Disabled<br>
 Websockets Support: Disabled<br>
 Accesss List: Publicly Accessible<br>
@@ -155,9 +155,9 @@ Domain Name is the public Domain name that will point at your host.<br>
 Forward Hostname/IP is the server running the resource.<br>
 Port is the port the service is running on that server.<br>
 
-Two options you might want to enable are Cachie Assets and Block Common Exploits they will help protect and reduce the load on your sites but they can cause problems for some sites so be aware of this before enabling.
+Two options you might want to enable are Cache Assets and Block Common Exploits they will help protect and reduce the load on your sites but they can cause problems for some sites so be aware of this before enabling.
 
-Some applications will use Websockets if they app uses this you will need to enable it but very few applications do so.  To put it simply if you don't what it is than leave it disabled.
+Some applications will use Websockets if the app uses this you will need to enable it but very few applications do so.  To put it simply if you don't know what it is, than leave it disabled.
 
 
 ![Proxy Hosts](https://raw.githubusercontent.com/rmiddle/pi-hosted/npm/docs/images/nginx-proxy-manager-New-Proxy-Host.png)
