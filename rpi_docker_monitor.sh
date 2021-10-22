@@ -26,4 +26,4 @@ sudo wget -O /portainer/Files/AppData/Config/prometheus/config/prometheus.yml ht
 sudo touch /portainer/Files/AppData/Config/grafana/grafana.ini || error "Failed to touch grafana.ini file!"
 echo "Setting permissions..."
 sudo chown -R 472:472 /portainer/Files/AppData/Config/grafana/data || error "Failed to set permissions for Grafana data!"
-echo "Done"
+echo "Done You are ready to goto next step in the install document"
