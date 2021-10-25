@@ -7,7 +7,7 @@ services:
     expose:
       - 8080
     hostname: rpi-cadvisor
-    image: braingamer/cadvisor-arm:latest
+    image: zcube/cadvisor:v0.37.5
     ipc: shareable
     networks:
       - rpimonitor_default
