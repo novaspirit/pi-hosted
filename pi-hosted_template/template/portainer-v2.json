@@ -1041,7 +1041,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "goofball222/murmur:latest",
+			"image": "yhaenggi/murmur:1.3.4",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/Mumble-logo.png",
 			"name": "murmur",
 			"platform": "linux",
