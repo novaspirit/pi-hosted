@@ -4353,6 +4353,23 @@
 		{
 			"categories": [
 				"Other",
+				"VPN"
+			],
+			"description": "You have found the easiest way to install & manage WireGuard on any Linux host!",
+			"image": "weejewel/wg-easy",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/wireguard.png",
+			"name": "wg-easy",
+			"platform": "linux",
+			"title": "Wireguard Server",
+			"type": 3,
+			"repository": {
+				"stackfile": "pi-hosted_template/stack/wireguard-easy.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			}
+		},
+		{
+			"categories": [
+				"Other",
 				"Tools"
 			],
 			"description": "A self-hosted recipe manager and meal planner",
