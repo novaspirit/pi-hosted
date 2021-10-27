@@ -4535,10 +4535,12 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/gotify",
 					"container": "/app/data"
+
 				}
 			],
 			"env": [
 				{
+
 					"default": "Europe/Berlin",
 					"label": "TZ",
 					"name": "TZ"
@@ -4552,6 +4554,66 @@
 					"default": "admin123",
 					"label": "GOTIFY_DEFAULTUSER_PASS",
 					"name": "GOTIFY_DEFAULTUSER_PASS"
+				}
+			]
+    },
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Troubleshoot slowdowns and anomalies in your infrastructure with thousands of per-second metrics, meaningful visualizations, and insightful health alarms with zero configuration.",
+			"image": "netdata/netdata:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/netdata.png",
+			"name": "netdata",
+			"note": "Documentation is Available \u003ca href='https://learn.netdata.cloud/'\u003ehere\u003c/a\u003e.",
+			"platform": "linux",
+			"ports": [
+				"19999:19999/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Netdata",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/netdata/netdataconfig",
+					"container": "/etc/netdata"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/netdata/netdatalib",
+					"container": "/var/lib/netdata"
+				},
+				{
+					"bind": "/etc/passwd",
+					"container": "/host/etc/passwd:ro"
+				},
+				{
+					"bind": "/etc/group",
+					"container": "/host/etc/group:ro"
+				},
+				{
+					"bind": "/proc",
+					"container": "/host/proc:ro"
+				},
+				{
+					"bind": "/sys",
+					"container": "/host/sys:ro"
+				},
+				{
+					"bind": "/etc/os-release",
+					"container": "/host/etc/os-release:ro"
+				}
+			],
+			"env": [
+				{
+					"default": "1000",
+					"label": "DOCKER_USR",
+					"name": "DOCKER_USR"
+				},
+				{
+					"default": "1000",
+					"label": "DOCKER_GRP",
+					"name": "DOCKER_GRP"
 				}
 			]
     }
