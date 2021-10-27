@@ -4513,6 +4513,47 @@
 					"container": "/homebridge"
 				}
 			]
-		}
+    },
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A simple server for sending and receiving messages",
+			"image": "gotify/server-arm7:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/gotify.png",
+			"name": "gotify",
+			"note": "ARM7 Image. Documentation is Available \u003ca href='https://gotify.net/docs/index'\u003ehere\u003c/a\u003e.",
+			"platform": "linux",
+			"ports": [
+				"9008:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Gotify",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/gotify",
+					"container": "/app/data"
+				}
+			],
+			"env": [
+				{
+					"default": "Europe/Berlin",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "admin",
+					"label": "GOTIFY_DEFAULTUSER_NAME",
+					"name": "GOTIFY_DEFAULTUSER_NAME"
+				},
+				{
+					"default": "admin123",
+					"label": "GOTIFY_DEFAULTUSER_PASS",
+					"name": "GOTIFY_DEFAULTUSER_PASS"
+				}
+			]
+    }
 	]
 }
