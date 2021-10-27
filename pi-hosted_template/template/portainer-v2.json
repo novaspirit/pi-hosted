@@ -4250,17 +4250,17 @@
 				"Web",
 				"Other"
 			],
-			"description": "Run a Speedtest every hour and graph the results.",
+			"description": "Run a Speedtest every hour and graph the results.  See https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags for arch options",
 			"env": [
 				{
-					"default": "arch",
+					"default": "latest-arm",
 					"label": "arch",
 					"set": "x86_64"
 				},
 				{
 					"label": "OOKLA_EULA_GDPR",
 					"name": "OOKLA_EULA_GDPR",
-					"set": "true"
+					"default": "true"
 				}
 			],
 			"image": "henrywhitaker3/speedtest-tracker:dev-arm",
