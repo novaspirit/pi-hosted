@@ -337,6 +337,24 @@
 			]
 		},
 		{
+			"description": "Home Assistant is a free and open-source software for home automation that is designed to be the central control system for smart home devices with focus on local control and privacy.",
+			"image": "homeassistant/home-assistant:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/homeassistant.png",
+			"name": "home assistant",
+			"platform": "linux",
+			"ports": [
+				"8999:8123/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Home Assistant",
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/HomeAssistant/assets",
+					"container": "/config"
+				}
+			]
+		},
+		{
 			"categories": [
 				"Other",
 				"Tools"
@@ -1041,7 +1059,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "goofball222/murmur:latest",
+			"image": "yhaenggi/murmur:1.3.4",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/Mumble-logo.png",
 			"name": "murmur",
 			"platform": "linux",
@@ -1344,7 +1362,7 @@
 				"Proxy",
 				"Tools"
 			],
-			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
+			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/novaspirit/pi-hosted/tree/master/docs installing the template",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/proxy_mgr.png",
 			"name": "nginx-proxy-manager",
 			"platform": "linux",
@@ -2496,7 +2514,7 @@
 			"name": "grocy",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"9283:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Grocy",
@@ -4232,17 +4250,17 @@
 				"Web",
 				"Other"
 			],
-			"description": "Run a Speedtest every hour and graph the results.",
+			"description": "Run a Speedtest every hour and graph the results.  See https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags for arch options",
 			"env": [
 				{
-					"default": "arch",
+					"default": "latest-arm",
 					"label": "arch",
 					"set": "x86_64"
 				},
 				{
 					"label": "OOKLA_EULA_GDPR",
 					"name": "OOKLA_EULA_GDPR",
-					"set": "true"
+					"default": "true"
 				}
 			],
 			"image": "henrywhitaker3/speedtest-tracker:dev-arm",
@@ -4353,6 +4371,23 @@
 		{
 			"categories": [
 				"Other",
+				"VPN"
+			],
+			"description": "You have found the easiest way to install & manage WireGuard on any Linux host!",
+			"image": "weejewel/wg-easy",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/wireguard.png",
+			"name": "wg-easy",
+			"platform": "linux",
+			"title": "Wireguard Server",
+			"type": 3,
+			"repository": {
+				"stackfile": "pi-hosted_template/stack/wireguard-easy.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			}
+		},
+		{
+			"categories": [
+				"Other",
 				"Tools"
 			],
 			"description": "A self-hosted recipe manager and meal planner",
@@ -4433,6 +4468,54 @@
 		},
 		{
 			"categories": [
+				"HomeAutomation"
+			],
+			"description": "Homebridge allows you to integrate with smart home devices that do not natively support HomeKit. There are over 2,000 Homebridge plugins supporting thousands of different smart accessories.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1",
+					"label": "HOMEBRIDGE_CONFIG_UI",
+					"name": "HOMEBRIDGE_CONFIG_UI"
+				},
+				{
+					"default": "8581",
+					"label": "HOMEBRIDGE_CONFIG_UI_PORT",
+					"name": "HOMEBRIDGE_CONFIG_UI_PORT"
+				},
+				{
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "oznu/homebridge:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/homebridge.png",
+			"name": "homebridge",
+			"network": "host",
+			"note": "Bringing HomeKit support where there is none",
+			"platform": "linux",
+			"privileged": true,
+			"restart_policy": "always",
+			"title": "Homebridge",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/homebridge",
+					"container": "/homebridge"
+				}
+			]
+    },
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
@@ -4471,6 +4554,6 @@
 					"name": "GOTIFY_DEFAULTUSER_PASS"
 				}
 			]
-		}
+    }
 	]
 }
