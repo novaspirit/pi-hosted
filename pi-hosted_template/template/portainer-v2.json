@@ -2514,7 +2514,7 @@
 			"name": "grocy",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"9283:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Grocy",
