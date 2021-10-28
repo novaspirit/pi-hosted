@@ -4625,7 +4625,7 @@
 			],
 			"description": "Cloud-Native Networking Stack That Just Works.",
 			"image": "traefik:latest",
-			"logo": "https://raw.githubusercontent.com/Dschorim/pi-hosted/master/pi-hosted_template/images/traefik.png",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/traefik.png",
 			"name": "traefik",
 			"note": "A simple and lightweight reverse proxy",
 			"platform": "linux",
