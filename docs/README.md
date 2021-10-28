@@ -12,8 +12,25 @@ Run `install-docker.sh`, to install docker, and add the current user to the dock
 ```
 wget -qO- https://git.io/JwUkc | bash
 # need to reboot/logout for changes to take effect
+```
+
+### Pi OS
+Currently Pi OS is running an old version of libseccomp that is causing problems with many containers from running to fix this we need to manually install a newer version of libseccomp.  To check and see if you are running an older version please run sudo dpkg-query -W libseccomp.
+```
+sudo dpkg-query -W libseccomp
+```
+If you are running a version less that 2.5 you need to run the upgrade script update_libseccomp.sh.
+
+```
+./update_libseccomp.sh
+```
+
+# Reboot for changes to take effect
+
+```
 sudo reboot
 ```
+
 After a reboot, run `install-portainer.sh`, to install Portainer.io
 ```
 wget -qO- https://git.io/JwUnf | bash
