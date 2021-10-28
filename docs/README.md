@@ -22,7 +22,7 @@ sudo dpkg-query -W libseccomp
 If you are running a version less that 2.5 you need to run the upgrade script update_libseccomp.sh.
 
 ```
-./update_libseccomp.sh
+wget -qO- https://git.io/Jijk8 | bash
 ```
 
 # Reboot for changes to take effect
