@@ -15,11 +15,11 @@ wget -qO- https://git.io/JwUkc | bash
 ```
 
 ### Pi OS
-Currently Pi OS is running an old version of libseccomp that is causing problems with many containers from running to fix this we need to manually install a newer version of libseccomp.  To check and see if you are running an older version please run sudo dpkg-query -W libseccomp.
+Currently Pi OS is running an old version of libseccomp that is causing problems with many containers that are preventing them from running.  To fix this we need to manually install a newer version of libseccomp.  However we first need to check and see if you are running an older version.  To check please run sudo dpkg-query -W libseccomp.
 ```
 sudo dpkg-query -W libseccomp
 ```
-If you are running a version less that 2.5 you need to run the upgrade script update_libseccomp.sh.
+If you are running a version less that 2.5 you will need to run the upgrade script.
 
 ```
 wget -qO- https://git.io/Jijk8 | bash
