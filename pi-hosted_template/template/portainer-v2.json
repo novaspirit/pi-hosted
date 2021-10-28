@@ -4535,12 +4535,10 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/gotify",
 					"container": "/app/data"
-
 				}
 			],
 			"env": [
 				{
-
 					"default": "Europe/Berlin",
 					"label": "TZ",
 					"name": "TZ"
