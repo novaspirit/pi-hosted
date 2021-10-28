@@ -4513,7 +4513,7 @@
 					"container": "/homebridge"
 				}
 			]
-    	},
+		},
 		{
 			"categories": [
 				"Other",
@@ -4556,7 +4556,7 @@
 					"name": "GOTIFY_DEFAULTUSER_PASS"
 				}
 			]
-    	},
+		},
 		{
 			"categories": [
 				"Other",
@@ -4616,8 +4616,8 @@
 					"name": "DOCKER_GRP"
 				}
 			]
-    	},
-    	{
+		},
+		{
 			"categories": [
 				"Proxy",
 				"Security",
