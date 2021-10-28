@@ -4513,7 +4513,7 @@
 					"container": "/homebridge"
 				}
 			]
-    },
+		},
 		{
 			"categories": [
 				"Other",
@@ -4556,7 +4556,7 @@
 					"name": "GOTIFY_DEFAULTUSER_PASS"
 				}
 			]
-    },
+		},
 		{
 			"categories": [
 				"Other",
@@ -4616,6 +4616,45 @@
 					"name": "DOCKER_GRP"
 				}
 			]
-    }
+		},
+		{
+			"categories": [
+				"Proxy",
+				"Security",
+				"Tools"
+			],
+			"description": "Cloud-Native Networking Stack That Just Works.",
+			"image": "traefik:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/traefik.png",
+			"name": "traefik",
+			"note": "A simple and lightweight reverse proxy",
+			"platform": "linux",
+			"ports": [
+				"80:80/tcp",
+				"443:443/tcp",
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Traefik",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/traefik/traefik.yml",
+					"container": "/traefik.yml"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/traefik/config.yml",
+					"container": "/config.yml"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/traefik/acme.json",
+					"container": "acme.json"
+				},
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+				}
+			]
+		}
 	]
 }
