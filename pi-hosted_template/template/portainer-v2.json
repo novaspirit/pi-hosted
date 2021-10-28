@@ -4630,8 +4630,8 @@
 			"note": "A simple and lightweight reverse proxy",
 			"platform": "linux",
 			"ports": [
-				"80:80",
-				"8080:8080"
+				"80:80/tcp",
+				"8080:8080/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Traefik",
