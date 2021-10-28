@@ -834,8 +834,8 @@
 			"env": [
 				{
 					"set": "",
-					"label": "MYJD_DEVICE",
-					"name": "MYJD_DEVICE"
+					"label": "MYJD_DEVICE_NAME",
+					"name": "MYJD_DEVICE_NAME"
 				},
 				{
 					"set": "",
