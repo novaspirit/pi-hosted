@@ -4646,6 +4646,6 @@
 					"container": "/var/run/docker.sock"
 				}
 			]
-		},
+		}
 	]
 }
