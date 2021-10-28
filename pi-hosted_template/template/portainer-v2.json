@@ -4655,6 +4655,47 @@
 					"container": "/var/run/docker.sock"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "n8n is an extendable workflow automation tool.",
+			"image": "n8nio/n8n:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/n8n.png",
+			"name": "n8n",
+			"note": "Documentation is Available \u003ca href='https://docs.n8n.io/'\u003ehere\u003c/a\u003e",
+			"platform": "linux",
+			"ports": [
+				"5678:5678/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "n8n",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/n8n",
+					"container": "/home/node/.n8n"
+				}
+			],
+			"env": [
+				{
+					"default": true,
+					"label": "N8N_BASIC_AUTH_ACTIVE",
+					"name": "N8N_BASIC_AUTH_ACTIVE"
+				},
+				{
+					"default": "admin",
+					"label": "N8N_BASIC_AUTH_USER",
+					"name": "N8N_BASIC_AUTH_USER"
+				},
+				{
+					"default": "admin",
+					"label": "N8N_BASIC_AUTH_PASSWORD",
+					"name": "N8N_BASIC_AUTH_PASSWORD"
+				}
+			]
 		}
 	]
 }
