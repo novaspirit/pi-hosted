@@ -4047,7 +4047,7 @@
 				}
 			],
 			"image": "pducharme/unifi-video-controller:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/UniFiVideo-logo.png",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/unifivideo-icon.png",
 			"name": "UniFi Video",
 			"platform": "linux",
 			"ports": [
