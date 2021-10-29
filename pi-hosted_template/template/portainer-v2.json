@@ -79,7 +79,7 @@
 				"25565:25565/tcp"
 			],
 			"restart_polocy": "unless-stopped",
-			"title": "Minecraft Server",
+			"title": "Minecraft Server"
 		},
 		{
 			"categories": [
