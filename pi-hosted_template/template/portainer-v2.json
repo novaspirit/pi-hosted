@@ -2464,7 +2464,7 @@
 			"name": "freshrss",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"8132:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "FreshRSS",
