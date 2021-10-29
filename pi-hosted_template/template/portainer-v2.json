@@ -2489,7 +2489,7 @@
 				"Books",
 				"Tools"
 			],
-			"description": "A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser",
+			"description": "[DEPRECATED] A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser",
 			"env": [
 				{
 					"default": "1000",
@@ -2506,6 +2506,9 @@
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/gazee-logo.png",
 			"name": "gazee",
 			"platform": "linux",
+			"ports": [
+				"4242:4242/tcp"
+			],
 			"restart_policy": "unless-stopped",
 			"title": "Gazee",
 			"type": 1,
