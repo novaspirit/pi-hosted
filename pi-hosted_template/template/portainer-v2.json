@@ -2998,7 +2998,7 @@
 			],
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/pritunl.png",
 			"name": "pritunl",
-			"note": "Documentation on this containier can be found here: \u003ca href=https://hub.docker.com/r/goofball222/pritunl\u003ehttps://hub.docker.com/r/goofball222/pritunl\u003c/a\u003e",
+			"note": "[Arm64 only][Use Stack file from Selfhosted] Documentation on this containier can be found here: \u003ca href=https://hub.docker.com/r/goofball222/pritunl\u003ehttps://hub.docker.com/r/goofball222/pritunl\u003c/a\u003e",
 			"platform": "linux",
 			"repository": {
 				"stackfile": "Template/Stack/pritunl.yml",
