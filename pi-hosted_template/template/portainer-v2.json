@@ -69,6 +69,22 @@
 			"categories": [
 				"Other",
 				"Tools",
+				"Games"
+			],
+			"description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
+			"image": "itzg/minecraft-server:multiarch-latest",
+			"logo": "",
+			"name": "minecraft".
+			"ports": [
+				"25565:25565/tcp"
+			],
+			"restart_polocy": "unless-stopped",
+			"title": "Minecraft Server"
+		}.
+		{
+			"categories": [
+				"Other",
+				"Tools",
 				"Authentication"
 			],
 			"description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
