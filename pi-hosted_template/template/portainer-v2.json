@@ -85,14 +85,14 @@
 					"bind": "/portainer/Files/AppData/Config/Minecraft-data",
 					"container": "/data"
 				}
-			]
+			],
 			"env": [
 				{
 					"label": "EULA",
 					"name": "EULA",
 					"default": "TRUE"
 				}
-			]
+			],
 			"restart_polocy": "unless-stopped",
 			"title": "Minecraft Server"
 		},
