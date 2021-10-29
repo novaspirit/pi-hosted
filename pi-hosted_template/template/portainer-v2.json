@@ -4544,7 +4544,9 @@
 					"container": "/homebridge"
 				}
 			]
+
 		},
+
 		{
 			"categories": [
 				"Other",
@@ -4587,7 +4589,9 @@
 					"name": "GOTIFY_DEFAULTUSER_PASS"
 				}
 			]
-		},
+
+    	},
+
 		{
 			"categories": [
 				"Other",
@@ -4684,6 +4688,58 @@
 				{
 					"bind": "/var/run/docker.sock",
 					"container": "/var/run/docker.sock"
+
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view sites you want to preserve offline.",
+			"image": "archivebox/archivebox:master",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/archivebox.png",
+			"name": "archivebox",
+			"note": "By default an admin user is not created. You can do so by launching a shell in the container and executing 'archivebox manage createsuperuser'. Documentation is Available \u003ca href='https://github.com/ArchiveBox/ArchiveBox/wiki'\u003ehere\u003c/a\u003e.",
+			"platform": "linux",
+			"ports": [
+				"8002:8000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Archivebox",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/archivebox",
+					"container": "/data"
+				}
+			],
+			"env": [
+				{
+					"default": "*",
+					"label": "ALLOWED_HOSTS",
+					"name": "ALLOWED_HOSTS"
+				},
+				{
+					"default": "750m",
+					"label": "MEDIA_MAX_SIZE",
+					"name": "MEDIA_MAX_SIZE"
+				},
+				{
+					"default": true,
+					"label": "PUBLIC_INDEX",
+					"name": "PUBLIC_INDEX"
+				},
+				{
+					"default": true,
+					"label": "PUBLIC_SNAPSHOTS",
+					"name": "PUBLIC_SNAPSHOTS"
+				},
+				{
+					"default": false,
+					"label": "PUBLIC_ADD_VIEW",
+					"name": "PUBLIC_ADD_VIEW"
 				}
 			]
 		}
