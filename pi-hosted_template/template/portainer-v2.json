@@ -4748,7 +4748,7 @@
 			],
 			"description": "n8n is an extendable workflow automation tool.",
 			"image": "n8nio/n8n:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/n8n.png",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/n8n.jpg",
 			"name": "n8n",
 			"note": "Documentation is Available \u003ca href='https://docs.n8n.io/'\u003ehere\u003c/a\u003e",
 			"platform": "linux",
