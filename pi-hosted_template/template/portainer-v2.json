@@ -69,6 +69,37 @@
 			"categories": [
 				"Other",
 				"Tools",
+				"Games"
+			],
+			"description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
+			"image": "itzg/minecraft-server:multiarch-latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/minecraft.png",
+			"name": "minecraft",
+			"platform": "linux",
+			"type": 1,
+			"ports": [
+				"25565:25565/tcp"
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Minecraft-data",
+					"container": "/data"
+				}
+			],
+			"env": [
+				{
+					"label": "EULA",
+					"name": "EULA",
+					"default": "TRUE"
+				}
+			],
+			"restart_polocy": "unless-stopped",
+			"title": "Minecraft Server"
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools",
 				"Authentication"
 			],
 			"description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
@@ -834,8 +865,8 @@
 			"env": [
 				{
 					"set": "",
-					"label": "MYJD_DEVICE",
-					"name": "MYJD_DEVICE"
+					"label": "MYJD_DEVICE_NAME",
+					"name": "MYJD_DEVICE_NAME"
 				},
 				{
 					"set": "",
@@ -4513,7 +4544,9 @@
 					"container": "/homebridge"
 				}
 			]
-    	},
+
+		},
+
 		{
 			"categories": [
 				"Other",
@@ -4556,7 +4589,9 @@
 					"name": "GOTIFY_DEFAULTUSER_PASS"
 				}
 			]
+
     	},
+
 		{
 			"categories": [
 				"Other",
@@ -4616,7 +4651,47 @@
 					"name": "DOCKER_GRP"
 				}
 			]
-    	},
+		},
+		{
+			"categories": [
+				"Proxy",
+				"Security",
+				"Tools"
+			],
+			"description": "Cloud-Native Networking Stack That Just Works.",
+			"image": "traefik:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/traefik.png",
+			"name": "traefik",
+			"note": "A simple and lightweight reverse proxy",
+			"platform": "linux",
+			"ports": [
+				"80:80/tcp",
+				"443:443/tcp",
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Traefik",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/traefik/traefik.yml",
+					"container": "/traefik.yml"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/traefik/config.yml",
+					"container": "/config.yml"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/traefik/acme.json",
+					"container": "acme.json"
+				},
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+
+				}
+			]
+		},
 		{
 			"categories": [
 				"Other",
