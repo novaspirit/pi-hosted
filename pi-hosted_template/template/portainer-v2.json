@@ -75,9 +75,23 @@
 			"image": "itzg/minecraft-server:multiarch-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/minecraft.png",
 			"name": "minecraft",
+			"platform": "linux",
+			"type": 1,
 			"ports": [
 				"25565:25565/tcp"
 			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Minecraft-data",
+					"container": "/data"
+				}
+			]
+			"env": [
+				{
+					"label": "EULA",
+					"name": "EULA",
+					"default": "TRUE"
+				}
 			"restart_polocy": "unless-stopped",
 			"title": "Minecraft Server"
 		},
