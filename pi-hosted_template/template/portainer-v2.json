@@ -2924,7 +2924,7 @@
 			"name": "projectsend",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7580:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "ProjectSend",
