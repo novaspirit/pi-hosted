@@ -1808,7 +1808,7 @@
 			"name": "Chevereto",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7382:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Chevereto",
