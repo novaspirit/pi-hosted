@@ -1355,8 +1355,8 @@
 			"name": "nginx",
 			"platform": "linux",
 			"ports": [
-				"80/tcp",
-				"443/tcp"
+				"8080:80/tcp",
+				"8443:443/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Nginx",
