@@ -1672,7 +1672,7 @@
 			"name": "photoshow",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7380:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "PhotoShow",
