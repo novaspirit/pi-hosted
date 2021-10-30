@@ -2756,7 +2756,7 @@
 			"name": "piwigo",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7528:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Piwigo",
