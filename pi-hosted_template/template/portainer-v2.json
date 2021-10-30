@@ -3325,7 +3325,7 @@
 			"name": "shiori",
 			"platform": "linux",
 			"ports": [
-				"8080/tcp"
+				"7564:8080/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Shiori",
