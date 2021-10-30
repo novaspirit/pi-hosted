@@ -1989,7 +1989,7 @@
 			"name": "codiad",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7294:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Codiad",
