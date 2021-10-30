@@ -566,7 +566,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1000",
+					"default": "100",
 					"label": "PGID",
 					"name": "PGID"
 				}
@@ -578,7 +578,7 @@
 			"ports": [
 				"8081:8080/tcp",
 				"9090:9090/tcp",
-				"9777/udp"
+				"9777:9777/udp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Kodi Headless",
