@@ -354,8 +354,8 @@
 			"name": "heimdall",
 			"platform": "linux",
 			"ports": [
-				"80/tcp",
-				"443/tcp"
+				"7202:80/tcp",
+				"7203/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Heimdall",
