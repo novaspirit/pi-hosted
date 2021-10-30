@@ -3253,7 +3253,7 @@
 			"name": "rutorrent",
 			"platform": "linux",
 			"ports": [
-				"80/tcp",
+				"5324:80/tcp",
 				"51413:51413/tcp",
 				"6881:6881/udp"
 			],
