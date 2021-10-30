@@ -1190,7 +1190,7 @@
 			"name": "muximux",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7205:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Muximux",
