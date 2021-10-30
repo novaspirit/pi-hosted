@@ -3779,7 +3779,7 @@
 			"name": "tt-rss",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7352:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Tiny Tiny RSS",
