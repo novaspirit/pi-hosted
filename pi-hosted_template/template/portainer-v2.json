@@ -355,7 +355,7 @@
 			"platform": "linux",
 			"ports": [
 				"7202:80/tcp",
-				"7203/tcp"
+				"7203:443/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Heimdall",
