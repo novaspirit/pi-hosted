@@ -3445,7 +3445,7 @@
 			"name": "smokeping",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"4794:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "SmokePing",
