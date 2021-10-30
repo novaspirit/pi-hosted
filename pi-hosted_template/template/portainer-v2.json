@@ -2024,7 +2024,7 @@
 			"name": "cops",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"8945:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "COPS",
