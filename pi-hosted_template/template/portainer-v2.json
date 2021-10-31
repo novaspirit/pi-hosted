@@ -1,4 +1,4 @@
-{
+W{
 	"version": "2",
 	"templates": [
 		{
@@ -3211,7 +3211,7 @@
 			"name": "resilio-sync",
 			"platform": "linux",
 			"ports": [
-				"8888:8888/tcp"
+				"8888:8888/tcp",
 				"55555:55555/tcp"
 			],
 			"restart_policy": "unless-stopped",
