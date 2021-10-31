@@ -354,8 +354,8 @@
 			"name": "heimdall",
 			"platform": "linux",
 			"ports": [
-				"80/tcp",
-				"443/tcp"
+				"7202:80/tcp",
+				"7203:443/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Heimdall",
@@ -566,7 +566,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1000",
+					"default": "100",
 					"label": "PGID",
 					"name": "PGID"
 				}
@@ -578,7 +578,7 @@
 			"ports": [
 				"8081:8080/tcp",
 				"9090:9090/tcp",
-				"9777/udp"
+				"9777:9777/udp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Kodi Headless",
@@ -634,7 +634,7 @@
 				"Tools",
 				"Web"
 			],
-			"description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd \u0026lt;username\u0026gt;",
+			"description": "[DEPRECATED] This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd \u0026lt;username\u0026gt;",
 			"env": [
 				{
 					"label": "EMAIL",
@@ -687,8 +687,8 @@
 			"name": "letsencrypt",
 			"platform": "linux",
 			"ports": [
-				"80/tcp",
-				"443/tcp"
+				"80:80/tcp",
+				"443:443/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Let's Encrypt",
@@ -1190,7 +1190,7 @@
 			"name": "muximux",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7205:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Muximux",
@@ -1355,8 +1355,8 @@
 			"name": "nginx",
 			"platform": "linux",
 			"ports": [
-				"80/tcp",
-				"443/tcp"
+				"8080:80/tcp",
+				"8443:443/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Nginx",
@@ -1603,7 +1603,7 @@
 			"name": "organizr-v2",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7171:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Organizr v2",
@@ -1672,7 +1672,7 @@
 			"name": "photoshow",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7380:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "PhotoShow",
@@ -1808,7 +1808,7 @@
 			"name": "Chevereto",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7382:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Chevereto",
@@ -1989,7 +1989,7 @@
 			"name": "codiad",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7294:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Codiad",
@@ -2024,7 +2024,7 @@
 			"name": "cops",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"8945:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "COPS",
@@ -2104,6 +2104,9 @@
 			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-icon.png",
 			"name": "daapd",
 			"platform": "linux",
+			"ports": [
+				"3689:3689/tcp"
+			],
 			"restart_policy": "unless-stopped",
 			"title": "Daapd",
 			"type": 1,
@@ -2165,7 +2168,7 @@
 			"name": "davos",
 			"platform": "linux",
 			"ports": [
-				"8080/tcp"
+				"7136:8080/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Davos",
@@ -2235,6 +2238,10 @@
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/deluge-icon.png",
 			"name": "deluge",
 			"platform": "linux",
+			"ports": [
+				"6881:6881/tcp"
+				"8112:8112/tcp"
+			],
 			"restart_policy": "unless-stopped",
 			"title": "Deluge",
 			"type": 1,
@@ -2482,7 +2489,7 @@
 				"Books",
 				"Tools"
 			],
-			"description": "A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser",
+			"description": "[DEPRECATED] A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser",
 			"env": [
 				{
 					"default": "1000",
@@ -2499,6 +2506,9 @@
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/gazee-logo.png",
 			"name": "gazee",
 			"platform": "linux",
+			"ports": [
+				"4242:4242/tcp"
+			],
 			"restart_policy": "unless-stopped",
 			"title": "Gazee",
 			"type": 1,
@@ -2746,7 +2756,7 @@
 			"name": "piwigo",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7528:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Piwigo",
@@ -2914,7 +2924,7 @@
 			"name": "projectsend",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7580:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "ProjectSend",
@@ -2944,8 +2954,8 @@
 			"note": "Please refer to the documentation \u003ca href='https://hub.docker.com/r/shenxn/protonmail-bridge'/\u003ehere\u003c/a\u003e to set this up.",
 			"platform": "linux",
 			"ports": [
-				"143/tcp",
-				"25/tcp"
+				"143:143/tcp",
+				"25:25/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "ProtonMail Bridge",
@@ -2988,7 +2998,7 @@
 			],
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/pritunl.png",
 			"name": "pritunl",
-			"note": "Documentation on this containier can be found here: \u003ca href=https://hub.docker.com/r/goofball222/pritunl\u003ehttps://hub.docker.com/r/goofball222/pritunl\u003c/a\u003e",
+			"note": "[Arm64 only][Use Stack file from Selfhosted] Documentation on this containier can be found here: \u003ca href=https://hub.docker.com/r/goofball222/pritunl\u003ehttps://hub.docker.com/r/goofball222/pritunl\u003c/a\u003e",
 			"platform": "linux",
 			"repository": {
 				"stackfile": "Template/Stack/pritunl.yml",
@@ -3020,7 +3030,7 @@
 			"name": "pydio",
 			"platform": "linux",
 			"ports": [
-				"443/tcp"
+				"7526:443/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Pydio",
@@ -3164,7 +3174,7 @@
 			"name": "reactive-resume",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7768:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Reactive-Resume",
@@ -3200,6 +3210,10 @@
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/images/resilio.png",
 			"name": "resilio-sync",
 			"platform": "linux",
+			"ports": [
+				"8888:8888/tcp"
+				"55555:55555/tcp"
+			],
 			"restart_policy": "unless-stopped",
 			"title": "Resilio Sync",
 			"type": 1,
@@ -3239,7 +3253,7 @@
 			"name": "rutorrent",
 			"platform": "linux",
 			"ports": [
-				"80/tcp",
+				"5324:80/tcp",
 				"51413:51413/tcp",
 				"6881:6881/udp"
 			],
@@ -3311,7 +3325,7 @@
 			"name": "shiori",
 			"platform": "linux",
 			"ports": [
-				"8080/tcp"
+				"7564:8080/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Shiori",
@@ -3431,7 +3445,7 @@
 			"name": "smokeping",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"4794:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "SmokePing",
@@ -3765,7 +3779,7 @@
 			"name": "tt-rss",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"7352:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Tiny Tiny RSS",
@@ -4504,7 +4518,7 @@
 			"description": "Homebridge allows you to integrate with smart home devices that do not natively support HomeKit. There are over 2,000 Homebridge plugins supporting thousands of different smart accessories.",
 			"env": [
 				{
-					"default": "1000",
+					"default": "100",
 					"label": "PGID",
 					"name": "PGID"
 				},
