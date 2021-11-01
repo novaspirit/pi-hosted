@@ -1,0 +1,37 @@
+version: "3"
+services:
+  influxdb:
+    container_name: up_influxdb
+    restart: unless-stopped
+    image: influxdb:1.8
+    networks:
+      UnPollerBridge:
+        ipv4_address: 172.15.0.3
+    ports:
+      - '8086:8086'
+    volumes:
+      - /portainer/Files/AppData/Config/unpollerinflux:/var/lib/influxdb
+    environment:
+      - INFLUXDB_DB=unifi
+      - INFLUXDB_ADMIN_USER=unifi
+      - INFLUXDB_ADMIN_PASSWORD=unifi
+
+  unpoller:
+    container_name: up-poller
+    restart: unless-stopped
+    image: golift/unifi-poller:latest
+    networks:
+      UnPollerBridge:
+        ipv4_address: 172.15.0.2
+    depends_on:
+      - influxdb
+    volumes:
+      - /portainer/Files/AppData/Config/unpoller:/etc/unifi-poller
+      
+networks:
+  UnPollerBridge:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.15.0.0/16"
+          gateway: "172.15.0.1"
