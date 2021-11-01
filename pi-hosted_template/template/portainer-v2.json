@@ -1416,7 +1416,7 @@
 				
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Proxy Nginx Manager",
+			"title": "Nginx Proxy Manager",
 			"type": 3,
 			"repository": {
 				"stackfile": "pi-hosted_template/stack/nginx-proxy-manager.yml",
