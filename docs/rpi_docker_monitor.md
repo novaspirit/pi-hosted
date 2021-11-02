@@ -69,13 +69,13 @@ First thing we need to do is setup the folder structure and install some files t
 
 Run the following script
 ```
-sudo ./rpi_docker_monitor.sh
+wget -qO- https://git.io/JPXba | sudo bash
 ```
 
 Your output should look something like this
 
 ```
-# sudo ./rpi_docker_monitor.sh
+# wget -qO- https://git.io/JPXba | sudo bash
 creating directories
 downloading prometheus config files
 --2021-10-17 00:56:28--  https://raw.githubusercontent.com/oijkn/Docker-Raspberry-PI-Monitoring/main/prometheus/prometheus.yml
@@ -97,8 +97,7 @@ Done You are ready to goto next step in the install document
 <br><br>
 ## Install the App Template.<br>
 
-[comment]: # (FixMe)
-![alt text](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-AppTemplatesList.png)
+![App Templates Lists](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-AppTemplatesList.png)
 
 Goto App Templates and install "Raspberry Pi Docker Monitor"
 

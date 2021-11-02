@@ -22,7 +22,7 @@ sudo dpkg-query -W libseccomp2
 If you are running a version less that 2.5 you will need to run the upgrade script.
 
 ```
-wget -qO- https://git.io/JPsSb | bash
+wget -qO- https://git.io/JPXdj | bash
 ```
 
 ### Reboot for changes to take effect
