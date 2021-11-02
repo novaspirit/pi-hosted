@@ -5,8 +5,7 @@ services:
     restart: unless-stopped
     image: influxdb:1.8
     networks:
-      UnPollerBridge:
-        ipv4_address: 172.15.0.3
+      - UnPollerBridge
     ports:
       - '8086:8086'
     volumes:
@@ -21,8 +20,7 @@ services:
     restart: unless-stopped
     image: golift/unifi-poller:latest
     networks:
-      UnPollerBridge:
-        ipv4_address: 172.15.0.2
+      - UnPollerBridge
     depends_on:
       - influxdb
     volumes:
