@@ -18,13 +18,13 @@ First thing we need to do is setup the folder structure and install some files t
 
 Run the following script
 ```
-sudo ./nginx-proxy-manager.sh
+sudo ./tools/nginx-proxy-manager.sh
 ```
 
 Your output should look something like this
 
 ```
-# sudo ./nginx-proxy-manager.sh
+# sudo ./tools/nginx-proxy-manager.sh
 Creating directories...
 Creating a blank nginx-proxy-manager config files
 Setup complete. You can now install the stack using the App Template.
