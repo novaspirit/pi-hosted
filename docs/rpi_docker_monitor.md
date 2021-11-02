@@ -69,13 +69,13 @@ First thing we need to do is setup the folder structure and install some files t
 
 Run the following script
 ```
-sudo ./tools/rpi_docker_monitor.sh
+wget -qO- https://git.io/JPXba | sudo bash
 ```
 
 Your output should look something like this
 
 ```
-# sudo ./tools/rpi_docker_monitor.sh
+# wget -qO- https://git.io/JPXba | sudo bash
 creating directories
 downloading prometheus config files
 --2021-10-17 00:56:28--  https://raw.githubusercontent.com/oijkn/Docker-Raspberry-PI-Monitoring/main/prometheus/prometheus.yml
