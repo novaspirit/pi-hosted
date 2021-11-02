@@ -18,13 +18,13 @@ First thing we need to do is setup the folder structure and install some files t
 
 Run the following script
 ```
-sudo ./tools/nginx-proxy-manager.sh
+wget -qO- https://git.io/JPXF5 | sudo bash
 ```
 
 Your output should look something like this
 
 ```
-# sudo ./tools/nginx-proxy-manager.sh
+# wget -qO- https://git.io/JPXF5 | sudo bash
 Creating directories...
 Creating a blank nginx-proxy-manager config files
 Setup complete. You can now install the stack using the App Template.
