@@ -9,7 +9,7 @@ services:
     ports:
       - '8086:8086'
     volumes:
-      - /portainer/Files/AppData/Config/unpollerinflux:/var/lib/influxdb
+      - /portainer/Files/AppData/Config/unpoller/influx:/var/lib/influxdb
     environment:
       - INFLUXDB_DB=unifi
       - INFLUXDB_ADMIN_USER=unifi
@@ -24,12 +24,7 @@ services:
     depends_on:
       - influxdb
     volumes:
-      - /portainer/Files/AppData/Config/unpoller:/etc/unifi-poller
+      - /portainer/Files/AppData/Config/unpoller/config:/etc/unifi-poller
       
 networks:
   UnPollerBridge:
-    ipam:
-      driver: default
-      config:
-        - subnet: "172.15.0.0/16"
-          gateway: "172.15.0.1"
