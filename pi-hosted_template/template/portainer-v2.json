@@ -2304,12 +2304,12 @@
 				{
 					"default": "",
 					"label": "SUBDOMAINS (Comma Separated List)",
-					"name": "SUBDOMAINS",
+					"name": "SUBDOMAINS"
 				},
 				{
 					"default": "",
 					"label": "TOKEN",
-					"name": "TOKEN",
+					"name": "TOKEN"
 				},
 				{
 					"default": "1000",
@@ -2321,7 +2321,7 @@
 					"label": "PGID",
 					"name": "PGID"
 				},
-				{
+					"default": "Europe/London",
 					"label": "TZ",
 					"name": "TZ"
 				}
