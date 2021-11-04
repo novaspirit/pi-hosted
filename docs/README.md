@@ -68,8 +68,9 @@ You're done! Now just click App Templates and deploy applications!
 
 #### Don't forgot to check out our additional documentation in the Docs folder.
 
-| ------------- | ------------- |
-| Additional Documentation | https://github.com/novaspirit/pi-hosted/tree/master/docs |
+| Additional Documentation |
+| ------------- |
+| https://github.com/novaspirit/pi-hosted/tree/master/docs |
 
 
 ### Contributors
