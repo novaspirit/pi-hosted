@@ -61,8 +61,12 @@ You're done! Now just click App Templates and deploy applications!
 | 6 |     [Portainer.io App Template for Raspberry Pi arm/arm64 I Need Your Help!](https://www.youtube.com/watch?v=Zn-VELlaIN4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=6)     |
 | 7 |                   [Upgrading Portainer and Updating Containers](https://www.youtube.com/watch?v=q3wKqk8qVS8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=7)                  |
 | 8 |                         [Raspberry Pi Docker Monitoring](https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8)                         |
+| 9 |                         [Nginx Proxy Manager on Docker](https://www.youtube.com/watch?v=yl2Laxbqvo8)                         |
+
 =======
 ### Addition Documentation can be found in the Docs Folder
+
+##Don't forgot to check out our additional documentation in the Docs folder.
 
 https://github.com/novaspirit/pi-hosted/tree/master/docs
 
