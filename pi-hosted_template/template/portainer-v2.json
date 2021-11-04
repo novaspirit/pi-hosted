@@ -310,9 +310,22 @@
 			],
 			"env": [
 				{
-					"FOUNDRY_PASSWORD": "Foundry Password",
-					"FOUNDRY_USERNAME": "Foundry Account",
-					"FOUNDRY_ADMIN_KEY": "Instance Password"
+					"default": "John",
+					"label": "Foundry Account Name",
+					"name": "FOUNDRY_USERNAME"
+				},
+				{
+					"default": "password",
+					"label": "Foundry Password",
+					"name": "FOUNDRY_PASSWORD"
+				},
+				{
+					"default": "changeme",
+					"label": "Instance Admin Password",
+					"name": "FOUNDRY_ADMIN_KEY"
+				},
+				{
+					"CONTAINER_PRESERVE_CONFIG": "true"
 				}
 			],
 			"restart_polocy": "unless-stopped",
