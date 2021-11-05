@@ -42,9 +42,11 @@ Click Settings, in the bottom-left corner, and paste the Portainer v2 json file 
 You're done! Now just click App Templates and deploy applications!
 
 #### Versions
-| Application  | URL |
-| ------------- | ------------- |
-| Portainer v2 | https://raw.githubusercontent.com/novaspirit/pi-hosted/master/pi-hosted_template/template/portainer-v2.json |
+| Application  | Supported OS's | URL |
+| ------------- | ------------- | ------------- |
+| Portainer v2 Arm32 | Pi OS | https://raw.githubusercontent.com/novaspirit/pi-hosted/master/template/portainer-v2-arm32.json |
+| Portainer v2 Arm64 | Pi OS 64 Beta, Ubunutu 64, DietPI 64 | https://raw.githubusercontent.com/novaspirit/pi-hosted/master/template/portainer-v2-arm64.json |
+
 
 ### Pi-Hosted YouTube series
 
