@@ -325,7 +325,9 @@
 					"name": "FOUNDRY_ADMIN_KEY"
 				},
 				{
-					"CONTAINER_PRESERVE_CONFIG": "true"
+					"label": "CONTAINER_PRESERVE_CONFIG",
+					"name": "CONTAINER_PRESERVE_CONFIG",
+					"set": "true"
 				}
 			],
 			"restart_polocy": "unless-stopped",
