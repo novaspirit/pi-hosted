@@ -2,7 +2,7 @@
 version: "2"
 services:
   nextcloud:
-    image: linuxserver/nextcloud
+    image: linuxserver/nextcloud:latest
     container_name: nextcloud
     environment:
       - PUID=${PUID}
@@ -16,7 +16,7 @@ services:
     depends_on:
       - nextcloud_db
   nextcloud_db:
-    image: linuxserver/mariadb
+    image: linuxserver/mariadb:latest
     container_name: nextcloud_db
     environment:
       - PUID=${PUID}
