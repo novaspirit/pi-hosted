@@ -1350,7 +1350,7 @@
 				}
 			]
 
-    	},
+	    	},
 		{
 			"categories": [
 				"Other",
@@ -2763,7 +2763,7 @@
 					"bind": "/portainer/Files/AppData/Config/ncdata",
 					"container": "/data"
 				}
-			]	
+			]
 		},
 		{
 			"categories": [
@@ -2826,7 +2826,6 @@
 					"label": "MYSQL_ROOT_PASSWORD",
 					"name": "MYSQL_ROOT_PASSWORD"
 				}
-				
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Nginx Proxy Manager",
@@ -2835,8 +2834,7 @@
 				"stackfile": "stack/nginx-proxy-manager.yml",
 				"url": "https://github.com/novaspirit/pi-hosted"
 			}
-		},		
-
+		},
 		{
 			"categories": [
 				"Downloaders"
