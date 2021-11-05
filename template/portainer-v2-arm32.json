@@ -327,7 +327,7 @@
 				{
 					"label": "CONTAINER_PRESERVE_CONFIG",
 					"name": "CONTAINER_PRESERVE_CONFIG",
-					"set": "true"
+					"default": "true"
 				}
 			],
 			"restart_polocy": "unless-stopped",
