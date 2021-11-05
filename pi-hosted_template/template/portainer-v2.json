@@ -1796,8 +1796,8 @@
 			"note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
 			"platform": "linux",
 			"repository": {
-				"stackfile": "Template/Stack/bookstack.yml",
-				"url": "https://github.com/SelfhostedPro/selfhosted_templates"
+				"stackfile": "stack/bookstack.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
 			},
 			"title": "Bookstack",
 			"type": 3
