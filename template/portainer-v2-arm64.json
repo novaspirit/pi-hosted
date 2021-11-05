@@ -32,7 +32,7 @@
 					"set": "-Xms256m -Xmx512m"
 				}
 			],
-			"image": "linuxserver/airsonic:arm32v7-latest",
+			"image": "linuxserver/airsonic:arm64v8-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/airsonic-logo.png",
 			"name": "airsonic",
 			"platform": "linux",
@@ -868,7 +868,7 @@
 					"default": "192.168.0.0/16"
 				}
 			],
-			"image": "sgtsquiggs/deluge-openvpn:arm32v7-latest",
+			"image": "sgtsquiggs/deluge-openvpn:arm64v8-latest",
 			"name": "deluge-openvpn",
 			"platform": "linux",
 			"ports": [
@@ -1315,7 +1315,7 @@
 				"Tools"
 			],
 			"description": "A simple server for sending and receiving messages",
-			"image": "gotify/server-arm7:latest",
+			"image": "gotify/server-arm64:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/gotify.png",
 			"name": "gotify",
 			"note": "ARM7 Image. Documentation is Available \u003ca href='https://gotify.net/docs/index'\u003ehere\u003c/a\u003e.",
@@ -1737,7 +1737,7 @@
 					"name": "MYJD_PASSWORD"
 				}
 			],
-			"image": "jaymoulin/jdownloader:1.4.3-armhf",
+			"image": "jaymoulin/jdownloader:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jdownloader.png",
 			"name": "JDownloader",
 			"platform": "linux",
@@ -1971,7 +1971,7 @@
                                         "name": "PGID"
                                 }
                         ],
-			"image": "linuxserver/librespeed:arm32v7-latest",
+			"image": "linuxserver/librespeed:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/speedtest.png",
 			"name": "librespeed",
 			"platform": "linux",
@@ -2076,7 +2076,7 @@
                                         "set": "3306"
                                 }
 			],
-			"image": "linuxserver/lychee:arm32v7-latest",
+			"image": "linuxserver/lychee:arm64v8-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lychee-icon.png",
 			"name": "lychee",
 			"platform": "linux",
@@ -2135,7 +2135,7 @@
                                         "set": "dbpassword"
                                 }
 			],
-			"image": "linuxserver/mariadb:arm32v7-latest",
+			"image": "linuxserver/mariadb:arm64v8-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mariadb-icon.png",
 			"name": "mariadb",
 			"platform": "linux",
@@ -2750,7 +2750,7 @@
 			"name": "nextcloudpi",
 			"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
 			"platform": "linux",
-			"image": "ownyourbits/nextcloudpi",
+			"image": "ownyourbits/nextcloudpi:latest",
 			"title": "NextcloudPi",
 			"type": 1,
 			"ports":[
@@ -3989,9 +3989,9 @@
 			"description": "Run a Speedtest every hour and graph the results.  See https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags for arch options",
 			"env": [
 				{
-					"default": "latest-arm",
 					"label": "arch",
-					"set": "x86_64"
+					"name": "arch",
+					"default": "latest-arm"
 				},
 				{
 					"label": "OOKLA_EULA_GDPR",
@@ -4751,7 +4751,7 @@
 				"VPN"
 			],
 			"description": "You have found the easiest way to install & manage WireGuard on any Linux host!",
-			"image": "weejewel/wg-easy",
+			"image": "weejewel/wg-easy:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/wireguard.png",
 			"name": "wg-easy",
 			"platform": "linux",
