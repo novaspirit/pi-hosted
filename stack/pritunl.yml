@@ -1,0 +1,36 @@
+---
+version: '2'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: pritunldb
+    hostname: pritunldb
+    network_mode: bridge
+    volumes:
+      - /portainer/Files/AppData/Config/Pritunl/db:/data/db
+
+  pritunl:
+    image: goofball222/pritunl:latest
+    container_name: pritunl
+    hostname: pritunl
+    depends_on:
+        - mongo
+    network_mode: bridge
+    privileged: true
+    links:
+      - mongo
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 80:80
+      - 443:443
+      - 1194:1194
+      - 1194:1194/udp
+      - 1195:1195/udp
+    environment:
+      - TZ=UTC
+      - REVERSE_PROXY=${REVERSE_PROXY}
+      - PRITUNL_OPTS=${PRITUNL_OPTS}
+      - MONGODB_URI=${MONGODB_URI}
+      - WIREGUARD=${WIREGUARD}
