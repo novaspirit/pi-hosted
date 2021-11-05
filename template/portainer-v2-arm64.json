@@ -3052,7 +3052,7 @@
 			"repository": {
 				"stackfile": "stack/pritunl.yml",
 				"url": "https://github.com/novaspirit/pi-hosted"
-			}
+			},
 			"title": "Pritunl",
 			"type": 3
 		},
