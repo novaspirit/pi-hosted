@@ -32,7 +32,7 @@
 					"set": "-Xms256m -Xmx512m"
 				}
 			],
-			"image": "linuxserver/airsonic:arm32v7-latest",
+			"image": "linuxserver/airsonic:arm64v8-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/airsonic-logo.png",
 			"name": "airsonic",
 			"platform": "linux",
@@ -798,32 +798,32 @@
 					"name": "PGID"
 				},
 				{
-                                        "label": "DB_HOST",
-                                        "name": "DB_HOST",
-                                        "set": "mariadb"
-                                },
-                                {
-                                        "label": "DB_USERNAME",
-                                        "name": "DB_USERNAME",
-                                        "set": "lychee"
-                                },
-                                {
-                                        "label": "DB_PASSWORD",
-                                        "name": "DB_PASSWORD",
-                                        "set": "dbpassword_that_was_set_in_lychee-mariadb"
-                                },
-                                {
-                                        "label": "DB_DATABASE",
-                                        "name": "DB_DATABASE",
-                                        "set": "lychee"
-                                },
-                                {
-                                        "label": "DB_PORT",
-                                        "name": "DB_PORT",
-                                        "set": "3306"
-                                }
+                    "label": "DB_HOST",
+                    "name": "DB_HOST",
+                    "set": "mariadb"
+                },
+                {
+                    "label": "DB_USERNAME",
+                    "name": "DB_USERNAME",
+                    "set": "lychee"
+                },
+                {
+                    "label": "DB_PASSWORD",
+                    "name": "DB_PASSWORD",
+                    "set": "dbpassword_that_was_set_in_lychee-mariadb"
+                },
+                {
+                    "label": "DB_DATABASE",
+                    "name": "DB_DATABASE",
+                    "set": "lychee"
+                },
+                {
+                    "label": "DB_PORT",
+                    "name": "DB_PORT",
+                    "set": "3306"
+                }
 			],
-			"image": "linuxserver/lychee:arm32v7-latest",
+			"image": "linuxserver/lychee:arm64v8-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lychee-icon.png",
 			"name": "lychee",
 			"platform": "linux",
@@ -862,27 +862,27 @@
 					"name": "PGID"
 				},
 				{
-                                        "label": "MYSQL_ROOT_PASSWORD",
-                                        "name": "MYSQL_ROOT_PASSWORD",
-                                        "set": "rootpassword"
-                                },
+                    "label": "MYSQL_ROOT_PASSWORD",
+                    "name": "MYSQL_ROOT_PASSWORD",
+                    "set": "rootpassword"
+                },
 				{
-                                        "label": "MYSQL_DATABASE",
-                                        "name": "MYSQL_DATABASE",
-                                        "set": "lychee"
-                                },
+                    "label": "MYSQL_DATABASE",
+                    "name": "MYSQL_DATABASE",
+                    "set": "lychee"
+                },
 				{
 					"label": "MYSQL_USER",
 					"name": "MYSQL_USER",
 					"set": "lychee"
 				},
 				{
-                                        "label": "MYSQL_PASSWORD",
-                                        "name": "MYSQL_PASSWORD",
-                                        "set": "dbpassword"
-                                }
+                    "label": "MYSQL_PASSWORD",
+                    "name": "MYSQL_PASSWORD",
+                    "set": "dbpassword"
+                }
 			],
-			"image": "linuxserver/mariadb:arm32v7-latest",
+			"image": "linuxserver/mariadb:arm64v8-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mariadb-icon.png",
 			"name": "mariadb",
 			"platform": "linux",
@@ -922,7 +922,7 @@
 					"name": "MYJD_PASSWORD"
 				}
 			],
-			"image": "jaymoulin/jdownloader:1.4.3-armhf",
+			"image": "jaymoulin/jdownloader:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jdownloader.png",
 			"name": "JDownloader",
 			"platform": "linux",
@@ -1360,7 +1360,7 @@
 			"name": "nextcloudpi",
 			"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
 			"platform": "linux",
-			"image": "ownyourbits/nextcloudpi",
+			"image": "ownyourbits/nextcloudpi:latest",
 			"title": "NextcloudPi",
 			"type": 1,
 			"ports":[
@@ -2479,7 +2479,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
+			"description": "Web File Browser which can be used as a middleware or standalone app.",
 			"image": "filebrowser/filebrowser:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/filebrowser.png",
 			"name": "filebrowser",
@@ -2621,7 +2621,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "[arm] A clientless remote desktop gateway.",
+			"description": "A clientless remote desktop gateway.",
 			"image": "oznu/guacamole:armhf",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/guacamole.png",
 			"name": "guacamole",
@@ -3743,7 +3743,7 @@
 				"VPN",
 				"Tools"
 			],
-			"description": "[arm] This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
+			"description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
 			"env": [
 				{
 					"default": "1000",
@@ -3761,12 +3761,12 @@
 					"label": "OPENVPN_PROVIDER",
 					"name": "OPENVPN_PROVIDER"
 				},
-                                {
-                                        "default": "",
-                                        "description": "Optional. Mostly used to narrow down what location to use by the provider",
-                                        "label": "OPENVPN_CONFIG",
-                                        "name": "OPENVPN_CONFIG"
-                                },
+                {
+                    "default": "",
+                    "description": "Optional. Mostly used to narrow down what location to use by the provider",
+                    "label": "OPENVPN_CONFIG",
+                    "name": "OPENVPN_CONFIG"
+                },
 				{
 					"default": "",
 					"label": "OPENVPN_USERNAME",
@@ -4293,7 +4293,7 @@
 					"default": "192.168.0.0/16"
 				}
 			],
-			"image": "sgtsquiggs/deluge-openvpn:arm32v7-latest",
+			"image": "sgtsquiggs/deluge-openvpn:arm64v8-latest",
 			"name": "deluge-openvpn",
 			"platform": "linux",
 			"ports": [
@@ -4367,9 +4367,9 @@
 			"description": "Run a Speedtest every hour and graph the results.  See https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags for arch options",
 			"env": [
 				{
-					"default": "latest-arm",
 					"label": "arch",
-					"set": "x86_64"
+					"name": "arch",
+					"default": "latest-arm"
 				},
 				{
 					"label": "OOKLA_EULA_GDPR",
@@ -4488,7 +4488,7 @@
 				"VPN"
 			],
 			"description": "You have found the easiest way to install & manage WireGuard on any Linux host!",
-			"image": "weejewel/wg-easy",
+			"image": "weejewel/wg-easy:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/wireguard.png",
 			"name": "wg-easy",
 			"platform": "linux",
@@ -4629,14 +4629,13 @@
 			]
 
 		},
-
 		{
 			"categories": [
 				"Other",
 				"Tools"
 			],
 			"description": "A simple server for sending and receiving messages",
-			"image": "gotify/server-arm7:latest",
+			"image": "gotify/server-arm64:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/gotify.png",
 			"name": "gotify",
 			"note": "ARM7 Image. Documentation is Available \u003ca href='https://gotify.net/docs/index'\u003ehere\u003c/a\u003e.",
