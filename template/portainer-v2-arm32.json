@@ -1590,29 +1590,6 @@
 		},
 		{
 			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "Create agents that monitor and act on your behalf.",
-			"image": "mjysci/huginn:arm32v7",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/huginn.png",
-			"name": "huginn",
-			"platform": "linux",
-			"ports": [
-				"3000:3000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Huginn",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/huginn",
-					"container": "/var/lib/mysql"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Video",
 				"Music",
 				"Other"
@@ -1644,6 +1621,29 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/HTPCmanager",
 					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Create agents that monitor and act on your behalf.",
+			"image": "mjysci/huginn:arm32v7",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/huginn.png",
+			"name": "huginn",
+			"platform": "linux",
+			"ports": [
+				"3000:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Huginn",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/huginn",
+					"container": "/var/lib/mysql"
 				}
 			]
 		},
