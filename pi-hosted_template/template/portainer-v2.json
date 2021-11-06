@@ -4163,6 +4163,40 @@
 		},
 		{
 			"categories": [
+				"Other"
+			],
+			"description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "lunik1/tt-rss:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/tt-rss-icon.png",
+			"name": "tt-rss",
+			"platform": "linux",
+			"ports": [
+				"7352:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Tiny Tiny RSS",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/tt-rss",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Downloaders"
 			],
 			"description": "Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
@@ -4269,40 +4303,6 @@
 				{
 					"bind": "/etc/localtime",
 					"container": "/etc/localtime"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other"
-			],
-			"description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "lunik1/tt-rss:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/tt-rss-icon.png",
-			"name": "tt-rss",
-			"platform": "linux",
-			"ports": [
-				"7352:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Tiny Tiny RSS",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/tt-rss",
-					"container": "/config"
 				}
 			]
 		},
@@ -4725,6 +4725,33 @@
 		{
 			"categories": [
 				"Other",
+				"Tools"
+			],
+			"description": "A web interface for managing docker containers with an emphasis on templating to provide 1 click deployments. Think of it like a decentralized app store for servers that anyone can make packages for.",
+			"image": "selfhostedpro/yacht:latest",
+			"logo": "https://raw.githubusercontent.com/SelfhostedPro/Yacht/master/readme_media/Yacht_logo_1_dark.png",
+			"name": "yacht",
+			"platform": "linux",
+			"ports": [
+				"8001:8000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Yacht",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "yacht",
+					"container": "/config"
+				},
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
 				"Downloaders"
 			],
 			"description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
@@ -4758,33 +4785,6 @@
 				{
 					"bind": "/portainer/Files/AppData/Youtube/Audio",
 					"container": "/app/audio"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "A web interface for managing docker containers with an emphasis on templating to provide 1 click deployments. Think of it like a decentralized app store for servers that anyone can make packages for.",
-			"image": "selfhostedpro/yacht:latest",
-			"logo": "https://raw.githubusercontent.com/SelfhostedPro/Yacht/master/readme_media/Yacht_logo_1_dark.png",
-			"name": "yacht",
-			"platform": "linux",
-			"ports": [
-				"8001:8000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Yacht",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "yacht",
-					"container": "/config"
-				},
-				{
-					"bind": "/var/run/docker.sock",
-					"container": "/var/run/docker.sock"
 				}
 			]
 		},
