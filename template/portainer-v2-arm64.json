@@ -68,33 +68,53 @@
 		{
 			"categories": [
 				"Other",
-				"Tools",
-				"Games"
+				"Tools"
 			],
-			"description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
-			"image": "itzg/minecraft-server:multiarch-latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/minecraft.png",
-			"name": "minecraft",
+			"description": "ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view sites you want to preserve offline.",
+			"image": "archivebox/archivebox:master",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/archivebox.png",
+			"name": "archivebox",
+			"note": "By default an admin user is not created. You can do so by launching a shell in the container and executing 'archivebox manage createsuperuser'. Documentation is Available \u003ca href='https://github.com/ArchiveBox/ArchiveBox/wiki'\u003ehere\u003c/a\u003e.",
 			"platform": "linux",
-			"type": 1,
 			"ports": [
-				"25565:25565/tcp"
+				"8002:8000/tcp"
 			],
+			"restart_policy": "unless-stopped",
+			"title": "Archivebox",
+			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Minecraft-data",
+					"bind": "/portainer/Files/AppData/Config/archivebox",
 					"container": "/data"
 				}
 			],
 			"env": [
 				{
-					"label": "EULA",
-					"name": "EULA",
-					"default": "TRUE"
+					"default": "*",
+					"label": "ALLOWED_HOSTS",
+					"name": "ALLOWED_HOSTS"
+				},
+				{
+					"default": "750m",
+					"label": "MEDIA_MAX_SIZE",
+					"name": "MEDIA_MAX_SIZE"
+				},
+				{
+					"default": true,
+					"label": "PUBLIC_INDEX",
+					"name": "PUBLIC_INDEX"
+				},
+				{
+					"default": true,
+					"label": "PUBLIC_SNAPSHOTS",
+					"name": "PUBLIC_SNAPSHOTS"
+				},
+				{
+					"default": false,
+					"label": "PUBLIC_ADD_VIEW",
+					"name": "PUBLIC_ADD_VIEW"
 				}
-			],
-			"restart_polocy": "unless-stopped",
-			"title": "Minecraft Server"
+			]
 		},
 		{
 			"categories": [
@@ -261,1503 +281,6 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/Booksonic",
 					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
-			"image": "linuxserver/embystat:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/embystat.png",
-			"name": "embystat",
-			"note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services.",
-			"platform": "linux",
-			"ports": [
-				"6555:6555/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "EmbyStat",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/EmbyStat",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Games"
-			],
-			"description": "This docker image provides the FoundryVTT system for hosting your own virtual table top games.",
-			"image": "felddy/foundryvtt:release",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/foundrylogo.png",
-			"name": "FoundryVTT",
-			"platform": "linux",
-			"type": 1,
-			"ports": [
-				"30000:30000/tcp"
-			],
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/foundryvtt",
-					"container": "/data"
-				}
-			],
-			"env": [
-				{
-					"default": "John",
-					"label": "Foundry Account Name",
-					"name": "FOUNDRY_USERNAME"
-				},
-				{
-					"default": "password",
-					"label": "Foundry Password",
-					"name": "FOUNDRY_PASSWORD"
-				},
-				{
-					"default": "changeme",
-					"label": "Instance Admin Password",
-					"name": "FOUNDRY_ADMIN_KEY"
-				},
-				{
-					"label": "CONTAINER_PRESERVE_CONFIG",
-					"name": "CONTAINER_PRESERVE_CONFIG",
-					"default": "true"
-				}
-			],
-			"restart_polocy": "unless-stopped",
-			"title": "FoundryVTT Server"
-		},
-		{
-			"categories": [
-				"Music"
-			],
-			"description": null,
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/headphones:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/headphones-icon.png",
-			"name": "headphones",
-			"platform": "linux",
-			"ports": [
-				"8181:8181/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Headphones",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Headphones",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/Downloads"
-				},
-				{
-					"bind": "/portainer/Music",
-					"container": "/music"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Tools",
-				"Web",
-				"Other"
-			],
-			"description": "Heimdall is a way to organise all those links to your most used web sites and web applications in a simple way.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/heimdall:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/heimdall-icon.png",
-			"name": "heimdall",
-			"platform": "linux",
-			"ports": [
-				"7202:80/tcp",
-				"7203:443/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Heimdall",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Heimdall",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"description": "Home Assistant is a free and open-source software for home automation that is designed to be the central control system for smart home devices with focus on local control and privacy.",
-			"image": "homeassistant/home-assistant:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/homeassistant.png",
-			"name": "home assistant",
-			"platform": "linux",
-			"ports": [
-				"8999:8123/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Home Assistant",
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/HomeAssistant/assets",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
-			"image": "b4bz/homer:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/homer.png",
-			"name": "homer",
-			"note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
-			"platform": "linux",
-			"ports": [
-				"8902:8080/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Homer",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Homer/assets",
-					"container": "/www/assets"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/Homer",
-					"container": "/www/config.yml"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "Create agents that monitor and act on your behalf.",
-			"image": "mjysci/huginn:arm32v7",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/huginn.png",
-			"name": "huginn",
-			"platform": "linux",
-			"ports": [
-				"3000:3000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Huginn",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/huginn",
-					"container": "/var/lib/mysql"
-				}
-			]
-		},
-
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "InfluxDB is an open source time series database for recording metrics, events, and analytics. You will need to add /portainer/Files/AppData/Config/Influxdb/config/influxdb.conf",
-			"image": "influxdb:1.8.10",
-			"logo": "https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/influxdb/logo.png",
-			"name": "influxdb1810",
-			"platform": "linux",
-			"ports": [
-				"8086:8086/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"hostname": "rpi-influxdb1810",
-			"title": "Influxdb 1.8.10",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Influxdb/data",
-					"container": "/var/lib/influxdb"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/Influxdb/config",
-					"container": "/var/lib/influxdb"
-				}
-			]
-		},
-		
-		{
-			"categories": [
-				"Downloaders",
-				"Tools"
-			],
-			"description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.[",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/jackett:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jacket-icon.png",
-			"name": "jackett",
-			"platform": "linux",
-			"ports": [
-				"9117:9117/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Jackett",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Jackett",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/downloads"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Video",
-				"Music",
-				"Photos"
-			],
-			"description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"label": "TZ",
-					"name": "TZ"
-				}
-			],
-			"image": "linuxserver/jellyfin:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jellyfin.png",
-			"name": "jellyfin",
-			"platform": "linux",
-			"ports": [
-				"8096:8096/tcp",
-				"8920:8920/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Jellyfin",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Jelllyfin",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/TV",
-					"container": "/data/tvshows"
-				},
-				{
-					"bind": "/portainer/Movies",
-					"container": "/data/movies"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Video"
-			],
-			"description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "lsioarmhf/kodi-headless:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/kodi-icon.png",
-			"name": "kodi-headless",
-			"platform": "linux",
-			"ports": [
-				"8081:8080/tcp",
-				"9090:9090/tcp",
-				"9777:9777/udp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Kodi Headless",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Kodi",
-					"container": "/config/.kodi"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Books"
-			],
-			"description": "LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/lazylibrarian:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lazylibrarian-icon.png",
-			"name": "lazylibrarian",
-			"platform": "linux",
-			"ports": [
-				"5299:5299/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "LazyLibrarian",
-			"type": 1,
-			"volumes": [
-				{
-					"container": "/config"
-				},
-				{
-					"container": "/downloads"
-				},
-				{
-					"container": "/books"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Tools",
-				"Web"
-			],
-			"description": "[DEPRECATED] This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd \u0026lt;username\u0026gt;",
-			"env": [
-				{
-					"label": "EMAIL",
-					"name": "EMAIL",
-					"set": "-Xms256m -Xmx512m"
-				},
-				{
-					"label": "URL",
-					"name": "URL",
-					"set": "-Xms256m -Xmx512m"
-				},
-				{
-					"label": "SUBDOMAINS",
-					"name": "SUBDOMAINS",
-					"set": "www,"
-				},
-				{
-					"label": "ONLY_SUBDOMAINS",
-					"name": "ONLY_SUBDOMAINS",
-					"set": "false"
-				},
-				{
-					"label": "DHLEVEL",
-					"name": "DHLEVEL",
-					"set": "2048"
-				},
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"label": "VALIDATION",
-					"name": "VALIDATION",
-					"set": "http"
-				},
-				{
-					"label": "DNSPLUGIN",
-					"name": "DNSPLUGIN",
-					"set": "http"
-				}
-			],
-			"image": "linuxserver/letsencrypt:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/letsencrypt.png",
-			"name": "letsencrypt",
-			"platform": "linux",
-			"ports": [
-				"80:80/tcp",
-				"443:443/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Let's Encrypt",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/LetsEncrypt",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "A Free and Open Source Speedtest for HTML5 and more.",
-			"env": [
-                                {
-                                        "default": "1000",
-                                        "label": "PUID",
-                                        "name": "PUID"
-                                },
-                                {
-                                        "default": "1000",
-                                        "label": "PGID",
-                                        "name": "PGID"
-                                }
-                        ],
-			"image": "linuxserver/librespeed:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/speedtest.png",
-			"name": "librespeed",
-			"platform": "linux",
-			"ports": [
-				"83:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "LibreSpeed",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/LibreSpeed",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Cloud",
-				"Web",
-				"Management",
-				"Photos"
-			],
-			"description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-                    "label": "DB_HOST",
-                    "name": "DB_HOST",
-                    "set": "mariadb"
-                },
-                {
-                    "label": "DB_USERNAME",
-                    "name": "DB_USERNAME",
-                    "set": "lychee"
-                },
-                {
-                    "label": "DB_PASSWORD",
-                    "name": "DB_PASSWORD",
-                    "set": "dbpassword_that_was_set_in_lychee-mariadb"
-                },
-                {
-                    "label": "DB_DATABASE",
-                    "name": "DB_DATABASE",
-                    "set": "lychee"
-                },
-                {
-                    "label": "DB_PORT",
-                    "name": "DB_PORT",
-                    "set": "3306"
-                }
-			],
-			"image": "linuxserver/lychee:arm64v8-latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lychee-icon.png",
-			"name": "lychee",
-			"platform": "linux",
-			"ports": [
-				"84:84/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Lychee",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Lychee",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Pictures",
-					"container": "/pictures"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "An Enhanced drop in replacement for Mysql",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-                    "label": "MYSQL_ROOT_PASSWORD",
-                    "name": "MYSQL_ROOT_PASSWORD",
-                    "set": "rootpassword"
-                },
-				{
-                    "label": "MYSQL_DATABASE",
-                    "name": "MYSQL_DATABASE",
-                    "set": "lychee"
-                },
-				{
-					"label": "MYSQL_USER",
-					"name": "MYSQL_USER",
-					"set": "lychee"
-				},
-				{
-                    "label": "MYSQL_PASSWORD",
-                    "name": "MYSQL_PASSWORD",
-                    "set": "dbpassword"
-                }
-			],
-			"image": "linuxserver/mariadb:arm64v8-latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mariadb-icon.png",
-			"name": "mariadb",
-			"platform": "linux",
-			"ports": [
-				"3306:3306/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "MariaDB",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Mariadb",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Downloaders",
-				"Tools"
-			],
-			"description": "JDownloader docker image",
-			"env": [
-				{
-					"set": "",
-					"label": "MYJD_DEVICE_NAME",
-					"name": "MYJD_DEVICE_NAME"
-				},
-				{
-					"set": "",
-					"label": "MYJD_USER",
-					"name": "MYJD_USER"
-				},
-				{
-					"set": "",
-					"label": "MYJD_PASSWORD",
-					"name": "MYJD_PASSWORD"
-				}
-			],
-			"image": "jaymoulin/jdownloader:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jdownloader.png",
-			"name": "JDownloader",
-			"platform": "linux",
-			"ports": [
-				"3129:3129/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "JDownloader",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/JDownloader",
-					"container": "/opt/JDownloader/cfg"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/opt/JDownloader/Downloads"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Downloaders",
-				"Video"
-			],
-			"description": "Medusa, automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/medusa:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/medusa-icon.png",
-			"name": "medusa",
-			"platform": "linux",
-			"ports": [
-				"8081:8081/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Medusa",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Medusa",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/TV",
-					"container": "/tv"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/downloads"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other"
-			],
-			"description": "Server version of minetest, a free, open source alternative to minecraft.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/minetest:latest",
-			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
-			"name": "minetest",
-			"platform": "linux",
-			"ports": [
-				"30000:30000/udp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Minetest",
-			"type": 1,
-			"volumes": [
-				{
-					"container": "/config/.minetest"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Video",
-				"Other",
-				"Tools"
-			],
-			"description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.\n\n  The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.\n  ",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/minisatip:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/minisatip-icon.png",
-			"name": "minisatip",
-			"platform": "linux",
-			"ports": [
-				"8875:8875/tcp",
-				"554:554/tcp",
-				"1900:1900/udp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Minisatip",
-			"type": 1
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "Eclipse Mosquitto is an open source implementation of a server for versions 5, 3.1.1, and 3.1 of the MQTT protocol.\r\nYou will need to create /portainer/Files/AppData/Config/Mosquitto/config/mosquitto.conf and if needed your password file.\r\nHave a look on https://mosquitto.org/man/mosquitto_passwd-1.html",
-			"image": "eclipse-mosquitto:latest",
-			"logo": "https://raw.githubusercontent.com/docker-library/docs/757578e3a44e5460a8a11d32a81776f8b74231a9/eclipse-mosquitto/logo.png",
-			"name": "mosquitto",
-			"platform": "linux",
-			"ports": [
-				"1883:1883/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"hostname": "rpi-mosquitto",
-			"title": "Eclipse Mosquitto",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Mosquitto/config",
-					"container": "/mosquitto/config"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/Mosquitto/data",
-					"container": "/mosquitto/data"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/Mosquitto/log",
-					"container": "/mosquitto/log"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Music"
-			],
-			"description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
-			"image": "linuxserver/mstream:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mstream.png",
-			"name": "mstream",
-			"platform": "linux",
-			"ports": [
-				"3000:3000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Mstream",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Mstream",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/music"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Voice",
-				"Chat"
-			],
-			"description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"label": "TZ",
-					"name": "TZ"
-				}
-			],
-			"image": "yhaenggi/murmur:1.3.4",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/Mumble-logo.png",
-			"name": "murmur",
-			"platform": "linux",
-			"ports": [
-				"64738:64738/tcp",
-				"64738:64738/udp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Murmur",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/etc/localtime:ro",
-					"container": "/etc/localtime"
-				},
-				{
-					"bind": "/portainer/Files/Config/Murmur",
-					"container": "/opt/murmur/config"
-				},
-				{
-					"bind": "/portainer/Files/Murmur/data",
-					"container": "/opt/murmur/data"
-				},
-				{
-					"bind": "/portainer/Files/Murmur/log",
-					"container": "/opt/murmur/log"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Music",
-				"Other",
-				"Tools"
-			],
-			"description": " MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
-			"env": [
-				{
-					"label": "BRAINZCODE",
-					"name": "BRAINZCODE",
-					"set": ""
-				},
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/musicbrainz:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/musicbrainz-icon.png",
-			"name": "musicbrainz",
-			"platform": "linux",
-			"ports": [
-				"5000:5000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "MusicBrainz",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/MusicBrainz",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Files/AppData/MusicBrainz",
-					"container": "/data"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Web",
-				"Proxy",
-				"Other",
-				"Tools"
-			],
-			"description": "A lightweight portal to view, manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to keep multiple tabs open, or bookmark the URL to all of your apps.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/muximux:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/muximux-icon.png",
-			"name": "muximux",
-			"platform": "linux",
-			"ports": [
-				"7205:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Muximux",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Muximux",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Downloaders",
-				"Books"
-			],
-			"description": "An automated Comic Book downloader (cbr/cbz) for use with SABnzbd, NZBGet and torrents.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/mylar:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mylar-icon.png",
-			"name": "mylar",
-			"platform": "linux",
-			"ports": [
-				"8090:8090/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Mylar",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Mylar",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/downloads"
-				},
-				{
-					"bind": "/portainer/Comics",
-					"container": "/comics"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Cloud",
-				"Productivity",
-				"Tools",
-				"Other",
-				"Web"
-			],
-			"description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"label": "TZ",
-					"name": "TZ"
-				},
-				{
-					"label": "DATABASE_PASSWORD",
-					"name": "DATABASE_PASSWORD"
-				},
-				{
-					"label": "MYSQL_ROOT_PASSWORD",
-					"name": "MYSQL_ROOT_PASSWORD"
-				},
-				{
-					"label": "PORT",
-					"name": "PORT"
-				}
-			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/nextcloud-icon.png",
-			"name": "nextcloud",
-			"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
-			"platform": "linux",
-			"repository": {
-				"stackfile": "stack/nextcloud.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
-			},
-			"title": "Nextcloud",
-			"type": 3
-		},
-		{
-			"categories": [
-				"Cloud",
-				"Productivity",
-				"Tools",
-				"Other",
-				"Web"
-			],
-			"description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"name": "nextcloudpi",
-			"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
-			"platform": "linux",
-			"image": "ownyourbits/nextcloudpi:latest",
-			"title": "NextcloudPi",
-			"type": 1,
-			"ports":[
-				"4443:4443/tcp",
-				"8443:443/tcp",
-				"8480:8480/tcp"
-			],
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/ncdata",
-					"container": "/data"
-				}
-			]	
-		},
-		{
-			"categories": [
-				"Web",
-				"Proxy"
-			],
-			"description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/nginx:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/nginx-icon.png",
-			"name": "nginx",
-			"platform": "linux",
-			"ports": [
-				"8080:80/tcp",
-				"8443:443/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Nginx",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Nginx",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Monitor",
-				"Tools"
-			],
-			"description": "Monitor your Raspberry Pi and Dockers using Grafana developed by oijkn. Please download grafana configs from his git https://github.com/oijkn/Docker-Raspberry-PI-Monitoring",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/rpi_monitor.png",
-			"name": "RaspberryPi-Docker-Monitor",
-			"platform": "linux",
-			"ports": [
-				"3000:3000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Raspberry Pi Docker Monitor",
-			"type": 3,
-			"repository": {
-				"stackfile": "stack/raspberrypi-monitoring.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
-			}
-		},
-		{
-			"categories": [
-				"Proxy",
-				"Tools"
-			],
-			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/novaspirit/pi-hosted/tree/master/docs installing the template",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/proxy_mgr.png",
-			"name": "nginx-proxy-manager",
-			"platform": "linux",
-			"ports": [
-				"80:8080/tcp",
-				"81:8181/tcp",
-				"443:4443/tcp"
-			],
-			"env": [
-				{
-					"default": "password",
-					"label": "DATABASE_PASSWORD",
-					"name": "DATABASE_PASSWORD"
-				},
-				{
-					"default": "password",
-					"label": "MYSQL_ROOT_PASSWORD",
-					"name": "MYSQL_ROOT_PASSWORD"
-				}
-				
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Nginx Proxy Manager",
-			"type": 3,
-			"repository": {
-				"stackfile": "stack/nginx-proxy-manager.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
-			}
-		},		
-
-		{
-			"categories": [
-				"Downloaders"
-			],
-			"description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/nzbget:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/nzbget-icon.png",
-			"name": "nzbget",
-			"platform": "linux",
-			"ports": [
-				"6789:6789/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "NZBGet",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Nzbget",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/downloads"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Downloaders",
-				"Other",
-				"Tools"
-			],
-			"description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/nzbhydra2:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/hydra-icon.png",
-			"name": "nzbhydra2",
-			"platform": "linux",
-			"ports": [
-				"5076:5076/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "NZBHydra 2",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Nzbhydra2",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/downloads"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Downloaders",
-				"Other",
-				"Video",
-				"Tools"
-			],
-			"description": "Ombi allows you to host your own Plex Request and user management system. ",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/ombi:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/ombi.png",
-			"name": "ombi",
-			"platform": "linux",
-			"ports": [
-				"3579:3579/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Ombi",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Ombi",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other"
-			],
-			"description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
-			"env": [
-				{
-					"label": "INTERFACE",
-					"name": "INTERFACE",
-					"set": "eth0"
-				},
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/openvpn-as:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/openvpn-as-icon.png",
-			"name": "openvpn-as",
-			"platform": "linux",
-			"ports": [
-				"943:943/tcp",
-				"9443:9443/tcp",
-				"1194:1194/udp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "OpenVPN Access Server",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/OpenVPN-AS",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "organizr/organizr:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/organizr-icon.png",
-			"name": "organizr-v2",
-			"platform": "linux",
-			"ports": [
-				"7171:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Organizr v2",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Organizr",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other"
-			],
-			"description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/oscam:latest",
-			"logo": "http://i.imgur.com/8LadrLg.png",
-			"name": "oscam",
-			"platform": "linux",
-			"ports": [
-				"8888:8888/tcp",
-				"10000:10000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "OScam",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/OScam",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Photos"
-			],
-			"description": "A simple, easy way to turn a photo album into a webgallery",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/photoshow:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/photoshow-icon.png",
-			"name": "photoshow",
-			"platform": "linux",
-			"ports": [
-				"7380:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "PhotoShow",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Pictures",
-					"container": "/Pictures"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Photoshow/Thumbs",
-					"container": "/Thumbs"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/PhotoShow",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "Self-hosted snippet manager.",
-			"image": "snowmean/snibox-sqlite:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/snibox.png",
-			"name": "snibox",
-			"note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text.",
-			"platform": "linux",
-			"ports": [
-				"3010:3000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Snibox",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Snibox",
-					"container": "/app/db/database"
 				}
 			]
 		},
@@ -2304,6 +827,73 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"VPN",
+				"Tools"
+			],
+			"description": "This container contains OpenVPN and Deluge with a configuration where Deluge is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PUID"
+				},
+				{
+					"default": "MULLVAD",
+					"description": "see https://github.com/sgtsquiggs/docker-deluge-openvpn",
+					"label": "OPENVPN_PROVIDER",
+					"name": "OPENVPN_PROVIDER"
+				},
+				{
+					"label": "OPENVPN_USERNAME",
+					"name": "OPENVPN_USERNAME"
+				},
+				{
+					"label": "OPENVPN_PASSWORD",
+					"name": "OPENVPN_PASSWORD"
+				},
+				{
+					"label": "OPENVPN_CONFIG",
+					"name": "OPENVPN_CONFIG",
+					"default": "CA Toronto"
+				},
+				{
+					"label": "LOCAL_NETWORK",
+					"name": "LOCAL_NETWORK",
+					"default": "192.168.0.0/16"
+				}
+			],
+			"image": "sgtsquiggs/deluge-openvpn:arm64v8-latest",
+			"name": "deluge-openvpn",
+			"platform": "linux",
+			"ports": [
+				"8112:8112/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Deluge openvpn",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/etc/localtime",
+					"container": "/etc/localtime"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/DelugeOpenVPN/config",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"HomeAutomation",
 				"Management"
 			],
@@ -2338,6 +928,46 @@
 					"container": "/config"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Dozzle is a real-time log viewer for docker containers.",
+			"image": "amir20/dozzle:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/dozzle.png",
+			"name": "dozzle",
+			"note": "View logs for docker containers.",
+			"platform": "linux",
+			"ports": [
+				"8888:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Dozzle",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Security"
+			],
+			"description": "Dradis Framework: Collaboration and reporting for IT Security teams http://dradisframework.org",
+			"image": "raesene/dradis:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/dradis-logo.png",
+			"name": "dradis",
+			"platform": "linux",
+			"ports": [
+				"3000:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Dradis",
+			"type": 1
 		},
 		{
 			"categories": [
@@ -2481,7 +1111,63 @@
 				"Other",
 				"Tools"
 			],
-			"description": "Web File Browser which can be used as a middleware or standalone app.",
+			"description": "Eclipse Mosquitto is an open source implementation of a server for versions 5, 3.1.1, and 3.1 of the MQTT protocol.\r\nYou will need to create /portainer/Files/AppData/Config/Mosquitto/config/mosquitto.conf and if needed your password file.\r\nHave a look on https://mosquitto.org/man/mosquitto_passwd-1.html",
+			"image": "eclipse-mosquitto:latest",
+			"logo": "https://raw.githubusercontent.com/docker-library/docs/757578e3a44e5460a8a11d32a81776f8b74231a9/eclipse-mosquitto/logo.png",
+			"name": "mosquitto",
+			"platform": "linux",
+			"ports": [
+				"1883:1883/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"hostname": "rpi-mosquitto",
+			"title": "Eclipse Mosquitto",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Mosquitto/config",
+					"container": "/mosquitto/config"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Mosquitto/data",
+					"container": "/mosquitto/data"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Mosquitto/log",
+					"container": "/mosquitto/log"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
+			"image": "linuxserver/embystat:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/embystat.png",
+			"name": "embystat",
+			"note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services.",
+			"platform": "linux",
+			"ports": [
+				"6555:6555/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "EmbyStat",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/EmbyStat",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
 			"image": "filebrowser/filebrowser:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/filebrowser.png",
 			"name": "filebrowser",
@@ -2499,6 +1185,51 @@
 					"container": "/srv"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Games"
+			],
+			"description": "This docker image provides the FoundryVTT system for hosting your own virtual table top games.",
+			"image": "felddy/foundryvtt:release",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/foundrylogo.png",
+			"name": "FoundryVTT",
+			"platform": "linux",
+			"type": 1,
+			"ports": [
+				"30000:30000/tcp"
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/foundryvtt",
+					"container": "/data"
+				}
+			],
+			"env": [
+				{
+					"default": "John",
+					"label": "Foundry Account Name",
+					"name": "FOUNDRY_USERNAME"
+				},
+				{
+					"default": "password",
+					"label": "Foundry Password",
+					"name": "FOUNDRY_PASSWORD"
+				},
+				{
+					"default": "changeme",
+					"label": "Instance Admin Password",
+					"name": "FOUNDRY_ADMIN_KEY"
+				},
+				{
+					"label": "CONTAINER_PRESERVE_CONFIG",
+					"name": "CONTAINER_PRESERVE_CONFIG",
+					"default": "true"
+				}
+			],
+			"restart_polocy": "unless-stopped",
+			"title": "FoundryVTT Server"
 		},
 		{
 			"categories": [
@@ -2581,6 +1312,48 @@
 		{
 			"categories": [
 				"Other",
+				"Tools"
+			],
+			"description": "A simple server for sending and receiving messages",
+			"image": "gotify/server-arm64:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/gotify.png",
+			"name": "gotify",
+			"note": "ARM7 Image. Documentation is Available \u003ca href='https://gotify.net/docs/index'\u003ehere\u003c/a\u003e.",
+			"platform": "linux",
+			"ports": [
+				"9008:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Gotify",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/gotify",
+					"container": "/app/data"
+				}
+			],
+			"env": [
+				{
+					"default": "Europe/Berlin",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "admin",
+					"label": "GOTIFY_DEFAULTUSER_NAME",
+					"name": "GOTIFY_DEFAULTUSER_NAME"
+				},
+				{
+					"default": "admin123",
+					"label": "GOTIFY_DEFAULTUSER_PASS",
+					"name": "GOTIFY_DEFAULTUSER_PASS"
+				}
+			]
+
+    	},
+		{
+			"categories": [
+				"Other",
 				"Tools",
 				"Finance"
 			],
@@ -2623,7 +1396,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "A clientless remote desktop gateway.",
+			"description": "[arm] A clientless remote desktop gateway.",
 			"image": "oznu/guacamole:armhf",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/guacamole.png",
 			"name": "guacamole",
@@ -2639,6 +1412,202 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/Guacamole",
 					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Music"
+			],
+			"description": null,
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/headphones:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/headphones-icon.png",
+			"name": "headphones",
+			"platform": "linux",
+			"ports": [
+				"8181:8181/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Headphones",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Headphones",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/Downloads"
+				},
+				{
+					"bind": "/portainer/Music",
+					"container": "/music"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Tools",
+				"Web",
+				"Other"
+			],
+			"description": "Heimdall is a way to organise all those links to your most used web sites and web applications in a simple way.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/heimdall:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/heimdall-icon.png",
+			"name": "heimdall",
+			"platform": "linux",
+			"ports": [
+				"7202:80/tcp",
+				"7203:443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Heimdall",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Heimdall",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"description": "Home Assistant is a free and open-source software for home automation that is designed to be the central control system for smart home devices with focus on local control and privacy.",
+			"image": "homeassistant/home-assistant:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/homeassistant.png",
+			"name": "home assistant",
+			"platform": "linux",
+			"ports": [
+				"8999:8123/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Home Assistant",
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/HomeAssistant/assets",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"HomeAutomation"
+			],
+			"description": "Homebridge allows you to integrate with smart home devices that do not natively support HomeKit. There are over 2,000 Homebridge plugins supporting thousands of different smart accessories.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1",
+					"label": "HOMEBRIDGE_CONFIG_UI",
+					"name": "HOMEBRIDGE_CONFIG_UI"
+				},
+				{
+					"default": "8581",
+					"label": "HOMEBRIDGE_CONFIG_UI_PORT",
+					"name": "HOMEBRIDGE_CONFIG_UI_PORT"
+				},
+				{
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "oznu/homebridge:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/homebridge.png",
+			"name": "homebridge",
+			"network": "host",
+			"note": "Bringing HomeKit support where there is none",
+			"platform": "linux",
+			"privileged": true,
+			"restart_policy": "always",
+			"title": "Homebridge",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/homebridge",
+					"container": "/homebridge"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
+			"image": "b4bz/homer:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/homer.png",
+			"name": "homer",
+			"note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
+			"platform": "linux",
+			"ports": [
+				"8902:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Homer",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Homer/assets",
+					"container": "/www/assets"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Homer",
+					"container": "/www/config.yml"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Create agents that monitor and act on your behalf.",
+			"image": "mjysci/huginn:arm32v7",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/huginn.png",
+			"name": "huginn",
+			"platform": "linux",
+			"ports": [
+				"3000:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Huginn",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/huginn",
+					"container": "/var/lib/mysql"
 				}
 			]
 		},
@@ -2674,6 +1643,347 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/HTPCmanager",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "InfluxDB is an open source time series database for recording metrics, events, and analytics. You will need to add /portainer/Files/AppData/Config/Influxdb/config/influxdb.conf",
+			"image": "influxdb:1.8.10",
+			"logo": "https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/influxdb/logo.png",
+			"name": "influxdb1810",
+			"platform": "linux",
+			"ports": [
+				"8086:8086/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"hostname": "rpi-influxdb1810",
+			"title": "Influxdb 1.8.10",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Influxdb/data",
+					"container": "/var/lib/influxdb"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Influxdb/config",
+					"container": "/var/lib/influxdb"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Downloaders",
+				"Tools"
+			],
+			"description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.[",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/jackett:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jacket-icon.png",
+			"name": "jackett",
+			"platform": "linux",
+			"ports": [
+				"9117:9117/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Jackett",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Jackett",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Downloaders",
+				"Tools"
+			],
+			"description": "JDownloader docker image",
+			"env": [
+				{
+					"set": "",
+					"label": "MYJD_DEVICE_NAME",
+					"name": "MYJD_DEVICE_NAME"
+				},
+				{
+					"set": "",
+					"label": "MYJD_USER",
+					"name": "MYJD_USER"
+				},
+				{
+					"set": "",
+					"label": "MYJD_PASSWORD",
+					"name": "MYJD_PASSWORD"
+				}
+			],
+			"image": "jaymoulin/jdownloader:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jdownloader.png",
+			"name": "JDownloader",
+			"platform": "linux",
+			"ports": [
+				"3129:3129/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "JDownloader",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/JDownloader",
+					"container": "/opt/JDownloader/cfg"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/opt/JDownloader/Downloads"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Video",
+				"Music",
+				"Photos"
+			],
+			"description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "linuxserver/jellyfin:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jellyfin.png",
+			"name": "jellyfin",
+			"platform": "linux",
+			"ports": [
+				"8096:8096/tcp",
+				"8920:8920/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Jellyfin",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Jelllyfin",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/TV",
+					"container": "/data/tvshows"
+				},
+				{
+					"bind": "/portainer/Movies",
+					"container": "/data/movies"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Video"
+			],
+			"description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "lsioarmhf/kodi-headless:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/kodi-icon.png",
+			"name": "kodi-headless",
+			"platform": "linux",
+			"ports": [
+				"8081:8080/tcp",
+				"9090:9090/tcp",
+				"9777:9777/udp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Kodi Headless",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Kodi",
+					"container": "/config/.kodi"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Books"
+			],
+			"description": "LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/lazylibrarian:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lazylibrarian-icon.png",
+			"name": "lazylibrarian",
+			"platform": "linux",
+			"ports": [
+				"5299:5299/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "LazyLibrarian",
+			"type": 1,
+			"volumes": [
+				{
+					"container": "/config"
+				},
+				{
+					"container": "/downloads"
+				},
+				{
+					"container": "/books"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Tools",
+				"Web"
+			],
+			"description": "[DEPRECATED] This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd \u0026lt;username\u0026gt;",
+			"env": [
+				{
+					"label": "EMAIL",
+					"name": "EMAIL",
+					"set": "-Xms256m -Xmx512m"
+				},
+				{
+					"label": "URL",
+					"name": "URL",
+					"set": "-Xms256m -Xmx512m"
+				},
+				{
+					"label": "SUBDOMAINS",
+					"name": "SUBDOMAINS",
+					"set": "www,"
+				},
+				{
+					"label": "ONLY_SUBDOMAINS",
+					"name": "ONLY_SUBDOMAINS",
+					"set": "false"
+				},
+				{
+					"label": "DHLEVEL",
+					"name": "DHLEVEL",
+					"set": "2048"
+				},
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"label": "VALIDATION",
+					"name": "VALIDATION",
+					"set": "http"
+				},
+				{
+					"label": "DNSPLUGIN",
+					"name": "DNSPLUGIN",
+					"set": "http"
+				}
+			],
+			"image": "linuxserver/letsencrypt:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/letsencrypt.png",
+			"name": "letsencrypt",
+			"platform": "linux",
+			"ports": [
+				"80:80/tcp",
+				"443:443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Let's Encrypt",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/LetsEncrypt",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A Free and Open Source Speedtest for HTML5 and more.",
+			"env": [
+                                {
+                                        "default": "1000",
+                                        "label": "PUID",
+                                        "name": "PUID"
+                                },
+                                {
+                                        "default": "1000",
+                                        "label": "PGID",
+                                        "name": "PGID"
+                                }
+                        ],
+			"image": "linuxserver/librespeed:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/speedtest.png",
+			"name": "librespeed",
+			"platform": "linux",
+			"ports": [
+				"83:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "LibreSpeed",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/LibreSpeed",
 					"container": "/config"
 				}
 			]
@@ -2718,6 +2028,1120 @@
 				{
 					"bind": "/portainer/Music",
 					"container": "/music"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Cloud",
+				"Web",
+				"Management",
+				"Photos"
+			],
+			"description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+                                        "label": "DB_HOST",
+                                        "name": "DB_HOST",
+                                        "set": "mariadb"
+                                },
+                                {
+                                        "label": "DB_USERNAME",
+                                        "name": "DB_USERNAME",
+                                        "set": "lychee"
+                                },
+                                {
+                                        "label": "DB_PASSWORD",
+                                        "name": "DB_PASSWORD",
+                                        "set": "dbpassword_that_was_set_in_lychee-mariadb"
+                                },
+                                {
+                                        "label": "DB_DATABASE",
+                                        "name": "DB_DATABASE",
+                                        "set": "lychee"
+                                },
+                                {
+                                        "label": "DB_PORT",
+                                        "name": "DB_PORT",
+                                        "set": "3306"
+                                }
+			],
+			"image": "linuxserver/lychee:arm64v8-latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lychee-icon.png",
+			"name": "lychee",
+			"platform": "linux",
+			"ports": [
+				"84:84/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Lychee",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Lychee",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Pictures",
+					"container": "/pictures"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "An Enhanced drop in replacement for Mysql",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+                                        "label": "MYSQL_ROOT_PASSWORD",
+                                        "name": "MYSQL_ROOT_PASSWORD",
+                                        "set": "rootpassword"
+                                },
+				{
+                                        "label": "MYSQL_DATABASE",
+                                        "name": "MYSQL_DATABASE",
+                                        "set": "lychee"
+                                },
+				{
+					"label": "MYSQL_USER",
+					"name": "MYSQL_USER",
+					"set": "lychee"
+				},
+				{
+                                        "label": "MYSQL_PASSWORD",
+                                        "name": "MYSQL_PASSWORD",
+                                        "set": "dbpassword"
+                                }
+			],
+			"image": "linuxserver/mariadb:arm64v8-latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mariadb-icon.png",
+			"name": "mariadb",
+			"platform": "linux",
+			"ports": [
+				"3306:3306/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "MariaDB",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Mariadb",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A self-hosted recipe manager and meal planner",
+			"image": "hkotel/mealie:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mealie.png",
+			"name": "mealie",
+			"note": "Default Credentials: Username: changeme@email.com Password: MyPassword. Documentation is Available \u003ca href='https://hay-kot.github.io/mealie/documentation/getting-started/install/'\u003ehere\u003c/a\u003e.",
+			"platform": "linux",
+			"ports": [
+				"9925:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Mealie",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/mealie",
+					"container": "/app/data"
+				}
+			],
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "Europe/Berlin",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "2",
+					"label": "WEB_CONCURRENCY",
+					"name": "WEB_CONCURRENCY"
+				},
+				{
+					"default": "8",
+					"label": "MAX_WORKERS",
+					"name": "MAX_WORKERS"
+				},
+				{
+					"default": true,
+					"label": "RECIPE_PUBLIC",
+					"name": "RECIPE_PUBLIC"
+				},
+				{
+					"default": true,
+					"label": "RECIPE_SHOW_NUTRITION",
+					"name": "RECIPE_SHOW_NUTRITION"
+				},
+				{
+					"default": true,
+					"label": "RECIPE_SHOW_ASSETS",
+					"name": "RECIPE_SHOW_ASSETS"
+				},
+				{
+					"default": true,
+					"label": "RECIPE_LANDSCAPE_VIEW",
+					"name": "RECIPE_LANDSCAPE_VIEW"
+				},
+				{
+					"default": false,
+					"label": "RECIPE_DISABLE_COMMENTS",
+					"name": "RECIPE_DISABLE_COMMENTS"
+				},
+				{
+					"default": false,
+					"label": "RECIPE_DISABLE_AMOUNT",
+					"name": "RECIPE_DISABLE_AMOUNT"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Downloaders",
+				"Video"
+			],
+			"description": "Medusa, automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/medusa:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/medusa-icon.png",
+			"name": "medusa",
+			"platform": "linux",
+			"ports": [
+				"8081:8081/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Medusa",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Medusa",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/TV",
+					"container": "/tv"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				}
+			]
+		},
+                {
+                        "categories": [
+                                "Other",
+                                "Tools",
+                                "Games"
+                        ],
+						"description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
+                        "image": "itzg/minecraft-server:multiarch-latest",
+                        "logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/minecraft.png",
+                        "name": "minecraft",
+                        "platform": "linux",
+                        "type": 1,
+                        "ports": [
+                                "25565:25565/tcp"
+                        ],
+                        "volumes": [
+                                {
+                                        "bind": "/portainer/Files/AppData/Config/Minecraft-data",
+                                        "container": "/data"
+                                }
+                        ],
+                        "env": [
+                                {
+                                        "label": "EULA",
+                                        "name": "EULA",
+                                        "default": "TRUE"
+                                }
+                        ],
+                        "restart_polocy": "unless-stopped",
+                        "title": "Minecraft Server"
+                },
+		{
+			"categories": [
+				"Other"
+			],
+			"description": "Server version of minetest, a free, open source alternative to minecraft.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/minetest:latest",
+			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
+			"name": "minetest",
+			"platform": "linux",
+			"ports": [
+				"30000:30000/udp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Minetest",
+			"type": 1,
+			"volumes": [
+				{
+					"container": "/config/.minetest"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Video",
+				"Other",
+				"Tools"
+			],
+			"description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.\n\n  The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.\n  ",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/minisatip:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/minisatip-icon.png",
+			"name": "minisatip",
+			"platform": "linux",
+			"ports": [
+				"8875:8875/tcp",
+				"554:554/tcp",
+				"1900:1900/udp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Minisatip",
+			"type": 1
+		},
+		{
+			"categories": [
+				"Other",
+				"Music"
+			],
+			"description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
+			"image": "linuxserver/mstream:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mstream.png",
+			"name": "mstream",
+			"platform": "linux",
+			"ports": [
+				"3000:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Mstream",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Mstream",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/music"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Voice",
+				"Chat"
+			],
+			"description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "yhaenggi/murmur:1.3.4",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/Mumble-logo.png",
+			"name": "murmur",
+			"platform": "linux",
+			"ports": [
+				"64738:64738/tcp",
+				"64738:64738/udp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Murmur",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/etc/localtime:ro",
+					"container": "/etc/localtime"
+				},
+				{
+					"bind": "/portainer/Files/Config/Murmur",
+					"container": "/opt/murmur/config"
+				},
+				{
+					"bind": "/portainer/Files/Murmur/data",
+					"container": "/opt/murmur/data"
+				},
+				{
+					"bind": "/portainer/Files/Murmur/log",
+					"container": "/opt/murmur/log"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Music",
+				"Other",
+				"Tools"
+			],
+			"description": " MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
+			"env": [
+				{
+					"label": "BRAINZCODE",
+					"name": "BRAINZCODE",
+					"set": ""
+				},
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/musicbrainz:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/musicbrainz-icon.png",
+			"name": "musicbrainz",
+			"platform": "linux",
+			"ports": [
+				"5000:5000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "MusicBrainz",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/MusicBrainz",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Files/AppData/MusicBrainz",
+					"container": "/data"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Web",
+				"Proxy",
+				"Other",
+				"Tools"
+			],
+			"description": "A lightweight portal to view, manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to keep multiple tabs open, or bookmark the URL to all of your apps.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/muximux:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/muximux-icon.png",
+			"name": "muximux",
+			"platform": "linux",
+			"ports": [
+				"7205:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Muximux",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Muximux",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Downloaders",
+				"Books"
+			],
+			"description": "An automated Comic Book downloader (cbr/cbz) for use with SABnzbd, NZBGet and torrents.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/mylar:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mylar-icon.png",
+			"name": "mylar",
+			"platform": "linux",
+			"ports": [
+				"8090:8090/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Mylar",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Mylar",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				},
+				{
+					"bind": "/portainer/Comics",
+					"container": "/comics"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "n8n is an extendable workflow automation tool.",
+			"image": "n8nio/n8n:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/n8n.jpg",
+			"name": "n8n",
+			"note": "Documentation is Available \u003ca href='https://docs.n8n.io/'\u003ehere\u003c/a\u003e",
+			"platform": "linux",
+			"ports": [
+				"5678:5678/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "n8n",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/n8n",
+					"container": "/home/node/.n8n"
+				}
+			],
+			"env": [
+				{
+					"default": true,
+					"label": "N8N_BASIC_AUTH_ACTIVE",
+					"name": "N8N_BASIC_AUTH_ACTIVE"
+				},
+				{
+					"default": "admin",
+					"label": "N8N_BASIC_AUTH_USER",
+					"name": "N8N_BASIC_AUTH_USER"
+				},
+				{
+					"default": "admin",
+					"label": "N8N_BASIC_AUTH_PASSWORD",
+					"name": "N8N_BASIC_AUTH_PASSWORD"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Troubleshoot slowdowns and anomalies in your infrastructure with thousands of per-second metrics, meaningful visualizations, and insightful health alarms with zero configuration.",
+			"image": "netdata/netdata:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/netdata.png",
+			"name": "netdata",
+			"note": "Documentation is Available \u003ca href='https://learn.netdata.cloud/'\u003ehere\u003c/a\u003e.",
+			"platform": "linux",
+			"ports": [
+				"19999:19999/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Netdata",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/netdata/netdataconfig",
+					"container": "/etc/netdata"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/netdata/netdatalib",
+					"container": "/var/lib/netdata"
+				},
+				{
+					"bind": "/etc/passwd",
+					"container": "/host/etc/passwd:ro"
+				},
+				{
+					"bind": "/etc/group",
+					"container": "/host/etc/group:ro"
+				},
+				{
+					"bind": "/proc",
+					"container": "/host/proc:ro"
+				},
+				{
+					"bind": "/sys",
+					"container": "/host/sys:ro"
+				},
+				{
+					"bind": "/etc/os-release",
+					"container": "/host/etc/os-release:ro"
+				}
+			],
+			"env": [
+				{
+					"default": "1000",
+					"label": "DOCKER_USR",
+					"name": "DOCKER_USR"
+				},
+				{
+					"default": "1000",
+					"label": "DOCKER_GRP",
+					"name": "DOCKER_GRP"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Cloud",
+				"Productivity",
+				"Tools",
+				"Other",
+				"Web"
+			],
+			"description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
+				},
+				{
+					"label": "PORT",
+					"name": "PORT"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/nextcloud-icon.png",
+			"name": "nextcloud",
+			"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "stack/nextcloud.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			},
+			"title": "Nextcloud",
+			"type": 3
+		},
+		{
+			"categories": [
+				"Cloud",
+				"Productivity",
+				"Tools",
+				"Other",
+				"Web"
+			],
+			"description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"name": "nextcloudpi",
+			"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
+			"platform": "linux",
+			"image": "ownyourbits/nextcloudpi:latest",
+			"title": "NextcloudPi",
+			"type": 1,
+			"ports":[
+				"4443:4443/tcp",
+				"8443:443/tcp",
+				"8480:8480/tcp"
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/ncdata",
+					"container": "/data"
+				}
+			]	
+		},
+		{
+			"categories": [
+				"Web",
+				"Proxy"
+			],
+			"description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/nginx:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/nginx-icon.png",
+			"name": "nginx",
+			"platform": "linux",
+			"ports": [
+				"8080:80/tcp",
+				"8443:443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Nginx",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Nginx",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Proxy",
+				"Tools"
+			],
+			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/novaspirit/pi-hosted/tree/master/docs installing the template",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/proxy_mgr.png",
+			"name": "nginx-proxy-manager",
+			"platform": "linux",
+			"ports": [
+				"80:8080/tcp",
+				"81:8181/tcp",
+				"443:4443/tcp"
+			],
+			"env": [
+				{
+					"default": "password",
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"default": "password",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
+				}
+				
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Nginx Proxy Manager",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/nginx-proxy-manager.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			}
+		},		
+
+		{
+			"categories": [
+				"Downloaders"
+			],
+			"description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/nzbget:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/nzbget-icon.png",
+			"name": "nzbget",
+			"platform": "linux",
+			"ports": [
+				"6789:6789/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "NZBGet",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Nzbget",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Downloaders",
+				"Other",
+				"Tools"
+			],
+			"description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/nzbhydra2:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/hydra-icon.png",
+			"name": "nzbhydra2",
+			"platform": "linux",
+			"ports": [
+				"5076:5076/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "NZBHydra 2",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Nzbhydra2",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Downloaders",
+				"Other",
+				"Video",
+				"Tools"
+			],
+			"description": "Ombi allows you to host your own Plex Request and user management system. ",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/ombi:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/ombi.png",
+			"name": "ombi",
+			"platform": "linux",
+			"ports": [
+				"3579:3579/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Ombi",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Ombi",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other"
+			],
+			"description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
+			"env": [
+				{
+					"label": "INTERFACE",
+					"name": "INTERFACE",
+					"set": "eth0"
+				},
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/openvpn-as:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/openvpn-as-icon.png",
+			"name": "openvpn-as",
+			"platform": "linux",
+			"ports": [
+				"943:943/tcp",
+				"9443:9443/tcp",
+				"1194:1194/udp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "OpenVPN Access Server",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/OpenVPN-AS",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "organizr/organizr:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/organizr-icon.png",
+			"name": "organizr-v2",
+			"platform": "linux",
+			"ports": [
+				"7171:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Organizr v2",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Organizr",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other"
+			],
+			"description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/oscam:latest",
+			"logo": "http://i.imgur.com/8LadrLg.png",
+			"name": "oscam",
+			"platform": "linux",
+			"ports": [
+				"8888:8888/tcp",
+				"10000:10000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "OScam",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/OScam",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Cloud",
+				"Management",
+				"Productivity"
+			],
+			"description": "Paperless is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents. https://github.com/jonaswinkler/paperless-ng",
+			"image": "linuxserver/paperless-ng",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/paperless.png",
+			"name": "paperless",
+			"platform": "linux",
+			"ports": [
+				"8005:8000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Paperless",
+			"type": 1,
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/paperless/config",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/paperless/data",
+					"container": "/data"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Photos"
+			],
+			"description": "A simple, easy way to turn a photo album into a webgallery",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/photoshow:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/photoshow-icon.png",
+			"name": "photoshow",
+			"platform": "linux",
+			"ports": [
+				"7380:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "PhotoShow",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Pictures",
+					"container": "/Pictures"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Photoshow/Thumbs",
+					"container": "/Thumbs"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/PhotoShow",
+					"container": "/config"
 				}
 			]
 		},
@@ -2910,7 +3334,47 @@
 		},
 		{
 			"categories": [
-				"Cloud",
+				"VPN",
+				"Tools",
+				"Other",
+				"Web"
+			],
+			"description": "Pritunl container built on Alpine Linux. Supports IPv6 and running behind a reverse proxy. This container requires an external Mongo DB and should be run via Docker Compose or other orchestration.",
+			"env": [
+				{
+					"default": "false",
+					"label": "REVERSE_PROXY",
+					"name": "REVERSE_PROXY"
+				},
+				{
+					"label": "PRITUNL_OPTS",
+					"name": "PRITUNL_OPTS"
+				},
+				{
+					"default": "mongodb://mongo:27017/pritunl",
+					"label": "MONGODB_URI",
+					"name": "MONGODB_URI"
+				},
+				{
+					"default": "false",
+					"label": "WIREGUARD",
+					"name": "WIREGUARD"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/pritunl.png",
+			"name": "pritunl",
+			"note": "Documentation on this containier can be found here: \u003ca href=https://hub.docker.com/r/goofball222/pritunl\u003ehttps://hub.docker.com/r/goofball222/pritunl\u003c/a\u003e",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "stack/pritunl.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			},
+			"title": "Pritunl",
+			"type": 3
+		},
+		{
+			"categories": [
+								"Cloud",
 				"Productivity",
 				"Tools",
 				"Web"
@@ -3017,46 +3481,6 @@
 					"container": "/root"
 				}
 			]
-		},
-		{
-			"categories": [
-				"VPN",
-				"Tools",
-				"Other",
-				"Web"
-			],
-			"description": "Pritunl container built on Alpine Linux. Supports IPv6 and running behind a reverse proxy. This container requires an external Mongo DB and should be run via Docker Compose or other orchestration.",
-			"env": [
-				{
-					"default": "false",
-					"label": "REVERSE_PROXY",
-					"name": "REVERSE_PROXY"
-				},
-				{
-					"label": "PRITUNL_OPTS",
-					"name": "PRITUNL_OPTS"
-				},
-				{
-					"default": "mongodb://mongo:27017/pritunl",
-					"label": "MONGODB_URI",
-					"name": "MONGODB_URI"
-				},
-				{
-					"default": "false",
-					"label": "WIREGUARD",
-					"name": "WIREGUARD"
-				}
-			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/pritunl.png",
-			"name": "pritunl",
-			"note": "Documentation on this containier can be found here: \u003ca href=https://hub.docker.com/r/goofball222/pritunl\u003ehttps://hub.docker.com/r/goofball222/pritunl\u003c/a\u003e",
-			"platform": "linux",
-			"repository": {
-				"stackfile": "stack/pritunl.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
-			},
-			"title": "Pritunl",
-			"type": 3
 		},
 		{
 			"categories": [
@@ -3213,6 +3637,26 @@
 					"container": "/movies"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Monitor",
+				"Tools"
+			],
+			"description": "Monitor your Raspberry Pi and Dockers using Grafana developed by oijkn. Please download grafana configs from his git https://github.com/oijkn/Docker-Raspberry-PI-Monitoring",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/rpi_monitor.png",
+			"name": "RaspberryPi-Docker-Monitor",
+			"platform": "linux",
+			"ports": [
+				"3000:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Raspberry Pi Docker Monitor",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/raspberrypi-monitoring.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			}
 		},
 		{
 			"categories": [
@@ -3514,6 +3958,66 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Self-hosted snippet manager.",
+			"image": "snowmean/snibox-sqlite:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/snibox.png",
+			"name": "snibox",
+			"note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text.",
+			"platform": "linux",
+			"ports": [
+				"3010:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Snibox",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Snibox",
+					"container": "/app/db/database"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Tools",
+				"Web",
+				"Other"
+			],
+			"description": "Run a Speedtest every hour and graph the results.  See https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags for arch options",
+			"env": [
+				{
+					"label": "arch",
+					"name": "arch",
+					"default": "latest-arm"
+				},
+				{
+					"label": "OOKLA_EULA_GDPR",
+					"name": "OOKLA_EULA_GDPR",
+					"default": "true"
+				}
+			],
+			"image": "henrywhitaker3/speedtest-tracker:dev-arm",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/speedtest-tracker.png",
+			"name": "speedtest-tracker",
+			"platform": "linux",
+			"ports": [
+				"8765:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Speedtest Tracker",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/speedtest-tracker",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Downloaders",
 				"Video"
 			],
@@ -3745,7 +4249,7 @@
 				"VPN",
 				"Tools"
 			],
-			"description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
+			"description": "[arm] This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
 			"env": [
 				{
 					"default": "1000",
@@ -3763,12 +4267,12 @@
 					"label": "OPENVPN_PROVIDER",
 					"name": "OPENVPN_PROVIDER"
 				},
-                {
-                    "default": "",
-                    "description": "Optional. Mostly used to narrow down what location to use by the provider",
-                    "label": "OPENVPN_CONFIG",
-                    "name": "OPENVPN_CONFIG"
-                },
+                                {
+                                        "default": "",
+                                        "description": "Optional. Mostly used to narrow down what location to use by the provider",
+                                        "label": "OPENVPN_CONFIG",
+                                        "name": "OPENVPN_CONFIG"
+                                },
 				{
 					"default": "",
 					"label": "OPENVPN_USERNAME",
@@ -3839,6 +4343,46 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/tt-rss",
 					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Proxy",
+				"Security",
+				"Tools"
+			],
+			"description": "Cloud-Native Networking Stack That Just Works.",
+			"image": "traefik:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/traefik.png",
+			"name": "traefik",
+			"note": "A simple and lightweight reverse proxy",
+			"platform": "linux",
+			"ports": [
+				"80:80/tcp",
+				"443:443/tcp",
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Traefik",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/traefik/traefik.yml",
+					"container": "/traefik.yml"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/traefik/config.yml",
+					"container": "/config.yml"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/traefik/acme.json",
+					"container": "acme.json"
+				},
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+
 				}
 			]
 		},
@@ -3971,6 +4515,62 @@
 		},
 		{
 			"categories": [
+				"CCTV"
+			],
+			"description": "UniFi Video is a powerful and flexible, integrated IP video management surveillance system designed to work with Ubiquiti’s UniFi Video Camera product line. UniFi Video has an intuitive, configurable, and feature‑packed user interface with advanced features such as motion detection, auto‑discovery, user‑level security, storage management, reporting, and mobile device support.",
+			"env": [
+				{
+					"default": "99",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "002",
+					"label": "UMASK",
+					"name": "UMASK"
+				},
+				{
+					"label": "CONTEXT_PATH",
+					"name": "CONTEXT_PATH",
+					"set": "UniFi Video"
+				}
+			],
+			"image": "pducharme/unifi-video-controller:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/unifivideo-icon.png",
+			"name": "UniFi Video",
+			"platform": "linux",
+			"ports": [
+				"1935:1935/tcp",
+				"7444:7444/tcp",
+				"7447:7447/tcp",
+				"6666:6666/tcp",
+				"7442:7442/tcp",
+				"7080:7080/tcp",
+				"7443:7443/tcp",
+				"7445:7445/tcp",
+				"7446:7446/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "UniFi Video",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/UnifFiVideo/Recordings/",
+					"container": "/recordings"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/UniFiVideo/",
+					"container": "/config"
+				}
+			]
+    		},
+		{
+			"categories": [
 				"Monitor",
 				"Tools"
 			],
@@ -3988,6 +4588,55 @@
 				"stackfile": "stack/unpoller-stack.yml",
 				"url": "https://github.com/novaspirit/pi-hosted"
 			}
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "It is a self-hosted monitoring tool like 'Uptime Robot'.",
+			"image": "louislam/uptime-kuma:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/uptime-kuma.png",
+			"name": "uptime-kuma",
+			"note": "A fancy self-hosted monitoring tool.",
+			"platform": "linux",
+			"ports": [
+				"3001:3001/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Uptime Kuma",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/uptime-kuma",
+					"container": "/app/data"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
+			"image": "vaultwarden/server:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/bitwarden.png",
+			"name": "vaultwarden",
+			"note": "Alternative Implementation of the Bitwarden Server API in Rust, including web vault.",
+			"platform": "linux",
+			"ports": [
+				"8010:80/tcp",
+				"3012:3012/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Vaultwarden",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Bitwarden",
+					"container": "/data"
+				}
+			]
 		},
 		{
 			"categories": [
@@ -4099,6 +4748,23 @@
 		{
 			"categories": [
 				"Other",
+				"VPN"
+			],
+			"description": "You have found the easiest way to install & manage WireGuard on any Linux host!",
+			"image": "weejewel/wg-easy:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/wireguard.png",
+			"name": "wg-easy",
+			"platform": "linux",
+			"title": "Wireguard Server",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/wireguard-easy.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			}
+		},
+		{
+			"categories": [
+				"Other",
 				"Downloaders"
 			],
 			"description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
@@ -4135,62 +4801,6 @@
 				}
 			]
 		},
-		{
-			"categories": [
-				"CCTV"
-			],
-			"description": "UniFi Video is a powerful and flexible, integrated IP video management surveillance system designed to work with Ubiquiti’s UniFi Video Camera product line. UniFi Video has an intuitive, configurable, and feature‑packed user interface with advanced features such as motion detection, auto‑discovery, user‑level security, storage management, reporting, and mobile device support.",
-			"env": [
-				{
-					"default": "99",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"default": "002",
-					"label": "UMASK",
-					"name": "UMASK"
-				},
-				{
-					"label": "CONTEXT_PATH",
-					"name": "CONTEXT_PATH",
-					"set": "UniFi Video"
-				}
-			],
-			"image": "pducharme/unifi-video-controller:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/unifivideo-icon.png",
-			"name": "UniFi Video",
-			"platform": "linux",
-			"ports": [
-				"1935:1935/tcp",
-				"7444:7444/tcp",
-				"7447:7447/tcp",
-				"6666:6666/tcp",
-				"7442:7442/tcp",
-				"7080:7080/tcp",
-				"7443:7443/tcp",
-				"7445:7445/tcp",
-				"7446:7446/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "UniFi Video",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/UnifFiVideo/Recordings/",
-					"container": "/recordings"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/UniFiVideo/",
-					"container": "/config"
-				}
-			]
-    		},
 		{
 			"categories": [
 				"Other",
@@ -4249,620 +4859,6 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/ZNC",
 					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"VPN",
-				"Tools"
-			],
-			"description": "This container contains OpenVPN and Deluge with a configuration where Deluge is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PUID"
-				},
-				{
-					"default": "MULLVAD",
-					"description": "see https://github.com/sgtsquiggs/docker-deluge-openvpn",
-					"label": "OPENVPN_PROVIDER",
-					"name": "OPENVPN_PROVIDER"
-				},
-				{
-					"label": "OPENVPN_USERNAME",
-					"name": "OPENVPN_USERNAME"
-				},
-				{
-					"label": "OPENVPN_PASSWORD",
-					"name": "OPENVPN_PASSWORD"
-				},
-				{
-					"label": "OPENVPN_CONFIG",
-					"name": "OPENVPN_CONFIG",
-					"default": "CA Toronto"
-				},
-				{
-					"label": "LOCAL_NETWORK",
-					"name": "LOCAL_NETWORK",
-					"default": "192.168.0.0/16"
-				}
-			],
-			"image": "sgtsquiggs/deluge-openvpn:arm64v8-latest",
-			"name": "deluge-openvpn",
-			"platform": "linux",
-			"ports": [
-				"8112:8112/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Deluge openvpn",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/etc/localtime",
-					"container": "/etc/localtime"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/downloads"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/DelugeOpenVPN/config",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Security"
-			],
-			"description": "Dradis Framework: Collaboration and reporting for IT Security teams http://dradisframework.org",
-			"image": "raesene/dradis:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/dradis-logo.png",
-			"name": "dradis",
-			"platform": "linux",
-			"ports": [
-				"3000:3000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Dradis",
-			"type": 1
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
-			"image": "vaultwarden/server:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/bitwarden.png",
-			"name": "vaultwarden",
-			"note": "Alternative Implementation of the Bitwarden Server API in Rust, including web vault.",
-			"platform": "linux",
-			"ports": [
-				"8010:80/tcp",
-				"3012:3012/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Vaultwarden",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Bitwarden",
-					"container": "/data"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Tools",
-				"Web",
-				"Other"
-			],
-			"description": "Run a Speedtest every hour and graph the results.  See https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags for arch options",
-			"env": [
-				{
-					"label": "arch",
-					"name": "arch",
-					"default": "latest-arm"
-				},
-				{
-					"label": "OOKLA_EULA_GDPR",
-					"name": "OOKLA_EULA_GDPR",
-					"default": "true"
-				}
-			],
-			"image": "henrywhitaker3/speedtest-tracker:dev-arm",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/speedtest-tracker.png",
-			"name": "speedtest-tracker",
-			"platform": "linux",
-			"ports": [
-				"8765:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Speedtest Tracker",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/speedtest-tracker",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "Dozzle is a real-time log viewer for docker containers.",
-			"image": "amir20/dozzle:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/dozzle.png",
-			"name": "dozzle",
-			"note": "View logs for docker containers.",
-			"platform": "linux",
-			"ports": [
-				"8888:8080/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Dozzle",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/var/run/docker.sock",
-					"container": "/var/run/docker.sock"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Cloud",
-				"Management",
-				"Productivity"
-			],
-			"description": "Paperless is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents. https://github.com/jonaswinkler/paperless-ng",
-			"image": "linuxserver/paperless-ng",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/paperless.png",
-			"name": "paperless",
-			"platform": "linux",
-			"ports": [
-				"8005:8000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Paperless",
-			"type": 1,
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/paperless/config",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/paperless/data",
-					"container": "/data"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "It is a self-hosted monitoring tool like 'Uptime Robot'.",
-			"image": "louislam/uptime-kuma:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/uptime-kuma.png",
-			"name": "uptime-kuma",
-			"note": "A fancy self-hosted monitoring tool.",
-			"platform": "linux",
-			"ports": [
-				"3001:3001/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Uptime Kuma",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/uptime-kuma",
-					"container": "/app/data"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"VPN"
-			],
-			"description": "You have found the easiest way to install & manage WireGuard on any Linux host!",
-			"image": "weejewel/wg-easy:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/wireguard.png",
-			"name": "wg-easy",
-			"platform": "linux",
-			"title": "Wireguard Server",
-			"type": 3,
-			"repository": {
-				"stackfile": "stack/wireguard-easy.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
-			}
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "A self-hosted recipe manager and meal planner",
-			"image": "hkotel/mealie:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mealie.png",
-			"name": "mealie",
-			"note": "Default Credentials: Username: changeme@email.com Password: MyPassword. Documentation is Available \u003ca href='https://hay-kot.github.io/mealie/documentation/getting-started/install/'\u003ehere\u003c/a\u003e.",
-			"platform": "linux",
-			"ports": [
-				"9925:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Mealie",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/mealie",
-					"container": "/app/data"
-				}
-			],
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"default": "Europe/Berlin",
-					"label": "TZ",
-					"name": "TZ"
-				},
-				{
-					"default": "2",
-					"label": "WEB_CONCURRENCY",
-					"name": "WEB_CONCURRENCY"
-				},
-				{
-					"default": "8",
-					"label": "MAX_WORKERS",
-					"name": "MAX_WORKERS"
-				},
-				{
-					"default": true,
-					"label": "RECIPE_PUBLIC",
-					"name": "RECIPE_PUBLIC"
-				},
-				{
-					"default": true,
-					"label": "RECIPE_SHOW_NUTRITION",
-					"name": "RECIPE_SHOW_NUTRITION"
-				},
-				{
-					"default": true,
-					"label": "RECIPE_SHOW_ASSETS",
-					"name": "RECIPE_SHOW_ASSETS"
-				},
-				{
-					"default": true,
-					"label": "RECIPE_LANDSCAPE_VIEW",
-					"name": "RECIPE_LANDSCAPE_VIEW"
-				},
-				{
-					"default": false,
-					"label": "RECIPE_DISABLE_COMMENTS",
-					"name": "RECIPE_DISABLE_COMMENTS"
-				},
-				{
-					"default": false,
-					"label": "RECIPE_DISABLE_AMOUNT",
-					"name": "RECIPE_DISABLE_AMOUNT"
-				}
-			]
-		},
-		{
-			"categories": [
-				"HomeAutomation"
-			],
-			"description": "Homebridge allows you to integrate with smart home devices that do not natively support HomeKit. There are over 2,000 Homebridge plugins supporting thousands of different smart accessories.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1",
-					"label": "HOMEBRIDGE_CONFIG_UI",
-					"name": "HOMEBRIDGE_CONFIG_UI"
-				},
-				{
-					"default": "8581",
-					"label": "HOMEBRIDGE_CONFIG_UI_PORT",
-					"name": "HOMEBRIDGE_CONFIG_UI_PORT"
-				},
-				{
-					"label": "TZ",
-					"name": "TZ"
-				}
-			],
-			"image": "oznu/homebridge:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/homebridge.png",
-			"name": "homebridge",
-			"network": "host",
-			"note": "Bringing HomeKit support where there is none",
-			"platform": "linux",
-			"privileged": true,
-			"restart_policy": "always",
-			"title": "Homebridge",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/homebridge",
-					"container": "/homebridge"
-				}
-			]
-
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "A simple server for sending and receiving messages",
-			"image": "gotify/server-arm64:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/gotify.png",
-			"name": "gotify",
-			"note": "ARM7 Image. Documentation is Available \u003ca href='https://gotify.net/docs/index'\u003ehere\u003c/a\u003e.",
-			"platform": "linux",
-			"ports": [
-				"9008:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Gotify",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/gotify",
-					"container": "/app/data"
-				}
-			],
-			"env": [
-				{
-					"default": "Europe/Berlin",
-					"label": "TZ",
-					"name": "TZ"
-				},
-				{
-					"default": "admin",
-					"label": "GOTIFY_DEFAULTUSER_NAME",
-					"name": "GOTIFY_DEFAULTUSER_NAME"
-				},
-				{
-					"default": "admin123",
-					"label": "GOTIFY_DEFAULTUSER_PASS",
-					"name": "GOTIFY_DEFAULTUSER_PASS"
-				}
-			]
-
-    	},
-
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "Troubleshoot slowdowns and anomalies in your infrastructure with thousands of per-second metrics, meaningful visualizations, and insightful health alarms with zero configuration.",
-			"image": "netdata/netdata:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/netdata.png",
-			"name": "netdata",
-			"note": "Documentation is Available \u003ca href='https://learn.netdata.cloud/'\u003ehere\u003c/a\u003e.",
-			"platform": "linux",
-			"ports": [
-				"19999:19999/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Netdata",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/netdata/netdataconfig",
-					"container": "/etc/netdata"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/netdata/netdatalib",
-					"container": "/var/lib/netdata"
-				},
-				{
-					"bind": "/etc/passwd",
-					"container": "/host/etc/passwd:ro"
-				},
-				{
-					"bind": "/etc/group",
-					"container": "/host/etc/group:ro"
-				},
-				{
-					"bind": "/proc",
-					"container": "/host/proc:ro"
-				},
-				{
-					"bind": "/sys",
-					"container": "/host/sys:ro"
-				},
-				{
-					"bind": "/etc/os-release",
-					"container": "/host/etc/os-release:ro"
-				}
-			],
-			"env": [
-				{
-					"default": "1000",
-					"label": "DOCKER_USR",
-					"name": "DOCKER_USR"
-				},
-				{
-					"default": "1000",
-					"label": "DOCKER_GRP",
-					"name": "DOCKER_GRP"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Proxy",
-				"Security",
-				"Tools"
-			],
-			"description": "Cloud-Native Networking Stack That Just Works.",
-			"image": "traefik:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/traefik.png",
-			"name": "traefik",
-			"note": "A simple and lightweight reverse proxy",
-			"platform": "linux",
-			"ports": [
-				"80:80/tcp",
-				"443:443/tcp",
-				"8080:8080/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Traefik",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/traefik/traefik.yml",
-					"container": "/traefik.yml"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/traefik/config.yml",
-					"container": "/config.yml"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/traefik/acme.json",
-					"container": "acme.json"
-				},
-				{
-					"bind": "/var/run/docker.sock",
-					"container": "/var/run/docker.sock"
-
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view sites you want to preserve offline.",
-			"image": "archivebox/archivebox:master",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/archivebox.png",
-			"name": "archivebox",
-			"note": "By default an admin user is not created. You can do so by launching a shell in the container and executing 'archivebox manage createsuperuser'. Documentation is Available \u003ca href='https://github.com/ArchiveBox/ArchiveBox/wiki'\u003ehere\u003c/a\u003e.",
-			"platform": "linux",
-			"ports": [
-				"8002:8000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Archivebox",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/archivebox",
-					"container": "/data"
-				}
-			],
-			"env": [
-				{
-					"default": "*",
-					"label": "ALLOWED_HOSTS",
-					"name": "ALLOWED_HOSTS"
-				},
-				{
-					"default": "750m",
-					"label": "MEDIA_MAX_SIZE",
-					"name": "MEDIA_MAX_SIZE"
-				},
-				{
-					"default": true,
-					"label": "PUBLIC_INDEX",
-					"name": "PUBLIC_INDEX"
-				},
-				{
-					"default": true,
-					"label": "PUBLIC_SNAPSHOTS",
-					"name": "PUBLIC_SNAPSHOTS"
-				},
-				{
-					"default": false,
-					"label": "PUBLIC_ADD_VIEW",
-					"name": "PUBLIC_ADD_VIEW"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "n8n is an extendable workflow automation tool.",
-			"image": "n8nio/n8n:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/n8n.jpg",
-			"name": "n8n",
-			"note": "Documentation is Available \u003ca href='https://docs.n8n.io/'\u003ehere\u003c/a\u003e",
-			"platform": "linux",
-			"ports": [
-				"5678:5678/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "n8n",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/n8n",
-					"container": "/home/node/.n8n"
-				}
-			],
-			"env": [
-				{
-					"default": true,
-					"label": "N8N_BASIC_AUTH_ACTIVE",
-					"name": "N8N_BASIC_AUTH_ACTIVE"
-				},
-				{
-					"default": "admin",
-					"label": "N8N_BASIC_AUTH_USER",
-					"name": "N8N_BASIC_AUTH_USER"
-				},
-				{
-					"default": "admin",
-					"label": "N8N_BASIC_AUTH_PASSWORD",
-					"name": "N8N_BASIC_AUTH_PASSWORD"
 				}
 			]
 		}
