@@ -2282,7 +2282,7 @@
                                 "Tools",
                                 "Games"
                         ],
-                        "description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the>
+						"description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
                         "image": "itzg/minecraft-server:multiarch-latest",
                         "logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/minecraft.png",
                         "name": "minecraft",
