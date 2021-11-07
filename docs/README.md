@@ -19,11 +19,12 @@ Currently Pi OS is running an old version of libseccomp that is causing problems
 ```
 sudo dpkg-query -W libseccomp2
 ```
-If you are running a version less that 2.5 you will need to run the upgrade script.
+If you are running a version less that 2.5 you will need to run the *upgrade script.
 
 ```
 wget -qO- https://git.io/JPXdj | bash
 ```
+* The upgrade script is for Pi OS 32bit.  Pi OS 64 beta is untested and the upgrade script wont work with it.
 
 ### Reboot for changes to take effect
 
