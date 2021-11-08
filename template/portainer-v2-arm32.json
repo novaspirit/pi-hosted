@@ -1971,7 +1971,7 @@
                                         "name": "PGID"
                                 }
                         ],
-			"image": "linuxserver/librespeed:arm32v7-latest",
+			"image": "linuxserver/librespeed:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/speedtest.png",
 			"name": "librespeed",
 			"platform": "linux",
