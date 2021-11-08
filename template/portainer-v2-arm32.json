@@ -330,7 +330,8 @@
 		{
 			"categories":[
 				"Wiki",
-				"WordPress"
+				"WordPress",
+				"Web"
 			],
 			"description":"Wordpress setup with a MySQL database",
 			"env":[
