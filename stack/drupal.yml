@@ -1,0 +1,34 @@
+version: "3"
+services:
+  mariadb:
+    image: jc21/mariadb-aria:latest
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: drupal
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+    networks:
+      - drupal_network
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/drupal/database:/var/lib/mysql
+
+  druapl:
+    container_name: monitoring-grafana
+    environment:
+    hostname: drupal
+    image: rmiddle/drupal:latest
+    networks:
+      - drupal_network
+    ports:
+      - 4080:8080
+      - 4443:8443
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/drupal/data:/bitnami/drupal
+    depends_on:
+      - mariadb
+
+networks:
+  drupal_network:
