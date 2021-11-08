@@ -48,7 +48,7 @@ You're done! Now just click App Templates and deploy applications!
 | Portainer v2 Arm32 | Pi OS | https://raw.githubusercontent.com/novaspirit/pi-hosted/master/template/portainer-v2-arm32.json |
 | Portainer v2 Arm64 | Ubunutu 64, DietPI 64 | https://raw.githubusercontent.com/novaspirit/pi-hosted/master/template/portainer-v2-arm64.json |
 
-* Untested Operating Systems: Pi OS 64 Beta, DietPI 32 bit
+* Limited testing Operating Systems: Pi OS 64 Beta, DietPI 32 bit
 
 ### Pi-Hosted YouTube series
 
