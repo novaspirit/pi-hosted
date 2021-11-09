@@ -14,8 +14,8 @@ wget -qO- https://git.io/JwUkc | bash
 # need to reboot/logout for changes to take effect
 ```
 
-### Pi OS Buster
-Currently Pi OS is running an old version of libseccomp that is causing problems with many containers that are preventing them from running.  To fix this we need to manually install a newer version of libseccomp.  However we first need to check and see if you are running an older version.  To check please run sudo dpkg-query -W libseccomp.
+### Pi OS Buster  
+On Oct 30, 2021 Pi OS bullseye was released and this is no longer needed.  Older Pi OS buster releases run an old version of libseccomp that is causing problems with many containers that are preventing them from running.  To fix this we need to manually install a newer version of libseccomp.  However we first need to check and see if you are running an older version.  To check please run sudo dpkg-query -W libseccomp.
 ```
 sudo dpkg-query -W libseccomp2
 ```
