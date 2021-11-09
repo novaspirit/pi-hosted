@@ -67,6 +67,8 @@ You're done! Now just click App Templates and deploy applications!
 | 8 |                         [Raspberry Pi Docker Monitoring](https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8)                         |
 | 9 |        [Installing Nextcloud on Raspberry Pi Docker](https://www.youtube.com/watch?v=E6IrT3g5Gqc&list=UUrjKdwxaQMSV_NDywgKXVmw&index=7)                                       |
 | 10 |                         [Installing Nginx Proxy Manager on Docker](https://www.youtube.com/watch?v=yl2Laxbqvo8)                                                             |
+| 11 | [How to Install Whoogle to replace using Google and repo notes](https://www.youtube.com/watch?v=j3ZGxo3ibUs) |
+
 
 =======
 ### Addition Documentation can be found in the Docs Folder
