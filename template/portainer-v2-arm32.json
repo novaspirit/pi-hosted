@@ -361,6 +361,7 @@
 				"url":"https://github.com/AlbertoHugonin/pi-hosted",
 				"stackfile":"stack/wordpress-stack.yml"
 			},
+			"Name":"Wordpress",
 			"title":"Wordpress",
 			"type": 3
 		},
