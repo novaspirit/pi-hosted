@@ -4,6 +4,7 @@ services:
 
   wordpress:
     image: wordpress
+    container_name: wordpress
     restart: always
     ports:
       - ${WEB_SERVER_PORT}:80
