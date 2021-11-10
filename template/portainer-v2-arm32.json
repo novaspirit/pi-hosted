@@ -4126,7 +4126,7 @@
 			"name": "thelounge",
 			"platform": "linux",
 			"ports": [
-				"9000:9000/tcp"
+				"9500:9000/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "TheLounge",
