@@ -340,10 +340,6 @@
 					"label":"Port for webserver es 80"
 				},
 				{
-					"name":"SSL_PORT",
-					"label":"Port for encryption es 443"
-				},
-				{
 					"name":"MYSQL_DATABASE_USER_NAME",
 					"label":"Database user name"
 				},
