@@ -362,7 +362,7 @@
 			"platform":"linux",
 
 			"repository":{
-				"url":"https://github.com/AlbertoHugonin/pi-hosted",
+				"url":"https://github.com/AlbertoHugonin/pi-hosted/test",
 				"stackfile":"stack/wordpress-stack.yml"
 			},
 			"title":"Wordpress",
