@@ -2008,7 +2008,7 @@
                                         "name": "PGID"
                                 }
                         ],
-			"image": "linuxserver/librespeed:arm32v7-latest",
+			"image": "linuxserver/librespeed:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/speedtest.png",
 			"name": "librespeed",
 			"platform": "linux",
@@ -4163,7 +4163,7 @@
 			"name": "thelounge",
 			"platform": "linux",
 			"ports": [
-				"9000:9000/tcp"
+				"9500:9000/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "TheLounge",
