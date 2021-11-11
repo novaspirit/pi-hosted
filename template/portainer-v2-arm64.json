@@ -23,9 +23,9 @@
                     "name": "TZ"
                 },
 				{
-					"default": "airsonic"
+					"default": "airsonic",
 					"label": "CONTEXT_PATH",
-					"name": "CONTEXT_PATH",
+					"name": "CONTEXT_PATH"
 				},
 				{
 					"default": "-Xms256m -Xmx512m",
@@ -802,10 +802,9 @@
 					"name": "PGID"
 				},
 				{
-					"default": "000",
+					"default": "022",
 					"label": "UMASK",
-					"name": "UMASK",
-					"default": "000"
+					"name": "UMASK"
 				}
 			],
 			"image": "linuxserver/deluge:latest",

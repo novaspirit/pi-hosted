@@ -23,9 +23,9 @@
                     "name": "TZ"
                 },
 				{
-					"default": "airsonic"
+					"default": "airsonic",
 					"label": "CONTEXT_PATH",
-					"name": "CONTEXT_PATH",
+					"name": "CONTEXT_PATH"
 				},
 				{
 					"default": "-Xms256m -Xmx512m",
@@ -802,10 +802,9 @@
 					"name": "PGID"
 				},
 				{
-					"default": "000",
+					"default": "022",
 					"label": "UMASK",
-					"name": "UMASK",
-					"default": "000"
+					"name": "UMASK"
 				}
 			],
 			"image": "linuxserver/deluge:latest",
@@ -2970,9 +2969,9 @@
 			"description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
 			"env": [
 				{
-					"default": "eth0"
+					"default": "eth0",
 					"label": "INTERFACE",
-					"name": "INTERFACE",
+					"name": "INTERFACE"
 				},
 				{
 					"default": "1000",
@@ -3962,12 +3961,12 @@
 				{
 					"default": "latest-arm",
 					"label": "arch",
-					"default": "x86_64"
+					"name": "arch"
 				},
 				{
+					"default": "true",
 					"label": "OOKLA_EULA_GDPR",
-					"name": "OOKLA_EULA_GDPR",
-					"default": "true"
+					"name": "OOKLA_EULA_GDPR"
 				}
 			],
 			"image": "henrywhitaker3/speedtest-tracker:dev-arm",
