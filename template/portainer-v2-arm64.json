@@ -393,29 +393,6 @@
 		},
 		{
 			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "Save recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
-			"image": "gregyankovoy/chowdown:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/chowdown.png",
-			"name": "Chowdown",
-			"platform": "linux",
-			"ports": [
-				"4000:4000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Chowdown",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Chowdown",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Cloud",
 				"Books"
 			],
