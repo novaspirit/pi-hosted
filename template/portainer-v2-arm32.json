@@ -4261,12 +4261,12 @@
 					"label": "OPENVPN_PROVIDER",
 					"name": "OPENVPN_PROVIDER"
 				},
-                                {
-                                        "default": "",
-                                        "description": "Optional. Mostly used to narrow down what location to use by the provider",
-                                        "label": "OPENVPN_CONFIG",
-                                        "name": "OPENVPN_CONFIG"
-                                },
+                {
+                    "default": "",
+                    "description": "Optional. Mostly used to narrow down what location to use by the provider",
+                    "label": "OPENVPN_CONFIG",
+                    "name": "OPENVPN_CONFIG"
+                },
 				{
 					"default": "",
 					"label": "OPENVPN_USERNAME",
