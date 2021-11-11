@@ -17,19 +17,20 @@
 					"label": "PGID",
 					"name": "PGID"
 				},
-                                {
-                                        "label": "TZ",
-                                        "name": "TZ"
-                                },
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
 				{
+					"default": "airsonic",
 					"label": "CONTEXT_PATH",
-					"name": "CONTEXT_PATH",
-					"set": "airsonic"
+					"name": "CONTEXT_PATH"
 				},
 				{
+					"default": "-Xms256m -Xmx512m",
 					"label": "JAVA_OPTS",
-					"name": "JAVA_OPTS",
-					"set": "-Xms256m -Xmx512m"
+					"name": "JAVA_OPTS"
 				}
 			],
 			"image": "linuxserver/airsonic:arm64v8-latest",
@@ -125,6 +126,7 @@
 			"description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
 			"env": [
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -165,6 +167,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -301,6 +304,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -348,27 +352,27 @@
 				{
 					"label": "CHEVERETO_DB_HOST",
 					"name": "CHEVERETO_DB_HOST",
-					"set": ""
+					"default": ""
 				},
 				{
 					"label": "CHEVERETO_DB_USERNAME",
 					"name": "CHEVERETO_DB_USERNAME",
-					"set": ""
+					"default": ""
 				},
 				{
 					"label": "CHEVERETO_DB_PASSWORD",
 					"name": "CHEVERETO_DB_PASSWORD",
-					"set": ""
+					"default": ""
 				},
 				{
 					"label": "CHEVERETO_DB_NAME",
 					"name": "CHEVERETO_DB_NAME",
-					"set": ""
+					"default": ""
 				},
 				{
 					"label": "CHEVERETO_DB_PREFIX",
 					"name": "CHEVERETO_DB_PREFIX",
-					"set": ""
+					"default": ""
 				}
 			],
 			"image": "nmtan/chevereto:latest",
@@ -501,6 +505,7 @@
 					"name": "GUID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -797,10 +802,9 @@
 					"name": "PGID"
 				},
 				{
-					"default": "000",
+					"default": "022",
 					"label": "UMASK",
-					"name": "UMASK",
-					"set": "000"
+					"name": "UMASK"
 				}
 			],
 			"image": "linuxserver/deluge:latest",
@@ -1108,6 +1112,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -1334,7 +1339,7 @@
 			],
 			"env": [
 				{
-					"default": "Europe/Berlin",
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -1370,6 +1375,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "Timezone",
 					"name": "TZ"
 				}
@@ -1539,6 +1545,7 @@
 					"name": "HOMEBRIDGE_CONFIG_UI_PORT"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -1722,17 +1729,17 @@
 			"description": "JDownloader docker image",
 			"env": [
 				{
-					"set": "",
+					"default": "",
 					"label": "MYJD_DEVICE_NAME",
 					"name": "MYJD_DEVICE_NAME"
 				},
 				{
-					"set": "",
+					"default": "",
 					"label": "MYJD_USER",
 					"name": "MYJD_USER"
 				},
 				{
-					"set": "",
+					"default": "",
 					"label": "MYJD_PASSWORD",
 					"name": "MYJD_PASSWORD"
 				}
@@ -1777,6 +1784,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -1892,27 +1900,27 @@
 				{
 					"label": "EMAIL",
 					"name": "EMAIL",
-					"set": "-Xms256m -Xmx512m"
+					"default": "-Xms256m -Xmx512m"
 				},
 				{
 					"label": "URL",
 					"name": "URL",
-					"set": "-Xms256m -Xmx512m"
+					"default": "-Xms256m -Xmx512m"
 				},
 				{
 					"label": "SUBDOMAINS",
 					"name": "SUBDOMAINS",
-					"set": "www,"
+					"default": "www,"
 				},
 				{
 					"label": "ONLY_SUBDOMAINS",
 					"name": "ONLY_SUBDOMAINS",
-					"set": "false"
+					"default": "false"
 				},
 				{
 					"label": "DHLEVEL",
 					"name": "DHLEVEL",
-					"set": "2048"
+					"default": "2048"
 				},
 				{
 					"default": "1000",
@@ -1927,12 +1935,12 @@
 				{
 					"label": "VALIDATION",
 					"name": "VALIDATION",
-					"set": "http"
+					"default": "http"
 				},
 				{
 					"label": "DNSPLUGIN",
 					"name": "DNSPLUGIN",
-					"set": "http"
+					"default": "http"
 				}
 			],
 			"image": "linuxserver/letsencrypt:latest",
@@ -2053,27 +2061,27 @@
 				{
                                         "label": "DB_HOST",
                                         "name": "DB_HOST",
-                                        "set": "mariadb"
+                                        "default": "mariadb"
                                 },
                                 {
                                         "label": "DB_USERNAME",
                                         "name": "DB_USERNAME",
-                                        "set": "lychee"
+                                        "default": "lychee"
                                 },
                                 {
                                         "label": "DB_PASSWORD",
                                         "name": "DB_PASSWORD",
-                                        "set": "dbpassword_that_was_set_in_lychee-mariadb"
+                                        "default": "dbpassword_that_was_set_in_lychee-mariadb"
                                 },
                                 {
                                         "label": "DB_DATABASE",
                                         "name": "DB_DATABASE",
-                                        "set": "lychee"
+                                        "default": "lychee"
                                 },
                                 {
                                         "label": "DB_PORT",
                                         "name": "DB_PORT",
-                                        "set": "3306"
+                                        "default": "3306"
                                 }
 			],
 			"image": "linuxserver/lychee:arm64v8-latest",
@@ -2117,22 +2125,22 @@
 				{
                                         "label": "MYSQL_ROOT_PASSWORD",
                                         "name": "MYSQL_ROOT_PASSWORD",
-                                        "set": "rootpassword"
+                                        "default": "rootpassword"
                                 },
 				{
                                         "label": "MYSQL_DATABASE",
                                         "name": "MYSQL_DATABASE",
-                                        "set": "lychee"
+                                        "default": "lychee"
                                 },
 				{
 					"label": "MYSQL_USER",
 					"name": "MYSQL_USER",
-					"set": "lychee"
+					"default": "lychee"
 				},
 				{
                                         "label": "MYSQL_PASSWORD",
                                         "name": "MYSQL_PASSWORD",
-                                        "set": "dbpassword"
+                                        "default": "dbpassword"
                                 }
 			],
 			"image": "linuxserver/mariadb:arm64v8-latest",
@@ -2187,7 +2195,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "Europe/Berlin",
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -2418,6 +2426,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -2463,7 +2472,7 @@
 				{
 					"label": "BRAINZCODE",
 					"name": "BRAINZCODE",
-					"set": ""
+					"default": ""
 				},
 				{
 					"default": "1000",
@@ -2699,6 +2708,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -2961,7 +2971,7 @@
 				{
 					"label": "INTERFACE",
 					"name": "INTERFACE",
-					"set": "eth0"
+					"default": "eth0"
 				},
 				{
 					"default": "1000",
@@ -3264,7 +3274,7 @@
 				{
 					"label": "VERSION",
 					"name": "VERSION",
-					"set": "latest"
+					"default": "latest"
 				}
 			],
 			"image": "linuxserver/plex:latest",
@@ -3312,7 +3322,7 @@
 				{
 					"label": "URL_BASE",
 					"name": "URL_BASE",
-					"set": ""
+					"default": ""
 				}
 			],
 			"image": "linuxserver/plexrequests:latest",
@@ -4435,7 +4445,7 @@
 				{
 					"label": "MAXMEM",
 					"name": "MAXMEM",
-					"set": "512"
+					"default": "512"
 				},
 				{
 					"default": "1000",
@@ -4537,7 +4547,7 @@
 				{
 					"label": "CONTEXT_PATH",
 					"name": "CONTEXT_PATH",
-					"set": "UniFi Video"
+					"default": "UniFi Video"
 				}
 			],
 			"image": "pducharme/unifi-video-controller:latest",
