@@ -1635,7 +1635,7 @@
 			"name": "huginn",
 			"platform": "linux",
 			"ports": [
-				"3000:3000/tcp"
+				"3005:3000/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Huginn",
