@@ -4,8 +4,8 @@ services:
     image: nodered/node-red:latest
     container_name: node-red
     environment:
-			NODE_RED_CREDENTIAL_SECRET: ${NODE_RED_CREDENTIAL_SECRET}
-			TZ: ${TZ}
+      NODE_RED_CREDENTIAL_SECRET: ${NODE_RED_CREDENTIAL_SECRET}
+      TZ: ${TZ}
     volumes:
       - node-red-data:/data
     ports:
