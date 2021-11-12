@@ -25,7 +25,7 @@ sudo mkdir -p /portainer/Files/AppData/Config/drupal/sites || error "Failed to c
 sudo mkdir -p /portainer/Files/AppData/Config/drupal/sites/default || error "Failed to create sites/default directory!"
 echo "Downloading Drupal config files"
 sudo wget -O /portainer/Files/AppData/Config/drupal/sites/README.txt https://raw.githubusercontent.com/novaspirit/pi-hosted/master/configs/drupal/README.txt || error "Failed to download README.txt file!"
-sudo wget -O /portainer/Files/AppData/Config/drupal/sites/development.services.yml https://raw.githubusercontent.com/novaspirit/pi-hosted/master/configs/drupal/drupal/development.services.yml || error "Failed to download development.services.yml file!"
+sudo wget -O /portainer/Files/AppData/Config/drupal/sites/development.services.yml https://raw.githubusercontent.com/novaspirit/pi-hosted/master/configs/drupal/development.services.yml || error "Failed to download development.services.yml file!"
 sudo wget -O /portainer/Files/AppData/Config/drupal/sites/example.settings.local.php https://raw.githubusercontent.com/novaspirit/pi-hosted/master/configs/drupal/drupal/example.settings.local.php || error "Failed to download example.settings.local.php file!"
 sudo wget -O /portainer/Files/AppData/Config/drupal/sites/example.sites.php https://raw.githubusercontent.com/novaspirit/pi-hosted/master/configs/drupal/drupal/example.sites.php || error "Failed to download example.sites.php file!"
 sudo wget -O /portainer/Files/AppData/Config/drupal/sites/default/default.services.yml https://raw.githubusercontent.com/novaspirit/pi-hosted/master/configs/drupal/drupal/default/default.services.yml || error "Failed to download default.services.yml file!"
