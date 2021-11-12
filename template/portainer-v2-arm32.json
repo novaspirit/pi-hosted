@@ -2851,7 +2851,6 @@
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Node Red",
-			"network": "iot",
 			"type": 1,
 			"volumes": [
 				{
