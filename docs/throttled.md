@@ -61,9 +61,9 @@ sudo throttled.sh
 
 ## Errors
 
-When you see an error that means something is up with the hardware and most likely needs some kind of adjustment.  
+When you see an error, that means there is an issue with the hardware and most likely needs some kind of adjustment.
 
-- If the error shows under **Now:** It means the issue is active right now 
+- If the error shows under **Now:** it means the issue is active right now 
 - If the error shows under **Run:** it means the error(s) have happened since last reboot. 
 
 ![Throttled Error Power Problems](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/throttled-red-power-problem.png)
