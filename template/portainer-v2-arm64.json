@@ -952,6 +952,50 @@
 		},
 		{
 			"categories": [
+                "Other",
+				"Web",
+				"Tools"
+			],
+			"description": "",
+			"env": [
+				{
+					"default": "",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
+				},
+				{
+					"default": "drupal",
+					"label": "DATABASE_NAME",
+					"name": "DATABASE_NAME"
+				},
+				{
+					"default": "drupal",
+					"label": "DATABASE_USER",
+					"name": "DATABASE_USER"
+				},
+				{
+					"default": "",
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/drupal.png",
+			"name": "drupal",
+			"platform": "linux",
+			"ports": [
+				"4080:8080/tcp",
+				"4443:8443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Drupal",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/drupal.yml",
+				"url": "https://github.com/novaspirit/pi-hosted/"
+			}
+		},
+		{
+			"categories": [
 				"DNS",
 				"Tools"
 			],
