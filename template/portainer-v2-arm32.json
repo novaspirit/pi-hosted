@@ -38,7 +38,7 @@
 			"image": "linuxserver/airsonic:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/airsonic-logo.png",
 			"name": "airsonic",
-			"note": "<h3><font color="red">WHY ARE YOU DOING THIS?  <b> STOP RIGHT NOW </b></font></h3>",
+			"note": "<h3><p style="color:red">WHY ARE YOU DOING THIS?  <b> STOP RIGHT NOW </b></p></h3>",
 			"platform": "linux",
 			"ports": [
 				"4040:4040/tcp"
