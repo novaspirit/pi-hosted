@@ -44,7 +44,7 @@
 			],
 			"restart_policy": "unless-stopped",
 			"title": "John's Test Title",
-			"type": 4,
+			"type": 5,
 			"volumes": [
 				{
 					"bind": "/portainer/Music",
