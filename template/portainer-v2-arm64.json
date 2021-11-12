@@ -2823,7 +2823,39 @@
 				"url": "https://github.com/novaspirit/pi-hosted"
 			}
 		},		
-
+		{
+			"categories": [
+                "Other",
+				"Web",
+				"Tools"
+			],
+			"description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.  It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.",
+			"env": [
+				{
+					"default": "your_secret_goes_here",
+					"label": "NODE_RED_CREDENTIAL_SECRET",
+					"name": "NODE_RED_CREDENTIAL_SECRET"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/node-red.png",
+			"name": "node-red",
+			"platform": "linux",
+			"ports": [
+				"1880:1880/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Node Red",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/node-red.yml",
+				"url": "https://github.com/novaspirit/pi-hosted/"
+			}
+		},
 		{
 			"categories": [
 				"Downloaders"
