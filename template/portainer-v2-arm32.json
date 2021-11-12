@@ -3200,7 +3200,7 @@
 			"categories": [
 				"Photos"
 			],
-			"description": "Piwigo is photo gallery software for the web, built by an active community of users and developers.",
+			"description": "[Current Issue with PiWigo arm32 support pending fix]Piwigo is photo gallery software for the web, built by an active community of users and developers.",
 			"env": [
 				{
 					"default": "1000",
