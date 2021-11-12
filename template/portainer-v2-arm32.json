@@ -2853,7 +2853,7 @@
 			"type": 3,
 			"repository": {
 				"stackfile": "stack/node-red.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
+				"url": "https://github.com/rmiddle/pi-hosted/node-red/"
 			}
 		},
 		{
