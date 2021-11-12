@@ -2851,13 +2851,11 @@
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Node Red",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/NodeRed/data",
-					"container": "/data"
-				}
-			]
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/node-red.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			}
 		},
 		{
 			"categories": [
