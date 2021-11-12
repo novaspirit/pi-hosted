@@ -2842,7 +2842,6 @@
 					"name": "TZ"
 				}
 			],
-			"image": "nodered/node-red:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/node-red.png",
 			"name": "node-red",
 			"platform": "linux",

@@ -6,7 +6,6 @@ services:
     environment:
 			NODE_RED_CREDENTIAL_SECRET: ${NODE_RED_CREDENTIAL_SECRET}
 			TZ: ${TZ}
-      DB_MYSQL_PASSWORD: ${DATABASE_PASSWORD}
     volumes:
       - node-red-data:/data
     ports:
