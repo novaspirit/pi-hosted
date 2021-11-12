@@ -7,15 +7,11 @@ services:
       NODE_RED_CREDENTIAL_SECRET: ${NODE_RED_CREDENTIAL_SECRET}
       TZ: ${TZ}
     volumes:
-      - node-red-data:/data
+      - data:/data
     ports:
       - 1880:1880
-    networks:
-      iot:
     restart: unless-stopped
 
 volumes:
-  node-red-data:
+  data:
 
-networks:
-  iot:
