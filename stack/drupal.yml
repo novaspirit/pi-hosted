@@ -4,8 +4,8 @@ services:
     image: jc21/mariadb-aria:latest
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_DATABASE: drupal
-      MYSQL_USER: drupal
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USER}
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
     networks:
       - drupal_network
