@@ -953,10 +953,11 @@
 		{
 			"categories": [
                 "Other",
+				"CMS",
 				"Web",
 				"Tools"
 			],
-			"description": "",
+			"description": "Drupal CMS.  Make sure you run the install script under tools before installing.",
 			"env": [
 				{
 					"default": "",
