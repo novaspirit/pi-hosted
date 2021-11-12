@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  app:
+    image: nodered/node-red:latest
+    container_name: node-red
+    environment:
+      NODE_RED_CREDENTIAL_SECRET: ${NODE_RED_CREDENTIAL_SECRET}
+      TZ: ${TZ}
+    volumes:
+      - data:/data
+    ports:
+      - 1880:1880
+    restart: unless-stopped
+
+volumes:
+  data:
+
