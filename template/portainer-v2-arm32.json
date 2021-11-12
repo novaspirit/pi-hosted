@@ -10,7 +10,7 @@
 			"description": [
 				"Description Box Number One Goes Here",
 				"Description Box Number TWO Goes Right Here"
-			]
+			],
 			"env": [
 				{
 					"default": "1000",
