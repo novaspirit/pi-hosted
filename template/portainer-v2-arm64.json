@@ -3948,22 +3948,22 @@
 				"Other",
 				"Tools"
 			],
-			"description": "Self-hosted snippet manager.",
-			"image": "snowmean/snibox-sqlite:latest",
+			"description": "Snippet Box is a simple self-hosted app for organizing your code snippets.",
+			"image": "pawelmalak/snippet-box:arm",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/snibox.png",
-			"name": "snibox",
+			"name": "Snippet-box",
 			"note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text.",
 			"platform": "linux",
 			"ports": [
-				"3010:3000/tcp"
+				"5010:5000/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Snibox",
+			"title": "Snippet-box",
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Snibox",
-					"container": "/app/db/database"
+					"bind": "/portainer/Files/AppData/Config/Snippet-box",
+					"container": "/app/data"
 				}
 			]
 		},
