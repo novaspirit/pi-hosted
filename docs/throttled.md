@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A simple script that displays a warning if voltage or temperature were throttling or had been trottled since last reboot.
+A simple script that displays a warning if voltage or temperature issues were found or have happened since last reboot.
 ## Screenshot
 ![Throttled Screenshoot](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/throttled-screenshoot.png)
 
