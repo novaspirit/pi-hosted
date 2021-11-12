@@ -1,20 +1,24 @@
-# Install and setup instructions for the throttled Sript
+# Install and Setup Instructions for the Throttled Script
 
 ## Introduction
 
 A simple script that displays a warning if voltage or temperature were throttling or had been trottled since last reboot.
 ## Screenshot
 ![Throttled Screenshoot](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/throttled-screenshoot.png)
-# Installation
 
-Installation is pretty straight forward run the script and it will install the script to /usr/local/bin/.
+*Above:  Example of script output.*
 
-Run the following script
+
+## Installation
+
+Running the below command will install the script to **/usr/local/bin/**
+
+Run the following command:
 ```
 wget -qO- https://git.io/JXzw0 | bash
 ```
 
-Your output should look something like this
+Your output should look something like this:
 
 ```
 # wget -qO- https://git.io/JXzw0 | bash
@@ -46,33 +50,28 @@ Frequency Capped:
 
 ```
 
-# How to use
+## How to Use
 
-Check the current status.
+Run the following command to check the current status.
 
 ```
 sudo throttled.sh
 ```
 ![Throttled All Green Screenshoot](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/throttled-screenshoot.png)
 
-# Errors
+## Errors
 
-When you see an error that means something is up with the hardware and most likely needs some kind of adjustment.  If the error happens under Now: It means the state is set right now wereas Run: means the errors has happen sense last reboot.  
+When you see an error that means something is up with the hardware and most likely needs some kind of adjustment.  
+
+- If the error shows under **Now:** It means the state is set right now 
+- If the error shows under **Run:** it means the error(s) have happened sense last reboot.  
 
 ![Throttled Error Power Problems](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/throttled-red-power-problem.png)
 
-1) Undervolted means you aren't providing enough power.  This can happen because you have a device like are hard drive that is pulling to much power or you have a power supply not producing enough power to run everything.
-* If you are running something that is pulling too much power than you can use an active power hub to provide more power and get around the issue.
-* If you have nothing plugged into the USB port and are still getting undervolted messages it likely means you power supply doesn't provide enough power and you need to replace it with a new one.
+1. Undervolted means you aren't providing enough power.  This typically happens because you have an attached device that is pulling too much power or you have a power supply not producing enough power to run everything.
 
-2) Throttled or Frequency Capped will likely happen because of tempture.  Make sure you have good airflow around the pi and a decent heat sync to pretect the CPU.
+   - If you are running something that is pulling too much power than you can use an active power hub to provide more power and get around the issue.
 
+   - If you have nothing plugged into the USB port(s) and are still getting undervolted messages it likely means your power supply is not providing enough power and needs to be replaced.
 
-
-
-
-
-
-
-
-
+2) Throttled or Frequency Capped will likely happen because of temperature.  Make sure you have good airflow around the Raspberry Pi and a decent heat sink to protect the CPU.
