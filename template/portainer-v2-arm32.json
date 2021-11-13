@@ -7,7 +7,7 @@
 				"Category 2",
 				"Category 3"
 			],
-			"description": "Description Box Number One Goes Here",
+			"description": "Description Box <br>Number One Goes Here",
 			"env": [
 				{
 					"default": "1000",
