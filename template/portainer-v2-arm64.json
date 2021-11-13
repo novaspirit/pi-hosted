@@ -267,7 +267,7 @@
 			"name": "booksonic",
 			"platform": "linux",
 			"ports": [
-				"4040:4040/tcp"
+				"4041:4040/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Booksonic",
@@ -682,7 +682,7 @@
 			"name": "dashmachine",
 			"platform": "linux",
 			"ports": [
-				"5000:5000/tcp"
+				"5100:5000/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "DashMachine",
@@ -944,7 +944,7 @@
 			"name": "dradis",
 			"platform": "linux",
 			"ports": [
-				"3000:3000/tcp"
+				"3100:3000/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Dradis",
@@ -1315,7 +1315,7 @@
 			"name": "gazee",
 			"platform": "linux",
 			"ports": [
-				"4242:4242/tcp"
+				"4243:4242/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Gazee",
@@ -2412,7 +2412,7 @@
 			"name": "mstream",
 			"platform": "linux",
 			"ports": [
-				"3000:3000/tcp"
+				"3200:3000/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Mstream",
@@ -2785,7 +2785,7 @@
 			"title": "NextcloudPi",
 			"type": 1,
 			"ports":[
-				"4443:4443/tcp",
+				"4444:4443/tcp",
 				"8443:443/tcp",
 				"8480:8480/tcp"
 			],
@@ -2842,9 +2842,9 @@
 			"name": "nginx-proxy-manager",
 			"platform": "linux",
 			"ports": [
-				"80:8080/tcp",
-				"81:8181/tcp",
-				"443:4443/tcp"
+				"80:80/tcp",
+				"81:81/tcp",
+				"443:443/tcp"
 			],
 			"env": [
 				{
@@ -3224,7 +3224,7 @@
 				"53:53/udp",
 				"67:67/udp",
 				"1010:80/tcp",
-				"443:443/tcp"
+				"4443:443/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Pi-Hole",
@@ -3383,7 +3383,7 @@
 			"name": "plexrequests",
 			"platform": "linux",
 			"ports": [
-				"3000:3000/tcp"
+				"3300:3000/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Plex Requests",
