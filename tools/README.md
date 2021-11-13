@@ -1,7 +1,7 @@
 ## PLEASE NOTE ##
 
 
-Most of the follwing scripts are only needed if you are trying to load one of the containers.  Please see table below for a recap of use cases.
+Most of the follwing scripts are only needed if you are trying to load one of these containers.  Please see table below for a recap of use cases.
 
 ---
 
