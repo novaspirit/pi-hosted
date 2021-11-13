@@ -4833,10 +4833,12 @@
 			"description":"Wordpress setup with a MySQL database",
 			"env":[
 				{
+					"default": "5080",
 					"name":"WEB_SERVER_PORT",
-					"label":"Port for webserver es 80"
+					"label":"External Port for webserver forward to port 80"
 				},
 				{
+					"default": "wordpress",
 					"name":"MYSQL_DATABASE_USER_NAME",
 					"label":"Database user name"
 				},
