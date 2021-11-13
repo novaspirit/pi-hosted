@@ -4786,6 +4786,42 @@
 			}
 		},
 		{
+			"categories":[
+				"WordPress",
+				"Web"
+			],
+			"description":"Wordpress setup with a MySQL database",
+			"env":[
+				{
+					"name":"WEB_SERVER_PORT",
+					"label":"Port for webserver es 80"
+				},
+				{
+					"name":"MYSQL_DATABASE_USER_NAME",
+					"label":"Database user name"
+				},
+				{
+					"name":"MYSQL_DATABASE_PASSWORD",
+					"label":"Database password for user"
+				},
+				{
+					"name":"MYSQL_DATABASE_ROOT_PASSWORD",
+					"label":"Database root password"
+				}
+			],
+			"logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+			"note":"Deploys a Wordpress instance connected to a MySQL database.",
+
+			"platform":"linux",
+
+			"repository":{
+				"url":"https://github.com/AlbertoHugonin/pi-hosted",
+				"stackfile":"stack/wordpress-stack.yml"
+			},
+			"title":"Wordpress",
+			"type": 3
+		},
+		{
 			"categories": [
 				"Other",
 				"Tools"
