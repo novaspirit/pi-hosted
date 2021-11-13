@@ -68,7 +68,7 @@ When you see an error, that means there is an issue with the hardware and most l
 
 ![Throttled Error Power Problems](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/throttled-red-power-problem.png)
 
-1. Undervolted means you aren't providing enough power.  This typically happens because you have an attached device that is pulling too much power or you have a power supply not producing enough power to run everything.
+1. Undervolted means you aren't providing enough power.  This typically happens because you have an attached device or devices that is pulling too much power or you have a power supply not producing enough power to run everything.
 
    - If you are running something that is pulling too much power than you can use an active power hub to provide more power and get around the issue.
 
