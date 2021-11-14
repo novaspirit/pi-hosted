@@ -4826,6 +4826,44 @@
 			}
 		},
 		{
+			"categories":[
+				"WordPress",
+				"Web"
+			],
+			"description":"Wordpress setup with a MySQL database",
+			"env":[
+				{
+					"default": "5080",
+					"name":"WEB_SERVER_PORT",
+					"label":"External Port for webserver forward to port 80"
+				},
+				{
+					"default": "wordpress",
+					"name":"MYSQL_DATABASE_USER_NAME",
+					"label":"Database user name"
+				},
+				{
+					"name":"MYSQL_DATABASE_PASSWORD",
+					"label":"Database password for user"
+				},
+				{
+					"name":"MYSQL_DATABASE_ROOT_PASSWORD",
+					"label":"Database root password"
+				}
+			],
+			"logo":"https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/wordpress.png",
+			"note":"Deploys a Wordpress instance connected to a MySQL database.",
+
+			"platform":"linux",
+
+			"repository":{
+				"url": "https://github.com/novaspirit/pi-hosted",
+				"stackfile": "stack/wordpress-stack.yml"
+			},
+			"title":"Wordpress",
+			"type": 3
+		},
+		{
 			"categories": [
 				"Other",
 				"Tools"
