@@ -17,19 +17,20 @@
 					"label": "PGID",
 					"name": "PGID"
 				},
-                                {
-                                        "label": "TZ",
-                                        "name": "TZ"
-                                },
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
 				{
+					"default": "airsonic",
 					"label": "CONTEXT_PATH",
-					"name": "CONTEXT_PATH",
-					"default": "airsonic"
+					"name": "CONTEXT_PATH"
 				},
 				{
+					"default": "-Xms256m -Xmx512m",
 					"label": "JAVA_OPTS",
-					"name": "JAVA_OPTS",
-					"default": "-Xms256m -Xmx512m"
+					"name": "JAVA_OPTS"
 				}
 			],
 			"image": "linuxserver/airsonic:arm32v7-latest",
@@ -48,7 +49,7 @@
 					"container": "/music"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Airsonic/Playlists",
+					"bind": "/portainer/Files/AppData/Config/Airsonic/Playlists",
 					"container": "/playlists"
 				},
 				{
@@ -56,11 +57,11 @@
 					"container": "/podcasts"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Airsonic/Media",
+					"bind": "/portainer/Files/AppData/Config/Airsonic/Media",
 					"container": "/media"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Airsonic/",
+					"bind": "/portainer/Files/AppData/Config/Airsonic/Config",
 					"container": "/config"
 				}
 			]
@@ -125,6 +126,7 @@
 			"description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
 			"env": [
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -165,6 +167,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -301,6 +304,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -384,29 +388,6 @@
 			"volumes": [
 				{
 					"container": "/var/www/html/images"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "Save recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
-			"image": "gregyankovoy/chowdown:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/chowdown.png",
-			"name": "Chowdown",
-			"platform": "linux",
-			"ports": [
-				"4000:4000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Chowdown",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Chowdown",
-					"container": "/config"
 				}
 			]
 		},
@@ -501,6 +482,7 @@
 					"name": "GUID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -797,10 +779,9 @@
 					"name": "PGID"
 				},
 				{
-					"default": "000",
+					"default": "022",
 					"label": "UMASK",
-					"name": "UMASK",
-					"default": "000"
+					"name": "UMASK"
 				}
 			],
 			"image": "linuxserver/deluge:latest",
@@ -971,6 +952,50 @@
 		},
 		{
 			"categories": [
+                "Other",
+				"CMS",
+				"Web",
+				"Tools"
+			],
+			"description": "Drupal CMS.  Make sure you run the install script under tools before installing.",
+			"env": [
+				{
+					"default": "",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
+				},
+				{
+					"default": "drupal",
+					"label": "DATABASE_NAME",
+					"name": "DATABASE_NAME"
+				},
+				{
+					"default": "drupal",
+					"label": "DATABASE_USER",
+					"name": "DATABASE_USER"
+				},
+				{
+					"default": "",
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/drupal.png",
+			"name": "drupal",
+			"platform": "linux",
+			"ports": [
+				"4080:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Drupal",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/drupal.yml",
+				"url": "https://github.com/novaspirit/pi-hosted/"
+			}
+		},
+		{
+			"categories": [
 				"DNS",
 				"Tools"
 			],
@@ -1108,6 +1133,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -1334,7 +1360,7 @@
 			],
 			"env": [
 				{
-					"default": "Europe/Berlin",
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -1370,6 +1396,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "Timezone",
 					"name": "TZ"
 				}
@@ -1539,6 +1566,7 @@
 					"name": "HOMEBRIDGE_CONFIG_UI_PORT"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -1635,7 +1663,7 @@
 			"name": "huginn",
 			"platform": "linux",
 			"ports": [
-				"3000:3000/tcp"
+				"3005:3000/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Huginn",
@@ -1777,6 +1805,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -1971,7 +2000,7 @@
                                         "name": "PGID"
                                 }
                         ],
-			"image": "linuxserver/librespeed:arm32v7-latest",
+			"image": "linuxserver/librespeed:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/speedtest.png",
 			"name": "librespeed",
 			"platform": "linux",
@@ -2157,8 +2186,8 @@
 				"Other",
 				"Tools"
 			],
-			"description": "A self-hosted recipe manager and meal planner",
-			"image": "hkotel/mealie:latest",
+			"description": "[DEPRECATED] Arm32 support dropped at v0.4.3. A self-hosted recipe manager and meal planner",
+			"image": "hkotel/mealie:v0.4.3",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mealie.png",
 			"name": "mealie",
 			"note": "Default Credentials: Username: changeme@email.com Password: MyPassword. Documentation is Available \u003ca href='https://hay-kot.github.io/mealie/documentation/getting-started/install/'\u003ehere\u003c/a\u003e.",
@@ -2187,7 +2216,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "Europe/Berlin",
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -2418,6 +2447,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -2699,6 +2729,7 @@
 					"name": "PGID"
 				},
 				{
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -2836,7 +2867,39 @@
 				"url": "https://github.com/novaspirit/pi-hosted"
 			}
 		},		
-
+		{
+			"categories": [
+                "Other",
+				"Web",
+				"Tools"
+			],
+			"description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.  It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.",
+			"env": [
+				{
+					"default": "your_secret_goes_here",
+					"label": "NODE_RED_CREDENTIAL_SECRET",
+					"name": "NODE_RED_CREDENTIAL_SECRET"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/node-red.png",
+			"name": "node-red",
+			"platform": "linux",
+			"ports": [
+				"1880:1880/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Node Red",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/node-red.yml",
+				"url": "https://github.com/novaspirit/pi-hosted/"
+			}
+		},
 		{
 			"categories": [
 				"Downloaders"
@@ -2959,9 +3022,9 @@
 			"description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
 			"env": [
 				{
+					"default": "eth0",
 					"label": "INTERFACE",
-					"name": "INTERFACE",
-					"default": "eth0"
+					"name": "INTERFACE"
 				},
 				{
 					"default": "1000",
@@ -3213,7 +3276,7 @@
 			"categories": [
 				"Photos"
 			],
-			"description": "Piwigo is photo gallery software for the web, built by an active community of users and developers.",
+			"description": "[Current Issue with PiWigo arm32 support pending fix]Piwigo is photo gallery software for the web, built by an active community of users and developers.",
 			"env": [
 				{
 					"default": "1000",
@@ -3921,22 +3984,22 @@
 				"Other",
 				"Tools"
 			],
-			"description": "Self-hosted snippet manager.",
-			"image": "snowmean/snibox-sqlite:latest",
+			"description": "Snippet Box is a simple self-hosted app for organizing your code snippets.",
+			"image": "pawelmalak/snippet-box:arm",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/snibox.png",
-			"name": "snibox",
+			"name": "Snippet-box",
 			"note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text.",
 			"platform": "linux",
 			"ports": [
-				"3010:3000/tcp"
+				"5010:5000/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Snibox",
+			"title": "Snippet-box",
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Snibox",
-					"container": "/app/db/database"
+					"bind": "/portainer/Files/AppData/Config/Snippet-box",
+					"container": "/app/data"
 				}
 			]
 		},
@@ -3951,12 +4014,12 @@
 				{
 					"default": "latest-arm",
 					"label": "arch",
-					"default": "x86_64"
+					"name": "arch"
 				},
 				{
+					"default": "true",
 					"label": "OOKLA_EULA_GDPR",
-					"name": "OOKLA_EULA_GDPR",
-					"default": "true"
+					"name": "OOKLA_EULA_GDPR"
 				}
 			],
 			"image": "henrywhitaker3/speedtest-tracker:dev-arm",
@@ -4126,7 +4189,7 @@
 			"name": "thelounge",
 			"platform": "linux",
 			"ports": [
-				"9000:9000/tcp"
+				"9500:9000/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "TheLounge",
@@ -4261,12 +4324,12 @@
 					"label": "OPENVPN_PROVIDER",
 					"name": "OPENVPN_PROVIDER"
 				},
-                                {
-                                        "default": "",
-                                        "description": "Optional. Mostly used to narrow down what location to use by the provider",
-                                        "label": "OPENVPN_CONFIG",
-                                        "name": "OPENVPN_CONFIG"
-                                },
+                {
+                    "default": "",
+                    "description": "Optional. Mostly used to narrow down what location to use by the provider",
+                    "label": "OPENVPN_CONFIG",
+                    "name": "OPENVPN_CONFIG"
+                },
 				{
 					"default": "",
 					"label": "OPENVPN_USERNAME",
@@ -4721,6 +4784,44 @@
 				"stackfile": "stack/wireguard-easy.yml",
 				"url": "https://github.com/novaspirit/pi-hosted"
 			}
+		},
+		{
+			"categories":[
+				"WordPress",
+				"Web"
+			],
+			"description":"Wordpress setup with a MySQL database",
+			"env":[
+				{
+					"default": "5080",
+					"name":"WEB_SERVER_PORT",
+					"label":"External Port for webserver forward to port 80"
+				},
+				{
+					"default": "wordpress",
+					"name":"MYSQL_DATABASE_USER_NAME",
+					"label":"Database user name"
+				},
+				{
+					"name":"MYSQL_DATABASE_PASSWORD",
+					"label":"Database password for user"
+				},
+				{
+					"name":"MYSQL_DATABASE_ROOT_PASSWORD",
+					"label":"Database root password"
+				}
+			],
+			"logo":"https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/wordpress.png",
+			"note":"Deploys a Wordpress instance connected to a MySQL database.",
+
+			"platform":"linux",
+
+			"repository":{
+				"url": "https://github.com/novaspirit/pi-hosted",
+				"stackfile": "stack/wordpress-stack.yml"
+			},
+			"title":"Wordpress",
+			"type": 3
 		},
 		{
 			"categories": [
