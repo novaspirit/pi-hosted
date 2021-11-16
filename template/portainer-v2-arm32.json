@@ -677,7 +677,7 @@
 				"Tools"
 			],
 			"description": "Another application bookmark dashboard, with fun features.",
-			"image": "rmountjoy/dashmachine:latest",
+			"image": "failed2run/dashmachine:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/dashmachine_logo.png",
 			"name": "dashmachine",
 			"platform": "linux",
