@@ -1228,8 +1228,8 @@
 			"env": [
 				{
 					"default": "",
-					"label": "PASSWORD",
-					"name": "Flame Password"
+					"label": "Flame Password",
+					"name": "PASSWORD"
 				}
 			],
 			"restart_policy": "unless-stopped",
