@@ -1215,6 +1215,40 @@
 		{
 			"categories": [
 				"Other",
+				"Tools"
+			],
+			"description": "Flame is self-hosted startpage for your server. Its design is inspired (heavily) by SUI. Flame is very easy to setup and use. With built-in editors, it allows you to setup your very own application hub in no time - no file editing necessary.",
+			"image": "pawelmalak/flame:multiarch",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/flame.png",
+			"name": "Flame",
+			"platform": "linux",
+			"ports": [
+				"5005:5005/tcp"
+			],
+			"env": [
+				{
+					"default": "",
+					"label": "PASSWORD",
+					"name": "Flame Password"
+				}
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Flame",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Flame/data",
+					"container": "/app/data"
+				},
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
 				"Games"
 			],
 			"description": "This docker image provides the FoundryVTT system for hosting your own virtual table top games.",
@@ -4405,7 +4439,6 @@
 				{
 					"bind": "/var/run/docker.sock",
 					"container": "/var/run/docker.sock"
-
 				}
 			]
 		},
