@@ -31,7 +31,7 @@ sudo nano /boot/firmware/cmdline.txt
 cgroup_enable=memory cgroup_memory=1
 ```
 
-### All c-group version 2 OS's Currently DietPI 64 and PI OS Bullseye add the following options to the begin of the line:
+### All c-group version 2 OS's Currently DietPI and PI OS Bullseye add the following options to the begin of the line:
 
 ```
 systemd.unified_cgroup_hierarchy=0 cgroup_enable=memory cgroup_memory=1
