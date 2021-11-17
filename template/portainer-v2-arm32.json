@@ -3884,7 +3884,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Samba",
 			"type": 1,
-			"privileged": "true",
+			"privileged": true,
 			"env": [
 				{
 					"default": "1000",
