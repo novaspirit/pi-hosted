@@ -3932,7 +3932,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "guest:guest",
+					"default": "guest;guest",
 					"label": "USER",
 					"name": "USER"
 				},
