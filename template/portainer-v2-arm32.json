@@ -3880,9 +3880,23 @@
 				"139:139/tcp",
 				"445:445/tcp"
 			],
+			"command": "--hostname 'pihosted'",
 			"restart_policy": "unless-stopped",
 			"title": "Samba",
 			"type": 1,
+			"privileged": "true",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
 			"volumes": [
 				{
 					"bind": "/portainer/",
