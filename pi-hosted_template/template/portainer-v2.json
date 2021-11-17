@@ -3899,8 +3899,8 @@
 			],
 			"volumes": [
 				{
-					"bind": "/portainer/",
-					"container": "/mount"
+					"bind": "/portainer/Downloads",
+					"container": "/share"
 				}
 			]
 		},

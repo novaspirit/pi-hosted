@@ -3920,7 +3920,7 @@
 				"139:139/tcp",
 				"445:445/tcp"
 			],
-			"command": "-s 'portainer:/mount:rw'",
+			"command": "-s 'portainer;/share;yes;no;yes'",
 			"restart_policy": "unless-stopped",
 			"title": "Samba",
 			"type": 1,
@@ -3939,8 +3939,8 @@
 			],
 			"volumes": [
 				{
-					"bind": "/portainer/",
-					"container": "/mount"
+					"bind": "/portainer/Downloads",
+					"container": "/share"
 				}
 			]
 		},
