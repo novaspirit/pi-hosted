@@ -13,9 +13,9 @@ A monitoring solution for Docker hosts and containers with [Prometheus](https://
 
 ## Pre-Installation Steps
 
-First SSH into your Pi and there is one thing we need to do before we get cracking. We need to enable `c-groups` so the stack will work out of the box. To do this you need to modify the configuration file `cmdline.txt`:  This is stored in various locations depending on your OS.  
+First SSH into your Pi and there is one thing we need to do before we get cracking. We need to enable `c-groups` so the stack will work out of the box. To do this you need to modify the configuration file `cmdline.txt`:  This is stored in various locations depending on your OS.  Some OS like PI OS Bullseye and Diet PI are setup to use cgroup ver 2 these change break several of the monitors so we need to disable that as well.
 
-### Pi OS
+### Pi OS & DietPI OS
 ```
 sudo nano /boot/cmdline.txt
 ```
@@ -25,10 +25,16 @@ sudo nano /boot/cmdline.txt
 sudo nano /boot/firmware/cmdline.txt
 ```
 
-### All OS's add the following options to the begin of the line:
+### All c-group version 1 OS's add the following options to the begin of the line:
 
 ```
 cgroup_enable=memory cgroup_memory=1
+```
+
+### All c-group version 2 OS's Currently DietPI and PI OS Bullseye add the following options to the begin of the line:
+
+```
+systemd.unified_cgroup_hierarchy=0 cgroup_enable=memory cgroup_memory=1
 ```
 
 ### Now save the file in your editor and reboot:
