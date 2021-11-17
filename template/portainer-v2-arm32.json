@@ -3871,6 +3871,30 @@
 				"Other",
 				"Tools"
 			],
+			"description": "Samba has provided secure, stable and fast file and print services for all clients using the SMB/CIFS protocol, such as all versions of DOS and Windows, OS/2, Linux and many others.",
+			"image": "dperson/samba:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/shiori-icon.png",
+			"name": "shiori",
+			"platform": "linux",
+			"ports": [
+				"139:139/tcp",
+				"445:445/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Samba",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/",
+					"container": "/mount"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
 			"description": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as web application.",
 			"image": "radhifadlillah/shiori:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/shiori-icon.png",
