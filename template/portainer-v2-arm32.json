@@ -3910,7 +3910,7 @@
 				"Tools"
 			],
 			"description": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as web application.",
-			"image": "radhifadlillah/shiori:latest",
+			"image": "nicholaswilde/shiori:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/shiori-icon.png",
 			"name": "shiori",
 			"platform": "linux",
