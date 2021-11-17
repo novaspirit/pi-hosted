@@ -3920,7 +3920,7 @@
 				"139:139/tcp",
 				"445:445/tcp"
 			],
-			"command": "--hostname 'pihosted'",
+			"command": "-s 'mount:/mount:rw'",
 			"restart_policy": "unless-stopped",
 			"title": "Samba",
 			"type": 1,
