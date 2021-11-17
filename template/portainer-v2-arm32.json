@@ -3880,7 +3880,7 @@
 				"139:139/tcp",
 				"445:445/tcp"
 			],
-			"command": "-s 'portainer;/share;yes;no;yes'",
+			"command": "-s 'portainer;/share;yes;no;yes;guest' -g 'map to guest = never' -g 'restrict anonymous = 2'",
 			"restart_policy": "unless-stopped",
 			"title": "Samba",
 			"type": 1,
@@ -3890,6 +3890,11 @@
 					"default": "1000",
 					"label": "PUID",
 					"name": "PUID"
+				},
+				{
+					"default": "guest:guest",
+					"label": "USER",
+					"name": "USER"
 				},
 				{
 					"default": "1000",
