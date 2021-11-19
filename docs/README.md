@@ -67,7 +67,7 @@ You're done! Now just click App Templates and deploy applications!
 | 7 |                         [Raspberry Pi Docker Monitoring](https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8)                         |
 | 8 |        [Installing Nextcloud on Raspberry Pi Docker](https://www.youtube.com/watch?v=E6IrT3g5Gqc&list=UUrjKdwxaQMSV_NDywgKXVmw&index=7)                                       |
 | 9 |                         [Installing Nginx Proxy Manager on Docker](https://www.youtube.com/watch?v=yl2Laxbqvo8)                                                             |
-| 10 | Skipped |
+| 10 | [Setting up Raspberry Pi Samba Server For File Sharing on Docker](https://www.youtube.com/watch?v=2zZ3_1GRWrM) |
 | 11 | [How to Install Whoogle to replace using Google and repo notes](https://www.youtube.com/watch?v=j3ZGxo3ibUs) |
 
 
