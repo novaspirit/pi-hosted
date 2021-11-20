@@ -4841,7 +4841,7 @@
 				"Tools"
 			],
 			"description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
-			"image": "benbusby/whoogle-search:latest",
+			"image": "benbusby/whoogle-search:0.6.0",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/whoogle.png",
 			"name": "whoogle",
 			"platform": "linux",
