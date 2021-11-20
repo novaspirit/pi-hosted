@@ -2159,61 +2159,6 @@
 		},
 		{
 			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "An Enhanced drop in replacement for Mysql",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-                                        "label": "MYSQL_ROOT_PASSWORD",
-                                        "name": "MYSQL_ROOT_PASSWORD",
-                                        "default": "rootpassword"
-                                },
-				{
-                                        "label": "MYSQL_DATABASE",
-                                        "name": "MYSQL_DATABASE",
-                                        "default": "lychee"
-                                },
-				{
-					"label": "MYSQL_USER",
-					"name": "MYSQL_USER",
-					"default": "lychee"
-				},
-				{
-                                        "label": "MYSQL_PASSWORD",
-                                        "name": "MYSQL_PASSWORD",
-                                        "default": "dbpassword"
-                                }
-			],
-			"image": "linuxserver/mariadb:arm32v7-latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mariadb-icon.png",
-			"name": "mariadb",
-			"platform": "linux",
-			"ports": [
-				"3306:3306/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "MariaDB",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Mariadb",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Cloud",
 				"Web",
 				"Management",
@@ -2267,6 +2212,61 @@
 				"stackfile": "stack/lychee-mariadb.yml",
 				"url": "https://github.com/novaspirit/pi-hosted/"
 			}
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "An Enhanced drop in replacement for Mysql",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+                                        "label": "MYSQL_ROOT_PASSWORD",
+                                        "name": "MYSQL_ROOT_PASSWORD",
+                                        "default": "rootpassword"
+                                },
+				{
+                                        "label": "MYSQL_DATABASE",
+                                        "name": "MYSQL_DATABASE",
+                                        "default": "lychee"
+                                },
+				{
+					"label": "MYSQL_USER",
+					"name": "MYSQL_USER",
+					"default": "lychee"
+				},
+				{
+                                        "label": "MYSQL_PASSWORD",
+                                        "name": "MYSQL_PASSWORD",
+                                        "default": "dbpassword"
+                                }
+			],
+			"image": "linuxserver/mariadb:arm32v7-latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mariadb-icon.png",
+			"name": "mariadb",
+			"platform": "linux",
+			"ports": [
+				"3306:3306/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "MariaDB",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Mariadb",
+					"container": "/config"
+				}
+			]
 		},
 		{
 			"categories": [
