@@ -1,7 +1,6 @@
 version: "3"
 services:
   mariadb:
-    container name: mariadb
     image: linuxserver/mariadb:latest
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}

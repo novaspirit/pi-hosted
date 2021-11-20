@@ -2231,25 +2231,25 @@
 					"name": "PGID"
 				},
 				{
-                                        "label": "MYSQL_ROOT_PASSWORD",
-                                        "name": "MYSQL_ROOT_PASSWORD",
-                                        "default": "rootpassword"
-                                },
-				{
-                                        "label": "MYSQL_DATABASE",
-                                        "name": "MYSQL_DATABASE",
-                                        "default": "lychee"
-                                },
+                    "label": "MYSQL_DATABASE",
+                    "name": "MYSQL_DATABASE",
+                    "default": ""
+                },
 				{
 					"label": "MYSQL_USER",
 					"name": "MYSQL_USER",
-					"default": "lychee"
+					"default": ""
 				},
 				{
-                                        "label": "MYSQL_PASSWORD",
-                                        "name": "MYSQL_PASSWORD",
-                                        "default": "dbpassword"
-                                }
+                    "label": "MYSQL_PASSWORD",
+                    "name": "MYSQL_PASSWORD",
+                    "default": "dbpassword"
+                },
+				{
+                    "label": "MYSQL_ROOT_PASSWORD",
+                    "name": "MYSQL_ROOT_PASSWORD",
+                    "default": "rootpassword"
+                }
 			],
 			"image": "linuxserver/mariadb:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mariadb-icon.png",
@@ -2267,62 +2267,6 @@
 					"container": "/config"
 				}
 			]
-		},
-		{
-			"categories": [
-				"Cloud",
-				"Web",
-				"Management",
-				"Photos"
-			],
-			"description": "Lychee With Mariadb is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-                {
-					"default": "America/New_York",
-                    "label": "TZ",
-                    "name": "TZ"
-                },
-				{
-					"default": "lychee",
-					"label": "DATABASE_NAME",
-					"name": "DATABASE_NAME"
-				},
-				{
-					"default": "lychee",
-					"label": "DATABASE_USER",
-					"name": "DATABASE_USER"
-				},
-                {
-                    "label": "DATABASE_PASSWORD",
-                    "name": "DATABASE_PASSWORD",
-                    "default": ""
-                },
-				{
-                    "label": "MYSQL_ROOT_PASSWORD",
-                    "name": "MYSQL_ROOT_PASSWORD",
-                    "default": ""
-                }
-			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lychee-icon.png",
-			"name": "lychee-mariadb",
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"title": "Lychee With Mariadb",
-			"type": 3,
-			"repository": {
-				"stackfile": "stack/lychee-mariadb.yml",
-				"url": "https://github.com/novaspirit/pi-hosted/"
-			}
 		},
 		{
 			"categories": [
