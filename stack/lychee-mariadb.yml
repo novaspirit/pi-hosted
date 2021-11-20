@@ -21,7 +21,7 @@ services:
     hostname: lychee
     image: linuxserver/lychee:latest
     environment:
-      DB_HOST: mariadb
+      DB_HOST: 'mariadb'
       DB_USERNAME: ${DATABASE_USER}
       DB_PASSWORD: ${DATABASE_PASSWORD}
       DB_DATABASE: ${DATABASE_NAME}
