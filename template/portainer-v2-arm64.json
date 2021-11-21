@@ -1386,7 +1386,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Gitea",
+					"bind": "/portainer/Files/AppData/Config/Gitea",
 					"container": "/data"
 				},
 				{
@@ -1410,6 +1410,61 @@
 					"name": "USER_GID"
 				}
 			]
+		},
+		{
+			"categories": [
+				"SCM",
+				"Tools"
+			],
+			"description": "Gitea with Mariadb: A painless self-hosted Git service.",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/gitea.png",
+			"name": "gitea-mysql",
+			"note": "More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables",
+			"env": [
+				{
+					"default": "1000",
+					"label": "USER_UID",
+					"name": "USER_UID"
+				},
+				{
+					"default": "1000",
+					"label": "USER_GID",
+					"name": "USER_GID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
+				{
+					"default": "gitea",
+					"label": "DATABASE_NAME",
+					"name": "DATABASE_NAME"
+				},
+				{
+					"default": "gitea",
+					"label": "DATABASE_USER",
+					"name": "DATABASE_USER"
+				},
+                {
+                    "label": "DATABASE_PASSWORD",
+                    "name": "DATABASE_PASSWORD",
+                    "default": ""
+                },
+				{
+                    "label": "MYSQL_ROOT_PASSWORD",
+                    "name": "MYSQL_ROOT_PASSWORD",
+                    "default": ""
+                }
+			],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Gitea with Mariadb",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/gitea-mariadb.yml",
+				"url": "https://github.com/novaspirit/pi-hosted/"
+			}
 		},
 		{
 			"categories": [
