@@ -21,7 +21,7 @@ services:
     hostname: gitea
     image: gitea/gitea:latest
     environment:
-      GITEA__database__DB_TYPE: "mysql"
+      GITEA__database__DB_TYPE: 'mysql'
       GITEA__database__HOST: 'mariadb':3306
       GITEA__database__USER: ${DATABASE_USER}
       GITEA__database__PASSWD: ${DATABASE_PASSWORD}
