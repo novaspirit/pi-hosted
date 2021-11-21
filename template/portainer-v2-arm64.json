@@ -1368,6 +1368,51 @@
 		},
 		{
 			"categories": [
+				"SCM",
+				"Tools"
+			],
+			"description": "A painless self-hosted Git service.",
+			"image": "gitea/gitea:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/gitea.png",
+			"name": "gitea",
+			"note": "More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables",
+			"platform": "linux",
+			"ports": [
+				"3000/tcp",
+				"222:22/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Gitea",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Gitea",
+					"container": "/data"
+				},
+				{
+					"bind": "/etc/timezone",
+					"container": "/etc/timezone:ro"
+				},
+				{
+					"bind": "/etc/localtime",
+					"container": "/etc/localtime:ro"
+				}
+			],
+			"env": [
+				{
+					"default": "1000",
+					"label": "USER_UID",
+					"name": "USER_UID"
+				},
+				{
+					"default": "1000",
+					"label": "USER_GID",
+					"name": "USER_GID"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
