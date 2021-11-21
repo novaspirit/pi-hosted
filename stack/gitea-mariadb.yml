@@ -35,7 +35,7 @@ services:
     ports:
       - 8124:3000      
       - 222:22      
-restart: unless-stopped
+    restart: unless-stopped
     volumes:
       - /portainer/Files/AppData/Config/Gitea/data:/data
       - /etc/timezone:/etc/timezone:ro
