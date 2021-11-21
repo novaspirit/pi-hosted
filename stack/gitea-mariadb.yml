@@ -1,6 +1,7 @@
-version: "3"
+version: "3.7"
 services:
   mariadb:
+    hostname: mariadb
     image: linuxserver/mariadb:latest
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -11,7 +12,7 @@ services:
       PGID: ${USER_GID}
       TZ: ${TZ}
     networks:
-      - gitea-mariadb_network
+      - gitea-mariadb-network
     restart: unless-stopped
     volumes:
       - /portainer/Files/AppData/Config/Gitea/Mariadb:/config
@@ -30,7 +31,7 @@ services:
       USER_GID: ${USER_GID}
       TZ: ${TZ}
     networks:
-      - gitea-mariadb_network
+      - gitea-mariadb-network
     ports:
       - 8124:3000      
       - 222:22      
@@ -43,4 +44,4 @@ restart: unless-stopped
       - mariadb
 
 networks:
-  gitea-mariadb_network:
+  gitea-mariadb-network:
