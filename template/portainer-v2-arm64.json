@@ -1373,7 +1373,7 @@
 			],
 			"description": "A painless self-hosted Git service.",
 			"image": "gitea/gitea:latest",
-			"logo": "https://gitea.io/images/gitea.png",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/gitea.png",
 			"name": "gitea",
 			"note": "More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables",
 			"platform": "linux",
