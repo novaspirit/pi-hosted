@@ -1378,7 +1378,7 @@
 			"note": "More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables",
 			"platform": "linux",
 			"ports": [
-				"3000/tcp",
+				"8124:3000/tcp",
 				"222:22/tcp"
 			],
 			"restart_policy": "unless-stopped",
