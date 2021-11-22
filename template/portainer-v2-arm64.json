@@ -5167,6 +5167,32 @@
 		{
 			"categories": [
 				"Other",
+				"Tools"
+			],
+			"description": "A Docker image for Windows 2000 Advanced Server with SP4.",
+			"image": "hectormolinero/qemu-win2000:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/win2000.png",
+			"note":"Why? Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should. -- Dr. Ian Malcolm",
+			"name": "win2000",
+			"platform": "linux",
+			"ports": [
+				"3389:3389/tcp",
+				"5900:5900/tcp",
+				"6080:6080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Windows 2000",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Win2000/zdrive",
+					"container": "/mnt"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
 				"VPN"
 			],
 			"description": "You have found the easiest way to install & manage WireGuard on any Linux host!",
