@@ -30,13 +30,12 @@ services:
       VIKUNJA_DATABASE_TYPE: mysql
     networks:
       - vikunja-network
-    ports:
-      - 3456:3456      
     restart: unless-stopped
     volumes:
       - /portainer/Files/AppData/Config/Vikunja/files:/app/vikunja/files
     depends_on:
       - mariadb
+
   vikunja-frontend:
     container_name: vikunja-frontend
     hostname: vikunja-frontend
