@@ -5012,7 +5012,7 @@
                 }
 			],
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/vikunja.png",
-			"name": "vikunja-frontend",
+			"name": "vikunja",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"title": "Vikunja With Frontend",

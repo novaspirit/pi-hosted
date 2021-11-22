@@ -12,7 +12,7 @@ services:
       PGID: ${USER_GID}
       TZ: ${TZ}
     networks:
-      - vikunja-network
+      - network
     restart: unless-stopped
     volumes:
       - /portainer/Files/AppData/Config/Vikunja/Mariadb:/config
@@ -29,7 +29,9 @@ services:
       VIKUNJA_DATABASE_DATABASE: ${DATABASE_NAME}
       VIKUNJA_DATABASE_TYPE: mysql
     networks:
-      - vikunja-network
+      - network
+    ports:
+      - 3456:3456
     restart: unless-stopped
     volumes:
       - /portainer/Files/AppData/Config/Vikunja/files:/app/vikunja/files
@@ -43,7 +45,7 @@ services:
     environment:
       VIKUNJA_API_URL: http://vikunja-api:3456/api/v1
     networks:
-      - vikunja-network
+      - network
     ports:
       - 3454:80
     restart: unless-stopped
@@ -51,4 +53,4 @@ services:
       - vikunja-api
 
 networks:
-  vikunja-network:
+  network:
