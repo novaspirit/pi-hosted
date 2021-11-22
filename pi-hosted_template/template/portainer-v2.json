@@ -1018,9 +1018,6 @@
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/drupal.png",
 			"name": "drupal",
 			"platform": "linux",
-			"ports": [
-				"4080:80/tcp"
-			],
 			"restart_policy": "unless-stopped",
 			"title": "Drupal",
 			"type": 3,
@@ -2197,6 +2194,62 @@
 		},
 		{
 			"categories": [
+				"Cloud",
+				"Web",
+				"Management",
+				"Photos"
+			],
+			"description": "Lychee With Mariadb is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
+				{
+					"default": "lychee",
+					"label": "DATABASE_NAME",
+					"name": "DATABASE_NAME"
+				},
+				{
+					"default": "lychee",
+					"label": "DATABASE_USER",
+					"name": "DATABASE_USER"
+				},
+                {
+                    "label": "DATABASE_PASSWORD",
+                    "name": "DATABASE_PASSWORD",
+                    "default": ""
+                },
+				{
+                    "label": "MYSQL_ROOT_PASSWORD",
+                    "name": "MYSQL_ROOT_PASSWORD",
+                    "default": ""
+                }
+			],
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lychee-icon.png",
+			"name": "lychee-mariadb",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Lychee With Mariadb",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/lychee-mariadb.yml",
+				"url": "https://github.com/novaspirit/pi-hosted/"
+			}
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
@@ -2213,25 +2266,25 @@
 					"name": "PGID"
 				},
 				{
-                                        "label": "MYSQL_ROOT_PASSWORD",
-                                        "name": "MYSQL_ROOT_PASSWORD",
-                                        "default": "rootpassword"
-                                },
-				{
-                                        "label": "MYSQL_DATABASE",
-                                        "name": "MYSQL_DATABASE",
-                                        "default": "lychee"
-                                },
+                    "label": "MYSQL_DATABASE",
+                    "name": "MYSQL_DATABASE",
+                    "default": ""
+                },
 				{
 					"label": "MYSQL_USER",
 					"name": "MYSQL_USER",
-					"default": "lychee"
+					"default": ""
 				},
 				{
-                                        "label": "MYSQL_PASSWORD",
-                                        "name": "MYSQL_PASSWORD",
-                                        "default": "dbpassword"
-                                }
+                    "label": "MYSQL_PASSWORD",
+                    "name": "MYSQL_PASSWORD",
+                    "default": "dbpassword"
+                },
+				{
+                    "label": "MYSQL_ROOT_PASSWORD",
+                    "name": "MYSQL_ROOT_PASSWORD",
+                    "default": "rootpassword"
+                }
 			],
 			"image": "linuxserver/mariadb:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mariadb-icon.png",
@@ -3949,6 +4002,41 @@
 				"Other",
 				"Tools"
 			],
+			"description": "Open-Source Privacy-respecting metasearch engine",
+			"image": "searxng/searxng:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/searx.png",
+			"name": "SearXNG",
+			"platform": "linux",
+			"ports": [
+				"9017:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "SearXNG",
+			"type": 1,
+			"env": [
+				{
+					"default": "http://localhost:9017",
+					"label": "BASE_URL",
+					"name": "BASE_URL"
+				},
+				{
+					"default": "my-instance",
+					"label": "INSTANCE_NAME",
+					"name": "INSTANCE_NAME"
+				}
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/searxng",
+					"container": "/etc/searxng"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
 			"description": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as web application.",
 			"image": "nicholaswilde/shiori:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/shiori-icon.png",
@@ -4771,6 +4859,62 @@
 					"container": "/data"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Cloud",
+				"Web",
+				"Management",
+				"todo"
+			],
+			"description": "Vikunja With Frontend.  The to-do app to organize your life.  Must run tools/install_vikunja.sh before installing the template.  More informantion at https://vikunja.io/",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
+				{
+					"default": "vikunja",
+					"label": "DATABASE_NAME",
+					"name": "DATABASE_NAME"
+				},
+				{
+					"default": "vikunja",
+					"label": "DATABASE_USER",
+					"name": "DATABASE_USER"
+				},
+                {
+                    "label": "DATABASE_PASSWORD",
+                    "name": "DATABASE_PASSWORD",
+                    "default": ""
+                },
+				{
+                    "label": "MYSQL_ROOT_PASSWORD",
+                    "name": "MYSQL_ROOT_PASSWORD",
+                    "default": ""
+                }
+			],
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/vikunja.png",
+			"name": "vikunja",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Vikunja With Frontend",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/vikunja.yml",
+				"url": "https://github.com/novaspirit/pi-hosted/"
+			}
 		},
 		{
 			"categories": [
