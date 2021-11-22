@@ -1,0 +1,55 @@
+version: "3.7"
+services:
+  mariadb:
+    hostname: mariadb
+    image: linuxserver/mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+      PUID: ${USER_UID}
+      PGID: ${USER_GID}
+      TZ: ${TZ}
+    networks:
+      - vikunja-network
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/Vikunja/Mariadb:/config
+
+  vikunja-api:
+    container_name: vikunja-api
+    hostname: vikunja-api
+    image: vikunja/api:latest
+    environment:
+      TZ: ${TZ}
+      VIKUNJA_DATABASE_HOST: 'mariadb'
+      VIKUNJA_DATABASE_USER: ${DATABASE_USER}
+      VIKUNJA_DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      VIKUNJA_DATABASE_DATABASE: ${DATABASE_NAME}
+      VIKUNJA_DATABASE_TYPE: mysql
+    networks:
+      - vikunja-network
+    ports:
+      - 3456:3456      
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/Vikunja/files:/app/vikunja/files
+    depends_on:
+      - mariadb
+  vikunja-frontend:
+    container_name: vikunja-frontend
+    hostname: vikunja-frontend
+    image: vikunja/frontend:latest
+    environment:
+      VIKUNJA_API_URL: http://vikunja-api:3456/api/v1
+    networks:
+      - vikunja-network
+    ports:
+      - 3454:80
+    restart: unless-stopped
+    depends_on:
+      - vikunja-api
+
+networks:
+  vikunja-network:
