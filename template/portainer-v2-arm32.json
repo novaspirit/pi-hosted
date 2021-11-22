@@ -4832,7 +4832,7 @@
 				"Management",
 				"todo"
 			],
-			"description": "Vikunka With Frontend.  The to-do app to organize your life.  https://vikunja.io/",
+			"description": "Vikunja With Frontend.  The to-do app to organize your life.  https://vikunja.io/",
 			"env": [
 				{
 					"default": "1000",
@@ -4850,12 +4850,12 @@
                     "name": "TZ"
                 },
 				{
-					"default": "vikunka",
+					"default": "vikunja",
 					"label": "DATABASE_NAME",
 					"name": "DATABASE_NAME"
 				},
 				{
-					"default": "vikunka",
+					"default": "vikunja",
 					"label": "DATABASE_USER",
 					"name": "DATABASE_USER"
 				},
@@ -4870,14 +4870,14 @@
                     "default": ""
                 }
 			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/vikunka.png",
-			"name": "vikunka-frontend",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/vikunja.png",
+			"name": "vikunja-frontend",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
-			"title": "Vikunka With Frontend",
+			"title": "Vikunja With Frontend",
 			"type": 3,
 			"repository": {
-				"stackfile": "stack/vikunka.yml",
+				"stackfile": "stack/vikunja.yml",
 				"url": "https://github.com/novaspirit/pi-hosted/"
 			}
 		},
