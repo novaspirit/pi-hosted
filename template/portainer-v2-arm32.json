@@ -4832,7 +4832,7 @@
 				"Management",
 				"todo"
 			],
-			"description": "Vikunja With Frontend.  The to-do app to organize your life.  https://vikunja.io/",
+			"description": "Vikunja With Frontend.  The to-do app to organize your life.  Must run tools/install_vikunja.sh before installing the template.  More informantion at https://vikunja.io/",
 			"env": [
 				{
 					"default": "1000",
