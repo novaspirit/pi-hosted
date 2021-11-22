@@ -40,8 +40,6 @@ services:
     container_name: frontend
     hostname: frontend
     image: vikunja/frontend:latest
-    environment:
-      VIKUNJA_API_URL: http://vikunja-api:3456/api/v1
     networks:
       - network
     restart: unless-stopped
@@ -49,6 +47,8 @@ services:
       - api
 
   proxy:
+    container_name: proxy
+    hostname: proxy
     image: nginx
     ports:
       - 3546:80
