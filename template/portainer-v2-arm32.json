@@ -337,7 +337,7 @@
 				"Web",
 				"Webserver"
 			],
-			"description": "Caddy - The Ultimate Server with Automatic HTTPS",
+			"description": "Caddy - The Ultimate Server with Automatic HTTPS.  Need to run tools/install_caddy.sh before installing the template.",
 			"image": "caddy:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/caddy.png",
 			"name": "caddy",
