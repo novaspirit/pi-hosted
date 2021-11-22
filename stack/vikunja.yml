@@ -17,9 +17,9 @@ services:
     volumes:
       - /portainer/Files/AppData/Config/Vikunja/Mariadb:/config
 
-  vikunja-api:
-    container_name: vikunja-api
-    hostname: vikunja-api
+  api:
+    container_name: api
+    hostname: api
     image: vikunja/api:latest
     environment:
       TZ: ${TZ}
@@ -30,27 +30,34 @@ services:
       VIKUNJA_DATABASE_TYPE: mysql
     networks:
       - network
-    ports:
-      - 3456:3456
     restart: unless-stopped
     volumes:
       - /portainer/Files/AppData/Config/Vikunja/files:/app/vikunja/files
     depends_on:
       - mariadb
 
-  vikunja-frontend:
-    container_name: vikunja-frontend
-    hostname: vikunja-frontend
+  frontend:
+    container_name: frontend
+    hostname: frontend
     image: vikunja/frontend:latest
     environment:
       VIKUNJA_API_URL: http://vikunja-api:3456/api/v1
     networks:
       - network
-    ports:
-      - 3454:80
     restart: unless-stopped
     depends_on:
-      - vikunja-api
+      - api
+
+  proxy:
+    image: nginx
+    ports:
+      - 3546:80
+    volumes:
+      - /portainer/Files/AppData/Config/Vikunja/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - api
+      - frontend
+    restart: unless-stopped
 
 networks:
   network:
