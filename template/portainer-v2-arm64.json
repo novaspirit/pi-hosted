@@ -5046,62 +5046,6 @@
 		},
 		{
 			"categories": [
-				"Cloud",
-				"Web",
-				"Management",
-				"todo"
-			],
-			"description": "Vikunka With Frontend.  The to-do app to organize your life.  https://vikunja.io/",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-                {
-					"default": "America/New_York",
-                    "label": "TZ",
-                    "name": "TZ"
-                },
-				{
-					"default": "vikunka",
-					"label": "DATABASE_NAME",
-					"name": "DATABASE_NAME"
-				},
-				{
-					"default": "vikunka",
-					"label": "DATABASE_USER",
-					"name": "DATABASE_USER"
-				},
-                {
-                    "label": "DATABASE_PASSWORD",
-                    "name": "DATABASE_PASSWORD",
-                    "default": ""
-                },
-				{
-                    "label": "MYSQL_ROOT_PASSWORD",
-                    "name": "MYSQL_ROOT_PASSWORD",
-                    "default": ""
-                }
-			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/vikunka.png",
-			"name": "vikunka-frontend",
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"title": "Vikunka With Frontend",
-			"type": 3,
-			"repository": {
-				"stackfile": "stack/vikunka.yml",
-				"url": "https://github.com/novaspirit/pi-hosted/"
-			}
-		},
-		{
-			"categories": [
 				"Downloaders"
 			],
 			"description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br]\r\n\t\tOptional postprocessors to add IMDb data or to customize your xmltv listing.[br]\r\n\t\thttp://www.webgrabplus.com/[br]\r\n\t\t[b][span style='color: #E80000;']Directions:[/span][/b][br]\r\n\t\t[b]/config[/b] : This is where WebGrab+Plus will store it's configuration.[br][br]\r\n\t\t[b]/data[/b] : This is where tv_grab_wg script in the Tvheadend container looks for the guide.xml file.[br][br]",
