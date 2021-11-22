@@ -361,7 +361,7 @@
 							"container": "/config"
 					},
 					{
-							"bind": "/portainer/Files/AppData/Config/Caddy/file",
+							"bind": "/portainer/Files/AppData/Config/Caddy/Caddyfile",
 							"container": "/etc/caddy/Caddyfile"
 					}
 			]

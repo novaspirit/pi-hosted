@@ -5,9 +5,21 @@ function error {
   exit 1
 }
 
+function check_internet() {
+  printf "Checking if you are online..."
+  wget -q --spider http://github.com
+  if [ $? -eq 0 ]; then
+    echo "Online. Continuing."
+  else
+    error "Offline. Go connect to the internet then run the script again."
+  fi
+}
+
+check_internet
+
 echo "Creating directories..."
 sudo mkdir -p /portainer/Files/AppData/Config/Caddy || error "Failed to create Caddy folder!"
-echo "Creating a blank caddy config files"
-sudo touch /portainer/Files/AppData/Config/Caddy/caddyfile || error "Failed to touch caddyfile file!"
+echo "Downloading caddy config files"
+sudo wget -O /portainer/Files/AppData/Config/Caddy/Caddyfile https://raw.githubusercontent.com/novaspirit/pi-hosted/master/configs/Caddyfile || error "Failed to download Caddyfile file!"
 echo "Setup complete. You can now install Caddy using the App Template."
 
