@@ -344,24 +344,24 @@
 			"note": "Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",
 			"platform": "linux",
 			"ports": [
-					"80/tcp",
-					"443/tcp",
-					"2019/tcp"
+					"80:80/tcp",
+					"443:443/tcp",
+					"2019:2019/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Caddy",
 			"type": 1,
 			"volumes": [
 					{
-							"bind": "/portainer/Files/AppData/Data/Caddy",
+							"bind": "/portainer/Files/AppData/Config/Caddy/Data",
 							"container": "/data"
 					},
 					{
-							"bind": "/portainer/Files/AppData/Config/Caddy",
+							"bind": "/portainer/Files/AppData/Config/Caddy/Config",
 							"container": "/config"
 					},
 					{
-							"bind": "/portainer/Files/AppData/Config/Caddyfile",
+							"bind": "/portainer/Files/AppData/Config/Caddy/file",
 							"container": "/etc/caddy/Caddyfile"
 					}
 			]
