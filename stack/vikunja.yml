@@ -49,6 +49,8 @@ services:
       - api
 
   proxy:
+    container_name: proxy
+    hostname: proxy
     image: nginx
     ports:
       - 3546:80
