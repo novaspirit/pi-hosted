@@ -3577,48 +3577,6 @@
 		},
 		{
 			"categories": [
-				"Downloaders",
-				"Other",
-				"Video",
-				"Tools"
-			],
-			"description": "Simple automated way for users to request new content for Plex.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"label": "URL_BASE",
-					"name": "URL_BASE",
-					"default": ""
-				}
-			],
-			"image": "linuxserver/plexrequests:latest",
-			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png",
-			"name": "plexrequests",
-			"platform": "linux",
-			"ports": [
-				"3300:3000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Plex Requests",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/PlexRequests",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
 				"VPN",
 				"Tools",
 				"Other",
