@@ -184,8 +184,8 @@ Assuming there are no errors your new host has been created and you will be retu
 
 
 
-## Pi Hosted : Nginx Proxy Manager Part TBD
-TBD
+## Pi Hosted : Nginx Proxy Manager Part 11
+[Installing Nginx Proxy Manager on Docker](https://www.youtube.com/watch?v=yl2Laxbqvo8)
 
 # Additional documentation
 
