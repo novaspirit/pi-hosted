@@ -21,6 +21,7 @@ services:
     environment:
       PMA_HOST: mariadb
       PMA_PORT: 3306
+      PMA_ARBITRARY: 1
     ports:
       - 4081:80
     networks:
