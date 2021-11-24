@@ -337,7 +337,7 @@
 				"Web",
 				"Webserver"
 			],
-			"description": "Caddy - The Ultimate Server with Automatic HTTPS",
+			"description": "Caddy - The Ultimate Server with Automatic HTTPS.  Need to run tools/install_caddy.sh before installing the template.",
 			"image": "caddy:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/caddy.png",
 			"name": "caddy",
@@ -361,7 +361,7 @@
 							"container": "/config"
 					},
 					{
-							"bind": "/portainer/Files/AppData/Config/Caddy/file",
+							"bind": "/portainer/Files/AppData/Config/Caddy/Caddyfile",
 							"container": "/etc/caddy/Caddyfile"
 					}
 			]
@@ -995,10 +995,20 @@
 			"description": "Drupal CMS.  Make sure you run the install script under tools before installing.",
 			"env": [
 				{
-					"default": "",
-					"label": "MYSQL_ROOT_PASSWORD",
-					"name": "MYSQL_ROOT_PASSWORD"
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
 				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
 				{
 					"default": "drupal",
 					"label": "DATABASE_NAME",
@@ -1013,6 +1023,11 @@
 					"default": "",
 					"label": "DATABASE_PASSWORD",
 					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"default": "",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/drupal.png",
@@ -2970,6 +2985,21 @@
 			],
 			"env": [
 				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
+				{
 					"default": "password",
 					"label": "DATABASE_PASSWORD",
 					"name": "DATABASE_PASSWORD"
@@ -3472,48 +3502,6 @@
 				{
 					"bind": "/portainer/Movies",
 					"container": "/movies"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Downloaders",
-				"Other",
-				"Video",
-				"Tools"
-			],
-			"description": "Simple automated way for users to request new content for Plex.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"label": "URL_BASE",
-					"name": "URL_BASE",
-					"default": ""
-				}
-			],
-			"image": "linuxserver/plexrequests:latest",
-			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png",
-			"name": "plexrequests",
-			"platform": "linux",
-			"ports": [
-				"3000:3000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Plex Requests",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/PlexRequests",
-					"container": "/config"
 				}
 			]
 		},
@@ -5020,6 +5008,32 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/Wikijs/data",
 					"container": "/data"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A Docker image for Windows 2000 Advanced Server with SP4.",
+			"image": "hectormolinero/qemu-win2000:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/win2000.png",
+			"note":"Why? Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should. -- Dr. Ian Malcolm",
+			"name": "win2000",
+			"platform": "linux",
+			"ports": [
+				"3389:3389/tcp",
+				"5900:5900/tcp",
+				"6080:6080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Windows 2000",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Win2000/zdrive",
+					"container": "/mnt"
 				}
 			]
 		},
