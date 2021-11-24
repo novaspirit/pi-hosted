@@ -1010,11 +1010,6 @@
                     "name": "TZ"
                 },
 				{
-					"default": "",
-					"label": "MYSQL_ROOT_PASSWORD",
-					"name": "MYSQL_ROOT_PASSWORD"
-				},
-				{
 					"default": "drupal",
 					"label": "DATABASE_NAME",
 					"name": "DATABASE_NAME"
@@ -1028,6 +1023,11 @@
 					"default": "",
 					"label": "DATABASE_PASSWORD",
 					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"default": "",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/drupal.png",
