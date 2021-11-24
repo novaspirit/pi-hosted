@@ -21,6 +21,8 @@ services:
     environment:
       PMA_HOST: mariadb
       PMA_PORT: 3306
+    ports:
+      - 4081:80
     networks:
       - drupal_network
     restart: unless-stopped
