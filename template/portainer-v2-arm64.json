@@ -3085,6 +3085,21 @@
 			],
 			"env": [
 				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
+				{
 					"default": "password",
 					"label": "DATABASE_PASSWORD",
 					"name": "DATABASE_PASSWORD"
