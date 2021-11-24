@@ -16,6 +16,15 @@ services:
     volumes:
       - /portainer/Files/AppData/Config/drupal/database:/var/lib/mysql
 
+  phpmyadmin:
+    image: phpmyadmin:latest
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+    networks:
+      - drupal_network
+    restart: unless-stopped
+      
   druapl:
     container_name: drupal
     hostname: drupal
