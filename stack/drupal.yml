@@ -15,8 +15,7 @@ services:
       - drupal_network
     restart: unless-stopped
     volumes:
-      - /portainer/Files/AppData/Config/drupal/database:/var/lib/mysql
-
+      - /portainer/Files/AppData/Config/drupal/database:/config
   phpmyadmin:
     image: phpmyadmin:latest
     environment:

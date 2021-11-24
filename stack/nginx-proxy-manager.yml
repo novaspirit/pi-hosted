@@ -33,4 +33,4 @@ services:
       TZ: ${TZ}
 
     volumes:
-      - /portainer/Files/AppData/Config/nginx-proxy-manager/database:/var/lib/mysql
+      - /portainer/Files/AppData/Config/nginx-proxy-manager/database:/config
