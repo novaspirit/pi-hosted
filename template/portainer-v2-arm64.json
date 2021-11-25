@@ -2165,6 +2165,29 @@
 		},
 		{
 			"categories": [
+					"Other",
+					"Tools"
+			],
+			"description": "An alternative private front-end to Reddit",
+			"image": "spikecodes/libreddit:arm",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/libreddit.png",
+			"name": "libreddit",
+			"platform": "linux",
+			"ports": [
+				"8088:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "libreddit",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/libreddit",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
