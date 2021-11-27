@@ -84,7 +84,7 @@ You're done! Now just click App Templates and deploy applications!
 
 =======
 
-| Addition Tools | Descriptions | wget install |
+| Addition Tools | Description | wget install |
 |----------------|--------------|--------------|
 | [install_caddy.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_caddy.sh) | Pre-setup script to install Caddy | wget -qO- https://git.io/JMsEe  \| bash | 
 | [install_drupal.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_drupal.sh) | Preinstall Setup for Drupal | wget -qO-  https://git.io/JMsEj \| bash |
