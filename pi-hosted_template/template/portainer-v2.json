@@ -1673,7 +1673,7 @@
 			"categories": [
 				"HomeAutomation"
 			],
-			"description": "Homebridge with Bluetooth allows you to integrate with smart home devices that do not natively support HomeKit. There are over 2,000 Homebridge plugins supporting thousands of different smart accessories.",
+			"description": "Debian Homebridge allows you to integrate with smart home devices that do not natively support HomeKit. There are over 2,000 Homebridge plugins supporting thousands of different smart accessories.",
 			"env": [
 				{
 					"default": "1000",
@@ -1701,19 +1701,19 @@
 					"name": "TZ"
 				}
 			],
-			"image": "bitkill/homebridge-bluetooth:latest",
+			"image": "oznu/homebridge:debian-arm32v7",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/homebridge.png",
-			"name": "homebridge-bluetooth",
+			"name": "debian-homebridge",
 			"network": "host",
 			"note": "Bringing HomeKit support where there is none",
 			"platform": "linux",
 			"privileged": true,
 			"restart_policy": "unless-stopped",
-			"title": "Homebridge with Bluetooth",
+			"title": "Debian Homebridge",
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/homebridge-bluetooth",
+					"bind": "/portainer/Files/AppData/Config/debian-homebridge",
 					"container": "/homebridge"
 				}
 			]
