@@ -501,6 +501,47 @@
 		},
 		{
 			"categories": [
+				"DNS",
+				"Tools"
+			],
+			"description": "Cloudflare DDNS - A small and fast DDNS updater for Cloudflare.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "",
+					"label": "CF_API_TOKEN",
+					"name": "CF_API_TOKEN"
+				},
+				{
+					"default": "",
+					"label": "DOMAINS (Comma Separated List)",
+					"name": "DOMAINS"
+				},
+				{
+					"default": "true",
+					"label": "PROXIED",
+					"name": "PROXIED"
+				}
+			],
+			"image": "favonia/cloudflare-ddns:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/cloudflare-ddns.png",
+			"name": "cloudflare-ddns",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Cloudflare DDNS",
+			"type": 3
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
