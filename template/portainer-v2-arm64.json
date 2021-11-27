@@ -538,7 +538,7 @@
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"title": "Cloudflare DDNS",
-			"type": 3
+			"type": 1
 		},
 		{
 			"categories": [
