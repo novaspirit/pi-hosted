@@ -72,7 +72,6 @@ You're done! Now just click App Templates and deploy applications!
 
 
 =======
-### Addition Documentation
 
 | Addition Documentation |
 |------------------------|
@@ -84,7 +83,6 @@ You're done! Now just click App Templates and deploy applications!
 |[Install and Setup Instructions for the Throttled Script](https://github.com/novaspirit/pi-hosted/blob/master/docs/throttled.md) |
 
 =======
-### Addition Tools
 
 | Addition Tools | Descriptions | wget install |
 |----------------|--------------|--------------|
