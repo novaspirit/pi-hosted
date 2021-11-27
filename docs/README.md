@@ -83,8 +83,21 @@ You're done! Now just click App Templates and deploy applications!
 |[WORDPRESS + SSL SETUP](https://github.com/novaspirit/pi-hosted/blob/master/docs/wordpress_installation.md) |
 |[Install and Setup Instructions for the Throttled Script](https://github.com/novaspirit/pi-hosted/blob/master/docs/throttled.md) |
 
+=======
+### Addition Documentation
 
-|| https://github.com/novaspirit/pi-hosted/tree/master/docs |
+| Addition Tools | wget bash    | Descriptions |
+|----------------|--------------|--------------|
+| [install_caddy.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_caddy.sh) | | Pre-setup script to install Caddy |
+| [install_drupal.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_drupal.sh) | | Preinstall Setup for Drupal |
+| [install_portainer_agent.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_portainer_agent.sh) [update_portainer_agent.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/update_portainer_agent.sh) | | |
+| []() | | |
+| []() | | |
+| []() | | |
+| []() | | |
+| []() | | |
+| []() | | |
+| []() | | |
 
 
 ### Contributors
