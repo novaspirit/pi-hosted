@@ -538,7 +538,7 @@
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"title": "Cloudflare DDNS",
-			"type": 3
+			"type": 1
 		},
 		{
 			"categories": [
@@ -4069,7 +4069,7 @@
 				"139:139/tcp",
 				"445:445/tcp"
 			],
-			"command": "-s 'portainer;/share;yes;no;yes;guest' -g 'map to guest = never' -g 'restrict anonymous = 2'",
+			"command": "",
 			"restart_policy": "unless-stopped",
 			"title": "Samba",
 			"type": 1,
@@ -4081,14 +4081,34 @@
 					"name": "PUID"
 				},
 				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "1000",
+					"label": "USERID",
+					"name": "USERID"
+				},
+				{
+					"default": "1000",
+					"label": "GROUPID",
+					"name": "GROUPID"
+				},
+				{
 					"default": "guest;guest",
 					"label": "USER",
 					"name": "USER"
 				},
 				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
+					"default": "true",
+					"label": "PERMISSIONS",
+					"name": "PERMISSIONS"
+				},
+				{
+					"default": "portainer;/share;yes;no;yes;guest",
+					"label": "SHARE",
+					"name": "SHARE"
 				}
 			],
 			"volumes": [
