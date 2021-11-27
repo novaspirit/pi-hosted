@@ -86,18 +86,18 @@ You're done! Now just click App Templates and deploy applications!
 =======
 ### Addition Tools
 
-| Addition Tools | wget bash    | Descriptions |
+| Addition Tools | wget install    | Descriptions |
 |----------------|--------------|--------------|
 | [install_caddy.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_caddy.sh) | | Pre-setup script to install Caddy |
 | [install_drupal.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_drupal.sh) | | Preinstall Setup for Drupal |
-| [install_portainer_agent.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_portainer_agent.sh) [update_portainer_agent.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/update_portainer_agent.sh) | | |
-| []() | | |
-| []() | | |
-| []() | | |
-| []() | | |
-| []() | | |
-| []() | | |
-| []() | | |
+| [install_portainer_agent.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_portainer_agent.sh) [update_portainer_agent.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/update_portainer_agent.sh) | |Install and upgrade Portainer Agent.  Portainer agent is used for remote management of the host you install it on.  |
+| [install_throttled.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/install_throttled.sh) | wget -qO- https://git.io/JXzw0 \| bash | [Install and Setup Instructions for the Throttled Script](https://github.com/novaspirit/pi-hosted/blob/master/docs/throttled.md)|
+| [install_vikunja.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/install_vikunja.sh) | | |
+| [nginx-proxy-manager.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/nginx-proxy-manager.sh) | | |
+| [rpi_docker_monitor.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/rpi_docker_monitor.sh) | | |
+| [traefik.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/traefik.sh) | | |
+| [unpoller-install.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/unpoller-install.sh) | | |
+| [update_libseccomp2.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/update_libseccomp2.sh) | | |
 
 
 ### Contributors
