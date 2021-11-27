@@ -86,8 +86,8 @@ You're done! Now just click App Templates and deploy applications!
 
 | Additional Tools | Description | wget install |
 |----------------|--------------|--------------|
-| [install_caddy.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_caddy.sh) | Pre-setup script to install Caddy | wget -qO- https://git.io/JMsEe  \| bash | 
-| [install_drupal.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_drupal.sh) | Preinstall Setup for Drupal | wget -qO-  https://git.io/JMsEj \| bash |
+| [install_caddy.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_caddy.sh) | Pre-setup script to install Caddy | wget -qO- https://git.io/JMsEe \| bash| 
+| [install_drupal.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_drupal.sh) | Preinstall Setup for Drupal | wget -qO- https://git.io/JMsEj \| bash|
 | [install_portainer_agent.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/install_portainer_agent.sh) [update_portainer_agent.sh](https://github.com/rmiddle/pi-hosted/blob/master/tools/update_portainer_agent.sh) |Install and upgrade Portainer Agent.  Portainer agent is used for remote management of the host you install it on.  |  |
 | [install_throttled.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/install_throttled.sh)  | [Install and Setup Instructions for the Throttled Script](https://github.com/novaspirit/pi-hosted/blob/master/docs/throttled.md) | wget -qO- https://git.io/JXzw0 \| bash |
 | [install_vikunja.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/install_vikunja.sh) | Preinstall Setup for Vikunja | wget -qO-  https://git.io/JMsuZ \| bash |
