@@ -1709,7 +1709,7 @@
 			"platform": "linux",
 			"privileged": true,
 			"restart_policy": "unless-stopped",
-			"title": "Debian Homebridge",
+			"title": "Homebridge - Debian",
 			"type": 1,
 			"volumes": [
 				{
