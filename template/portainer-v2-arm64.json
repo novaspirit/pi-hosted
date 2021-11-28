@@ -2932,7 +2932,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/mylar:latest",
+			"image": "linuxserver/mylar3:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mylar-icon.png",
 			"name": "mylar",
 			"platform": "linux",
