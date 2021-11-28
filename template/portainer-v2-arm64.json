@@ -4805,6 +4805,11 @@
 					"default": "192.168.0.0/24",
 					"label": "LOCAL_NETWORK",
 					"name": "LOCAL_NETWORK"
+				},
+				{
+					"default": "true",
+					"label": "watch-dir-enabled",
+					"name": "TRANSMISSION_WATCH_DIR_ENABLED"
 				}
 			],
 			"image": "haugene/transmission-openvpn:3.7.1",
