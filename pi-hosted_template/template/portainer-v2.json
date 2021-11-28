@@ -4627,7 +4627,7 @@
 				"VPN",
 				"Tools"
 			],
-			"description": "[arm] This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
+			"description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
 			"env": [
 				{
 					"default": "1000",
@@ -4665,6 +4665,11 @@
 					"default": "192.168.0.0/24",
 					"label": "LOCAL_NETWORK",
 					"name": "LOCAL_NETWORK"
+				},
+				{
+					"default": "true",
+					"label": "watch-dir-enabled",
+					"name": "TRANSMISSION_WATCH_DIR_ENABLED"
 				}
 			],
 			"image": "haugene/transmission-openvpn:3.7.1",
@@ -4678,6 +4683,80 @@
 			"privileged": true,
 			"restart_policy": "unless-stopped",
 			"title": "Transmission-OpenVPN",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/data"
+				},
+				{
+					"bind": "/etc/localtime",
+					"container": "/etc/localtime"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"VPN",
+				"Tools"
+			],
+			"description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "MULLVAD",
+					"description": "https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
+					"label": "OPENVPN_PROVIDER",
+					"name": "OPENVPN_PROVIDER"
+				},
+                {
+                    "default": "",
+                    "description": "Optional. Mostly used to narrow down what location to use by the provider",
+                    "label": "OPENVPN_CONFIG",
+                    "name": "OPENVPN_CONFIG"
+                },
+				{
+					"default": "",
+					"label": "OPENVPN_USERNAME",
+					"name": "OPENVPN_USERNAME"
+				},
+				{
+					"default": "",
+					"label": "OPENVPN_PASSWORD",
+					"name": "OPENVPN_PASSWORD"
+				},
+				{
+					"default": "192.168.0.0/24",
+					"label": "LOCAL_NETWORK",
+					"name": "LOCAL_NETWORK"
+				},
+				{
+					"default": "true",
+					"label": "watch-dir-enabled",
+					"name": "TRANSMISSION_WATCH_DIR_ENABLED"
+				}
+			],
+			"image": "haugene/transmission-openvpn:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/transmission-icon.png",
+			"name": "transmission-openvpn-v4",
+			"note": "List of supported providers available \u003ca href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/\u003ehere\u003c/a\u003e.",
+			"platform": "linux",
+			"ports": [
+				"9091:9091/tcp"
+			],
+			"privileged": true,
+			"restart_policy": "unless-stopped",
+			"title": "Transmission OpenVPN Version 4",
 			"type": 1,
 			"volumes": [
 				{
