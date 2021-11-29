@@ -18,6 +18,7 @@ function check_internet() {
 check_internet
 
 echo "Creating directories..."
+sudo mkdir -p /portainer/Files/AppData/Config/drupal/database || error "Failed to create database directory!"
 sudo mkdir -p /portainer/Files/AppData/Config/drupal/modules || error "Failed to create modules directory!"
 sudo mkdir -p /portainer/Files/AppData/Config/drupal/profiles || error "Failed to create profiles directory!"
 sudo mkdir -p /portainer/Files/AppData/Config/drupal/themes || error "Failed to create themes directory!"
@@ -31,6 +32,7 @@ sudo wget -O /portainer/Files/AppData/Config/drupal/sites/example.sites.php http
 sudo wget -O /portainer/Files/AppData/Config/drupal/sites/default/default.services.yml https://raw.githubusercontent.com/novaspirit/pi-hosted/master/configs/drupal/default/default.services.yml || error "Failed to download default.services.yml file!"
 sudo wget -O /portainer/Files/AppData/Config/drupal/sites/default/default.settings.php https://raw.githubusercontent.com/novaspirit/pi-hosted/master/configs/drupal/default/default.settings.php || error "Failed to download default.settings.php file!"
 echo "Setting permissions..."
+sudo chown -R 1000:1000 /portainer/Files/AppData/Config/drupal/database || error "Failed to set permissions for database data!"
 sudo chown -R 33:33 /portainer/Files/AppData/Config/drupal/modules || error "Failed to set permissions for modules data!"
 sudo chown -R 33:33 /portainer/Files/AppData/Config/drupal/profiles || error "Failed to set permissions for profiles data!"
 sudo chown -R 33:33 /portainer/Files/AppData/Config/drupal/themes || error "Failed to set permissions for themes data!"

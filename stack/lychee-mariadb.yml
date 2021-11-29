@@ -1,0 +1,44 @@
+version: "3"
+services:
+  mariadb:
+    image: linuxserver/mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+      PGID: ${PGID}
+      PUID: ${PUID}
+      TZ: ${TZ}
+    networks:
+      - lychee-mariadb_network
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/Lychee/Mariadb:/config
+
+  lychee:
+    container_name: lychee
+    hostname: lychee
+    image: linuxserver/lychee:latest
+    environment:
+      DB_HOST: 'mariadb'
+      DB_USERNAME: ${DATABASE_USER}
+      DB_PASSWORD: ${DATABASE_PASSWORD}
+      DB_DATABASE: ${DATABASE_NAME}
+      DB_PORT: 3306
+      PGID: ${PGID}
+      PUID: ${PUID}
+      TZ: ${TZ}
+    networks:
+      - lychee-mariadb_network
+    ports:
+      - 84:80
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/Lychee/config:/config
+      - /portainer/Pictures:/pictures
+    depends_on:
+      - mariadb
+
+networks:
+  lychee-mariadb_network:

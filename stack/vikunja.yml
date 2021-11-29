@@ -1,0 +1,65 @@
+version: "3.7"
+services:
+  mariadb:
+    hostname: mariadb
+    image: linuxserver/mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+      PUID: ${USER_UID}
+      PGID: ${USER_GID}
+      TZ: ${TZ}
+    networks:
+      - network
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/Vikunja/Mariadb:/config
+
+  api:
+    container_name: api
+    hostname: api
+    image: vikunja/api:latest
+    environment:
+      TZ: ${TZ}
+      VIKUNJA_DATABASE_HOST: 'mariadb'
+      VIKUNJA_DATABASE_USER: ${DATABASE_USER}
+      VIKUNJA_DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      VIKUNJA_DATABASE_DATABASE: ${DATABASE_NAME}
+      VIKUNJA_DATABASE_TYPE: mysql
+    networks:
+      - network
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/Vikunja/files:/app/vikunja/files
+    depends_on:
+      - mariadb
+
+  frontend:
+    container_name: frontend
+    hostname: frontend
+    image: vikunja/frontend:latest
+    networks:
+      - network
+    restart: unless-stopped
+    depends_on:
+      - api
+
+  proxy:
+    container_name: proxy
+    hostname: proxy
+    image: nginx
+    ports:
+      - 3456:80
+    volumes:
+      - /portainer/Files/AppData/Config/Vikunja/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - network
+    restart: unless-stopped
+    depends_on:
+      - api
+      - frontend
+
+networks:
+  network:

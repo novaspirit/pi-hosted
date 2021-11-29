@@ -21,12 +21,16 @@ services:
       - 81:81
     restart: unless-stopped
   db:
-    image: jc21/mariadb-aria:latest
+    image: linuxserver/mariadb:latest
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: npm
       MYSQL_USER: npm
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+      PUID: ${USER_UID}
+      PGID: ${USER_GID}
+      TZ: ${TZ}
+
     volumes:
-      - /portainer/Files/AppData/Config/nginx-proxy-manager/database:/var/lib/mysql
+      - /portainer/Files/AppData/Config/nginx-proxy-manager/database:/config

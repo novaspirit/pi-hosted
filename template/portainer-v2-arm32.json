@@ -333,6 +333,41 @@
 		},
 		{
 			"categories": [
+				"Tools",
+				"Web",
+				"Webserver"
+			],
+			"description": "Caddy - The Ultimate Server with Automatic HTTPS.  Need to run tools/install_caddy.sh before installing the template.",
+			"image": "caddy:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/caddy.png",
+			"name": "caddy",
+			"note": "Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",
+			"platform": "linux",
+			"ports": [
+					"80:80/tcp",
+					"443:443/tcp",
+					"2019:2019/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Caddy",
+			"type": 1,
+			"volumes": [
+					{
+							"bind": "/portainer/Files/AppData/Config/Caddy/Data",
+							"container": "/data"
+					},
+					{
+							"bind": "/portainer/Files/AppData/Config/Caddy/Config",
+							"container": "/config"
+					},
+					{
+							"bind": "/portainer/Files/AppData/Config/Caddy/Caddyfile",
+							"container": "/etc/caddy/Caddyfile"
+					}
+			]
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools",
 				"Photo"
@@ -463,6 +498,47 @@
 					"container": "/config"
 				}
 			]
+		},
+		{
+			"categories": [
+				"DNS",
+				"Tools"
+			],
+			"description": "Cloudflare DDNS - A small and fast DDNS updater for Cloudflare.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "",
+					"label": "CF_API_TOKEN",
+					"name": "CF_API_TOKEN"
+				},
+				{
+					"default": "",
+					"label": "DOMAINS (Comma Separated List)",
+					"name": "DOMAINS"
+				},
+				{
+					"default": "true",
+					"label": "PROXIED",
+					"name": "PROXIED"
+				}
+			],
+			"image": "favonia/cloudflare-ddns:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/cloudflare-ddns.png",
+			"name": "cloudflare-ddns",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Cloudflare DDNS",
+			"type": 1
 		},
 		{
 			"categories": [
@@ -960,10 +1036,20 @@
 			"description": "Drupal CMS.  Make sure you run the install script under tools before installing.",
 			"env": [
 				{
-					"default": "",
-					"label": "MYSQL_ROOT_PASSWORD",
-					"name": "MYSQL_ROOT_PASSWORD"
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
 				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
 				{
 					"default": "drupal",
 					"label": "DATABASE_NAME",
@@ -978,14 +1064,16 @@
 					"default": "",
 					"label": "DATABASE_PASSWORD",
 					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"default": "",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/drupal.png",
 			"name": "drupal",
 			"platform": "linux",
-			"ports": [
-				"4080:80/tcp"
-			],
 			"restart_policy": "unless-stopped",
 			"title": "Drupal",
 			"type": 3,
@@ -1612,12 +1700,61 @@
 			"note": "Bringing HomeKit support where there is none",
 			"platform": "linux",
 			"privileged": true,
-			"restart_policy": "always",
+			"restart_policy": "unless-stopped",
 			"title": "Homebridge",
 			"type": 1,
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/homebridge",
+					"container": "/homebridge"
+				}
+			]
+		},
+		{
+			"categories": [
+				"HomeAutomation"
+			],
+			"description": "Debian Homebridge allows you to integrate with smart home devices that do not natively support HomeKit. There are over 2,000 Homebridge plugins supporting thousands of different smart accessories.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1",
+					"label": "HOMEBRIDGE_CONFIG_UI",
+					"name": "HOMEBRIDGE_CONFIG_UI"
+				},
+				{
+					"default": "8581",
+					"label": "HOMEBRIDGE_CONFIG_UI_PORT",
+					"name": "HOMEBRIDGE_CONFIG_UI_PORT"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "oznu/homebridge:debian-arm32v7",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/homebridge.png",
+			"name": "homebridge-debian",
+			"network": "host",
+			"note": "Bringing HomeKit support where there is none",
+			"platform": "linux",
+			"privileged": true,
+			"restart_policy": "unless-stopped",
+			"title": "Homebridge - Debian",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/debian-homebridge",
 					"container": "/homebridge"
 				}
 			]
@@ -2018,6 +2155,29 @@
 		},
 		{
 			"categories": [
+					"Other",
+					"Tools"
+			],
+			"description": "An alternative private front-end to Reddit",
+			"image": "spikecodes/libreddit:armv7",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/libreddit.png",
+			"name": "libreddit",
+			"platform": "linux",
+			"ports": [
+				"8088:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "libreddit",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/libreddit",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
@@ -2162,6 +2322,62 @@
 		},
 		{
 			"categories": [
+				"Cloud",
+				"Web",
+				"Management",
+				"Photos"
+			],
+			"description": "Lychee With Mariadb is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
+				{
+					"default": "lychee",
+					"label": "DATABASE_NAME",
+					"name": "DATABASE_NAME"
+				},
+				{
+					"default": "lychee",
+					"label": "DATABASE_USER",
+					"name": "DATABASE_USER"
+				},
+                {
+                    "label": "DATABASE_PASSWORD",
+                    "name": "DATABASE_PASSWORD",
+                    "default": ""
+                },
+				{
+                    "label": "MYSQL_ROOT_PASSWORD",
+                    "name": "MYSQL_ROOT_PASSWORD",
+                    "default": ""
+                }
+			],
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lychee-icon.png",
+			"name": "lychee-mariadb",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Lychee With Mariadb",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/lychee-mariadb.yml",
+				"url": "https://github.com/novaspirit/pi-hosted/"
+			}
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
@@ -2178,25 +2394,25 @@
 					"name": "PGID"
 				},
 				{
-                                        "label": "MYSQL_ROOT_PASSWORD",
-                                        "name": "MYSQL_ROOT_PASSWORD",
-                                        "default": "rootpassword"
-                                },
-				{
-                                        "label": "MYSQL_DATABASE",
-                                        "name": "MYSQL_DATABASE",
-                                        "default": "lychee"
-                                },
+                    "label": "MYSQL_DATABASE",
+                    "name": "MYSQL_DATABASE",
+                    "default": ""
+                },
 				{
 					"label": "MYSQL_USER",
 					"name": "MYSQL_USER",
-					"default": "lychee"
+					"default": ""
 				},
 				{
-                                        "label": "MYSQL_PASSWORD",
-                                        "name": "MYSQL_PASSWORD",
-                                        "default": "dbpassword"
-                                }
+                    "label": "MYSQL_PASSWORD",
+                    "name": "MYSQL_PASSWORD",
+                    "default": "dbpassword"
+                },
+				{
+                    "label": "MYSQL_ROOT_PASSWORD",
+                    "name": "MYSQL_ROOT_PASSWORD",
+                    "default": "rootpassword"
+                }
 			],
 			"image": "linuxserver/mariadb:arm32v7-latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mariadb-icon.png",
@@ -2616,7 +2832,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/mylar:latest",
+			"image": "linuxserver/mylar3:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mylar-icon.png",
 			"name": "mylar",
 			"platform": "linux",
@@ -2881,6 +3097,21 @@
 				"443:4443/tcp"
 			],
 			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
 				{
 					"default": "password",
 					"label": "DATABASE_PASSWORD",
@@ -3389,48 +3620,6 @@
 		},
 		{
 			"categories": [
-				"Downloaders",
-				"Other",
-				"Video",
-				"Tools"
-			],
-			"description": "Simple automated way for users to request new content for Plex.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"label": "URL_BASE",
-					"name": "URL_BASE",
-					"default": ""
-				}
-			],
-			"image": "linuxserver/plexrequests:latest",
-			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png",
-			"name": "plexrequests",
-			"platform": "linux",
-			"ports": [
-				"3000:3000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Plex Requests",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/PlexRequests",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Cloud",
 				"Productivity",
 				"Tools",
@@ -3509,33 +3698,6 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/ProjectSend",
 					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Email",
-				"Productivity",
-				"Tools",
-				"Other"
-			],
-			"description": "This is an unofficial Docker container of the ProtonMail Bridge. Some of the scripts are based on Hendrik Meyer's work.",
-			"image": "shenxn/protonmail-bridge:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/protonmail-bridge.png",
-			"name": "protonmail-bridge",
-			"note": "Please refer to the documentation \u003ca href='https://hub.docker.com/r/shenxn/protonmail-bridge'/\u003ehere\u003c/a\u003e to set this up.",
-			"platform": "linux",
-			"ports": [
-				"143:143/tcp",
-				"25:25/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "ProtonMail Bridge",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/ProtonMail-Bridge",
-					"container": "/root"
 				}
 			]
 		},
@@ -3717,29 +3879,6 @@
 		},
 		{
 			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
-			"image": "amruthpillai/reactive-resume:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/reactiveresume.png",
-			"name": "reactive-resume",
-			"platform": "linux",
-			"ports": [
-				"7768:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Reactive-Resume",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/ReactiveResume",
-					"container": "/usr/src/app"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Backup",
 				"Cloud",
 				"Other",
@@ -3880,7 +4019,7 @@
 				"139:139/tcp",
 				"445:445/tcp"
 			],
-			"command": "-s 'portainer;/share;yes;no;yes'",
+			"command": "",
 			"restart_policy": "unless-stopped",
 			"title": "Samba",
 			"type": 1,
@@ -3895,12 +4034,72 @@
 					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
+				},
+				{
+					"default": "1000",
+					"label": "USERID",
+					"name": "USERID"
+				},
+				{
+					"default": "1000",
+					"label": "GROUPID",
+					"name": "GROUPID"
+				},
+				{
+					"default": "guest;guest",
+					"label": "USER",
+					"name": "USER"
+				},
+				{
+					"default": "true",
+					"label": "PERMISSIONS",
+					"name": "PERMISSIONS"
+				},
+				{
+					"default": "portainer;/share;yes;no;yes;guest",
+					"label": "SHARE",
+					"name": "SHARE"
 				}
 			],
 			"volumes": [
 				{
 					"bind": "/portainer/Downloads",
 					"container": "/share"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Open-Source Privacy-respecting metasearch engine",
+			"image": "searxng/searxng:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/searx.png",
+			"name": "SearXNG",
+			"platform": "linux",
+			"ports": [
+				"9017:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "SearXNG",
+			"type": 1,
+			"env": [
+				{
+					"default": "http://localhost:9017",
+					"label": "BASE_URL",
+					"name": "BASE_URL"
+				},
+				{
+					"default": "my-instance",
+					"label": "INSTANCE_NAME",
+					"name": "INSTANCE_NAME"
+				}
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/searxng",
+					"container": "/etc/searxng"
 				}
 			]
 		},
@@ -4378,7 +4577,7 @@
 				"VPN",
 				"Tools"
 			],
-			"description": "[arm] This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
+			"description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
 			"env": [
 				{
 					"default": "1000",
@@ -4416,6 +4615,11 @@
 					"default": "192.168.0.0/24",
 					"label": "LOCAL_NETWORK",
 					"name": "LOCAL_NETWORK"
+				},
+				{
+					"default": "true",
+					"label": "watch-dir-enabled",
+					"name": "TRANSMISSION_WATCH_DIR_ENABLED"
 				}
 			],
 			"image": "haugene/transmission-openvpn:3.7.1",
@@ -4429,6 +4633,80 @@
 			"privileged": true,
 			"restart_policy": "unless-stopped",
 			"title": "Transmission-OpenVPN",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/data"
+				},
+				{
+					"bind": "/etc/localtime",
+					"container": "/etc/localtime"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"VPN",
+				"Tools"
+			],
+			"description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "MULLVAD",
+					"description": "https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
+					"label": "OPENVPN_PROVIDER",
+					"name": "OPENVPN_PROVIDER"
+				},
+                {
+                    "default": "",
+                    "description": "Optional. Mostly used to narrow down what location to use by the provider",
+                    "label": "OPENVPN_CONFIG",
+                    "name": "OPENVPN_CONFIG"
+                },
+				{
+					"default": "",
+					"label": "OPENVPN_USERNAME",
+					"name": "OPENVPN_USERNAME"
+				},
+				{
+					"default": "",
+					"label": "OPENVPN_PASSWORD",
+					"name": "OPENVPN_PASSWORD"
+				},
+				{
+					"default": "192.168.0.0/24",
+					"label": "LOCAL_NETWORK",
+					"name": "LOCAL_NETWORK"
+				},
+				{
+					"default": "true",
+					"label": "watch-dir-enabled",
+					"name": "TRANSMISSION_WATCH_DIR_ENABLED"
+				}
+			],
+			"image": "haugene/transmission-openvpn:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/transmission-icon.png",
+			"name": "transmission-openvpn-v4",
+			"note": "List of supported providers available \u003ca href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/\u003ehere\u003c/a\u003e.",
+			"platform": "linux",
+			"ports": [
+				"9091:9091/tcp"
+			],
+			"privileged": true,
+			"restart_policy": "unless-stopped",
+			"title": "Transmission OpenVPN Version 4",
 			"type": 1,
 			"volumes": [
 				{
@@ -4734,6 +5012,62 @@
 		},
 		{
 			"categories": [
+				"Cloud",
+				"Web",
+				"Management",
+				"todo"
+			],
+			"description": "Vikunja With Frontend.  The to-do app to organize your life.  Must run tools/install_vikunja.sh before installing the template.  More informantion at https://vikunja.io/",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
+				{
+					"default": "vikunja",
+					"label": "DATABASE_NAME",
+					"name": "DATABASE_NAME"
+				},
+				{
+					"default": "vikunja",
+					"label": "DATABASE_USER",
+					"name": "DATABASE_USER"
+				},
+                {
+                    "label": "DATABASE_PASSWORD",
+                    "name": "DATABASE_PASSWORD",
+                    "default": ""
+                },
+				{
+                    "label": "MYSQL_ROOT_PASSWORD",
+                    "name": "MYSQL_ROOT_PASSWORD",
+                    "default": ""
+                }
+			],
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/vikunja.png",
+			"name": "vikunja",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Vikunja With Frontend",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/vikunja.yml",
+				"url": "https://github.com/novaspirit/pi-hosted/"
+			}
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools",
 				"Maintenance"
@@ -4795,7 +5129,7 @@
 				"Tools"
 			],
 			"description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
-			"image": "benbusby/whoogle-search:latest",
+			"image": "benbusby/whoogle-search:0.6.0",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/whoogle.png",
 			"name": "whoogle",
 			"platform": "linux",
@@ -4836,6 +5170,32 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/Wikijs/data",
 					"container": "/data"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A Docker image for Windows 2000 Advanced Server with SP4.",
+			"image": "hectormolinero/qemu-win2000:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/win2000.png",
+			"note":"Why? Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should. -- Dr. Ian Malcolm",
+			"name": "win2000",
+			"platform": "linux",
+			"ports": [
+				"3389:3389/tcp",
+				"5900:5900/tcp",
+				"6080:6080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Windows 2000",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Win2000/zdrive",
+					"container": "/mnt"
 				}
 			]
 		},
