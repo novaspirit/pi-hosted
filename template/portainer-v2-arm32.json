@@ -3262,7 +3262,7 @@
 				}
 			],
 			"image": "mbentley/omada-controller:latest-armv7l",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/unifi-icon.png",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/omada.png",
 			"name": "omada-controller",
 			"platform": "linux",
 			"ports": [
