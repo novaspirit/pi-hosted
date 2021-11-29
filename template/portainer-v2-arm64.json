@@ -3849,7 +3849,7 @@
 				"Other"
 			],
 			"description": "This is an unofficial Docker container of the ProtonMail Bridge. Some of the scripts are based on Hendrik Meyer's work.",
-			"image": "shenxn/protonmail-bridge:latest",
+			"image": "shenxn/protonmail-bridge:build",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/protonmail-bridge.png",
 			"name": "protonmail-bridge",
 			"note": "Please refer to the documentation \u003ca href='https://hub.docker.com/r/shenxn/protonmail-bridge'/\u003ehere\u003c/a\u003e to set this up.",

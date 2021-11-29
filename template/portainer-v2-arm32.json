@@ -3703,33 +3703,6 @@
 		},
 		{
 			"categories": [
-				"Email",
-				"Productivity",
-				"Tools",
-				"Other"
-			],
-			"description": "This is an unofficial Docker container of the ProtonMail Bridge. Some of the scripts are based on Hendrik Meyer's work.",
-			"image": "shenxn/protonmail-bridge:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/protonmail-bridge.png",
-			"name": "protonmail-bridge",
-			"note": "Please refer to the documentation \u003ca href='https://hub.docker.com/r/shenxn/protonmail-bridge'/\u003ehere\u003c/a\u003e to set this up.",
-			"platform": "linux",
-			"ports": [
-				"143:143/tcp",
-				"25:25/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "ProtonMail Bridge",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/ProtonMail-Bridge",
-					"container": "/root"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Cloud",
 				"Other"
 			],
