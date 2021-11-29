@@ -4046,29 +4046,6 @@
 		},
 		{
 			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
-			"image": "amruthpillai/reactive-resume:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/reactiveresume.png",
-			"name": "reactive-resume",
-			"platform": "linux",
-			"ports": [
-				"7768:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Reactive-Resume",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/ReactiveResume",
-					"container": "/usr/src/app"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Backup",
 				"Cloud",
 				"Other",
