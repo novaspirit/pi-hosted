@@ -3245,6 +3245,48 @@
 		},
 		{
 			"categories": [
+				"Management",
+				"Tools"
+			],
+			"description": "TP-Link Omada is a software-defined network manager. The EAP Controller is used to manage multiple EAPs intensively.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "mbentley/omada-controller:latest-armv7l",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/unifi-icon.png",
+			"name": "omada-controller",
+			"platform": "linux",
+			"ports": [
+				"8088:8088/tcp",
+				"8043:8043/tcp",
+				"27001:27001/udp",
+				"27002:27002/tcp",
+				"29810:29810/udp",
+				"29811:29811/tcp",
+				"29812:29812/tcp",
+				"29813:29813/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Omada EAP Controller",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Omada",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Downloaders",
 				"Other",
 				"Video",
