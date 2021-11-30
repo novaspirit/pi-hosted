@@ -4036,6 +4036,13 @@
 			"ports": [
 				"3000:3000/tcp"
 			],
+			"env": [
+				{
+					"default": "15d",
+					"label": "PROMETHEUS_RETENTION",
+					"name": "PROMETHEUS_RETENTION"
+				}
+			],
 			"restart_policy": "unless-stopped",
 			"title": "Raspberry Pi Docker Monitor",
 			"type": 3,
