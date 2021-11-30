@@ -3248,7 +3248,7 @@
 				"Management",
 				"Tools"
 			],
-			"description": "TP-Link Omada is a software-defined network manager. The EAP Controller is used to manage multiple EAPs intensively.",
+			"description": "TP-Link Omada is a software-defined network solution. The EAP Controller is used to manage multiple EAPs. Raspberry Pi 1 and Zero are not supported.",
 			"env": [
 				{
 					"default": "1000",
