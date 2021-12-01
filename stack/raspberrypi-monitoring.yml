@@ -32,7 +32,7 @@ services:
       - GF_PATHS_PLUGINS=/var/lib/grafana/plugins
       - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
     hostname: rpi-grafana
-    image: grafana/grafana:latest
+    image: grafana/grafana:main
     networks:
       - rpimonitor_default
     ports:
