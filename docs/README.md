@@ -78,7 +78,7 @@ You're done! Now just click App Templates and deploy applications!
 | [Install and setup instructions for the RPI Unifi (UnPoller) Monitor](https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md) |
 | [Install and setup instructions for Nginx Proxy Manager (NPM)](https://github.com/novaspirit/pi-hosted/blob/master/docs/nginx_proxy_manager.md) |
 |[Install and setup instructions for the RPI Docker Monitor](https://github.com/novaspirit/pi-hosted/blob/master/docs/rpi_docker_monitor.md) |
-|[Install and setup instructions for the WireGuard VPN Server](https://github.com/novaspirit/pi-hosted/blob/master/docs/wiregaurd-install.md) |
+|[Install and setup instructions for the WireGuard VPN Server](https://github.com/novaspirit/pi-hosted/blob/master/docs/wireguard-install.md) |
 |[WORDPRESS + SSL SETUP](https://github.com/novaspirit/pi-hosted/blob/master/docs/wordpress_installation.md) |
 |[Install and Setup Instructions for the Throttled Script](https://github.com/novaspirit/pi-hosted/blob/master/docs/throttled.md) |
 
