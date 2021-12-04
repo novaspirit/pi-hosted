@@ -107,6 +107,10 @@ Done You are ready to goto next step in the install document
 
 Goto App Templates and install "Raspberry Pi Docker Monitor"
 
+You can change how long your data should be stored or leave the default **15d**. It can be set with {`ms`,`s`,`m`,`h`,`d`,`w`,`y`} or a combination of it (e.g. `2w3d` for 2 weeks and 3 days).
+
+![Stack Settings](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-DeployStack.png)
+
 The default settings should all be good so **Deploy the Stack**
 <br><br>
 
