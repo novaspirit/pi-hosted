@@ -1876,6 +1876,18 @@
 			"restart_policy": "unless-stopped",
 			"title": "Homer",
 			"type": 1,
+			"env": [
+				{
+					"default": "1000",
+					"label": "GID",
+					"name": "GID"
+				},
+				{
+					"default": "1000",
+					"label": "UID",
+					"name": "UID"
+				}
+			],
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/Homer/assets",
