@@ -95,6 +95,7 @@ You're done! Now just click App Templates and deploy applications!
 | [rpi_docker_monitor.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/rpi_docker_monitor.sh) | Preinstall Setup for Docker Monitor [Installation Document](https://github.com/novaspirit/pi-hosted/blob/master/docs/rpi_docker_monitor.md) | wget -qO- https://git.io/JPXba \| bash|
 | [traefik.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/traefik.sh) | Preinstall Setup for Traefik | wget -qO- https://git.io/JMsuA \| bash|
 | [unpoller-install.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/unpoller-install.sh) | Preinstall Setup for UnPoller [Installation Document](https://github.com/rmiddle/pi-hosted/blob/readme_update/docs/UnPoller-Monitor.md)| wget -qO- https://git.io/JMszE \| bash|
+| [install_photoprism.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/install_photoprism.sh) | Install Photo Prism | wget -qO- https://git.io/JM5Tr \| bash|
 | [update_libseccomp2.sh](https://github.com/rmiddle/pi-hosted/blob/readme_update/tools/update_libseccomp2.sh) | PI OS 32 libseccomp2 Repair utility | wget -qO- https://git.io/JPXdj \| bash|
 
 
