@@ -3269,6 +3269,48 @@
 		},
 		{
 			"categories": [
+				"Management",
+				"Tools"
+			],
+			"description": "TP-Link Omada is a software-defined network solution. The EAP Controller is used to manage multiple EAPs. Raspberry Pi 1 and Zero are not supported.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "mbentley/omada-controller:latest-armv7l",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/omada.png",
+			"name": "omada-controller",
+			"platform": "linux",
+			"ports": [
+				"8088:8088/tcp",
+				"8043:8043/tcp",
+				"27001:27001/udp",
+				"27002:27002/tcp",
+				"29810:29810/udp",
+				"29811:29811/tcp",
+				"29812:29812/tcp",
+				"29813:29813/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Omada EAP Controller",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Omada",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Downloaders",
 				"Other",
 				"Video",
@@ -3978,29 +4020,6 @@
 				"stackfile": "stack/raspberrypi-monitoring.yml",
 				"url": "https://github.com/novaspirit/pi-hosted"
 			}
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
-			"image": "amruthpillai/reactive-resume:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/reactiveresume.png",
-			"name": "reactive-resume",
-			"platform": "linux",
-			"ports": [
-				"7768:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Reactive-Resume",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/ReactiveResume",
-					"container": "/usr/src/app"
-				}
-			]
 		},
 		{
 			"categories": [
