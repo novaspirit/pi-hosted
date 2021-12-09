@@ -1876,6 +1876,18 @@
 			"restart_policy": "unless-stopped",
 			"title": "Homer",
 			"type": 1,
+			"env": [
+				{
+					"default": "1000",
+					"label": "GID",
+					"name": "GID"
+				},
+				{
+					"default": "1000",
+					"label": "UID",
+					"name": "UID"
+				}
+			],
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/Homer/assets",
@@ -2036,7 +2048,7 @@
 					"name": "MYJD_PASSWORD"
 				}
 			],
-			"image": "jaymoulin/jdownloader:latest",
+			"image": "jaymoulin/jdownloader:1.4.3",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jdownloader.png",
 			"name": "JDownloader",
 			"platform": "linux",
@@ -2662,7 +2674,7 @@
                                 "Games"
                         ],
 						"description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
-                        "image": "itzg/minecraft-server:multiarch-latest",
+                        "image": "itzg/minecraft-server:latest",
                         "logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/minecraft.png",
                         "name": "minecraft",
                         "platform": "linux",
@@ -2767,6 +2779,18 @@
 			"restart_policy": "unless-stopped",
 			"title": "Mstream",
 			"type": 1,
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/Mstream",
@@ -3345,6 +3369,48 @@
 		},
 		{
 			"categories": [
+				"Management",
+				"Tools"
+			],
+			"description": "TP-Link Omada is a software-defined network solution. The EAP Controller is used to manage multiple EAPs. Raspberry Pi 1 and Zero are not supported.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "mbentley/omada-controller:latest-arm64",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/omada.png",
+			"name": "omada-controller",
+			"platform": "linux",
+			"ports": [
+				"8088:8088/tcp",
+				"8043:8043/tcp",
+				"27001:27001/udp",
+				"27002:27002/tcp",
+				"29810:29810/udp",
+				"29811:29811/tcp",
+				"29812:29812/tcp",
+				"29813:29813/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Omada EAP Controller",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Omada",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Downloaders",
 				"Other",
 				"Video",
@@ -3535,6 +3601,94 @@
 			"categories": [
 				"Photos"
 			],
+			"description": "PhotoPrism® is an AI-powered app for browsing, organizing & sharing your photo collection. It makes use of the latest technologies to tag and find pictures automatically without getting in your way. You can run it at home, on a private server, or in the cloud.",
+			"env": [
+				{
+					"default": "change me to a secure password",
+					"label": "PHOTOPRISM_ADMIN_PASSWORD",
+					"name": "PHOTOPRISM_ADMIN_PASSWORD"
+				},
+				{
+					"default": "http://localhost:2342/",
+					"label": "PHOTOPRISM_SITE_URL",
+					"name": "PHOTOPRISM_SITE_URL"
+				},
+				{
+					"label": "PHOTOPRISM_PUBLIC",
+					"name": "PHOTOPRISM_PUBLIC",
+					"select": [
+						{
+							"text": "Enable Password Protection",
+							"value": "false",
+							"default": true
+						},
+						{
+							"text": "No authentication required",
+							"value": "true"
+						}
+					]
+				},
+				{
+					"label": "PHOTOPRISM_READONLY",
+					"name": "PHOTOPRISM_READONLY",
+					"select": [
+						{
+							"text": "Photo folder in Read/Write mode",
+							"value": "false",
+							"default": true
+						},
+						{
+							"text": "Don't modify originals directory (reduced functionality)",
+							"value": "true"
+						}
+					]
+				},
+				{
+					"label": "PHOTOPRISM_DISABLE_FACES",
+					"name": "PHOTOPRISM_DISABLE_FACES",
+					"select": [
+						{
+							"text": "Enable facial recognition",
+							"value": "false",
+							"default": true
+						},
+						{
+							"text": "Disable facial recognition",
+							"value": "true"
+						}
+					]
+				},
+				{
+					"default": "change me to a secure password",
+					"label": "MYSQL_PASSWORD",
+					"name": "MYSQL_PASSWORD"
+				},
+				{
+					"default": "change me to a secure password",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
+				},
+				{
+					"default": "/portainer/PhotoPrism",
+					"label": "HOST_MEDIA_PATH",
+					"name": "HOST_MEDIA_PATH"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/photoprism.png",
+			"name": "PhotoPrism",
+			"note": "Your device should have at least \u003cb\u003e4 GB\u003c/b\u003e of memory. Running PhotoPrism on a server with less than 4 GB of swap space or setting a memory/swap limit can cause unexpected restarts, especially when the indexer temporarily needs more memory to process large files.\u003cbr\u003eIt's important to boot your Rapsberry Pi 3/4 with the parameter \u003cb\u003earm_64bit=1\u003c/b\u003e in \u003cb\u003econfig.txt\u003c/b\u003e to use ARM64 image.\u003cbr\u003eIf you see Docker errors related to \u003cb\u003e\"cgroups\"\u003c/b\u003e, it may help to add the following to \u003cb\u003e/boot/firmware/cmdline.txt\u003c/b\u003e:\u003cbr\u003e\u003cbr\u003e\u003cb\u003ecgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1\u003c/b\u003e\u003cbr\u003e\u003cbr\u003eUser pi needs to have access to \u003cb\u003eHOST_MEDIA_PATH\u003c/b\u003e, you can force it with:\u003cbr\u003e\u003cbr\u003e\u003cb\u003esudo chown -R pi:pi /path/to/media\u003c/b\u003e\u003cbr\u003e\u003cbr\u003eRun \u003cb\u003einstall_photoprism.sh\u003c/b\u003e before deploying this container.",
+			"platform": "linux",
+			"title": "PhotoPrism",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/photoprism.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			}
+		},
+		{
+			"categories": [
+				"Photos"
+			],
 			"description": "A simple, easy way to turn a photo album into a webgallery",
 			"env": [
 				{
@@ -3633,6 +3787,77 @@
 				},
 				{
 					"bind": "/portainer/Files/AppData/Config/PiHole_DoH-DoT/DNS",
+					"container": "/etc/dnsmasq.d"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole. This version has Ubound software installed on it so you don't need to rely on external DNS providers.",
+			"image": "cbcrowe/pihole-unbound:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/pihole-unbound.png",
+			"name": "pihole-unbound",
+			"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article \u003ca href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'\u003ehere\u003c/a\u003e if you run into issues binding to port 53. For extra information on this container visit the mainteiner \u003ca href='https://github.com/chriscrowe/docker-pihole-unbound/tree/master/one-container'\u003eGitHub Page\u003c/a\u003e. You can add ports: 5335 to access Ubound externally; 22 to enable SSH; 67 to use DHCP Server. Add those ports in Show advanced options.",
+			"platform": "linux",
+			"ports": [
+				"53:53/tcp",
+				"53:53/udp",
+				"1010:80/tcp",
+				"4443:443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Pi-Hole-Unbound",
+			"type": 1,
+			"env": [
+				{
+					"default": "192.168.0.X",
+					"label": "ServerIP",
+					"name": "ServerIP",
+					"description": "Insert the Raspberry Pi IP here"
+				},
+				{
+					"default": "Europe\\London",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"label": "DNSSEC",
+					"name": "DNSSEC",
+					"select": [
+						{
+							"text": "Enable DNSSEC",
+							"value": "true",
+							"default": true
+						},
+						{
+							"text": "Disable DNSSEC",
+							"value": "false"
+						}
+					]
+				},
+				{
+					"default": "127.0.0.1#5335",
+					"label": "DNS1",
+					"name": "DNS1",
+					"preset": true
+				},
+				{
+					"default": "127.0.0.1#5335",
+					"label": "DNS2",
+					"name": "DNS2",
+					"preset": true
+				}
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/PiHole-Unbound",
+					"container": "/etc/pihole"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/PiHole-Unbound/DNS",
 					"container": "/etc/dnsmasq.d"
 				}
 			]
@@ -4035,6 +4260,13 @@
 			"platform": "linux",
 			"ports": [
 				"3000:3000/tcp"
+			],
+			"env": [
+				{
+					"default": "15d",
+					"label": "PROMETHEUS_RETENTION",
+					"name": "PROMETHEUS_RETENTION"
+				}
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Raspberry Pi Docker Monitor",

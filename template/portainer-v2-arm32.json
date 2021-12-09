@@ -1776,6 +1776,18 @@
 			"restart_policy": "unless-stopped",
 			"title": "Homer",
 			"type": 1,
+			"env": [
+				{
+					"default": "1000",
+					"label": "GID",
+					"name": "GID"
+				},
+				{
+					"default": "1000",
+					"label": "UID",
+					"name": "UID"
+				}
+			],
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/Homer/assets",
@@ -2562,7 +2574,7 @@
                 "Games"
 			],
 			"description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
-            "image": "itzg/minecraft-server:multiarch-latest",
+            "image": "itzg/minecraft-server:latest",
                         "logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/minecraft.png",
                         "name": "minecraft",
                         "platform": "linux",
@@ -2667,6 +2679,18 @@
 			"restart_policy": "unless-stopped",
 			"title": "Mstream",
 			"type": 1,
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/Mstream",
@@ -3245,6 +3269,48 @@
 		},
 		{
 			"categories": [
+				"Management",
+				"Tools"
+			],
+			"description": "TP-Link Omada is a software-defined network solution. The EAP Controller is used to manage multiple EAPs. Raspberry Pi 1 and Zero are not supported.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "mbentley/omada-controller:latest-armv7l",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/omada.png",
+			"name": "omada-controller",
+			"platform": "linux",
+			"ports": [
+				"8088:8088/tcp",
+				"8043:8043/tcp",
+				"27001:27001/udp",
+				"27002:27002/tcp",
+				"29810:29810/udp",
+				"29811:29811/tcp",
+				"29812:29812/tcp",
+				"29813:29813/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Omada EAP Controller",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Omada",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Downloaders",
 				"Other",
 				"Video",
@@ -3533,6 +3599,77 @@
 				},
 				{
 					"bind": "/portainer/Files/AppData/Config/PiHole_DoH-DoT/DNS",
+					"container": "/etc/dnsmasq.d"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole. This version has Ubound software installed on it so you don't need to rely on external DNS providers.",
+			"image": "cbcrowe/pihole-unbound:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/pihole-unbound.png",
+			"name": "pihole-unbound",
+			"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article \u003ca href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'\u003ehere\u003c/a\u003e if you run into issues binding to port 53. For extra information on this container visit the mainteiner \u003ca href='https://github.com/chriscrowe/docker-pihole-unbound/tree/master/one-container'\u003eGitHub Page\u003c/a\u003e. You can add ports: 5335 to access Ubound externally; 22 to enable SSH; 67 to use DHCP Server. Add those ports in Show advanced options.",
+			"platform": "linux",
+			"ports": [
+				"53:53/tcp",
+				"53:53/udp",
+				"1010:80/tcp",
+				"4443:443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Pi-Hole-Unbound",
+			"type": 1,
+			"env": [
+				{
+					"default": "192.168.0.X",
+					"label": "ServerIP",
+					"name": "ServerIP",
+					"description": "Insert the Raspberry Pi IP here"
+				},
+				{
+					"default": "Europe\\London",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"label": "DNSSEC",
+					"name": "DNSSEC",
+					"select": [
+						{
+							"text": "Enable DNSSEC",
+							"value": "true",
+							"default": true
+						},
+						{
+							"text": "Disable DNSSEC",
+							"value": "false"
+						}
+					]
+				},
+				{
+					"default": "127.0.0.1#5335",
+					"label": "DNS1",
+					"name": "DNS1",
+					"preset": true
+				},
+				{
+					"default": "127.0.0.1#5335",
+					"label": "DNS2",
+					"name": "DNS2",
+					"preset": true
+				}
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/PiHole-Unbound",
+					"container": "/etc/pihole"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/PiHole-Unbound/DNS",
 					"container": "/etc/dnsmasq.d"
 				}
 			]
@@ -3868,6 +4005,13 @@
 			"platform": "linux",
 			"ports": [
 				"3000:3000/tcp"
+			],
+			"env": [
+				{
+					"default": "15d",
+					"label": "PROMETHEUS_RETENTION",
+					"name": "PROMETHEUS_RETENTION"
+				}
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Raspberry Pi Docker Monitor",
