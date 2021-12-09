@@ -81,6 +81,8 @@ You're done! Now just click App Templates and deploy applications!
 |[Install and setup instructions for the WireGuard VPN Server](https://github.com/novaspirit/pi-hosted/blob/master/docs/wireguard-install.md) |
 |[WORDPRESS + SSL SETUP](https://github.com/novaspirit/pi-hosted/blob/master/docs/wordpress_installation.md) |
 |[Install and Setup Instructions for the Throttled Script](https://github.com/novaspirit/pi-hosted/blob/master/docs/throttled.md) |
+|[Install and Setup Pi-Hole for Network-Wide Ad Block](https://github.com/novaspirit/pi-hosted/blob/master/docs/pi-hole.md) |
+|[Attach a container directly to local network (macvlan)](https://github.com/novaspirit/pi-hosted/blob/master/docs/macvlan_setup.md) |
 
 =======
 
