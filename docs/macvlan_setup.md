@@ -38,8 +38,8 @@ The CIDR can also be used to identify a group of IPs within a subnet, for exampl
 |:----:|:---:|:----------|
 |  32  |  1  | Any IP (means a unique IP) |
 |  31  |  2  | Any even IP |
-|  30  |  4  | 0, 4, 8, 12, 16, ... |
-|  29  |  8  | 0, 8, 16, 24, 32, 40, ... |
+|  30  |  4  | 0 , 4 , 8 , 12 , 16 , 20 , 24 , 28 , 32 , 36 , 40 , 44 , 48 , 52 , 56 , 60 , 64 , 68 , 72 , 76 , 80 , 84 , 88 , 92 , 96 , 100 , 104 , 108 , 112 , 116 , 120 , 124 , 128 , 132 , 136 , 140 , 144 , 148 , 152 , 156 , 160 , 164 , 168 , 172 , 176 , 180 , 184 , 188 , 192 , 196 , 200 , 204 , 208 , 212 , 216 , 220 , 224 , 228 , 232 , 236 , 240 , 244 , 248 , 252 |
+|  29  |  8  | 0 , 8 , 16 , 24 , 32 , 40 , 48 , 56 , 64 , 72 , 80 , 88 , 96 , 104 , 112 , 120 , 128 , 136 , 144 , 152 , 160 , 168 , 176 , 184 , 192 , 200 , 208 , 216 , 224 , 232 , 240 , 248 |
 |  28  | 16  | 0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240 |
 |  27  | 32  | 0, 32, 64, 96, 128, 160, 192, 224 |
 |  26  | 64  | 0, 64, 128, 192 |
@@ -167,7 +167,7 @@ With that in hand, you can modify `/etc/network/interfaces` using any editor of 
     post-up ip route add 192.168.0.30/32 dev macvlan-lan
 ```
 
-My file looks like this:
+You can change `macvlan-lan` name to anything you like, change `eth0` to the interface you're using and adjust all IPs accordingly. My file looks like this:
 
 ```text
 iface eth0 inet static
