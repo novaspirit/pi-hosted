@@ -1,6 +1,6 @@
 # Attach a container directly to local network
 
-Sometimes it's required, or better, to connect a docker directly to your local network, so it have an IP given by your router (or your [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) server).
+Sometimes it's required, or better, to connect a docker directly to your local network, so it has an IP given by your router (or your [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) server).
 
 We can do so setting up a **macvlan** network in Portainer. It will allow a docker on that _lan_ to connect directly to your local network.
 
