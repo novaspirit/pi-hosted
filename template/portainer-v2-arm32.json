@@ -4469,7 +4469,7 @@
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Sshwifty",
-			"type": 1,
+			"type": 1
 		},
 		{
 			"categories": [
