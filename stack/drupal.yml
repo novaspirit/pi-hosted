@@ -41,7 +41,7 @@ services:
       - /portainer/Files/AppData/Config/drupal/modules:/var/www/html/modules
       - /portainer/Files/AppData/Config/drupal/profiles:/var/www/html/profiles
       - /portainer/Files/AppData/Config/drupal/themes:/var/www/html/themes
-      - /portainer/Files/AppData/Config/drupal/sites:/var/www/html/sites2
+      - /portainer/Files/AppData/Config/drupal/sites:/var/www/html/sites
     depends_on:
       - mariadb
 
