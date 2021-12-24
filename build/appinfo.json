@@ -1,0 +1,174 @@
+{
+	"apps": [
+		{
+			"Title": "Caddy",
+			"Script": "install_caddy.sh"
+		},
+		{
+			"Title": "Drupal",
+			"Script": "install_drupal.sh"
+		},
+		{
+			"Title": "FileBrowser",
+			"VideoID": "4"
+		},
+		{
+			"Title": "Guacamole",
+			"VideoID": "3"
+		},
+		{
+			"Title": "Homer",
+			"VideoID": "2"
+		},
+		{
+			"Title": "JDownloader",
+			"VideoID": "4"
+		},
+		{
+			"Title": "Nextcloud",
+			"Extra": "reset_premissions_nextcloud.sh"
+		},
+		{
+			"Title": "NextcloudPi",
+			"Extra": "reset_premissions_nextcloud.sh",
+			"VideoID": "8"
+		},
+		{
+			"Title": "Nginx Proxy Manager",
+			"Doc": "nginx_proxy_manager.md",
+			"Script": "nginx-proxy-manager.sh",
+			"VideoID": "9"
+		},
+		{
+			"Title": "PhotoPrism",
+			"Script": "install_photoprism.sh"
+		},
+		{
+			"Title": "Pi-Hole",
+			"Doc": "pi-hole.md"
+		},
+		{
+			"Title": "Pi-Hole DoH/DoT",
+			"Doc": "pi-hole.md"
+		},
+		{
+			"Title": "Pi-Hole-Unbound",
+			"Doc": "pi-hole.md"
+		},
+		{
+			"Title": "Raspberry Pi Docker Monitor",
+			"Doc": "rpi_docker_monitor.md",
+			"Script": "rpi_docker_monitor.sh",
+			"VideoID": "7"
+		},
+		{
+			"Title": "Samba",
+			"VideoID": "10"
+		},
+		{
+			"Title": "Traefik",
+			"Script": "traefik.sh"
+		},
+		{
+			"Title": "Transmission-OpenVPN",
+			"VideoID": "5"
+		},
+		{
+			"Title": "UnPoller Monitor",
+			"Doc": "UnPoller-Monitor.md",
+			"Script": "unpoller-install.sh"
+		},
+		{
+			"Title": "Vikunja With Frontend",
+			"Script": "install_vikunja.sh"
+		},
+		{
+			"Title": "Watchtower",
+			"VideoID": "6"
+		},
+		{
+			"Title": "Whoogle",
+			"VideoID": "11"
+		},
+		{
+			"Title": "Windows 2000",
+			"VideoID": "12"
+		},
+		{
+			"Title": "Wireguard Server",
+			"Doc": "wireguard-install.md"
+		},
+		{
+			"Title": "Wordpress",
+			"Doc": "wordpress_installation.md"
+		}
+	],
+
+	"youtube": [
+		{
+			"ID": "1",
+			"Title": "Raspberry Pi 4 Server Setup, Docker Install, Portainer Install, Shell In A Box",
+			"URL": "https://www.youtube.com/watch?v=cO2-gQ09Jj0&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=1"
+		},
+		{
+			"ID": "2",
+			"Title": "Installing and Configuring Homer Dashboard",
+			"URL": "https://www.youtube.com/watch?v=_d3J88ootYo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=2"
+		},
+		{
+			"ID": "3",
+			"Title": "Manually Installing Guacamole on Portainer",
+			"URL": "https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3"
+		},
+		{
+			"ID": "4",
+			"Title": "Installing JDownloader and File Browser On The Pi Docker Server",
+			"URL": "https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4"
+		},
+		{
+			"ID": "5",
+			"Title": "Torrent with Docker and OPENVPN with Transmission and PIA",
+			"URL": "https://www.youtube.com/watch?v=tGLVEq913_4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=5"
+		},
+		{
+			"ID": "Extra1",
+			"Title": "Portainer.io App Template for Raspberry Pi arm/arm64 I Need Your Help!",
+			"URL": "https://www.youtube.com/watch?v=Zn-VELlaIN4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=6"
+		},
+		{
+			"ID": "6",
+			"Title": "Upgrading Portainer and Updating Containers",
+			"URL": "https://www.youtube.com/watch?v=q3wKqk8qVS8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=7"
+		},
+		{
+			"ID": "7",
+			"Title": "Raspberry Pi Docker Monitoring",
+			"URL": "https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8"
+		},
+		{
+			"ID": "8",
+			"Title": "Installing Nextcloud on Raspberry Pi Docker",
+			"URL": "https://www.youtube.com/watch?v=E6IrT3g5Gqc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=9"
+		},
+		{
+			"ID": "9",
+			"Title": "Installing Nginx Proxy Manager on Docker",
+			"URL": "https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10"
+		},
+		{
+			"ID": "10",
+			"Title": "Setting up Raspberry Pi Samba Server For File Sharing on Docker",
+			"URL": "https://www.youtube.com/watch?v=2zZ3_1GRWrM&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=11"
+		},
+		{
+			"ID": "11",
+			"Title": "How to Install Whoogle to replace using Google and repo notes",
+			"URL": "https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12"
+		},
+		{
+			"ID": "12",
+			"Title": "Checking out Windows 2000 Docker",
+			"URL": "https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13"
+		}
+	]
+}
