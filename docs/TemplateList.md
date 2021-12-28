@@ -135,7 +135,7 @@
 |Vaultwarden|32/64 bit|Container|  |  |  |  |
 |Vikunja With Frontend|32/64 bit|Stack|  | [![](../build/images/script_icon.png)](../tools/install_vikunja.sh) |  |  |
 |Watchtower|32/64 bit|Container|  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=q3wKqk8qVS8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=7) |
-|WebGrab+Plus| bit|Container|  |  |  |  |
+|WebGrab+Plus|32/64 bit|Container|  |  |  |  |
 |Whoogle|32/64 bit|Container|  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12) |
 |Wikijs|32/64 bit|Container|  |  |  |  |
 |Windows 2000|32/64 bit|Container|  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13) |

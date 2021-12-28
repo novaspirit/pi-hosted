@@ -47,8 +47,8 @@ sort -u "$TempList" > "$AppType"
 while IFS="" read -u 9 -r App || [ -n "$App" ]
 do
 	# Check System Version
-	grep -qE "^$App\$" "$App32" && has32='32'
-	grep -qE "^$App\$" "$App64" && has64='64'
+	grep -qx "$App" "$App32" && has32='32'
+	grep -qx "$App" "$App64" && has64='64'
 	[[ -n "$has32" && -n "$has64" ]] && Arch='32/64 bit' || Arch="$has32$has64 bit"
 
 	# Get App Info
