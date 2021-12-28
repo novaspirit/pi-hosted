@@ -42,8 +42,8 @@ sort -u "$TempList" > "$AppType"
 {
 	echo "# Template List"
 	echo
-	echo "|App Title|System|Type |Documentation|Install Script|Extra Scripts|Youtube Video|"
-	echo "|:--------|:----:|:---:|:------------|:-------------|:------------|:------------|"
+	echo "|App Title|System|Type | Doc |Install Script|Extra Scripts|Youtube Video|"
+	echo "|:--------|:----:|:---:|:---:|:------------:|:------------|:-----------:|"
 } > "$AppList"
 
 # Generate App Table
@@ -54,26 +54,36 @@ do
 	grep -qE "^$App\$" "$App64" && has64='64'
 	[[ -n "$has32" && -n "$has64" ]] && Arch='32/64 bit' || Arch="$has32$has64 bit"
 
-	# Get Doc from app info
-	doc=$(jq ".apps[] | select(.Title==\"$App\") | .Doc" "$appinfo" | tr -d '"')
-	if [ "$doc" != "null" ]; then doc="[$doc]($Docs$doc)"; else unset doc; fi
+	# Get App Info
+	info=$(jq ".apps[] | select(.Title==\"$App\")" "$appinfo")
+	if [ "$info" != "" ] ; then
 
-	# Get Script from app info
-	script=$(jq ".apps[] | select(.Title==\"$App\") | .Script" "$appinfo" | tr -d '"')
-	if [ "$script" != "null" ]; then script="[$script]($Scripts$script)"; else unset script; fi
+		# Get Doc from app info
+		doc=$(echo "$info" | jq ".Doc" | tr -d '"')
+		if [ "$doc" != "null" ]; then doc="[📄]($Docs$doc)"; else unset doc; fi
 
-	# Get Script from app info
-	extra=$(jq ".apps[] | select(.Title==\"$App\") | .Extra" "$appinfo" | tr -d '"')
-	if [ "$extra" != "null" ]; then extra="[$extra]($Extras$extra)"; else unset extra; fi
+		# Get Script from app info
+		script=$(echo "$info" | jq ".Script" | tr -d '"')
+		if [ "$script" != "null" ]; then script="[]($Scripts$script)"; else unset script; fi
 
-	# Get Script from app info
-	vid=$(jq ".apps[] | select(.Title==\"$App\") | .VideoID" "$appinfo" | tr -d '"')
-	if [ "$vid" != "null" ] ; then
-		vidURL=$(jq ".youtube[] | select(.ID==\"$vid\") | .URL" "$appinfo" | tr -d '"')
-		vidTitle=$(jq ".youtube[] | select(.ID==\"$vid\") | .Title" "$appinfo" | tr -d '"')
-		vid="[$vidTitle]($vidURL)"
+		# Get Script from app info
+		extra=$(echo "$info" | jq ".Extra" | tr -d '"')
+		if [ "$extra" != "null" ]; then extra="[$extra]($Extras$extra)"; else unset extra; fi
+
+		# Get Script from app info
+		vid=$(echo "$info" | jq ".VideoID" | tr -d '"')
+		if [ "$vid" != "null" ] ; then
+			info=$(jq ".youtube[] | select(.ID==\"$vid\")" "$appinfo")
+			vidURL=$(echo "$info" | jq '.URL' | tr -d '"')
+			#vidTitle=$(echo "$info" | jq '.Title' | tr -d '"')
+			#vid="[$vidTitle]($vidURL)"
+			vid="[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)]($vidURL)"
+		else
+			unset vid
+		fi
+	
 	else
-		vid=""
+		unset doc script extra vid
 	fi
 
 	# Building App Line
