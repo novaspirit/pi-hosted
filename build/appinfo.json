@@ -25,10 +25,6 @@
 			"VideoID": 4
 		},
 		{
-			"Title": "Nextcloud",
-			"ExtraID": 8
-		},
-		{
 			"Title": "NextcloudPi",
 			"ExtraID": 8,
 			"VideoID": 8
@@ -221,6 +217,7 @@
 		{
 			"ID": 1,
 			"File": "install_caddy.sh",
+			"Type": "Preinstall",
 			"Exec": "bash",
 			"Description": "Preinstall Setup for Caddy",
 			"wget": "https://git.io/JMsEe"
@@ -228,6 +225,7 @@
 		{
 			"ID": 2,
 			"File": "install_drupal.sh",
+			"Type": "Preinstall",
 			"Exec": "bash",
 			"Description": "Preinstall Setup for Drupal",
 			"wget": "https://git.io/JMsEj"
@@ -235,16 +233,19 @@
 		{
 			"ID": 3,
 			"File": "install_portainer_agent.sh",
+			"Type": "Preinstall",
 			"Description": "Install Portainer Agent<br>Portainer agent is used for remote management of the host you install it on."
 		},
 		{
 			"ID": 4,
 			"File": "update_portainer_agent.sh",
+			"Type": "Update",
 			"Description": "Upgrade Portainer Agent"
 		},
 		{
 			"ID": 5,
 			"File": "install_throttled.sh",
+			"Type": "Install",
 			"Exec": "bash",
 			"Description": "Preinstall Setup for the Throttled Script",
 			"DocID": 6,
@@ -253,6 +254,7 @@
 		{
 			"ID": 6,
 			"File": "install_vikunja.sh",
+			"Type": "Preinstall",
 			"Exec": "bash",
 			"Description": "Preinstall Setup for Vikunja",
 			"wget": "https://git.io/JMsuZ"
@@ -260,6 +262,7 @@
 		{
 			"ID": 7,
 			"File": "nginx-proxy-manager.sh",
+			"Type": "Preinstall",
 			"Exec": "bash",
 			"Description": "Preinstall Setup for NPM",
 			"DocID": 2,
@@ -268,6 +271,7 @@
 		{
 			"ID": 8,
 			"File": "reset_premissions_nextcloud.sh",
+			"Type": "Extra",
 			"Exec": "bash",
 			"Description": "Basic Script to reset the premissions of NextcloudPi",
 			"wget": "https://git.io/JDklN"
@@ -275,6 +279,7 @@
 		{
 			"ID": 9,
 			"File": "rpi_docker_monitor.sh",
+			"Type": "Preinstall",
 			"Exec": "bash",
 			"Description": "Preinstall Setup for Docker Monitor",
 			"DocID": 3,
@@ -283,6 +288,7 @@
 		{
 			"ID": 10,
 			"File": "traefik.sh",
+			"Type": "Preinstall",
 			"Exec": "bash",
 			"Description": "Preinstall Setup for Traefik",
 			"wget": "https://git.io/JMsuA"
@@ -290,6 +296,7 @@
 		{
 			"ID": 11,
 			"File": "unpoller-install.sh",
+			"Type": "Preinstall",
 			"Exec": "bash",
 			"Description": "Preinstall Setup for UnPoller",
 			"DocID": 1,
@@ -298,6 +305,7 @@
 		{
 			"ID": 12,
 			"File": "install_photoprism.sh",
+			"Type": "Preinstall",
 			"Exec": "bash",
 			"Description": "Install Photo Prism",
 			"wget": "https://git.io/JM5Tr"
@@ -305,6 +313,7 @@
 		{
 			"ID": 13,
 			"File": "update_libseccomp2.sh",
+			"Type": "Update",
 			"Exec": "bash",
 			"Description": "PI OS 32 libseccomp2 Repair utility",
 			"wget": "https://git.io/JPXdj"
