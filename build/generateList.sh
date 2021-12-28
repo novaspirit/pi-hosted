@@ -3,6 +3,8 @@
 # Standard file locations
 homedir='../'
 . env.sh
+docIcon="![](${homedir}build/images/doc_icon.png)"
+scriptIcon="![](${homedir}build/images/script_icon.png)"
 
 # Temp helper files
 TempList=$(mktemp)
@@ -57,7 +59,7 @@ do
 		docID=$(echo "$info" | jq ".DocID")
 		if [ "$docID" != "null" ]; then
 			doc=$(jq ".docs[] | select(.ID==$docID) | .File" "$appinfo" | tr -d '"')
-			doc="[Doc]($Docs$doc)"
+			doc="[$docIcon]($Docs$doc)"
 		else
 			unset doc
 		fi
@@ -66,7 +68,7 @@ do
 		scriptID=$(echo "$info" | jq ".ScriptID")
 		if [ "$scriptID" != "null" ]; then
 			script=$(jq ".tools[] | select(.ID==$scriptID) | .File" "$appinfo" | tr -d '"')
-			script="[Script]($Scripts$script)"
+			script="[$scriptIcon]($Scripts$script)"
 		else
 			unset script
 		fi
