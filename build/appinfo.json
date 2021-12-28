@@ -2,131 +2,131 @@
 	"apps": [
 		{
 			"Title": "Caddy",
-			"Script": "install_caddy.sh"
+			"ScriptID": 1
 		},
 		{
 			"Title": "Drupal",
-			"Script": "install_drupal.sh"
+			"ScriptID": 2
 		},
 		{
 			"Title": "FileBrowser",
-			"VideoID": "4"
+			"VideoID": 4
 		},
 		{
 			"Title": "Guacamole",
-			"VideoID": "3"
+			"VideoID": 3
 		},
 		{
 			"Title": "Homer",
-			"VideoID": "2"
+			"VideoID": 2
 		},
 		{
 			"Title": "JDownloader",
-			"VideoID": "4"
+			"VideoID": 4
 		},
 		{
 			"Title": "Nextcloud",
-			"Extra": "reset_premissions_nextcloud.sh"
+			"ExtraID": 8
 		},
 		{
 			"Title": "NextcloudPi",
-			"Extra": "reset_premissions_nextcloud.sh",
-			"VideoID": "8"
+			"ExtraID": 8,
+			"VideoID": 8
 		},
 		{
 			"Title": "Nginx Proxy Manager",
-			"Doc": "nginx_proxy_manager.md",
-			"Script": "nginx-proxy-manager.sh",
-			"VideoID": "9"
+			"DocID": 2,
+			"ScriptID": 7,
+			"VideoID": 9
 		},
 		{
 			"Title": "PhotoPrism",
-			"Script": "install_photoprism.sh"
+			"ScriptID": 12
 		},
 		{
 			"Title": "Pi-Hole",
-			"Doc": "pi-hole.md"
+			"DocID": 7
 		},
 		{
 			"Title": "Pi-Hole DoH/DoT",
-			"Doc": "pi-hole.md"
+			"DocID": 7
 		},
 		{
 			"Title": "Pi-Hole-Unbound",
-			"Doc": "pi-hole.md"
+			"DocID": 7
 		},
 		{
 			"Title": "Raspberry Pi Docker Monitor",
-			"Doc": "rpi_docker_monitor.md",
-			"Script": "rpi_docker_monitor.sh",
-			"VideoID": "7"
+			"DocID": 3,
+			"ScriptID": 9,
+			"VideoID": 7
 		},
 		{
 			"Title": "Samba",
-			"VideoID": "10"
+			"VideoID": 10
 		},
 		{
 			"Title": "Traefik",
-			"Script": "traefik.sh"
+			"ScriptID": 10
 		},
 		{
 			"Title": "Transmission-OpenVPN",
-			"VideoID": "5"
+			"VideoID": 5
 		},
 		{
 			"Title": "UnPoller Monitor",
-			"Doc": "UnPoller-Monitor.md",
-			"Script": "unpoller-install.sh"
+			"DocID": 1,
+			"ScriptID": 11
 		},
 		{
 			"Title": "Vikunja With Frontend",
-			"Script": "install_vikunja.sh"
+			"ScriptID": 6
 		},
 		{
 			"Title": "Watchtower",
-			"VideoID": "6"
+			"VideoID": 6
 		},
 		{
 			"Title": "Whoogle",
-			"VideoID": "11"
+			"VideoID": 11
 		},
 		{
 			"Title": "Windows 2000",
-			"VideoID": "12"
+			"VideoID": 12
 		},
 		{
 			"Title": "Wireguard Server",
-			"Doc": "wireguard-install.md"
+			"DocID": 4
 		},
 		{
 			"Title": "Wordpress",
-			"Doc": "wordpress_installation.md"
+			"DocID": 5
 		}
 	],
 
 	"youtube": [
 		{
-			"ID": "1",
+			"ID": 1,
 			"Title": "Raspberry Pi 4 Server Setup, Docker Install, Portainer Install, Shell In A Box",
 			"URL": "https://www.youtube.com/watch?v=cO2-gQ09Jj0&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=1"
 		},
 		{
-			"ID": "2",
+			"ID": 2,
 			"Title": "Installing and Configuring Homer Dashboard",
 			"URL": "https://www.youtube.com/watch?v=_d3J88ootYo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=2"
 		},
 		{
-			"ID": "3",
+			"ID": 3,
 			"Title": "Manually Installing Guacamole on Portainer",
 			"URL": "https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3"
 		},
 		{
-			"ID": "4",
+			"ID": 4,
 			"Title": "Installing JDownloader and File Browser On The Pi Docker Server",
 			"URL": "https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4"
 		},
 		{
-			"ID": "5",
+			"ID": 5,
 			"Title": "Torrent with Docker and OPENVPN with Transmission and PIA",
 			"URL": "https://www.youtube.com/watch?v=tGLVEq913_4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=5"
 		},
@@ -136,39 +136,176 @@
 			"URL": "https://www.youtube.com/watch?v=Zn-VELlaIN4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=6"
 		},
 		{
-			"ID": "6",
+			"ID": 6,
 			"Title": "Upgrading Portainer and Updating Containers",
 			"URL": "https://www.youtube.com/watch?v=q3wKqk8qVS8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=7"
 		},
 		{
-			"ID": "7",
+			"ID": 7,
 			"Title": "Raspberry Pi Docker Monitoring",
 			"URL": "https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8"
 		},
 		{
-			"ID": "8",
+			"ID": 8,
 			"Title": "Installing Nextcloud on Raspberry Pi Docker",
 			"URL": "https://www.youtube.com/watch?v=E6IrT3g5Gqc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=9"
 		},
 		{
-			"ID": "9",
+			"ID": 9,
 			"Title": "Installing Nginx Proxy Manager on Docker",
 			"URL": "https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10"
 		},
 		{
-			"ID": "10",
+			"ID": 10,
 			"Title": "Setting up Raspberry Pi Samba Server For File Sharing on Docker",
 			"URL": "https://www.youtube.com/watch?v=2zZ3_1GRWrM&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=11"
 		},
 		{
-			"ID": "11",
+			"ID": 11,
 			"Title": "How to Install Whoogle to replace using Google and repo notes",
 			"URL": "https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12"
 		},
 		{
-			"ID": "12",
+			"ID": 12,
 			"Title": "Checking out Windows 2000 Docker",
 			"URL": "https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13"
+		}
+	],
+
+	"docs": [
+		{
+			"ID": 1,
+			"File": "UnPoller-Monitor.md",
+			"Description": "Install and setup instructions for the RPI Unifi (UnPoller) Monitor"
+		},
+		{
+			"ID": 2,
+			"File": "nginx_proxy_manager.md",
+			"Description": "Install and setup instructions for Nginx Proxy Manager (NPM)"
+		},
+		{
+			"ID": 3,
+			"File": "rpi_docker_monitor.md",
+			"Description": "Install and setup instructions for the RPI Docker Monitor"
+		},
+		{
+			"ID": 4,
+			"File": "wireguard-install.md",
+			"Description": "Install and setup instructions for the WireGuard VPN Server"
+		},
+		{
+			"ID": 5,
+			"File": "wordpress_installation.md",
+			"Description": "WORDPRESS + SSL SETUP"
+		},
+		{
+			"ID": 6,
+			"File": "throttled.md",
+			"Description": "Install and Setup Instructions for the Throttled Script"
+		},
+		{
+			"ID": 7,
+			"File": "pi-hole.md",
+			"Description": "Install and Setup Pi-Hole for Network-Wide Ad Block"
+		},
+		{
+			"ID": 8,
+			"File": "macvlan_setup.md",
+			"Description": "Attach a container directly to local network (macvlan)"
+		}
+	],
+
+	"tools": [
+		{
+			"ID": 1,
+			"File": "install_caddy.sh",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for Caddy",
+			"wget": "https://git.io/JMsEe"
+		},
+		{
+			"ID": 2,
+			"File": "install_drupal.sh",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for Drupal",
+			"wget": "https://git.io/JMsEj"
+		},
+		{
+			"ID": 3,
+			"File": "install_portainer_agent.sh",
+			"Description": "Install Portainer Agent<br>Portainer agent is used for remote management of the host you install it on."
+		},
+		{
+			"ID": 4,
+			"File": "update_portainer_agent.sh",
+			"Description": "Upgrade Portainer Agent"
+		},
+		{
+			"ID": 5,
+			"File": "install_throttled.sh",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for the Throttled Script",
+			"DocID": 6,
+			"wget": "https://git.io/JXzw0"
+		},
+		{
+			"ID": 6,
+			"File": "install_vikunja.sh",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for Vikunja",
+			"wget": "https://git.io/JMsuZ"
+		},
+		{
+			"ID": 7,
+			"File": "nginx-proxy-manager.sh",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for NPM",
+			"DocID": 2,
+			"wget": "https://git.io/JPXF5"
+		},
+		{
+			"ID": 8,
+			"File": "reset_premissions_nextcloud.sh",
+			"Exec": "bash",
+			"Description": "Basic Script to reset the premissions of NextcloudPi",
+			"wget": "https://git.io/JDklN"
+		},
+		{
+			"ID": 9,
+			"File": "rpi_docker_monitor.sh",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for Docker Monitor",
+			"DocID": 3,
+			"wget": "https://git.io/JPXba"
+		},
+		{
+			"ID": 10,
+			"File": "traefik.sh",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for Traefik",
+			"wget": "https://git.io/JMsuA"
+		},
+		{
+			"ID": 11,
+			"File": "unpoller-install.sh",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for UnPoller",
+			"DocID": 1,
+			"wget": "https://git.io/JMszE"
+		},
+		{
+			"ID": 12,
+			"File": "install_photoprism.sh",
+			"Exec": "bash",
+			"Description": "Install Photo Prism",
+			"wget": "https://git.io/JM5Tr"
+		},
+		{
+			"ID": 13,
+			"File": "update_libseccomp2.sh",
+			"Exec": "bash",
+			"Description": "PI OS 32 libseccomp2 Repair utility",
+			"wget": "https://git.io/JPXdj"
 		}
 	]
 }

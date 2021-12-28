@@ -1,13 +1,8 @@
 #!/bin/bash
 
 # Standard file locations
-pt32='../template/portainer-v2-arm32.json'
-pt64='../template/portainer-v2-arm64.json'
-AppList='../docs/TemplateList.md'
-appinfo='./appinfo.json'
-Scripts='../tools/'
-Extras='../tools/'
-Docs='../docs/'
+homedir='../'
+. env.sh
 
 # Temp helper files
 TempList=$(mktemp)
@@ -59,25 +54,37 @@ do
 	if [ "$info" != "" ] ; then
 
 		# Get Doc from app info
-		doc=$(echo "$info" | jq ".Doc" | tr -d '"')
-		if [ "$doc" != "null" ]; then doc="[Doc]($Docs$doc)"; else unset doc; fi
+		docID=$(echo "$info" | jq ".DocID")
+		if [ "$docID" != "null" ]; then
+			doc=$(jq ".docs[] | select(.ID==$docID) | .File" "$appinfo" | tr -d '"')
+			doc="[Doc]($Docs$doc)"
+		else
+			unset doc
+		fi
 
 		# Get Script from app info
-		script=$(echo "$info" | jq ".Script" | tr -d '"')
-		if [ "$script" != "null" ]; then script="[Script]($Scripts$script)"; else unset script; fi
+		scriptID=$(echo "$info" | jq ".ScriptID")
+		if [ "$scriptID" != "null" ]; then
+			script=$(jq ".tools[] | select(.ID==$scriptID) | .File" "$appinfo" | tr -d '"')
+			script="[Script]($Scripts$script)"
+		else
+			unset script
+		fi
 
 		# Get Script from app info
-		extra=$(echo "$info" | jq ".Extra" | tr -d '"')
-		if [ "$extra" != "null" ]; then
+		extraID=$(echo "$info" | jq ".ExtraID")
+		if [ "$extraID" != "null" ]; then
 			# If only one entry
-			if [ "$(echo "$extra" | wc -l )" == "1" ]; then
+			if [ "$(echo "$extraID" | wc -l )" == "1" ]; then
+				extra=$(jq ".tools[] | select(.ID==$extraID) | .File" "$appinfo" | tr -d '"')
 				extra="[$extra]($Extras$extra)"
 			
 			# If multiples entries
 			else
-				n_ext=$(echo "$info" | jq '.Extra | length')
+				n_ext=$(echo "$extraID" | jq '. | length')
 				for n in $(seq 0 $(( n_ext - 1 ))); do
-					ext=$(echo "$info" | jq ".Extra[$n]" | tr -d \")
+					extID=$(echo "$extraID" | jq ".[$n]" | tr -d \")
+					ext=$(jq ".tools[] | select(.ID==$extID) | .File" "$appinfo" | tr -d '"')
 					if [ "$n" == "0" ]; then
 						txt="[$ext]($Extras$ext)"
 					else
@@ -91,9 +98,9 @@ do
 		fi
 
 		# Get Script from app info
-		vid=$(echo "$info" | jq ".VideoID" | tr -d '"')
+		vid=$(echo "$info" | jq ".VideoID")
 		if [ "$vid" != "null" ] ; then
-			vidURL=$(jq ".youtube[] | select(.ID==\"$vid\") | .URL " "$appinfo" | tr -d \")
+			vidURL=$(jq ".youtube[] | select(.ID==$vid) | .URL" "$appinfo" | tr -d \")
 			vid="[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)]($vidURL)"
 		else
 			unset vid
