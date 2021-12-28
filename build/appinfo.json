@@ -1,0 +1,322 @@
+{
+	"apps": [
+		{
+			"Title": "Caddy",
+			"ScriptID": 1
+		},
+		{
+			"Title": "Drupal",
+			"ScriptID": 2
+		},
+		{
+			"Title": "FileBrowser",
+			"VideoID": 4
+		},
+		{
+			"Title": "Guacamole",
+			"VideoID": 3
+		},
+		{
+			"Title": "Homer",
+			"VideoID": 2
+		},
+		{
+			"Title": "JDownloader",
+			"VideoID": 4
+		},
+		{
+			"Title": "NextcloudPi",
+			"ExtraID": 8,
+			"VideoID": 8
+		},
+		{
+			"Title": "Nginx Proxy Manager",
+			"DocID": 2,
+			"ScriptID": 7,
+			"VideoID": 9
+		},
+		{
+			"Title": "PhotoPrism",
+			"ScriptID": 12
+		},
+		{
+			"Title": "Pi-Hole",
+			"DocID": 7
+		},
+		{
+			"Title": "Pi-Hole DoH/DoT",
+			"DocID": 7
+		},
+		{
+			"Title": "Pi-Hole-Unbound",
+			"DocID": 7
+		},
+		{
+			"Title": "Raspberry Pi Docker Monitor",
+			"DocID": 3,
+			"ScriptID": 9,
+			"VideoID": 7
+		},
+		{
+			"Title": "Samba",
+			"VideoID": 10
+		},
+		{
+			"Title": "Traefik",
+			"ScriptID": 10
+		},
+		{
+			"Title": "Transmission-OpenVPN",
+			"VideoID": 5
+		},
+		{
+			"Title": "UnPoller Monitor",
+			"DocID": 1,
+			"ScriptID": 11
+		},
+		{
+			"Title": "Vikunja With Frontend",
+			"ScriptID": 6
+		},
+		{
+			"Title": "Watchtower",
+			"VideoID": 6
+		},
+		{
+			"Title": "Whoogle",
+			"VideoID": 11
+		},
+		{
+			"Title": "Windows 2000",
+			"VideoID": 12
+		},
+		{
+			"Title": "Wireguard Server",
+			"DocID": 4
+		},
+		{
+			"Title": "Wordpress",
+			"DocID": 5
+		}
+	],
+
+	"youtube": [
+		{
+			"ID": 1,
+			"Title": "Raspberry Pi 4 Server Setup, Docker Install, Portainer Install, Shell In A Box",
+			"URL": "https://www.youtube.com/watch?v=cO2-gQ09Jj0&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=1"
+		},
+		{
+			"ID": 2,
+			"Title": "Installing and Configuring Homer Dashboard",
+			"URL": "https://www.youtube.com/watch?v=_d3J88ootYo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=2"
+		},
+		{
+			"ID": 3,
+			"Title": "Manually Installing Guacamole on Portainer",
+			"URL": "https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3"
+		},
+		{
+			"ID": 4,
+			"Title": "Installing JDownloader and File Browser On The Pi Docker Server",
+			"URL": "https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4"
+		},
+		{
+			"ID": 5,
+			"Title": "Torrent with Docker and OPENVPN with Transmission and PIA",
+			"URL": "https://www.youtube.com/watch?v=tGLVEq913_4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=5"
+		},
+		{
+			"ID": "Extra1",
+			"Title": "Portainer.io App Template for Raspberry Pi arm/arm64 I Need Your Help!",
+			"URL": "https://www.youtube.com/watch?v=Zn-VELlaIN4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=6"
+		},
+		{
+			"ID": 6,
+			"Title": "Upgrading Portainer and Updating Containers",
+			"URL": "https://www.youtube.com/watch?v=q3wKqk8qVS8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=7"
+		},
+		{
+			"ID": 7,
+			"Title": "Raspberry Pi Docker Monitoring",
+			"URL": "https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8",
+			"DocID": 3
+		},
+		{
+			"ID": 8,
+			"Title": "Installing Nextcloud on Raspberry Pi Docker",
+			"URL": "https://www.youtube.com/watch?v=E6IrT3g5Gqc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=9"
+		},
+		{
+			"ID": 9,
+			"Title": "Installing Nginx Proxy Manager on Docker",
+			"URL": "https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10",
+			"DocID": 2
+		},
+		{
+			"ID": 10,
+			"Title": "Setting up Raspberry Pi Samba Server For File Sharing on Docker",
+			"URL": "https://www.youtube.com/watch?v=2zZ3_1GRWrM&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=11"
+		},
+		{
+			"ID": 11,
+			"Title": "How to Install Whoogle to replace using Google and repo notes",
+			"URL": "https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12"
+		},
+		{
+			"ID": 12,
+			"Title": "Checking out Windows 2000 Docker",
+			"URL": "https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13"
+		}
+	],
+
+	"docs": [
+		{
+			"ID": 1,
+			"File": "UnPoller-Monitor.md",
+			"Description": "Install and setup instructions for the RPI Unifi (UnPoller) Monitor"
+		},
+		{
+			"ID": 2,
+			"File": "nginx_proxy_manager.md",
+			"Description": "Install and setup instructions for Nginx Proxy Manager (NPM)"
+		},
+		{
+			"ID": 3,
+			"File": "rpi_docker_monitor.md",
+			"Description": "Install and setup instructions for the RPI Docker Monitor"
+		},
+		{
+			"ID": 4,
+			"File": "wireguard-install.md",
+			"Description": "Install and setup instructions for the WireGuard VPN Server"
+		},
+		{
+			"ID": 5,
+			"File": "wordpress_installation.md",
+			"Description": "WORDPRESS + SSL SETUP"
+		},
+		{
+			"ID": 6,
+			"File": "throttled.md",
+			"Description": "Install and Setup Instructions for the Throttled Script"
+		},
+		{
+			"ID": 7,
+			"File": "pi-hole.md",
+			"Description": "Install and Setup Pi-Hole for Network-Wide Ad Block"
+		},
+		{
+			"ID": 8,
+			"File": "macvlan_setup.md",
+			"Description": "Attach a container directly to local network (macvlan)"
+		}
+	],
+
+	"tools": [
+		{
+			"ID": 1,
+			"File": "install_caddy.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for Caddy",
+			"wget": "https://git.io/JMsEe"
+		},
+		{
+			"ID": 2,
+			"File": "install_drupal.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for Drupal",
+			"wget": "https://git.io/JMsEj"
+		},
+		{
+			"ID": 3,
+			"File": "install_portainer_agent.sh",
+			"Type": "Preinstall",
+			"Description": "Install Portainer Agent<br>Portainer agent is used for remote management of the host you install it on."
+		},
+		{
+			"ID": 4,
+			"File": "update_portainer_agent.sh",
+			"Type": "Update",
+			"Description": "Upgrade Portainer Agent"
+		},
+		{
+			"ID": 5,
+			"File": "install_throttled.sh",
+			"Type": "Install",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for the Throttled Script",
+			"DocID": 6,
+			"wget": "https://git.io/JXzw0"
+		},
+		{
+			"ID": 6,
+			"File": "install_vikunja.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for Vikunja",
+			"wget": "https://git.io/JMsuZ"
+		},
+		{
+			"ID": 7,
+			"File": "nginx-proxy-manager.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for NPM",
+			"DocID": 2,
+			"wget": "https://git.io/JPXF5"
+		},
+		{
+			"ID": 8,
+			"File": "reset_premissions_nextcloud.sh",
+			"Type": "Extra",
+			"Exec": "bash",
+			"Description": "Basic Script to reset the premissions of NextcloudPi",
+			"wget": "https://git.io/JDklN"
+		},
+		{
+			"ID": 9,
+			"File": "rpi_docker_monitor.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for Docker Monitor",
+			"DocID": 3,
+			"wget": "https://git.io/JPXba"
+		},
+		{
+			"ID": 10,
+			"File": "traefik.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for Traefik",
+			"wget": "https://git.io/JMsuA"
+		},
+		{
+			"ID": 11,
+			"File": "unpoller-install.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Description": "Preinstall Setup for UnPoller",
+			"DocID": 1,
+			"wget": "https://git.io/JMszE"
+		},
+		{
+			"ID": 12,
+			"File": "install_photoprism.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Description": "Install Photo Prism",
+			"wget": "https://git.io/JM5Tr"
+		},
+		{
+			"ID": 13,
+			"File": "update_libseccomp2.sh",
+			"Type": "Update",
+			"Exec": "bash",
+			"Description": "PI OS 32 libseccomp2 Repair utility",
+			"wget": "https://git.io/JPXdj"
+		}
+	]
+}
