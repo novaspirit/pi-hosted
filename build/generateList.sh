@@ -60,11 +60,11 @@ do
 
 		# Get Doc from app info
 		doc=$(echo "$info" | jq ".Doc" | tr -d '"')
-		if [ "$doc" != "null" ]; then doc="[📄]($Docs$doc)"; else unset doc; fi
+		if [ "$doc" != "null" ]; then doc="[Doc]($Docs$doc)"; else unset doc; fi
 
 		# Get Script from app info
 		script=$(echo "$info" | jq ".Script" | tr -d '"')
-		if [ "$script" != "null" ]; then script="**[]($Scripts$script)**"; else unset script; fi
+		if [ "$script" != "null" ]; then script="[Script]($Scripts$script)"; else unset script; fi
 
 		# Get Script from app info
 		extra=$(echo "$info" | jq ".Extra" | tr -d '"')

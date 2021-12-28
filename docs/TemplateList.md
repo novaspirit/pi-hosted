@@ -9,7 +9,7 @@
 |Beets|32/64 bit|Container|  |  |  |  |
 |Booksonic|32/64 bit|Container|  |  |  |  |
 |Bookstack|32/64 bit|Stack|  |  |  |  |
-|Caddy|32/64 bit|Container|  | **[](../tools/install_caddy.sh)** |  |  |
+|Caddy|32/64 bit|Container|  | [Script](../tools/install_caddy.sh) |  |  |
 |Calibre Web|32/64 bit|Container|  |  |  |  |
 |Cardigann|32/64 bit|Container|  |  |  |  |
 |Chevereto|32/64 bit|Container|  |  |  |  |
@@ -27,7 +27,7 @@
 |Domoticz|32/64 bit|Container|  |  |  |  |
 |Dozzle|32/64 bit|Container|  |  |  |  |
 |Dradis|32/64 bit|Container|  |  |  |  |
-|Drupal|32/64 bit|Stack|  | **[](../tools/install_drupal.sh)** |  |  |
+|Drupal|32/64 bit|Stack|  | [Script](../tools/install_drupal.sh) |  |  |
 |Duck DNS|32/64 bit|Container|  |  |  |  |
 |Duplicati|32/64 bit|Container|  |  |  |  |
 |Eclipse Mosquitto|32/64 bit|Container|  |  |  |  |
@@ -79,7 +79,7 @@
 |Nextcloud|32/64 bit|Stack|  |  | [reset_premissions_nextcloud.sh](../tools/reset_premissions_nextcloud.sh) |  |
 |NextcloudPi|32/64 bit|Container|  |  | [reset_premissions_nextcloud.sh](../tools/reset_premissions_nextcloud.sh) | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=E6IrT3g5Gqc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=9) |
 |Nginx|32/64 bit|Container|  |  |  |  |
-|Nginx Proxy Manager|32/64 bit|Stack| [📄](../docs/nginx_proxy_manager.md) | **[](../tools/nginx-proxy-manager.sh)** |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
+|Nginx Proxy Manager|32/64 bit|Stack| [Doc](../docs/nginx_proxy_manager.md) | [Script](../tools/nginx-proxy-manager.sh) |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
 |Node Red|32/64 bit|Stack|  |  |  |  |
 |NZBGet|32/64 bit|Container|  |  |  |  |
 |NZBHydra 2|32/64 bit|Container|  |  |  |  |
@@ -89,11 +89,11 @@
 |Organizr v2|32/64 bit|Container|  |  |  |  |
 |OScam|32/64 bit|Container|  |  |  |  |
 |Paperless|32/64 bit|Container|  |  |  |  |
-|PhotoPrism|64 bit|Stack|  | **[](../tools/install_photoprism.sh)** |  |  |
+|PhotoPrism|64 bit|Stack|  | [Script](../tools/install_photoprism.sh) |  |  |
 |PhotoShow|32/64 bit|Container|  |  |  |  |
-|Pi-Hole|32/64 bit|Container| [📄](../docs/pi-hole.md) |  |  |  |
-|Pi-Hole DoH/DoT|32/64 bit|Container| [📄](../docs/pi-hole.md) |  |  |  |
-|Pi-Hole-Unbound|32/64 bit|Container| [📄](../docs/pi-hole.md) |  |  |  |
+|Pi-Hole|32/64 bit|Container| [Doc](../docs/pi-hole.md) |  |  |  |
+|Pi-Hole DoH/DoT|32/64 bit|Container| [Doc](../docs/pi-hole.md) |  |  |  |
+|Pi-Hole-Unbound|32/64 bit|Container| [Doc](../docs/pi-hole.md) |  |  |  |
 |Piwigo|32/64 bit|Container|  |  |  |  |
 |Plex|32/64 bit|Container|  |  |  |  |
 |Pritunl|64 bit|Stack|  |  |  |  |
@@ -104,7 +104,7 @@
 |qBittorrent|32/64 bit|Container|  |  |  |  |
 |Quassel IRC|32/64 bit|Container|  |  |  |  |
 |Radarr|32/64 bit|Container|  |  |  |  |
-|Raspberry Pi Docker Monitor|32/64 bit|Stack| [📄](../docs/rpi_docker_monitor.md) | **[](../tools/rpi_docker_monitor.sh)** |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8) |
+|Raspberry Pi Docker Monitor|32/64 bit|Stack| [Doc](../docs/rpi_docker_monitor.md) | [Script](../tools/rpi_docker_monitor.sh) |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8) |
 |Resilio Sync|32/64 bit|Container|  |  |  |  |
 |ruTorrent|32/64 bit|Container|  |  |  |  |
 |SABnzbd|32/64 bit|Container|  |  |  |  |
@@ -122,7 +122,7 @@
 |TheLounge|32/64 bit|Container|  |  |  |  |
 |TiddlyWiki|32/64 bit|Container|  |  |  |  |
 |Tiny Tiny RSS|32/64 bit|Container|  |  |  |  |
-|Traefik|32/64 bit|Container|  | **[](../tools/traefik.sh)** |  |  |
+|Traefik|32/64 bit|Container|  | [Script](../tools/traefik.sh) |  |  |
 |Transmission|32/64 bit|Container|  |  |  |  |
 |Transmission-OpenVPN|32/64 bit|Container|  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=tGLVEq913_4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=5) |
 |Transmission OpenVPN Version 4|32/64 bit|Container|  |  |  |  |
@@ -130,17 +130,17 @@
 |Ubooquity|32/64 bit|Container|  |  |  |  |
 |UniFi Controller|32/64 bit|Container|  |  |  |  |
 |UniFi Video|32/64 bit|Container|  |  |  |  |
-|UnPoller Monitor|32/64 bit|Stack| [📄](../docs/UnPoller-Monitor.md) | **[](../tools/unpoller-install.sh)** |  |  |
+|UnPoller Monitor|32/64 bit|Stack| [Doc](../docs/UnPoller-Monitor.md) | [Script](../tools/unpoller-install.sh) |  |  |
 |Uptime Kuma|32/64 bit|Container|  |  |  |  |
 |Vaultwarden|32/64 bit|Container|  |  |  |  |
-|Vikunja With Frontend|32/64 bit|Stack|  | **[](../tools/install_vikunja.sh)** |  |  |
+|Vikunja With Frontend|32/64 bit|Stack|  | [Script](../tools/install_vikunja.sh) |  |  |
 |Watchtower|32/64 bit|Container|  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=q3wKqk8qVS8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=7) |
 |WebGrab+Plus| bit|Container|  |  |  |  |
 |Whoogle|32/64 bit|Container|  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12) |
 |Wikijs|32/64 bit|Container|  |  |  |  |
 |Windows 2000|32/64 bit|Container|  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13) |
-|Wireguard Server|32/64 bit|Stack| [📄](../docs/wireguard-install.md) |  |  |  |
-|Wordpress|32/64 bit|Stack| [📄](../docs/wordpress_installation.md) |  |  |  |
+|Wireguard Server|32/64 bit|Stack| [Doc](../docs/wireguard-install.md) |  |  |  |
+|Wordpress|32/64 bit|Stack| [Doc](../docs/wordpress_installation.md) |  |  |  |
 |Yacht|32/64 bit|Container|  |  |  |  |
 |YouTubeDL-Material|32/64 bit|Container|  |  |  |  |
 |ZNC|32/64 bit|Container|  |  |  |  |
