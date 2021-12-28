@@ -143,7 +143,8 @@
 		{
 			"ID": 7,
 			"Title": "Raspberry Pi Docker Monitoring",
-			"URL": "https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8"
+			"URL": "https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8",
+			"DocID": 3
 		},
 		{
 			"ID": 8,
@@ -153,7 +154,8 @@
 		{
 			"ID": 9,
 			"Title": "Installing Nginx Proxy Manager on Docker",
-			"URL": "https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10"
+			"URL": "https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10",
+			"DocID": 2
 		},
 		{
 			"ID": 10,
