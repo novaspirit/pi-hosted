@@ -16,7 +16,7 @@ homedir='../'
 if ! sha256sum -c --quiet "$verificationFile" &> /dev/null ; then
 	echo "Updating documentation..."
 	# Run all scripts
-	./generateList.sh
+	./generateAppList.sh
 	./generateREADME.sh
 	./generateToolsREADME.sh
 	echo "Update finished"
