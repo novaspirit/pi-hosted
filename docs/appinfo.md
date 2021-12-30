@@ -9,7 +9,7 @@ Keeping this file up to date help to maintain all other important document files
 ## Files that relies on `appinfo.json`
 
 - [docs/README.md](README.md)
-- [docs/TemplateList.md](TemplateList.md)
+- [docs/AppList.md](AppList.md)
 - [tools/README.md](../tools/README.md)
 
 ## File Structure
