@@ -1948,7 +1948,7 @@
 					"name": "MYJD_PASSWORD"
 				}
 			],
-			"image": "jaymoulin/jdownloader:1.4.3-armhf",
+			"image": "jaymoulin/jdownloader:latest",
 			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jdownloader.png",
 			"name": "JDownloader",
 			"platform": "linux",
