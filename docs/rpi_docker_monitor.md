@@ -134,7 +134,7 @@ Grafana > Configuration > Data Sources > Prometheus
 ![image](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-DataSource.png)
 
 ### Setup the Dashboard
-Grafana is not preconfigured with dashboard, so you have to import it from the  [json](https://github.com/oijkn/Docker-Raspberry-PI-Monitoring/blob/main/grafana/dashboard_by_oijkn.json) file.
+Grafana is not preconfigured with dashboard, so you have to import it from the  [json](https://github.com/novaspirit/pi-hosted/blob/master/configs/dashboard_by_oijkn.json) file.
 
 ```
 Grafana > + > Import 
@@ -142,7 +142,7 @@ Grafana > + > Import
 
 ![image](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-Dashboard-Menu-Import.png)
 
-Now we open the [json](https://github.com/oijkn/Docker-Raspberry-PI-Monitoring/blob/main/grafana/dashboard_by_oijkn.json) file and Click on the "raw" button to copy the content from the json file.
+Now we open the [json](https://github.com/novaspirit/pi-hosted/blob/master/configs/dashboard_by_oijkn.json) file and Click on the "raw" button to copy the content from the json file.
 
 (!["raw" button](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/rpi_docker_monitor-Raw.png))
 
