@@ -76,7 +76,7 @@
 |Mylar|32/64 bit|Container|  |  |  |  |
 |n8n|32/64 bit|Container|  |  |  |  |
 |Netdata|32/64 bit|Container|  |  |  |  |
-|Nextcloud|32/64 bit|Stack|  |  | [reset_premissions_nextcloud.sh](../tools/reset_premissions_nextcloud.sh) |  |
+|Nextcloud|32/64 bit|Stack|  |  |  |  |
 |NextcloudPi|32/64 bit|Container|  |  | [reset_premissions_nextcloud.sh](../tools/reset_premissions_nextcloud.sh) | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=E6IrT3g5Gqc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=9) |
 |Nginx|32/64 bit|Container|  |  |  |  |
 |Nginx Proxy Manager|32/64 bit|Stack| [![](../build/images/doc_icon.png)](../docs/nginx_proxy_manager.md) | [![](../build/images/script_icon.png)](../tools/nginx-proxy-manager.sh) |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
@@ -117,6 +117,7 @@
 |Snippet-box|32/64 bit|Container|  |  |  |  |
 |Sonarr|32/64 bit|Container|  |  |  |  |
 |Speedtest Tracker|32/64 bit|Container|  |  |  |  |
+|Sshwifty|32/64 bit|Container|  |  |  |  |
 |SyncThing|32/64 bit|Container|  |  |  |  |
 |Tautulli|32/64 bit|Container|  |  |  |  |
 |TheLounge|32/64 bit|Container|  |  |  |  |

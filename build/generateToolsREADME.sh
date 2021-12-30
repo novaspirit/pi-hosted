@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# start script from it's folder
+cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null || exit
+
 # Standard file locations
 homedir='../'
 . env.sh
