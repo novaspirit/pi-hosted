@@ -11,7 +11,7 @@ TOOLSREADME="${homedir}tools/README.md"
 TOOLSREADME_TEMPLATE="${homedir}build/tools_README_Template.md"
 
 # AppList Document
-AppList="${homedir}docs/TemplateList.md"
+AppList="${homedir}docs/AppList.md"
 
 # appinfo file
 appinfo="${homedir}build/appinfo.json"
