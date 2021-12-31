@@ -10,8 +10,11 @@ README_TEMPLATE="${homedir}build/README_Template.md"
 TOOLSREADME="${homedir}tools/README.md"
 TOOLSREADME_TEMPLATE="${homedir}build/tools_README_Template.md"
 
-# AppList Document
+# Lists Documents
 AppList="${homedir}docs/AppList.md"
+AppList_TEMPLATE=""
+DocList="${homedir}docs/DocumentList.md"
+DocList_TEMPLATE="${homedir}build/template_DocumentList.md"
 
 # appinfo file
 appinfo="${homedir}build/appinfo.json"

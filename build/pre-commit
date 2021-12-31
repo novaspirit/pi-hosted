@@ -17,6 +17,7 @@ if ! sha256sum -c --quiet "$verificationFile" &> /dev/null ; then
 	echo "Updating documentation..."
 	# Run all scripts
 	./generateAppList.sh
+	./generateDocList.sh
 	./generateREADME.sh
 	./generateToolsREADME.sh
 	echo "Update finished"
@@ -28,4 +29,5 @@ if ! sha256sum -c --quiet "$verificationFile" &> /dev/null ; then
 	git add -- "$README"
 	git add -- "$TOOLSREADME"
 	git add -- "$AppList"
+	git add -- "$DocList"
 fi
