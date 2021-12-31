@@ -31,12 +31,12 @@ trap CleanExit 0 1
 # Apps Title for both Templates
 jq '.templates[].title' "$pt32" | tr -d '"' > "$App32"
 jq '.templates[].title' "$pt64" | tr -d '"' > "$App64"
-cat "$App32" "$App64" | sort -u > "$AppTitle"
+cat "$App32" "$App64" | sort -uf > "$AppTitle"
 
 # Apps Type for both Templates
 jq '.templates[].type' "$pt32" | paste -d'|' "$App32" - > "$TempList"
 jq '.templates[].type' "$pt64" | paste -d'|' "$App64" - >> "$TempList"
-sort -u "$TempList" > "$AppType"
+sort -uf "$TempList" > "$AppType"
 
 # Create AppList title
 cp -f "$AppList_TEMPLATE" "$AppList"
