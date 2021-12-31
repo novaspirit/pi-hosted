@@ -6,9 +6,9 @@ pt64="${homedir}template/portainer-v2-arm64.json"
 
 # README Files with templates
 README="${homedir}docs/README.md"
-README_TEMPLATE="${homedir}build/README_Template.md"
+README_TEMPLATE="${homedir}build/template_README.md"
 TOOLSREADME="${homedir}tools/README.md"
-TOOLSREADME_TEMPLATE="${homedir}build/tools_README_Template.md"
+TOOLSREADME_TEMPLATE="${homedir}build/template_tools_README.md"
 
 # Lists Documents
 AppList="${homedir}docs/AppList.md"
