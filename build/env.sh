@@ -12,7 +12,7 @@ TOOLSREADME_TEMPLATE="${homedir}build/template_tools_README.md"
 
 # Lists Documents
 AppList="${homedir}docs/AppList.md"
-AppList_TEMPLATE=""
+AppList_TEMPLATE="${homedir}build/template_AppList.md"
 DocList="${homedir}docs/DocumentList.md"
 DocList_TEMPLATE="${homedir}build/template_DocumentList.md"
 

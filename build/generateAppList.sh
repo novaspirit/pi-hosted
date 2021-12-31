@@ -39,12 +39,7 @@ jq '.templates[].type' "$pt64" | paste -d'|' "$App64" - >> "$TempList"
 sort -u "$TempList" > "$AppType"
 
 # Create AppList title
-{
-	echo "# Template List"
-	echo
-	echo "|App Title|System|Type | Doc |Install Script|Extra Scripts|Youtube Video|"
-	echo "|:--------|:----:|:---:|:---:|:------------:|:------------|:-----------:|"
-} > "$AppList"
+cp -f "$AppList_TEMPLATE" "$AppList"
 
 # Generate App Table
 while IFS="" read -u 9 -r App || [ -n "$App" ]
