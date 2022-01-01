@@ -1,5 +1,15 @@
 #!/bin/bash
 
+function error {
+  echo -e "\\e[91m$1\\e[39m"
+  exit 1
+}
+
+# Check dependencies
+jq --version &> /dev/null || error "jq is required, please install it with 'sudo apt install jq'"
+git --version &> /dev/null || error "git is required, please install it with 'sudo apt install git'"
+sha256sum --version &> /dev/null || error "sha256sum is required, please install it with 'sudo apt install coreutils'"
+
 # Check if script from build or script from hook and cd into build folder
 scriptDir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null || pwd )"
 if [ "$( echo "$scriptDir" | rev | cut -d/ -f1 | rev )" == "build" ]; then
