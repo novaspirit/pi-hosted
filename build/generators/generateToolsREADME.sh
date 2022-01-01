@@ -11,7 +11,7 @@ homedir='../../'
 unset table
 nTools=$( jq '.tools | length' "$appinfo")
 for tool in $(seq 0 $(( nTools - 1 ))); do
-	info=$( jq ".tools[$tool]" "$appinfo" )
+	info=$( jq ".tools | sort_by(.File) | .[$tool]" "$appinfo" )
 
 	# Get Tool Path
 	FILE=$( echo "$info" | jq '.File' | tr -d '"' )
@@ -24,6 +24,18 @@ for tool in $(seq 0 $(( nTools - 1 ))); do
 	TYPE=$( echo "$info" | jq '.Type' | tr -d '"' )
 	[ "$TYPE" == "null" ] && TYPE="Install"
 
+	# Get Tool runner
+	EXEC=$( echo "$info" | jq '.Exec' | tr -d '"' )
+	[ "$EXEC" == "null" ] && EXEC="bash"
+
+	# Get Tool wget link
+	WGET=$( echo "$info" | jq '.wget' | tr -d '"' )
+	if [ "$WGET" != "null" ]; then
+		WGET="wget -qO- $WGET \| $EXEC"
+	else
+		unset WGET
+	fi
+
 	# Get Tool Installation Doc
 	DocID=$( echo "$info" | jq '.DocID')
 	if [ "$DocID" != "null" ]; then
@@ -33,7 +45,7 @@ for tool in $(seq 0 $(( nTools - 1 ))); do
 		unset DocLink
 	fi
 
-	line="|$FILE|$DocLink|$TYPE|$DESC|"
+	line="|$FILE|$DocLink|$TYPE|$DESC|$WGET|"
 	if [ "$tool" == "0" ] ; then
 		table=$line
 	else

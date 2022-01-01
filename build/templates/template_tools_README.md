@@ -5,5 +5,5 @@ Most of the follwing scripts are only needed if you are trying to load one of th
 
 ---
 
-| Script Name  | Additional Doc | Type | Description |
-| ------------ | -------------- | ---- | ----------- |
+| Script Name  | Additional Doc | Type | Description | wget install |
+| ------------ | -------------- | ---- | ----------- | ------------ |
