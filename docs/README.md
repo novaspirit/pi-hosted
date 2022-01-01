@@ -77,24 +77,9 @@ You're done! Now just click App Templates and deploy applications!
 
 You can find more tutorials and useful information in our [GitHub Docs](DocumentList.md) folder.
 
-=======
+### Included Scripts
 
-| Additional Tools | Description | wget install |
-|----------------|--------------|--------------|
-|[install_caddy.sh](../tools/install_caddy.sh)|Preinstall Setup for Caddy|wget -qO- https://git.io/JMsEe \| bash|
-|[install_drupal.sh](../tools/install_drupal.sh)|Preinstall Setup for Drupal|wget -qO- https://git.io/JMsEj \| bash|
-|[install_portainer_agent.sh](../tools/install_portainer_agent.sh)|Install Portainer Agent<br>Portainer agent is used for remote management of the host you install it on.||
-|[update_portainer_agent.sh](../tools/update_portainer_agent.sh)|Upgrade Portainer Agent||
-|[install_throttled.sh](../tools/install_throttled.sh)|Preinstall Setup for the Throttled Script<br>[Installation Document](../docs/throttled.md)|wget -qO- https://git.io/JXzw0 \| bash|
-|[install_vikunja.sh](../tools/install_vikunja.sh)|Preinstall Setup for Vikunja|wget -qO- https://git.io/JMsuZ \| bash|
-|[nginx-proxy-manager.sh](../tools/nginx-proxy-manager.sh)|Preinstall Setup for NPM<br>[Installation Document](../docs/nginx_proxy_manager.md)|wget -qO- https://git.io/JPXF5 \| bash|
-|[reset_premissions_nextcloud.sh](../tools/reset_premissions_nextcloud.sh)|Basic Script to reset the premissions of NextcloudPi|wget -qO- https://git.io/JDklN \| bash|
-|[rpi_docker_monitor.sh](../tools/rpi_docker_monitor.sh)|Preinstall Setup for Docker Monitor<br>[Installation Document](../docs/rpi_docker_monitor.md)|wget -qO- https://git.io/JPXba \| bash|
-|[traefik.sh](../tools/traefik.sh)|Preinstall Setup for Traefik|wget -qO- https://git.io/JMsuA \| bash|
-|[unpoller-install.sh](../tools/unpoller-install.sh)|Preinstall Setup for UnPoller<br>[Installation Document](../docs/UnPoller-Monitor.md)|wget -qO- https://git.io/JMszE \| bash|
-|[install_photoprism.sh](../tools/install_photoprism.sh)|Install Photo Prism|wget -qO- https://git.io/JM5Tr \| bash|
-|[update_libseccomp2.sh](../tools/update_libseccomp2.sh)|PI OS 32 libseccomp2 Repair utility|wget -qO- https://git.io/JPXdj \| bash|
-
+Install, Update, Pre-Install and extra scripts can be found in our [GitHub Tools](../tools) folder.
 
 ### Contributors
 

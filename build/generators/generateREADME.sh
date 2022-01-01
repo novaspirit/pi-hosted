@@ -62,47 +62,4 @@ for vid in $(seq 0 $(( nVideos - 1 ))); do
 done
 insertTable '<<<<< YOUTUBE TABLE HERE >>>>>' "$README_TEMPLATE"
 
-## Generate Tools Table
-unset table
-nTools=$( jq '.tools | length' "$appinfo")
-for tool in $(seq 0 $(( nTools - 1 ))); do
-	info=$( jq ".tools[$tool]" "$appinfo" )
-
-	# Get Tool Path
-	FILE=$( echo "$info" | jq '.File' | tr -d '"' )
-	FILE="[$FILE]($Scripts$FILE)"
-
-	# Get Tool Description
-	DESC=$( echo "$info" | jq '.Description' | tr -d '"' )
-
-	# Get Tool runner
-	EXEC=$( echo "$info" | jq '.Exec' | tr -d '"' )
-	[ "$EXEC" == "null" ] && EXEC="bash"
-
-	# Get Tool wget link
-	WGET=$( echo "$info" | jq '.wget' | tr -d '"' )
-	if [ "$WGET" != "null" ]; then
-		WGET="wget -qO- $WGET \| $EXEC"
-	else
-		unset WGET
-	fi
-
-	# Get Tool Installation Doc
-	DocID=$( echo "$info" | jq '.DocID')
-	if [ "$DocID" != "null" ]; then
-		DocFile=$(jq ".docs[] | select(.ID==$DocID) | .File" "$appinfo" | tr -d '"')
-		DocLink="<br>[Installation Document]($Docs$DocFile)"
-	else
-		unset DocLink
-	fi
-
-	line="|$FILE|$DESC$DocLink|$WGET|"
-	if [ "$tool" == "0" ] ; then
-		table=$line
-	else
-		table=$( echo -e "$table\n$line")
-	fi
-done
-insertTable '<<<<< TOOLS TABLE HERE >>>>>' "$tmpreadme2"
-
 cp -f "$tmpreadme2" "$README"

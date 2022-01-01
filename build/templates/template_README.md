@@ -65,12 +65,9 @@ You're done! Now just click App Templates and deploy applications!
 
 You can find more tutorials and useful information in our [GitHub Docs](DocumentList.md) folder.
 
-=======
+### Included Scripts
 
-| Additional Tools | Description | wget install |
-|----------------|--------------|--------------|
-<<<<< TOOLS TABLE HERE >>>>>
-
+Install, Update, Pre-Install and extra scripts can be found in our [GitHub Tools](../tools) folder.
 
 ### Contributors
 
