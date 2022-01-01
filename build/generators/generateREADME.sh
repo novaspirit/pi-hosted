@@ -62,27 +62,6 @@ for vid in $(seq 0 $(( nVideos - 1 ))); do
 done
 insertTable '<<<<< YOUTUBE TABLE HERE >>>>>' "$README_TEMPLATE"
 
-## Generate Doc Table
-unset table
-nDocs=$( jq '.docs | length' "$appinfo")
-for doc in $(seq 0 $(( nDocs - 1 ))); do
-	info=$( jq ".docs[$doc]" "$appinfo" )
-
-	# Get Doc Path
-	FILE=$( echo "$info" | jq '.File' | tr -d '"' )
-
-	# Get Doc Description
-	DESC=$( echo "$info" | jq '.Description' | tr -d '"' )
-
-	line="|[$DESC]($Docs$FILE)|"
-	if [ "$doc" == "0" ] ; then
-		table=$line
-	else
-		table=$( echo -e "$table\n$line")
-	fi
-done
-insertTable '<<<<< DOCS TABLE HERE >>>>>' "$tmpreadme2"
-
 ## Generate Tools Table
 unset table
 nTools=$( jq '.tools | length' "$appinfo")

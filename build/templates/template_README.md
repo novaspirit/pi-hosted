@@ -61,11 +61,9 @@ You're done! Now just click App Templates and deploy applications!
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
 <<<<< YOUTUBE TABLE HERE >>>>>
 
-=======
+### Aditional Documentation
 
-| Additional Documentation |
-|------------------------|
-<<<<< DOCS TABLE HERE >>>>>
+You can find more tutorials and useful information in our [GitHub Docs](DocumentList.md) folder.
 
 =======
 

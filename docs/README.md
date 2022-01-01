@@ -73,18 +73,9 @@ You're done! Now just click App Templates and deploy applications!
 |11|[How to Install Whoogle to replace using Google and repo notes](https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12)||
 |12|[Checking out Windows 2000 Docker](https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13)||
 
-=======
+### Aditional Documentation
 
-| Additional Documentation |
-|------------------------|
-|[Install and setup instructions for the RPI Unifi (UnPoller) Monitor](../docs/UnPoller-Monitor.md)|
-|[Install and setup instructions for Nginx Proxy Manager (NPM)](../docs/nginx_proxy_manager.md)|
-|[Install and setup instructions for the RPI Docker Monitor](../docs/rpi_docker_monitor.md)|
-|[Install and setup instructions for the WireGuard VPN Server](../docs/wireguard-install.md)|
-|[WORDPRESS + SSL SETUP](../docs/wordpress_installation.md)|
-|[Install and Setup Instructions for the Throttled Script](../docs/throttled.md)|
-|[Install and Setup Pi-Hole for Network-Wide Ad Block](../docs/pi-hole.md)|
-|[Attach a container directly to local network (macvlan)](../docs/macvlan_setup.md)|
+You can find more tutorials and useful information in our [GitHub Docs](DocumentList.md) folder.
 
 =======
 
