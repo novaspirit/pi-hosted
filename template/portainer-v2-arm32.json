@@ -4911,7 +4911,7 @@
 				},
 				{
 					"bind": "/portainer/Files/AppData/Config/traefik/acme.json",
-					"container": "acme.json"
+					"container": "/acme.json"
 				},
 				{
 					"bind": "/var/run/docker.sock",
