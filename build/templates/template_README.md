@@ -4,10 +4,12 @@
 
 This repository is a collection of tutorials for hosting a variety of server applications using Docker and [Portainer](https://github.com/portainer/portainer).
 
-See the list of Apps included in this template [here](AppList.md).
-
 ### App Template for Portainer
 ![alt text](https://github.com/novaspirit/pi-hosted/blob/master/apptemplate.png?raw=true)
+
+### Apps List
+
+See the list of Apps included in this template [here](AppList.md).
 
 ### Installation
 Run `install-docker.sh`, to install docker, and add the current user to the docker usergroup.
@@ -61,18 +63,13 @@ You're done! Now just click App Templates and deploy applications!
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
 <<<<< YOUTUBE TABLE HERE >>>>>
 
-=======
+### Aditional Documentation
 
-| Additional Documentation |
-|------------------------|
-<<<<< DOCS TABLE HERE >>>>>
+You can find more tutorials and useful information in our [GitHub Docs](DocumentList.md) folder.
 
-=======
+### Included Scripts
 
-| Additional Tools | Description | wget install |
-|----------------|--------------|--------------|
-<<<<< TOOLS TABLE HERE >>>>>
-
+Install, Update, Pre-Install and extra scripts can be found in our [GitHub Tools](../tools) folder.
 
 ### Contributors
 

@@ -4,10 +4,12 @@
 
 This repository is a collection of tutorials for hosting a variety of server applications using Docker and [Portainer](https://github.com/portainer/portainer).
 
-See the list of Apps included in this template [here](AppList.md).
-
 ### App Template for Portainer
 ![alt text](https://github.com/novaspirit/pi-hosted/blob/master/apptemplate.png?raw=true)
+
+### Apps List
+
+See the list of Apps included in this template [here](AppList.md).
 
 ### Installation
 Run `install-docker.sh`, to install docker, and add the current user to the docker usergroup.
@@ -73,37 +75,13 @@ You're done! Now just click App Templates and deploy applications!
 |11|[How to Install Whoogle to replace using Google and repo notes](https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12)||
 |12|[Checking out Windows 2000 Docker](https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13)||
 
-=======
+### Aditional Documentation
 
-| Additional Documentation |
-|------------------------|
-|[Install and setup instructions for the RPI Unifi (UnPoller) Monitor](../docs/UnPoller-Monitor.md)|
-|[Install and setup instructions for Nginx Proxy Manager (NPM)](../docs/nginx_proxy_manager.md)|
-|[Install and setup instructions for the RPI Docker Monitor](../docs/rpi_docker_monitor.md)|
-|[Install and setup instructions for the WireGuard VPN Server](../docs/wireguard-install.md)|
-|[WORDPRESS + SSL SETUP](../docs/wordpress_installation.md)|
-|[Install and Setup Instructions for the Throttled Script](../docs/throttled.md)|
-|[Install and Setup Pi-Hole for Network-Wide Ad Block](../docs/pi-hole.md)|
-|[Attach a container directly to local network (macvlan)](../docs/macvlan_setup.md)|
+You can find more tutorials and useful information in our [GitHub Docs](DocumentList.md) folder.
 
-=======
+### Included Scripts
 
-| Additional Tools | Description | wget install |
-|----------------|--------------|--------------|
-|[install_caddy.sh](../tools/install_caddy.sh)|Preinstall Setup for Caddy|wget -qO- https://git.io/JMsEe \| bash|
-|[install_drupal.sh](../tools/install_drupal.sh)|Preinstall Setup for Drupal|wget -qO- https://git.io/JMsEj \| bash|
-|[install_portainer_agent.sh](../tools/install_portainer_agent.sh)|Install Portainer Agent<br>Portainer agent is used for remote management of the host you install it on.||
-|[update_portainer_agent.sh](../tools/update_portainer_agent.sh)|Upgrade Portainer Agent||
-|[install_throttled.sh](../tools/install_throttled.sh)|Preinstall Setup for the Throttled Script<br>[Installation Document](../docs/throttled.md)|wget -qO- https://git.io/JXzw0 \| bash|
-|[install_vikunja.sh](../tools/install_vikunja.sh)|Preinstall Setup for Vikunja|wget -qO- https://git.io/JMsuZ \| bash|
-|[nginx-proxy-manager.sh](../tools/nginx-proxy-manager.sh)|Preinstall Setup for NPM<br>[Installation Document](../docs/nginx_proxy_manager.md)|wget -qO- https://git.io/JPXF5 \| bash|
-|[reset_premissions_nextcloud.sh](../tools/reset_premissions_nextcloud.sh)|Basic Script to reset the premissions of NextcloudPi|wget -qO- https://git.io/JDklN \| bash|
-|[rpi_docker_monitor.sh](../tools/rpi_docker_monitor.sh)|Preinstall Setup for Docker Monitor<br>[Installation Document](../docs/rpi_docker_monitor.md)|wget -qO- https://git.io/JPXba \| bash|
-|[traefik.sh](../tools/traefik.sh)|Preinstall Setup for Traefik|wget -qO- https://git.io/JMsuA \| bash|
-|[unpoller-install.sh](../tools/unpoller-install.sh)|Preinstall Setup for UnPoller<br>[Installation Document](../docs/UnPoller-Monitor.md)|wget -qO- https://git.io/JMszE \| bash|
-|[install_photoprism.sh](../tools/install_photoprism.sh)|Install Photo Prism|wget -qO- https://git.io/JM5Tr \| bash|
-|[update_libseccomp2.sh](../tools/update_libseccomp2.sh)|PI OS 32 libseccomp2 Repair utility|wget -qO- https://git.io/JPXdj \| bash|
-
+Install, Update, Pre-Install and extra scripts can be found in our [GitHub Tools](../tools) folder.
 
 ### Contributors
 

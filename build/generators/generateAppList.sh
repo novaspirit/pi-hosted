@@ -4,10 +4,10 @@
 cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null || exit
 
 # Standard file locations
-homedir='../'
-. env.sh
-docIcon="![](${homedir}build/images/doc_icon.png)"
-scriptIcon="![](${homedir}build/images/script_icon.png)"
+homedir='../../'
+. ../env.sh
+docIcon="![](../build/images/doc_icon.png)"
+scriptIcon="![](../build/images/script_icon.png)"
 
 # Temp helper files
 TempList=$(mktemp)
@@ -31,20 +31,15 @@ trap CleanExit 0 1
 # Apps Title for both Templates
 jq '.templates[].title' "$pt32" | tr -d '"' > "$App32"
 jq '.templates[].title' "$pt64" | tr -d '"' > "$App64"
-cat "$App32" "$App64" | sort -u > "$AppTitle"
+cat "$App32" "$App64" | sort -uf > "$AppTitle"
 
 # Apps Type for both Templates
 jq '.templates[].type' "$pt32" | paste -d'|' "$App32" - > "$TempList"
 jq '.templates[].type' "$pt64" | paste -d'|' "$App64" - >> "$TempList"
-sort -u "$TempList" > "$AppType"
+sort -uf "$TempList" > "$AppType"
 
 # Create AppList title
-{
-	echo "# Template List"
-	echo
-	echo "|App Title|System|Type | Doc |Install Script|Extra Scripts|Youtube Video|"
-	echo "|:--------|:----:|:---:|:---:|:------------:|:------------|:-----------:|"
-} > "$AppList"
+cp -f "$AppList_TEMPLATE" "$AppList"
 
 # Generate App Table
 while IFS="" read -u 9 -r App || [ -n "$App" ]
