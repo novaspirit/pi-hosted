@@ -14,12 +14,15 @@ homedir='../'
 
 # Check if Template or appinfo has changed
 if ! sha256sum -c --quiet "$verificationFile" &> /dev/null ; then
+	# Make sure tmp folder exists
+	mkdir -p "$( dirname -- "$verificationFile" )"
+
 	echo "Updating documentation..."
 	# Run all scripts
-	./generateAppList.sh
-	./generateDocList.sh
-	./generateREADME.sh
-	./generateToolsREADME.sh
+	./generators/generateAppList.sh
+	./generators/generateDocList.sh
+	./generators/generateREADME.sh
+	./generators/generateToolsREADME.sh
 	echo "Update finished"
 
 	# Update lastrun.sha256

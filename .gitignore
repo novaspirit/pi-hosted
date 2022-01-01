@@ -1,5 +1,5 @@
 
 .DS_Store
 
-# Ignore latest.run file from build hoook
-build/lastrun.sha256
+# Ignore tmp file in build directory
+build/tmp/

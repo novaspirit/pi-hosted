@@ -4,10 +4,10 @@
 cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null || exit
 
 # Standard file locations
-homedir='../'
-. env.sh
-docIcon="![](${homedir}build/images/doc_icon.png)"
-scriptIcon="![](${homedir}build/images/script_icon.png)"
+homedir='../../'
+. ../env.sh
+docIcon="![](../build/images/doc_icon.png)"
+scriptIcon="![](../build/images/script_icon.png)"
 
 # Temp helper files
 TempList=$(mktemp)

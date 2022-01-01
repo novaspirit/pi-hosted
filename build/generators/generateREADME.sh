@@ -4,8 +4,8 @@
 cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null || exit
 
 # Standard file locations
-homedir='../'
-. env.sh
+homedir='../../'
+. ../env.sh
 
 # Temp Files
 tmpreadme1=$(mktemp)
