@@ -158,7 +158,7 @@
       "pluginVersion": "8.1.5",
       "targets": [
         {
-          "expr": "count(rate(container_last_seen{id=~\"/docker/.*\"}[5m]))",
+          "expr": "count(rate(container_last_seen{name=~\".+\"}[5m]))",
           "format": "time_series",
           "hide": false,
           "interval": "",
