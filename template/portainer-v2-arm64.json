@@ -4913,40 +4913,6 @@
 		},
 		{
 			"categories": [
-				"Other"
-			],
-			"description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "lunik1/tt-rss:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/tt-rss-icon.png",
-			"name": "tt-rss",
-			"platform": "linux",
-			"ports": [
-				"7352:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Tiny Tiny RSS",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/tt-rss",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Downloaders"
 			],
 			"description": "Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
