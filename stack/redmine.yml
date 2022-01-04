@@ -8,8 +8,8 @@ services:
       MYSQL_DATABASE: ${DATABASE_NAME}
       MYSQL_USER: ${DATABASE_USER}
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
-      PUID: ${USER_UID}
-      PGID: ${USER_GID}
+      PUID: ${PUID}
+      PGID: ${PGID}
       TZ: ${TZ}
     networks:
       - redmine_network
@@ -45,7 +45,7 @@ services:
       - 4180:80
     restart: unless-stopped
     volumes:
-      - /portainer/Files/AppData/Config/redmine/files:"/usr/src/redmine/files"
+      - /portainer/Files/AppData/Config/redmine/files:/usr/src/redmine/files
     depends_on:
       - mariadb
 
