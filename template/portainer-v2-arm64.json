@@ -4278,6 +4278,70 @@
 		},
 		{
 			"categories": [
+				"project-management",
+				"Other",
+				"Tools"
+			],
+			"description": "Open-source project management tool",
+			"note":"Default user and password are admin/admin",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/redmine.png",
+			"name": "redmine",
+			"platform": "linux",
+			"ports": [
+				"4180:3000/tcp"
+			],
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
+				{
+					"default": "redmine",
+					"label": "DATABASE_NAME",
+					"name": "DATABASE_NAME"
+				},
+				{
+					"default": "redmine",
+					"label": "DATABASE_USER",
+					"name": "DATABASE_USER"
+				},
+				{
+					"default": "",
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"default": "",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
+				},
+				{
+					"default": "",
+					"label": "REDMINE_SECRET_KEY_BASE",
+					"name": "REDMINE_SECRET_KEY_BASE"
+				}
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Redmine",
+			"type": 3,
+			"repository": {
+				"stackfile": "stack/redmine.yml",
+				"url": "https://github.com/novaspirit/pi-hosted"
+			}
+		},
+		{
+			"categories": [
 				"Backup",
 				"Cloud",
 				"Other",
