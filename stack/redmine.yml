@@ -23,7 +23,7 @@ services:
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
     ports:
-      - 4181:80
+      - 4181:3000
     networks:
       - redmine_network
     restart: unless-stopped
