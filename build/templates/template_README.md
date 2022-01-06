@@ -14,7 +14,7 @@ See the list of Apps included in this template [here](AppList.md).
 ### Installation
 Run `install-docker.sh`, to install docker, and add the current user to the docker usergroup.
 ```
-wget -qO- https://git.io/JwUkc | bash
+wget -qO- https://git.io/JS96e | bash
 # need to reboot/logout for changes to take effect
 ```
 
@@ -38,9 +38,9 @@ sudo reboot
 
 After a reboot, run `install-portainer.sh`, to install Portainer.io
 ```
-wget -qO- https://git.io/JwUnf | bash
+wget -qO- https://git.io/JS96L | bash
 # to update portainer, run this command
-wget -qO- https://git.io/JwUlY | bash
+wget -qO- https://git.io/JS96Y | bash
 ```
 Click Settings, in the bottom-left corner, and paste the Portainer v2 json file link from below into the "App Templates" box.
 
