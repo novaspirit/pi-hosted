@@ -78,7 +78,7 @@ an active cell data connection on your phone.
 Click the slider next to the tunnel we setup previously and it should activate (for android phones a little key icon shows up on your notification bar).
 
 Open your browser and go to a standard website to ensure DNS is functional.<br>
-https://github.com/novaspirit/pi-hosted
+https://github.com/pi-hosted/pi-hosted
 
 Next open a new tab or in the same tab navigate to an IP based service that you have NOT made available outside your network, for me that would be Homer.<br>
 http://192.168.1.10:8902/

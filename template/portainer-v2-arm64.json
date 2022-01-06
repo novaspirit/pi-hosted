@@ -34,7 +34,7 @@
 				}
 			],
 			"image": "linuxserver/airsonic:arm64v8-latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/airsonic-logo.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/airsonic-logo.png",
 			"name": "airsonic",
 			"platform": "linux",
 			"ports": [
@@ -73,7 +73,7 @@
 			],
 			"description": "ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view sites you want to preserve offline.",
 			"image": "archivebox/archivebox:master",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/archivebox.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/archivebox.png",
 			"name": "archivebox",
 			"note": "By default an admin user is not created. You can do so by launching a shell in the container and executing 'archivebox manage createsuperuser'. Documentation is Available \u003ca href='https://github.com/ArchiveBox/ArchiveBox/wiki'\u003ehere\u003c/a\u003e.",
 			"platform": "linux",
@@ -132,7 +132,7 @@
 				}
 			],
 			"image": "authelia/authelia:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/authelia.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/authelia.png",
 			"name": "authelia",
 			"note": "Requires a configuration.yml file in order to work. Documentation is Available \u003ca href='https://docs.authelia.com/deployment/deployment-ha'\u003ehere\u003c/a\u003e.",
 			"platform": "linux",
@@ -173,7 +173,7 @@
 				}
 			],
 			"image": "linuxserver/bazarr:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/bazarr.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bazarr.png",
 			"name": "bazarr",
 			"platform": "linux",
 			"ports": [
@@ -215,7 +215,7 @@
 				}
 			],
 			"image": "linuxserver/beets:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/beets-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/beets-icon.png",
 			"name": "beets",
 			"platform": "linux",
 			"ports": [
@@ -263,7 +263,7 @@
 				}
 			],
 			"image": "linuxserver/booksonic:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/booksonic.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/booksonic.png",
 			"name": "booksonic",
 			"platform": "linux",
 			"ports": [
@@ -321,12 +321,12 @@
 					"name": "PORT"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/bookstack2.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bookstack2.png",
 			"note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/bookstack.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			},
 			"title": "Bookstack",
 			"type": 3
@@ -339,7 +339,7 @@
 			],
 			"description": "Caddy - The Ultimate Server with Automatic HTTPS.  Need to run tools/install_caddy.sh before installing the template.",
 			"image": "caddy:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/caddy.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/caddy.png",
 			"name": "caddy",
 			"note": "Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",
 			"platform": "linux",
@@ -411,7 +411,7 @@
 				}
 			],
 			"image": "nmtan/chevereto:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/Chevereto.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Chevereto.png",
 			"name": "Chevereto",
 			"platform": "linux",
 			"ports": [
@@ -445,7 +445,7 @@
 				}
 			],
 			"image": "linuxserver/calibre-web:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/calibre-web-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/calibre-web-icon.png",
 			"name": "calibre-web",
 			"platform": "linux",
 			"ports": [
@@ -483,7 +483,7 @@
 				}
 			],
 			"image": "linuxserver/cardigann:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/cardigann.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/cardigann.png",
 			"name": "cardigann",
 			"platform": "linux",
 			"ports": [
@@ -533,7 +533,7 @@
 				}
 			],
 			"image": "favonia/cloudflare-ddns:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/cloudflare-ddns.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/cloudflare-ddns.png",
 			"name": "cloudflare-ddns",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
@@ -577,7 +577,7 @@
 				}
 			],
 			"image": "linuxserver/code-server:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/code-server.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/code-server.png",
 			"name": "code-server",
 			"platform": "linux",
 			"ports": [
@@ -611,7 +611,7 @@
 				}
 			],
 			"image": "linuxserver/codiad:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/codiad-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/codiad-icon.png",
 			"name": "codiad",
 			"platform": "linux",
 			"ports": [
@@ -646,7 +646,7 @@
 				}
 			],
 			"image": "linuxserver/cops:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/cops-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/cops-icon.png",
 			"name": "cops",
 			"platform": "linux",
 			"ports": [
@@ -685,7 +685,7 @@
 				}
 			],
 			"image": "linuxserver/couchpotato:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/couchpotato-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/couchpotato-icon.png",
 			"name": "couchpotato",
 			"platform": "linux",
 			"ports": [
@@ -754,7 +754,7 @@
 			],
 			"description": "Another application bookmark dashboard, with fun features.",
 			"image": "failed2run/dashmachine:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/dashmachine_logo.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dashmachine_logo.png",
 			"name": "dashmachine",
 			"platform": "linux",
 			"ports": [
@@ -790,7 +790,7 @@
 				}
 			],
 			"image": "linuxserver/davos:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/davos.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/davos.png",
 			"name": "davos",
 			"platform": "linux",
 			"ports": [
@@ -817,7 +817,7 @@
 			],
 			"description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
 			"image": "registry.gitlab.com/bockiii/deemix-docker",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/deemix.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/deemix.png",
 			"name": "deemix",
 			"note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to \u003ca href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'\u003ethis page\u003c/a\u003e for userToken details.",
 			"platform": "linux",
@@ -861,7 +861,7 @@
 				}
 			],
 			"image": "linuxserver/deluge:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/deluge-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/deluge-icon.png",
 			"name": "deluge",
 			"platform": "linux",
 			"ports": [
@@ -993,7 +993,7 @@
 			],
 			"description": "Dozzle is a real-time log viewer for docker containers.",
 			"image": "amir20/dozzle:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/dozzle.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dozzle.png",
 			"name": "dozzle",
 			"note": "View logs for docker containers.",
 			"platform": "linux",
@@ -1016,7 +1016,7 @@
 			],
 			"description": "Dradis Framework: Collaboration and reporting for IT Security teams http://dradisframework.org",
 			"image": "raesene/dradis:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/dradis-logo.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dradis-logo.png",
 			"name": "dradis",
 			"platform": "linux",
 			"ports": [
@@ -1071,7 +1071,7 @@
 					"name": "MYSQL_ROOT_PASSWORD"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/drupal.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/drupal.png",
 			"name": "drupal",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
@@ -1079,7 +1079,7 @@
 			"type": 3,
 			"repository": {
 				"stackfile": "stack/drupal.yml",
-				"url": "https://github.com/novaspirit/pi-hosted/"
+				"url": "https://github.com/pi-hosted/pi-hosted/"
 			}
 		},
 		{
@@ -1116,7 +1116,7 @@
 				}
 			],
 			"image": "linuxserver/duckdns:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/duckdns.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/duckdns.png",
 			"name": "duckdns",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
@@ -1145,7 +1145,7 @@
 				}
 			],
 			"image": "linuxserver/duplicati:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/duplicati-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/duplicati-icon.png",
 			"name": "duplicati",
 			"platform": "linux",
 			"ports": [
@@ -1227,7 +1227,7 @@
 				}
 			],
 			"image": "linuxserver/emby:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/emby.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/emby.png",
 			"name": "emby",
 			"platform": "linux",
 			"ports": [
@@ -1259,7 +1259,7 @@
 			],
 			"description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
 			"image": "linuxserver/embystat:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/embystat.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/embystat.png",
 			"name": "embystat",
 			"note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services.",
 			"platform": "linux",
@@ -1283,7 +1283,7 @@
 			],
 			"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
 			"image": "filebrowser/filebrowser:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/filebrowser.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
 			"name": "filebrowser",
 			"note": "The default user and password is admin/admin.",
 			"platform": "linux",
@@ -1307,7 +1307,7 @@
 			],
 			"description": "Flame is self-hosted startpage for your server. Its design is inspired (heavily) by SUI. Flame is very easy to setup and use. With built-in editors, it allows you to setup your very own application hub in no time - no file editing necessary.",
 			"image": "pawelmalak/flame:multiarch",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/flame.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/flame.png",
 			"name": "Flame",
 			"platform": "linux",
 			"ports": [
@@ -1341,7 +1341,7 @@
 			],
 			"description": "This docker image provides the FoundryVTT system for hosting your own virtual table top games.",
 			"image": "felddy/foundryvtt:release",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/foundrylogo.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/foundrylogo.png",
 			"name": "FoundryVTT",
 			"platform": "linux",
 			"type": 1,
@@ -1397,7 +1397,7 @@
 				}
 			],
 			"image": "linuxserver/freshrss:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/freshrss-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/freshrss-icon.png",
 			"name": "freshrss",
 			"platform": "linux",
 			"ports": [
@@ -1433,7 +1433,7 @@
 				}
 			],
 			"image": "linuxserver/gazee:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/gazee-logo.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gazee-logo.png",
 			"name": "gazee",
 			"platform": "linux",
 			"ports": [
@@ -1464,7 +1464,7 @@
 			],
 			"description": "A painless self-hosted Git service.",
 			"image": "gitea/gitea:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/gitea.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gitea.png",
 			"name": "gitea",
 			"note": "More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables",
 			"platform": "linux",
@@ -1508,7 +1508,7 @@
 				"Tools"
 			],
 			"description": "Gitea with Mariadb: A painless self-hosted Git service.",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/gitea.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gitea.png",
 			"name": "gitea-mysql",
 			"note": "More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables",
 			"env": [
@@ -1554,7 +1554,7 @@
 			"type": 3,
 			"repository": {
 				"stackfile": "stack/gitea-mariadb.yml",
-				"url": "https://github.com/novaspirit/pi-hosted/"
+				"url": "https://github.com/pi-hosted/pi-hosted/"
 			}
 		},
 		{
@@ -1564,7 +1564,7 @@
 			],
 			"description": "A simple server for sending and receiving messages",
 			"image": "gotify/server-arm64:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/gotify.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gotify.png",
 			"name": "gotify",
 			"note": "ARM7 Image. Documentation is Available \u003ca href='https://gotify.net/docs/index'\u003ehere\u003c/a\u003e.",
 			"platform": "linux",
@@ -1624,7 +1624,7 @@
 				}
 			],
 			"image": "linuxserver/grocy:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/grocy_logo.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/grocy_logo.png",
 			"name": "grocy",
 			"platform": "linux",
 			"ports": [
@@ -1647,7 +1647,7 @@
 			],
 			"description": "[arm] A clientless remote desktop gateway.",
 			"image": "oznu/guacamole:armhf",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/guacamole.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/guacamole.png",
 			"name": "guacamole",
 			"note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
 			"platform": "linux",
@@ -1682,7 +1682,7 @@
 				}
 			],
 			"image": "linuxserver/headphones:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/headphones-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/headphones-icon.png",
 			"name": "headphones",
 			"platform": "linux",
 			"ports": [
@@ -1726,7 +1726,7 @@
 				}
 			],
 			"image": "linuxserver/heimdall:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/heimdall-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/heimdall-icon.png",
 			"name": "heimdall",
 			"platform": "linux",
 			"ports": [
@@ -1746,7 +1746,7 @@
 		{
 			"description": "Home Assistant is a free and open-source software for home automation that is designed to be the central control system for smart home devices with focus on local control and privacy.",
 			"image": "homeassistant/home-assistant:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/homeassistant.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homeassistant.png",
 			"name": "home assistant",
 			"platform": "linux",
 			"ports": [
@@ -1794,7 +1794,7 @@
 				}
 			],
 			"image": "oznu/homebridge:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/homebridge.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homebridge.png",
 			"name": "homebridge",
 			"network": "host",
 			"note": "Bringing HomeKit support where there is none",
@@ -1843,7 +1843,7 @@
 				}
 			],
 			"image": "oznu/homebridge:debian",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/homebridge.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homebridge.png",
 			"name": "homebridge-debian",
 			"network": "host",
 			"note": "Bringing HomeKit support where there is none",
@@ -1866,7 +1866,7 @@
 			],
 			"description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
 			"image": "b4bz/homer:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/homer.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homer.png",
 			"name": "homer",
 			"note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
 			"platform": "linux",
@@ -1919,7 +1919,7 @@
 				}
 			],
 			"image": "linuxserver/htpcmanager:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/htpcmanager-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/htpcmanager-icon.png",
 			"name": "htpcmanager",
 			"platform": "linux",
 			"ports": [
@@ -1942,7 +1942,7 @@
 			],
 			"description": "Create agents that monitor and act on your behalf.",
 			"image": "mjysci/huginn:arm32v7",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/huginn.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/huginn.png",
 			"name": "huginn",
 			"platform": "linux",
 			"ports": [
@@ -2005,7 +2005,7 @@
 				}
 			],
 			"image": "linuxserver/jackett:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jacket-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jacket-icon.png",
 			"name": "jackett",
 			"platform": "linux",
 			"ports": [
@@ -2049,7 +2049,7 @@
 				}
 			],
 			"image": "jaymoulin/jdownloader:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jdownloader.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jdownloader.png",
 			"name": "JDownloader",
 			"platform": "linux",
 			"ports": [
@@ -2094,7 +2094,7 @@
 				}
 			],
 			"image": "linuxserver/jellyfin:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/jellyfin.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jellyfin.png",
 			"name": "jellyfin",
 			"platform": "linux",
 			"ports": [
@@ -2137,7 +2137,7 @@
 				}
 			],
 			"image": "lsioarmhf/kodi-headless:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/kodi-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/kodi-icon.png",
 			"name": "kodi-headless",
 			"platform": "linux",
 			"ports": [
@@ -2173,7 +2173,7 @@
 				}
 			],
 			"image": "linuxserver/lazylibrarian:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lazylibrarian-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lazylibrarian-icon.png",
 			"name": "lazylibrarian",
 			"platform": "linux",
 			"ports": [
@@ -2248,7 +2248,7 @@
 				}
 			],
 			"image": "linuxserver/letsencrypt:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/letsencrypt.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/letsencrypt.png",
 			"name": "letsencrypt",
 			"platform": "linux",
 			"ports": [
@@ -2272,7 +2272,7 @@
 			],
 			"description": "An alternative private front-end to Reddit",
 			"image": "spikecodes/libreddit:arm",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/libreddit.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/libreddit.png",
 			"name": "libreddit",
 			"platform": "linux",
 			"ports": [
@@ -2307,7 +2307,7 @@
                                 }
                         ],
 			"image": "linuxserver/librespeed:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/speedtest.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/speedtest.png",
 			"name": "librespeed",
 			"platform": "linux",
 			"ports": [
@@ -2342,7 +2342,7 @@
 				}
 			],
 			"image": "linuxserver/lidarr:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lidarr.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lidarr.png",
 			"name": "lidarr",
 			"platform": "linux",
 			"ports": [
@@ -2412,7 +2412,7 @@
                                 }
 			],
 			"image": "linuxserver/lychee:arm64v8-latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lychee-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lychee-icon.png",
 			"name": "lychee",
 			"platform": "linux",
 			"ports": [
@@ -2477,7 +2477,7 @@
                     "default": ""
                 }
 			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/lychee-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lychee-icon.png",
 			"name": "lychee-mariadb",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
@@ -2485,7 +2485,7 @@
 			"type": 3,
 			"repository": {
 				"stackfile": "stack/lychee-mariadb.yml",
-				"url": "https://github.com/novaspirit/pi-hosted/"
+				"url": "https://github.com/pi-hosted/pi-hosted/"
 			}
 		},
 		{
@@ -2527,7 +2527,7 @@
 				}
 			],
 			"image": "linuxserver/mariadb:arm64v8-latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mariadb-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mariadb-icon.png",
 			"name": "mariadb",
 			"platform": "linux",
 			"ports": [
@@ -2550,7 +2550,7 @@
 			],
 			"description": "A self-hosted recipe manager and meal planner",
 			"image": "hkotel/mealie:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mealie.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mealie.png",
 			"name": "mealie",
 			"note": "Default Credentials: Username: changeme@email.com Password: MyPassword. Documentation is Available \u003ca href='https://hay-kot.github.io/mealie/documentation/getting-started/install/'\u003ehere\u003c/a\u003e.",
 			"platform": "linux",
@@ -2643,7 +2643,7 @@
 				}
 			],
 			"image": "linuxserver/medusa:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/medusa-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/medusa-icon.png",
 			"name": "medusa",
 			"platform": "linux",
 			"ports": [
@@ -2675,7 +2675,7 @@
                         ],
 						"description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
                         "image": "itzg/minecraft-server:latest",
-                        "logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/minecraft.png",
+                        "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/minecraft.png",
                         "name": "minecraft",
                         "platform": "linux",
                         "type": 1,
@@ -2751,7 +2751,7 @@
 				}
 			],
 			"image": "linuxserver/minisatip:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/minisatip-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/minisatip-icon.png",
 			"name": "minisatip",
 			"platform": "linux",
 			"ports": [
@@ -2770,7 +2770,7 @@
 			],
 			"description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
 			"image": "linuxserver/mstream:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mstream.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mstream.png",
 			"name": "mstream",
 			"platform": "linux",
 			"ports": [
@@ -2827,7 +2827,7 @@
 				}
 			],
 			"image": "yhaenggi/murmur:1.3.4",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/Mumble-logo.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Mumble-logo.png",
 			"name": "murmur",
 			"platform": "linux",
 			"ports": [
@@ -2881,7 +2881,7 @@
 				}
 			],
 			"image": "linuxserver/musicbrainz:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/musicbrainz-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/musicbrainz-icon.png",
 			"name": "musicbrainz",
 			"platform": "linux",
 			"ports": [
@@ -2922,7 +2922,7 @@
 				}
 			],
 			"image": "linuxserver/muximux:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/muximux-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/muximux-icon.png",
 			"name": "muximux",
 			"platform": "linux",
 			"ports": [
@@ -2957,7 +2957,7 @@
 				}
 			],
 			"image": "linuxserver/mylar3:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/mylar-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mylar-icon.png",
 			"name": "mylar",
 			"platform": "linux",
 			"ports": [
@@ -2988,7 +2988,7 @@
 			],
 			"description": "n8n is an extendable workflow automation tool.",
 			"image": "n8nio/n8n:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/n8n.jpg",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/n8n.jpg",
 			"name": "n8n",
 			"note": "Documentation is Available \u003ca href='https://docs.n8n.io/'\u003ehere\u003c/a\u003e",
 			"platform": "linux",
@@ -3029,7 +3029,7 @@
 			],
 			"description": "Troubleshoot slowdowns and anomalies in your infrastructure with thousands of per-second metrics, meaningful visualizations, and insightful health alarms with zero configuration.",
 			"image": "netdata/netdata:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/netdata.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/netdata.png",
 			"name": "netdata",
 			"note": "Documentation is Available \u003ca href='https://learn.netdata.cloud/'\u003ehere\u003c/a\u003e.",
 			"platform": "linux",
@@ -3120,13 +3120,13 @@
 					"name": "PORT"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/nextcloud-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nextcloud-icon.png",
 			"name": "nextcloud",
 			"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/nextcloud.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			},
 			"title": "Nextcloud",
 			"type": 3
@@ -3189,7 +3189,7 @@
 				}
 			],
 			"image": "linuxserver/nginx:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/nginx-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nginx-icon.png",
 			"name": "nginx",
 			"platform": "linux",
 			"ports": [
@@ -3211,8 +3211,8 @@
 				"Proxy",
 				"Tools"
 			],
-			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/novaspirit/pi-hosted/tree/master/docs installing the template",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/proxy_mgr.png",
+			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
 			"name": "nginx-proxy-manager",
 			"platform": "linux",
 			"ports": [
@@ -3253,7 +3253,7 @@
 			"type": 3,
 			"repository": {
 				"stackfile": "stack/nginx-proxy-manager.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			}
 		},		
 		{
@@ -3275,7 +3275,7 @@
 					"name": "TZ"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/node-red.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/node-red.png",
 			"name": "node-red",
 			"platform": "linux",
 			"ports": [
@@ -3286,7 +3286,7 @@
 			"type": 3,
 			"repository": {
 				"stackfile": "stack/node-red.yml",
-				"url": "https://github.com/novaspirit/pi-hosted/"
+				"url": "https://github.com/pi-hosted/pi-hosted/"
 			}
 		},
 		{
@@ -3307,7 +3307,7 @@
 				}
 			],
 			"image": "linuxserver/nzbget:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/nzbget-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nzbget-icon.png",
 			"name": "nzbget",
 			"platform": "linux",
 			"ports": [
@@ -3347,7 +3347,7 @@
 				}
 			],
 			"image": "linuxserver/nzbhydra2:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/hydra-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/hydra-icon.png",
 			"name": "nzbhydra2",
 			"platform": "linux",
 			"ports": [
@@ -3386,7 +3386,7 @@
 				}
 			],
 			"image": "mbentley/omada-controller:latest-arm64",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/omada.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/omada.png",
 			"name": "omada-controller",
 			"platform": "linux",
 			"ports": [
@@ -3430,7 +3430,7 @@
 				}
 			],
 			"image": "linuxserver/ombi:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/ombi.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ombi.png",
 			"name": "ombi",
 			"platform": "linux",
 			"ports": [
@@ -3469,7 +3469,7 @@
 				}
 			],
 			"image": "linuxserver/openvpn-as:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/openvpn-as-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/openvpn-as-icon.png",
 			"name": "openvpn-as",
 			"platform": "linux",
 			"ports": [
@@ -3506,7 +3506,7 @@
 				}
 			],
 			"image": "organizr/organizr:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/organizr-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/organizr-icon.png",
 			"name": "organizr-v2",
 			"platform": "linux",
 			"ports": [
@@ -3565,7 +3565,7 @@
 			],
 			"description": "Paperless is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents. https://github.com/jonaswinkler/paperless-ng",
 			"image": "linuxserver/paperless-ng",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/paperless.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/paperless.png",
 			"name": "paperless",
 			"platform": "linux",
 			"ports": [
@@ -3674,7 +3674,7 @@
 					"name": "HOST_MEDIA_PATH"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/photoprism.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/photoprism.png",
 			"name": "PhotoPrism",
 			"note": "Your device should have at least \u003cb\u003e4 GB\u003c/b\u003e of memory. Running PhotoPrism on a server with less than 4 GB of swap space or setting a memory/swap limit can cause unexpected restarts, especially when the indexer temporarily needs more memory to process large files.\u003cbr\u003eIt's important to boot your Rapsberry Pi 3/4 with the parameter \u003cb\u003earm_64bit=1\u003c/b\u003e in \u003cb\u003econfig.txt\u003c/b\u003e to use ARM64 image.\u003cbr\u003eIf you see Docker errors related to \u003cb\u003e\"cgroups\"\u003c/b\u003e, it may help to add the following to \u003cb\u003e/boot/firmware/cmdline.txt\u003c/b\u003e:\u003cbr\u003e\u003cbr\u003e\u003cb\u003ecgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1\u003c/b\u003e\u003cbr\u003e\u003cbr\u003eUser pi needs to have access to \u003cb\u003eHOST_MEDIA_PATH\u003c/b\u003e, you can force it with:\u003cbr\u003e\u003cbr\u003e\u003cb\u003esudo chown -R pi:pi /path/to/media\u003c/b\u003e\u003cbr\u003e\u003cbr\u003eRun \u003cb\u003einstall_photoprism.sh\u003c/b\u003e before deploying this container.",
 			"platform": "linux",
@@ -3682,7 +3682,7 @@
 			"type": 3,
 			"repository": {
 				"stackfile": "stack/photoprism.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			}
 		},
 		{
@@ -3703,7 +3703,7 @@
 				}
 			],
 			"image": "linuxserver/photoshow:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/photoshow-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/photoshow-icon.png",
 			"name": "photoshow",
 			"platform": "linux",
 			"ports": [
@@ -3734,7 +3734,7 @@
 			],
 			"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
 			"image": "pihole/pihole:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/pihole.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pihole.png",
 			"name": "pihole",
 			"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article \u003ca href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'\u003ehere\u003c/a\u003e if you run into issues binding to port 53.",
 			"platform": "linux",
@@ -3766,7 +3766,7 @@
 			],
 			"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole with both DoH (DNS over HTTPS) and DoT (DNS over TLS) clients.",
 			"image": "oijkn/pihole-doh-dot:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/pihole_doh-dot.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pihole_doh-dot.png",
 			"name": "pihole DoH/DoT",
 			"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article \u003ca href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'\u003ehere\u003c/a\u003e if you run into issues binding to port 53.",
 			"platform": "linux",
@@ -3798,7 +3798,7 @@
 			],
 			"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole. This version has Ubound software installed on it so you don't need to rely on external DNS providers.",
 			"image": "cbcrowe/pihole-unbound:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/pihole-unbound.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pihole-unbound.png",
 			"name": "pihole-unbound",
 			"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article \u003ca href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'\u003ehere\u003c/a\u003e if you run into issues binding to port 53. For extra information on this container visit the mainteiner \u003ca href='https://github.com/chriscrowe/docker-pihole-unbound/tree/master/one-container'\u003eGitHub Page\u003c/a\u003e. You can add ports: 5335 to access Ubound externally; 22 to enable SSH; 67 to use DHCP Server. Add those ports in Show advanced options.",
 			"platform": "linux",
@@ -3880,7 +3880,7 @@
 				}
 			],
 			"image": "linuxserver/piwigo:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/piwigo-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/piwigo-icon.png",
 			"name": "piwigo",
 			"platform": "linux",
 			"ports": [
@@ -3921,7 +3921,7 @@
 				}
 			],
 			"image": "linuxserver/plex:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/plex-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/plex-icon.png",
 			"name": "plex",
 			"network": "host",
 			"platform": "linux",
@@ -3972,13 +3972,13 @@
 					"name": "WIREGUARD"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/pritunl.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pritunl.png",
 			"name": "pritunl",
 			"note": "Documentation on this containier can be found here: \u003ca href=https://hub.docker.com/r/goofball222/pritunl\u003ehttps://hub.docker.com/r/goofball222/pritunl\u003c/a\u003e",
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/pritunl.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			},
 			"title": "Pritunl",
 			"type": 3
@@ -4004,7 +4004,7 @@
 				}
 			],
 			"image": "privatebin/nginx-fpm-alpine:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/privatebin.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/privatebin.png",
 			"name": "privatebin",
 			"platform": "linux",
 			"ports": [
@@ -4046,7 +4046,7 @@
 				}
 			],
 			"image": "linuxserver/projectsend:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/projectsend-logo.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/projectsend-logo.png",
 			"name": "projectsend",
 			"platform": "linux",
 			"ports": [
@@ -4075,7 +4075,7 @@
 			],
 			"description": "This is an unofficial Docker container of the ProtonMail Bridge. Some of the scripts are based on Hendrik Meyer's work.",
 			"image": "shenxn/protonmail-bridge:build",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/protonmail-bridge.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/protonmail-bridge.png",
 			"name": "protonmail-bridge",
 			"note": "Please refer to the documentation \u003ca href='https://hub.docker.com/r/shenxn/protonmail-bridge'/\u003ehere\u003c/a\u003e to set this up.",
 			"platform": "linux",
@@ -4112,7 +4112,7 @@
 				}
 			],
 			"image": "linuxserver/pydio:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/pydio-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pydio-icon.png",
 			"name": "pydio",
 			"platform": "linux",
 			"ports": [
@@ -4150,7 +4150,7 @@
 				}
 			],
 			"image": "linuxserver/qbittorrent:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/qbittorrent-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/qbittorrent-icon.png",
 			"name": "qbittorrent",
 			"platform": "linux",
 			"ports": [
@@ -4190,7 +4190,7 @@
 				}
 			],
 			"image": "linuxserver/quassel-core:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/quassel-core-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/quassel-core-icon.png",
 			"name": "quassel-core",
 			"platform": "linux",
 			"ports": [
@@ -4225,7 +4225,7 @@
 				}
 			],
 			"image": "linuxserver/radarr:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/radarr.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/radarr.png",
 			"name": "radarr",
 			"platform": "linux",
 			"ports": [
@@ -4255,7 +4255,7 @@
 				"Tools"
 			],
 			"description": "Monitor your Raspberry Pi and Dockers using Grafana developed by oijkn. Please download grafana configs from his git https://github.com/oijkn/Docker-Raspberry-PI-Monitoring",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/rpi_monitor.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/rpi_monitor.png",
 			"name": "RaspberryPi-Docker-Monitor",
 			"platform": "linux",
 			"ports": [
@@ -4273,7 +4273,7 @@
 			"type": 3,
 			"repository": {
 				"stackfile": "stack/raspberrypi-monitoring.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			}
 		},
 		{
@@ -4284,7 +4284,7 @@
 			],
 			"description": "Open-source project management tool",
 			"note":"Default user and password are admin/admin",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/redmine.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/redmine.png",
 			"name": "redmine",
 			"platform": "linux",
 			"ports": [
@@ -4337,7 +4337,7 @@
 			"type": 3,
 			"repository": {
 				"stackfile": "stack/redmine.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			}
 		},
 		{
@@ -4361,7 +4361,7 @@
 				}
 			],
 			"image": "linuxserver/resilio-sync:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/resilio.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/resilio.png",
 			"name": "resilio-sync",
 			"platform": "linux",
 			"ports": [
@@ -4443,7 +4443,7 @@
 				}
 			],
 			"image": "linuxserver/sabnzbd:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/sabnzbd-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/sabnzbd-icon.png",
 			"name": "sabnzbd",
 			"platform": "linux",
 			"ports": [
@@ -4475,7 +4475,7 @@
 			],
 			"description": "Samba has provided secure, stable and fast file and print services for all clients using the SMB/CIFS protocol, such as all versions of DOS and Windows, OS/2, Linux and many others.",
 			"image": "dperson/samba:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/samba.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/samba.png",
 			"name": "Samba",
 			"platform": "linux",
 			"ports": [
@@ -4538,7 +4538,7 @@
 			],
 			"description": "Open-Source Privacy-respecting metasearch engine",
 			"image": "searxng/searxng:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/searx.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/searx.png",
 			"name": "SearXNG",
 			"platform": "linux",
 			"ports": [
@@ -4573,7 +4573,7 @@
 			],
 			"description": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as web application.",
 			"image": "nicholaswilde/shiori:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/shiori-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/shiori-icon.png",
 			"name": "shiori",
 			"platform": "linux",
 			"ports": [
@@ -4608,7 +4608,7 @@
 				}
 			],
 			"image": "linuxserver/sickchill:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/sickchill-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/sickchill-icon.png",
 			"name": "sickchill",
 			"platform": "linux",
 			"ports": [
@@ -4651,7 +4651,7 @@
 				}
 			],
 			"image": "linuxserver/sickgear:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/sickgear-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/sickgear-icon.png",
 			"name": "sickgear",
 			"platform": "linux",
 			"ports": [
@@ -4693,7 +4693,7 @@
 				}
 			],
 			"image": "linuxserver/smokeping:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/smokeping-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/smokeping-icon.png",
 			"name": "smokeping",
 			"platform": "linux",
 			"ports": [
@@ -4720,7 +4720,7 @@
 			],
 			"description": "Snippet Box is a simple self-hosted app for organizing your code snippets.",
 			"image": "pawelmalak/snippet-box:arm",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/snibox.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/snibox.png",
 			"name": "Snippet-box",
 			"note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text.",
 			"platform": "linux",
@@ -4757,7 +4757,7 @@
 				}
 			],
 			"image": "henrywhitaker3/speedtest-tracker:dev-arm",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/speedtest-tracker.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/speedtest-tracker.png",
 			"name": "speedtest-tracker",
 			"platform": "linux",
 			"ports": [
@@ -4780,7 +4780,7 @@
 			],
 			"description": "Sshwifty is a SSH and Telnet connector made for the Web. It can be deployed on your computer or server to provide SSH and Telnet access interface for any compatible (standard) web browser.",
 			"image": "niruix/sshwifty:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/sshwifty-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/sshwifty-icon.png",
 			"name": "Sshwifty",
 			"platform": "linux",
 			"ports": [
@@ -4809,7 +4809,7 @@
 				}
 			],
 			"image": "linuxserver/sonarr:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/sonarr-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/sonarr-icon.png",
 			"name": "sonarr",
 			"platform": "linux",
 			"ports": [
@@ -4858,7 +4858,7 @@
 				}
 			],
 			"image": "linuxserver/syncthing:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/syncthing-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/syncthing-icon.png",
 			"name": "syncthing",
 			"platform": "linux",
 			"ports": [
@@ -4898,7 +4898,7 @@
 				}
 			],
 			"image": "linuxserver/tautulli:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/tautulli-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tautulli-icon.png",
 			"name": "tautulli",
 			"platform": "linux",
 			"ports": [
@@ -4959,7 +4959,7 @@
 			],
 			"description": "A unique, non-linear notebook wiki.",
 			"image": "mazzolino/tiddlywiki:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/tiddlywiki.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tiddlywiki.png",
 			"name": "tiddlywiki",
 			"platform": "linux",
 			"ports": [
@@ -4993,7 +4993,7 @@
 				}
 			],
 			"image": "linuxserver/transmission:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/transmission-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/transmission-icon.png",
 			"name": "transmission",
 			"platform": "linux",
 			"ports": [
@@ -5069,7 +5069,7 @@
 				}
 			],
 			"image": "haugene/transmission-openvpn:3.7.1",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/transmission-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/transmission-icon.png",
 			"name": "transmission-openvpn",
 			"note": "List of supported providers available \u003ca href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/\u003ehere\u003c/a\u003e.",
 			"platform": "linux",
@@ -5143,7 +5143,7 @@
 				}
 			],
 			"image": "haugene/transmission-openvpn:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/transmission-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/transmission-icon.png",
 			"name": "transmission-openvpn-v4",
 			"note": "List of supported providers available \u003ca href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/\u003ehere\u003c/a\u003e.",
 			"platform": "linux",
@@ -5173,7 +5173,7 @@
 			],
 			"description": "Cloud-Native Networking Stack That Just Works.",
 			"image": "traefik:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/traefik.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/traefik.png",
 			"name": "traefik",
 			"note": "A simple and lightweight reverse proxy",
 			"platform": "linux",
@@ -5268,7 +5268,7 @@
 				}
 			],
 			"image": "linuxserver/ubooquity:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/ubooquity-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ubooquity-icon.png",
 			"name": "ubooquity",
 			"platform": "linux",
 			"ports": [
@@ -5309,7 +5309,7 @@
 				}
 			],
 			"image": "linuxserver/unifi-controller:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/unifi-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/unifi-icon.png",
 			"name": "unifi-controller",
 			"platform": "linux",
 			"ports": [
@@ -5360,7 +5360,7 @@
 				}
 			],
 			"image": "pducharme/unifi-video-controller:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/unifivideo-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/unifivideo-icon.png",
 			"name": "UniFi Video",
 			"platform": "linux",
 			"ports": [
@@ -5394,7 +5394,7 @@
 				"Tools"
 			],
 			"description": "Monitor your Unifi Controller using Grafana developed by oijkn for the Raspberry Pi Monitor.",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/unpoller-logo.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/unpoller-logo.png",
 			"name": "UnPoller Unifi Controller Monitor",
 			"platform": "linux",
 			"ports": [
@@ -5405,7 +5405,7 @@
 			"type": 3,
 			"repository": {
 				"stackfile": "stack/unpoller-stack.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			}
 		},
 		{
@@ -5415,7 +5415,7 @@
 			],
 			"description": "It is a self-hosted monitoring tool like 'Uptime Robot'.",
 			"image": "louislam/uptime-kuma:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/uptime-kuma.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/uptime-kuma.png",
 			"name": "uptime-kuma",
 			"note": "A fancy self-hosted monitoring tool.",
 			"platform": "linux",
@@ -5439,7 +5439,7 @@
 			],
 			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
 			"image": "vaultwarden/server:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/bitwarden.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bitwarden.png",
 			"name": "vaultwarden",
 			"note": "Alternative Implementation of the Bitwarden Server API in Rust, including web vault.",
 			"platform": "linux",
@@ -5502,7 +5502,7 @@
                     "default": ""
                 }
 			],
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/vikunja.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/vikunja.png",
 			"name": "vikunja",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
@@ -5510,7 +5510,7 @@
 			"type": 3,
 			"repository": {
 				"stackfile": "stack/vikunja.yml",
-				"url": "https://github.com/novaspirit/pi-hosted/"
+				"url": "https://github.com/pi-hosted/pi-hosted/"
 			}
 		},
 		{
@@ -5521,7 +5521,7 @@
 			],
 			"description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
 			"image": "containrrr/watchtower:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/watchtower.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/watchtower.png",
 			"name": "watchtower",
 			"note": "It is recommended to manually update your containers but we're including this for those of you that don't care",
 			"platform": "linux",
@@ -5553,7 +5553,7 @@
 				}
 			],
 			"image": "linuxserver/webgrabplus:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/webgrabplus.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/webgrabplus.png",
 			"name": "webgrabplus",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
@@ -5577,7 +5577,7 @@
 			],
 			"description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
 			"image": "benbusby/whoogle-search:0.6.0",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/whoogle.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/whoogle.png",
 			"name": "whoogle",
 			"platform": "linux",
 			"ports": [
@@ -5600,7 +5600,7 @@
 			],
 			"description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
 			"image": "linuxserver/wikijs:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/wikijs.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wikijs.png",
 			"name": "wikijs",
 			"platform": "linux",
 			"ports": [
@@ -5627,7 +5627,7 @@
 			],
 			"description": "A Docker image for Windows 2000 Advanced Server with SP4.",
 			"image": "hectormolinero/qemu-win2000:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/win2000.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/win2000.png",
 			"note":"Why? Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should. -- Dr. Ian Malcolm",
 			"name": "win2000",
 			"platform": "linux",
@@ -5653,14 +5653,14 @@
 			],
 			"description": "You have found the easiest way to install & manage WireGuard on any Linux host!",
 			"image": "weejewel/wg-easy:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/wireguard.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wireguard.png",
 			"name": "wg-easy",
 			"platform": "linux",
 			"title": "Wireguard Server",
 			"type": 3,
 			"repository": {
 				"stackfile": "stack/wireguard-easy.yml",
-				"url": "https://github.com/novaspirit/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			}
 		},
 		{
@@ -5689,13 +5689,13 @@
 					"label":"Database root password"
 				}
 			],
-			"logo":"https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/wordpress.png",
+			"logo":"https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wordpress.png",
 			"note":"Deploys a Wordpress instance connected to a MySQL database.",
 
 			"platform":"linux",
 
 			"repository":{
-				"url": "https://github.com/novaspirit/pi-hosted",
+				"url": "https://github.com/pi-hosted/pi-hosted",
 				"stackfile": "stack/wordpress-stack.yml"
 			},
 			"title":"Wordpress",
@@ -5735,7 +5735,7 @@
 			],
 			"description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
 			"image": "tzahi12345/youtubedl-material:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/ytdlm.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ytdlm.png",
 			"name": "youtubedl-material",
 			"platform": "linux",
 			"ports": [
@@ -5785,7 +5785,7 @@
 				}
 			],
 			"image": "linuxserver/znc:latest",
-			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/znc-icon.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/znc-icon.png",
 			"name": "znc",
 			"platform": "linux",
 			"ports": [

@@ -14,7 +14,7 @@ A monitoring solution for the Unifi Controller with [Grafana](http://grafana.org
 
 ## Pre-Installation Steps
 
-First SSH into your Pi or use Shell in a Box to get to the command line.  ensure you have pulled the latest from https://github.com/novaspirit/pi-hosted/ and run unpoller.sh
+First SSH into your Pi or use Shell in a Box to get to the command line.  ensure you have pulled the latest from https://github.com/pi-hosted/pi-hosted/ and run unpoller.sh
 
 ## Folder Setup Script
 
@@ -31,7 +31,7 @@ Your output should look something like this
 # sudo ./tools/unpoller-install.sh
 creating directories
 downloading unpoller config files
---2021-10-17 00:56:28--  https://raw.githubusercontent.com/novaspirit/pi-hosted/tree/master/pi-hosted_template/configs/unpoller-up.conf
+--2021-10-17 00:56:28--  https://raw.githubusercontent.com/pi-hosted/pi-hosted/tree/master/pi-hosted_template/configs/unpoller-up.conf
 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.111.133, ...
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK

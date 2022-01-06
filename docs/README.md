@@ -5,7 +5,7 @@
 This repository is a collection of tutorials for hosting a variety of server applications using Docker and [Portainer](https://github.com/portainer/portainer).
 
 ### App Template for Portainer
-![alt text](https://github.com/novaspirit/pi-hosted/blob/master/apptemplate.png?raw=true)
+![alt text](https://github.com/pi-hosted/pi-hosted/blob/master/apptemplate.png?raw=true)
 
 ### Apps List
 
@@ -49,8 +49,8 @@ You're done! Now just click App Templates and deploy applications!
 #### Versions
 | Application  | Supported OS's | URL |
 | ------------- | ------------- | ------------- |
-| Portainer v2 Arm32 | Pi OS | https://raw.githubusercontent.com/novaspirit/pi-hosted/master/template/portainer-v2-arm32.json |
-| Portainer v2 Arm64 | Ubunutu 64, DietPI 64 | https://raw.githubusercontent.com/novaspirit/pi-hosted/master/template/portainer-v2-arm64.json |
+| Portainer v2 Arm32 | Pi OS | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-arm32.json |
+| Portainer v2 Arm64 | Ubunutu 64, DietPI 64 | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-arm64.json |
 
 * Limited testing Operating Systems: Pi OS 64 Beta, DietPI 32 bit
 
@@ -85,7 +85,7 @@ Install, Update, Pre-Install and extra scripts can be found in our [GitHub Tools
 
 ### Contributors
 
-See the list of [contributors](https://github.com/novaspirit/pi-hosted/graphs/contributors) who participated in this project.
+See the list of [contributors](https://github.com/pi-hosted/pi-hosted/graphs/contributors) who participated in this project.
 
 ### Acknowledgment
 * template based on [SelfHosted](https://github.com/SelfhostedPro/selfhosted_templates) Portainer App Template

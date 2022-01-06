@@ -4,7 +4,7 @@
 
 A simple script that displays a warning if voltage or temperature issues were found or have happened since last reboot.
 ## Screenshot
-![Throttled Screenshoot](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/throttled-screenshoot.png)
+![Throttled Screenshoot](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/images/throttled-screenshoot.png)
 
 *Above:  Example of script output.*
 
@@ -57,7 +57,7 @@ Run the following command to check the current status.
 ```
 sudo throttled.sh
 ```
-![Throttled All Green Screenshoot](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/throttled-screenshoot.png)
+![Throttled All Green Screenshoot](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/images/throttled-screenshoot.png)
 
 ## Errors
 
@@ -66,7 +66,7 @@ When you see an error, that means there is an issue with the hardware and most l
 - If the error shows under **Now:** it means the issue is active right now 
 - If the error shows under **Run:** it means the error(s) have happened since last reboot. 
 
-![Throttled Error Power Problems](https://raw.githubusercontent.com/novaspirit/pi-hosted/master/docs/images/throttled-red-power-problem.png)
+![Throttled Error Power Problems](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/images/throttled-red-power-problem.png)
 
 1. Undervolted means you aren't providing enough power.  This typically happens because you have an attached device or devices that is pulling too much power or you have a power supply not producing enough power to run everything.
 
