@@ -93,7 +93,7 @@ List of all apps included in this project with info related to it.
 |Organizr v2|32/64 bit|Container|  |  |  |  |
 |OScam|32/64 bit|Container|  |  |  |  |
 |Paperless|32/64 bit|Container|  |  |  |  |
-|PhotoPrism|64 bit|Stack|  | [![](../build/images/script_icon.png)](../tools/install_photoprism.sh) |  |  |
+|PhotoPrism|64 bit|Stack| [![](../build/images/doc_icon.png)](../docs/photoprism.md) | [![](../build/images/script_icon.png)](../tools/install_photoprism.sh) |  |  |
 |PhotoShow|32/64 bit|Container|  |  |  |  |
 |Pi-Hole|32/64 bit|Container| [![](../build/images/doc_icon.png)](../docs/pi-hole.md) |  |  |  |
 |Pi-Hole DoH/DoT|32/64 bit|Container| [![](../build/images/doc_icon.png)](../docs/pi-hole.md) |  |  |  |

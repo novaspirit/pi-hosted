@@ -37,6 +37,7 @@
 		},
 		{
 			"Title": "PhotoPrism",
+			"DocID": 9,
 			"ScriptID": 12
 		},
 		{
@@ -210,6 +211,11 @@
 			"ID": 8,
 			"File": "macvlan_setup.md",
 			"Description": "Attach a container directly to local network (macvlan)"
+		},
+		{
+			"ID": 9,
+			"File": "photoprism.md",
+			"Description": "Install and Setup Instructions for PhotoPrism Stack"
 		}
 	],
 
@@ -307,6 +313,7 @@
 			"File": "install_photoprism.sh",
 			"Type": "Preinstall",
 			"Exec": "bash",
+			"DocID": 9,
 			"Description": "Install Photo Prism",
 			"wget": "https://git.io/JM5Tr"
 		},
