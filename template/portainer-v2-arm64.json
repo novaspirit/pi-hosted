@@ -4302,7 +4302,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/ReactiveResume",
-					"container": "/usr/src/app"
+					"container": "/var/www/html"
 				}
 			]
 		},
