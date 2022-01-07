@@ -320,7 +320,7 @@
 					"default": "http://192.168.X.Y:6875",
 					"label": "APP_URL",
 					"name": "APP_URL",
-					"description": "Address to access Bookstrap. If using a domain, add it here. If not set correctly the app will not be accessible"
+					"description": "Address to access Bookstack. If using a domain, add it here. If not set correctly the app will not be accessible"
 				},
 				{
 					"default": "6875",
@@ -329,6 +329,7 @@
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bookstack2.png",
+			"name": "bookstack",
 			"note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
 			"platform": "linux",
 			"repository": {
