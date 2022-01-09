@@ -101,17 +101,17 @@
 					"name": "MEDIA_MAX_SIZE"
 				},
 				{
-					"default": true,
+					"default": "true",
 					"label": "PUBLIC_INDEX",
 					"name": "PUBLIC_INDEX"
 				},
 				{
-					"default": true,
+					"default": "true",
 					"label": "PUBLIC_SNAPSHOTS",
 					"name": "PUBLIC_SNAPSHOTS"
 				},
 				{
-					"default": false,
+					"default": "false",
 					"label": "PUBLIC_ADD_VIEW",
 					"name": "PUBLIC_ADD_VIEW"
 				}
@@ -2500,32 +2500,32 @@
 					"name": "MAX_WORKERS"
 				},
 				{
-					"default": true,
+					"default": "true",
 					"label": "RECIPE_PUBLIC",
 					"name": "RECIPE_PUBLIC"
 				},
 				{
-					"default": true,
+					"default": "true",
 					"label": "RECIPE_SHOW_NUTRITION",
 					"name": "RECIPE_SHOW_NUTRITION"
 				},
 				{
-					"default": true,
+					"default": "true",
 					"label": "RECIPE_SHOW_ASSETS",
 					"name": "RECIPE_SHOW_ASSETS"
 				},
 				{
-					"default": true,
+					"default": "true",
 					"label": "RECIPE_LANDSCAPE_VIEW",
 					"name": "RECIPE_LANDSCAPE_VIEW"
 				},
 				{
-					"default": false,
+					"default": "false",
 					"label": "RECIPE_DISABLE_COMMENTS",
 					"name": "RECIPE_DISABLE_COMMENTS"
 				},
 				{
-					"default": false,
+					"default": "false",
 					"label": "RECIPE_DISABLE_AMOUNT",
 					"name": "RECIPE_DISABLE_AMOUNT"
 				}
@@ -2913,7 +2913,7 @@
 			],
 			"env": [
 				{
-					"default": true,
+					"default": "true",
 					"label": "N8N_BASIC_AUTH_ACTIVE",
 					"name": "N8N_BASIC_AUTH_ACTIVE"
 				},
