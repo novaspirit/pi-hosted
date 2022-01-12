@@ -5865,10 +5865,6 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/var/run/docker.sock",
-					"container": "/var/run/docker.sock"
-				},
-				{
 					"bind": "/portainer/Files/AppData/Config/RDesktop/config",
 					"container": "/config"
 				}
