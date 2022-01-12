@@ -5854,7 +5854,7 @@
                 }
 			],
 			"image": "linuxserver/rdesktop:arm64v8-latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/airsonic-logo.png",
+			"logo": "https://raw.githubusercontent.com/ItsNoss/pi-hosted/master/images/rdesktop.png",
 			"name": "rdesktop",
 			"platform": "linux",
 			"ports": [
