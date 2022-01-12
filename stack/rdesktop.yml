@@ -1,0 +1,17 @@
+version: "2.1"
+services:
+  rdesktop:
+    image: lscr.io/linuxserver/rdesktop
+    container_name: rdesktop
+    privileged: true
+    environment:
+      - PUID=${PUID}
+      - PGID=${PUID}
+      - TZ=${Timezone}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /portainer/Files/AppData/Config/RDesktop/Config:/config
+    ports:
+      - ${PORT}:3389
+    shm_size: "1gb"
+    restart: unless-stopped
