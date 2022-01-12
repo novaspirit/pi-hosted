@@ -5681,13 +5681,42 @@
 				"Other",
 				"VPN"
 			],
-			"description": "You have found the easiest way to install & manage WireGuard on any Linux host!",
+			"description": "Fast VPN Server with easy to use User Interface",
 			"image": "weejewel/wg-easy:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wireguard.png",
 			"name": "wg-easy",
 			"platform": "linux",
 			"title": "Wireguard Server",
 			"type": 3,
+			"env": [
+				{
+					"default": "example.domain.com",
+					"name": "WG_HOST",
+					"label": "WG_HOST",
+					"description": "Set here your DDNS domain"
+				},
+				{
+					"default": "ENTER AN ADMIN PASSWORD",
+					"name": "PASSWORD",
+					"label": "PASSWORD",
+					"description": "Leave blank to access WebUI without loggin"
+				},
+				{
+					"default": "51820",
+					"name": "WG_PORT",
+					"label": "WG_PORT"
+				},
+				{
+					"default": "1.1.1.1",
+					"name": "WG_DEFAULT_DNS",
+					"label": "WG_DEFAULT_DNS"
+				},
+				{
+					"default": "0.0.0.0/0, ::/0",
+					"name": "WG_ALLOWED_IPS",
+					"label": "WG_ALLOWED_IPS"
+				}
+			],
 			"repository": {
 				"stackfile": "stack/wireguard-easy.yml",
 				"url": "https://github.com/pi-hosted/pi-hosted"
