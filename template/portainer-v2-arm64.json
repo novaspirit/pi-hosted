@@ -5858,7 +5858,7 @@
 			"name": "rdesktop",
 			"platform": "linux",
 			"ports": [
-				"3389:3389"
+				"3389:3389/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "RDesktop",
