@@ -13,5 +13,4 @@ services:
       - /portainer/Files/AppData/Config/RDesktop/Config:/config
     ports:
       - ${PORT}:3389
-    shm_size: "1GB"
     restart: unless-stopped
