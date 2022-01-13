@@ -5869,6 +5869,54 @@
 					"container": "/config"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Productivity"
+			],
+			"description": "Kanboard is a project managment system based on the Kanban workflow.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                }
+			],
+			"image": "kanboard/kanboard:latest",
+			"logo": "https://raw.githubusercontent.com/ItsNoss/pi-hosted/master/images/rdesktop.png",
+			"name": "kanboard",
+			"platform": "linux",
+			"ports": [
+				"80:80/tcp",
+				"443:443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Kanboard",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Kanboard/data",
+					"container": "/var/www/app/data"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Kanboard/plugins",
+					"container": "/var/www/app/plugins"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Kanboard/ssl",
+					"container": "/etc/nginx/ssl"
+				}
+			]
 		}
 	]
 }
