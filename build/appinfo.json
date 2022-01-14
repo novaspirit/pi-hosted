@@ -63,6 +63,10 @@
 			"VideoID": 10
 		},
 		{
+			"Title": "SearXNG",
+			"DocID": 10
+		},
+		{
 			"Title": "Traefik",
 			"ScriptID": 10
 		},
@@ -216,6 +220,11 @@
 			"ID": 9,
 			"File": "photoprism.md",
 			"Description": "Install and Setup Instructions for PhotoPrism Stack"
+		},
+		{
+			"ID": 10,
+			"File": "searxng.md",
+			"Description": "Install and Setup Instructions for SearXNG Meta Search"
 		}
 	],
 
