@@ -1403,7 +1403,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/freshrss:latest",
+			"image": "freshrss/freshrss:arm",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/freshrss-icon.png",
 			"name": "freshrss",
 			"platform": "linux",
