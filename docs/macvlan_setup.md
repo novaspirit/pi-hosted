@@ -142,7 +142,7 @@ At this point, you can attach your dockers to this network and it will get an ex
 
 ## Configuring Raspberry Pi to connect to macvlan network
 
-To connect your Raspberry Pi to your docker using macvlan, you need to add a new interface. This is done modifying the file `/etc/network/interfaces`.
+To connect your Raspberry Pi to your docker using macvlan, you need to add a new interface. This will be done by creating a script and a systemd service to execute it on boot.
 
 You will need to get the range of IPs that we want to route using CIDR. The easiest way of doing it, is using a [tool like this](https://ip2cidr.com/). This range should include all IPs that a docker should have, but not the IP that the Raspberry Pi will get. In our case, the range will be from `192.168.0.16` to `192.168.0.30` as IP `31` will be used by the Raspberry Pi.
 
@@ -155,46 +155,46 @@ This range is represented by:
 192.168.0.30/32
 ```
 
-With that in hand, you can modify `/etc/network/interfaces` using any editor of your choice. If you are using WiFi, you need to add the following lines after the WiFi section, if you're using Ethernet, then add after Ethernet.
-
-```text
-    post-up ip link add macvlan-lan link eth0 type macvlan mode bridge
-    post-up ip addr add 192.168.0.31/32 dev macvlan-lan
-    post-up ip link set macvlan-lan up
-    post-up ip route add 192.168.0.16/29 dev macvlan-lan
-    post-up ip route add 192.168.0.24/30 dev macvlan-lan
-    post-up ip route add 192.168.0.28/31 dev macvlan-lan
-    post-up ip route add 192.168.0.30/32 dev macvlan-lan
-```
-
-You can change `macvlan-lan` name to anything you like, change `eth0` to the interface you're using and adjust all IPs accordingly. My file looks like this:
-
-```text
-iface eth0 inet static
-    address 192.168.0.70
-    netmask 255.255.255.0
-    gateway 192.168.0.1
-    #dns-nameservers 9.9.9.9 149.112.112.112
-
-    post-up ip link add macvlan-lan link eth0 type macvlan mode bridge
-    post-up ip addr add 192.168.0.31/32 dev macvlan-lan
-    post-up ip link set macvlan-lan up
-    post-up ip route add 192.168.0.16/29 dev macvlan-lan
-    post-up ip route add 192.168.0.24/30 dev macvlan-lan
-    post-up ip route add 192.168.0.28/31 dev macvlan-lan
-    post-up ip route add 192.168.0.30/32 dev macvlan-lan
-```
-
-For this configuration to apply, you need to reboot your Raspberry Pi. If you don't want to reboot, you can run the commands on your terminal without `post-up` part and using `sudo`, like this:
+With that in hand, create a script called `macvlan-setup.sh` with the following content and place it in `/usr/local/bin/`. Don't forget to make this file executable with `sudo chmod +x /usr/local/bin/macvlan-setup.sh`.
 
 ```bash
-sudo ip link add macvlan-lan link eth0 type macvlan mode bridge
-sudo ip addr add 192.168.0.31/32 dev macvlan-lan
-sudo ip link set macvlan-lan up
-sudo ip route add 192.168.0.16/29 dev macvlan-lan
-sudo ip route add 192.168.0.24/30 dev macvlan-lan
-sudo ip route add 192.168.0.28/31 dev macvlan-lan
-sudo ip route add 192.168.0.30/32 dev macvlan-lan
+#!/bin/sh
+
+# Create macvlan link
+ip link add macvlan-lan link eth0 type macvlan mode bridge
+
+# Set Pi IP within macvlan
+ip addr add 192.168.0.31/32 dev macvlan-lan
+
+# Start macvlan link
+ip link set macvlan-lan up
+
+# Define here all IPs that needs to be routed
+ip route add 192.168.0.16/29 dev macvlan-lan
+ip route add 192.168.0.24/30 dev macvlan-lan
+ip route add 192.168.0.28/31 dev macvlan-lan
+ip route add 192.168.0.30/32 dev macvlan-lan
+```
+
+You can change `macvlan-lan` name to anything you like, change `eth0` to the interface you're using and adjust all IPs accordingly.
+
+The next step is to create a systemd service. To do so, create a file called `pihosted-vlan.service` with the following content and save it in `/etc/systemd/system/`.
+
+```ini
+[Unit]
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/macvlan-setup.sh
+
+[Install]
+WantedBy=default.targe
+```
+
+After creating the file, enable it with systemd:
+
+```bash
+sudo systemctl enable --now pihosted-vlan.service
 ```
 
 Now it's all set. Your docker have an Local IP address and your Raspberry Pi can communicate to it.
