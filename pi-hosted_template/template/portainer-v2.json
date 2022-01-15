@@ -101,17 +101,17 @@
 					"name": "MEDIA_MAX_SIZE"
 				},
 				{
-					"default": true,
+					"default": "true",
 					"label": "PUBLIC_INDEX",
 					"name": "PUBLIC_INDEX"
 				},
 				{
-					"default": true,
+					"default": "true",
 					"label": "PUBLIC_SNAPSHOTS",
 					"name": "PUBLIC_SNAPSHOTS"
 				},
 				{
-					"default": false,
+					"default": "false",
 					"label": "PUBLIC_ADD_VIEW",
 					"name": "PUBLIC_ADD_VIEW"
 				}
@@ -320,7 +320,7 @@
 					"default": "http://192.168.X.Y:6875",
 					"label": "APP_URL",
 					"name": "APP_URL",
-					"description": "Address to access Bookstrap. If using a domain, add it here. If not set correctly the app will not be accessible"
+					"description": "Address to access Bookstack. If using a domain, add it here. If not set correctly the app will not be accessible"
 				},
 				{
 					"default": "6875",
@@ -329,6 +329,7 @@
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bookstack2.png",
+			"name": "bookstack",
 			"note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
 			"platform": "linux",
 			"repository": {
@@ -2500,32 +2501,32 @@
 					"name": "MAX_WORKERS"
 				},
 				{
-					"default": true,
+					"default": "true",
 					"label": "RECIPE_PUBLIC",
 					"name": "RECIPE_PUBLIC"
 				},
 				{
-					"default": true,
+					"default": "true",
 					"label": "RECIPE_SHOW_NUTRITION",
 					"name": "RECIPE_SHOW_NUTRITION"
 				},
 				{
-					"default": true,
+					"default": "true",
 					"label": "RECIPE_SHOW_ASSETS",
 					"name": "RECIPE_SHOW_ASSETS"
 				},
 				{
-					"default": true,
+					"default": "true",
 					"label": "RECIPE_LANDSCAPE_VIEW",
 					"name": "RECIPE_LANDSCAPE_VIEW"
 				},
 				{
-					"default": false,
+					"default": "false",
 					"label": "RECIPE_DISABLE_COMMENTS",
 					"name": "RECIPE_DISABLE_COMMENTS"
 				},
 				{
-					"default": false,
+					"default": "false",
 					"label": "RECIPE_DISABLE_AMOUNT",
 					"name": "RECIPE_DISABLE_AMOUNT"
 				}
@@ -2913,7 +2914,7 @@
 			],
 			"env": [
 				{
-					"default": true,
+					"default": "true",
 					"label": "N8N_BASIC_AUTH_ACTIVE",
 					"name": "N8N_BASIC_AUTH_ACTIVE"
 				},
@@ -4142,6 +4143,7 @@
 				"Downloaders"
 			],
 			"description": "Popular torrent client with a webui for ease of use.",
+			"note": "For ruTorrent basic auth, XMLRPC through nginx and WebDAV on completed downloads, you can populate .htpasswd files with the following command:\ndocker run --rm -it httpd:2.4-alpine htpasswd -Bbn <username> <password> >> $(pwd)/passwd/webdav.htpasswd",
 			"env": [
 				{
 					"default": "1000",
@@ -4152,28 +4154,79 @@
 					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
-				}
+				},
+				{
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
+				{
+					"default": "50",
+                    "label": "MAX_FILE_UPLOADS",
+                    "name": "MAX_FILE_UPLOADS"
+                },
+				{
+					"default": "info",
+                    "label": "RT_LOG_LEVEL",
+                    "name": "RT_LOG_LEVEL"
+                },
+				{
+					"default": "6881",
+                    "label": "RT_DHT_PORT",
+                    "name": "RT_DHT_PORT"
+                },
+				{
+					"default": "8000",
+                    "label": "XMLRPC_PORT",
+                    "name": "XMLRPC_PORT"
+                },
+				{
+					"default": "8080",
+                    "label": "RUTORRENT_PORT",
+                    "name": "RUTORRENT_PORT"
+                },
+				{
+					"default": "9000",
+                    "label": "WEBDAV_PORT",
+                    "name": "WEBDAV_PORT"
+                },
+				{
+					"default": "50000",
+                    "label": "RT_INC_PORT",
+                    "name": "RT_INC_PORT"
+                },
+				{
+					"default": "erasedata,httprpc",
+                    "label": "RU_REMOVE_CORE_PLUGINS",
+                    "name": "RU_REMOVE_CORE_PLUGINS"
+                }
 			],
-			"image": "linuxserver/rutorrent:latest",
+			"image": "linuxserver/crazymax/rtorrent-rutorrent:latest",
 			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
 			"name": "rutorrent",
 			"platform": "linux",
 			"ports": [
-				"5324:80/tcp",
-				"51413:51413/tcp",
-				"6881:6881/udp"
+				"${RT_DHT_PORT}:${RT_DHT_PORT}/udp",
+				"${XMLRPC_PORT}:${XMLRPC_PORT}/tcp",
+				"${RUTORRENT_PORT}:${RUTORRENT_PORT}/tcp",
+				"${WEBDAV_PORT}:${WEBDAV_PORT}/tcp",
+				"${RT_INC_PORT}:${RT_INC_PORT}/tcp",
 			],
 			"restart_policy": "unless-stopped",
 			"title": "ruTorrent",
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/ruTorrent",
+					"bind": "/portainer/Files/AppData/Config/ruTorrent/config",
 					"container": "/config"
 				},
 				{
 					"bind": "/portainer/Downloads",
 					"container": "/downloads"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/ruTorrent/passwd",
+					"container": "/passwd"
 				}
 			]
 		},
@@ -4724,40 +4777,6 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/TiddlyWiki",
 					"container": "/var/lib/tiddlywiki"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other"
-			],
-			"description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "lunik1/tt-rss:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tt-rss-icon.png",
-			"name": "tt-rss",
-			"platform": "linux",
-			"ports": [
-				"7352:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Tiny Tiny RSS",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/tt-rss",
-					"container": "/config"
 				}
 			]
 		},
@@ -5611,6 +5630,45 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/ZNC",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other"
+			],
+			"description": "Rdesktop is an Ubuntu based container containing full desktop environments in officially supported flavors accessible via RDP.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+                {
+					"default": "America/New_York",
+                    "label": "TZ",
+                    "name": "TZ"
+                }
+			],
+			"image": "linuxserver/rdesktop:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/rdesktop.png",
+			"name": "rdesktop",
+			"platform": "linux",
+			"ports": [
+				"3389:3389/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "RDesktop",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/RDesktop/config",
 					"container": "/config"
 				}
 			]
