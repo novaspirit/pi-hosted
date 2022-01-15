@@ -109,13 +109,14 @@ List of all apps included in this project with info related to it.
 |Quassel IRC|32/64 bit|Container|  |  |  |  |
 |Radarr|32/64 bit|Container|  |  |  |  |
 |Raspberry Pi Docker Monitor|32/64 bit|Stack| [![](../build/images/doc_icon.png)](../docs/rpi_docker_monitor.md) | [![](../build/images/script_icon.png)](../tools/rpi_docker_monitor.sh) |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8) |
+|RDesktop|32/64 bit|Container|  |  |  |  |
 |Reactive-Resume|64 bit|Container|  |  |  |  |
 |Redmine|32/64 bit|Stack|  |  |  |  |
 |Resilio Sync|32/64 bit|Container|  |  |  |  |
 |ruTorrent|32/64 bit|Container|  |  |  |  |
 |SABnzbd|32/64 bit|Container|  |  |  |  |
 |Samba|32/64 bit|Container|  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=2zZ3_1GRWrM&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=11) |
-|SearXNG|32/64 bit|Container|  |  |  |  |
+|SearXNG|32/64 bit|Container| [![](../build/images/doc_icon.png)](../docs/searxng.md) |  |  |  |
 |Shiori|32/64 bit|Container|  |  |  |  |
 |SickChill|32/64 bit|Container|  |  |  |  |
 |SickGear|32/64 bit|Container|  |  |  |  |
