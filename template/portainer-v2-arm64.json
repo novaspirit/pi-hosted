@@ -4488,7 +4488,7 @@
 				"${XMLRPC_PORT}:${XMLRPC_PORT}/tcp",
 				"${RUTORRENT_PORT}:${RUTORRENT_PORT}/tcp",
 				"${WEBDAV_PORT}:${WEBDAV_PORT}/tcp",
-				"${RT_INC_PORT}:${RT_INC_PORT}/tcp",
+				"${RT_INC_PORT}:${RT_INC_PORT}/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "ruTorrent",
