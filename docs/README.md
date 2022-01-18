@@ -50,7 +50,7 @@ You're done! Now just click App Templates and deploy applications!
 | Application  | Supported OS's | URL |
 | ------------- | ------------- | ------------- |
 | Portainer v2 Arm32 | Pi OS | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-arm32.json |
-| Portainer v2 Arm64 | Ubunutu 64, DietPI 64 | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-arm64.json |
+| Portainer v2 Arm64 | Ubuntu 64, DietPI 64 | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-arm64.json |
 
 * Limited testing Operating Systems: Pi OS 64 Beta, DietPI 32 bit
 
