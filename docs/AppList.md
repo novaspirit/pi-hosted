@@ -7,6 +7,7 @@ List of all apps included in this project with info related to it.
 |App Title|System|Type | Doc |Install Script|Extra Scripts|Youtube Video|
 |:--------|:----:|:---:|:---:|:------------:|:------------|:-----------:|
 |Airsonic|32/64 bit|Container|  |  |  |  |
+|Airsonic Advanced|32/64 bit|Container|  |  |  |  |
 |Archivebox|32/64 bit|Container|  |  |  |  |
 |Authelia|32/64 bit|Container|  |  |  |  |
 |Bazarr|32/64 bit|Container|  |  |  |  |
@@ -109,6 +110,7 @@ List of all apps included in this project with info related to it.
 |Quassel IRC|32/64 bit|Container|  |  |  |  |
 |Radarr|32/64 bit|Container|  |  |  |  |
 |Raspberry Pi Docker Monitor|32/64 bit|Stack| [![](../build/images/doc_icon.png)](../docs/rpi_docker_monitor.md) | [![](../build/images/script_icon.png)](../tools/rpi_docker_monitor.sh) |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8) |
+|RDesktop|32/64 bit|Container|  |  |  |  |
 |Reactive-Resume|64 bit|Container|  |  |  |  |
 |Redmine|32/64 bit|Stack|  |  |  |  |
 |Resilio Sync|32/64 bit|Container|  |  |  |  |
