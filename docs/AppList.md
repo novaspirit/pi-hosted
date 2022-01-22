@@ -7,6 +7,7 @@ List of all apps included in this project with info related to it.
 |App Title|System|Type | Doc |Install Script|Extra Scripts|Youtube Video|
 |:--------|:----:|:---:|:---:|:------------:|:------------|:-----------:|
 |Airsonic|32/64 bit|Container|  |  |  |  |
+|Airsonic Advanced|32/64 bit|Container|  |  |  |  |
 |Archivebox|32/64 bit|Container|  |  |  |  |
 |Authelia|32/64 bit|Container|  |  |  |  |
 |Bazarr|32/64 bit|Container|  |  |  |  |
