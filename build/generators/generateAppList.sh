@@ -6,7 +6,8 @@ cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null || exit
 # Standard file locations
 homedir='../../'
 . ../env.sh
-docIcon="![](../build/images/doc_icon.png)"
+docIconBlue="![](../build/images/blue_doc_icon.png)"
+docIconRed="![](../build/images/red_doc_icon.png)"
 scriptIcon="![](../build/images/script_icon.png)"
 
 # Temp helper files
@@ -64,7 +65,7 @@ do
 		# Get App Official Doc from app info
 		odoc=$(echo "$info" | jq ".OfficialDoc" | tr -d '"' )
 		if [ "$odoc" != "null" ]; then
-			odoc="[$docIcon]($odoc)"
+			odoc="[$docIconBlue]($odoc)"
 		else
 			unset odoc
 		fi
@@ -73,7 +74,7 @@ do
 		docID=$(echo "$info" | jq ".DocID")
 		if [ "$docID" != "null" ]; then
 			doc=$(jq ".docs[] | select(.ID==$docID) | .File" "$appinfo" | tr -d '"')
-			doc="[$docIcon]($Docs$doc)"
+			doc="[$docIconRed]($Docs$doc)"
 		else
 			unset doc
 		fi
