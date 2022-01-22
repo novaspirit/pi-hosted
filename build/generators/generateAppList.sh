@@ -6,7 +6,8 @@ cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null || exit
 # Standard file locations
 homedir='../../'
 . ../env.sh
-docIcon="![](../build/images/doc_icon.png)"
+docIconBlue="![](../build/images/blue_doc_icon.png)"
+docIconRed="![](../build/images/red_doc_icon.png)"
 scriptIcon="![](../build/images/script_icon.png)"
 
 # Temp helper files
@@ -53,16 +54,32 @@ do
 	info=$(jq ".apps[] | select(.Title==\"$App\")" "$appinfo")
 	if [ "$info" != "" ] ; then
 
+		# Get App Webpage from app info
+		oweb=$(echo "$info" | jq ".Web" | tr -d '"' )
+		if [ "$oweb" != "null" ]; then
+			oweb="[$App]($oweb)"
+		else
+			oweb="$App"
+		fi
+
+		# Get App Official Doc from app info
+		odoc=$(echo "$info" | jq ".OfficialDoc" | tr -d '"' )
+		if [ "$odoc" != "null" ]; then
+			odoc="[$docIconBlue]($odoc)"
+		else
+			unset odoc
+		fi
+
 		# Get Doc from app info
 		docID=$(echo "$info" | jq ".DocID")
 		if [ "$docID" != "null" ]; then
 			doc=$(jq ".docs[] | select(.ID==$docID) | .File" "$appinfo" | tr -d '"')
-			doc="[$docIcon]($Docs$doc)"
+			doc="[$docIconRed]($Docs$doc)"
 		else
 			unset doc
 		fi
 
-		# Get Script from app info
+		# Get Install Script from app info
 		scriptID=$(echo "$info" | jq ".ScriptID")
 		if [ "$scriptID" != "null" ]; then
 			script=$(jq ".tools[] | select(.ID==$scriptID) | .File" "$appinfo" | tr -d '"')
@@ -71,7 +88,7 @@ do
 			unset script
 		fi
 
-		# Get Script from app info
+		# Get Extra Script from app info
 		extraID=$(echo "$info" | jq ".ExtraID")
 		if [ "$extraID" != "null" ]; then
 			# If only one entry
@@ -97,7 +114,7 @@ do
 			unset extra
 		fi
 
-		# Get Script from app info
+		# Get Video from app info
 		vid=$(echo "$info" | jq ".VideoID")
 		if [ "$vid" != "null" ] ; then
 			vidURL=$(jq ".youtube[] | select(.ID==$vid) | .URL" "$appinfo" | tr -d \")
@@ -107,11 +124,11 @@ do
 		fi
 	
 	else
-		unset doc script extra vid
+		unset doc script extra vid oweb odoc
 	fi
 
 	# Building App Line
-	line="|$App|$Arch|$(grep "$App|" "$AppType" | cut -d'|' -f2 )| $doc | $script | $extra | $vid |"
+	line="|$oweb|$Arch|$(grep "$App|" "$AppType" | cut -d'|' -f2 )| $odoc | $doc | $script | $extra | $vid |"
 
 	# Change container type to string (Default to Container when not set)
 	line="${line//|1|/|Container|}"
