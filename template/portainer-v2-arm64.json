@@ -5980,6 +5980,40 @@
 		},
 		{
 			"categories": [
+				"HomeAutomation"
+			],
+			"description": "Home Assistant Core - Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.homeassistant",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/homeassistant",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homeassistant.png",
+			"name": "Home Assistant",
+			"platform": "linux",
+			"ports": [
+				"8123:8123/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Home Assistant",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/HA",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Other"
 			],
 			"description": "Rdesktop is an Ubuntu based container containing full desktop environments in officially supported flavors accessible via RDP.",
