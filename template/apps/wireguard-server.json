@@ -1,0 +1,47 @@
+{
+	"categories": [
+		"Other",
+		"VPN"
+	],
+	"description": "Fast VPN Server with easy to use User Interface",
+	"env": [
+		{
+			"default": "example.domain.com",
+			"description": "Set here your DDNS domain",
+			"label": "WG_HOST",
+			"name": "WG_HOST"
+		},
+		{
+			"default": "ENTER AN ADMIN PASSWORD",
+			"description": "Leave blank to access WebUI without loggin",
+			"label": "PASSWORD",
+			"name": "PASSWORD"
+		},
+		{
+			"default": "51820",
+			"label": "WG_PORT",
+			"name": "WG_PORT"
+		},
+		{
+			"default": "1.1.1.1",
+			"label": "WG_DEFAULT_DNS",
+			"name": "WG_DEFAULT_DNS"
+		},
+		{
+			"default": "0.0.0.0/0, ::/0",
+			"label": "WG_ALLOWED_IPS",
+			"name": "WG_ALLOWED_IPS"
+		}
+	],
+	"image64": "weejewel/wg-easy:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wireguard.png",
+	"name": "wg-easy",
+	"platform": "linux",
+	"repository": {
+		"stackfile32": "stack/wireguard-easy.yml",
+		"stackfile64": "stack/wireguard-easy.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted"
+	},
+	"title": "Wireguard Server",
+	"type": 3
+}

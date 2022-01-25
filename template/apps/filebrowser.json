@@ -1,0 +1,25 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
+	"image32": "filebrowser/filebrowser:latest",
+	"image64": "filebrowser/filebrowser:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
+	"name": "filebrowser",
+	"note": "The default user and password is admin/admin.",
+	"platform": "linux",
+	"ports": [
+		"8082:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "FileBrowser",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/srv"
+		}
+	]
+}

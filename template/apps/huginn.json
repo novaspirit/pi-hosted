@@ -1,0 +1,24 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "Create agents that monitor and act on your behalf.",
+	"image32": "mjysci/huginn:arm32v7",
+	"image64": "mjysci/huginn:arm32v7",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/huginn.png",
+	"name": "huginn",
+	"platform": "linux",
+	"ports": [
+		"3005:3000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Huginn",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/huginn",
+			"container": "/var/lib/mysql"
+		}
+	]
+}
