@@ -1726,7 +1726,8 @@
 				"8999:8123/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Home Assistant",
+			"title": "Homeassistant",
+			"type": 1,
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/HomeAssistant/assets",
