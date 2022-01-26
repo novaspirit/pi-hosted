@@ -7,7 +7,7 @@ List of all apps included in this project with info related to it.
 |App Title|System|Type |Official<br>Doc|PiHosted<br>Doc|Install Script|Extra Scripts|Youtube Video|
 |:--------|:----:|:---:|:-------------:|:-------------:|:------------:|:------------|:-----------:|
 |[Airsonic](https://airsonic.github.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://airsonic.github.io/docs/install/docker/) |  |  |  |  |
-|[Airsonic Advanced](https://github.com/airsonic-advanced/airsonic-advanced)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-airsonic-advanced) |  |  |  |  |
+|[Airsonic Advanced](https://github.com/airsonic-advanced/airsonic-advanced)|64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-airsonic-advanced) |  |  |  |  |
 |[Archivebox](https://archivebox.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ArchiveBox/ArchiveBox/wiki/Docker) |  |  |  |  |
 |[Authelia](https://www.authelia.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://www.authelia.com/docs/configuration/) |  |  |  |  |
 |[Bazarr](https://www.bazarr.media/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.bazarr.media/Getting-Started/Installation/Docker/docker/) |  |  |  |  |
