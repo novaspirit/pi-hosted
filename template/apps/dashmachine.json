@@ -8,6 +8,7 @@
 	"image64": "failed2run/dashmachine:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dashmachine_logo.png",
 	"name": "dashmachine",
+	"officialDoc": "https://github.com/rmountjoy92/DashMachine",
 	"platform": "linux",
 	"ports": [
 		"5100:5000/tcp"
@@ -20,5 +21,6 @@
 			"bind": "/portainer/Files/AppData/Config/Dashmachine",
 			"container": "/dashmachine/dashmachine/user_data"
 		}
-	]
+	],
+	"webpage": "https://github.com/rmountjoy92/DashMachine"
 }

@@ -44,6 +44,7 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gitea.png",
 	"name": "gitea-mysql",
 	"note": "More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables",
+	"officialDoc": "https://docs.gitea.io/en-us/install-with-docker/#mysql-database",
 	"platform": "linux",
 	"repository": {
 		"stackfile64": "stack/gitea-mariadb.yml",
@@ -51,5 +52,6 @@
 	},
 	"restart_policy": "unless-stopped",
 	"title": "Gitea with Mariadb",
-	"type": 3
+	"type": 3,
+	"webpage": "https://gitea.com/"
 }

@@ -44,6 +44,7 @@
 	"image32": "sgtsquiggs/deluge-openvpn:arm32v7-latest",
 	"image64": "sgtsquiggs/deluge-openvpn:arm64v8-latest",
 	"name": "deluge-openvpn",
+	"officialDoc": "https://github.com/sgtsquiggs/docker-deluge-openvpn",
 	"platform": "linux",
 	"ports": [
 		"8112:8112/tcp"
@@ -64,5 +65,6 @@
 			"bind": "/portainer/Files/AppData/Config/DelugeOpenVPN/config",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://www.deluge-torrent.org/"
 }

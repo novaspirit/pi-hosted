@@ -30,9 +30,11 @@
 			"name": "JAVA_OPTS"
 		}
 	],
-	"image": "linuxserver/airsonic:arm64v8-latest",
+	"image32": "linuxserver/airsonic:arm32v7-latest",
+	"image64": "linuxserver/airsonic:arm64v8-latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/airsonic-logo.png",
 	"name": "airsonic",
+	"officialDoc": "https://airsonic.github.io/docs/install/docker/",
 	"platform": "linux",
 	"ports": [
 		"4040:4040/tcp"
@@ -61,5 +63,6 @@
 			"bind": "/portainer/Files/AppData/Config/Airsonic/config/",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://airsonic.github.io/"
 }

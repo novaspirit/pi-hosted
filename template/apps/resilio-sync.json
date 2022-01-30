@@ -22,6 +22,7 @@
 	"image64": "linuxserver/resilio-sync:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/resilio.png",
 	"name": "resilio-sync",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-resilio-sync",
 	"platform": "linux",
 	"ports": [
 		"8888:8888/tcp",
@@ -42,5 +43,6 @@
 			"bind": "/portainer/Downloads",
 			"container": "/downloads"
 		}
-	]
+	],
+	"webpage": "https://www.resilio.com/individuals/"
 }

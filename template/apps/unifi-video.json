@@ -29,6 +29,7 @@
 	"image64": "pducharme/unifi-video-controller:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/unifivideo-icon.png",
 	"name": "UniFi Video",
+	"officialDoc": "https://github.com/pducharme/UniFi-Video-Controller",
 	"platform": "linux",
 	"ports": [
 		"1935:1935/tcp",
@@ -53,5 +54,6 @@
 			"bind": "/portainer/Files/AppData/Config/UniFiVideo/",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://github.com/pducharme/UniFi-Video-Controller"
 }

@@ -26,6 +26,7 @@
 	"image64": "yhaenggi/murmur:1.3.4",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Mumble-logo.png",
 	"name": "murmur",
+	"officialDoc": "https://github.com/yhaenggi/murmur-docker",
 	"platform": "linux",
 	"ports": [
 		"64738:64738/tcp",
@@ -51,5 +52,6 @@
 			"bind": "/portainer/Files/Murmur/log",
 			"container": "/opt/murmur/log"
 		}
-	]
+	],
+	"webpage": "https://www.mumble.info/"
 }

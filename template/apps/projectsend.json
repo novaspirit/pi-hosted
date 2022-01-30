@@ -22,6 +22,7 @@
 	"image64": "linuxserver/projectsend:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/projectsend-logo.png",
 	"name": "projectsend",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-projectsend",
 	"platform": "linux",
 	"ports": [
 		"7580:80/tcp"
@@ -38,5 +39,6 @@
 			"bind": "/portainer/Files/AppData/Config/ProjectSend",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://www.projectsend.org/"
 }

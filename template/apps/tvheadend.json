@@ -20,6 +20,7 @@
 	"image64": "linuxserver/tvheadend:latest",
 	"logo": "http://i.imgur.com/zGSUAT4.png",
 	"name": "tvheadend",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-tvheadend",
 	"platform": "linux",
 	"ports": [
 		"9981:9981/tcp",
@@ -36,5 +37,6 @@
 		{
 			"container": "/recordings"
 		}
-	]
+	],
+	"webpage": "https://tvheadend.org/"
 }

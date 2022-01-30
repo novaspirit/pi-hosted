@@ -45,7 +45,9 @@
 	],
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/drupal.png",
 	"name": "drupal",
+	"officialDoc": "https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration",
 	"platform": "linux",
+	"preInstallScript": "install_drupal.sh",
 	"repository": {
 		"stackfile32": "stack/drupal.yml",
 		"stackfile64": "stack/drupal.yml",
@@ -53,5 +55,6 @@
 	},
 	"restart_policy": "unless-stopped",
 	"title": "Drupal",
-	"type": 3
+	"type": 3,
+	"webpage": "https://www.drupal.org/"
 }

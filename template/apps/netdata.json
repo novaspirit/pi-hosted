@@ -21,6 +21,7 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/netdata.png",
 	"name": "netdata",
 	"note": "Documentation is Available <a href='https://learn.netdata.cloud/'>here</a>.",
+	"officialDoc": "https://learn.netdata.cloud/docs/agent/packaging/docker",
 	"platform": "linux",
 	"ports": [
 		"19999:19999/tcp"
@@ -57,5 +58,6 @@
 			"bind": "/etc/os-release",
 			"container": "/host/etc/os-release:ro"
 		}
-	]
+	],
+	"webpage": "https://www.netdata.cloud/"
 }

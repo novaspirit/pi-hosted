@@ -26,6 +26,7 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/n8n.jpg",
 	"name": "n8n",
 	"note": "Documentation is Available <a href='https://docs.n8n.io/'>here</a>",
+	"officialDoc": "https://docs.n8n.io/getting-started/installation/#docker",
 	"platform": "linux",
 	"ports": [
 		"5678:5678/tcp"
@@ -38,5 +39,6 @@
 			"bind": "/portainer/Files/AppData/Config/n8n",
 			"container": "/home/node/.n8n"
 		}
-	]
+	],
+	"webpage": "https://n8n.io/"
 }

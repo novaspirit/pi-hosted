@@ -9,6 +9,7 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
 	"name": "filebrowser",
 	"note": "The default user and password is admin/admin.",
+	"officialDoc": "https://filebrowser.org/installation#docker",
 	"platform": "linux",
 	"ports": [
 		"8082:80/tcp"
@@ -16,10 +17,12 @@
 	"restart_policy": "unless-stopped",
 	"title": "FileBrowser",
 	"type": 1,
+	"videoID": 4,
 	"volumes": [
 		{
 			"bind": "/portainer/Downloads",
 			"container": "/srv"
 		}
-	]
+	],
+	"webpage": "https://filebrowser.org/"
 }

@@ -65,6 +65,7 @@
 	"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
 	"name": "rutorrent",
 	"note": "For ruTorrent basic auth, XMLRPC through nginx and WebDAV on completed downloads, you can populate .htpasswd files with the following command:\ndocker run --rm -it httpd:2.4-alpine htpasswd -Bbn <username> <password> >> $(pwd)/passwd/webdav.htpasswd",
+	"officialDoc": "https://github.com/crazy-max/docker-rtorrent-rutorrent",
 	"platform": "linux",
 	"ports": [
 		"${RT_DHT_PORT}:${RT_DHT_PORT}/udp",
@@ -89,5 +90,6 @@
 			"bind": "/portainer/Files/AppData/Config/ruTorrent/passwd",
 			"container": "/passwd"
 		}
-	]
+	],
+	"webpage": "https://github.com/Novik/ruTorrent"
 }

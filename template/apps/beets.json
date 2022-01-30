@@ -19,6 +19,7 @@
 	"image64": "linuxserver/beets:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/beets-icon.png",
 	"name": "beets",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-beets",
 	"platform": "linux",
 	"ports": [
 		"8337:8337/tcp"
@@ -39,5 +40,6 @@
 			"bind": "/portainer/Music",
 			"container": "/music"
 		}
-	]
+	],
+	"webpage": "https://beets.io/"
 }

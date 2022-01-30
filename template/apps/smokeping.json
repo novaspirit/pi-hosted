@@ -19,6 +19,7 @@
 	"image64": "linuxserver/smokeping:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/smokeping-icon.png",
 	"name": "smokeping",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-smokeping",
 	"platform": "linux",
 	"ports": [
 		"4794:80/tcp"
@@ -35,5 +36,6 @@
 			"bind": "/portainer/Files/AppData/Smokeping",
 			"container": "/data"
 		}
-	]
+	],
+	"webpage": "https://oss.oetiker.ch/smokeping/"
 }

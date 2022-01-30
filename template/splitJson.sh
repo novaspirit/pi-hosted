@@ -2,6 +2,7 @@
 
 t32b='./portainer-v2-arm32.json'
 t64b='./portainer-v2-arm64.json'
+appinfo='../build/appinfo.json'
 
 Napps=$( jq '.templates | length' "$t64b" )
 for app in $(seq 0 $(( Napps - 1 ))); do
@@ -24,6 +25,57 @@ for app in $(seq 0 $(( Napps - 1 ))); do
 		fi
 	fi
 
+	json=$( jq '.apps[] | select(.Title=='"$Title"')' "$appinfo" )
+
+	# Web
+	if value=$( echo "$json" | jq -e '.Web' | tr -d '"' ) ; then
+		info=$( echo "$info" | jq --arg v "$value" '. += {"webpage": $v}' )
+	fi
+
+	# Official Documentation
+	if value=$( echo "$json" | jq -e '.OfficialDoc' | tr -d '"' ) ; then
+		info=$( echo "$info" | jq --arg v "$value" '. += {"officialDoc": $v}' )
+	fi
+
+	# Youtube Video
+	if value=$( echo "$json" | jq -e '.VideoID' ) ; then
+		info=$( echo "$info" | jq '. += {"videoID": '"$value"'}' )
+	fi
+
+	# Pi-Hosted Doc
+	if id=$( echo "$json" | jq -e '.DocID' ) ; then
+		value=$( jq '.docs[] | select(.ID=='"$id"') | .File' "$appinfo" | tr -d '"' )
+		info=$( echo "$info" | jq --arg v "$value" '. += {"piHostedDoc": $v}' )
+	fi
+
+	# Pre-Install Script Doc
+	if id=$( echo "$json" | jq -e '.ScriptID' ) ; then
+		value=$( jq '.tools[] | select(.ID=='"$id"') | .File' "$appinfo" | tr -d '"' )
+		info=$( echo "$info" | jq --arg v "$value" '. += {"preInstallScript": $v}' )
+	fi
+
+	# Extra scripts
+	if ExtraID=$( echo "$json" | jq -e '.ExtraID' ) ; then
+		# If only one entry
+		if [ "$(echo "$ExtraID" | wc -l )" == "1" ]; then
+			value=$(jq ".tools[] | select(.ID==$ExtraID) | .File" "$appinfo" | tr -d '"' )
+			info=$( echo "$info" | jq --arg v "$value" '. += {"extraScript": $v}' )
+
+		# If multiples entries
+		else
+			n_ext=$(echo "$ExtraID" | jq '. | length')
+			value='['
+			for n in $(seq 0 $(( n_ext - 1 ))); do
+				extID=$(echo "$ExtraID" | jq ".[$n]" | tr -d \")
+				v=$(jq ".tools[] | select(.ID==$extID) | .File" "$appinfo" | tr -d '"')
+				value="$value $v,"
+			done
+			value="${value:0:-1} ]"
+			info=$( echo "$info" | jq --arg v "$value" '. += {"extraScript": $v}' )
+		fi
+	else
+		unset ExtraURL ExtraID
+	fi
 
 	echo "$info" | jq --tab --sort-keys '.' > "$fileName"
 

@@ -20,6 +20,7 @@
 	"image64": "linuxserver/couchpotato:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/couchpotato-icon.png",
 	"name": "couchpotato",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-couchpotato",
 	"platform": "linux",
 	"ports": [
 		"5050:5050/tcp"
@@ -40,5 +41,6 @@
 			"bind": "/portainer/Movies",
 			"container": "/movies"
 		}
-	]
+	],
+	"webpage": "https://couchpota.to/"
 }

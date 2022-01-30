@@ -9,6 +9,7 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/embystat.png",
 	"name": "embystat",
 	"note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services.",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-embystat",
 	"platform": "linux",
 	"ports": [
 		"6555:6555/tcp"
@@ -21,5 +22,6 @@
 			"bind": "/portainer/Files/AppData/Config/EmbyStat",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://github.com/mregni/EmbyStat"
 }

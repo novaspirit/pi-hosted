@@ -19,6 +19,7 @@
 	"image64": "linuxserver/nzbget:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nzbget-icon.png",
 	"name": "nzbget",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-nzbget",
 	"platform": "linux",
 	"ports": [
 		"6789:6789/tcp"
@@ -35,5 +36,6 @@
 			"bind": "/portainer/Downloads",
 			"container": "/downloads"
 		}
-	]
+	],
+	"webpage": "https://nzbget.net/"
 }

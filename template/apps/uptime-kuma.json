@@ -9,6 +9,7 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/uptime-kuma.png",
 	"name": "uptime-kuma",
 	"note": "A fancy self-hosted monitoring tool.",
+	"officialDoc": "https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install#-docker",
 	"platform": "linux",
 	"ports": [
 		"3001:3001/tcp"
@@ -21,5 +22,6 @@
 			"bind": "/portainer/Files/AppData/Config/uptime-kuma",
 			"container": "/app/data"
 		}
-	]
+	],
+	"webpage": "https://github.com/louislam/uptime-kuma"
 }

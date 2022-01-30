@@ -8,6 +8,7 @@
 	"image64": "selfhostedpro/yacht:latest",
 	"logo": "https://raw.githubusercontent.com/SelfhostedPro/Yacht/master/readme_media/Yacht_logo_1_dark.png",
 	"name": "yacht",
+	"officialDoc": "https://yacht.sh/docs/Installation/Install#via-docker-compose",
 	"platform": "linux",
 	"ports": [
 		"8001:8000/tcp"
@@ -24,5 +25,6 @@
 			"bind": "/var/run/docker.sock",
 			"container": "/var/run/docker.sock"
 		}
-	]
+	],
+	"webpage": "https://yacht.sh/"
 }

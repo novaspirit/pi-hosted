@@ -20,6 +20,7 @@
 	"image64": "linuxserver/pydio:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pydio-icon.png",
 	"name": "pydio",
+	"officialDoc": "https://hub.docker.com/r/linuxserver/pydio",
 	"platform": "linux",
 	"ports": [
 		"7526:443/tcp"
@@ -36,5 +37,6 @@
 			"bind": "/portainer/Files/AppData/Pydio",
 			"container": "/data"
 		}
-	]
+	],
+	"webpage": "https://www.pydio.com/"
 }

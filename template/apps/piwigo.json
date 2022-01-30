@@ -19,6 +19,7 @@
 	"image64": "linuxserver/piwigo:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/piwigo-icon.png",
 	"name": "piwigo",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-piwigo",
 	"platform": "linux",
 	"ports": [
 		"7528:80/tcp"
@@ -31,5 +32,6 @@
 			"bind": "/portainer/Files/AppData/Config/PiWigo",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "http://piwigo.org/"
 }

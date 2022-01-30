@@ -20,6 +20,7 @@
 	"image64": "mbentley/omada-controller:latest-arm64",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/omada.png",
 	"name": "omada-controller",
+	"officialDoc": "https://hub.docker.com/r/mbentley/omada-controller",
 	"platform": "linux",
 	"ports": [
 		"8088:8088/tcp",
@@ -39,5 +40,6 @@
 			"bind": "/portainer/Files/AppData/Config/Omada",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://www.tp-link.com/us/business-networking/omada-sdn-controller/"
 }

@@ -26,6 +26,7 @@
 	"image64": "linuxserver/grocy:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/grocy_logo.png",
 	"name": "grocy",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-grocy",
 	"platform": "linux",
 	"ports": [
 		"9283:80/tcp"
@@ -38,5 +39,6 @@
 			"bind": "/portainer/Files/AppData/Config/Grocy",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://grocy.info/"
 }

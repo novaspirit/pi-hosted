@@ -25,6 +25,7 @@
 	"image64": "jaymoulin/jdownloader:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jdownloader.png",
 	"name": "JDownloader",
+	"officialDoc": "https://github.com/jaymoulin/docker-jdownloader",
 	"platform": "linux",
 	"ports": [
 		"3129:3129/tcp"
@@ -32,6 +33,7 @@
 	"restart_policy": "unless-stopped",
 	"title": "JDownloader",
 	"type": 1,
+	"videoID": 4,
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/JDownloader",
@@ -41,5 +43,6 @@
 			"bind": "/portainer/Downloads",
 			"container": "/opt/JDownloader/Downloads"
 		}
-	]
+	],
+	"webpage": "https://my.jdownloader.org/"
 }

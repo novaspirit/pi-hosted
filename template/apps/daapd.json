@@ -19,6 +19,7 @@
 	"image64": "linuxserver/daapd:latest",
 	"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-icon.png",
 	"name": "daapd",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-daapd",
 	"platform": "linux",
 	"ports": [
 		"3689:3689/tcp"
@@ -35,5 +36,6 @@
 			"bind": "/portainer/Music",
 			"container": "/music"
 		}
-	]
+	],
+	"webpage": "https://owntone.github.io/owntone-server/"
 }

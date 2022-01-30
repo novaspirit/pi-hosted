@@ -21,6 +21,7 @@
 	"image64": "linuxserver/minisatip:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/minisatip-icon.png",
 	"name": "minisatip",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-minisatip",
 	"platform": "linux",
 	"ports": [
 		"8875:8875/tcp",
@@ -29,5 +30,6 @@
 	],
 	"restart_policy": "unless-stopped",
 	"title": "Minisatip",
-	"type": 1
+	"type": 1,
+	"webpage": "https://github.com/catalinii/minisatip"
 }

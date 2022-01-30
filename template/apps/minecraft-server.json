@@ -16,6 +16,7 @@
 	"image64": "itzg/minecraft-server:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/minecraft.png",
 	"name": "minecraft",
+	"officialDoc": "https://github.com/itzg/docker-minecraft-server#using-docker-compose",
 	"platform": "linux",
 	"ports": [
 		"25565:25565/tcp"
@@ -28,5 +29,6 @@
 			"bind": "/portainer/Files/AppData/Config/Minecraft-data",
 			"container": "/data"
 		}
-	]
+	],
+	"webpage": "https://www.minecraft.net/en-us"
 }

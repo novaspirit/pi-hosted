@@ -24,6 +24,7 @@
 	"image64": "linuxserver/deluge:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/deluge-icon.png",
 	"name": "deluge",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-deluge",
 	"platform": "linux",
 	"ports": [
 		"6881:6881/tcp",
@@ -41,5 +42,6 @@
 			"bind": "/portainer/Downloads",
 			"container": "/downloads"
 		}
-	]
+	],
+	"webpage": "https://www.deluge-torrent.org/"
 }

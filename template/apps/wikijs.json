@@ -8,6 +8,7 @@
 	"image64": "linuxserver/wikijs:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wikijs.png",
 	"name": "wikijs",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-wikijs",
 	"platform": "linux",
 	"ports": [
 		"3100:3000/tcp"
@@ -24,5 +25,6 @@
 			"bind": "/portainer/Files/AppData/Config/Wikijs/data",
 			"container": "/data"
 		}
-	]
+	],
+	"webpage": "https://js.wiki/"
 }

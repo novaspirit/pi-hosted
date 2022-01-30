@@ -20,6 +20,7 @@
 	"image64": "linuxserver/calibre-web:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/calibre-web-icon.png",
 	"name": "calibre-web",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-calibre-web",
 	"platform": "linux",
 	"ports": [
 		"8083:8083/tcp"
@@ -36,5 +37,6 @@
 			"bind": "/portainer/Files/AppData/Config/Calibre-web",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://calibre-ebook.com/"
 }

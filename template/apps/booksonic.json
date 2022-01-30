@@ -25,6 +25,7 @@
 	"image64": "linuxserver/booksonic:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/booksonic.png",
 	"name": "booksonic",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-booksonic-air",
 	"platform": "linux",
 	"ports": [
 		"4041:4040/tcp"
@@ -45,5 +46,6 @@
 			"bind": "/portainer/Files/AppData/Config/Booksonic",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://booksonic.org/"
 }

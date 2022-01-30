@@ -20,6 +20,7 @@
 	"image64": "linuxserver/domoticz:latest",
 	"logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
 	"name": "domoticz",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-domoticz",
 	"platform": "linux",
 	"ports": [
 		"1443:1443/tcp",
@@ -34,5 +35,6 @@
 			"bind": "/portainer/Files/AppData/Config/Domoticz",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://domoticz.com/"
 }

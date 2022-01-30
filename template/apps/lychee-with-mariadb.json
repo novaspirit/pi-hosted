@@ -45,6 +45,7 @@
 	],
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lychee-icon.png",
 	"name": "lychee-mariadb",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-lychee",
 	"platform": "linux",
 	"repository": {
 		"stackfile32": "stack/lychee-mariadb.yml",
@@ -53,5 +54,6 @@
 	},
 	"restart_policy": "unless-stopped",
 	"title": "Lychee With Mariadb",
-	"type": 3
+	"type": 3,
+	"webpage": "https://lycheeorg.github.io/"
 }

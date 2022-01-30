@@ -35,8 +35,10 @@
 	"image64": "linuxserver/duckdns:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/duckdns.png",
 	"name": "duckdns",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-duckdns",
 	"platform": "linux",
 	"restart_policy": "unless-stopped",
 	"title": "Duck DNS",
-	"type": 1
+	"type": 1,
+	"webpage": "https://www.duckdns.org/"
 }

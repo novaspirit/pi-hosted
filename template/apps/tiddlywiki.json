@@ -8,6 +8,7 @@
 	"image64": "mazzolino/tiddlywiki:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tiddlywiki.png",
 	"name": "tiddlywiki",
+	"officialDoc": "https://github.com/djmaze/tiddlywiki-docker",
 	"platform": "linux",
 	"ports": [
 		"8080:8080/tcp"
@@ -20,5 +21,6 @@
 			"bind": "/portainer/Files/AppData/Config/TiddlyWiki",
 			"container": "/var/lib/tiddlywiki"
 		}
-	]
+	],
+	"webpage": "https://tiddlywiki.com/"
 }

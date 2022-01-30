@@ -22,6 +22,7 @@
 	"image64": "linuxserver/syncthing:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/syncthing-icon.png",
 	"name": "syncthing",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-syncthing",
 	"platform": "linux",
 	"ports": [
 		"8384:8384/tcp",
@@ -39,5 +40,6 @@
 		{
 			"container": "/sync"
 		}
-	]
+	],
+	"webpage": "https://syncthing.net/"
 }

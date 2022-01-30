@@ -9,6 +9,8 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pihole_doh-dot.png",
 	"name": "pihole DoH/DoT",
 	"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53.",
+	"officialDoc": "https://hub.docker.com/r/oijkn/pihole-doh-dot",
+	"piHostedDoc": "pi-hole.md",
 	"platform": "linux",
 	"ports": [
 		"53:53/tcp",
@@ -29,5 +31,6 @@
 			"bind": "/portainer/Files/AppData/Config/PiHole_DoH-DoT/DNS",
 			"container": "/etc/dnsmasq.d"
 		}
-	]
+	],
+	"webpage": "https://pi-hole.net/"
 }

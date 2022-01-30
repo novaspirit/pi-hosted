@@ -30,11 +30,13 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pritunl.png",
 	"name": "pritunl",
 	"note": "Documentation on this containier can be found here: <a href=https://hub.docker.com/r/goofball222/pritunl>https://hub.docker.com/r/goofball222/pritunl</a>",
+	"officialDoc": "https://hub.docker.com/r/goofball222/pritunl",
 	"platform": "linux",
 	"repository": {
 		"stackfile64": "stack/pritunl.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"title": "Pritunl",
-	"type": 3
+	"type": 3,
+	"webpage": "https://pritunl.com/"
 }

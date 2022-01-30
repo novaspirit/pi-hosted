@@ -22,6 +22,7 @@
 	"image64": "linuxserver/ombi:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ombi.png",
 	"name": "ombi",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-ombi",
 	"platform": "linux",
 	"ports": [
 		"3579:3579/tcp"
@@ -34,5 +35,6 @@
 			"bind": "/portainer/Files/AppData/Config/Ombi",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://ombi.io/"
 }

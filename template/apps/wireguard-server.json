@@ -36,6 +36,8 @@
 	"image64": "weejewel/wg-easy:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wireguard.png",
 	"name": "wg-easy",
+	"officialDoc": "https://github.com/WeeJeWel/wg-easy/#1-install-docker",
+	"piHostedDoc": "wireguard-install.md",
 	"platform": "linux",
 	"repository": {
 		"stackfile32": "stack/wireguard-easy.yml",
@@ -43,5 +45,6 @@
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"title": "Wireguard Server",
-	"type": 3
+	"type": 3,
+	"webpage": "https://github.com/WeeJeWel/wg-easy/"
 }

@@ -36,6 +36,7 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/archivebox.png",
 	"name": "archivebox",
 	"note": "By default an admin user is not created. You can do so by launching a shell in the container and executing 'archivebox manage createsuperuser'. Documentation is Available <a href='https://github.com/ArchiveBox/ArchiveBox/wiki'>here</a>.",
+	"officialDoc": "https://github.com/ArchiveBox/ArchiveBox/wiki/Docker",
 	"platform": "linux",
 	"ports": [
 		"8002:8000/tcp"
@@ -48,5 +49,6 @@
 			"bind": "/portainer/Files/AppData/Config/archivebox",
 			"container": "/data"
 		}
-	]
+	],
+	"webpage": "https://archivebox.io/"
 }

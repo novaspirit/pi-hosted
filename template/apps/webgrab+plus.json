@@ -19,6 +19,7 @@
 	"image64": "linuxserver/webgrabplus:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/webgrabplus.png",
 	"name": "webgrabplus",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-webgrabplus",
 	"platform": "linux",
 	"restart_policy": "unless-stopped",
 	"title": "WebGrab+Plus",
@@ -32,5 +33,6 @@
 			"bind": "/portainer/Files/AppData/WebGrabPlus",
 			"container": "/data"
 		}
-	]
+	],
+	"webpage": "http://www.webgrabplus.com/"
 }

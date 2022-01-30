@@ -20,6 +20,7 @@
 	"image64": "linuxserver/sonarr:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/sonarr-icon.png",
 	"name": "sonarr",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-sonarr",
 	"platform": "linux",
 	"ports": [
 		"8989:8989/tcp"
@@ -44,5 +45,6 @@
 			"bind": "/portainer/Downloads",
 			"container": "/downloads"
 		}
-	]
+	],
+	"webpage": "https://sonarr.tv/"
 }

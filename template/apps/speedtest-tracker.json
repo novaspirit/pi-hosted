@@ -21,6 +21,7 @@
 	"image64": "henrywhitaker3/speedtest-tracker:dev-arm",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/speedtest-tracker.png",
 	"name": "speedtest-tracker",
+	"officialDoc": "https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker",
 	"platform": "linux",
 	"ports": [
 		"8765:80/tcp"
@@ -33,5 +34,6 @@
 			"bind": "/portainer/Files/AppData/Config/speedtest-tracker",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://github.com/henrywhitaker3/Speedtest-Tracker"
 }

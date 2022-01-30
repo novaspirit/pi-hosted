@@ -46,6 +46,7 @@
 	"image64": "nmtan/chevereto:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Chevereto.png",
 	"name": "Chevereto",
+	"officialDoc": "https://hub.docker.com/r/nmtan/chevereto",
 	"platform": "linux",
 	"ports": [
 		"7382:80/tcp"
@@ -57,5 +58,6 @@
 		{
 			"container": "/var/www/html/images"
 		}
-	]
+	],
+	"webpage": "https://chevereto.com/"
 }

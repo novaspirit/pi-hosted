@@ -7,6 +7,7 @@
 	"image64": "martadinata666/reactive-resume:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/reactiveresume.png",
 	"name": "reactive-resume",
+	"officialDoc": "https://hub.docker.com/r/martadinata666/reactive-resume",
 	"platform": "linux",
 	"ports": [
 		"7768:80/tcp"
@@ -19,5 +20,6 @@
 			"bind": "/portainer/Files/AppData/Config/ReactiveResume",
 			"container": "/keepoutoftheway/var/www/html"
 		}
-	]
+	],
+	"webpage": "https://rxresu.me/"
 }

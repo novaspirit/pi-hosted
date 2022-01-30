@@ -10,6 +10,7 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/protonmail-bridge.png",
 	"name": "protonmail-bridge",
 	"note": "Please refer to the documentation <a href='https://hub.docker.com/r/shenxn/protonmail-bridge'/>here</a> to set this up.",
+	"officialDoc": "https://hub.docker.com/r/shenxn/protonmail-bridge",
 	"platform": "linux",
 	"ports": [
 		"143:143/tcp",
@@ -23,5 +24,6 @@
 			"bind": "/portainer/Files/AppData/ProtonMail-Bridge",
 			"container": "/root"
 		}
-	]
+	],
+	"webpage": "https://protonmail.com/bridge/"
 }

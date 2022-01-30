@@ -8,11 +8,13 @@
 	"image64": "niruix/sshwifty:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/sshwifty-icon.png",
 	"name": "Sshwifty",
+	"officialDoc": "https://github.com/nirui/sshwifty#docker-image",
 	"platform": "linux",
 	"ports": [
 		"8182:8182/tcp"
 	],
 	"restart_policy": "unless-stopped",
 	"title": "Sshwifty",
-	"type": 1
+	"type": 1,
+	"webpage": "https://sshwifty.herokuapp.com/"
 }

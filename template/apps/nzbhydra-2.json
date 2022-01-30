@@ -21,6 +21,7 @@
 	"image64": "linuxserver/nzbhydra2:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/hydra-icon.png",
 	"name": "nzbhydra2",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-nzbhydra2",
 	"platform": "linux",
 	"ports": [
 		"5076:5076/tcp"
@@ -37,5 +38,6 @@
 			"bind": "/portainer/Downloads",
 			"container": "/downloads"
 		}
-	]
+	],
+	"webpage": "https://github.com/theotherp/nzbhydra2"
 }

@@ -15,6 +15,7 @@
 	"image64": "pawelmalak/flame:multiarch",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/flame.png",
 	"name": "Flame",
+	"officialDoc": "https://github.com/pawelmalak/flame#with-docker-recommended",
 	"platform": "linux",
 	"ports": [
 		"5005:5005/tcp"
@@ -31,5 +32,6 @@
 			"bind": "/var/run/docker.sock",
 			"container": "/var/run/docker.sock"
 		}
-	]
+	],
+	"webpage": "https://github.com/pawelmalak/flame"
 }

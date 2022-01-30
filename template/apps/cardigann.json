@@ -19,6 +19,7 @@
 	"image64": "linuxserver/cardigann:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/cardigann.png",
 	"name": "cardigann",
+	"officialDoc": "https://hub.docker.com/r/linuxserver/cardigann/",
 	"platform": "linux",
 	"ports": [
 		"5060:5060/tcp"
@@ -31,5 +32,6 @@
 			"bind": "/portainer/Files/AppData/Config/Cardigann",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://github.com/cardigann/cardigann"
 }

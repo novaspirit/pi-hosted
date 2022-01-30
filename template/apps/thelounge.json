@@ -19,6 +19,7 @@
 	"image64": "linuxserver/thelounge:latest",
 	"logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
 	"name": "thelounge",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-thelounge",
 	"platform": "linux",
 	"ports": [
 		"9500:9000/tcp"
@@ -31,5 +32,6 @@
 			"bind": "/portainer/Files/AppData/Config/TheLounge",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://thelounge.chat/"
 }

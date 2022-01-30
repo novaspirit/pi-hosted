@@ -26,6 +26,7 @@
 	"image64": "linuxserver/jellyfin:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jellyfin.png",
 	"name": "jellyfin",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-jellyfin",
 	"platform": "linux",
 	"ports": [
 		"8096:8096/tcp",
@@ -47,5 +48,6 @@
 			"bind": "/portainer/Movies",
 			"container": "/data/movies"
 		}
-	]
+	],
+	"webpage": "https://jellyfin.org/"
 }

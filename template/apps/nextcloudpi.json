@@ -19,10 +19,12 @@
 			"name": "PGID"
 		}
 	],
+	"extraScript": "reset_premissions_nextcloud.sh",
 	"image32": "ownyourbits/nextcloudpi",
 	"image64": "ownyourbits/nextcloudpi:latest",
 	"name": "nextcloudpi",
 	"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
+	"officialDoc": "https://ownyourbits.com/2017/06/08/nextcloudpi-docker-for-raspberry-pi/",
 	"platform": "linux",
 	"ports": [
 		"4444:4443/tcp",
@@ -31,10 +33,12 @@
 	],
 	"title": "NextcloudPi",
 	"type": 1,
+	"videoID": 8,
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/ncdata",
 			"container": "/data"
 		}
-	]
+	],
+	"webpage": "https://ownyourbits.com/nextcloudpi/"
 }

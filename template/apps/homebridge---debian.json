@@ -36,6 +36,7 @@
 	"name": "homebridge-debian",
 	"network": "host",
 	"note": "Bringing HomeKit support where there is none",
+	"officialDoc": "https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker",
 	"platform": "linux",
 	"privileged": true,
 	"restart_policy": "unless-stopped",
@@ -46,5 +47,6 @@
 			"bind": "/portainer/Files/AppData/Config/debian-homebridge",
 			"container": "/homebridge"
 		}
-	]
+	],
+	"webpage": "https://homebridge.io/"
 }

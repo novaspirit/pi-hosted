@@ -8,6 +8,7 @@
 	"image64": "tzahi12345/youtubedl-material:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ytdlm.png",
 	"name": "youtubedl-material",
+	"officialDoc": "https://github.com/Tzahi12345/YoutubeDL-Material#docker",
 	"platform": "linux",
 	"ports": [
 		"17442:17442/tcp"
@@ -36,5 +37,6 @@
 			"bind": "/portainer/Files/AppData/Youtube/Audio",
 			"container": "/app/audio"
 		}
-	]
+	],
+	"webpage": "https://github.com/Tzahi12345/YoutubeDL-Material"
 }

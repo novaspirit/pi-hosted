@@ -38,6 +38,7 @@
 	"image64": "linuxserver/code-server:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/code-server.png",
 	"name": "code-server",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-code-server",
 	"platform": "linux",
 	"ports": [
 		"8443:8443/tcp"
@@ -50,5 +51,6 @@
 			"bind": "/portainer/Files/AppData/Config/Code-Server",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://coder.com/"
 }

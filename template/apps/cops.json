@@ -20,6 +20,7 @@
 	"image64": "linuxserver/cops:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/cops-icon.png",
 	"name": "cops",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-cops",
 	"platform": "linux",
 	"ports": [
 		"8945:80/tcp"
@@ -36,5 +37,6 @@
 			"bind": "/portainer/Files/AppData/Config/Cops",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://blog.slucas.fr/projects/calibre-opds-php-server/"
 }

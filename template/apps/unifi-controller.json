@@ -20,6 +20,7 @@
 	"image64": "linuxserver/unifi-controller:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/unifi-icon.png",
 	"name": "unifi-controller",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-unifi-controller",
 	"platform": "linux",
 	"ports": [
 		"3478:3478/udp",
@@ -39,5 +40,6 @@
 			"bind": "/portainer/Files/AppData/Config/Unifi",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://ui.com/consoles"
 }

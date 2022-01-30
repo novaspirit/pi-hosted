@@ -24,6 +24,7 @@
 	"image64": "linuxserver/openvpn-as:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/openvpn-as-icon.png",
 	"name": "openvpn-as",
+	"officialDoc": "https://hub.docker.com/r/linuxserver/openvpn-as/",
 	"platform": "linux",
 	"ports": [
 		"943:943/tcp",
@@ -38,5 +39,6 @@
 			"bind": "/portainer/Files/AppData/Config/OpenVPN-AS",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://openvpn.net/access-server/"
 }

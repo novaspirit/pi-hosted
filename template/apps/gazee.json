@@ -21,6 +21,7 @@
 	"image64": "linuxserver/gazee:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gazee-logo.png",
 	"name": "gazee",
+	"officialDoc": "https://hub.docker.com/r/linuxserver/gazee",
 	"platform": "linux",
 	"ports": [
 		"4243:4242/tcp"
@@ -41,5 +42,6 @@
 			"bind": "/portainer/Files/AppData/Gazee",
 			"container": "/mylar"
 		}
-	]
+	],
+	"webpage": "https://github.com/hubbcaps/gazee"
 }

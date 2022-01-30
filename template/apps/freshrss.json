@@ -19,6 +19,7 @@
 	"image64": "freshrss/freshrss:arm",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/freshrss-icon.png",
 	"name": "freshrss",
+	"officialDoc": "https://github.com/FreshRSS/FreshRSS/tree/edge/Docker",
 	"platform": "linux",
 	"ports": [
 		"8132:80/tcp"
@@ -31,5 +32,6 @@
 			"bind": "/portainer/Files/AppData/Config/freshrss",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://www.freshrss.org/"
 }

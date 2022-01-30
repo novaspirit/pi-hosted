@@ -8,6 +8,7 @@
 	"image64": "benbusby/whoogle-search:0.6.0",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/whoogle.png",
 	"name": "whoogle",
+	"officialDoc": "https://github.com/benbusby/whoogle-search#g-manual-docker",
 	"platform": "linux",
 	"ports": [
 		"5001:5000/tcp"
@@ -15,10 +16,12 @@
 	"restart_policy": "unless-stopped",
 	"title": "Whoogle",
 	"type": 1,
+	"videoID": 11,
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/Whoogle",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://github.com/benbusby/whoogle-search"
 }

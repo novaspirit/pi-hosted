@@ -20,6 +20,7 @@
 	"image64": "linuxserver/mstream:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mstream.png",
 	"name": "mstream",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-mstream",
 	"platform": "linux",
 	"ports": [
 		"3200:3000/tcp"
@@ -36,5 +37,6 @@
 			"bind": "/portainer/Downloads",
 			"container": "/music"
 		}
-	]
+	],
+	"webpage": "https://mstream.io/"
 }

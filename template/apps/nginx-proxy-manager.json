@@ -33,12 +33,15 @@
 	],
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
 	"name": "nginx-proxy-manager",
+	"officialDoc": "https://nginxproxymanager.com/setup/#using-mysql-mariadb-database",
+	"piHostedDoc": "nginx_proxy_manager.md",
 	"platform": "linux",
 	"ports": [
 		"80:80/tcp",
 		"81:81/tcp",
 		"443:443/tcp"
 	],
+	"preInstallScript": "nginx-proxy-manager.sh",
 	"repository": {
 		"stackfile32": "stack/nginx-proxy-manager.yml",
 		"stackfile64": "stack/nginx-proxy-manager.yml",
@@ -46,5 +49,7 @@
 	},
 	"restart_policy": "unless-stopped",
 	"title": "Nginx Proxy Manager",
-	"type": 3
+	"type": 3,
+	"videoID": 9,
+	"webpage": "https://nginxproxymanager.com/"
 }

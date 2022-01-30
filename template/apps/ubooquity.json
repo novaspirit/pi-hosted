@@ -25,6 +25,7 @@
 	"image64": "linuxserver/ubooquity:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ubooquity-icon.png",
 	"name": "ubooquity",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-ubooquity",
 	"platform": "linux",
 	"ports": [
 		"2202:2202/tcp",
@@ -43,5 +44,6 @@
 		{
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://vaemendis.net/ubooquity/"
 }

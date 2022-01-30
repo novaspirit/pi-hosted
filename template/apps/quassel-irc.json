@@ -19,6 +19,7 @@
 	"image64": "linuxserver/quassel-core:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/quassel-core-icon.png",
 	"name": "quassel-core",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-quassel-core",
 	"platform": "linux",
 	"ports": [
 		"4242:4242/tcp"
@@ -31,5 +32,6 @@
 			"bind": "/portainer/Files/AppData/Config/Quassel-core",
 			"container": "/config"
 		}
-	]
+	],
+	"webpage": "https://quassel-irc.org/"
 }
