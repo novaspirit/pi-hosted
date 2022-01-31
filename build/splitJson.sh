@@ -1,8 +1,11 @@
 #!/bin/bash
 
-t32b='./portainer-v2-arm32.json'
-t64b='./portainer-v2-arm64.json'
-appinfo='../build/appinfo.json'
+t32b='../template/portainer-v2-arm32.json'
+t64b='../template/portainer-v2-arm64.json'
+appinfo='./appinfo.json'
+appsfolder='../template/apps'
+
+mkdir -p "$appsfolder"
 
 Napps=$( jq '.templates | length' "$t64b" )
 for app in $(seq 0 $(( Napps - 1 ))); do
@@ -10,7 +13,7 @@ for app in $(seq 0 $(( Napps - 1 ))); do
 	Title=$( echo "$info" | jq ".title" )
 	Type=$( echo "$info" | jq ".type" )
 
-	fileName="apps/$( echo "$Title" | tr -d '"' | tr '[:upper:]' '[:lower:]' | tr ' /' '--' ).json"
+	fileName="$appsfolder/$( echo "$Title" | tr -d '"' | tr '[:upper:]' '[:lower:]' | tr ' /' '--' ).json"
 
 	info=$( echo "$info" | sed 's/"image":/"image64":/g' | sed 's/"stackfile":/"stackfile64":/g' )
 
