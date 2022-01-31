@@ -3,12 +3,23 @@
 # Blank portainer template (32 and 64 bits)
 json32='{"version":"2","templates":[]}'
 json64='{"version":"2","templates":[]}'
-appinfo='../build/appinfo.json'
+
+# File variables
+appinfo='build/info.json'
+Oldtemplate32='template/portainer-v2-arm32.json'
+template32='template/portainer-v2-arm32.json'
+template64='pi-hosted_template/template/portainer-v2.json'
+
+# App info
 repo='https://github.com/pi-hosted/pi-hosted/blob/master/'
 header='<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href="https://github.com/pi-hosted/pi-hosted" target="_blank">https://github.com/pi-hosted/pi-hosted</a></b><br>'
 
+# Run script from base directory
+scriptDir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+cd "$scriptDir/.." || exit
+
 # Parsing all json files in apps folder
-for app in apps/*.json; do
+for app in template/apps/*.json; do
 	# Adding app template to 32 and 64 bits variables
 	appjson=$( cat "$app" )
 
@@ -18,70 +29,68 @@ for app in apps/*.json; do
 	[ "$note" == "null" ] && unset note
 	note=${note:1: -1}
 
-	# App Info
-	Title=$( echo "$appjson" | jq '.title' )
-	info=$( jq '.apps[] | select(.Title=='"$Title"')' "$appinfo" )
-
 	# Official Webpage
-	if oweb=$( echo "$info" | jq -e '.Web' | tr -d '"') ; then
-		oweb="<br><b>Official Webpage: </b><a href=\"$oweb\" target=\"_blank\">$oweb</a>"
+	if oweb=$( echo "$appjson" | jq -e '.webpage' ) ; then
+		oweb="<br><b>Official Webpage: </b><a href=\"${oweb:1:-1}\" target=\"_blank\">${oweb:1:-1}</a>"
+		appjson=$( echo "$appjson" | jq 'del(.webpage)' )
 	else
 		unset oweb
 	fi
 
 	# Official Documentation
-	if odoc=$( echo "$info" | jq -e '.OfficialDoc' | tr -d '"' ) ; then
-		odoc="<br><b>Official Docker Documentation: </b><a href=\"$odoc\" target=\"_blank\">$odoc</a>"
+	if odoc=$( echo "$appjson" | jq -e '.officialDoc' ) ; then
+		odoc="<br><b>Official Docker Documentation: </b><a href=\"${odoc:1:-1}\" target=\"_blank\">${odoc:1:-1}</a>"
+		appjson=$( echo "$appjson" | jq 'del(.officialDoc)' )
 	else
 		unset odoc
 	fi
 
 	# Pi-Hosted Documentation
-	if DocID=$( echo "$info" | jq -e '.DocID' ) ; then
-		DocURL=$( jq '.docs[] | select(.ID=='"$DocID"') | .File' "$appinfo" | tr -d '"')
-		DocURL="<br><b>Pi-Hosted dedicated documentation: </b><a href=\"${repo}docs/${DocURL}\" target=\"_blank\">$DocURL</a>"
+	if PHDoc=$( echo "$appjson" | jq -e '.piHostedDoc' ) ; then
+		PHDoc="<br><b>Pi-Hosted dedicated documentation: </b><a href=\"${repo}docs/${PHDoc:1:-1}\" target=\"_blank\">${PHDoc:1:-1}</a>"
+		appjson=$( echo "$appjson" | jq 'del(.piHostedDoc)' )
 	else
-		unset DocID DocURL
+		unset PHDoc
 	fi
 
-	if ScriptID=$( echo "$info" | jq -e '.ScriptID' ) ; then
-		ScriptURL=$( jq '.tools[] | select(.ID=='"$ScriptID"') | .File' "$appinfo" | tr -d '"')
-		ScriptURL="<br><b>Pre-installation script: </b><a href=\"${repo}tools/${ScriptURL}\" target=\"_blank\">$ScriptURL</a>"
+	if Script=$( echo "$appjson" | jq -e '.preInstallScript' ) ; then
+		Script="<br><b>Pre-installation script: </b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">${Script:1:-1}</a>"
+		appjson=$( echo "$appjson" | jq 'del(.preInstallScript)' )
 	else
-		unset ScriptID ScriptURL
+		unset Script
 	fi
 
-	if VideoID=$( echo "$info" | jq -e '.VideoID' ) ; then
+	if VideoID=$( echo "$appjson" | jq -e '.videoID' ) ; then
 		VideoURL=$( jq '.youtube[] | select(.ID=='"$VideoID"') | .URL' "$appinfo" )
 		VideoTitle=$( jq '.youtube[] | select(.ID=='"$VideoID"') | .Title' "$appinfo" | tr -d '"')
 		VideoURL="<br><b>Youtube Video: </b><a href=$VideoURL target=\"_blank\">$VideoTitle</a><br>"
+		appjson=$( echo "$appjson" | jq 'del(.videoID)' )
 	else
 		unset VideoID VideoURL
 	fi
 
-	if ExtraID=$( echo "$info" | jq -e '.ExtraID' ) ; then
+	if ExtraScript=$( echo "$appjson" | jq -e '.extraScript' ) ; then
+		appjson=$( echo "$appjson" | jq 'del(.extraScript)' )
 		# If only one entry
-		if [ "$(echo "$ExtraID" | wc -l )" == "1" ]; then
-			ExtraURL=$(jq ".tools[] | select(.ID==$ExtraID) | .File" "$appinfo" | tr -d '"')
-			ExtraURL="<br><b>Extra useful script: </b><a href=\"${repo}tools/${ExtraURL}\" target=\"_blank\">$ExtraURL</a>"
+		if [ "$(echo "$ExtraScript" | wc -l )" == "1" ]; then
+			ExtraHTML="<br><b>Extra useful script: </b><a href=\"${repo}tools/${ExtraScript:1:-1}\" target=\"_blank\">${ExtraScript:1:-1}</a>"
 
 		# If multiples entries
 		else
-			n_ext=$(echo "$ExtraID" | jq '. | length')
-			ExtraURL="<br><b>Extra useful scripts:</b><br><ul>"
+			n_ext=$(echo "$ExtraScript" | jq '. | length')
+			ExtraHTML="<br><b>Extra useful scripts:</b><br><ul>"
 			for n in $(seq 0 $(( n_ext - 1 ))); do
-				extID=$(echo "$ExtraID" | jq ".[$n]" | tr -d \")
-				ext=$(jq ".tools[] | select(.ID==$extID) | .File" "$appinfo" | tr -d '"')
-				ExtraURL="$ExtraURL<li><a href=\"${repo}tools/${ext}\" target=\"_blank\">$ext</a></li>"
+				ext=$(echo "$ExtraScript" | jq ".[$n]" | tr -d '"')
+				ExtraHTML="$ExtraHTML<li><a href=\"${repo}tools/${ext}\" target=\"_blank\">$ext</a></li>"
 			done
-			ExtraURL="$ExtraURL</ul>"
+			ExtraHTML="$ExtraHTML</ul>"
 		fi
 	else
-		unset ExtraURL ExtraID
+		unset ExtraHTML ExtraScript
 	fi
 
 	# Full Compiled Note
-	note="$header$oweb$odoc$DocURL<br>$ScriptURL$ExtraURL<br>$VideoURL<br>$note"
+	note="$header$oweb$odoc$PHDoc<br>$Script$ExtraHTML<br>$VideoURL<br>$note"
 
 	appjson=$( echo "$appjson" | jq --arg n "$note" '.note = $n' )
 
@@ -133,5 +142,9 @@ for app in apps/*.json; do
 	unset appjson32 appjson64 note
 done
 
-echo "$json32" | jq --tab '.templates |= sort_by(.title | ascii_upcase)' > port32.json
-echo "$json64" | jq --tab '.templates |= sort_by(.title | ascii_upcase)' > port64.json
+# Create Templates
+echo "$json32" | jq --tab '.templates |= sort_by(.title | ascii_upcase)' > "$template32"
+echo "$json64" | jq --tab '.templates |= sort_by(.title | ascii_upcase)' > "$template64"
+
+# Keep old template up to date
+cp -f "$template32" "$Oldtemplate32"
