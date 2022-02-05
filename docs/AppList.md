@@ -6,8 +6,8 @@ List of all apps included in this project with info related to it.
 
 |App Title|System|Type |Official<br>Doc|PiHosted<br>Doc|Install Script|Extra Scripts|Youtube Video|
 |:--------|:----:|:---:|:-------------:|:-------------:|:------------:|:------------|:-----------:|
-|[Airsonic](https://airsonic.github.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://airsonic.github.io/docs/install/docker/) |  |  |  |  |
 |[Airsonic Advanced](https://github.com/airsonic-advanced/airsonic-advanced)|64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-airsonic-advanced) |  |  |  |  |
+|[Airsonic](https://airsonic.github.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://airsonic.github.io/docs/install/docker/) |  |  |  |  |
 |[Archivebox](https://archivebox.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ArchiveBox/ArchiveBox/wiki/Docker) |  |  |  |  |
 |[Authelia](https://www.authelia.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://www.authelia.com/docs/configuration/) |  |  |  |  |
 |[Bazarr](https://www.bazarr.media/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.bazarr.media/Getting-Started/Installation/Docker/docker/) |  |  |  |  |
@@ -51,8 +51,8 @@ List of all apps included in this project with info related to it.
 |[Headphones](https://github.com/rembo10/headphones)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-headphones) |  |  |  |  |
 |[Heimdall](https://heimdall.site/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-heimdall) |  |  |  |  |
 |[Home Assistant](https://www.home-assistant.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://www.home-assistant.io/installation/raspberrypi#install-home-assistant-container) |  |  |  |  |
-|[Homebridge](https://homebridge.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |  |
 |[Homebridge - Debian](https://homebridge.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |  |
+|[Homebridge](https://homebridge.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |  |
 |[Homer](https://github.com/bastienwirtz/homer)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=_d3J88ootYo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=2) |
 |[HTPC Manager](https://htpc.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-htpcmanager) |  |  |  |  |
 |[Huginn](https://github.com/huginn/huginn)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/huginn/huginn/tree/master/docker) |  |  |  |  |
@@ -96,8 +96,8 @@ List of all apps included in this project with info related to it.
 |[Paperless](https://github.com/jonaswinkler/paperless-ng)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-paperless-ng) |  |  |  |  |
 |[PhotoPrism](https://photoprism.app/)|64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.photoprism.app/getting-started/docker-compose/) | [![](../build/images/red_doc_icon.png)](../docs/photoprism.md) | [![](../build/images/script_icon.png)](../tools/install_photoprism.sh) |  |  |
 |[PhotoShow](https://github.com/thibaud-rohmer/PhotoShow)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-photoshow) |  |  |  |  |
-|[Pi-Hole](https://pi-hole.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker) | [![](../build/images/red_doc_icon.png)](../docs/pi-hole.md) |  |  |  |
 |[Pi-Hole DoH/DoT](https://pi-hole.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oijkn/pihole-doh-dot) | [![](../build/images/red_doc_icon.png)](../docs/pi-hole.md) |  |  |  |
+|[Pi-Hole](https://pi-hole.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker) | [![](../build/images/red_doc_icon.png)](../docs/pi-hole.md) |  |  |  |
 |[Pi-Hole-Unbound](https://pi-hole.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/chriscrowe/docker-pihole-unbound/tree/master/one-container) | [![](../build/images/red_doc_icon.png)](../docs/pi-hole.md) |  |  |  |
 |[Piwigo](http://piwigo.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-piwigo) |  |  |  |  |
 |[Plex](https://www.plex.tv/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-plex) |  |  |  |  |
