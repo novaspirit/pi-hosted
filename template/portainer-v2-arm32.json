@@ -1911,6 +1911,11 @@
 					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
 				}
 			],
 			"image": "linuxserver/jackett:latest",
@@ -4877,7 +4882,7 @@
 			"image": "haugene/transmission-openvpn:3.7.1",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/transmission-icon.png",
 			"name": "transmission-openvpn",
-			"note": "List of supported providers available \u003ca href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/\u003ehere\u003c/a\u003e.",
+			"note": "List of supported providers available \u003ca href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/\u003ehere\u003c/a\u003e. Please also note that port forwarding with your router for peer ports has no affect, please refer to any documentation from your VPN provider about peer ports.",
 			"platform": "linux",
 			"ports": [
 				"9091:9091/tcp"
