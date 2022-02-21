@@ -11,7 +11,7 @@ git --version &> /dev/null || error "git is required, please install it with 'su
 sha256sum --version &> /dev/null || error "sha256sum is required, please install it with 'sudo apt install coreutils'"
 
 # Check if script from build or script from hook and cd into build folder
-scriptDir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null || pwd )"
+scriptDir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 if [ "$( echo "$scriptDir" | rev | cut -d/ -f1 | rev )" == "build" ]; then
 	cd -- "$scriptDir" &> /dev/null || exit
 else
