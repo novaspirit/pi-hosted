@@ -6,9 +6,9 @@ json64='{"version":"2","templates":[]}'
 
 # File variables
 appinfo='build/info.json'
-Oldtemplate32='template/portainer-v2-arm32.json'
+Oldtemplate32='pi-hosted_template/template/portainer-v2.json'
 template32='template/portainer-v2-arm32.json'
-template64='pi-hosted_template/template/portainer-v2.json'
+template64='template/portainer-v2-arm64.json'
 
 # App info
 repo='https://github.com/pi-hosted/pi-hosted/blob/master/'
