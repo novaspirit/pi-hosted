@@ -45,10 +45,9 @@ for vid in $(seq 0 $(( nVideos - 1 ))); do
 	TITLE=$( echo "$info" | jq '.Title' | tr -d '"' )
 
 	# Get Video Documentation
-	DocID=$( echo "$info" | jq '.DocID' )
-	if [ "$DocID" != "null" ] ; then
-		DocFile=$( jq ".docs[] | select(.ID==$DocID) | .File" "$appinfo" | tr -d '"' )
-		DocMD="[Install Doc]($Docs$DocFile)"
+	Doc=$( echo "$info" | jq '.Doc' | tr -d '"' )
+	if [ "$Doc" != "null" ] ; then
+		DocMD="[Install Doc]($Docs$Doc)"
 	else
 		unset DocMD
 	fi
