@@ -22,13 +22,25 @@ fi
 homedir='../'
 . env.sh
 
+# Variable to update
+doUpdate=false
+
+# Check if there is a new app
+CurrentNumOfApps=$( ls "$appsfolder" | wc -l )
+PreviousNumOfApps=$( head -n -1 "$verificationFile" | wc -l)
+[[ $CurrentNumOfApps -eq $PreviousNumOfApps ]] || doUpdate=true
+
 # Check if Template or appinfo has changed
-if ! sha256sum -c --quiet "$verificationFile" &> /dev/null ; then
+sha256sum -c --quiet "$verificationFile" &> /dev/null || doUpdate=true
+
+if $doUpdate ; then
+
 	# Make sure tmp folder exists
 	mkdir -p "$( dirname -- "$verificationFile" )"
 
 	echo "Updating documentation..."
 	# Run all scripts
+	./joinApps.sh
 	./generators/generateAppList.sh
 	./generators/generateDocList.sh
 	./generators/generateREADME.sh
@@ -36,11 +48,13 @@ if ! sha256sum -c --quiet "$verificationFile" &> /dev/null ; then
 	echo "Update finished"
 
 	# Update lastrun.sha256
-	sha256sum "$appinfo" "$pt32" "$pt64" > "$verificationFile" 
+	sha256sum "$appinfo" > "$verificationFile" 
+	find "$appsfolder" -type f -name '*.json' -exec sha256sum {} + >> "$verificationFile"
 
 	# Add files to stagging
 	git add -- "$README"
 	git add -- "$TOOLSREADME"
 	git add -- "$AppList"
 	git add -- "$DocList"
+
 fi
