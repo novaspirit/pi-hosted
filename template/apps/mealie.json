@@ -1,0 +1,84 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "A self-hosted recipe manager and meal planner",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "2",
+			"label": "WEB_CONCURRENCY",
+			"name": "WEB_CONCURRENCY"
+		},
+		{
+			"default": "8",
+			"label": "MAX_WORKERS",
+			"name": "MAX_WORKERS"
+		},
+		{
+			"default": "true",
+			"label": "RECIPE_PUBLIC",
+			"name": "RECIPE_PUBLIC"
+		},
+		{
+			"default": "true",
+			"label": "RECIPE_SHOW_NUTRITION",
+			"name": "RECIPE_SHOW_NUTRITION"
+		},
+		{
+			"default": "true",
+			"label": "RECIPE_SHOW_ASSETS",
+			"name": "RECIPE_SHOW_ASSETS"
+		},
+		{
+			"default": "true",
+			"label": "RECIPE_LANDSCAPE_VIEW",
+			"name": "RECIPE_LANDSCAPE_VIEW"
+		},
+		{
+			"default": "false",
+			"label": "RECIPE_DISABLE_COMMENTS",
+			"name": "RECIPE_DISABLE_COMMENTS"
+		},
+		{
+			"default": "false",
+			"label": "RECIPE_DISABLE_AMOUNT",
+			"name": "RECIPE_DISABLE_AMOUNT"
+		}
+	],
+	"image32": "hkotel/mealie:v0.4.3",
+	"image64": "hkotel/mealie:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mealie.png",
+	"name": "mealie",
+	"note": "Default Credentials: Username: changeme@email.com Password: MyPassword. Documentation is Available <a href='https://hay-kot.github.io/mealie/documentation/getting-started/install/'>here</a>.",
+	"officialDoc": "https://hay-kot.github.io/mealie/documentation/getting-started/install/",
+	"platform": "linux",
+	"ports": [
+		"9925:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Mealie",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/mealie",
+			"container": "/app/data"
+		}
+	],
+	"webpage": "https://hay-kot.github.io/mealie/"
+}

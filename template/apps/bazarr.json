@@ -1,0 +1,51 @@
+{
+	"categories": [
+		"Video",
+		"Music"
+	],
+	"description": "Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		}
+	],
+	"image32": "linuxserver/bazarr:latest",
+	"image64": "linuxserver/bazarr:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bazarr.png",
+	"name": "bazarr",
+	"officialDoc": "https://wiki.bazarr.media/Getting-Started/Installation/Docker/docker/",
+	"platform": "linux",
+	"ports": [
+		"6767:6767/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Bazarr",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Bazarr",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/TV",
+			"container": "/tv"
+		},
+		{
+			"bind": "/portainer/Movies",
+			"container": "/movies"
+		}
+	],
+	"webpage": "https://www.bazarr.media/"
+}

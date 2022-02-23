@@ -1,0 +1,34 @@
+{
+	"categories": [
+		"Other",
+		"Tools",
+		"Games"
+	],
+	"description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
+	"env": [
+		{
+			"default": "TRUE",
+			"label": "EULA",
+			"name": "EULA"
+		}
+	],
+	"image32": "itzg/minecraft-server:latest",
+	"image64": "itzg/minecraft-server:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/minecraft.png",
+	"name": "minecraft",
+	"officialDoc": "https://github.com/itzg/docker-minecraft-server#using-docker-compose",
+	"platform": "linux",
+	"ports": [
+		"25565:25565/tcp"
+	],
+	"restart_polocy": "unless-stopped",
+	"title": "Minecraft Server",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Minecraft-data",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://www.minecraft.net/en-us"
+}

@@ -37,10 +37,9 @@ for tool in $(seq 0 $(( nTools - 1 ))); do
 	fi
 
 	# Get Tool Installation Doc
-	DocID=$( echo "$info" | jq '.DocID')
-	if [ "$DocID" != "null" ]; then
-		DocFile=$(jq ".docs[] | select(.ID==$DocID) | .File" "$appinfo" | tr -d '"')
-		DocLink="[Documentation]($Docs$DocFile)"
+	Doc=$( echo "$info" | jq '.Doc' | tr -d '"' )
+	if [ "$Doc" != "null" ]; then
+		DocLink="[Documentation]($Docs$Doc)"
 	else
 		unset DocLink
 	fi

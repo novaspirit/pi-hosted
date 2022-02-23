@@ -1,0 +1,37 @@
+{
+	"categories": [
+		"Messenger"
+	],
+	"description": "A self-hosted web IRC client",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/thelounge:latest",
+	"image64": "linuxserver/thelounge:latest",
+	"logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
+	"name": "thelounge",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-thelounge",
+	"platform": "linux",
+	"ports": [
+		"9500:9000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "TheLounge",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/TheLounge",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://thelounge.chat/"
+}

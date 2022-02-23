@@ -1,0 +1,26 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "An alternative private front-end to Reddit",
+	"image32": "spikecodes/libreddit:armv7",
+	"image64": "spikecodes/libreddit:arm",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/libreddit.png",
+	"name": "libreddit",
+	"officialDoc": "https://github.com/spikecodes/libreddit#2-docker",
+	"platform": "linux",
+	"ports": [
+		"8088:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "libreddit",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/libreddit",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://libreddit.silkky.cloud/"
+}

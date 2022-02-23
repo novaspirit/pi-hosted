@@ -1,0 +1,48 @@
+{
+	"categories": [
+		"Music",
+		"Other",
+		"Tools"
+	],
+	"description": " MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
+	"env": [
+		{
+			"default": "",
+			"label": "BRAINZCODE",
+			"name": "BRAINZCODE"
+		},
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/musicbrainz:latest",
+	"image64": "linuxserver/musicbrainz:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/musicbrainz-icon.png",
+	"name": "musicbrainz",
+	"officialDoc": "https://github.com/linuxserver-archive/docker-musicbrainz",
+	"platform": "linux",
+	"ports": [
+		"5000:5000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "MusicBrainz",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/MusicBrainz",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Files/AppData/MusicBrainz",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://musicbrainz.org/"
+}

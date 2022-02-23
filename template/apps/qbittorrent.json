@@ -1,0 +1,43 @@
+{
+	"categories": [
+		"Downloaders"
+	],
+	"description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/qbittorrent:latest",
+	"image64": "linuxserver/qbittorrent:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/qbittorrent-icon.png",
+	"name": "qbittorrent",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-qbittorrent",
+	"platform": "linux",
+	"ports": [
+		"6881:6881/tcp",
+		"6881:6881/udp",
+		"8080:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "qBittorrent",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/qBittorrent",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/downloads"
+		}
+	],
+	"webpage": "https://www.qbittorrent.org/"
+}

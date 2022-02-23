@@ -1,0 +1,39 @@
+{
+	"categories": [
+		"Video"
+	],
+	"description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "lsioarmhf/kodi-headless:latest",
+	"image64": "lsioarmhf/kodi-headless:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/kodi-icon.png",
+	"name": "kodi-headless",
+	"officialDoc": "https://hub.docker.com/r/lsioarmhf/kodi-headless-aarch64/",
+	"platform": "linux",
+	"ports": [
+		"8081:8080/tcp",
+		"9090:9090/tcp",
+		"9777:9777/udp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Kodi Headless",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Kodi",
+			"container": "/config/.kodi"
+		}
+	],
+	"webpage": "https://kodi.tv/"
+}

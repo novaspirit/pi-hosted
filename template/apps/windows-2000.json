@@ -1,0 +1,30 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "A Docker image for Windows 2000 Advanced Server with SP4.",
+	"image32": "hectormolinero/qemu-win2000:latest",
+	"image64": "hectormolinero/qemu-win2000:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/win2000.png",
+	"name": "win2000",
+	"note": "Why? Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should. -- Dr. Ian Malcolm",
+	"officialDoc": "https://github.com/hectorm/docker-qemu-win2000#start-an-instance",
+	"platform": "linux",
+	"ports": [
+		"3389:3389/tcp",
+		"5900:5900/tcp",
+		"6080:6080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Windows 2000",
+	"type": 1,
+	"videoID": 12,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Win2000/zdrive",
+			"container": "/mnt"
+		}
+	],
+	"webpage": "https://github.com/hectorm/docker-qemu-win2000"
+}

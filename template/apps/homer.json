@@ -1,0 +1,44 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "GID",
+			"name": "GID"
+		},
+		{
+			"default": "1000",
+			"label": "UID",
+			"name": "UID"
+		}
+	],
+	"image32": "b4bz/homer:latest",
+	"image64": "b4bz/homer:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homer.png",
+	"name": "homer",
+	"note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
+	"officialDoc": "https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md",
+	"platform": "linux",
+	"ports": [
+		"8902:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Homer",
+	"type": 1,
+	"videoID": 2,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Homer/assets",
+			"container": "/www/assets"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Homer",
+			"container": "/www/config.yml"
+		}
+	],
+	"webpage": "https://github.com/bastienwirtz/homer"
+}

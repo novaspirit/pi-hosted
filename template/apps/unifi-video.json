@@ -1,0 +1,59 @@
+{
+	"categories": [
+		"CCTV"
+	],
+	"description": "UniFi Video is a powerful and flexible, integrated IP video management surveillance system designed to work with Ubiquiti’s UniFi Video Camera product line. UniFi Video has an intuitive, configurable, and feature‑packed user interface with advanced features such as motion detection, auto‑discovery, user‑level security, storage management, reporting, and mobile device support.",
+	"env": [
+		{
+			"default": "99",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "002",
+			"label": "UMASK",
+			"name": "UMASK"
+		},
+		{
+			"default": "UniFi Video",
+			"label": "CONTEXT_PATH",
+			"name": "CONTEXT_PATH"
+		}
+	],
+	"image32": "pducharme/unifi-video-controller:latest",
+	"image64": "pducharme/unifi-video-controller:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/unifivideo-icon.png",
+	"name": "UniFi Video",
+	"officialDoc": "https://github.com/pducharme/UniFi-Video-Controller",
+	"platform": "linux",
+	"ports": [
+		"1935:1935/tcp",
+		"7444:7444/tcp",
+		"7447:7447/tcp",
+		"6666:6666/tcp",
+		"7442:7442/tcp",
+		"7080:7080/tcp",
+		"7443:7443/tcp",
+		"7445:7445/tcp",
+		"7446:7446/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "UniFi Video",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/UnifFiVideo/Recordings/",
+			"container": "/recordings"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/UniFiVideo/",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://github.com/pducharme/UniFi-Video-Controller"
+}

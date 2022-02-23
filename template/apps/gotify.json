@@ -1,0 +1,44 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "A simple server for sending and receiving messages",
+	"env": [
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "admin",
+			"label": "GOTIFY_DEFAULTUSER_NAME",
+			"name": "GOTIFY_DEFAULTUSER_NAME"
+		},
+		{
+			"default": "admin123",
+			"label": "GOTIFY_DEFAULTUSER_PASS",
+			"name": "GOTIFY_DEFAULTUSER_PASS"
+		}
+	],
+	"image32": "gotify/server-arm7:latest",
+	"image64": "gotify/server-arm64:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gotify.png",
+	"name": "gotify",
+	"note": "ARM7 Image. Documentation is Available <a href='https://gotify.net/docs/index'>here</a>.",
+	"officialDoc": "https://gotify.net/docs/install",
+	"platform": "linux",
+	"ports": [
+		"9008:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Gotify",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/gotify",
+			"container": "/app/data"
+		}
+	],
+	"webpage": "https://gotify.net/"
+}

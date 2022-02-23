@@ -1,0 +1,59 @@
+{
+	"categories": [
+		"Cloud",
+		"Web",
+		"Management",
+		"Photos"
+	],
+	"description": "Lychee With Mariadb is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "lychee",
+			"label": "DATABASE_NAME",
+			"name": "DATABASE_NAME"
+		},
+		{
+			"default": "lychee",
+			"label": "DATABASE_USER",
+			"name": "DATABASE_USER"
+		},
+		{
+			"default": "",
+			"label": "DATABASE_PASSWORD",
+			"name": "DATABASE_PASSWORD"
+		},
+		{
+			"default": "",
+			"label": "MYSQL_ROOT_PASSWORD",
+			"name": "MYSQL_ROOT_PASSWORD"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lychee-icon.png",
+	"name": "lychee-mariadb",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-lychee",
+	"platform": "linux",
+	"repository": {
+		"stackfile32": "stack/lychee-mariadb.yml",
+		"stackfile64": "stack/lychee-mariadb.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted/"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Lychee With Mariadb",
+	"type": 3,
+	"webpage": "https://lycheeorg.github.io/"
+}

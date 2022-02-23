@@ -1,0 +1,74 @@
+{
+	"categories": [
+		"Tools",
+		"Web"
+	],
+	"description": "[DEPRECATED] This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd &lt;username&gt;",
+	"env": [
+		{
+			"default": "-Xms256m -Xmx512m",
+			"label": "EMAIL",
+			"name": "EMAIL"
+		},
+		{
+			"default": "-Xms256m -Xmx512m",
+			"label": "URL",
+			"name": "URL"
+		},
+		{
+			"default": "www,",
+			"label": "SUBDOMAINS",
+			"name": "SUBDOMAINS"
+		},
+		{
+			"default": "false",
+			"label": "ONLY_SUBDOMAINS",
+			"name": "ONLY_SUBDOMAINS"
+		},
+		{
+			"default": "2048",
+			"label": "DHLEVEL",
+			"name": "DHLEVEL"
+		},
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "http",
+			"label": "VALIDATION",
+			"name": "VALIDATION"
+		},
+		{
+			"default": "http",
+			"label": "DNSPLUGIN",
+			"name": "DNSPLUGIN"
+		}
+	],
+	"image32": "linuxserver/letsencrypt:latest",
+	"image64": "linuxserver/letsencrypt:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/letsencrypt.png",
+	"name": "letsencrypt",
+	"officialDoc": "https://hub.docker.com/r/linuxserver/letsencrypt",
+	"platform": "linux",
+	"ports": [
+		"80:80/tcp",
+		"443:443/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Let's Encrypt",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/LetsEncrypt",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://letsencrypt.org/"
+}

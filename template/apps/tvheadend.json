@@ -1,0 +1,42 @@
+{
+	"categories": [
+		"Video",
+		"Other"
+	],
+	"description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT&gt;IP and HDHomeRun as input sources.\r\nTvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT&gt;IP streaming.\r\nMultiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/tvheadend:latest",
+	"image64": "linuxserver/tvheadend:latest",
+	"logo": "http://i.imgur.com/zGSUAT4.png",
+	"name": "tvheadend",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-tvheadend",
+	"platform": "linux",
+	"ports": [
+		"9981:9981/tcp",
+		"9982:9982/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Tvheadend",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/TVHeadend",
+			"container": "/config"
+		},
+		{
+			"container": "/recordings"
+		}
+	],
+	"webpage": "https://tvheadend.org/"
+}

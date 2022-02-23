@@ -1,0 +1,47 @@
+{
+	"categories": [
+		"Downloaders"
+	],
+	"description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more...",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "022",
+			"label": "UMASK",
+			"name": "UMASK"
+		}
+	],
+	"image32": "linuxserver/deluge:latest",
+	"image64": "linuxserver/deluge:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/deluge-icon.png",
+	"name": "deluge",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-deluge",
+	"platform": "linux",
+	"ports": [
+		"6881:6881/tcp",
+		"8112:8112/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Deluge",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Deluge",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/downloads"
+		}
+	],
+	"webpage": "https://www.deluge-torrent.org/"
+}

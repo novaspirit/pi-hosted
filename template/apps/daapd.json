@@ -1,0 +1,41 @@
+{
+	"categories": [
+		"Music"
+	],
+	"description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/daapd:latest",
+	"image64": "linuxserver/daapd:latest",
+	"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-icon.png",
+	"name": "daapd",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-daapd",
+	"platform": "linux",
+	"ports": [
+		"3689:3689/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Daapd",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Daapd",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Music",
+			"container": "/music"
+		}
+	],
+	"webpage": "https://owntone.github.io/owntone-server/"
+}

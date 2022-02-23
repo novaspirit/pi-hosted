@@ -1,0 +1,69 @@
+{
+	"categories": [
+		"Cloud",
+		"Web",
+		"Management",
+		"Photos"
+	],
+	"description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "mariadb",
+			"label": "DB_HOST",
+			"name": "DB_HOST"
+		},
+		{
+			"default": "lychee",
+			"label": "DB_USERNAME",
+			"name": "DB_USERNAME"
+		},
+		{
+			"default": "dbpassword_that_was_set_in_lychee-mariadb",
+			"label": "DB_PASSWORD",
+			"name": "DB_PASSWORD"
+		},
+		{
+			"default": "lychee",
+			"label": "DB_DATABASE",
+			"name": "DB_DATABASE"
+		},
+		{
+			"default": "3306",
+			"label": "DB_PORT",
+			"name": "DB_PORT"
+		}
+	],
+	"image32": "linuxserver/lychee:arm32v7-latest",
+	"image64": "linuxserver/lychee:arm64v8-latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lychee-icon.png",
+	"name": "lychee",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-lychee",
+	"platform": "linux",
+	"ports": [
+		"84:84/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Lychee",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Lychee",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Pictures",
+			"container": "/pictures"
+		}
+	],
+	"webpage": "https://lycheeorg.github.io/"
+}

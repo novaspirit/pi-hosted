@@ -1,0 +1,31 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "InfluxDB is an open source time series database for recording metrics, events, and analytics. You will need to add /portainer/Files/AppData/Config/Influxdb/config/influxdb.conf",
+	"hostname": "rpi-influxdb1810",
+	"image32": "influxdb:1.8.10",
+	"image64": "influxdb:1.8.10",
+	"logo": "https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/influxdb/logo.png",
+	"name": "influxdb1810",
+	"officialDoc": "https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker",
+	"platform": "linux",
+	"ports": [
+		"8086:8086/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Influxdb 1.8.10",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Influxdb/data",
+			"container": "/var/lib/influxdb"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Influxdb/config",
+			"container": "/var/lib/influxdb"
+		}
+	],
+	"webpage": "https://www.influxdata.com/"
+}

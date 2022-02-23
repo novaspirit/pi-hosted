@@ -1,0 +1,75 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole. This version has Ubound software installed on it so you don't need to rely on external DNS providers.",
+	"env": [
+		{
+			"default": "192.168.0.X",
+			"description": "Insert the Raspberry Pi IP here",
+			"label": "ServerIP",
+			"name": "ServerIP"
+		},
+		{
+			"default": "Europe\\London",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"label": "DNSSEC",
+			"name": "DNSSEC",
+			"select": [
+				{
+					"default": true,
+					"text": "Enable DNSSEC",
+					"value": "true"
+				},
+				{
+					"text": "Disable DNSSEC",
+					"value": "false"
+				}
+			]
+		},
+		{
+			"default": "127.0.0.1#5335",
+			"label": "DNS1",
+			"name": "DNS1",
+			"preset": true
+		},
+		{
+			"default": "127.0.0.1#5335",
+			"label": "DNS2",
+			"name": "DNS2",
+			"preset": true
+		}
+	],
+	"image32": "cbcrowe/pihole-unbound:latest",
+	"image64": "cbcrowe/pihole-unbound:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pihole-unbound.png",
+	"name": "pihole-unbound",
+	"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53. For extra information on this container visit the mainteiner <a href='https://github.com/chriscrowe/docker-pihole-unbound/tree/master/one-container'>GitHub Page</a>. You can add ports: 5335 to access Ubound externally; 22 to enable SSH; 67 to use DHCP Server. Add those ports in Show advanced options.",
+	"officialDoc": "https://github.com/chriscrowe/docker-pihole-unbound/tree/master/one-container",
+	"piHostedDoc": "pi-hole.md",
+	"platform": "linux",
+	"ports": [
+		"53:53/tcp",
+		"53:53/udp",
+		"1010:80/tcp",
+		"4443:443/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Pi-Hole-Unbound",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/PiHole-Unbound",
+			"container": "/etc/pihole"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/PiHole-Unbound/DNS",
+			"container": "/etc/dnsmasq.d"
+		}
+	],
+	"webpage": "https://pi-hole.net/"
+}

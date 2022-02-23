@@ -1,0 +1,42 @@
+{
+	"categories": [
+		"Other",
+		"Downloaders"
+	],
+	"description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
+	"image32": "tzahi12345/youtubedl-material:latest",
+	"image64": "tzahi12345/youtubedl-material:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ytdlm.png",
+	"name": "youtubedl-material",
+	"officialDoc": "https://github.com/Tzahi12345/YoutubeDL-Material#docker",
+	"platform": "linux",
+	"ports": [
+		"17442:17442/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "YouTubeDL-Material",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/YTDLM",
+			"container": "/app/appdata"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Youtube/Video",
+			"container": "/app/video"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Youtube/Subscriptions",
+			"container": "/app/subscriptions"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Youtube/Users",
+			"container": "/app/users"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Youtube/Audio",
+			"container": "/app/audio"
+		}
+	],
+	"webpage": "https://github.com/Tzahi12345/YoutubeDL-Material"
+}

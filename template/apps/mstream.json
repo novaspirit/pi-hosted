@@ -1,0 +1,42 @@
+{
+	"categories": [
+		"Other",
+		"Music"
+	],
+	"description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/mstream:latest",
+	"image64": "linuxserver/mstream:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mstream.png",
+	"name": "mstream",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-mstream",
+	"platform": "linux",
+	"ports": [
+		"3200:3000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Mstream",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Mstream",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/music"
+		}
+	],
+	"webpage": "https://mstream.io/"
+}

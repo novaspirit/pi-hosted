@@ -1,0 +1,45 @@
+{
+	"categories": [
+		"Cloud",
+		"Productivity",
+		"Tools",
+		"Web"
+	],
+	"description": "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data!\n  ",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "privatebin/nginx-fpm-alpine:latest",
+	"image64": "privatebin/nginx-fpm-alpine:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/privatebin.png",
+	"name": "privatebin",
+	"officialDoc": "https://hub.docker.com/r/privatebin/nginx-fpm-alpine",
+	"platform": "linux",
+	"ports": [
+		"8080:8080/tcp"
+	],
+	"privileged": true,
+	"restart_policy": "unless-stopped",
+	"title": "PrivateBin",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/PrivateBin",
+			"container": "/srv/data"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/PrivateBin",
+			"container": "/srv/cfg"
+		}
+	],
+	"webpage": "https://privatebin.info/"
+}

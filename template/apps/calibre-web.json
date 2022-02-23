@@ -1,0 +1,42 @@
+{
+	"categories": [
+		"Cloud",
+		"Books"
+	],
+	"description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.\n\n  [br][br]\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\n  [b]/config[/b] Where Calibre-web should store it's database[br]\n  [b]/books[/b] Path to your calibre library metadata.db file[br]",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/calibre-web:latest",
+	"image64": "linuxserver/calibre-web:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/calibre-web-icon.png",
+	"name": "calibre-web",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-calibre-web",
+	"platform": "linux",
+	"ports": [
+		"8083:8083/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Calibre Web",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Books",
+			"container": "/books"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Calibre-web",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://calibre-ebook.com/"
+}

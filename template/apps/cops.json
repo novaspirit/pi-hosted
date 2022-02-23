@@ -1,0 +1,42 @@
+{
+	"categories": [
+		"Cloud",
+		"Books"
+	],
+	"description": "COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/cops:latest",
+	"image64": "linuxserver/cops:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/cops-icon.png",
+	"name": "cops",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-cops",
+	"platform": "linux",
+	"ports": [
+		"8945:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "COPS",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Books",
+			"container": "/books"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Cops",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://blog.slucas.fr/projects/calibre-opds-php-server/"
+}

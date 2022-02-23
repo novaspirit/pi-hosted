@@ -1,0 +1,52 @@
+{
+	"categories": [
+		"Cloud",
+		"Productivity",
+		"Tools",
+		"Other",
+		"Web"
+	],
+	"description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"label": "DATABASE_PASSWORD",
+			"name": "DATABASE_PASSWORD"
+		},
+		{
+			"label": "MYSQL_ROOT_PASSWORD",
+			"name": "MYSQL_ROOT_PASSWORD"
+		},
+		{
+			"label": "PORT",
+			"name": "PORT"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nextcloud-icon.png",
+	"name": "nextcloud",
+	"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-nextcloud",
+	"platform": "linux",
+	"repository": {
+		"stackfile32": "stack/nextcloud.yml",
+		"stackfile64": "stack/nextcloud.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted"
+	},
+	"title": "Nextcloud",
+	"type": 3,
+	"webpage": "https://nextcloud.com/"
+}

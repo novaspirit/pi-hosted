@@ -1,0 +1,39 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "Open-Source Privacy-respecting metasearch engine",
+	"env": [
+		{
+			"default": "http://localhost:9017",
+			"label": "BASE_URL",
+			"name": "BASE_URL"
+		},
+		{
+			"default": "my-instance",
+			"label": "INSTANCE_NAME",
+			"name": "INSTANCE_NAME"
+		}
+	],
+	"image32": "searxng/searxng:latest",
+	"image64": "searxng/searxng:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/searx.png",
+	"name": "SearXNG",
+	"officialDoc": "https://docs.searxng.org/admin/installation-docker.html",
+	"piHostedDoc": "searxng.md",
+	"platform": "linux",
+	"ports": [
+		"9017:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "SearXNG",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/searxng",
+			"container": "/etc/searxng"
+		}
+	],
+	"webpage": "https://docs.searxng.org/"
+}

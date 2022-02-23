@@ -1,0 +1,48 @@
+{
+	"categories": [
+		"Other",
+		"Games"
+	],
+	"description": "This docker image provides the FoundryVTT system for hosting your own virtual table top games.",
+	"env": [
+		{
+			"default": "John",
+			"label": "Foundry Account Name",
+			"name": "FOUNDRY_USERNAME"
+		},
+		{
+			"default": "password",
+			"label": "Foundry Password",
+			"name": "FOUNDRY_PASSWORD"
+		},
+		{
+			"default": "changeme",
+			"label": "Instance Admin Password",
+			"name": "FOUNDRY_ADMIN_KEY"
+		},
+		{
+			"default": "true",
+			"label": "CONTAINER_PRESERVE_CONFIG",
+			"name": "CONTAINER_PRESERVE_CONFIG"
+		}
+	],
+	"image32": "felddy/foundryvtt:release",
+	"image64": "felddy/foundryvtt:release",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/foundrylogo.png",
+	"name": "FoundryVTT",
+	"officialDoc": "https://hub.docker.com/r/felddy/foundryvtt",
+	"platform": "linux",
+	"ports": [
+		"30000:30000/tcp"
+	],
+	"restart_polocy": "unless-stopped",
+	"title": "FoundryVTT Server",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/foundryvtt",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://foundryvtt.com/"
+}

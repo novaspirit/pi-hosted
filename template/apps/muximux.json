@@ -1,0 +1,40 @@
+{
+	"categories": [
+		"Web",
+		"Proxy",
+		"Other",
+		"Tools"
+	],
+	"description": "A lightweight portal to view, manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to keep multiple tabs open, or bookmark the URL to all of your apps.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/muximux:latest",
+	"image64": "linuxserver/muximux:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/muximux-icon.png",
+	"name": "muximux",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-muximux",
+	"platform": "linux",
+	"ports": [
+		"7205:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Muximux",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Muximux",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://github.com/mescon/Muximux"
+}

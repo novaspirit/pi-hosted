@@ -1,0 +1,36 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
+	"image32": "pihole/pihole:latest",
+	"image64": "pihole/pihole:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pihole.png",
+	"name": "pihole",
+	"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53.",
+	"officialDoc": "https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker",
+	"piHostedDoc": "pi-hole.md",
+	"platform": "linux",
+	"ports": [
+		"53:53/tcp",
+		"53:53/udp",
+		"67:67/udp",
+		"1010:80/tcp",
+		"4443:443/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Pi-Hole",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/PiHole",
+			"container": "/etc/pihole"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/PiHole/DNS",
+			"container": "/etc/dnsmasq.d"
+		}
+	],
+	"webpage": "https://pi-hole.net/"
+}

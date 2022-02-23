@@ -1,0 +1,39 @@
+{
+	"categories": [
+		"Tools",
+		"Web",
+		"Other"
+	],
+	"description": "Run a Speedtest every hour and graph the results.  See https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags for arch options",
+	"env": [
+		{
+			"default": "latest-arm",
+			"label": "arch",
+			"name": "arch"
+		},
+		{
+			"default": "true",
+			"label": "OOKLA_EULA_GDPR",
+			"name": "OOKLA_EULA_GDPR"
+		}
+	],
+	"image32": "henrywhitaker3/speedtest-tracker:dev-arm",
+	"image64": "henrywhitaker3/speedtest-tracker:dev-arm",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/speedtest-tracker.png",
+	"name": "speedtest-tracker",
+	"officialDoc": "https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker",
+	"platform": "linux",
+	"ports": [
+		"8765:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Speedtest Tracker",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/speedtest-tracker",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://github.com/henrywhitaker3/Speedtest-Tracker"
+}

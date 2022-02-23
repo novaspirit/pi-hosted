@@ -1,0 +1,52 @@
+{
+	"categories": [
+		"HomeAutomation"
+	],
+	"description": "Homebridge allows you to integrate with smart home devices that do not natively support HomeKit. There are over 2,000 Homebridge plugins supporting thousands of different smart accessories.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1",
+			"label": "HOMEBRIDGE_CONFIG_UI",
+			"name": "HOMEBRIDGE_CONFIG_UI"
+		},
+		{
+			"default": "8581",
+			"label": "HOMEBRIDGE_CONFIG_UI_PORT",
+			"name": "HOMEBRIDGE_CONFIG_UI_PORT"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		}
+	],
+	"image32": "oznu/homebridge:latest",
+	"image64": "oznu/homebridge:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homebridge.png",
+	"name": "homebridge",
+	"network": "host",
+	"note": "Bringing HomeKit support where there is none",
+	"officialDoc": "https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker",
+	"platform": "linux",
+	"privileged": true,
+	"restart_policy": "unless-stopped",
+	"title": "Homebridge",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/homebridge",
+			"container": "/homebridge"
+		}
+	],
+	"webpage": "https://homebridge.io/"
+}

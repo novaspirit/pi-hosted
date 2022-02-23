@@ -1,0 +1,35 @@
+{
+	"categories": [
+		"Video",
+		"Other",
+		"Tools"
+	],
+	"description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.\n\n  The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.\n  ",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/minisatip:latest",
+	"image64": "linuxserver/minisatip:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/minisatip-icon.png",
+	"name": "minisatip",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-minisatip",
+	"platform": "linux",
+	"ports": [
+		"8875:8875/tcp",
+		"554:554/tcp",
+		"1900:1900/udp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Minisatip",
+	"type": 1,
+	"webpage": "https://github.com/catalinii/minisatip"
+}

@@ -1,0 +1,42 @@
+{
+	"categories": [
+		"Other"
+	],
+	"description": "Rdesktop is an Ubuntu based container containing full desktop environments in officially supported flavors accessible via RDP.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		}
+	],
+	"image32": "linuxserver/rdesktop:latest",
+	"image64": "linuxserver/rdesktop:arm64v8-latest",
+	"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/rdesktop.png",
+	"name": "rdesktop",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-rdesktop",
+	"platform": "linux",
+	"ports": [
+		"3389:3389/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "RDesktop",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/RDesktop/config",
+			"container": "/config"
+		}
+	],
+	"webpage": "http://xrdp.org/"
+}

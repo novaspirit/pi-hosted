@@ -1,0 +1,37 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "Flame is self-hosted startpage for your server. Its design is inspired (heavily) by SUI. Flame is very easy to setup and use. With built-in editors, it allows you to setup your very own application hub in no time - no file editing necessary.",
+	"env": [
+		{
+			"default": "",
+			"label": "Flame Password",
+			"name": "PASSWORD"
+		}
+	],
+	"image32": "pawelmalak/flame:multiarch",
+	"image64": "pawelmalak/flame:multiarch",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/flame.png",
+	"name": "Flame",
+	"officialDoc": "https://github.com/pawelmalak/flame#with-docker-recommended",
+	"platform": "linux",
+	"ports": [
+		"5005:5005/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Flame",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Flame/data",
+			"container": "/app/data"
+		},
+		{
+			"bind": "/var/run/docker.sock",
+			"container": "/var/run/docker.sock"
+		}
+	],
+	"webpage": "https://github.com/pawelmalak/flame"
+}

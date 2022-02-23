@@ -1,0 +1,45 @@
+{
+	"categories": [
+		"Management",
+		"Tools"
+	],
+	"description": null,
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/unifi-controller:latest",
+	"image64": "linuxserver/unifi-controller:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/unifi-icon.png",
+	"name": "unifi-controller",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-unifi-controller",
+	"platform": "linux",
+	"ports": [
+		"3478:3478/udp",
+		"10001:10001/udp",
+		"8080:8080/tcp",
+		"8081:8081/tcp",
+		"8443:8443/tcp",
+		"8843:8843/tcp",
+		"8880:8880/tcp",
+		"6789:6789/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "UniFi Controller",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Unifi",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://ui.com/consoles"
+}

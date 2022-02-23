@@ -1,0 +1,25 @@
+{
+	"categories": [
+		"Monitor",
+		"Tools"
+	],
+	"description": "Monitor your Unifi Controller using Grafana developed by oijkn for the Raspberry Pi Monitor.",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/unpoller-logo.png",
+	"name": "UnPoller Unifi Controller Monitor",
+	"officialDoc": "https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md",
+	"piHostedDoc": "UnPoller-Monitor.md",
+	"platform": "linux",
+	"ports": [
+		"8086:8086/tcp"
+	],
+	"preInstallScript": "unpoller-install.sh",
+	"repository": {
+		"stackfile32": "stack/unpoller-stack.yml",
+		"stackfile64": "stack/unpoller-stack.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "UnPoller Monitor",
+	"type": 3,
+	"webpage": "https://unpoller.com/"
+}

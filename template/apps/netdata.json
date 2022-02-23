@@ -1,0 +1,63 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "Troubleshoot slowdowns and anomalies in your infrastructure with thousands of per-second metrics, meaningful visualizations, and insightful health alarms with zero configuration.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "DOCKER_USR",
+			"name": "DOCKER_USR"
+		},
+		{
+			"default": "1000",
+			"label": "DOCKER_GRP",
+			"name": "DOCKER_GRP"
+		}
+	],
+	"image32": "netdata/netdata:latest",
+	"image64": "netdata/netdata:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/netdata.png",
+	"name": "netdata",
+	"note": "Documentation is Available <a href='https://learn.netdata.cloud/'>here</a>.",
+	"officialDoc": "https://learn.netdata.cloud/docs/agent/packaging/docker",
+	"platform": "linux",
+	"ports": [
+		"19999:19999/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Netdata",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/netdata/netdataconfig",
+			"container": "/etc/netdata"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/netdata/netdatalib",
+			"container": "/var/lib/netdata"
+		},
+		{
+			"bind": "/etc/passwd",
+			"container": "/host/etc/passwd:ro"
+		},
+		{
+			"bind": "/etc/group",
+			"container": "/host/etc/group:ro"
+		},
+		{
+			"bind": "/proc",
+			"container": "/host/proc:ro"
+		},
+		{
+			"bind": "/sys",
+			"container": "/host/sys:ro"
+		},
+		{
+			"bind": "/etc/os-release",
+			"container": "/host/etc/os-release:ro"
+		}
+	],
+	"webpage": "https://www.netdata.cloud/"
+}

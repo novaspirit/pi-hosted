@@ -1,0 +1,49 @@
+{
+	"categories": [
+		"Cloud",
+		"Books"
+	],
+	"description": "Ubooquity is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.",
+	"env": [
+		{
+			"default": "512",
+			"label": "MAXMEM",
+			"name": "MAXMEM"
+		},
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/ubooquity:latest",
+	"image64": "linuxserver/ubooquity:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ubooquity-icon.png",
+	"name": "ubooquity",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-ubooquity",
+	"platform": "linux",
+	"ports": [
+		"2202:2202/tcp",
+		"2203:2203/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Ubooquity",
+	"type": 1,
+	"volumes": [
+		{
+			"container": "/books"
+		},
+		{
+			"container": "/comics"
+		},
+		{
+			"container": "/config"
+		}
+	],
+	"webpage": "https://vaemendis.net/ubooquity/"
+}

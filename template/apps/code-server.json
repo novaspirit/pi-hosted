@@ -1,0 +1,56 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "Code-server is VS Code running on a remote server, accessible through the browser.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "GUID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"label": "PASSWORD",
+			"name": "PASSWORD"
+		},
+		{
+			"label": "SUDO_PASSWORD",
+			"name": "SUDO_PASSWORD"
+		},
+		{
+			"default": "example.my.domain",
+			"label": "PROXY_DOMAIN",
+			"name": "PROXY_DOMAIN"
+		}
+	],
+	"image32": "linuxserver/code-server:latest",
+	"image64": "linuxserver/code-server:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/code-server.png",
+	"name": "code-server",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-code-server",
+	"platform": "linux",
+	"ports": [
+		"8443:8443/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Code Server",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Code-Server",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://coder.com/"
+}

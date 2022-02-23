@@ -1,0 +1,57 @@
+{
+	"categories": [
+		"SCM",
+		"Tools"
+	],
+	"description": "Gitea with Mariadb: A painless self-hosted Git service.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "USER_UID",
+			"name": "USER_UID"
+		},
+		{
+			"default": "1000",
+			"label": "USER_GID",
+			"name": "USER_GID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "gitea",
+			"label": "DATABASE_NAME",
+			"name": "DATABASE_NAME"
+		},
+		{
+			"default": "gitea",
+			"label": "DATABASE_USER",
+			"name": "DATABASE_USER"
+		},
+		{
+			"default": "",
+			"label": "DATABASE_PASSWORD",
+			"name": "DATABASE_PASSWORD"
+		},
+		{
+			"default": "",
+			"label": "MYSQL_ROOT_PASSWORD",
+			"name": "MYSQL_ROOT_PASSWORD"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gitea.png",
+	"name": "gitea-mysql",
+	"note": "More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables",
+	"officialDoc": "https://docs.gitea.io/en-us/install-with-docker/#mysql-database",
+	"platform": "linux",
+	"repository": {
+		"stackfile64": "stack/gitea-mariadb.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted/"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Gitea with Mariadb",
+	"type": 3,
+	"webpage": "https://gitea.com/"
+}

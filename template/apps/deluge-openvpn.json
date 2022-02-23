@@ -1,0 +1,70 @@
+{
+	"categories": [
+		"Other",
+		"VPN",
+		"Tools"
+	],
+	"description": "This container contains OpenVPN and Deluge with a configuration where Deluge is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PUID"
+		},
+		{
+			"default": "MULLVAD",
+			"description": "see https://github.com/sgtsquiggs/docker-deluge-openvpn",
+			"label": "OPENVPN_PROVIDER",
+			"name": "OPENVPN_PROVIDER"
+		},
+		{
+			"label": "OPENVPN_USERNAME",
+			"name": "OPENVPN_USERNAME"
+		},
+		{
+			"label": "OPENVPN_PASSWORD",
+			"name": "OPENVPN_PASSWORD"
+		},
+		{
+			"default": "CA Toronto",
+			"label": "OPENVPN_CONFIG",
+			"name": "OPENVPN_CONFIG"
+		},
+		{
+			"default": "192.168.0.0/16",
+			"label": "LOCAL_NETWORK",
+			"name": "LOCAL_NETWORK"
+		}
+	],
+	"image32": "sgtsquiggs/deluge-openvpn:arm32v7-latest",
+	"image64": "sgtsquiggs/deluge-openvpn:arm64v8-latest",
+	"name": "deluge-openvpn",
+	"officialDoc": "https://github.com/sgtsquiggs/docker-deluge-openvpn",
+	"platform": "linux",
+	"ports": [
+		"8112:8112/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Deluge openvpn",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/etc/localtime",
+			"container": "/etc/localtime"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/downloads"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/DelugeOpenVPN/config",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://www.deluge-torrent.org/"
+}

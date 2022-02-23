@@ -1,0 +1,31 @@
+{
+	"categories": [
+		"Other",
+		"Music"
+	],
+	"description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
+	"image32": "registry.gitlab.com/bockiii/deemix-docker",
+	"image64": "registry.gitlab.com/bockiii/deemix-docker",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/deemix.png",
+	"name": "deemix",
+	"note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details.",
+	"officialDoc": "https://gitlab.com/Bockiii/deemix-docker",
+	"platform": "linux",
+	"ports": [
+		"9666:9666/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "DeeMix",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/DeeMix",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/downloads"
+		}
+	],
+	"webpage": "https://deemix.app/"
+}

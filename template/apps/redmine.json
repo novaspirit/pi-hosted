@@ -1,0 +1,67 @@
+{
+	"categories": [
+		"project-management",
+		"Other",
+		"Tools"
+	],
+	"description": "Open-source project management tool",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "redmine",
+			"label": "DATABASE_NAME",
+			"name": "DATABASE_NAME"
+		},
+		{
+			"default": "redmine",
+			"label": "DATABASE_USER",
+			"name": "DATABASE_USER"
+		},
+		{
+			"default": "",
+			"label": "DATABASE_PASSWORD",
+			"name": "DATABASE_PASSWORD"
+		},
+		{
+			"default": "",
+			"label": "MYSQL_ROOT_PASSWORD",
+			"name": "MYSQL_ROOT_PASSWORD"
+		},
+		{
+			"default": "",
+			"label": "REDMINE_SECRET_KEY_BASE",
+			"name": "REDMINE_SECRET_KEY_BASE"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/redmine.png",
+	"name": "redmine",
+	"note": "Default user and password are admin/admin",
+	"officialDoc": "https://hub.docker.com/_/redmine",
+	"platform": "linux",
+	"ports": [
+		"4180:3000/tcp"
+	],
+	"repository": {
+		"stackfile32": "stack/redmine.yml",
+		"stackfile64": "stack/redmine.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Redmine",
+	"type": 3,
+	"webpage": "https://www.redmine.org/"
+}

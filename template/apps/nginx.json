@@ -1,0 +1,39 @@
+{
+	"categories": [
+		"Web",
+		"Proxy"
+	],
+	"description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/nginx:latest",
+	"image64": "linuxserver/nginx:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nginx-icon.png",
+	"name": "nginx",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-nginx",
+	"platform": "linux",
+	"ports": [
+		"8080:80/tcp",
+		"8443:443/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Nginx",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Nginx",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://nginx.org/en/"
+}

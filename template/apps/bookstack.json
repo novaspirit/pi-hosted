@@ -1,0 +1,55 @@
+{
+	"categories": [
+		"Wiki"
+	],
+	"description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"label": "DATABASE_PASSWORD",
+			"name": "DATABASE_PASSWORD"
+		},
+		{
+			"label": "MYSQL_ROOT_PASSWORD",
+			"name": "MYSQL_ROOT_PASSWORD"
+		},
+		{
+			"default": "http://192.168.X.Y:6875",
+			"description": "Address to access Bookstack. If using a domain, add it here. If not set correctly the app will not be accessible",
+			"label": "APP_URL",
+			"name": "APP_URL"
+		},
+		{
+			"default": "6875",
+			"label": "PORT",
+			"name": "PORT"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bookstack2.png",
+	"name": "bookstack",
+	"note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
+	"officialDoc": "https://www.bookstackapp.com/docs/admin/installation/#docker",
+	"platform": "linux",
+	"repository": {
+		"stackfile32": "stack/bookstack.yml",
+		"stackfile64": "stack/bookstack.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted"
+	},
+	"title": "Bookstack",
+	"type": 3,
+	"webpage": "https://www.bookstackapp.com/"
+}

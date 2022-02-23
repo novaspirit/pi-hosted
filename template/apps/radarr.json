@@ -1,0 +1,46 @@
+{
+	"categories": [
+		"Downloaders",
+		"Video"
+	],
+	"description": "Radarr - A fork of Sonarr to work with movies à la Couchpotato.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/radarr:latest",
+	"image64": "linuxserver/radarr:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/radarr.png",
+	"name": "radarr",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-radarr",
+	"platform": "linux",
+	"ports": [
+		"7878:7878/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Radarr",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Radarr",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/downloads"
+		},
+		{
+			"bind": "/portainer/Movies",
+			"container": "/movies"
+		}
+	],
+	"webpage": "https://radarr.video/"
+}

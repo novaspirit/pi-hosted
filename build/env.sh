@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Portainer Templates
+appsfolder="${homedir}template/apps"
 pt32="${homedir}template/portainer-v2-arm32.json"
 pt64="${homedir}template/portainer-v2-arm64.json"
 
@@ -17,7 +18,7 @@ DocList="${homedir}docs/DocumentList.md"
 DocList_TEMPLATE="${homedir}build/templates/template_DocumentList.md"
 
 # appinfo file
-appinfo="${homedir}build/appinfo.json"
+appinfo="${homedir}build/info.json"
 
 # Internal folders
 Scripts="../tools/"

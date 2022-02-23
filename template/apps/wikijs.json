@@ -1,0 +1,30 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
+	"image32": "linuxserver/wikijs:latest",
+	"image64": "linuxserver/wikijs:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wikijs.png",
+	"name": "wikijs",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-wikijs",
+	"platform": "linux",
+	"ports": [
+		"3100:3000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Wikijs",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Wikijs",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Wikijs/data",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://js.wiki/"
+}

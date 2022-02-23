@@ -1,0 +1,44 @@
+{
+	"categories": [
+		"Cloud",
+		"Productivity",
+		"Tools",
+		"Other"
+	],
+	"description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!\n  ",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/projectsend:latest",
+	"image64": "linuxserver/projectsend:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/projectsend-logo.png",
+	"name": "projectsend",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-projectsend",
+	"platform": "linux",
+	"ports": [
+		"7580:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "ProjectSend",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/ProjectSend",
+			"container": "/data"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/ProjectSend",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://www.projectsend.org/"
+}

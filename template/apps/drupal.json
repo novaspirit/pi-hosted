@@ -1,0 +1,60 @@
+{
+	"categories": [
+		"Other",
+		"CMD",
+		"Web",
+		"Tools"
+	],
+	"description": "Drupal CMS.  Make sure you run the install script under tools before installing.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "drupal",
+			"label": "DATABASE_NAME",
+			"name": "DATABASE_NAME"
+		},
+		{
+			"default": "drupal",
+			"label": "DATABASE_USER",
+			"name": "DATABASE_USER"
+		},
+		{
+			"default": "",
+			"label": "DATABASE_PASSWORD",
+			"name": "DATABASE_PASSWORD"
+		},
+		{
+			"default": "",
+			"label": "MYSQL_ROOT_PASSWORD",
+			"name": "MYSQL_ROOT_PASSWORD"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/drupal.png",
+	"name": "drupal",
+	"officialDoc": "https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration",
+	"platform": "linux",
+	"preInstallScript": "install_drupal.sh",
+	"repository": {
+		"stackfile32": "stack/drupal.yml",
+		"stackfile64": "stack/drupal.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted/"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Drupal",
+	"type": 3,
+	"webpage": "https://www.drupal.org/"
+}

@@ -1,0 +1,39 @@
+{
+	"categories": [
+		"Tools",
+		"Web",
+		"Webserver"
+	],
+	"description": "Caddy - The Ultimate Server with Automatic HTTPS.  Need to run tools/install_caddy.sh before installing the template.",
+	"image32": "caddy:latest",
+	"image64": "caddy:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/caddy.png",
+	"name": "caddy",
+	"note": "Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",
+	"officialDoc": "https://hub.docker.com/_/caddy",
+	"platform": "linux",
+	"ports": [
+		"80:80/tcp",
+		"443:443/tcp",
+		"2019:2019/tcp"
+	],
+	"preInstallScript": "install_caddy.sh",
+	"restart_policy": "unless-stopped",
+	"title": "Caddy",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Caddy/Data",
+			"container": "/data"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Caddy/Config",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Caddy/Caddyfile",
+			"container": "/etc/caddy/Caddyfile"
+		}
+	],
+	"webpage": "https://caddyserver.com/"
+}

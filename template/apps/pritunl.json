@@ -1,0 +1,42 @@
+{
+	"categories": [
+		"VPN",
+		"Tools",
+		"Other",
+		"Web"
+	],
+	"description": "Pritunl container built on Alpine Linux. Supports IPv6 and running behind a reverse proxy. This container requires an external Mongo DB and should be run via Docker Compose or other orchestration.",
+	"env": [
+		{
+			"default": "false",
+			"label": "REVERSE_PROXY",
+			"name": "REVERSE_PROXY"
+		},
+		{
+			"label": "PRITUNL_OPTS",
+			"name": "PRITUNL_OPTS"
+		},
+		{
+			"default": "mongodb://mongo:27017/pritunl",
+			"label": "MONGODB_URI",
+			"name": "MONGODB_URI"
+		},
+		{
+			"default": "false",
+			"label": "WIREGUARD",
+			"name": "WIREGUARD"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pritunl.png",
+	"name": "pritunl",
+	"note": "Documentation on this containier can be found here: <a href=https://hub.docker.com/r/goofball222/pritunl>https://hub.docker.com/r/goofball222/pritunl</a>",
+	"officialDoc": "https://hub.docker.com/r/goofball222/pritunl",
+	"platform": "linux",
+	"repository": {
+		"stackfile64": "stack/pritunl.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted"
+	},
+	"title": "Pritunl",
+	"type": 3,
+	"webpage": "https://pritunl.com/"
+}

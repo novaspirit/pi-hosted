@@ -1,0 +1,37 @@
+{
+	"categories": [
+		"Messenger"
+	],
+	"description": "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core -- much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical. Blowfish support and optional web-ui included.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/quassel-core:latest",
+	"image64": "linuxserver/quassel-core:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/quassel-core-icon.png",
+	"name": "quassel-core",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-quassel-core",
+	"platform": "linux",
+	"ports": [
+		"4242:4242/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Quassel IRC",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Quassel-core",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://quassel-irc.org/"
+}

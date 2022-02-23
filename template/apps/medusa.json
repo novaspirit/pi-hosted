@@ -1,0 +1,46 @@
+{
+	"categories": [
+		"Downloaders",
+		"Video"
+	],
+	"description": "Medusa, automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/medusa:latest",
+	"image64": "linuxserver/medusa:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/medusa-icon.png",
+	"name": "medusa",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-medusa",
+	"platform": "linux",
+	"ports": [
+		"8081:8081/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Medusa",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Medusa",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/TV",
+			"container": "/tv"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/downloads"
+		}
+	],
+	"webpage": "https://pymedusa.com/"
+}

@@ -1,0 +1,47 @@
+{
+	"categories": [
+		"Web",
+		"Books",
+		"Tools"
+	],
+	"description": "[DEPRECATED] A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/gazee:latest",
+	"image64": "linuxserver/gazee:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gazee-logo.png",
+	"name": "gazee",
+	"officialDoc": "https://hub.docker.com/r/linuxserver/gazee",
+	"platform": "linux",
+	"ports": [
+		"4243:4242/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Gazee",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Gazee",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Comics",
+			"container": "/comics"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Gazee",
+			"container": "/mylar"
+		}
+	],
+	"webpage": "https://github.com/hubbcaps/gazee"
+}

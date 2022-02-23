@@ -1,0 +1,33 @@
+{
+	"categories": [
+		"Monitor",
+		"Tools"
+	],
+	"description": "Monitor your Raspberry Pi and Dockers using Grafana developed by oijkn. Please download grafana configs from his git https://github.com/oijkn/Docker-Raspberry-PI-Monitoring",
+	"env": [
+		{
+			"default": "15d",
+			"label": "PROMETHEUS_RETENTION",
+			"name": "PROMETHEUS_RETENTION"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/rpi_monitor.png",
+	"name": "RaspberryPi-Docker-Monitor",
+	"officialDoc": "https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md",
+	"piHostedDoc": "rpi_docker_monitor.md",
+	"platform": "linux",
+	"ports": [
+		"3000:3000/tcp"
+	],
+	"preInstallScript": "rpi_docker_monitor.sh",
+	"repository": {
+		"stackfile32": "stack/raspberrypi-monitoring.yml",
+		"stackfile64": "stack/raspberrypi-monitoring.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Raspberry Pi Docker Monitor",
+	"type": 3,
+	"videoID": 7,
+	"webpage": "https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md"
+}

@@ -1,0 +1,36 @@
+{
+	"categories": [
+		"Other"
+	],
+	"description": "Server version of minetest, a free, open source alternative to minecraft.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/minetest:latest",
+	"image64": "linuxserver/minetest:latest",
+	"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
+	"name": "minetest",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-minetest",
+	"platform": "linux",
+	"ports": [
+		"30000:30000/udp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Minetest",
+	"type": 1,
+	"volumes": [
+		{
+			"container": "/config/.minetest"
+		}
+	],
+	"webpage": "https://www.minetest.net/"
+}

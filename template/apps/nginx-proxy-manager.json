@@ -1,0 +1,55 @@
+{
+	"categories": [
+		"Proxy",
+		"Tools"
+	],
+	"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "password",
+			"label": "DATABASE_PASSWORD",
+			"name": "DATABASE_PASSWORD"
+		},
+		{
+			"default": "password",
+			"label": "MYSQL_ROOT_PASSWORD",
+			"name": "MYSQL_ROOT_PASSWORD"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
+	"name": "nginx-proxy-manager",
+	"officialDoc": "https://nginxproxymanager.com/setup/#using-mysql-mariadb-database",
+	"piHostedDoc": "nginx_proxy_manager.md",
+	"platform": "linux",
+	"ports": [
+		"80:80/tcp",
+		"81:81/tcp",
+		"443:443/tcp"
+	],
+	"preInstallScript": "nginx-proxy-manager.sh",
+	"repository": {
+		"stackfile32": "stack/nginx-proxy-manager.yml",
+		"stackfile64": "stack/nginx-proxy-manager.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Nginx Proxy Manager",
+	"type": 3,
+	"videoID": 9,
+	"webpage": "https://nginxproxymanager.com/"
+}

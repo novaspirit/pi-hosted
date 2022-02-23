@@ -1,0 +1,67 @@
+{
+	"categories": [
+		"Music"
+	],
+	"description": "Airsonic Advanced is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "airsonic",
+			"label": "CONTEXT_PATH",
+			"name": "CONTEXT_PATH"
+		},
+		{
+			"default": "-Xms256m -Xmx512m",
+			"label": "JAVA_OPTS",
+			"name": "JAVA_OPTS"
+		}
+	],
+	"image64": "linuxserver/airsonic-advanced:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/airsonic-logo.png",
+	"name": "airsonic-advanced",
+	"officialDoc": "https://github.com/linuxserver/docker-airsonic-advanced",
+	"platform": "linux",
+	"ports": [
+		"4040:4040/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Airsonic Advanced",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Music",
+			"container": "/music"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Airsonic-Advanced/Playlists",
+			"container": "/playlists"
+		},
+		{
+			"bind": "/portainer/Podcasts",
+			"container": "/podcasts"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Airsonic-Advanced/Media",
+			"container": "/media"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Airsonic-Advanced/config/",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://github.com/airsonic-advanced/airsonic-advanced"
+}

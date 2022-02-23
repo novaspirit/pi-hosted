@@ -1,0 +1,25 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
+	"image64": "martadinata666/reactive-resume:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/reactiveresume.png",
+	"name": "reactive-resume",
+	"officialDoc": "https://hub.docker.com/r/martadinata666/reactive-resume",
+	"platform": "linux",
+	"ports": [
+		"7768:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Reactive-Resume",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/ReactiveResume",
+			"container": "/keepoutoftheway/var/www/html"
+		}
+	],
+	"webpage": "https://rxresu.me/"
+}

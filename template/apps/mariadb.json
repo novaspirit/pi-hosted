@@ -1,0 +1,58 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "An Enhanced drop in replacement for Mysql",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "",
+			"label": "MYSQL_DATABASE",
+			"name": "MYSQL_DATABASE"
+		},
+		{
+			"default": "",
+			"label": "MYSQL_USER",
+			"name": "MYSQL_USER"
+		},
+		{
+			"default": "dbpassword",
+			"label": "MYSQL_PASSWORD",
+			"name": "MYSQL_PASSWORD"
+		},
+		{
+			"default": "rootpassword",
+			"label": "MYSQL_ROOT_PASSWORD",
+			"name": "MYSQL_ROOT_PASSWORD"
+		}
+	],
+	"image32": "linuxserver/mariadb:arm32v7-latest",
+	"image64": "linuxserver/mariadb:arm64v8-latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mariadb-icon.png",
+	"name": "mariadb",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-mariadb",
+	"platform": "linux",
+	"ports": [
+		"3306:3306/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "MariaDB",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Mariadb",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://mariadb.org/"
+}

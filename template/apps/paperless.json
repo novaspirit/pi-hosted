@@ -1,0 +1,43 @@
+{
+	"categories": [
+		"Cloud",
+		"Management",
+		"Productivity"
+	],
+	"description": "Paperless is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents. https://github.com/jonaswinkler/paperless-ng",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/paperless-ng",
+	"image64": "linuxserver/paperless-ng",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/paperless.png",
+	"name": "paperless",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-paperless-ng",
+	"platform": "linux",
+	"ports": [
+		"8005:8000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Paperless",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/paperless/config",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/paperless/data",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://github.com/jonaswinkler/paperless-ng"
+}

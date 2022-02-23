@@ -1,0 +1,54 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view sites you want to preserve offline.",
+	"env": [
+		{
+			"default": "*",
+			"label": "ALLOWED_HOSTS",
+			"name": "ALLOWED_HOSTS"
+		},
+		{
+			"default": "750m",
+			"label": "MEDIA_MAX_SIZE",
+			"name": "MEDIA_MAX_SIZE"
+		},
+		{
+			"default": "true",
+			"label": "PUBLIC_INDEX",
+			"name": "PUBLIC_INDEX"
+		},
+		{
+			"default": "true",
+			"label": "PUBLIC_SNAPSHOTS",
+			"name": "PUBLIC_SNAPSHOTS"
+		},
+		{
+			"default": "false",
+			"label": "PUBLIC_ADD_VIEW",
+			"name": "PUBLIC_ADD_VIEW"
+		}
+	],
+	"image32": "archivebox/archivebox:master",
+	"image64": "archivebox/archivebox:master",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/archivebox.png",
+	"name": "archivebox",
+	"note": "By default an admin user is not created. You can do so by launching a shell in the container and executing 'archivebox manage createsuperuser'. Documentation is Available <a href='https://github.com/ArchiveBox/ArchiveBox/wiki'>here</a>.",
+	"officialDoc": "https://github.com/ArchiveBox/ArchiveBox/wiki/Docker",
+	"platform": "linux",
+	"ports": [
+		"8002:8000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Archivebox",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/archivebox",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://archivebox.io/"
+}

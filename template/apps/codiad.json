@@ -1,0 +1,37 @@
+{
+	"categories": [
+		"Productivity"
+	],
+	"description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/codiad:latest",
+	"image64": "linuxserver/codiad:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/codiad-icon.png",
+	"name": "codiad",
+	"officialDoc": "https://github.com/Codiad/Codiad/wiki/Quick-installation-using-Docker",
+	"platform": "linux",
+	"ports": [
+		"7294:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Codiad",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Codiad",
+			"container": "/config"
+		}
+	],
+	"webpage": "http://codiad.com/"
+}

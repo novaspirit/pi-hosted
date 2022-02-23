@@ -1,0 +1,38 @@
+{
+	"categories": [
+		"Other"
+	],
+	"description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/oscam:latest",
+	"image64": "linuxserver/oscam:latest",
+	"logo": "http://i.imgur.com/8LadrLg.png",
+	"name": "oscam",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-oscam",
+	"platform": "linux",
+	"ports": [
+		"8888:8888/tcp",
+		"10000:10000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "OScam",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/OScam",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://trac.streamboard.tv/oscam/"
+}

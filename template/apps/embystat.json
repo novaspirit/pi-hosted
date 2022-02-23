@@ -1,0 +1,27 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
+	"image32": "linuxserver/embystat:latest",
+	"image64": "linuxserver/embystat:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/embystat.png",
+	"name": "embystat",
+	"note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services.",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-embystat",
+	"platform": "linux",
+	"ports": [
+		"6555:6555/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "EmbyStat",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/EmbyStat",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://github.com/mregni/EmbyStat"
+}

@@ -1,0 +1,44 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "n8n is an extendable workflow automation tool.",
+	"env": [
+		{
+			"default": "true",
+			"label": "N8N_BASIC_AUTH_ACTIVE",
+			"name": "N8N_BASIC_AUTH_ACTIVE"
+		},
+		{
+			"default": "admin",
+			"label": "N8N_BASIC_AUTH_USER",
+			"name": "N8N_BASIC_AUTH_USER"
+		},
+		{
+			"default": "admin",
+			"label": "N8N_BASIC_AUTH_PASSWORD",
+			"name": "N8N_BASIC_AUTH_PASSWORD"
+		}
+	],
+	"image32": "n8nio/n8n:latest",
+	"image64": "n8nio/n8n:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/n8n.jpg",
+	"name": "n8n",
+	"note": "Documentation is Available <a href='https://docs.n8n.io/'>here</a>",
+	"officialDoc": "https://docs.n8n.io/getting-started/installation/#docker",
+	"platform": "linux",
+	"ports": [
+		"5678:5678/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "n8n",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/n8n",
+			"container": "/home/node/.n8n"
+		}
+	],
+	"webpage": "https://n8n.io/"
+}

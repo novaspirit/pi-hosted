@@ -1,0 +1,38 @@
+{
+	"categories": [
+		"Downloaders"
+	],
+	"description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br]\r\n\t\tOptional postprocessors to add IMDb data or to customize your xmltv listing.[br]\r\n\t\thttp://www.webgrabplus.com/[br]\r\n\t\t[b][span style='color: #E80000;']Directions:[/span][/b][br]\r\n\t\t[b]/config[/b] : This is where WebGrab+Plus will store it's configuration.[br][br]\r\n\t\t[b]/data[/b] : This is where tv_grab_wg script in the Tvheadend container looks for the guide.xml file.[br][br]",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/webgrabplus:latest",
+	"image64": "linuxserver/webgrabplus:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/webgrabplus.png",
+	"name": "webgrabplus",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-webgrabplus",
+	"platform": "linux",
+	"restart_policy": "unless-stopped",
+	"title": "WebGrab+Plus",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/WebGrabPlus",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Files/AppData/WebGrabPlus",
+			"container": "/data"
+		}
+	],
+	"webpage": "http://www.webgrabplus.com/"
+}

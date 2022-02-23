@@ -1,0 +1,43 @@
+{
+	"categories": [
+		"Proxy",
+		"Security",
+		"Tools"
+	],
+	"description": "Cloud-Native Networking Stack That Just Works.",
+	"image32": "traefik:latest",
+	"image64": "traefik:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/traefik.png",
+	"name": "traefik",
+	"note": "A simple and lightweight reverse proxy",
+	"officialDoc": "https://doc.traefik.io/traefik/getting-started/install-traefik/",
+	"platform": "linux",
+	"ports": [
+		"80:80/tcp",
+		"443:443/tcp",
+		"8080:8080/tcp"
+	],
+	"preInstallScript": "traefik.sh",
+	"restart_policy": "unless-stopped",
+	"title": "Traefik",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/traefik/traefik.yml",
+			"container": "/traefik.yml"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/traefik/config.yml",
+			"container": "/config.yml"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/traefik/acme.json",
+			"container": "/acme.json"
+		},
+		{
+			"bind": "/var/run/docker.sock",
+			"container": "/var/run/docker.sock"
+		}
+	],
+	"webpage": "https://doc.traefik.io/traefik/"
+}

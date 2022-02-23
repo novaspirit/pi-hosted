@@ -1,0 +1,19 @@
+{
+	"categories": [
+		"Security"
+	],
+	"description": "Dradis Framework: Collaboration and reporting for IT Security teams http://dradisframework.org",
+	"image32": "raesene/dradis:latest",
+	"image64": "raesene/dradis:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dradis-logo.png",
+	"name": "dradis",
+	"officialDoc": "https://github.com/raesene/dockerized-security-tools",
+	"platform": "linux",
+	"ports": [
+		"3100:3000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Dradis",
+	"type": 1,
+	"webpage": "https://dradisframework.com/"
+}

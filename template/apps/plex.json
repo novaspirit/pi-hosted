@@ -1,0 +1,50 @@
+{
+	"categories": [
+		"Video",
+		"Music",
+		"Photos"
+	],
+	"description": "Your favorite movies, TV, music, web shows, podcasts, and more, all streamed to your favorite screens.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "latest",
+			"label": "VERSION",
+			"name": "VERSION"
+		}
+	],
+	"image32": "linuxserver/plex:latest",
+	"image64": "linuxserver/plex:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/plex-icon.png",
+	"name": "plex",
+	"network": "host",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-plex",
+	"platform": "linux",
+	"restart_policy": "unless-stopped",
+	"title": "Plex",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Plex",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/TV",
+			"container": "/tv"
+		},
+		{
+			"bind": "/portainer/Movies",
+			"container": "/movies"
+		}
+	],
+	"webpage": "https://www.plex.tv/"
+}

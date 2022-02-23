@@ -1,0 +1,28 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
+	"image32": "vaultwarden/server:latest",
+	"image64": "vaultwarden/server:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bitwarden.png",
+	"name": "vaultwarden",
+	"note": "Alternative Implementation of the Bitwarden Server API in Rust, including web vault.",
+	"officialDoc": "https://github.com/dani-garcia/vaultwarden/wiki",
+	"platform": "linux",
+	"ports": [
+		"8010:80/tcp",
+		"3012:3012/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Vaultwarden",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Bitwarden",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://github.com/dani-garcia/vaultwarden"
+}

@@ -1,0 +1,43 @@
+{
+	"categories": [
+		"Downloaders",
+		"Other",
+		"Tools"
+	],
+	"description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/nzbhydra2:latest",
+	"image64": "linuxserver/nzbhydra2:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/hydra-icon.png",
+	"name": "nzbhydra2",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-nzbhydra2",
+	"platform": "linux",
+	"ports": [
+		"5076:5076/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "NZBHydra 2",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Nzbhydra2",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/downloads"
+		}
+	],
+	"webpage": "https://github.com/theotherp/nzbhydra2"
+}

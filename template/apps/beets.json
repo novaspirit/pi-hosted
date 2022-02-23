@@ -1,0 +1,45 @@
+{
+	"categories": [
+		"Music"
+	],
+	"description": "The purpose of beets is to get your music collection right once and for all. It catalogs your collection, automatically improving its metadata as it goes using the MusicBrainz database. Then it provides a bouquet of tools for manipulating and accessing your music.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/beets:latest",
+	"image64": "linuxserver/beets:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/beets-icon.png",
+	"name": "beets",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-beets",
+	"platform": "linux",
+	"ports": [
+		"8337:8337/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Beets",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Beets",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/downloads"
+		},
+		{
+			"bind": "/portainer/Music",
+			"container": "/music"
+		}
+	],
+	"webpage": "https://beets.io/"
+}

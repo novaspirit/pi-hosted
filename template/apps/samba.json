@@ -1,0 +1,67 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"command": "",
+	"description": "Samba has provided secure, stable and fast file and print services for all clients using the SMB/CIFS protocol, such as all versions of DOS and Windows, OS/2, Linux and many others.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "1000",
+			"label": "USERID",
+			"name": "USERID"
+		},
+		{
+			"default": "1000",
+			"label": "GROUPID",
+			"name": "GROUPID"
+		},
+		{
+			"default": "guest;guest",
+			"label": "USER",
+			"name": "USER"
+		},
+		{
+			"default": "true",
+			"label": "PERMISSIONS",
+			"name": "PERMISSIONS"
+		},
+		{
+			"default": "portainer;/share;yes;no;yes;guest",
+			"label": "SHARE",
+			"name": "SHARE"
+		}
+	],
+	"image32": "dperson/samba:latest",
+	"image64": "dperson/samba:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/samba.png",
+	"name": "Samba",
+	"officialDoc": "https://github.com/dperson/samba",
+	"platform": "linux",
+	"ports": [
+		"139:139/tcp",
+		"445:445/tcp"
+	],
+	"privileged": true,
+	"restart_policy": "unless-stopped",
+	"title": "Samba",
+	"type": 1,
+	"videoID": 10,
+	"volumes": [
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/share"
+		}
+	],
+	"webpage": "https://www.samba.org/"
+}

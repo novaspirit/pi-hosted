@@ -1,0 +1,42 @@
+{
+	"categories": [
+		"Books"
+	],
+	"description": "LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/lazylibrarian:latest",
+	"image64": "linuxserver/lazylibrarian:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lazylibrarian-icon.png",
+	"name": "lazylibrarian",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-lazylibrarian",
+	"platform": "linux",
+	"ports": [
+		"5299:5299/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "LazyLibrarian",
+	"type": 1,
+	"volumes": [
+		{
+			"container": "/config"
+		},
+		{
+			"container": "/downloads"
+		},
+		{
+			"container": "/books"
+		}
+	],
+	"webpage": "https://lazylibrarian.gitlab.io/"
+}

@@ -1,0 +1,30 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "A web interface for managing docker containers with an emphasis on templating to provide 1 click deployments. Think of it like a decentralized app store for servers that anyone can make packages for.",
+	"image32": "selfhostedpro/yacht:latest",
+	"image64": "selfhostedpro/yacht:latest",
+	"logo": "https://raw.githubusercontent.com/SelfhostedPro/Yacht/master/readme_media/Yacht_logo_1_dark.png",
+	"name": "yacht",
+	"officialDoc": "https://yacht.sh/docs/Installation/Install#via-docker-compose",
+	"platform": "linux",
+	"ports": [
+		"8001:8000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Yacht",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "yacht",
+			"container": "/config"
+		},
+		{
+			"bind": "/var/run/docker.sock",
+			"container": "/var/run/docker.sock"
+		}
+	],
+	"webpage": "https://yacht.sh/"
+}

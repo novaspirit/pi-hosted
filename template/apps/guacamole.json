@@ -1,0 +1,28 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "[arm] A clientless remote desktop gateway.",
+	"image32": "oznu/guacamole:armhf",
+	"image64": "oznu/guacamole:armhf",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/guacamole.png",
+	"name": "guacamole",
+	"note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
+	"officialDoc": "https://hub.docker.com/r/oznu/guacamole",
+	"platform": "linux",
+	"ports": [
+		"8080:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Guacamole",
+	"type": 1,
+	"videoID": 3,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Guacamole",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://guacamole.apache.org/"
+}

@@ -1,0 +1,42 @@
+{
+	"categories": [
+		"Cloud",
+		"Other"
+	],
+	"description": "Pydio (formerly AjaXplorer) is a mature open source software solution for file sharing and synchronization. With intuitive user interfaces (web / mobile / desktop), Pydio provides enterprise-grade features to gain back control and privacy of your data: user directory connectors, legacy filesystems drivers, comprehensive admin interface, and much more.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/pydio:latest",
+	"image64": "linuxserver/pydio:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pydio-icon.png",
+	"name": "pydio",
+	"officialDoc": "https://hub.docker.com/r/linuxserver/pydio",
+	"platform": "linux",
+	"ports": [
+		"7526:443/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Pydio",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Pydio",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Pydio",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://www.pydio.com/"
+}

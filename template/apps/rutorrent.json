@@ -1,0 +1,95 @@
+{
+	"categories": [
+		"Downloaders"
+	],
+	"description": "Popular torrent client with a webui for ease of use.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "50",
+			"label": "MAX_FILE_UPLOADS",
+			"name": "MAX_FILE_UPLOADS"
+		},
+		{
+			"default": "info",
+			"label": "RT_LOG_LEVEL",
+			"name": "RT_LOG_LEVEL"
+		},
+		{
+			"default": "6881",
+			"label": "RT_DHT_PORT",
+			"name": "RT_DHT_PORT"
+		},
+		{
+			"default": "8000",
+			"label": "XMLRPC_PORT",
+			"name": "XMLRPC_PORT"
+		},
+		{
+			"default": "8080",
+			"label": "RUTORRENT_PORT",
+			"name": "RUTORRENT_PORT"
+		},
+		{
+			"default": "9000",
+			"label": "WEBDAV_PORT",
+			"name": "WEBDAV_PORT"
+		},
+		{
+			"default": "50000",
+			"label": "RT_INC_PORT",
+			"name": "RT_INC_PORT"
+		},
+		{
+			"default": "erasedata,httprpc",
+			"label": "RU_REMOVE_CORE_PLUGINS",
+			"name": "RU_REMOVE_CORE_PLUGINS"
+		}
+	],
+	"image32": "linuxserver/crazymax/rtorrent-rutorrent:latest",
+	"image64": "linuxserver/crazymax/rtorrent-rutorrent:latest",
+	"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
+	"name": "rutorrent",
+	"note": "For ruTorrent basic auth, XMLRPC through nginx and WebDAV on completed downloads, you can populate .htpasswd files with the following command:\ndocker run --rm -it httpd:2.4-alpine htpasswd -Bbn <username> <password> >> $(pwd)/passwd/webdav.htpasswd",
+	"officialDoc": "https://github.com/crazy-max/docker-rtorrent-rutorrent",
+	"platform": "linux",
+	"ports": [
+		"${RT_DHT_PORT}:${RT_DHT_PORT}/udp",
+		"${XMLRPC_PORT}:${XMLRPC_PORT}/tcp",
+		"${RUTORRENT_PORT}:${RUTORRENT_PORT}/tcp",
+		"${WEBDAV_PORT}:${WEBDAV_PORT}/tcp",
+		"${RT_INC_PORT}:${RT_INC_PORT}/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "ruTorrent",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/ruTorrent/config",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/downloads"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/ruTorrent/passwd",
+			"container": "/passwd"
+		}
+	],
+	"webpage": "https://github.com/Novik/ruTorrent"
+}

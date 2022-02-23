@@ -1,0 +1,37 @@
+{
+	"categories": [
+		"Other"
+	],
+	"description": "A free, self-hostable rss aggregator…",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/freshrss:latest",
+	"image64": "freshrss/freshrss:arm",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/freshrss-icon.png",
+	"name": "freshrss",
+	"officialDoc": "https://github.com/FreshRSS/FreshRSS/tree/edge/Docker",
+	"platform": "linux",
+	"ports": [
+		"8132:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "FreshRSS",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/freshrss",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://www.freshrss.org/"
+}

@@ -1,0 +1,45 @@
+{
+	"categories": [
+		"Backup",
+		"Cloud",
+		"Other",
+		"Tools"
+	],
+	"description": null,
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/syncthing:latest",
+	"image64": "linuxserver/syncthing:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/syncthing-icon.png",
+	"name": "syncthing",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-syncthing",
+	"platform": "linux",
+	"ports": [
+		"8384:8384/tcp",
+		"21027:21027/udp",
+		"22000:22000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "SyncThing",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Syncthing",
+			"container": "/config"
+		},
+		{
+			"container": "/sync"
+		}
+	],
+	"webpage": "https://syncthing.net/"
+}

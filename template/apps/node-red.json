@@ -1,0 +1,36 @@
+{
+	"categories": [
+		"Other",
+		"Web",
+		"Tools"
+	],
+	"description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.  It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.",
+	"env": [
+		{
+			"default": "your_secret_goes_here",
+			"label": "NODE_RED_CREDENTIAL_SECRET",
+			"name": "NODE_RED_CREDENTIAL_SECRET"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/node-red.png",
+	"name": "node-red",
+	"officialDoc": "https://nodered.org/docs/getting-started/docker",
+	"platform": "linux",
+	"ports": [
+		"1880:1880/tcp"
+	],
+	"repository": {
+		"stackfile32": "stack/node-red.yml",
+		"stackfile64": "stack/node-red.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted/"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Node Red",
+	"type": 3,
+	"webpage": "https://nodered.org/"
+}

@@ -1,0 +1,60 @@
+{
+	"categories": [
+		"Cloud",
+		"Web",
+		"Management",
+		"todo"
+	],
+	"description": "Vikunja With Frontend.  The to-do app to organize your life.  Must run tools/install_vikunja.sh before installing the template.  More informantion at https://vikunja.io/",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "vikunja",
+			"label": "DATABASE_NAME",
+			"name": "DATABASE_NAME"
+		},
+		{
+			"default": "vikunja",
+			"label": "DATABASE_USER",
+			"name": "DATABASE_USER"
+		},
+		{
+			"default": "",
+			"label": "DATABASE_PASSWORD",
+			"name": "DATABASE_PASSWORD"
+		},
+		{
+			"default": "",
+			"label": "MYSQL_ROOT_PASSWORD",
+			"name": "MYSQL_ROOT_PASSWORD"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/vikunja.png",
+	"name": "vikunja",
+	"officialDoc": "https://vikunja.io/docs/full-docker-example/#example-with-nginx-as-proxy",
+	"platform": "linux",
+	"preInstallScript": "install_vikunja.sh",
+	"repository": {
+		"stackfile32": "stack/vikunja.yml",
+		"stackfile64": "stack/vikunja.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted/"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Vikunja With Frontend",
+	"type": 3,
+	"webpage": "https://vikunja.io/"
+}

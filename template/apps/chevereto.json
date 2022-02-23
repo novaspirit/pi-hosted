@@ -1,0 +1,63 @@
+{
+	"categories": [
+		"Other",
+		"Tools",
+		"Photo"
+	],
+	"description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version..",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "",
+			"label": "CHEVERETO_DB_HOST",
+			"name": "CHEVERETO_DB_HOST"
+		},
+		{
+			"default": "",
+			"label": "CHEVERETO_DB_USERNAME",
+			"name": "CHEVERETO_DB_USERNAME"
+		},
+		{
+			"default": "",
+			"label": "CHEVERETO_DB_PASSWORD",
+			"name": "CHEVERETO_DB_PASSWORD"
+		},
+		{
+			"default": "",
+			"label": "CHEVERETO_DB_NAME",
+			"name": "CHEVERETO_DB_NAME"
+		},
+		{
+			"default": "",
+			"label": "CHEVERETO_DB_PREFIX",
+			"name": "CHEVERETO_DB_PREFIX"
+		}
+	],
+	"image32": "nmtan/chevereto:latest",
+	"image64": "nmtan/chevereto:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Chevereto.png",
+	"name": "Chevereto",
+	"officialDoc": "https://hub.docker.com/r/nmtan/chevereto",
+	"platform": "linux",
+	"ports": [
+		"7382:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Chevereto",
+	"type": 1,
+	"volumes": [
+		{
+			"container": "/var/www/html/images"
+		}
+	],
+	"webpage": "https://chevereto.com/"
+}

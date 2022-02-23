@@ -1,0 +1,45 @@
+{
+	"categories": [
+		"Photos"
+	],
+	"description": "A simple, easy way to turn a photo album into a webgallery",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/photoshow:latest",
+	"image64": "linuxserver/photoshow:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/photoshow-icon.png",
+	"name": "photoshow",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-photoshow",
+	"platform": "linux",
+	"ports": [
+		"7380:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "PhotoShow",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Pictures",
+			"container": "/Pictures"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Photoshow/Thumbs",
+			"container": "/Thumbs"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/PhotoShow",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://github.com/thibaud-rohmer/PhotoShow"
+}

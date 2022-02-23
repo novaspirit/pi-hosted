@@ -1,0 +1,40 @@
+{
+	"categories": [
+		"WordPress",
+		"Web"
+	],
+	"description": "Wordpress setup with a MySQL database",
+	"env": [
+		{
+			"default": "5080",
+			"label": "External Port for webserver forward to port 80",
+			"name": "WEB_SERVER_PORT"
+		},
+		{
+			"default": "wordpress",
+			"label": "Database user name",
+			"name": "MYSQL_DATABASE_USER_NAME"
+		},
+		{
+			"label": "Database password for user",
+			"name": "MYSQL_DATABASE_PASSWORD"
+		},
+		{
+			"label": "Database root password",
+			"name": "MYSQL_DATABASE_ROOT_PASSWORD"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wordpress.png",
+	"note": "Deploys a Wordpress instance connected to a MySQL database.",
+	"officialDoc": "https://github.com/docker-library/docs/tree/master/wordpress#-via-docker-stack-deploy-or-docker-compose",
+	"piHostedDoc": "wordpress_installation.md",
+	"platform": "linux",
+	"repository": {
+		"stackfile32": "stack/wordpress-stack.yml",
+		"stackfile64": "stack/wordpress-stack.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted"
+	},
+	"title": "Wordpress",
+	"type": 3,
+	"webpage": "https://wordpress.com/"
+}

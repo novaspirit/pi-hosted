@@ -1,0 +1,57 @@
+{
+	"categories": [
+		"Other",
+		"Voice",
+		"Chat"
+	],
+	"description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		}
+	],
+	"image32": "yhaenggi/murmur:1.3.4",
+	"image64": "yhaenggi/murmur:1.3.4",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Mumble-logo.png",
+	"name": "murmur",
+	"officialDoc": "https://github.com/yhaenggi/murmur-docker",
+	"platform": "linux",
+	"ports": [
+		"64738:64738/tcp",
+		"64738:64738/udp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Murmur",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/etc/localtime:ro",
+			"container": "/etc/localtime"
+		},
+		{
+			"bind": "/portainer/Files/Config/Murmur",
+			"container": "/opt/murmur/config"
+		},
+		{
+			"bind": "/portainer/Files/Murmur/data",
+			"container": "/opt/murmur/data"
+		},
+		{
+			"bind": "/portainer/Files/Murmur/log",
+			"container": "/opt/murmur/log"
+		}
+	],
+	"webpage": "https://www.mumble.info/"
+}

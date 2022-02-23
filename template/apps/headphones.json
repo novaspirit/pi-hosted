@@ -1,0 +1,45 @@
+{
+	"categories": [
+		"Music"
+	],
+	"description": null,
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image32": "linuxserver/headphones:latest",
+	"image64": "linuxserver/headphones:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/headphones-icon.png",
+	"name": "headphones",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-headphones",
+	"platform": "linux",
+	"ports": [
+		"8181:8181/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Headphones",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Headphones",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/Downloads"
+		},
+		{
+			"bind": "/portainer/Music",
+			"container": "/music"
+		}
+	],
+	"webpage": "https://github.com/rembo10/headphones"
+}

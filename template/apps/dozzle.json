@@ -1,0 +1,27 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "Dozzle is a real-time log viewer for docker containers.",
+	"image32": "amir20/dozzle:latest",
+	"image64": "amir20/dozzle:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dozzle.png",
+	"name": "dozzle",
+	"note": "View logs for docker containers.",
+	"officialDoc": "https://github.com/amir20/dozzle",
+	"platform": "linux",
+	"ports": [
+		"8888:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Dozzle",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/var/run/docker.sock",
+			"container": "/var/run/docker.sock"
+		}
+	],
+	"webpage": "https://dozzle.dev/"
+}
