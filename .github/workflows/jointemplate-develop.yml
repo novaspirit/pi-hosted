@@ -1,0 +1,31 @@
+name: joinApps.sh
+
+on:
+  push:
+    branches:
+    - develop
+  #schedule:
+  #- cron:  '15 0 * * *'
+
+jobs:
+  run_joinApps:
+    name: Run joinApps.sh script
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run joinApps.sh script
+      run: ./build/joinApps.sh
+    - name: Commit files
+      run: |
+        git config --local user.email "workflow@github.com"
+        git config --local user.name "GitHub Workflow"
+        git add ./template/portainer-v2-arm32.json
+        git add ./pi-hosted_template/template/portainer-v2.json
+        git add ./template/portainer-v2-arm64.json
+        git commit -m "Runs joinApps.sh" || echo "No new apps detected"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
+        branch: ${{ github.ref }}
