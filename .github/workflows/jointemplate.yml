@@ -20,6 +20,7 @@ jobs:
         git config --local user.email "workflow@github.com"
         git config --local user.name "GitHub Workflow"
         git add ./template/portainer-v2-arm32.json
+        git add ./pi-hosted_template/template/portainer-v2.json
         git add ./template/portainer-v2-arm64.json
         git commit -m "Runs joinApps.sh" || echo "No new apps detected"
     - name: Push changes
