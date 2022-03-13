@@ -18,7 +18,7 @@ List of all apps included in this project with info related to it.
 |[Calibre Web](https://calibre-ebook.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-calibre-web) |  |  |  |  |
 |[Cardigann](https://github.com/cardigann/cardigann)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/cardigann/) |  |  |  |  |
 |[Chevereto](https://chevereto.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/nmtan/chevereto) |  |  |  |  |
-|[Cloudflare DDNS](https://www.cloudflare.com/en-gb/learning/dns/glossary/dynamic-dns/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oznu/cloudflare-ddns/) |  |  |  |  |
+|[Cloudflare DDNS](https://www.cloudflare.com/en-gb/learning/dns/glossary/dynamic-dns/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/favonia/cloudflare-ddns/) |  |  |  |  |
 |[Code Server](https://coder.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-code-server) |  |  |  |  |
 |[Codiad](http://codiad.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/Codiad/Codiad/wiki/Quick-installation-using-Docker) |  |  |  |  |
 |[COPS](https://blog.slucas.fr/projects/calibre-opds-php-server/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-cops) |  |  |  |  |
