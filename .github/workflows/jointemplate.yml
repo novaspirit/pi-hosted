@@ -14,7 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run joinApps.sh script
-      run: ./build/joinApps.sh
+      #run: ./build/joinApps.sh
+      run: ./build/pre-commit
     - name: Commit files
       run: |
         git config --local user.email "workflow@github.com"
