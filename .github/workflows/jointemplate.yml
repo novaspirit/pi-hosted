@@ -13,17 +13,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Run joinApps.sh script
-      #run: ./build/joinApps.sh
-      run: ./build/pre-commit
+    - uses: cardinalby/export-env-action@v1
+      with:
+        envFile: 'build/env.sh'  
+    - name: Joining Apps
+      run: build/joinApps.sh
+    - name: Generate App List
+      run: build/generators/generateAppList.sh
+    - name: Generate Doc List
+      run: build/generators/generateDocList.sh
+    - name: Generate README
+      run: build/generators/generateREADME.sh
+    - name: Generate README Tools
+      run: build/generators/generateToolsREADME.sh
     - name: Commit files
       run: |
         git config --local user.email "workflow@github.com"
         git config --local user.name "GitHub Workflow"
-        git add ./template/portainer-v2-arm32.json
+        git add -- "$pt32"
+        git add -- "$pt64"
         git add ./pi-hosted_template/template/portainer-v2.json
-        git add ./template/portainer-v2-arm64.json
-        git commit -m "Runs joinApps.sh" || echo "No new apps detected"
+        git add -- "$README"
+	      git add -- "$TOOLSREADME"
+	      git add -- "$AppList"
+	      git add -- "$DocList"
+        git commit -m "Build App list and docs" || echo "No new apps detected"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
