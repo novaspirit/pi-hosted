@@ -40,10 +40,15 @@ if $doUpdate ; then
 
 	echo "Updating documentation..."
 	# Run all scripts
+	echo "Starting joinApps.sh..."
 	./joinApps.sh
+	echo "Starting generateAppList..."
 	./generators/generateAppList.sh
+	echo "Starting generateDocList..."
 	./generators/generateDocList.sh
+	echo "Starting generateREADME..."
 	./generators/generateREADME.sh
+	echo "Starting generateToolsREADME..."
 	./generators/generateToolsREADME.sh
 	echo "Update finished"
 

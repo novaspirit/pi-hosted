@@ -61,6 +61,7 @@ List of all apps included in this project with info related to it.
 |[JDownloader](https://my.jdownloader.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/jaymoulin/docker-jdownloader) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[Jellyfin](https://jellyfin.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jellyfin) |  |  |  |  |
 |[Kodi Headless](https://kodi.tv/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/lsioarmhf/kodi-headless-aarch64/) |  |  |  |  |
+|[Komga](https://github.com/gotson/komga)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://komga.org/) |  |  |  |  |
 |[LazyLibrarian](https://lazylibrarian.gitlab.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lazylibrarian) |  |  |  |  |
 |[Let's Encrypt](https://letsencrypt.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/letsencrypt) |  |  |  |  |
 |[libreddit](https://libreddit.silkky.cloud/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/spikecodes/libreddit#2-docker) |  |  |  |  |
