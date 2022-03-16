@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: cardinalby/export-env-action@v1
       with:
-        envFile: 'build/env.sh'  
+        envFile: 'build/env-workflow.sh'  
     - name: Joining Apps
       run: build/joinApps.sh
     - name: Generate App List
