@@ -1,0 +1,35 @@
+{
+	"categories": [
+		"Books",
+		"Tools"
+	],
+	"description": "Komga is a free and open source comics/mangas/magazines server.",
+	"image32": "gotson/komga",
+	"image64": "gotson/komga",
+	"logo": "https://raw.githubusercontent.com/tuta23/pi-hosted/master/images/komga.png",
+	"name": "komga",
+	"officialDoc": "https://komga.org/",
+	"platform": "linux",
+	"ports": [
+		"8995:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Komga",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/komga/config",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/komga/data",
+			"container": "/data"
+		},
+		{
+			"bind": "/etc/timezone",
+			"container": "/etc/timezone",
+			"read_only": "true"
+		}
+	],
+	"webpage": "https://github.com/gotson/komga"
+}
