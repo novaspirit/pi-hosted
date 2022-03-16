@@ -34,9 +34,9 @@ jobs:
         git add -- "$pt64"
         git add ./pi-hosted_template/template/portainer-v2.json
         git add -- "$README"
-	git add -- "$TOOLSREADME"
-	git add -- "$AppList"
-	git add -- "$DocList"
+        git add -- "$TOOLSREADME"
+        git add -- "$AppList"
+        git add -- "$DocList"
         git commit -m "Build App list and docs" || echo "No new apps detected"
     - name: Push changes
       uses: ad-m/github-push-action@master
