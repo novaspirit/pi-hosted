@@ -35,7 +35,7 @@
 	"image64": "favonia/cloudflare-ddns:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/cloudflare-ddns.png",
 	"name": "cloudflare-ddns",
-	"officialDoc": "https://hub.docker.com/r/oznu/cloudflare-ddns/",
+	"officialDoc": "https://github.com/favonia/cloudflare-ddns/",
 	"platform": "linux",
 	"restart_policy": "unless-stopped",
 	"title": "Cloudflare DDNS",
