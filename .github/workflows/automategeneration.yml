@@ -1,0 +1,68 @@
+name: joinApps.sh
+
+on:
+  push:
+    branches:
+    - "master"
+  #schedule:
+  #- cron:  '15 0 * * *'
+env:
+ appsfolder: template/apps
+ pt32: template/portainer-v2-arm32.json
+ pt64: template/portainer-v2-arm64.json
+ README: docs/README.md
+ README_TEMPLATE: build/templates/template_README.md
+ TOOLSREADME: tools/README.md
+ TOOLSREADME_TEMPLATE: build/templates/template_tools_README.md
+ AppList: docs/AppList.md
+ AppList_TEMPLATE: build/templates/template_AppList.md
+ DocList: docs/DocumentList.md
+ DocList_TEMPLATE: build/templates/template_DocumentList.md
+ appinfo: build/info.json
+ Scripts: ../tools/
+ Extras: ../tools/
+ Docs: ../docs/
+ verificationFile: build/tmp/lastrun.sha256
+
+
+jobs:
+  run_joinApps:
+    name: Run joinApps.sh script
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    #- uses: cardinalby/export-env-action@v1
+    #  with:
+    #    envFile: 'build/env-workflow.sh'
+    - name: Check
+      run: |
+           pwd
+           env
+    - name: Joining Apps
+      run: build/joinApps.sh
+    - name: Generate App List
+      run: build/generators/generateAppList.sh
+    - name: Generate Doc List
+      run: build/generators/generateDocList.sh
+    - name: Generate README
+      run: build/generators/generateREADME.sh
+    - name: Generate README Tools
+      run: build/generators/generateToolsREADME.sh
+    - name: Commit files
+      run: |
+        git config --local user.email "workflow@github.com"
+        git config --local user.name "GitHub Workflow"
+        git add -- "$pt32"
+        git add -- "$pt64"
+        git add ./pi-hosted_template/template/portainer-v2.json
+        git add -- "$README"
+        git add -- "$TOOLSREADME"
+        git add -- "$AppList"
+        git add -- "$DocList"
+        git commit -m "Build App list and docs" || echo "No new apps detected"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
+        branch: ${{ github.ref }}
