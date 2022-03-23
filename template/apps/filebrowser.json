@@ -18,11 +18,19 @@
 	"title": "FileBrowser",
 	"type": 1,
 	"videoID": 4,
-	"volumes": [
-		{
-			"bind": "/portainer/Downloads",
-			"container": "/srv"
-		}
+        "volumes": [
+                {
+                        "bind": "/portainer/Downloads",
+                        "container": "/srv"
+                },
+                {
+                        "bind": "/portainer/Files/AppData/Config/filebrowser/filebrowser.db",
+                        "container": "/database/filebrowser.db"
+                },
+                {
+                        "bind": "/portainer/Files/AppData/Config/filebrowser/settings.json",
+                        "container": "/config/settings.json"
+                }
 	],
 	"webpage": "https://filebrowser.org/"
 }
