@@ -1395,6 +1395,14 @@
 				{
 					"bind": "/portainer/Downloads",
 					"container": "/srv"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/filebrowser/filebrowser.db",
+					"container": "/database/filebrowser.db"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/filebrowser/settings.json",
+					"container": "/config/settings.json"
 				}
 			]
 		},
