@@ -37,7 +37,7 @@
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/JDownloader",
-			"container": "/opt/JDownloader/cfg"
+			"container": "/opt/JDownloader/app/cfg"
 		},
 		{
 			"bind": "/portainer/Downloads",
