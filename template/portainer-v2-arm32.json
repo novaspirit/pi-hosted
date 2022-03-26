@@ -353,7 +353,11 @@
 			"image": "caddy:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/caddy.png",
 			"name": "caddy",
+<<<<<<< HEAD
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://caddyserver.com/\" target=\"_blank\">https://caddyserver.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/caddy\" target=\"_blank\">https://hub.docker.com/_/caddy</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_caddy.sh\" target=\"_blank\">install_caddy.sh</a><br><br>Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",
+=======
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://caddyserver.com/\" target=\"_blank\">https://caddyserver.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/caddy\" target=\"_blank\">https://hub.docker.com/_/caddy</a><br><br><b>Pre-installation script must be <span style=background-color:<br><br>Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",
+>>>>>>> bbe64dba53f7da1eab1bc083e31154b41e8c0b54
 			"platform": "linux",
 			"ports": [
 				"80:80/tcp",
@@ -1108,7 +1112,11 @@
 			"restart_policy": "unless-stopped",
 			"title": "Drupal",
 			"type": 3,
+<<<<<<< HEAD
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.drupal.org/\" target=\"_blank\">https://www.drupal.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration\" target=\"_blank\">https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_drupal.sh\" target=\"_blank\">install_drupal.sh</a><br><br>"
+=======
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.drupal.org/\" target=\"_blank\">https://www.drupal.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration\" target=\"_blank\">https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration</a><br><br><b>Pre-installation script must be <span style=background-color:<br><br>"
+>>>>>>> bbe64dba53f7da1eab1bc083e31154b41e8c0b54
 		},
 		{
 			"categories": [
@@ -3260,7 +3268,11 @@
 			"restart_policy": "unless-stopped",
 			"title": "Nginx Proxy Manager",
 			"type": 3,
+<<<<<<< HEAD
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#using-mysql-mariadb-database\" target=\"_blank\">https://nginxproxymanager.com/setup/#using-mysql-mariadb-database</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/nginx-proxy-manager.sh\" target=\"_blank\">nginx-proxy-manager.sh</a><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
+=======
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#using-mysql-mariadb-database\" target=\"_blank\">https://nginxproxymanager.com/setup/#using-mysql-mariadb-database</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><b>Pre-installation script must be <span style=background-color:<br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
+>>>>>>> bbe64dba53f7da1eab1bc083e31154b41e8c0b54
 		},
 		{
 			"categories": [
@@ -4144,7 +4156,11 @@
 			"restart_policy": "unless-stopped",
 			"title": "Raspberry Pi Docker Monitor",
 			"type": 3,
+<<<<<<< HEAD
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">rpi_docker_monitor.md</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/rpi_docker_monitor.sh\" target=\"_blank\">rpi_docker_monitor.sh</a><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8\" target=\"_blank\">Raspberry Pi Docker Monitoring</a><br><br>"
+=======
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">rpi_docker_monitor.md</a><br><br><b>Pre-installation script must be <span style=background-color:<br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8\" target=\"_blank\">Raspberry Pi Docker Monitoring</a><br><br>"
+>>>>>>> bbe64dba53f7da1eab1bc083e31154b41e8c0b54
 		},
 		{
 			"categories": [
@@ -4962,7 +4978,11 @@
 			"image": "traefik:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/traefik.png",
 			"name": "traefik",
+<<<<<<< HEAD
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://doc.traefik.io/traefik/\" target=\"_blank\">https://doc.traefik.io/traefik/</a><br><b>Official Docker Documentation: </b><a href=\"https://doc.traefik.io/traefik/getting-started/install-traefik/\" target=\"_blank\">https://doc.traefik.io/traefik/getting-started/install-traefik/</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/traefik.sh\" target=\"_blank\">traefik.sh</a><br><br>A simple and lightweight reverse proxy",
+=======
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://doc.traefik.io/traefik/\" target=\"_blank\">https://doc.traefik.io/traefik/</a><br><b>Official Docker Documentation: </b><a href=\"https://doc.traefik.io/traefik/getting-started/install-traefik/\" target=\"_blank\">https://doc.traefik.io/traefik/getting-started/install-traefik/</a><br><br><b>Pre-installation script must be <span style=background-color:<br><br>A simple and lightweight reverse proxy",
+>>>>>>> bbe64dba53f7da1eab1bc083e31154b41e8c0b54
 			"platform": "linux",
 			"ports": [
 				"80:80/tcp",
@@ -5388,7 +5408,11 @@
 			"restart_policy": "unless-stopped",
 			"title": "UnPoller Monitor",
 			"type": 3,
+<<<<<<< HEAD
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://unpoller.com/\" target=\"_blank\">https://unpoller.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md\" target=\"_blank\">https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/UnPoller-Monitor.md\" target=\"_blank\">UnPoller-Monitor.md</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/unpoller-install.sh\" target=\"_blank\">unpoller-install.sh</a><br><br>"
+=======
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://unpoller.com/\" target=\"_blank\">https://unpoller.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md\" target=\"_blank\">https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/UnPoller-Monitor.md\" target=\"_blank\">UnPoller-Monitor.md</a><br><br><b>Pre-installation script must be <span style=background-color:<br><br>"
+>>>>>>> bbe64dba53f7da1eab1bc083e31154b41e8c0b54
 		},
 		{
 			"categories": [
@@ -5494,7 +5518,11 @@
 			"restart_policy": "unless-stopped",
 			"title": "Vikunja With Frontend",
 			"type": 3,
+<<<<<<< HEAD
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://vikunja.io/\" target=\"_blank\">https://vikunja.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://vikunja.io/docs/full-docker-example/#example-with-nginx-as-proxy\" target=\"_blank\">https://vikunja.io/docs/full-docker-example/#example-with-nginx-as-proxy</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_vikunja.sh\" target=\"_blank\">install_vikunja.sh</a><br><br>"
+=======
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://vikunja.io/\" target=\"_blank\">https://vikunja.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://vikunja.io/docs/full-docker-example/#example-with-nginx-as-proxy\" target=\"_blank\">https://vikunja.io/docs/full-docker-example/#example-with-nginx-as-proxy</a><br><br><b>Pre-installation script must be <span style=background-color:<br><br>"
+>>>>>>> bbe64dba53f7da1eab1bc083e31154b41e8c0b54
 		},
 		{
 			"categories": [
@@ -5576,7 +5604,11 @@
 					"container": "/config"
 				}
 			],
+<<<<<<< HEAD
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/benbusby/whoogle-search\" target=\"_blank\">https://github.com/benbusby/whoogle-search</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/benbusby/whoogle-search#g-manual-docker\" target=\"_blank\">https://github.com/benbusby/whoogle-search#g-manual-docker</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_whoogle.sh\" target=\"_blank\">install_whoogle.sh</a><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12\" target=\"_blank\">How to Install Whoogle to replace using Google and repo notes</a><br><br>"
+=======
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/benbusby/whoogle-search\" target=\"_blank\">https://github.com/benbusby/whoogle-search</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/benbusby/whoogle-search#g-manual-docker\" target=\"_blank\">https://github.com/benbusby/whoogle-search#g-manual-docker</a><br><br><b>Pre-installation script must be <span style=background-color:<br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12\" target=\"_blank\">How to Install Whoogle to replace using Google and repo notes</a><br><br>"
+>>>>>>> bbe64dba53f7da1eab1bc083e31154b41e8c0b54
 		},
 		{
 			"categories": [
