@@ -74,7 +74,7 @@ You're done! Now just click App Templates and deploy applications!
 |10|[Setting up Raspberry Pi Samba Server For File Sharing on Docker](https://www.youtube.com/watch?v=2zZ3_1GRWrM&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=11)||
 |11|[How to Install Whoogle to replace using Google and repo notes](https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12)||
 |12|[Checking out Windows 2000 Docker](https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13)||
-|Extra2|[Portainer.io App Template for Raspberry Pi arm/arm64 I Need Your Help!](https://www.youtube.com/watch?v=Ppv1cUomwn0)||
+|Extra2|[3 Huge Announcements!! Discord Giveaway! Pi-Hosted!! & SBC Garage Sale!](https://www.youtube.com/watch?v=Ppv1cUomwn0)||
 
 ### Aditional Documentation
 
