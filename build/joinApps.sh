@@ -54,7 +54,7 @@ for app in template/apps/*.json; do
 	fi
 
 	if Script=$( echo "$appjson" | jq -e '.preInstallScript' ) ; then
-		Script="<br><b>Pre-installation script must be <span style="background-color: #FFFF00">RAN</span> before you install: </b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">${Script:1:-1}</a>"
+		Script="<br><b>Pre-installation script must be RAN before you install: </b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">${Script:1:-1}</a>"
 		appjson=$( echo "$appjson" | jq 'del(.preInstallScript)' )
 	else
 		unset Script
