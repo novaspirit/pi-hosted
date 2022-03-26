@@ -9,7 +9,8 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/whoogle.png",
 	"name": "whoogle",
 	"officialDoc": "https://github.com/benbusby/whoogle-search#g-manual-docker",
-	"platform": "linux",
+        "preInstallScript": "install_whoogle.sh",
+ 	"platform": "linux",
 	"ports": [
 		"5001:5000/tcp"
 	],

@@ -202,6 +202,13 @@
 			"wget": "https://git.io/JM5Tr"
 		},
 		{
+			"File": "install_whoogle.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Description": "Install Whoogle",
+			"wget": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_whoogle.sh"
+		},
+		{
 			"File": "update_libseccomp2.sh",
 			"Type": "Update",
 			"Exec": "bash",
