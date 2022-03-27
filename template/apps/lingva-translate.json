@@ -27,7 +27,7 @@
 		}
 	],
 	"image64": "cinetube/lingva-translate:latest",
-	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lingva-translate.png",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lingva-translate.svg",
 	"name": "lingva-translate",
 	"officialDoc": "https://github.com/TheDavidDelta/lingva-translate",
 	"platform": "linux",
