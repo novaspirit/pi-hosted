@@ -5884,6 +5884,24 @@
 		{
 			"categories": [
 				"Other",
+				"Tools"
+			],
+			"description": "This is a replacement for Microsoft's KMS server.",
+			"image": "mikolatero/vlmcsd:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/kms.png",
+			"name": "vlmcsd-kms",
+			"platform": "linux",
+			"ports": [
+				"1688:1688/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Vlmcsd - KMS",
+			"type": 1,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/mikolatero/vlmcsd\" target=\"_blank\">https://hub.docker.com/r/mikolatero/vlmcsd</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/mikolatero/docker-vlmcsd\" target=\"_blank\">https://github.com/mikolatero/docker-vlmcsd</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
 				"Tools",
 				"Maintenance"
 			],
