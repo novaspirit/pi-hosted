@@ -4,8 +4,6 @@ services:
     command:
     - '--docker_only=true'
     - '--housekeeping_interval=30s'
-    - '--disable_metrics=accelerator,cpu_topology,disk,memory_numa,tcp,udp,percpu,sched,process,hugetlb,referenced_memory,resctrl,cpuset,advtcp,memory_numa'
-    
     container_name: monitoring-cadvisor
     devices:
       - /dev/kmsg:/dev/kmsg
