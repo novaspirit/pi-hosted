@@ -67,6 +67,7 @@ List of all apps included in this project with info related to it.
 |[libreddit](https://libreddit.silkky.cloud/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/spikecodes/libreddit#2-docker) |  |  |  |  |
 |[LibreSpeed](https://librespeed.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-librespeed) |  |  |  |  |
 |[lidarr](https://lidarr.audio/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lidarr) |  |  |  |  |
+|[Lingva Translate](https://lingva.ml/)|64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/TheDavidDelta/lingva-translate) |  |  |  |  |
 |[Lychee](https://lycheeorg.github.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lychee) |  |  |  |  |
 |[Lychee With Mariadb](https://lycheeorg.github.io/)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lychee) |  |  |  |  |
 |[MariaDB](https://mariadb.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mariadb) |  |  |  |  |
