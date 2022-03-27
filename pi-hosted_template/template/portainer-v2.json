@@ -5503,7 +5503,7 @@
 			],
 			"description": "This is a replacement for Microsoft's KMS server.",
 			"image": "mikolatero/vlmcsd:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/kms.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/vlmcsd.png",
 			"name": "vlmcsd-kms",
 			"platform": "linux",
 			"ports": [
