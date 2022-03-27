@@ -6,7 +6,7 @@
 	"description": "This is a replacement for Microsoft's KMS server.",
 	"image32": "mikolatero/vlmcsd:latest",
 	"image64": "mikolatero/vlmcsd:latest",
-	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/kms.png",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/vlmcsd.png",
 	"name": "vlmcsd-kms",
 	"officialDoc": "https://github.com/mikolatero/docker-vlmcsd",
 	"platform": "linux",
