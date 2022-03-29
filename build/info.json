@@ -71,6 +71,11 @@
 			"ID": "Extra2",
 			"Title": "3 Huge Announcements!! Discord Giveaway! Pi-Hosted!! & SBC Garage Sale!",
 			"URL": "https://www.youtube.com/watch?v=Ppv1cUomwn0"
+		},
+		{
+			"ID": 13,
+			"Title": "Beginners Guide to WireGuard Docker and Installing Pi-OS 64bit",
+			"URL": "https://www.youtube.com/watch?v=yB_jAumIxOg"
 		}
 	],
 	"docs": [
