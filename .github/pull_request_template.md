@@ -1,3 +1,8 @@
+# Warning we automaticly generate the following files
+# docs/README.md, template/portainer-v2-arm32.json, template/portainer-v2-arm64.json, tools/README.md, docs/AppList.md, docs/DocumentList.md 
+# Please make any changes to these files instead 
+# template/apps/*, build/templates/* build/info.json
+
 <!-- The title of the pull request should be a short description of what was done.  -->
 
 <!-- You can remove any parts of this template not applicable to your Pull Request.  -->
