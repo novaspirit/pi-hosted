@@ -9,7 +9,7 @@ services:
       # Optional:
       - PASSWORD=${PASSWORD}
       - WG_PORT=${WG_PORT}
-      - WG_DEFAULT_ADDRESS=10.8.0.x
+      - WG_DEFAULT_ADDRESS=${WG_DEFAULT_ADDRESS}
       - WG_DEFAULT_DNS=${WG_DEFAULT_DNS}
       - WG_ALLOWED_IPS=${WG_ALLOWED_IPS}
       
