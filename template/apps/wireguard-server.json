@@ -28,9 +28,14 @@
 			"name": "WG_DEFAULT_DNS"
 		},
 		{
-			"default": "0.0.0.0/0, ::/0",
-			"label": "WG_ALLOWED_IPS",
-			"name": "WG_ALLOWED_IPS"
+			"default": "10.8.0.x",
+			"label": "WG_DEFAULT_ADDRESS",
+			"name": "WG_DEFAULT_ADDRESS"
+                },
+                {
+                        "default": "0.0.0.0/0, ::/0",
+                        "label": "WG_ALLOWED_IPS",
+                        "name": "WG_ALLOWED_IPS"
 		}
 	],
 	"image64": "weejewel/wg-easy:latest",
