@@ -1,5 +1,5 @@
 # Warning we automaticly generate the following files
-# docs/README.md, template/portainer-v2-arm32.json, template/portainer-v2-arm64.json, tools/README.md, docs/AppList.md, docs/DocumentList.md 
+# docs/README.md, template/portainer-v2-arm32.json, template/portainer-v2-arm64.json, tools/README.md, docs/AppList.md, docs/DocumentList.md, pi-hosted_template/template/portainer-v2.json 
 # Please make any changes to these files instead 
 # template/apps/*, build/templates/* build/info.json
 
