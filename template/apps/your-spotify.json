@@ -1,0 +1,55 @@
+{
+  "categories": ["Music"],
+  "description": "Self hosted Spotify tracking dashboard.",
+  "env": [
+    {
+      "default": "3081",
+      "label": "API Port",
+      "name": "__api_port__"
+    },
+    {
+      "default": "3080",
+      "label": "Client Port",
+      "name": "__client_port__"
+    },
+    {
+      "default": "http://192.168.X.Y:3080",
+      "label": "Client Endpoint",
+      "name": "__client_endpoint__",
+      "description": "If you have changed the default client port don't forget to change it here too."
+    },
+    {
+      "default": "http://192.168.X.Y:3081",
+      "label": "API Endpoint",
+      "name": "__api_endpoint__",
+      "description": "If you have changed the default API port don't forget to change it here too."
+    },
+    {
+      "default": "America/New_York",
+      "label": "TZ",
+      "name": "TZ"
+    },
+    {
+      "description": "Create a Spotify App and copy the Client ID: https://developer.spotify.com/dashboard/applications",
+      "label": "Spotify Client ID",
+      "name": "__your_spotify_client_id__"
+    },
+    {
+      "description": "Copy the Client Secret: https://developer.spotify.com/dashboard/applications",
+      "label": "Spotify Client Secret",
+      "name": "__your_spotify_secret__"
+    }
+  ],
+  "name": "Your Spotify",
+  "officialDoc": "https://github.com/Yooooomi/your_spotify#readme",
+  "webpage": "https://github.com/Yooooomi/your_spotify",
+  "note": "Create a Spotify App here: https://developer.spotify.com/dashboard/applications. Don't forget adding Redirect URL: http://192.168.X.Y:3081/oauth/spotify/callback under edit settings of the dashboard.",
+  "platform": "linux",
+  "repository": {
+    "stackfile32": "stack/your-spotify.yml",
+    "stackfile64": "stack/your-spotify.yml",
+    "url": "https://github.com/pi-hosted/pi-hosted"
+  },
+  "title": "your-spotify",
+  "type": 3
+}
