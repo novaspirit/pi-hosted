@@ -32,7 +32,7 @@
 	"description": "[Adguardhome-sync](https://github.com/bakito/adguardhome-sync/) is a tool to synchronize AdGuardHome config to replica instances.",
 	"image32": "linuxserver/adguardhome-sync:latest",
 	"image64": "linuxserver/adguardhome-sync:latest",
-	"logo": "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/adguardhomesync-icon.png",
+	"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/adguardhomesync-icon.png",
 	"name": "Adguardhome-sync",
 	"note": "Don't forget to create the volume directories on the host file system. mkdir -p /volume1/docker/adguardhome-sync/config",
 	"officialDoc": "https://github.com/linuxserver/docker-adguardhome-sync#usage",
