@@ -6,36 +6,37 @@
 				"Other",
 				"Tools"
 			],
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "America/New_York",
+					"description": "Specify a timezone to use for example America/New_York, Europe/Amsterdam"
+				},
+				{
+					"name": "CONFIGFILE",
+					"label": "CONFIGFILE",
+					"default": "/config/adguardhome-sync.yaml",
+					"description": "Set a custom config file."
+				}
+			],
 			"description": "[Adguardhome-sync](https://github.com/bakito/adguardhome-sync/) is a tool to synchronize AdGuardHome config to replica instances.",
-                        "env": [
-                        	{
-                        		"name": "PUID",
-                        		"label": "PUID",
-                        		"default": "1024",
-                        		"description": "for UserID"
-                        	},
-                        	{
-                        		"name": "PGID",
-                        		"label": "PGID",
-                        		"default": "100",
-                        		"description": "for GroupID"
-                        	},
-                        	{
-                        		"name": "TZ",
-                        		"label": "TZ",
-                        		"default": "Europe/Amsterdam",
-                        		"description": "Specify a timezone to use for example Europe/Amsterdam"
-                        	},
-                        	{
-                        		"name": "CONFIGFILE",
-                        		"label": "CONFIGFILE",
-                        		"default": "/config/adguardhome-sync.yaml",
-                        		"description": "Set a custom config file."
-                        	}
-                        ],
 			"image": "linuxserver/adguardhome-sync:latest",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/adguardhomesync-icon.png",
 			"name": "Adguardhome-sync",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://adguard.com/en/adguard-home/overview.html\" target=\"_blank\">https://adguard.com/en/adguard-home/overview.html</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/linuxserver/docker-adguardhome-sync#usage\" target=\"_blank\">https://github.com/linuxserver/docker-adguardhome-sync#usage</a><br><br><br>Don't forget to create the volume directories on the host file system. mkdir -p /volume1/docker/adguardhome-sync/config",
 			"platform": "linux",
 			"ports": [
 				"8080:8080/tcp"
@@ -48,8 +49,7 @@
 					"bind": "/portainer/Files/AppData/Config/adguardhome-sync/config",
 					"container": "/config"
 				}
-			],
-			"Don't forget to create the volume directories on the host file system. mkdir -p /volume1/docker/adguardhome-sync/config"
+			]
 		},
 		{
 			"categories": [
