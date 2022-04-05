@@ -7,20 +7,20 @@
   	{
   		"name": "PUID",
   		"label": "PUID",
-  		"default": "1024",
+  		"default": "1000",
   		"description": "for UserID"
   	},
   	{
   		"name": "PGID",
   		"label": "PGID",
-  		"default": "100",
+  		"default": "1000",
   		"description": "for GroupID"
   	},
   	{
   		"name": "TZ",
   		"label": "TZ",
-  		"default": "Europe/Amsterdam",
-  		"description": "Specify a timezone to use for example Europe/Amsterdam"
+  		"default": "America/New_York",
+  		"description": "Specify a timezone to use for example America/New_York, Europe/Amsterdam"
   	},
   	{
   		"name": "CONFIGFILE",
