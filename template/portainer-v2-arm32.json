@@ -3,6 +3,56 @@
 	"templates": [
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "[Adguardhome-sync](https://github.com/bakito/adguardhome-sync/) is a tool to synchronize AdGuardHome config to replica instances.",
+                        "env": [
+                        	{
+                        		"name": "PUID",
+                        		"label": "PUID",
+                        		"default": "1024",
+                        		"description": "for UserID"
+                        	},
+                        	{
+                        		"name": "PGID",
+                        		"label": "PGID",
+                        		"default": "100",
+                        		"description": "for GroupID"
+                        	},
+                        	{
+                        		"name": "TZ",
+                        		"label": "TZ",
+                        		"default": "Europe/Amsterdam",
+                        		"description": "Specify a timezone to use for example Europe/Amsterdam"
+                        	},
+                        	{
+                        		"name": "CONFIGFILE",
+                        		"label": "CONFIGFILE",
+                        		"default": "/config/adguardhome-sync.yaml",
+                        		"description": "Set a custom config file."
+                        	}
+                        ],
+			"image": "linuxserver/adguardhome-sync:latest",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/adguardhomesync-icon.png",
+			"name": "Adguardhome-sync",
+			"platform": "linux",
+			"ports": [
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Adguardhome-sync",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/adguardhome-sync/config",
+					"container": "/config"
+				}
+			],
+			"Don't forget to create the volume directories on the host file system. mkdir -p /volume1/docker/adguardhome-sync/config"
+		},
+		{
+			"categories": [
 				"Music"
 			],
 			"description": "[DEPRECATED] Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
