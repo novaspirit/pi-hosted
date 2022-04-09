@@ -9,6 +9,7 @@ List of all apps included in this project with info related to it.
 |[Adguardhome-sync](https://adguard.com/en/adguard-home/overview.html)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-adguardhome-sync#usage) |  |  |  |  |
 |[Airsonic Advanced](https://github.com/airsonic-advanced/airsonic-advanced)|64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-airsonic-advanced) |  |  |  |  |
 |[Airsonic](https://airsonic.github.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://airsonic.github.io/docs/install/docker/) |  |  |  |  |
+|[ArchiSteamFarm](https://github.com/JustArchiNET/ArchiSteamFarm/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Docker/) |  |  |  |  |
 |[Archivebox](https://archivebox.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ArchiveBox/ArchiveBox/wiki/Docker) |  |  |  |  |
 |[Authelia](https://www.authelia.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://www.authelia.com/docs/configuration/) |  |  |  |  |
 |[Bazarr](https://www.bazarr.media/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.bazarr.media/Getting-Started/Installation/Docker/docker/) |  |  |  |  |
