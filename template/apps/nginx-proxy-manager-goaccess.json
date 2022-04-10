@@ -33,25 +33,25 @@
 		{
 			"default": "False",
 			"label": "SKIP_ARCHIVED_LOGS",
-			"name": "SKIP_ARCHIVED_LOGS"
+			"name": "SKIP_ARCHIVED_LOGS",
 			"description": "Defaults to False. Set to True to skip archived logs, i.e. proxy-host*.gz"
 		},
 		{
 			"default": "False",
 			"label": "BASIC_AUTH",
-			"name": "BASIC_AUTH"
+			"name": "BASIC_AUTH",
 			"description": "Defaults to False. Set to True to enable nginx basic authentication. Docker container needs to stopped or restarted each time this flag is modified. This allows for the .htpasswd file to be changed accordingly."
 		},
 		{
 			"default": "user",
 			"label": "BASIC_AUTH_USERNAME",
-			"name": "BASIC_AUTH_USERNAME"
+			"name": "BASIC_AUTH_USERNAME",
 			"description": "(Optional) Requires BASIC_AUTH to bet set to True. Username for basic authentication."
 		},
 		{
 			"default": "Password",
 			"label": "BASIC_AUTH_PASSWORD",
-			"name": "BASIC_AUTH_PASSWORD"
+			"name": "BASIC_AUTH_PASSWORD",
 			"description": "(Optional) Requires BASIC_AUTH to bet set to True. Password for basic authentication."
 		}
 	],
@@ -63,7 +63,7 @@
 	"ports": [
 		"80:80/tcp",
 		"81:81/tcp",
-		"443:443/tcp"
+		"443:443/tcp",
 		"7880:7880/tcp"
 	],
 	"preInstallScript": "nginx-proxy-manager.sh",

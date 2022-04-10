@@ -3359,6 +3359,81 @@
 		},
 		{
 			"categories": [
+				"Proxy",
+				"Tools"
+			],
+			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "password",
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"default": "password",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
+				},
+				{
+					"default": "False",
+					"label": "SKIP_ARCHIVED_LOGS",
+					"name": "SKIP_ARCHIVED_LOGS",
+					"description": "Defaults to False. Set to True to skip archived logs, i.e. proxy-host*.gz"
+				},
+				{
+					"default": "False",
+					"label": "BASIC_AUTH",
+					"name": "BASIC_AUTH",
+					"description": "Defaults to False. Set to True to enable nginx basic authentication. Docker container needs to stopped or restarted each time this flag is modified. This allows for the .htpasswd file to be changed accordingly."
+				},
+				{
+					"default": "user",
+					"label": "BASIC_AUTH_USERNAME",
+					"name": "BASIC_AUTH_USERNAME",
+					"description": "(Optional) Requires BASIC_AUTH to bet set to True. Username for basic authentication."
+				},
+				{
+					"default": "Password",
+					"label": "BASIC_AUTH_PASSWORD",
+					"name": "BASIC_AUTH_PASSWORD",
+					"description": "(Optional) Requires BASIC_AUTH to bet set to True. Password for basic authentication."
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
+			"name": "nginx-proxy-manager-goaccess",
+			"platform": "linux",
+			"ports": [
+				"80:80/tcp",
+				"81:81/tcp",
+				"443:443/tcp",
+				"7880:7880/tcp"
+			],
+			"repository": {
+				"stackfile": "stack/nginx-proxy-manager-goaccess.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted"
+			},
+			"restart_policy": "unless-stopped",
+			"title": "Nginx Proxy Manager with Goaccess Charts",
+			"type": 3,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#using-mysql-mariadb-database\" target=\"_blank\">https://nginxproxymanager.com/setup/#using-mysql-mariadb-database</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/nginx-proxy-manager.sh\" target=\"_blank\">nginx-proxy-manager.sh</a><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Web",
 				"Tools"
