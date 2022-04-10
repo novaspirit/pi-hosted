@@ -28,8 +28,8 @@ services:
       MYSQL_DATABASE: npm
       MYSQL_USER: npm
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
-      PUID: ${USER_UID}
-      PGID: ${USER_GID}
+      PUID: ${PUID}
+      PGID: ${PGID}
       TZ: ${TZ}
 
     volumes:
@@ -39,8 +39,8 @@ services:
     image: justsky/goaccess-for-nginxproxymanager:latest
     restart: unless-stopped
     environment:
-      PUID: ${USER_UID}
-      PGID: ${USER_GID}
+      PUID: ${PUID}
+      PGID: ${PGID}
       TZ: ${TZ}
       SKIP_ARCHIVED_LOGS: ${SKIP_ARCHIVED_LOGS}
       BASIC_AUTH: ${BASIC_AUTH}
