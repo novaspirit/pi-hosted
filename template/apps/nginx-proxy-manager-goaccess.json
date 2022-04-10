@@ -31,28 +31,28 @@
 			"name": "MYSQL_ROOT_PASSWORD"
 		},
 		{
-			"default": "False",
+			"default": "false",
 			"label": "SKIP_ARCHIVED_LOGS",
 			"name": "SKIP_ARCHIVED_LOGS",
-			"description": "Defaults to False. Set to True to skip archived logs, i.e. proxy-host*.gz"
+			"description": "Defaults to false. Set to true to skip archived logs, i.e. proxy-host*.gz"
 		},
 		{
-			"default": "False",
+			"default": "false",
 			"label": "BASIC_AUTH",
 			"name": "BASIC_AUTH",
-			"description": "Defaults to False. Set to True to enable nginx basic authentication. Docker container needs to stopped or restarted each time this flag is modified. This allows for the .htpasswd file to be changed accordingly."
+			"description": "Defaults to false. Set to true to enable nginx basic authentication. Docker container needs to stopped or restarted each time this flag is modified. This allows for the .htpasswd file to be changed accordingly."
 		},
 		{
 			"default": "user",
-			"label": "BASIC_AUTH_USERNAME",
+			"label": "BASIC_AUTH_USERNAME Ignore if Basic Auth set to false",
 			"name": "BASIC_AUTH_USERNAME",
-			"description": "(Optional) Requires BASIC_AUTH to bet set to True. Username for basic authentication."
+			"description": "(Optional) Requires BASIC_AUTH to bet set to true. Username for basic authentication."
 		},
 		{
 			"default": "Password",
-			"label": "BASIC_AUTH_PASSWORD",
+			"label": "BASIC_AUTH_PASSWORD Ignore if Basic Auth set to false",
 			"name": "BASIC_AUTH_PASSWORD",
-			"description": "(Optional) Requires BASIC_AUTH to bet set to True. Password for basic authentication."
+			"description": "(Optional) Requires BASIC_AUTH to bet set to true. Password for basic authentication."
 		}
 	],
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
