@@ -20,7 +20,7 @@
   		"name": "TZ",
   		"label": "TZ",
   		"default": "America/New_York",
-  		"description": "Specify a timezone to use for example America/New_York, Europe/Amsterdam"
+  		"description": "Specify a timezone to use for example America/New_York"
   	},
   	{
   		"name": "CONFIGFILE",
@@ -34,7 +34,6 @@
 	"image64": "linuxserver/adguardhome-sync:latest",
 	"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/adguardhomesync-icon.png",
 	"name": "Adguardhome-sync",
-	"note": "Don't forget to create the volume directories on the host file system. mkdir -p /volume1/docker/adguardhome-sync/config",
 	"officialDoc": "https://github.com/linuxserver/docker-adguardhome-sync#usage",
 	"platform": "linux",
 	"ports": [
