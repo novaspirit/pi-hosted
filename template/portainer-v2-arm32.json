@@ -234,7 +234,7 @@
 			"image": "hurlenko/aria2-ariang",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ariang.png",
 			"name": "Aria2 + AriaNG",
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.authelia.com/\" target=\"_blank\">https://www.authelia.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/hurlenko/aria2-ariang\" target=\"_blank\">https://hub.docker.com/r/hurlenko/aria2-ariang</a>",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://aria2.github.io/\" target=\"_blank\">https://aria2.github.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/hurlenko/aria2-ariang\" target=\"_blank\">https://hub.docker.com/r/hurlenko/aria2-ariang</a>",
 			"platform": "linux",
 			"ports": [
 				"6900:8080/tcp"
