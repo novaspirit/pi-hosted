@@ -1,0 +1,43 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "[Adguardhome](https://adguard.com/en/adguard-home/overview.html) AdGuard Home is a network-wide software for blocking ads & tracking.",
+	"image32": "adguard/adguardhome:latest",
+	"image64": "adguard/adguardhome:latest",
+	"logo": "https://developer.asustor.com/uploadIcons/0020_999_1595573028_AdGuardhome_256.png",
+	"name": "Adguardhome",
+	"officialDoc": "https://github.com/AdguardTeam/AdGuardHome/wiki/Docker",
+	"platform": "linux",
+	"ports": [
+		"53:53/tcp",
+		"53:53/udp",
+		"67:67/udp",
+		"68:68/udp",
+		"80:80/tcp",
+		"443:443/tcp",
+		"443:443/udp",
+		"3000:3000/tcp",
+		"853:853/tcp",
+		"784:784/udp",
+		"853:853/udp",
+		"8853:8853/udp",
+		"5443:5443/tcp",
+		"5443:5443/udp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Adguardhome",
+	"type": 1,
+	"volumes": [
+		{
+      "bind": "/portainer/Files/AppData/Config/AdguardHome/config",
+			"container": "/opt/adguardhome/conf"
+		},
+		{
+      "bind": "/portainer/Files/AppData/Config/AdguardHome/work",
+			"container": "/opt/adguardhome/work"
+		}
+	],
+	"webpage": "https://adguard.com/en/adguard-home/overview.html"
+}
