@@ -136,7 +136,7 @@ List of all apps included in this project with info related to it.
 |[SyncThing](https://syncthing.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-syncthing) |  |  |  |  |
 |[Tautulli](https://tautulli.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-tautulli) |  |  |  |  |
 |[TheLounge](https://thelounge.chat/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-thelounge) |  |  |  |  |
-|[TiddlyWiki](https://tiddlywiki.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/djmaze/tiddlywiki-docker) |  |  |  |  |
+|[TiddlyWiki](https://tiddlywiki.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://gitlab.com/nicolaw/tiddlywiki) |  |  |  |  |
 |[Traefik](https://doc.traefik.io/traefik/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://doc.traefik.io/traefik/getting-started/install-traefik/) |  | [![](../build/images/script_icon.png)](../tools/traefik.sh) |  |  |
 |[Transmission](https://transmissionbt.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-transmission) |  |  |  |  |
 |[Transmission-OpenVPN](https://transmissionbt.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://haugene.github.io/docker-transmission-openvpn/run-container/) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=tGLVEq913_4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=5) |

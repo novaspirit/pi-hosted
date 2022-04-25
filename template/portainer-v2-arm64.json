@@ -5530,7 +5530,7 @@
 				"Tools"
 			],
 			"description": "A unique, non-linear notebook wiki.",
-			"image": "mazzolino/tiddlywiki:latest",
+			"image": "nicolaw/tiddlywiki:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tiddlywiki.png",
 			"name": "tiddlywiki",
 			"platform": "linux",
@@ -5546,7 +5546,7 @@
 					"container": "/var/lib/tiddlywiki"
 				}
 			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://tiddlywiki.com/\" target=\"_blank\">https://tiddlywiki.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/djmaze/tiddlywiki-docker\" target=\"_blank\">https://github.com/djmaze/tiddlywiki-docker</a><br><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://tiddlywiki.com/\" target=\"_blank\">https://tiddlywiki.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://gitlab.com/nicolaw/tiddlywiki\" target=\"_blank\">https://gitlab.com/nicolaw/tiddlywiki</a><br><br><br>"
 		},
 		{
 			"categories": [
