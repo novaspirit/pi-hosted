@@ -6,6 +6,7 @@ List of all apps included in this project with info related to it.
 
 |App Title|System|Type |Official<br>Doc|PiHosted<br>Doc|Install Script|Extra Scripts|Youtube Video|
 |:--------|:----:|:---:|:-------------:|:-------------:|:------------:|:------------|:-----------:|
+|[Adguardhome](https://adguard.com/en/adguard-home/overview.html)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/AdguardTeam/AdGuardHome/wiki/Docker) |  |  |  |  |
 |[Adguardhome-sync](https://adguard.com/en/adguard-home/overview.html)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-adguardhome-sync#usage) |  |  |  |  |
 |[Airsonic Advanced](https://github.com/airsonic-advanced/airsonic-advanced)|64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-airsonic-advanced) |  |  |  |  |
 |[Airsonic](https://airsonic.github.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://airsonic.github.io/docs/install/docker/) |  |  |  |  |
