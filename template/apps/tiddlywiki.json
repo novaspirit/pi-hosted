@@ -4,11 +4,11 @@
 		"Tools"
 	],
 	"description": "A unique, non-linear notebook wiki.",
-	"image32": "mazzolino/tiddlywiki:latest",
-	"image64": "mazzolino/tiddlywiki:latest",
+	"image32": "nicolaw/tiddlywiki:latest",
+	"image64": "nicolaw/tiddlywiki:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tiddlywiki.png",
 	"name": "tiddlywiki",
-	"officialDoc": "https://github.com/djmaze/tiddlywiki-docker",
+	"officialDoc": "https://gitlab.com/nicolaw/tiddlywiki",
 	"platform": "linux",
 	"ports": [
 		"8080:8080/tcp"
