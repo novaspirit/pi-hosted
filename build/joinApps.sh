@@ -20,6 +20,9 @@ cd "$scriptDir/.." || exit
 
 # Parsing all json files in apps folder
 for app in template/apps/*.json; do
+	# Output app name to easy debug
+	echo "adding $app to template..."
+
 	# Adding app template to 32 and 64 bits variables
 	appjson=$( cat "$app" )
 
