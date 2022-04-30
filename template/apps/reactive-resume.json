@@ -4,22 +4,70 @@
 		"Tools"
 	],
 	"description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
-	"image64": "martadinata666/reactive-resume:latest",
-	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/reactiveresume.png",
-	"name": "reactive-resume",
-	"officialDoc": "https://hub.docker.com/r/martadinata666/reactive-resume",
-	"platform": "linux",
-	"ports": [
-		"7768:80/tcp"
-	],
-	"restart_policy": "unless-stopped",
-	"title": "Reactive-Resume",
-	"type": 1,
-	"volumes": [
+	"env": [
 		{
-			"bind": "/portainer/Files/AppData/Config/ReactiveResume",
-			"container": "/keepoutoftheway/var/www/html"
+			"default": "UTC",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "http://localhost:7768",
+			"description": "use your domain if any, or Raspberry IP. Do not end it with a slash '/'.",
+			"label": "PUBLIC_URL",
+			"name": "PUBLIC_URL"
+		},
+		{
+			"default": "http://localhost:7769",
+			"description": "Ideally it should be the same domain as above with /api and configured as such on nginx. The API port is 7769.",
+			"label": "PUBLIC_SERVER_URL",
+			"name": "PUBLIC_SERVER_URL"
+		},
+		{
+			"default": "ChangeMeToAnyRandomString",
+			"label": "SECRET_KEY",
+			"name": "SECRET_KEY"
+		},
+		{
+			"default": "ChangeMeToAnyRandomString",
+			"label": "JWT_SECRET",
+			"name": "JWT_SECRET"
+		},
+		{
+			"default": "reactiveresumedbpass",
+			"label": "POSTGRES_PASSWORD",
+			"name": "POSTGRES_PASSWORD"
+		},
+		{
+			"default": "reactiveresumestoragepass",
+			"label": "MINIO_ROOT_PASSWORD",
+			"name": "MINIO_ROOT_PASSWORD"
+		},
+		{
+			"label": "SIGNUP",
+			"name": "SIGNUP",
+			"select": [
+				{
+					"default": true,
+					"text": "Allow public signup",
+					"value": "false"
+				},
+				{
+					"text": "Disable public signup",
+					"value": "true"
+				}
+			]
 		}
 	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/reactiveresume.png",
+	"name": "reactive-resume",
+	"note": "It uses Postgres as Database and MinIO as a self hosted S3-like storage.<BR><BR><b>Note:</b> To use it, you will require an NGINX or Traefik reverse DNS server to access the API. Both are not included in this stack to avoid duplicate on most setups. For traefik, refer to official documentation for correct labels and for NGINX refer to <a href=\"https://hub.docker.com/r/martadinata666/reactive-resume\">this docker for an example</a>.",
+	"officialDoc": "https://docs.rxresu.me/deployment/docker",
+	"platform": "linux",
+	"repository": {
+		"stackfile64": "stack/reactive-resume.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted"
+	},
+	"title": "Reactive-Resume",
+	"type": 3,
 	"webpage": "https://rxresu.me/"
 }
