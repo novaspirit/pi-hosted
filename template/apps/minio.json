@@ -1,0 +1,56 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"command": "server --console-address ':9090' /data",
+	"description": "MinIO is a High Performance Object Storage released under GNU Affero GPL v3.0. It is API compatible with Amazon S3 cloud storage service.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "ROOTUSER",
+			"label": "MINIO_ROOT_USER",
+			"name": "MINIO_ROOT_USER"
+		},
+		{
+			"default": "CHANGEME123",
+			"label": "MINIO_ROOT_PASSWORD",
+			"name": "MINIO_ROOT_PASSWORD"
+		},
+		{
+			"default": "",
+			"label": "MINIO_SERVER_URL",
+			"name": "MINIO_SERVER_URL",
+			"description": "URL hostname for MinIO Console if any"
+		}
+	],
+	"image32": "minio/minio:latest",
+	"image64": "minio/minio:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/minio.png",
+	"name": "minio",
+	"officialDoc": "https://docs.min.io/minio/baremetal/quickstart/quickstart.html",
+	"platform": "linux",
+	"ports": [
+		"8760:9000/tcp",
+		"8761:9090/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "MinIO",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/MinIO",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://min.io/"
+}
