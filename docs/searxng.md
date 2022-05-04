@@ -36,9 +36,9 @@ The main thing you might want to do is to set:
 	+ `base_url`: DON'T CHANGE, this is set within the container
 	+ `secret_key`: A random one is generated when deploying, don't need to change
 - `ui`
-	+ `default_theme`: **oscar** or **simple**
+	- `results_on_new_tab`: if you want to open links in new tab
 	+ `theme_args`:
-		* `oscar_style`: **logicodev**, **logicodev-dark** or **pointhi**
+		* `simple_style`: **auto**, **dark** or **light**
 
 From there, you can scroll down to `engines` and **enable/disable** anyone you want.
 
