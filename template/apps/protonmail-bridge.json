@@ -6,6 +6,7 @@
 		"Other"
 	],
 	"description": "This is an unofficial Docker container of the ProtonMail Bridge. Some of the scripts are based on Hendrik Meyer's work.",
+	"image32": "shenxn/protonmail-bridge:build",
 	"image64": "shenxn/protonmail-bridge:build",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/protonmail-bridge.png",
 	"name": "protonmail-bridge",
