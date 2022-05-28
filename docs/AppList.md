@@ -78,6 +78,7 @@ List of all apps included in this project with info related to it.
 |[Medusa](https://pymedusa.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-medusa) |  |  |  |  |
 |[Minecraft Server](https://www.minecraft.net/en-us)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/itzg/docker-minecraft-server#using-docker-compose) |  |  |  |  |
 |[Minetest](https://www.minetest.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-minetest) |  |  |  |  |
+|[MinIO](https://min.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.min.io/minio/baremetal/quickstart/quickstart.html) |  |  |  |  |
 |[Minisatip](https://github.com/catalinii/minisatip)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-minisatip) |  |  |  |  |
 |[Mstream](https://mstream.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mstream) |  |  |  |  |
 |[Murmur](https://www.mumble.info/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/yhaenggi/murmur-docker) |  |  |  |  |
