@@ -4,8 +4,8 @@
 		"Tools"
 	],
 	"description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
-	"image32": "benbusby/whoogle-search:0.7.1",
-	"image64": "benbusby/whoogle-search:0.7.1",
+	"image32": "benbusby/whoogle-search:0.7.3",
+	"image64": "benbusby/whoogle-search:0.7.3",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/whoogle.png",
 	"name": "whoogle",
 	"officialDoc": "https://github.com/benbusby/whoogle-search#g-manual-docker",
