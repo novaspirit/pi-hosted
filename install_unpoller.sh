@@ -20,5 +20,5 @@ check_internet
 echo "Creating directories..."
 sudo mkdir -p /portainer/Files/AppData/Config/unpoller || error "Failed to create config directory!"
 echo "Downloading Unpoller config files"
-sudo wget -O /portainer/Files/AppData/Config/unpoller/up.conf https://raw.githubusercontent.com/pi-hosted/pi-hosted/tree/master/configs/unpoller-up.conf || error "Failed to download up.conf file!"
+sudo wget -O /portainer/Files/AppData/Config/unpoller/up.conf https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/configs/unpoller-up.conf || error "Failed to download up.conf file!"
 echo "Done You are ready to goto next step in the install document"
