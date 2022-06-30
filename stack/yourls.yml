@@ -23,7 +23,7 @@ services:
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
     ports:
-      - 4181:80
+      - 4281:80
     networks:
       - yourls
     restart: unless-stopped
@@ -41,7 +41,7 @@ services:
     networks:
       - yourls
     ports:
-      - 4180:80
+      - 4280:80
     restart: unless-stopped
     depends_on:
       - mariadb
