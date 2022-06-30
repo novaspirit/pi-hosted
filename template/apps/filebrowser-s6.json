@@ -1,0 +1,48 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "[arm][s6-version] Web File Browser which can be used as a middleware or standalone app.",
+	"image32": "filebrowser/filebrowser:s6",
+	"image64": "filebrowser/filebrowser:s6",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
+	"name": "filebrowser",
+	"note": "The default user and password is admin/admin.",
+	"officialDoc": "https://filebrowser.org/installation#docker",
+	"platform": "linux",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"ports": [
+		"8082:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "FileBrowser",
+	"type": 1,
+	"videoID": 4,
+        "volumes": [
+                {
+                        "bind": "/portainer/Downloads",
+                        "container": "/srv"
+                },
+                {
+                        "bind": "/portainer/Files/AppData/Config/filebrowser/filebrowser.db",
+                        "container": "/database/filebrowser.db"
+                },
+                {
+                        "bind": "/portainer/Files/AppData/Config/filebrowser/settings.json",
+                        "container": "/config/settings.json"
+                }
+	],
+	"webpage": "https://filebrowser.org/"
+}
