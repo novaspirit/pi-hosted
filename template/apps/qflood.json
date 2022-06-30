@@ -34,7 +34,7 @@
 	"image64": "hotio/qflood:latest",
 	"logo": "https://raw.githubusercontent.com/jesec/flood/master/flood.svg",
 	"name": "qflood",
-	"note": "The default qBittorrent username is admin and the default password is adminadmin."
+	"note": "The default qBittorrent username is admin and the default password is adminadmin.",
 	"officialDoc": "https://hotio.dev/containers/qflood/",
 	"platform": "linux",
 	"ports": [
