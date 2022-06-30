@@ -8,8 +8,8 @@ services:
       MYSQL_DATABASE: ${DATABASE_NAME}
       MYSQL_USER: ${DATABASE_USER}
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
-      PUID: ${USER_UID}
-      PGID: ${USER_GID}
+      PUID: ${PGID}
+      PGID: ${PGID}
       TZ: ${TZ}
     networks:
       - drupal_network
