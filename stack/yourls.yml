@@ -35,6 +35,7 @@ services:
     environment:
       YOURLS_DB_PASS: ${DATABASE_PASSWORD}
       YOURLS_SITE: ${YOURLS_SITE}
+      YOURLS_DB_HOST: mariadb
       YOURLS_USER: ${YOURLS_USERNAME}
       YOURLS_PASSWORD: ${YOURLS_PASSWORD}
     networks:
