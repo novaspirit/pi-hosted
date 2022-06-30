@@ -62,7 +62,8 @@
 	"name": "yourls",
 	"officialDoc": "https://yourls.org/#Install",
 	"platform": "linux",
-	"repository": {
+        "preInstallScript": "install_yourls.sh",
+ 	"repository": {
 		"stackfile32": "stack/yourls.yml",
 		"stackfile64": "stack/yourls.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted/"
