@@ -61,6 +61,7 @@ List of all apps included in this project with info related to it.
 |[HTPC Manager](https://htpc.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-htpcmanager) |  |  |  |  |
 |[Huginn](https://github.com/huginn/huginn)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/huginn/huginn/tree/master/docker) |  |  |  |  |
 |[Influxdb 1.8.10](https://www.influxdata.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker) |  |  |  |  |
+|[Invidious](https://invidious.io/)|64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.invidious.io/installation/#docker) |  | [![](../build/images/script_icon.png)](../tools/install_invidious.sh) |  |  |
 |[Jackett](https://github.com/Jackett/Jackett)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jackett) |  |  |  |  |
 |[JDownloader](https://my.jdownloader.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/jaymoulin/docker-jdownloader) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[Jellyfin](https://jellyfin.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jellyfin) |  |  |  |  |

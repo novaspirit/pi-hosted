@@ -9,6 +9,7 @@ Most of the follwing scripts are only needed if you are trying to load one of th
 | ------------ | -------------- | ---- | ----------- | ------------ |
 |[install_caddy.sh](../tools/install_caddy.sh)||Preinstall|Preinstall Setup for Caddy|wget -qO- https://git.io/JMsEe \| bash|
 |[install_drupal.sh](../tools/install_drupal.sh)||Preinstall|Preinstall Setup for Drupal|wget -qO- https://git.io/JMsEj \| bash|
+|[install_invidious.sh](../tools/install_invidious.sh)||Preinstall|Install Invidious|wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_invidious.sh \| bash|
 |[install_photoprism.sh](../tools/install_photoprism.sh)|[Documentation](../docs/photoprism.md)|Preinstall|Install Photo Prism|wget -qO- https://git.io/JM5Tr \| bash|
 |[install_portainer_agent.sh](../tools/install_portainer_agent.sh)||Preinstall|Install Portainer Agent<br>Portainer agent is used for remote management of the host you install it on.||
 |[install_throttled.sh](../tools/install_throttled.sh)|[Documentation](../docs/throttled.md)|Install|Preinstall Setup for the Throttled Script|wget -qO- https://git.io/JXzw0 \| bash|

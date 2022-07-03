@@ -2285,6 +2285,174 @@
 		},
 		{
 			"categories": [
+				"Videos",
+				"Music"
+			],
+			"description": "An open source alternative front-end to YouTube",
+			"env": [
+				{
+					"default": "ChangeMeToASecurePassword",
+					"label": "DB_PASSWORD",
+					"name": "DB_PASSWORD"
+				},
+				{
+					"default": "3693",
+					"label": "PORT",
+					"name": "PORT"
+				},
+				{
+					"default": "",
+					"description": "Leave it empty if not using a public instance",
+					"label": "DOMAIN",
+					"name": "DOMAIN"
+				},
+				{
+					"description": "Leave it empty if not using a public instance",
+					"label": "HTTPS_ONLY",
+					"name": "HTTPS_ONLY",
+					"select": [
+						{
+							"default": true,
+							"text": "ALLOW HTTP",
+							"value": "false"
+						},
+						{
+							"text": "FORCE HTTPS (recommended for public instance)",
+							"value": "true"
+						}
+					]
+				},
+				{
+					"default": "",
+					"description": "Use 443 if HTTPS_ONLY is enabled or leave it blank",
+					"label": "EXTERNAL_PORT",
+					"name": "EXTERNAL_PORT"
+				},
+				{
+					"label": "POPULAR_ENABLED",
+					"name": "POPULAR_ENABLED",
+					"select": [
+						{
+							"default": true,
+							"text": "Disable POPULAR page (better for privacy)",
+							"value": "false"
+						},
+						{
+							"text": "Enable POPULAR videos in this instance",
+							"value": "true"
+						}
+					]
+				},
+				{
+					"label": "STATISTICS_ENABLED",
+					"name": "STATISTICS_ENABLED",
+					"select": [
+						{
+							"default": true,
+							"text": "Disable Statistics",
+							"value": "false"
+						},
+						{
+							"text": "Enable Statistics",
+							"value": "true"
+						}
+					]
+				},
+				{
+					"label": "REGISTRATION_ENABLED",
+					"name": "REGISTRATION_ENABLED",
+					"select": [
+						{
+							"default": true,
+							"text": "Allow user registration",
+							"value": "true"
+						},
+						{
+							"text": "User registration not allowed",
+							"value": "false"
+						}
+					]
+				},
+				{
+					"label": "LOGIN_ENABLED",
+					"name": "LOGIN_ENABLED",
+					"select": [
+						{
+							"default": true,
+							"text": "Allow user to login",
+							"value": "true"
+						},
+						{
+							"text": "Only guest users",
+							"value": "false"
+						}
+					]
+				},
+				{
+					"label": "CAPTCHA_ENABLED",
+					"name": "CAPTCHA_ENABLED",
+					"select": [
+						{
+							"default": true,
+							"text": "Use CAPTCHA to prevent bot",
+							"value": "true"
+						},
+						{
+							"text": "Disable CAPTCHA for registration",
+							"value": "false"
+						}
+					]
+				},
+				{
+					"default": "US",
+					"description": "Look in the configuration example (link above) for more codes",
+					"label": "REGION",
+					"name": "REGION"
+				},
+				{
+					"label": "RELATED_VIDEOS",
+					"name": "RELATED_VIDEOS",
+					"select": [
+						{
+							"default": true,
+							"text": "Show related videos",
+							"value": "true"
+						},
+						{
+							"text": "Don't show related videos",
+							"value": "false"
+						}
+					]
+				},
+				{
+					"label": "AUTOPLAY",
+					"name": "AUTOPLAY",
+					"select": [
+						{
+							"default": true,
+							"text": "Don't play video automaticaly",
+							"value": "false"
+						},
+						{
+							"text": "Play video automaticaly",
+							"value": "true"
+						}
+					]
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/invidious.png",
+			"name": "invidious",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://invidious.io/\" target=\"_blank\">https://invidious.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.invidious.io/installation/#docker\" target=\"_blank\">https://docs.invidious.io/installation/#docker</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_invidious.sh\" target=\"_blank\">install_invidious.sh</a><br><br>Your device should have at least <b>4 GB</b> of memory.<br>If you want to customise even further, the easy way is to <b>Copy as Custom</b> and modify the stack file manually. Look at the <a href=\\\"https://github.com/iv-org/invidious/blob/master/config/config.example.yml\\\">official config example</a>.",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "stack/invidious.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted"
+			},
+			"title": "Invidious",
+			"type": 3
+		},
+		{
+			"categories": [
 				"Downloaders",
 				"Tools"
 			],
