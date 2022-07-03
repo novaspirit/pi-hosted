@@ -43,6 +43,7 @@
 	"name": "wg-easy",
 	"officialDoc": "https://github.com/WeeJeWel/wg-easy/#1-install-docker",
 	"piHostedDoc": "wireguard-install.md",
+	"videoID": 13,
 	"platform": "linux",
 	"repository": {
 		"stackfile32": "stack/wireguard-easy.yml",
