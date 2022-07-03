@@ -224,6 +224,13 @@
 			"Exec": "bash",
 			"Description": "PI OS 32 libseccomp2 Repair utility",
 			"wget": "https://git.io/JPXdj"
+		},
+		{
+			"File": "install_invidious.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Description": "Install Invidious",
+			"wget": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_invidious.sh"
 		}
 	]
 }

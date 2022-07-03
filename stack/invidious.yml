@@ -1,0 +1,60 @@
+version: "3"
+services:
+
+  invidious:
+    image: quay.io/invidious/invidious:latest-arm64
+    name: invidious
+    restart: unless-stopped
+    ports:
+      - "${PORT}:3000"
+    environment:
+      INVIDIOUS_CONFIG: |
+        db:
+          dbname: invidious
+          user: kemal
+          password: "${DB_PASSWORD}"
+          host: invidious-db
+          port: 5432
+        check_tables: true
+        domain: "${DOMAIN}"
+        https_only: ${HTTPS_ONLY}
+        external_port: "${EXTERNAL_PORT}"
+        popular_enabled: ${POPULAR_ENABLED}
+        statistics_enabled: ${STATISTICS_ENABLED}
+        registration_enabled: ${REGISTRATION_ENABLED}
+        login_enabled: ${LOGIN_ENABLED}
+        captcha_enabled: ${CAPTCHA_ENABLED}
+        channel_threads: 1
+        feed_threads: 1
+        default_user_preferences:
+          locale: en-US
+          region: "${REGION}"
+          captions: ["", "", ""]
+          dark_mode:
+          thin_mode: false
+          feed_menu: ["Popular", "Trending", "Subscriptions", "Playlists"]
+          default_home: Trending
+          related_videos: ${RELATED_VIDEOS}
+          autoplay: ${AUTOPLAY}
+    healthcheck:
+      test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+      interval: 30s
+      timeout: 5s
+      retries: 2
+    depends_on:
+      - invidious-db
+
+  invidious-db:
+    image: docker.io/library/postgres:14
+    name: invidious-db
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/invidious/dbdata:/var/lib/postgresql/data
+      - /portainer/Files/AppData/Config/invidious/config-sql:/config/sql
+      - /portainer/Files/AppData/Config/invidious/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
+    environment:
+      POSTGRES_DB: invidious
+      POSTGRES_USER: kemal
+      POSTGRES_PASSWORD: "${DB_PASSWORD}"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
