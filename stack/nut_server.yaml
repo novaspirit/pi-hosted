@@ -10,6 +10,6 @@ services:
       VENDOR ID: ${UPS VENDOR ID}
       API_PASSWORD: ${API PASSWORD}
       DESCRIPTION: ${UPS DESCRIPTION}
-   ports:
+    ports:
     - 3493:3493
     privileged: true
