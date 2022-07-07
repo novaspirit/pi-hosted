@@ -99,7 +99,6 @@ List of all apps included in this project with info related to it.
 |[NZBHydra 2](https://github.com/theotherp/nzbhydra2)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nzbhydra2) |  |  |  |  |
 |[Omada EAP Controller](https://www.tp-link.com/us/business-networking/omada-sdn-controller/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/mbentley/omada-controller) |  |  |  |  |
 |[Ombi](https://ombi.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-ombi) |  |  |  |  |
-|[OpenVPN Access Server](https://openvpn.net/access-server/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/openvpn-as/) |  |  |  |  |
 |[Organizr v2](https://organizr.app/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/organizr/organizr) |  |  |  |  |
 |[OScam](https://trac.streamboard.tv/oscam/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-oscam) |  |  |  |  |
 |[Paperless](https://github.com/jonaswinkler/paperless-ng)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-paperless-ng) |  |  |  |  |
