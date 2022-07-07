@@ -5215,6 +5215,49 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A remote desktop software, the open source TeamViewer alternative, works out of the box, no configuration required. You have full control of your data, with no concerns about security.",
+			"env": [
+				{
+					"default": "rustdesk.example.com:21117",
+					"description": "Use your domain with the default 21117 port",
+					"label": "RELAY",
+					"name": "RELAY"
+				},
+				{
+					"default": "1",
+					"description": "if set to \"1\" unencrypted connection will not be accepted",
+					"label": "ENCRYPTED_ONLY",
+					"name": "ENCRYPTED_ONLY"
+				}
+			],
+			"image": "rustdesk/rustdesk-server-s6:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/rustdesk.png",
+			"name": "rustdesk",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://rustdesk.com/\" target=\"_blank\">https://rustdesk.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/rustdesk/rustdesk-server\" target=\"_blank\">https://github.com/rustdesk/rustdesk-server</a><br><br><br>Don't forget to open ports 21115 to 21119 in your router.",
+			"platform": "linux",
+			"ports": [
+				"21115:21115/tcp",
+				"21116:21116/tcp",
+				"21116:21116/udp",
+				"21117:21117/tcp",
+				"21118:21118/tcp",
+				"21119:21119/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "RestDesk",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/rustdesk",
+					"container": "/data"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Downloaders"
 			],
 			"description": "Popular torrent client with a webui for ease of use.",
