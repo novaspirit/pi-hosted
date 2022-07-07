@@ -75,7 +75,8 @@
 		{
 			"ID": 13,
 			"Title": "Beginners Guide to WireGuard Docker and Installing Pi-OS 64bit",
-			"URL": "https://www.youtube.com/watch?v=yB_jAumIxOg"
+			"URL": "https://www.youtube.com/watch?v=yB_jAumIxOg",
+			"Doc": "wireguard-install.md"
 		},
 		{
 			"ID": 14,
