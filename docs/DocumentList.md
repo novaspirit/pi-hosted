@@ -15,5 +15,5 @@ List of all Documents used within this project with related Apps and Videos.
 |[searxng.md](../docs/searxng.md)|Install and Setup Instructions for SearXNG Meta Search|SearXNG||
 |[throttled.md](../docs/throttled.md)|Install and Setup Instructions for the Throttled Script|||
 |[UnPoller-Monitor.md](../docs/UnPoller-Monitor.md)|Install and setup instructions for the RPI Unifi (UnPoller) Monitor|UnPoller Monitor||
-|[wireguard-install.md](../docs/wireguard-install.md)|Install and setup instructions for the WireGuard VPN Server|Wireguard Server||
+|[wireguard-install.md](../docs/wireguard-install.md)|Install and setup instructions for the WireGuard VPN Server|Wireguard Server|[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)]("https://www.youtube.com/watch?v=yB_jAumIxOg")|
 |[wordpress_installation.md](../docs/wordpress_installation.md)|WORDPRESS + SSL SETUP|Wordpress||

@@ -75,7 +75,7 @@ You're done! Now just click App Templates and deploy applications!
 |11|[How to Install Whoogle to replace using Google and repo notes](https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12)||
 |12|[Checking out Windows 2000 Docker](https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13)||
 |Extra2|[3 Huge Announcements!! Discord Giveaway! Pi-Hosted!! & SBC Garage Sale!](https://www.youtube.com/watch?v=Ppv1cUomwn0)||
-|13|[Beginners Guide to WireGuard Docker and Installing Pi-OS 64bit](https://www.youtube.com/watch?v=yB_jAumIxOg)||
+|13|[Beginners Guide to WireGuard Docker and Installing Pi-OS 64bit](https://www.youtube.com/watch?v=yB_jAumIxOg)|[Install Doc](../docs/wireguard-install.md)|
 |14|[My Most used container! Snippet Box](https://www.youtube.com/watch?v=v-jUyB3fvAo)||
 
 ### Aditional Documentation

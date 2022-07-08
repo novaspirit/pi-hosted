@@ -4142,48 +4142,6 @@
 		},
 		{
 			"categories": [
-				"Other"
-			],
-			"description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
-			"env": [
-				{
-					"default": "eth0",
-					"label": "INTERFACE",
-					"name": "INTERFACE"
-				},
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/openvpn-as:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/openvpn-as-icon.png",
-			"name": "openvpn-as",
-			"platform": "linux",
-			"ports": [
-				"943:943/tcp",
-				"9443:9443/tcp",
-				"1194:1194/udp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "OpenVPN Access Server",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/OpenVPN-AS",
-					"container": "/config"
-				}
-			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://openvpn.net/access-server/\" target=\"_blank\">https://openvpn.net/access-server/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/openvpn-as/\" target=\"_blank\">https://hub.docker.com/r/linuxserver/openvpn-as/</a><br><br><br>"
-		},
-		{
-			"categories": [
 				"Other",
 				"Tools"
 			],
@@ -5212,6 +5170,49 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.resilio.com/individuals/\" target=\"_blank\">https://www.resilio.com/individuals/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-resilio-sync\" target=\"_blank\">https://docs.linuxserver.io/images/docker-resilio-sync</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A remote desktop software, the open source TeamViewer alternative, works out of the box, no configuration required. You have full control of your data, with no concerns about security.",
+			"env": [
+				{
+					"default": "rustdesk.example.com:21117",
+					"description": "Use your domain with the default 21117 port",
+					"label": "RELAY",
+					"name": "RELAY"
+				},
+				{
+					"default": "1",
+					"description": "if set to \"1\" unencrypted connection will not be accepted",
+					"label": "ENCRYPTED_ONLY",
+					"name": "ENCRYPTED_ONLY"
+				}
+			],
+			"image": "rustdesk/rustdesk-server-s6:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/rustdesk.png",
+			"name": "rustdesk",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://rustdesk.com/\" target=\"_blank\">https://rustdesk.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/rustdesk/rustdesk-server\" target=\"_blank\">https://github.com/rustdesk/rustdesk-server</a><br><br><br>Don't forget to open ports 21115 to 21119 in your router.",
+			"platform": "linux",
+			"ports": [
+				"21115:21115/tcp",
+				"21116:21116/tcp",
+				"21116:21116/udp",
+				"21117:21117/tcp",
+				"21118:21118/tcp",
+				"21119:21119/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "RestDesk",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/rustdesk",
+					"container": "/data"
+				}
+			]
 		},
 		{
 			"categories": [
