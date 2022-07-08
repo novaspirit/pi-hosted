@@ -50,7 +50,8 @@
         "ports": [
             "3493:3493/tcp"
         ],
-        "restart_policy": "always",
+        "restart_policy": "unless-stopped",
         "title": "NUT Server",
+        "type": 1,
         "webpage": "https://networkupstools.org"
 }
