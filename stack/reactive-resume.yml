@@ -1,0 +1,106 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:alpine
+    container_name: rxresume-postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    expose:
+      - 5432
+    volumes:
+      - /portainer/Files/AppData/Config/ReactiveResume/db:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      start_period: 15s
+      interval: 60s
+      timeout: 30s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - rxresume
+
+  storage:
+    image: minio/minio:latest
+    container_name: rxresume-storage
+    expose:
+      - 9000
+      - 9090
+    #ports:        # Use this section instead of expose to enable external access
+    #  - 7766:9000
+    #  - 7767:9090 # This port is to access the Web Interface
+    environment:
+      - MINIO_ROOT_USER=RXRSROOTUSER
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+    volumes:
+      - /portainer/Files/AppData/Config/ReactiveResume/data:/data
+    entrypoint: /bin/sh
+    command: '-c ''mkdir -p /data/rxrs && /usr/bin/docker-entrypoint.sh server --console-address ":9090" /data'''
+    restart: unless-stopped
+    networks:
+      - rxresume
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      start_period: 15s
+      interval: 60s
+      timeout: 20s
+      retries: 3
+
+  server:
+    image: amruthpillai/reactive-resume:server-v3.3.4 # Because latest version does not have arm version yet
+    container_name: rxresume-server
+    ports:
+      - 7769:3100
+    environment:
+      - TZ=${TZ}
+      - PUBLIC_URL=${PUBLIC_URL}
+      - PUBLIC_SERVER_URL=${PUBLIC_SERVER_URL}
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - SECRET_KEY=${SECRET_KEY}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_SSL_CERT=
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRY_TIME=604800
+      - GOOGLE_CLIENT_SECRET=
+      - GOOGLE_API_KEY=
+      - SENDGRID_API_KEY=
+      - SENDGRID_FORGOT_PASSWORD_TEMPLATE_ID=
+      - SENDGRID_FROM_NAME=
+      - SENDGRID_FROM_EMAIL=
+      - STORAGE_BUCKET=rxrs
+      - STORAGE_REGION=myregion
+      - STORAGE_ENDPOINT=http://storage:9000
+      - STORAGE_URL_PREFIX=rxrs
+      - STORAGE_ACCESS_KEY=RXRSROOTUSER
+      - STORAGE_SECRET_KEY=${MINIO_ROOT_PASSWORD}
+    depends_on:
+      - postgres
+      - storage
+    restart: unless-stopped
+    networks:
+      - rxresume
+
+  client:
+    image: amruthpillai/reactive-resume:client-v3.3.4 # Because latest version does not have arm version yet
+    container_name: rxresume-client
+    ports:
+      - 7768:3000
+    environment:
+      - TZ=${TZ}
+      - PUBLIC_URL=${PUBLIC_URL}
+      - PUBLIC_SERVER_URL=${PUBLIC_SERVER_URL}
+      - PUBLIC_GOOGLE_CLIENT_ID=
+      - PUBLIC_FLAG_DISABLE_SIGNUPS=${SIGNUP}
+    depends_on:
+      - server
+    restart: unless-stopped
+    networks:
+      - rxresume
+
+networks:
+  rxresume:
