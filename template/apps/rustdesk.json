@@ -34,7 +34,7 @@
 		"21119:21119/tcp"
 	],
 	"restart_policy": "unless-stopped",
-	"title": "RestDesk",
+	"title": "RustDesk",
 	"type": 1,
 	"volumes": [
 		{
