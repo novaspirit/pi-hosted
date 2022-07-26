@@ -14,6 +14,7 @@
 			"label": "PGID",
 			"name": "PGID"
 		},
+		{
 			"default": "443",
 			"label": "ARIA2RPCPORT",
 			"name": "ARIA2RPCPORT"
