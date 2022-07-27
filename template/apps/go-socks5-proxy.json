@@ -1,0 +1,19 @@
+{
+	"categories": [
+		"Proxy"
+	],
+	"description": "Simple socks5 server using go-socks5 with authentication options",
+	"image32": "serjs/go-socks5-proxy",
+	"image64": "serjs/go-socks5-proxy",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/socks5.png",
+	"name": "socks5-proxy",
+	"officialDoc": "https://hub.docker.com/r/serjs/go-socks5-proxy",
+	"platform": "linux",
+	"ports": [
+		"8080:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Go-Socks5-Proxy",
+	"type": 1,
+	"webpage": "https://hub.docker.com/r/serjs/go-socks5-proxy"
+}
