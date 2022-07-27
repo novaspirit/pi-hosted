@@ -50,6 +50,7 @@ List of all apps included in this project with info related to it.
 |[Gazee](https://github.com/hubbcaps/gazee)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/gazee) |  |  |  |  |
 |[Gitea](https://gitea.com/)|64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.gitea.io/en-us/install-with-docker/) |  |  |  |  |
 |[Gitea with Mariadb](https://gitea.com/)|64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.gitea.io/en-us/install-with-docker/#mysql-database) |  |  |  |  |
+|[Go-Socks5-Proxy](https://hub.docker.com/r/serjs/go-socks5-proxy)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/serjs/go-socks5-proxy) |  |  |  |  |
 |[Gotify](https://gotify.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://gotify.net/docs/install) |  |  |  |  |
 |[Grocy](https://grocy.info/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-grocy) |  |  |  |  |
 |[Guacamole](https://guacamole.apache.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oznu/guacamole) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3) |

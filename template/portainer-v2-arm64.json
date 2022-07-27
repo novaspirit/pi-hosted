@@ -1893,6 +1893,23 @@
 		},
 		{
 			"categories": [
+				"Proxy"
+			],
+			"description": "Simple socks5 server using go-socks5 with authentication options",
+			"image": "serjs/go-socks5-proxy",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/socks5.png",
+			"name": "socks5-proxy",
+			"platform": "linux",
+			"ports": [
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Go-Socks5-Proxy",
+			"type": 1,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/serjs/go-socks5-proxy\" target=\"_blank\">https://hub.docker.com/r/serjs/go-socks5-proxy</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/serjs/go-socks5-proxy\" target=\"_blank\">https://hub.docker.com/r/serjs/go-socks5-proxy</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
