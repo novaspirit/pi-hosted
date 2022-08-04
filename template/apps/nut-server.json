@@ -14,27 +14,27 @@
                 "default": "1000",
                 "label": "PGID",
                 "name": "PGID"
-            }
+            },
             {
                 "default": "none",
                 "label": "SERIAL",
                 "name": "SERIAL"
-            }
+            },
             {
                 "default": "none",
                 "label": "NAME",
                 "name": "NAME"
-            }
+            },
             {
                 "default": "none",
                 "label": "VENDOR ID",
                 "name": "VENDOR ID"
-            }
+            },
             {
                 "default": "none",
                 "label": "API_PASSWORD",
                 "name": "API_PASSWORD"
-            }
+            },
             {
                 "default": "none",
                 "label": "DESCRIPTION",
