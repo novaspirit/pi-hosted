@@ -19,7 +19,7 @@
 	"image64": "lissy93/dashy",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dashy.png",
 	"name": "Dashy",
-	"officialDoc": "https://dashy.to/docs/quick-start,
+	"officialDoc": "https://dashy.to/docs/quick-start",
 	"platform": "linux",
 	"ports": [
 		"9100:80/tcp"
