@@ -29,6 +29,7 @@ List of all apps included in this project with info related to it.
 |[CouchPotato](https://couchpota.to/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-couchpotato) |  |  |  |  |
 |[Daapd](https://owntone.github.io/owntone-server/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-daapd) |  |  |  |  |
 |[DashMachine](https://github.com/rmountjoy92/DashMachine)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/rmountjoy92/DashMachine) |  |  |  |  |
+|[]()|32/64 bit|| [![](../build/images/blue_doc_icon.png)]() | [![](../build/images/red_doc_icon.png)](../docs/) | [![](../build/images/script_icon.png)](../tools/) | [](../tools/) | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)]() |
 |[Davos](https://github.com/linuxserver/davos)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-davos) |  |  |  |  |
 |[DeeMix](https://deemix.app/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://gitlab.com/Bockiii/deemix-docker) |  |  |  |  |
 |[Deluge](https://www.deluge-torrent.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-deluge) |  |  |  |  |
