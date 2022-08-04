@@ -974,6 +974,41 @@
 		},
 		{
 			"categories": [
+				"Dashboard"
+			],
+			"description": "Dashy helps you organize your self-hosted services by making them accessible from a single place",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "lissy93/dashy",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dashy.png",
+			"name": "Dashy",
+			"platform": "linux",
+			"ports": [
+				"9100:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Dashy",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Dashy/local-conf.yml",
+					"container": "/app/public/conf.yml"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://dashy.to\" target=\"_blank\">https://dashy.to</a><br><b>Official Docker Documentation: </b><a href=\"https://dashy.to/docs/quick-start\" target=\"_blank\">https://dashy.to/docs/quick-start</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"FTP",
 				"Other",
 				"Tools"
