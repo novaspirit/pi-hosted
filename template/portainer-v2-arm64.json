@@ -4077,6 +4077,61 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "The purpose of NUT Server is to monitor a UPS attached device",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "none",
+					"label": "SERIAL",
+					"name": "SERIAL"
+				},
+				{
+					"default": "none",
+					"label": "NAME",
+					"name": "NAME"
+				},
+				{
+					"default": "none",
+					"label": "VENDOR ID",
+					"name": "VENDOR ID"
+				},
+				{
+					"default": "none",
+					"label": "API_PASSWORD",
+					"name": "API_PASSWORD"
+				},
+				{
+					"default": "none",
+					"label": "DESCRIPTION",
+					"name": "DESCRIPTION"
+				}
+			],
+			"image": "instantlinux/nut-upsd:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nut-server.png",
+			"name": "NUT Server",
+			"platform": "linux",
+			"ports": [
+				"3493:3493/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "NUT Server",
+			"type": 1,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://networkupstools.org\" target=\"_blank\">https://networkupstools.org</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/instantlinux/nut-upsd\" target=\"_blank\">https://hub.docker.com/r/instantlinux/nut-upsd</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Downloaders"
 			],
 			"description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players",
