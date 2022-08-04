@@ -141,6 +141,7 @@ List of all apps included in this project with info related to it.
 |[Speedtest Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker) |  |  |  |  |
 |[Sshwifty](https://sshwifty.herokuapp.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/nirui/sshwifty#docker-image) |  |  |  |  |
 |[SyncThing](https://syncthing.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-syncthing) |  |  |  |  |
+|[Tailscale](https://tailscale.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/tailscale/tailscale) |  |  |  |  |
 |[Tautulli](https://tautulli.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-tautulli) |  |  |  |  |
 |[TheLounge](https://thelounge.chat/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-thelounge) |  |  |  |  |
 |[TiddlyWiki](https://tiddlywiki.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://gitlab.com/nicolaw/tiddlywiki) |  |  |  |  |
