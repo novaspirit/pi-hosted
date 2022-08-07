@@ -1528,12 +1528,24 @@
 				"Other",
 				"Tools"
 			],
-			"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
-			"image": "filebrowser/filebrowser:latest",
+			"description": "[arm][s6-version] Web File Browser which can be used as a middleware or standalone app.",
+			"image": "filebrowser/filebrowser:s6",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
 			"name": "filebrowser",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://filebrowser.org/\" target=\"_blank\">https://filebrowser.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://filebrowser.org/installation#docker\" target=\"_blank\">https://filebrowser.org/installation#docker</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4\" target=\"_blank\">Installing JDownloader and File Browser On The Pi Docker Server</a><br><br>The default user and password is admin/admin.",
 			"platform": "linux",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
 			"ports": [
 				"8082:80/tcp"
 			],
@@ -1560,24 +1572,12 @@
 				"Other",
 				"Tools"
 			],
-			"description": "[arm][s6-version] Web File Browser which can be used as a middleware or standalone app.",
-			"image": "filebrowser/filebrowser:s6",
+			"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
+			"image": "filebrowser/filebrowser:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
 			"name": "filebrowser",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://filebrowser.org/\" target=\"_blank\">https://filebrowser.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://filebrowser.org/installation#docker\" target=\"_blank\">https://filebrowser.org/installation#docker</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4\" target=\"_blank\">Installing JDownloader and File Browser On The Pi Docker Server</a><br><br>The default user and password is admin/admin.",
 			"platform": "linux",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
 			"ports": [
 				"8082:80/tcp"
 			],
@@ -3675,7 +3675,7 @@
 			],
 			"repository": {
 				"stackfile": "stack/nginx-proxy-manager-sqlite-goaccess.yml",
-				"url": "https://github.com/rmiddle/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			},
 			"restart_policy": "unless-stopped",
 			"title": "Nginx Proxy Manager v2 with Sqlite and Goaccess Charts",
