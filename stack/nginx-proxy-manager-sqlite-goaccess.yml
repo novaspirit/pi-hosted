@@ -1,0 +1,32 @@
+version: "3"
+services:
+  app:
+    image: jc21/nginx-proxy-manager:latest
+    container_name: nginx-proxy-manager
+    volumes:
+      - /portainer/Files/AppData/Config/nginx-proxy-manager/data:/data
+      - /portainer/Files/AppData/Config/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
+    depends_on:
+      - stats
+    ports:
+      - 80:80
+      - 443:443
+      - 81:81
+    restart: unless-stopped
+
+  stats:
+    image: justsky/goaccess-for-nginxproxymanager:latest
+    restart: unless-stopped
+    environment:
+      PUID: ${PUID}
+      PGID: ${PGID}
+      TZ: ${TZ}
+      SKIP_ARCHIVED_LOGS: "${SKIP_ARCHIVED_LOGS}"
+      BASIC_AUTH: "${BASIC_AUTH}"
+      BASIC_AUTH_USERNAME: ${BASIC_AUTH_USERNAME}
+      BASIC_AUTH_PASSWORD: ${BASIC_AUTH_PASSWORD}
+    ports:
+      - 7880:7880
+ 
+    volumes:
+      - /portainer/Files/AppData/Config/nginx-proxy-manager/data/logs:/opt/log:ro
