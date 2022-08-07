@@ -6,7 +6,7 @@
 	"description": "Komga is a free and open source comics/mangas/magazines server.",
 	"image32": "gotson/komga",
 	"image64": "gotson/komga",
-	"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/komga.png",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/komga.png",
 	"name": "komga",
 	"officialDoc": "https://komga.org/",
 	"platform": "linux",
