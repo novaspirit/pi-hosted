@@ -7,7 +7,10 @@
 	"description": "Connect your devices and users together in your own secure Zero config virtual private network. ",
 	"env": [
 		{
-			"AUTH_KEY": ""
+			"default": "",
+			"description": "Get AUTH KEY from your tailscale.com user panel",
+			"label": "AUTH_KEY",
+			"name": "AUTH_KEY"
 		}
 	],
 	"image32": "tailscale/tailscale:latest",
