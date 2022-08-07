@@ -3,7 +3,7 @@
 		"Proxy",
 		"Tools"
 	],
-	"description": "[DEPRECATED] Nginx Proxy Manager v2 with mysql and Goaccess Charts enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
+	"description": "Nginx Proxy Manager v2 with sqlite and Goaccess Charts enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
 	"env": [
 		{
 			"default": "1000",
@@ -19,16 +19,6 @@
 			"default": "America/New_York",
 			"label": "TZ",
 			"name": "TZ"
-		},
-		{
-			"default": "password",
-			"label": "DATABASE_PASSWORD",
-			"name": "DATABASE_PASSWORD"
-		},
-		{
-			"default": "password",
-			"label": "MYSQL_ROOT_PASSWORD",
-			"name": "MYSQL_ROOT_PASSWORD"
 		},
 		{
 			"default": "false",
@@ -56,8 +46,8 @@
 		}
 	],
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
-	"name": "nginx-proxy-manager-goaccess",
-	"officialDoc": "https://nginxproxymanager.com/setup/#using-mysql-mariadb-database",
+	"name": "nginx-proxy-manager-sqllite-goaccess",
+	"officialDoc": "https://nginxproxymanager.com/setup/#running-the-app",
 	"piHostedDoc": "nginx_proxy_manager.md",
 	"platform": "linux",
 	"ports": [
@@ -66,14 +56,13 @@
 		"443:443/tcp",
 		"7880:7880/tcp"
 	],
-	"preInstallScript": "nginx-proxy-manager.sh",
 	"repository": {
-		"stackfile32": "stack/nginx-proxy-manager-goaccess.yml",
-		"stackfile64": "stack/nginx-proxy-manager-goaccess.yml",
+		"stackfile32": "stack/nginx-proxy-manager-sqlite-goaccess.yml",
+		"stackfile64": "stack/nginx-proxy-manager-sqlite-goaccess.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"restart_policy": "unless-stopped",
-	"title": "Nginx Proxy Manager v2 with Mysql and Goaccess Charts [DEPRECATED]",
+	"title": "Nginx Proxy Manager v2 with Sqlite and Goaccess Charts",
 	"type": 3,
 	"videoID": 9,
 	"webpage": "https://nginxproxymanager.com/"

@@ -62,7 +62,7 @@
 		"443:443/tcp"
 	],
 	"restart_policy": "unless-stopped",
-	"title": "Let's Encrypt",
+	"title": "Let's Encrypt [DEPRECATED]",
 	"type": 1,
 	"volumes": [
 		{

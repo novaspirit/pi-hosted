@@ -1,0 +1,51 @@
+{
+	"categories": [
+		"Proxy",
+		"Tools"
+	],
+	"description": "Nginx Proxy Manager v2 with Sqlite enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		}
+	],
+        "image32": "jc21/nginx-proxy-manager:latest",
+        "image64": "jc21/nginx-proxy-manager:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
+	"name": "nginx-proxy-manager-sqlite",
+	"officialDoc": "https://nginxproxymanager.com/setup/",
+	"piHostedDoc": "nginx_proxy_manager.md",
+	"platform": "linux",
+	"ports": [
+		"80:80/tcp",
+		"81:81/tcp",
+		"443:443/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Nginx Proxy Manager with Sqllite",
+	"type": 1,
+	"videoID": 9,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/nginx-proxy-manager/data",
+			"container": "/data"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/nginx-proxy-manager/letsencrypt",
+			"container": "/etc/letsencrypt"
+		}
+	],
+	"webpage": "https://nginxproxymanager.com/"
+}
