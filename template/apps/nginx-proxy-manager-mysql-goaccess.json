@@ -56,7 +56,7 @@
 		}
 	],
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
-	"name": "nginx-proxy-manager-goaccess",
+	"name": "nginx-proxy-manager-mysql-goaccess",
 	"officialDoc": "https://nginxproxymanager.com/setup/#using-mysql-mariadb-database",
 	"piHostedDoc": "nginx_proxy_manager.md",
 	"platform": "linux",

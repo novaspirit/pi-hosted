@@ -34,7 +34,7 @@
 		"443:443/tcp"
 	],
 	"restart_policy": "unless-stopped",
-	"title": "Nginx Proxy Manager with Sqllite",
+	"title": "Nginx Proxy Manager v2 with Sqllite",
 	"type": 1,
 	"videoID": 9,
 	"volumes": [
