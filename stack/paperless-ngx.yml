@@ -14,7 +14,7 @@ services:
     depends_on:
       - broker
     ports:
-      - 8005:8000
+      - 8010:8000
     healthcheck:
       test: ["CMD", "curl", "-fs", "-S", "--max-time", "2", "http://localhost:8000"]
       interval: 30s
