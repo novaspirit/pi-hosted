@@ -107,7 +107,7 @@ List of all apps included in this project with info related to it.
 |[Ombi](https://ombi.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-ombi) |  |  |  |  |
 |[Organizr v2](https://organizr.app/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/organizr/organizr) |  |  |  |  |
 |[OScam](https://trac.streamboard.tv/oscam/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-oscam) |  |  |  |  |
-|[Paperless](https://github.com/jonaswinkler/paperless-ng)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-paperless-ng) |  |  |  |  |
+|[Paperless NGX](https://github.com/paperless-ngx/paperless-ngx)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/paperless-ngx/paperless-ngx) |  |  |  |  |
 |[PhotoPrism](https://photoprism.app/)|64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.photoprism.app/getting-started/docker-compose/) | [![](../build/images/red_doc_icon.png)](../docs/photoprism.md) | [![](../build/images/script_icon.png)](../tools/install_photoprism.sh) |  |  |
 |[PhotoShow](https://github.com/thibaud-rohmer/PhotoShow)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-photoshow) |  |  |  |  |
 |[Pi-Hole DoH/DoT](https://pi-hole.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oijkn/pihole-doh-dot) | [![](../build/images/red_doc_icon.png)](../docs/pi-hole.md) |  |  |  |
