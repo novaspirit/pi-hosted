@@ -1594,24 +1594,12 @@
 				"Other",
 				"Tools"
 			],
-			"description": "[arm][s6-version] Web File Browser which can be used as a middleware or standalone app.",
-			"image": "filebrowser/filebrowser:s6",
+			"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
+			"image": "filebrowser/filebrowser:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
 			"name": "filebrowser",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://filebrowser.org/\" target=\"_blank\">https://filebrowser.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://filebrowser.org/installation#docker\" target=\"_blank\">https://filebrowser.org/installation#docker</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4\" target=\"_blank\">Installing JDownloader and File Browser On The Pi Docker Server</a><br><br>The default user and password is admin/admin.",
 			"platform": "linux",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
 			"ports": [
 				"8082:80/tcp"
 			],
@@ -1638,12 +1626,24 @@
 				"Other",
 				"Tools"
 			],
-			"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
-			"image": "filebrowser/filebrowser:latest",
+			"description": "[arm][s6-version] Web File Browser which can be used as a middleware or standalone app.",
+			"image": "filebrowser/filebrowser:s6",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
 			"name": "filebrowser",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://filebrowser.org/\" target=\"_blank\">https://filebrowser.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://filebrowser.org/installation#docker\" target=\"_blank\">https://filebrowser.org/installation#docker</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4\" target=\"_blank\">Installing JDownloader and File Browser On The Pi Docker Server</a><br><br>The default user and password is admin/admin.",
 			"platform": "linux",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
 			"ports": [
 				"8082:80/tcp"
 			],
@@ -4481,7 +4481,7 @@
 				"Management",
 				"Productivity"
 			],
-			"description": "Paperless is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents. https://github.com/jonaswinkler/paperless-ng",
+			"description": "Paperless-ngx is a document management system that transforms your physical documents into a searchable online archive so you can keep, well, less paper.  Paperless-ngx forked from paperless-ng to continue the great work and distribute responsibility of supporting and advancing the project among a team of people. Consider joining us! Discussion of this transition can be found in issues #1599 and #1632.  A demo is available at demo.paperless-ngx.com using login demo / demo. Note: demo content is reset frequently and confidential information should not be uploaded.",
 			"env": [
 				{
 					"default": "1000",
@@ -4492,29 +4492,39 @@
 					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/paperless-ng",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/paperless.png",
-			"name": "paperless",
-			"platform": "linux",
-			"ports": [
-				"8005:8000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Paperless",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/paperless/config",
-					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/paperless/data",
-					"container": "/data"
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "",
+					"label": "PAPERLESS_URL",
+					"name": "PAPERLESSURL"
+				},
+				{
+					"default": "",
+					"label": "Secret Key",
+					"name": "RANDOMKEY"
+				},
+				{
+					"default": "eng",
+					"label": "OCR Language",
+					"name": "LANG"
 				}
 			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/jonaswinkler/paperless-ng\" target=\"_blank\">https://github.com/jonaswinkler/paperless-ng</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-paperless-ng\" target=\"_blank\">https://docs.linuxserver.io/images/docker-paperless-ng</a><br><br><br>"
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/paperless.png",
+			"name": "paperless-ngx",
+			"repository": {
+				"stackfile": "stack/paperless-ngx.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted/"
+			},
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Paperless NGX",
+			"type": 3,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/paperless-ngx/paperless-ngx\" target=\"_blank\">https://github.com/paperless-ngx/paperless-ngx</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/paperless-ngx/paperless-ngx\" target=\"_blank\">https://github.com/paperless-ngx/paperless-ngx</a><br><br><br>"
 		},
 		{
 			"categories": [
