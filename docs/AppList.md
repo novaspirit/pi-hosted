@@ -57,6 +57,7 @@ List of all apps included in this project with info related to it.
 |[Guacamole](https://guacamole.apache.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oznu/guacamole) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3) |
 |[Headphones](https://github.com/rembo10/headphones)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-headphones) |  |  |  |  |
 |[Heimdall](https://heimdall.site/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-heimdall) |  |  |  |  |
+|[Homarr - simple and lightweight homepage for your server](https://homarr.vercel.app/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ajnart/homarr) |  |  |  |  |
 |[Home Assistant](https://www.home-assistant.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://www.home-assistant.io/installation/raspberrypi#install-home-assistant-container) |  |  |  |  |
 |[Homebridge - Debian](https://homebridge.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |  |
 |[Homebridge](https://homebridge.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |  |
@@ -68,6 +69,7 @@ List of all apps included in this project with info related to it.
 |[Jackett](https://github.com/Jackett/Jackett)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jackett) |  |  |  |  |
 |[JDownloader](https://my.jdownloader.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/jaymoulin/docker-jdownloader) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[Jellyfin](https://jellyfin.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jellyfin) |  |  |  |  |
+|[Jellyseerr - Overseerr Fork with Jellyfin, Emby & Plex Support](https://github.com/Fallenbagel/jellyseerr)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/fallenbagel/jellyseerr) |  |  |  |  |
 |[Kodi Headless](https://kodi.tv/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/lsioarmhf/kodi-headless-aarch64/) |  |  |  |  |
 |[Komga](https://github.com/gotson/komga)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://komga.org/) |  |  |  |  |
 |[LazyLibrarian](https://lazylibrarian.gitlab.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lazylibrarian) |  |  |  |  |
@@ -90,6 +92,7 @@ List of all apps included in this project with info related to it.
 |[MusicBrainz](https://musicbrainz.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver-archive/docker-musicbrainz) |  |  |  |  |
 |[Muximux](https://github.com/mescon/Muximux)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-muximux) |  |  |  |  |
 |[Mylar](https://github.com/mylar3/mylar3)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mylar3) |  |  |  |  |
+|[MySQL](https://www.mysql.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/mysql) |  |  |  |  |
 |[n8n](https://n8n.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.n8n.io/getting-started/installation/#docker) |  |  |  |  |
 |[Netdata](https://www.netdata.cloud/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://learn.netdata.cloud/docs/agent/packaging/docker) |  |  |  |  |
 |[Nextcloud](https://nextcloud.com/)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nextcloud) |  |  |  |  |
@@ -107,6 +110,7 @@ List of all apps included in this project with info related to it.
 |[Ombi](https://ombi.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-ombi) |  |  |  |  |
 |[Organizr v2](https://organizr.app/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/organizr/organizr) |  |  |  |  |
 |[OScam](https://trac.streamboard.tv/oscam/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-oscam) |  |  |  |  |
+|[Overseerr - Plex Server Request Handler](https://overseerr.dev/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/overseerr) |  |  |  |  |
 |[Paperless NGX](https://github.com/paperless-ngx/paperless-ngx)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/paperless-ngx/paperless-ngx) |  |  |  |  |
 |[PhotoPrism](https://photoprism.app/)|64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.photoprism.app/getting-started/docker-compose/) | [![](../build/images/red_doc_icon.png)](../docs/photoprism.md) | [![](../build/images/script_icon.png)](../tools/install_photoprism.sh) |  |  |
 |[PhotoShow](https://github.com/thibaud-rohmer/PhotoShow)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-photoshow) |  |  |  |  |
