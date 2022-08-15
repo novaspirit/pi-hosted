@@ -1,0 +1,47 @@
+{
+    "categories": [
+        "Tools",
+        "Web",
+        "Other"
+    ],
+    "description": "Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.",
+    "env": [
+        {
+            "default": "1000",
+            "label": "PUID",
+            "name": "PUID"
+        },
+        {
+            "default": "1000",
+            "label": "PGID",
+            "name": "PGID"
+        }
+    ],
+    "image32": "ghcr.io/ajnart/homarr:latest",
+    "image64": "ghcr.io/ajnart/homarr:latest",
+    "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homarr.png",
+    "name": "homarr",
+    "platform": "linux",
+    "ports": [
+        "7575:7575/tcp"
+    ],
+    "restart_policy": "unless-stopped",
+    "title": "Homarr - simple and lightweight homepage for your server",
+    "type": 1,
+    "volumes": [
+        {
+            "bind": "/var/run/docker.sock",
+            "container": "/var/run/docker.sock"
+        },
+        {
+            "bind": "/portainer/Files/AppData/Config/Homarr/configs",
+            "container": "/app/data/configs"
+        },
+        {
+            "bind": "/portainer/Files/AppData/Config/Homarr/icons",
+            "container": "/app/public/icons"
+        }
+    ],
+    "officialDoc": "https://github.com/ajnart/homarr",
+    "webpage": "https://homarr.vercel.app/"
+}

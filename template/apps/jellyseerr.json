@@ -1,0 +1,49 @@
+{
+    "categories": [
+        "Video",
+        "Music",
+        "Other"
+    ],
+    "description": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a a fork of Overseerr built to bring support for Jellyfin & Emby media servers!",
+    "env": [
+        {
+            "default": "1000",
+            "label": "PUID",
+            "name": "PUID"
+        },
+        {
+            "default": "1000",
+            "label": "PGID",
+            "name": "PGID"
+        },
+        {
+            "default": "debug",
+            "label": "LOG_LEVEL",
+            "name": "LOG_LEVEL"
+        },
+        {
+            "default": "America/New_York",
+            "label": "TZ",
+            "name": "TZ"
+        }
+    ],
+    "image32": "fallenbagel/jellyseerr:latest",
+    "image64": "fallenbagel/jellyseerr:latest",
+    "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jellyseerr.png",
+    "name": "jellyseerr",
+    "platform": "linux",
+    "ports": [
+        "5055:5055/tcp"
+    ],
+    "restart_policy": "unless-stopped",
+    "title": "Jellyseerr - Overseerr Fork with Jellyfin, Emby & Plex Support",
+    "type": 1,
+    "volumes": [
+        {
+            "bind": "/portainer/Files/AppData/Config/Jellyseerr",
+            "container": "/app/config"
+        }
+    ],
+    "officialDoc": "https://hub.docker.com/r/fallenbagel/jellyseerr",
+    "webpage": "https://github.com/Fallenbagel/jellyseerr"
+}
