@@ -1,0 +1,48 @@
+{
+    "categories": [
+        "Other",
+        "Tools"
+    ],
+    "description": "MySQL is an open-source relational database management system (RDBMS). It is the most widely used relational database management system (RDBMS) by both large and small businesses. It is the most widely used RDBMS by both large and small businesses.",
+    "env": [
+        {
+            "default": "1000",
+            "label": "PUID",
+            "name": "PUID"
+        },
+        {
+            "default": "1000",
+            "label": "PGID",
+            "name": "PGID"
+        },
+        {
+            "default": "rootpassword",
+            "label": "MYSQL_ROOT_PASSWORD",
+            "name": "MYSQL_ROOT_PASSWORD"
+        },
+        {
+            "default": "America/New_York",
+            "label": "TZ",
+            "name": "TZ"
+        }
+    ],
+    "image32": "mysql:latest",
+    "image64": "mysql:latest",
+    "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mysql.png",
+    "name": "mysql",
+    "platform": "linux",
+    "ports": [
+        "3306:3306/tcp"
+    ],
+    "restart_policy": "unless-stopped",
+    "title": "MySQL",
+    "type": 1,
+    "volumes": [
+        {
+            "bind": "/portainer/Files/AppData/Config/MySQL",
+            "container": "/var/lib/mysql "
+        }
+    ],
+    "officialDoc": "https://hub.docker.com/_/mysql",
+    "webpage": "https://www.mysql.com/"
+}
