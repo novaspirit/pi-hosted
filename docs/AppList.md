@@ -83,6 +83,7 @@ List of all apps included in this project with info related to it.
 |[MariaDB](https://mariadb.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mariadb) |  |  |  |  |
 |[Mealie](https://hay-kot.github.io/mealie/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hay-kot.github.io/mealie/documentation/getting-started/install/) |  |  |  |  |
 |[Medusa](https://pymedusa.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-medusa) |  |  |  |  |
+|[MeTube](https://hub.docker.com/r/alexta69/metube)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/alexta69/metube) |  |  |  |  |
 |[Minecraft Server](https://www.minecraft.net/en-us)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/itzg/docker-minecraft-server#using-docker-compose) |  |  |  |  |
 |[Minetest](https://www.minetest.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-minetest) |  |  |  |  |
 |[MinIO](https://min.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.min.io/minio/baremetal/quickstart/quickstart.html) |  |  |  |  |
