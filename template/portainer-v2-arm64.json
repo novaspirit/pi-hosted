@@ -1055,7 +1055,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "lissy93/dashy",
+			"image": "lissy93/dashy:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dashy.png",
 			"name": "Dashy",
 			"platform": "linux",
