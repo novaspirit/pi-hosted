@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 - **Arm32:** 163 apps
 - **Arm64:** 172 apps
-- **Amd64:** 145 apps
+- **Amd64:** 167 apps
 - **Total:** 172 apps
 
 ---
@@ -16,8 +16,8 @@ List of all apps included in this project with info related to it.
 |[Airsonic Advanced](https://github.com/airsonic-advanced/airsonic-advanced)|Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-airsonic-advanced) |  |  |  |  |
 |[Airsonic](https://airsonic.github.io/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://airsonic.github.io/docs/install/docker/) |  |  |  |  |
 |[ArchiSteamFarm](https://github.com/JustArchiNET/ArchiSteamFarm/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Docker/) |  |  |  |  |
-|[Archivebox](https://archivebox.io/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ArchiveBox/ArchiveBox/wiki/Docker) |  |  |  |  |
-|[AriaNG](https://github.com/hurlenko/aria2-ariang-docker)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/hurlenko/aria2-ariang-docker) |  |  |  |  |
+|[Archivebox](https://archivebox.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ArchiveBox/ArchiveBox/wiki/Docker) |  |  |  |  |
+|[AriaNG](https://github.com/hurlenko/aria2-ariang-docker)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/hurlenko/aria2-ariang-docker) |  |  |  |  |
 |[Authelia](https://www.authelia.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://www.authelia.com/docs/configuration/) |  |  |  |  |
 |[Bazarr](https://www.bazarr.media/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.bazarr.media/Getting-Started/Installation/Docker/docker/) |  |  |  |  |
 |[Beets](https://beets.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-beets) |  |  |  |  |
@@ -36,9 +36,9 @@ List of all apps included in this project with info related to it.
 |[DashMachine](https://github.com/rmountjoy92/DashMachine)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/rmountjoy92/DashMachine) |  |  |  |  |
 |[Dashy](https://dashy.to)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://dashy.to/docs/quick-start) |  | [![](../build/images/script_icon.png)](../tools/install_dashy.sh) |  |  |
 |[Davos](https://github.com/linuxserver/davos)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-davos) |  |  |  |  |
-|[DeeMix](https://deemix.app/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://gitlab.com/Bockiii/deemix-docker) |  |  |  |  |
+|[DeeMix](https://deemix.app/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://gitlab.com/Bockiii/deemix-docker) |  |  |  |  |
 |[Deluge](https://www.deluge-torrent.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-deluge) |  |  |  |  |
-|[Deluge openvpn](https://www.deluge-torrent.org/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/sgtsquiggs/docker-deluge-openvpn) |  |  |  |  |
+|[Deluge openvpn](https://www.deluge-torrent.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/sgtsquiggs/docker-deluge-openvpn) |  |  |  |  |
 |[Domoticz](https://domoticz.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-domoticz) |  |  |  |  |
 |[Dozzle](https://dozzle.dev/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/amir20/dozzle) |  |  |  |  |
 |[Dradis](https://dradisframework.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/raesene/dockerized-security-tools) |  |  |  |  |
@@ -49,10 +49,10 @@ List of all apps included in this project with info related to it.
 |[Emby](https://emby.media/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-emby) |  |  |  |  |
 |[EmbyStat](https://github.com/mregni/EmbyStat)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-embystat) |  |  |  |  |
 |[FileBrowser](https://filebrowser.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://filebrowser.org/installation#docker) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
-|[FileBrowser](https://filebrowser.org/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://filebrowser.org/installation#docker) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
-|[Flame](https://github.com/pawelmalak/flame)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/flame#with-docker-recommended) |  |  |  |  |
-|[FoundryVTT Server](https://foundryvtt.com/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/felddy/foundryvtt) |  |  |  |  |
-|[FreshRSS](https://www.freshrss.org/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/FreshRSS/FreshRSS/tree/edge/Docker) |  |  |  |  |
+|[FileBrowser S6](https://filebrowser.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://filebrowser.org/installation#docker) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
+|[Flame](https://github.com/pawelmalak/flame)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/flame#with-docker-recommended) |  |  |  |  |
+|[FoundryVTT Server](https://foundryvtt.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/felddy/foundryvtt) |  |  |  |  |
+|[FreshRSS](https://www.freshrss.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/FreshRSS/FreshRSS/tree/edge/Docker) |  |  |  |  |
 |[Gazee](https://github.com/hubbcaps/gazee)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/gazee) |  |  |  |  |
 |[Gitea](https://gitea.com/)|Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.gitea.io/en-us/install-with-docker/) |  |  |  |  |
 |[Gitea with Mariadb](https://gitea.com/)|Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.gitea.io/en-us/install-with-docker/#mysql-database) |  |  |  |  |
@@ -64,37 +64,37 @@ List of all apps included in this project with info related to it.
 |[Heimdall](https://heimdall.site/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-heimdall) |  |  |  |  |
 |[Homarr - simple and lightweight homepage for your server](https://homarr.vercel.app/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ajnart/homarr) |  |  |  |  |
 |[Home Assistant](https://www.home-assistant.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://www.home-assistant.io/installation/raspberrypi#install-home-assistant-container) |  |  |  |  |
-|[Homebridge - Debian](https://homebridge.io/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |  |
+|[Homebridge - Debian](https://homebridge.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |  |
 |[Homebridge](https://homebridge.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |  |
 |[Homer](https://github.com/bastienwirtz/homer)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=_d3J88ootYo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=2) |
 |[HTPC Manager](https://htpc.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-htpcmanager) |  |  |  |  |
 |[Huginn](https://github.com/huginn/huginn)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/huginn/huginn/tree/master/docker) |  |  |  |  |
-|[Influxdb 1.8.10](https://www.influxdata.com/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker) |  |  |  |  |
+|[Influxdb 1.8.10](https://www.influxdata.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker) |  |  |  |  |
 |[Invidious](https://invidious.io/)|Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.invidious.io/installation/#docker) |  | [![](../build/images/script_icon.png)](../tools/install_invidious.sh) |  |  |
 |[Jackett](https://github.com/Jackett/Jackett)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jackett) |  |  |  |  |
 |[JDownloader](https://my.jdownloader.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/jaymoulin/docker-jdownloader) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[Jellyfin](https://jellyfin.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jellyfin) |  |  |  |  |
 |[Jellyseerr - Overseerr Fork with Jellyfin, Emby & Plex Support](https://github.com/Fallenbagel/jellyseerr)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/fallenbagel/jellyseerr) |  |  |  |  |
 |[Kodi Headless](https://kodi.tv/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/lsioarmhf/kodi-headless-aarch64/) |  |  |  |  |
-|[Komga](https://github.com/gotson/komga)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://komga.org/) |  |  |  |  |
+|[Komga](https://github.com/gotson/komga)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://komga.org/) |  |  |  |  |
 |[LazyLibrarian](https://lazylibrarian.gitlab.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lazylibrarian) |  |  |  |  |
 |[Let's Encrypt [DEPRECATED]](https://letsencrypt.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/letsencrypt) |  |  |  |  |
-|[libreddit](https://libreddit.silkky.cloud/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/spikecodes/libreddit#2-docker) |  |  |  |  |
+|[libreddit](https://libreddit.silkky.cloud/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/spikecodes/libreddit#2-docker) |  |  |  |  |
 |[LibreSpeed](https://librespeed.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-librespeed) |  |  |  |  |
 |[lidarr](https://lidarr.audio/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lidarr) |  |  |  |  |
 |[Lingva Translate](https://lingva.ml/)|Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/TheDavidDelta/lingva-translate) |  |  |  |  |
-|[Lychee](https://lycheeorg.github.io/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lychee) |  |  |  |  |
+|[Lychee](https://lycheeorg.github.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lychee) |  |  |  |  |
 |[Lychee With Mariadb](https://lycheeorg.github.io/)|Arm32<br>Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lychee) |  |  |  |  |
-|[MariaDB](https://mariadb.org/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mariadb) |  |  |  |  |
+|[MariaDB](https://mariadb.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mariadb) |  |  |  |  |
 |[Mealie](https://hay-kot.github.io/mealie/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hay-kot.github.io/mealie/documentation/getting-started/install/) |  |  |  |  |
 |[Medusa](https://pymedusa.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-medusa) |  |  |  |  |
-|[MeTube](https://hub.docker.com/r/alexta69/metube)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/alexta69/metube) |  |  |  |  |
+|[MeTube](https://hub.docker.com/r/alexta69/metube)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/alexta69/metube) |  |  |  |  |
 |[Minecraft Server](https://www.minecraft.net/en-us)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/itzg/docker-minecraft-server#using-docker-compose) |  |  |  |  |
 |[Minetest](https://www.minetest.net/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-minetest) |  |  |  |  |
 |[MinIO](https://min.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.min.io/minio/baremetal/quickstart/quickstart.html) |  |  |  |  |
 |[Minisatip](https://github.com/catalinii/minisatip)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-minisatip) |  |  |  |  |
 |[Mstream](https://mstream.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mstream) |  |  |  |  |
-|[Murmur](https://www.mumble.info/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/yhaenggi/murmur-docker) |  |  |  |  |
+|[Murmur](https://www.mumble.info/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/yhaenggi/murmur-docker) |  |  |  |  |
 |[MusicBrainz](https://musicbrainz.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver-archive/docker-musicbrainz) |  |  |  |  |
 |[Muximux](https://github.com/mescon/Muximux)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-muximux) |  |  |  |  |
 |[Mylar](https://github.com/mylar3/mylar3)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mylar3) |  |  |  |  |
@@ -112,7 +112,7 @@ List of all apps included in this project with info related to it.
 |[NUT Server](https://networkupstools.org)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/instantlinux/nut-upsd) |  |  |  |  |
 |[NZBGet](https://nzbget.net/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nzbget) |  |  |  |  |
 |[NZBHydra 2](https://github.com/theotherp/nzbhydra2)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nzbhydra2) |  |  |  |  |
-|[Omada EAP Controller](https://www.tp-link.com/us/business-networking/omada-sdn-controller/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/mbentley/omada-controller) |  |  |  |  |
+|[Omada EAP Controller](https://www.tp-link.com/us/business-networking/omada-sdn-controller/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/mbentley/omada-controller) |  |  |  |  |
 |[Ombi](https://ombi.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-ombi) |  |  |  |  |
 |[Organizr v2](https://organizr.app/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/organizr/organizr) |  |  |  |  |
 |[OScam](https://trac.streamboard.tv/oscam/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-oscam) |  |  |  |  |
@@ -128,14 +128,14 @@ List of all apps included in this project with info related to it.
 |[Pritunl](https://pritunl.com/)|Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/goofball222/pritunl) |  |  |  |  |
 |[PrivateBin](https://privatebin.info/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/privatebin/nginx-fpm-alpine) |  |  |  |  |
 |[ProjectSend](https://www.projectsend.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-projectsend) |  |  |  |  |
-|[ProtonMail Bridge](https://protonmail.com/bridge/)|Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/shenxn/protonmail-bridge) |  |  |  |  |
+|[ProtonMail Bridge](https://protonmail.com/bridge/)|Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/shenxn/protonmail-bridge) |  |  |  |  |
 |[Pydio](https://www.pydio.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/pydio) |  |  |  |  |
 |[qBittorrent](https://www.qbittorrent.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-qbittorrent) |  |  |  |  |
 |[qFlood](https://hotio.dev/containers/qflood/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hotio.dev/containers/qflood/) |  |  |  |  |
 |[Quassel IRC](https://quassel-irc.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-quassel-core) |  |  |  |  |
 |[Radarr](https://radarr.video/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-radarr) |  |  |  |  |
 |[Raspberry Pi Docker Monitor](https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md)|Arm32<br>Arm64|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md) | [![](../build/images/red_doc_icon.png)](../docs/rpi_docker_monitor.md) | [![](../build/images/script_icon.png)](../tools/rpi_docker_monitor.sh) |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8) |
-|[RDesktop](http://xrdp.org/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-rdesktop) |  |  |  |  |
+|[RDesktop](http://xrdp.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-rdesktop) |  |  |  |  |
 |[Reactive-Resume](https://rxresu.me/)|Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/martadinata666/reactive-resume) |  |  |  |  |
 |[Redmine](https://www.redmine.org/)|Arm32<br>Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/redmine) |  |  |  |  |
 |[Resilio Sync](https://www.resilio.com/individuals/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-resilio-sync) |  |  |  |  |
@@ -148,9 +148,9 @@ List of all apps included in this project with info related to it.
 |[SickChill](https://docs.linuxserver.io/images/docker-sickchill)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://sickchill.github.io/) |  |  |  |  |
 |[SickGear](https://github.com/SickGear/SickGear/wiki)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sickgear) |  |  |  |  |
 |[SmokePing](https://oss.oetiker.ch/smokeping/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-smokeping) |  |  |  |  |
-|[Snippet-box](https://github.com/pawelmalak/snippet-box)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/snippet-box#with-docker) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=v-jUyB3fvAo) |
+|[Snippet-box](https://github.com/pawelmalak/snippet-box)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/snippet-box#with-docker) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=v-jUyB3fvAo) |
 |[Sonarr](https://sonarr.tv/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sonarr) |  |  |  |  |
-|[Speedtest Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker) |  |  |  |  |
+|[Speedtest Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker) |  |  |  |  |
 |[Sshwifty](https://sshwifty.herokuapp.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/nirui/sshwifty#docker-image) |  |  |  |  |
 |[SyncThing](https://syncthing.net/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-syncthing) |  |  |  |  |
 |[Tailscale](https://tailscale.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/tailscale/tailscale) |  |  |  |  |
@@ -159,7 +159,7 @@ List of all apps included in this project with info related to it.
 |[TiddlyWiki](https://tiddlywiki.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://gitlab.com/nicolaw/tiddlywiki) |  |  |  |  |
 |[Traefik](https://doc.traefik.io/traefik/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://doc.traefik.io/traefik/getting-started/install-traefik/) |  | [![](../build/images/script_icon.png)](../tools/traefik.sh) |  |  |
 |[Transmission](https://transmissionbt.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-transmission) |  |  |  |  |
-|[Transmission-OpenVPN](https://transmissionbt.com/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://haugene.github.io/docker-transmission-openvpn/run-container/) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=tGLVEq913_4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=5) |
+|[Transmission-OpenVPN](https://transmissionbt.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://haugene.github.io/docker-transmission-openvpn/run-container/) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=tGLVEq913_4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=5) |
 |[Transmission OpenVPN Version 4](https://transmissionbt.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://haugene.github.io/docker-transmission-openvpn/run-container/) |  |  |  |  |
 |[Tvheadend](https://tvheadend.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-tvheadend) |  |  |  |  |
 |[Ubooquity](https://vaemendis.net/ubooquity/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-ubooquity) |  |  |  |  |

@@ -124,7 +124,7 @@
 					"name": "JAVA_OPTS"
 				}
 			],
-			"image": "linuxserver/airsonic:arm64v8-latest",
+			"image": "linuxserver/airsonic:amd64-latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/airsonic-logo.png",
 			"name": "airsonic",
 			"platform": "linux",
@@ -302,7 +302,7 @@
 					"name": "PUBLIC_ADD_VIEW"
 				}
 			],
-			"image": "archivebox/archivebox:master",
+			"image": "archivebox/archivebox:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/archivebox.png",
 			"name": "archivebox",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://archivebox.io/\" target=\"_blank\">https://archivebox.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ArchiveBox/ArchiveBox/wiki/Docker\" target=\"_blank\">https://github.com/ArchiveBox/ArchiveBox/wiki/Docker</a><br><br><br>By default an admin user is not created. You can do so by launching a shell in the container and executing 'archivebox manage createsuperuser'. Documentation is Available <a href='https://github.com/ArchiveBox/ArchiveBox/wiki'>here</a>.",
@@ -342,7 +342,7 @@
 					"name": "ARIA2RPCPORT"
 				}
 			],
-			"image": "hurlenko/aria2-ariang",
+			"image": "hurlenko/aria2-ariang:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ariang.png",
 			"name": "AriaNG",
 			"platform": "linux",
@@ -1120,7 +1120,7 @@
 				"Music"
 			],
 			"description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
-			"image": "registry.gitlab.com/bockiii/deemix-docker",
+			"image": "registry.gitlab.com/bockiii/deemix-docker:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/deemix.png",
 			"name": "deemix",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://deemix.app/\" target=\"_blank\">https://deemix.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://gitlab.com/Bockiii/deemix-docker\" target=\"_blank\">https://gitlab.com/Bockiii/deemix-docker</a><br><br><br>Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details.",
@@ -1594,24 +1594,12 @@
 				"Other",
 				"Tools"
 			],
-			"description": "[arm][s6-version] Web File Browser which can be used as a middleware or standalone app.",
-			"image": "filebrowser/filebrowser:s6",
+			"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
+			"image": "filebrowser/filebrowser:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
 			"name": "filebrowser",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://filebrowser.org/\" target=\"_blank\">https://filebrowser.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://filebrowser.org/installation#docker\" target=\"_blank\">https://filebrowser.org/installation#docker</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4\" target=\"_blank\">Installing JDownloader and File Browser On The Pi Docker Server</a><br><br>The default user and password is admin/admin.",
 			"platform": "linux",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
 			"ports": [
 				"8082:80/tcp"
 			],
@@ -1638,17 +1626,29 @@
 				"Other",
 				"Tools"
 			],
-			"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
-			"image": "filebrowser/filebrowser:latest",
+			"description": "[arm][s6-version] Web File Browser which can be used as a middleware or standalone app.",
+			"image": "filebrowser/filebrowser:s6",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
 			"name": "filebrowser",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://filebrowser.org/\" target=\"_blank\">https://filebrowser.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://filebrowser.org/installation#docker\" target=\"_blank\">https://filebrowser.org/installation#docker</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4\" target=\"_blank\">Installing JDownloader and File Browser On The Pi Docker Server</a><br><br>The default user and password is admin/admin.",
 			"platform": "linux",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
 			"ports": [
 				"8082:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "FileBrowser",
+			"title": "FileBrowser S6",
 			"type": 1,
 			"volumes": [
 				{
@@ -1763,7 +1763,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "freshrss/freshrss:arm",
+			"image": "linuxserver/freshrss:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/freshrss-icon.png",
 			"name": "freshrss",
 			"platform": "linux",
@@ -2377,7 +2377,7 @@
 				"Tools"
 			],
 			"description": "Create agents that monitor and act on your behalf.",
-			"image": "mjysci/huginn:arm32v7",
+			"image": "huginn/huginn:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/huginn.png",
 			"name": "huginn",
 			"platform": "linux",
@@ -2818,7 +2818,7 @@
 				"Tools"
 			],
 			"description": "Komga is a free and open source comics/mangas/magazines server.",
-			"image": "gotson/komga",
+			"image": "gotson/komga:latest",
 			"logo": "https://raw.githubusercontent.com/tuta23/pi-hosted/master/images/komga.png",
 			"name": "komga",
 			"platform": "linux",
@@ -3423,7 +3423,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "alexta69/metube",
+			"image": "alexta69/metube:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/metube.png",
 			"name": "MeTube",
 			"platform": "linux",
@@ -4513,7 +4513,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "mbentley/omada-controller:latest-arm64",
+			"image": "mbentley/omada-controller:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/omada.png",
 			"name": "omada-controller",
 			"platform": "linux",

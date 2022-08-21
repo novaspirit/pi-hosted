@@ -206,6 +206,101 @@
 		{
 			"categories": [
 				"Other",
+				"Tools"
+			],
+			"description": "ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view sites you want to preserve offline.",
+			"env": [
+				{
+					"default": "*",
+					"label": "ALLOWED_HOSTS",
+					"name": "ALLOWED_HOSTS"
+				},
+				{
+					"default": "750m",
+					"label": "MEDIA_MAX_SIZE",
+					"name": "MEDIA_MAX_SIZE"
+				},
+				{
+					"default": "true",
+					"label": "PUBLIC_INDEX",
+					"name": "PUBLIC_INDEX"
+				},
+				{
+					"default": "true",
+					"label": "PUBLIC_SNAPSHOTS",
+					"name": "PUBLIC_SNAPSHOTS"
+				},
+				{
+					"default": "false",
+					"label": "PUBLIC_ADD_VIEW",
+					"name": "PUBLIC_ADD_VIEW"
+				}
+			],
+			"image": "archivebox/archivebox:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/archivebox.png",
+			"name": "archivebox",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://archivebox.io/\" target=\"_blank\">https://archivebox.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ArchiveBox/ArchiveBox/wiki/Docker\" target=\"_blank\">https://github.com/ArchiveBox/ArchiveBox/wiki/Docker</a><br><br><br>By default an admin user is not created. You can do so by launching a shell in the container and executing 'archivebox manage createsuperuser'. Documentation is Available <a href='https://github.com/ArchiveBox/ArchiveBox/wiki'>here</a>.",
+			"platform": "linux",
+			"ports": [
+				"8002:8000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Archivebox",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/archivebox",
+					"container": "/data"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Downloader"
+			],
+			"description": "AriaNg is a modern web frontend making aria2 easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment. You can just put AriaNg in your web server and open it in your browser. AriaNg uses responsive layout, and supports any desktop or mobile devices.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "443",
+					"label": "ARIA2RPCPORT",
+					"name": "ARIA2RPCPORT"
+				}
+			],
+			"image": "hurlenko/aria2-ariang:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ariang.png",
+			"name": "AriaNG",
+			"platform": "linux",
+			"ports": [
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "AriaNG",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/AriaNG",
+					"container": "/aria2/conf"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/aria2/data"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/hurlenko/aria2-ariang-docker\" target=\"_blank\">https://github.com/hurlenko/aria2-ariang-docker</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/hurlenko/aria2-ariang-docker\" target=\"_blank\">https://github.com/hurlenko/aria2-ariang-docker</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
 				"Tools",
 				"Authentication"
 			],
@@ -955,6 +1050,34 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Music"
+			],
+			"description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
+			"image": "registry.gitlab.com/bockiii/deemix-docker:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/deemix.png",
+			"name": "deemix",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://deemix.app/\" target=\"_blank\">https://deemix.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://gitlab.com/Bockiii/deemix-docker\" target=\"_blank\">https://gitlab.com/Bockiii/deemix-docker</a><br><br><br>Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details.",
+			"platform": "linux",
+			"ports": [
+				"9666:9666/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "DeeMix",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/DeeMix",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Downloaders"
 			],
 			"description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more...",
@@ -997,6 +1120,74 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.deluge-torrent.org/\" target=\"_blank\">https://www.deluge-torrent.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-deluge\" target=\"_blank\">https://docs.linuxserver.io/images/docker-deluge</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"VPN",
+				"Tools"
+			],
+			"description": "This container contains OpenVPN and Deluge with a configuration where Deluge is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PUID"
+				},
+				{
+					"default": "MULLVAD",
+					"description": "see https://github.com/sgtsquiggs/docker-deluge-openvpn",
+					"label": "OPENVPN_PROVIDER",
+					"name": "OPENVPN_PROVIDER"
+				},
+				{
+					"label": "OPENVPN_USERNAME",
+					"name": "OPENVPN_USERNAME"
+				},
+				{
+					"label": "OPENVPN_PASSWORD",
+					"name": "OPENVPN_PASSWORD"
+				},
+				{
+					"default": "CA Toronto",
+					"label": "OPENVPN_CONFIG",
+					"name": "OPENVPN_CONFIG"
+				},
+				{
+					"default": "192.168.0.0/16",
+					"label": "LOCAL_NETWORK",
+					"name": "LOCAL_NETWORK"
+				}
+			],
+			"image": "sgtsquiggs/deluge-openvpn:amd64-latest",
+			"name": "deluge-openvpn",
+			"platform": "linux",
+			"ports": [
+				"8112:8112/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Deluge openvpn",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/etc/localtime",
+					"container": "/etc/localtime"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/DelugeOpenVPN/config",
+					"container": "/config"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.deluge-torrent.org/\" target=\"_blank\">https://www.deluge-torrent.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/sgtsquiggs/docker-deluge-openvpn\" target=\"_blank\">https://github.com/sgtsquiggs/docker-deluge-openvpn</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -1363,6 +1554,166 @@
 					"container": "/config/settings.json"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "[arm][s6-version] Web File Browser which can be used as a middleware or standalone app.",
+			"image": "filebrowser/filebrowser:s6",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
+			"name": "filebrowser",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://filebrowser.org/\" target=\"_blank\">https://filebrowser.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://filebrowser.org/installation#docker\" target=\"_blank\">https://filebrowser.org/installation#docker</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4\" target=\"_blank\">Installing JDownloader and File Browser On The Pi Docker Server</a><br><br>The default user and password is admin/admin.",
+			"platform": "linux",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"ports": [
+				"8082:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "FileBrowser S6",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/srv"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/filebrowser/filebrowser.db",
+					"container": "/database/filebrowser.db"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/filebrowser/settings.json",
+					"container": "/config/settings.json"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Flame is self-hosted startpage for your server. Its design is inspired (heavily) by SUI. Flame is very easy to setup and use. With built-in editors, it allows you to setup your very own application hub in no time - no file editing necessary.",
+			"env": [
+				{
+					"default": "",
+					"label": "Flame Password",
+					"name": "PASSWORD"
+				}
+			],
+			"image": "pawelmalak/flame:multiarch",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/flame.png",
+			"name": "Flame",
+			"platform": "linux",
+			"ports": [
+				"5005:5005/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Flame",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Flame/data",
+					"container": "/app/data"
+				},
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pawelmalak/flame\" target=\"_blank\">https://github.com/pawelmalak/flame</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pawelmalak/flame#with-docker-recommended\" target=\"_blank\">https://github.com/pawelmalak/flame#with-docker-recommended</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Games"
+			],
+			"description": "This docker image provides the FoundryVTT system for hosting your own virtual table top games.",
+			"env": [
+				{
+					"default": "John",
+					"label": "Foundry Account Name",
+					"name": "FOUNDRY_USERNAME"
+				},
+				{
+					"default": "password",
+					"label": "Foundry Password",
+					"name": "FOUNDRY_PASSWORD"
+				},
+				{
+					"default": "changeme",
+					"label": "Instance Admin Password",
+					"name": "FOUNDRY_ADMIN_KEY"
+				},
+				{
+					"default": "true",
+					"label": "CONTAINER_PRESERVE_CONFIG",
+					"name": "CONTAINER_PRESERVE_CONFIG"
+				}
+			],
+			"image": "felddy/foundryvtt:release",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/foundrylogo.png",
+			"name": "FoundryVTT",
+			"platform": "linux",
+			"ports": [
+				"30000:30000/tcp"
+			],
+			"restart_polocy": "unless-stopped",
+			"title": "FoundryVTT Server",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/foundryvtt",
+					"container": "/data"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://foundryvtt.com/\" target=\"_blank\">https://foundryvtt.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/felddy/foundryvtt\" target=\"_blank\">https://hub.docker.com/r/felddy/foundryvtt</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other"
+			],
+			"description": "A free, self-hostable rss aggregator…",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/freshrss:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/freshrss-icon.png",
+			"name": "freshrss",
+			"platform": "linux",
+			"ports": [
+				"8132:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "FreshRSS",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/freshrss",
+					"container": "/config"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.freshrss.org/\" target=\"_blank\">https://www.freshrss.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/FreshRSS/FreshRSS/tree/edge/Docker\" target=\"_blank\">https://github.com/FreshRSS/FreshRSS/tree/edge/Docker</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -1813,6 +2164,55 @@
 		},
 		{
 			"categories": [
+				"HomeAutomation"
+			],
+			"description": "Debian Homebridge allows you to integrate with smart home devices that do not natively support HomeKit. There are over 2,000 Homebridge plugins supporting thousands of different smart accessories.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1",
+					"label": "HOMEBRIDGE_CONFIG_UI",
+					"name": "HOMEBRIDGE_CONFIG_UI"
+				},
+				{
+					"default": "8581",
+					"label": "HOMEBRIDGE_CONFIG_UI_PORT",
+					"name": "HOMEBRIDGE_CONFIG_UI_PORT"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "oznu/homebridge:debian",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homebridge.png",
+			"name": "homebridge-debian",
+			"network": "host",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://homebridge.io/\" target=\"_blank\">https://homebridge.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker\" target=\"_blank\">https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker</a><br><br><br>Bringing HomeKit support where there is none",
+			"platform": "linux",
+			"privileged": true,
+			"restart_policy": "unless-stopped",
+			"title": "Homebridge - Debian",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/debian-homebridge",
+					"container": "/homebridge"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
@@ -1887,6 +2287,35 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://htpc.io/\" target=\"_blank\">https://htpc.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-htpcmanager\" target=\"_blank\">https://docs.linuxserver.io/images/docker-htpcmanager</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "InfluxDB is an open source time series database for recording metrics, events, and analytics. You will need to add /portainer/Files/AppData/Config/Influxdb/config/influxdb.conf",
+			"hostname": "rpi-influxdb1810",
+			"image": "influxdb:1.8.10",
+			"logo": "https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/influxdb/logo.png",
+			"name": "influxdb1810",
+			"platform": "linux",
+			"ports": [
+				"8086:8086/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Influxdb 1.8.10",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Influxdb/data",
+					"container": "/var/lib/influxdb"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Influxdb/config",
+					"container": "/var/lib/influxdb"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.influxdata.com/\" target=\"_blank\">https://www.influxdata.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker\" target=\"_blank\">https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -2278,6 +2707,39 @@
 		},
 		{
 			"categories": [
+				"Books",
+				"Tools"
+			],
+			"description": "Komga is a free and open source comics/mangas/magazines server.",
+			"image": "gotson/komga:latest",
+			"logo": "https://raw.githubusercontent.com/tuta23/pi-hosted/master/images/komga.png",
+			"name": "komga",
+			"platform": "linux",
+			"ports": [
+				"8995:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Komga",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/komga/config",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/komga/data",
+					"container": "/data"
+				},
+				{
+					"bind": "/etc/timezone",
+					"container": "/etc/timezone",
+					"read_only": "true"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/gotson/komga\" target=\"_blank\">https://github.com/gotson/komga</a><br><b>Official Docker Documentation: </b><a href=\"https://komga.org/\" target=\"_blank\">https://komga.org/</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Books"
 			],
 			"description": "LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs.",
@@ -2387,6 +2849,30 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://letsencrypt.org/\" target=\"_blank\">https://letsencrypt.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/letsencrypt\" target=\"_blank\">https://hub.docker.com/r/linuxserver/letsencrypt</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "An alternative private front-end to Reddit",
+			"image": "spikecodes/libreddit:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/libreddit.png",
+			"name": "libreddit",
+			"platform": "linux",
+			"ports": [
+				"8088:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "libreddit",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/libreddit",
+					"container": "/config"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://libreddit.silkky.cloud/\" target=\"_blank\">https://libreddit.silkky.cloud/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/spikecodes/libreddit#2-docker\" target=\"_blank\">https://github.com/spikecodes/libreddit#2-docker</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -2515,6 +3001,73 @@
 				"Management",
 				"Photos"
 			],
+			"description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "mariadb",
+					"label": "DB_HOST",
+					"name": "DB_HOST"
+				},
+				{
+					"default": "lychee",
+					"label": "DB_USERNAME",
+					"name": "DB_USERNAME"
+				},
+				{
+					"default": "dbpassword_that_was_set_in_lychee-mariadb",
+					"label": "DB_PASSWORD",
+					"name": "DB_PASSWORD"
+				},
+				{
+					"default": "lychee",
+					"label": "DB_DATABASE",
+					"name": "DB_DATABASE"
+				},
+				{
+					"default": "3306",
+					"label": "DB_PORT",
+					"name": "DB_PORT"
+				}
+			],
+			"image": "linuxserver/lychee:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lychee-icon.png",
+			"name": "lychee",
+			"platform": "linux",
+			"ports": [
+				"84:84/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Lychee",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Lychee",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Pictures",
+					"container": "/pictures"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://lycheeorg.github.io/\" target=\"_blank\">https://lycheeorg.github.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-lychee\" target=\"_blank\">https://docs.linuxserver.io/images/docker-lychee</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Cloud",
+				"Web",
+				"Management",
+				"Photos"
+			],
 			"description": "Lychee With Mariadb is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
 			"env": [
 				{
@@ -2564,6 +3117,62 @@
 			"title": "Lychee With Mariadb",
 			"type": 3,
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://lycheeorg.github.io/\" target=\"_blank\">https://lycheeorg.github.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-lychee\" target=\"_blank\">https://docs.linuxserver.io/images/docker-lychee</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "An Enhanced drop in replacement for Mysql",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "",
+					"label": "MYSQL_DATABASE",
+					"name": "MYSQL_DATABASE"
+				},
+				{
+					"default": "",
+					"label": "MYSQL_USER",
+					"name": "MYSQL_USER"
+				},
+				{
+					"default": "dbpassword",
+					"label": "MYSQL_PASSWORD",
+					"name": "MYSQL_PASSWORD"
+				},
+				{
+					"default": "rootpassword",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
+				}
+			],
+			"image": "linuxserver/mariadb:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mariadb-icon.png",
+			"name": "mariadb",
+			"platform": "linux",
+			"ports": [
+				"3306:3306/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "MariaDB",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Mariadb",
+					"container": "/config"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://mariadb.org/\" target=\"_blank\">https://mariadb.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-mariadb\" target=\"_blank\">https://docs.linuxserver.io/images/docker-mariadb</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -2689,6 +3298,41 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://pymedusa.com/\" target=\"_blank\">https://pymedusa.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-medusa\" target=\"_blank\">https://docs.linuxserver.io/images/docker-medusa</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Downloader"
+			],
+			"description": "Web GUI for youtube-dl (using the yt-dlp fork) with playlist support. Allows you to download videos from YouTube and dozens of other sites (https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "alexta69/metube:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/metube.png",
+			"name": "MeTube",
+			"platform": "linux",
+			"ports": [
+				"8081:8081/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "MeTube",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/alexta69/metube\" target=\"_blank\">https://hub.docker.com/r/alexta69/metube</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/alexta69/metube\" target=\"_blank\">https://github.com/alexta69/metube</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -2882,6 +3526,61 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://mstream.io/\" target=\"_blank\">https://mstream.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-mstream\" target=\"_blank\">https://docs.linuxserver.io/images/docker-mstream</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Voice",
+				"Chat"
+			],
+			"description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "yhaenggi/murmur:1.3.4",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Mumble-logo.png",
+			"name": "murmur",
+			"platform": "linux",
+			"ports": [
+				"64738:64738/tcp",
+				"64738:64738/udp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Murmur",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/etc/localtime:ro",
+					"container": "/etc/localtime"
+				},
+				{
+					"bind": "/portainer/Files/Config/Murmur",
+					"container": "/opt/murmur/config"
+				},
+				{
+					"bind": "/portainer/Files/Murmur/data",
+					"container": "/opt/murmur/data"
+				},
+				{
+					"bind": "/portainer/Files/Murmur/log",
+					"container": "/opt/murmur/log"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.mumble.info/\" target=\"_blank\">https://www.mumble.info/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/yhaenggi/murmur-docker\" target=\"_blank\">https://github.com/yhaenggi/murmur-docker</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -3652,6 +4351,49 @@
 		},
 		{
 			"categories": [
+				"Management",
+				"Tools"
+			],
+			"description": "TP-Link Omada is a software-defined network solution. The EAP Controller is used to manage multiple EAPs. Raspberry Pi 1 and Zero are not supported.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "mbentley/omada-controller:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/omada.png",
+			"name": "omada-controller",
+			"platform": "linux",
+			"ports": [
+				"8088:8088/tcp",
+				"8043:8043/tcp",
+				"27001:27001/udp",
+				"27002:27002/tcp",
+				"29810:29810/udp",
+				"29811:29811/tcp",
+				"29812:29812/tcp",
+				"29813:29813/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Omada EAP Controller",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Omada",
+					"container": "/config"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.tp-link.com/us/business-networking/omada-sdn-controller/\" target=\"_blank\">https://www.tp-link.com/us/business-networking/omada-sdn-controller/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/mbentley/omada-controller\" target=\"_blank\">https://hub.docker.com/r/mbentley/omada-controller</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Downloaders",
 				"Other",
 				"Video",
@@ -4335,6 +5077,33 @@
 		},
 		{
 			"categories": [
+				"Email",
+				"Productivity",
+				"Tools",
+				"Other"
+			],
+			"description": "This is an unofficial Docker container of the ProtonMail Bridge. Some of the scripts are based on Hendrik Meyer's work.",
+			"image": "shenxn/protonmail-bridge:build",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/protonmail-bridge.png",
+			"name": "protonmail-bridge",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://protonmail.com/bridge/\" target=\"_blank\">https://protonmail.com/bridge/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/shenxn/protonmail-bridge\" target=\"_blank\">https://hub.docker.com/r/shenxn/protonmail-bridge</a><br><br><br>Please refer to the documentation <a href='https://hub.docker.com/r/shenxn/protonmail-bridge'/>here</a> to set this up.",
+			"platform": "linux",
+			"ports": [
+				"143:143/tcp",
+				"25:25/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "ProtonMail Bridge",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/ProtonMail-Bridge",
+					"container": "/root"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Cloud",
 				"Other"
 			],
@@ -4547,6 +5316,46 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://radarr.video/\" target=\"_blank\">https://radarr.video/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-radarr\" target=\"_blank\">https://docs.linuxserver.io/images/docker-radarr</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other"
+			],
+			"description": "Rdesktop is an Ubuntu based container containing full desktop environments in officially supported flavors accessible via RDP.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "linuxserver/rdesktop:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/rdesktop.png",
+			"name": "rdesktop",
+			"platform": "linux",
+			"ports": [
+				"3389:3389/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "RDesktop",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/RDesktop/config",
+					"container": "/config"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"http://xrdp.org/\" target=\"_blank\">http://xrdp.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-rdesktop\" target=\"_blank\">https://docs.linuxserver.io/images/docker-rdesktop</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -5114,6 +5923,30 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Snippet Box is a simple self-hosted app for organizing your code snippets.",
+			"image": "pawelmalak/snippet-box:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/snibox.png",
+			"name": "Snippet-box",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pawelmalak/snippet-box\" target=\"_blank\">https://github.com/pawelmalak/snippet-box</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pawelmalak/snippet-box#with-docker\" target=\"_blank\">https://github.com/pawelmalak/snippet-box#with-docker</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=v-jUyB3fvAo\" target=\"_blank\">My Most used container! Snippet Box</a><br><br>Label-oriented interface with search. Supports various programming languages, markdown, plain text.",
+			"platform": "linux",
+			"ports": [
+				"5010:5000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Snippet-box",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Snippet-box",
+					"container": "/app/data"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Downloaders",
 				"Video"
 			],
@@ -5159,6 +5992,43 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://sonarr.tv/\" target=\"_blank\">https://sonarr.tv/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-sonarr\" target=\"_blank\">https://docs.linuxserver.io/images/docker-sonarr</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Tools",
+				"Web",
+				"Other"
+			],
+			"description": "Run a Speedtest every hour and graph the results.  See https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags for arch options",
+			"env": [
+				{
+					"default": "latest-arm",
+					"label": "arch",
+					"name": "arch"
+				},
+				{
+					"default": "true",
+					"label": "OOKLA_EULA_GDPR",
+					"name": "OOKLA_EULA_GDPR"
+				}
+			],
+			"image": "henrywhitaker3/speedtest-tracker:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/speedtest-tracker.png",
+			"name": "speedtest-tracker",
+			"platform": "linux",
+			"ports": [
+				"8765:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Speedtest Tracker",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/speedtest-tracker",
+					"container": "/config"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/henrywhitaker3/Speedtest-Tracker\" target=\"_blank\">https://github.com/henrywhitaker3/Speedtest-Tracker</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker\" target=\"_blank\">https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -5498,6 +6368,80 @@
 			"privileged": true,
 			"restart_policy": "unless-stopped",
 			"title": "Transmission OpenVPN Version 4",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/data"
+				},
+				{
+					"bind": "/etc/localtime",
+					"container": "/etc/localtime"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"VPN",
+				"Tools"
+			],
+			"description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "MULLVAD",
+					"description": "https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
+					"label": "OPENVPN_PROVIDER",
+					"name": "OPENVPN_PROVIDER"
+				},
+				{
+					"default": "",
+					"description": "Optional. Mostly used to narrow down what location to use by the provider",
+					"label": "OPENVPN_CONFIG",
+					"name": "OPENVPN_CONFIG"
+				},
+				{
+					"default": "",
+					"label": "OPENVPN_USERNAME",
+					"name": "OPENVPN_USERNAME"
+				},
+				{
+					"default": "",
+					"label": "OPENVPN_PASSWORD",
+					"name": "OPENVPN_PASSWORD"
+				},
+				{
+					"default": "192.168.0.0/24",
+					"label": "LOCAL_NETWORK",
+					"name": "LOCAL_NETWORK"
+				},
+				{
+					"default": "true",
+					"label": "watch-dir-enabled",
+					"name": "TRANSMISSION_WATCH_DIR_ENABLED"
+				}
+			],
+			"image": "haugene/transmission-openvpn:3.7.1",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/transmission-icon.png",
+			"name": "transmission-openvpn",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://transmissionbt.com/\" target=\"_blank\">https://transmissionbt.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://haugene.github.io/docker-transmission-openvpn/run-container/\" target=\"_blank\">https://haugene.github.io/docker-transmission-openvpn/run-container/</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=tGLVEq913_4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=5\" target=\"_blank\">Torrent with Docker and OPENVPN with Transmission and PIA</a><br><br>List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",
+			"platform": "linux",
+			"ports": [
+				"9091:9091/tcp"
+			],
+			"privileged": true,
+			"restart_policy": "unless-stopped",
+			"title": "Transmission-OpenVPN",
 			"type": 1,
 			"volumes": [
 				{
