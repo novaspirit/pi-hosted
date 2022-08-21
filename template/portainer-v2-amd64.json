@@ -6058,7 +6058,6 @@
 					"name": "WG_ALLOWED_IPS"
 				}
 			],
-			"image": "weejewel/wg-easy:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wireguard.png",
 			"name": "wg-easy",
 			"platform": "linux",
