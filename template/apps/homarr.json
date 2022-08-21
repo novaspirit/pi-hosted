@@ -17,8 +17,9 @@
             "name": "PGID"
         }
     ],
-    "image32": "ghcr.io/ajnart/homarr:latest",
-    "image64": "ghcr.io/ajnart/homarr:latest",
+    "image_arm32": "ghcr.io/ajnart/homarr:latest",
+    "image_arm64": "ghcr.io/ajnart/homarr:latest",
+    "image_amd64": "ghcr.io/ajnart/homarr:latest",
     "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homarr.png",
     "name": "homarr",
     "platform": "linux",

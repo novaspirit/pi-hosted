@@ -22,8 +22,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/musicbrainz:latest",
-	"image64": "linuxserver/musicbrainz:latest",
+	"image_arm32": "linuxserver/musicbrainz:latest",
+	"image_arm64": "linuxserver/musicbrainz:latest",
+	"image_amd64": "linuxserver/musicbrainz:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/musicbrainz-icon.png",
 	"name": "musicbrainz",
 	"officialDoc": "https://github.com/linuxserver-archive/docker-musicbrainz",

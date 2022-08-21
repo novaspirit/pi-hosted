@@ -21,8 +21,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/ubooquity:latest",
-	"image64": "linuxserver/ubooquity:latest",
+	"image_arm32": "linuxserver/ubooquity:latest",
+	"image_arm64": "linuxserver/ubooquity:latest",
+	"image_amd64": "linuxserver/ubooquity:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ubooquity-icon.png",
 	"name": "ubooquity",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-ubooquity",

@@ -16,8 +16,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/radarr:latest",
-	"image64": "linuxserver/radarr:latest",
+	"image_arm32": "linuxserver/radarr:latest",
+	"image_arm64": "linuxserver/radarr:latest",
+	"image_amd64": "linuxserver/radarr:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/radarr.png",
 	"name": "radarr",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-radarr",

@@ -16,8 +16,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/tvheadend:latest",
-	"image64": "linuxserver/tvheadend:latest",
+	"image_arm32": "linuxserver/tvheadend:latest",
+	"image_arm64": "linuxserver/tvheadend:latest",
+	"image_amd64": "linuxserver/tvheadend:latest",
 	"logo": "http://i.imgur.com/zGSUAT4.png",
 	"name": "tvheadend",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-tvheadend",

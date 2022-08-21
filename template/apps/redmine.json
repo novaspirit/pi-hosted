@@ -56,8 +56,9 @@
 		"4180:3000/tcp"
 	],
 	"repository": {
-		"stackfile32": "stack/redmine.yml",
-		"stackfile64": "stack/redmine.yml",
+		"stackfile_arm32": "stack/redmine.yml",
+		"stackfile_arm64": "stack/redmine.yml",
+		"stackfile_amd64": "stack/redmine.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"restart_policy": "unless-stopped",

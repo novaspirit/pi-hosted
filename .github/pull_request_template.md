@@ -2,6 +2,7 @@
 * docs/README.md
 * template/portainer-v2-arm32.json
 * template/portainer-v2-arm64.json
+* template/portainer-v2-amd64.json
 * tools/README.md
 * docs/AppList.md
 * docs/DocumentList.md

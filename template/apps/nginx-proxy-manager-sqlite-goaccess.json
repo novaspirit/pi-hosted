@@ -57,8 +57,9 @@
 		"7880:7880/tcp"
 	],
 	"repository": {
-		"stackfile32": "stack/nginx-proxy-manager-sqlite-goaccess.yml",
-		"stackfile64": "stack/nginx-proxy-manager-sqlite-goaccess.yml",
+		"stackfile_arm32": "stack/nginx-proxy-manager-sqlite-goaccess.yml",
+		"stackfile_arm64": "stack/nginx-proxy-manager-sqlite-goaccess.yml",
+		"stackfile_amd64": "stack/nginx-proxy-manager-sqlite-goaccess.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"restart_policy": "unless-stopped",

@@ -16,8 +16,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/pydio:latest",
-	"image64": "linuxserver/pydio:latest",
+	"image_arm32": "linuxserver/pydio:latest",
+	"image_arm64": "linuxserver/pydio:latest",
+	"image_amd64": "linuxserver/pydio:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pydio-icon.png",
 	"name": "pydio",
 	"officialDoc": "https://hub.docker.com/r/linuxserver/pydio",

@@ -4,8 +4,9 @@
 		"Tools"
 	],
 	"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
-	"image32": "vaultwarden/server:latest",
-	"image64": "vaultwarden/server:latest",
+	"image_arm32": "vaultwarden/server:latest",
+	"image_arm64": "vaultwarden/server:latest",
+	"image_amd64": "vaultwarden/server:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bitwarden.png",
 	"name": "vaultwarden",
 	"note": "Alternative Implementation of the Bitwarden Server API in Rust, including web vault.",

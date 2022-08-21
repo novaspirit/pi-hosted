@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "lissy93/dashy:latest",
-	"image64": "lissy93/dashy:latest",
+	"image_arm32": "lissy93/dashy:latest",
+	"image_arm64": "lissy93/dashy:latest",
+	"image_amd64": "lissy93/dashy:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dashy.png",
 	"name": "Dashy",
 	"officialDoc": "https://dashy.to/docs/quick-start",

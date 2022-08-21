@@ -22,8 +22,9 @@
 			"name": "TZ"
 		}
 	],
-	"image32": "linuxserver/jellyfin:latest",
-	"image64": "linuxserver/jellyfin:latest",
+	"image_arm32": "linuxserver/jellyfin:latest",
+	"image_arm64": "linuxserver/jellyfin:latest",
+	"image_amd64": "linuxserver/jellyfin:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jellyfin.png",
 	"name": "jellyfin",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-jellyfin",

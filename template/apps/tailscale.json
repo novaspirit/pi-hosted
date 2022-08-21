@@ -13,8 +13,9 @@
 			"name": "AUTH_KEY"
 		}
 	],
-	"image32": "tailscale/tailscale:latest",
-	"image64": "tailscale/tailscale:latest",
+	"image_arm32": "tailscale/tailscale:latest",
+	"image_arm64": "tailscale/tailscale:latest",
+	"image_amd64": "tailscale/tailscale:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tailscale-icon.png",
 	"name": "tailscale",
 	"officialDoc": "https://hub.docker.com/r/tailscale/tailscale",

@@ -26,8 +26,9 @@
             "name": "TZ"
         }
     ],
-    "image32": "mysql:latest",
-    "image64": "mysql:latest",
+    "image_arm32": "mysql:latest",
+    "image_arm64": "mysql:latest",
+    "image_amd64": "mysql:latest",
     "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mysql.png",
     "name": "mysql",
     "platform": "linux",

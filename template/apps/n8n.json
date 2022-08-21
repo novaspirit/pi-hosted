@@ -21,8 +21,9 @@
 			"name": "N8N_BASIC_AUTH_PASSWORD"
 		}
 	],
-	"image32": "n8nio/n8n:latest",
-	"image64": "n8nio/n8n:latest",
+	"image_arm32": "n8nio/n8n:latest",
+	"image_arm64": "n8nio/n8n:latest",
+	"image_amd64": "n8nio/n8n:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/n8n.jpg",
 	"name": "n8n",
 	"note": "Documentation is Available <a href='https://docs.n8n.io/'>here</a>",

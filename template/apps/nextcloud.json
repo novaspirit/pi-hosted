@@ -42,8 +42,9 @@
 	"officialDoc": "https://docs.linuxserver.io/images/docker-nextcloud",
 	"platform": "linux",
 	"repository": {
-		"stackfile32": "stack/nextcloud.yml",
-		"stackfile64": "stack/nextcloud.yml",
+		"stackfile_arm32": "stack/nextcloud.yml",
+		"stackfile_arm64": "stack/nextcloud.yml",
+		"stackfile_amd64": "stack/nextcloud.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"title": "Nextcloud",

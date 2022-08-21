@@ -4,8 +4,9 @@
 		"Tools"
 	],
 	"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole with both DoH (DNS over HTTPS) and DoT (DNS over TLS) clients.",
-	"image32": "oijkn/pihole-doh-dot:latest",
-	"image64": "oijkn/pihole-doh-dot:latest",
+	"image_arm32": "oijkn/pihole-doh-dot:latest",
+	"image_arm64": "oijkn/pihole-doh-dot:latest",
+	"image_amd64": "oijkn/pihole-doh-dot:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pihole_doh-dot.png",
 	"name": "pihole DoH/DoT",
 	"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53.",

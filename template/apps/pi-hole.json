@@ -4,8 +4,9 @@
 		"Tools"
 	],
 	"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
-	"image32": "pihole/pihole:latest",
-	"image64": "pihole/pihole:latest",
+	"image_arm32": "pihole/pihole:latest",
+	"image_arm64": "pihole/pihole:latest",
+	"image_amd64": "pihole/pihole:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pihole.png",
 	"name": "pihole",
 	"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53.",

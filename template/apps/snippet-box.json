@@ -4,8 +4,8 @@
 		"Tools"
 	],
 	"description": "Snippet Box is a simple self-hosted app for organizing your code snippets.",
-	"image32": "pawelmalak/snippet-box:arm",
-	"image64": "pawelmalak/snippet-box:arm",
+	"image_arm32": "pawelmalak/snippet-box:arm",
+	"image_arm64": "pawelmalak/snippet-box:arm",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/snibox.png",
 	"name": "Snippet-box",
 	"note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text.",

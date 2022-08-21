@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/beets:latest",
-	"image64": "linuxserver/beets:latest",
+	"image_arm32": "linuxserver/beets:latest",
+	"image_arm64": "linuxserver/beets:latest",
+	"image_amd64": "linuxserver/beets:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/beets-icon.png",
 	"name": "beets",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-beets",

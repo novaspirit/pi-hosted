@@ -5,8 +5,9 @@
 		"Maintenance"
 	],
 	"description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
-	"image32": "containrrr/watchtower:latest",
-	"image64": "containrrr/watchtower:latest",
+	"image_arm32": "containrrr/watchtower:latest",
+	"image_arm64": "containrrr/watchtower:latest",
+	"image_amd64": "containrrr/watchtower:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/watchtower.png",
 	"name": "watchtower",
 	"note": "It is recommended to manually update your containers but we're including this for those of you that don't care",

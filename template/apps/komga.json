@@ -4,8 +4,8 @@
 		"Tools"
 	],
 	"description": "Komga is a free and open source comics/mangas/magazines server.",
-	"image32": "gotson/komga",
-	"image64": "gotson/komga",
+	"image_arm32": "gotson/komga",
+	"image_arm64": "gotson/komga",
 	"logo": "https://raw.githubusercontent.com/tuta23/pi-hosted/master/images/komga.png",
 	"name": "komga",
 	"officialDoc": "https://komga.org/",

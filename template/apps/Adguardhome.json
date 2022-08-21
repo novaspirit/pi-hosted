@@ -4,8 +4,9 @@
 		"Tools"
 	],
 	"description": "[Adguardhome](https://adguard.com/en/adguard-home/overview.html) AdGuard Home is a network-wide software for blocking ads & tracking.",
-	"image32": "adguard/adguardhome:latest",
-	"image64": "adguard/adguardhome:latest",
+	"image_arm32": "adguard/adguardhome:latest",
+	"image_arm64": "adguard/adguardhome:latest",
+	"image_amd64": "adguard/adguardhome:latest",
 	"logo": "https://developer.asustor.com/uploadIcons/0020_999_1595573028_AdGuardhome_256.png",
 	"name": "Adguardhome",
 	"officialDoc": "https://github.com/AdguardTeam/AdGuardHome/wiki/Docker",

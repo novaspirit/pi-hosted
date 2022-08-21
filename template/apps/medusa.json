@@ -16,8 +16,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/medusa:latest",
-	"image64": "linuxserver/medusa:latest",
+	"image_arm32": "linuxserver/medusa:latest",
+	"image_arm64": "linuxserver/medusa:latest",
+	"image_amd64": "linuxserver/medusa:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/medusa-icon.png",
 	"name": "medusa",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-medusa",

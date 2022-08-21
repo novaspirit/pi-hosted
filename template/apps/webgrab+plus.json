@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/webgrabplus:latest",
-	"image64": "linuxserver/webgrabplus:latest",
+	"image_arm32": "linuxserver/webgrabplus:latest",
+	"image_arm64": "linuxserver/webgrabplus:latest",
+	"image_amd64": "linuxserver/webgrabplus:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/webgrabplus.png",
 	"name": "webgrabplus",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-webgrabplus",

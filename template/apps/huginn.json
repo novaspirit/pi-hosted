@@ -4,8 +4,8 @@
 		"Tools"
 	],
 	"description": "Create agents that monitor and act on your behalf.",
-	"image32": "mjysci/huginn:arm32v7",
-	"image64": "mjysci/huginn:arm32v7",
+	"image_arm32": "mjysci/huginn:arm32v7",
+	"image_arm64": "mjysci/huginn:arm32v7",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/huginn.png",
 	"name": "huginn",
 	"officialDoc": "https://github.com/huginn/huginn/tree/master/docker",

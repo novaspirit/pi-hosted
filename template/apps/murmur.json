@@ -22,8 +22,8 @@
 			"name": "TZ"
 		}
 	],
-	"image32": "yhaenggi/murmur:1.3.4",
-	"image64": "yhaenggi/murmur:1.3.4",
+	"image_arm32": "yhaenggi/murmur:1.3.4",
+	"image_arm64": "yhaenggi/murmur:1.3.4",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Mumble-logo.png",
 	"name": "murmur",
 	"officialDoc": "https://github.com/yhaenggi/murmur-docker",

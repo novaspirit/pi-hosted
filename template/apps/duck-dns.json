@@ -31,8 +31,9 @@
 			"name": "TZ"
 		}
 	],
-	"image32": "linuxserver/duckdns:latest",
-	"image64": "linuxserver/duckdns:latest",
+	"image_arm32": "linuxserver/duckdns:latest",
+	"image_arm64": "linuxserver/duckdns:latest",
+	"image_amd64": "linuxserver/duckdns:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/duckdns.png",
 	"name": "duckdns",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-duckdns",

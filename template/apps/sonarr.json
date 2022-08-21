@@ -16,8 +16,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/sonarr:latest",
-	"image64": "linuxserver/sonarr:latest",
+	"image_arm32": "linuxserver/sonarr:latest",
+	"image_arm64": "linuxserver/sonarr:latest",
+	"image_amd64": "linuxserver/sonarr:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/sonarr-icon.png",
 	"name": "sonarr",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-sonarr",

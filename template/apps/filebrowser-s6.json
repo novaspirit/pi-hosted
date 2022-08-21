@@ -4,8 +4,8 @@
 		"Tools"
 	],
 	"description": "[arm][s6-version] Web File Browser which can be used as a middleware or standalone app.",
-	"image32": "filebrowser/filebrowser:s6",
-	"image64": "filebrowser/filebrowser:s6",
+	"image_arm32": "filebrowser/filebrowser:s6",
+	"image_arm64": "filebrowser/filebrowser:s6",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
 	"name": "filebrowser",
 	"note": "The default user and password is admin/admin.",

@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/oscam:latest",
-	"image64": "linuxserver/oscam:latest",
+	"image_arm32": "linuxserver/oscam:latest",
+	"image_arm64": "linuxserver/oscam:latest",
+	"image_amd64": "linuxserver/oscam:latest",
 	"logo": "http://i.imgur.com/8LadrLg.png",
 	"name": "oscam",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-oscam",

@@ -16,8 +16,9 @@
 			"name": "DOCKER_GRP"
 		}
 	],
-	"image32": "netdata/netdata:latest",
-	"image64": "netdata/netdata:latest",
+	"image_arm32": "netdata/netdata:latest",
+	"image_arm64": "netdata/netdata:latest",
+	"image_amd64": "netdata/netdata:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/netdata.png",
 	"name": "netdata",
 	"note": "Documentation is Available <a href='https://learn.netdata.cloud/'>here</a>.",

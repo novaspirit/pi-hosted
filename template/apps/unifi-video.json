@@ -25,8 +25,9 @@
 			"name": "CONTEXT_PATH"
 		}
 	],
-	"image32": "pducharme/unifi-video-controller:latest",
-	"image64": "pducharme/unifi-video-controller:latest",
+	"image_arm32": "pducharme/unifi-video-controller:latest",
+	"image_arm64": "pducharme/unifi-video-controller:latest",
+	"image_amd64": "pducharme/unifi-video-controller:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/unifivideo-icon.png",
 	"name": "UniFi Video",
 	"officialDoc": "https://github.com/pducharme/UniFi-Video-Controller",

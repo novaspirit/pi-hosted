@@ -16,8 +16,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/nginx:latest",
-	"image64": "linuxserver/nginx:latest",
+	"image_arm32": "linuxserver/nginx:latest",
+	"image_arm64": "linuxserver/nginx:latest",
+	"image_amd64": "linuxserver/nginx:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nginx-icon.png",
 	"name": "nginx",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-nginx",

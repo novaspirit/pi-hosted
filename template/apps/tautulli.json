@@ -16,8 +16,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/tautulli:latest",
-	"image64": "linuxserver/tautulli:latest",
+	"image_arm32": "linuxserver/tautulli:latest",
+	"image_arm64": "linuxserver/tautulli:latest",
+	"image_amd64": "linuxserver/tautulli:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tautulli-icon.png",
 	"name": "tautulli",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-tautulli",

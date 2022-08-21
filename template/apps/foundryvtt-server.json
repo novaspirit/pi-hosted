@@ -26,8 +26,8 @@
 			"name": "CONTAINER_PRESERVE_CONFIG"
 		}
 	],
-	"image32": "felddy/foundryvtt:release",
-	"image64": "felddy/foundryvtt:release",
+	"image_arm32": "felddy/foundryvtt:release",
+	"image_arm64": "felddy/foundryvtt:release",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/foundrylogo.png",
 	"name": "FoundryVTT",
 	"officialDoc": "https://hub.docker.com/r/felddy/foundryvtt",

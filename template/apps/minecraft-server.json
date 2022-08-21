@@ -12,8 +12,9 @@
 			"name": "EULA"
 		}
 	],
-	"image32": "itzg/minecraft-server:latest",
-	"image64": "itzg/minecraft-server:latest",
+	"image_arm32": "itzg/minecraft-server:latest",
+	"image_arm64": "itzg/minecraft-server:latest",
+	"image_amd64": "itzg/minecraft-server:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/minecraft.png",
 	"name": "minecraft",
 	"officialDoc": "https://github.com/itzg/docker-minecraft-server#using-docker-compose",

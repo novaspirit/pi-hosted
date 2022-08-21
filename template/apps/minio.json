@@ -33,8 +33,9 @@
 			"description": "URL hostname for MinIO Console if any"
 		}
 	],
-	"image32": "minio/minio:latest",
-	"image64": "minio/minio:latest",
+	"image_arm32": "minio/minio:latest",
+	"image_arm64": "minio/minio:latest",
+	"image_amd64": "minio/minio:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/minio.png",
 	"name": "minio",
 	"officialDoc": "https://docs.min.io/minio/baremetal/quickstart/quickstart.html",

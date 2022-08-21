@@ -17,8 +17,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/nzbhydra2:latest",
-	"image64": "linuxserver/nzbhydra2:latest",
+	"image_arm32": "linuxserver/nzbhydra2:latest",
+	"image_arm64": "linuxserver/nzbhydra2:latest",
+	"image_amd64": "linuxserver/nzbhydra2:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/hydra-icon.png",
 	"name": "nzbhydra2",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-nzbhydra2",

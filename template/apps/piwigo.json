@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/piwigo:latest",
-	"image64": "linuxserver/piwigo:latest",
+	"image_arm32": "linuxserver/piwigo:latest",
+	"image_arm64": "linuxserver/piwigo:latest",
+	"image_amd64": "linuxserver/piwigo:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/piwigo-icon.png",
 	"name": "piwigo",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-piwigo",

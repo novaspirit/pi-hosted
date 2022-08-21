@@ -44,8 +44,9 @@
 			"preset": true
 		}
 	],
-	"image32": "cbcrowe/pihole-unbound:latest",
-	"image64": "cbcrowe/pihole-unbound:latest",
+	"image_arm32": "cbcrowe/pihole-unbound:latest",
+	"image_arm64": "cbcrowe/pihole-unbound:latest",
+	"image_amd64": "cbcrowe/pihole-unbound:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pihole-unbound.png",
 	"name": "pihole-unbound",
 	"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53. For extra information on this container visit the mainteiner <a href='https://github.com/chriscrowe/docker-pihole-unbound/tree/master/one-container'>GitHub Page</a>. You can add ports: 5335 to access Ubound externally; 22 to enable SSH; 67 to use DHCP Server. Add those ports in Show advanced options.",

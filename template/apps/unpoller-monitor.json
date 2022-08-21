@@ -14,8 +14,9 @@
 	],
 	"preInstallScript": "unpoller-install.sh",
 	"repository": {
-		"stackfile32": "stack/unpoller-stack.yml",
-		"stackfile64": "stack/unpoller-stack.yml",
+		"stackfile_arm32": "stack/unpoller-stack.yml",
+		"stackfile_arm64": "stack/unpoller-stack.yml",
+		"stackfile_amd64": "stack/unpoller-stack.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"restart_policy": "unless-stopped",

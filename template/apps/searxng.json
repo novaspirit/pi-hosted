@@ -16,8 +16,9 @@
 			"name": "INSTANCE_NAME"
 		}
 	],
-	"image32": "searxng/searxng:latest",
-	"image64": "searxng/searxng:latest",
+	"image_arm32": "searxng/searxng:latest",
+	"image_arm64": "searxng/searxng:latest",
+	"image_amd64": "searxng/searxng:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/searx.png",
 	"name": "SearXNG",
 	"officialDoc": "https://docs.searxng.org/admin/installation-docker.html",

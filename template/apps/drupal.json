@@ -49,8 +49,9 @@
 	"platform": "linux",
 	"preInstallScript": "install_drupal.sh",
 	"repository": {
-		"stackfile32": "stack/drupal.yml",
-		"stackfile64": "stack/drupal.yml",
+		"stackfile_arm32": "stack/drupal.yml",
+		"stackfile_arm64": "stack/drupal.yml",
+		"stackfile_amd64": "stack/drupal.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted/"
 	},
 	"restart_policy": "unless-stopped",

@@ -15,8 +15,8 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "alexta69/metube",
-	"image64": "alexta69/metube",
+	"image_arm32": "alexta69/metube",
+	"image_arm64": "alexta69/metube",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/metube.png",
 	"name": "MeTube",
 	"officialDoc": "https://github.com/alexta69/metube",

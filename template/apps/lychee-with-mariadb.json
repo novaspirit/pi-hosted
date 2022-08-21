@@ -48,8 +48,9 @@
 	"officialDoc": "https://docs.linuxserver.io/images/docker-lychee",
 	"platform": "linux",
 	"repository": {
-		"stackfile32": "stack/lychee-mariadb.yml",
-		"stackfile64": "stack/lychee-mariadb.yml",
+		"stackfile_arm32": "stack/lychee-mariadb.yml",
+		"stackfile_arm64": "stack/lychee-mariadb.yml",
+		"stackfile_amd64": "stack/lychee-mariadb.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted/"
 	},
 	"restart_policy": "unless-stopped",

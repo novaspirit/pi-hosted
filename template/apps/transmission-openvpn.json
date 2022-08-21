@@ -49,8 +49,8 @@
 			"name": "TRANSMISSION_WATCH_DIR_ENABLED"
 		}
 	],
-	"image32": "haugene/transmission-openvpn:3.7.1",
-	"image64": "haugene/transmission-openvpn:3.7.1",
+	"image_arm32": "haugene/transmission-openvpn:3.7.1",
+	"image_arm64": "haugene/transmission-openvpn:3.7.1",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/transmission-icon.png",
 	"name": "transmission-openvpn",
 	"note": "List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",

@@ -16,8 +16,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "organizr/organizr:latest",
-	"image64": "organizr/organizr:latest",
+	"image_arm32": "organizr/organizr:latest",
+	"image_arm64": "organizr/organizr:latest",
+	"image_amd64": "organizr/organizr:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/organizr-icon.png",
 	"name": "organizr-v2",
 	"officialDoc": "https://hub.docker.com/r/organizr/organizr",

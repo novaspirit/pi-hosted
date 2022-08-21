@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/minetest:latest",
-	"image64": "linuxserver/minetest:latest",
+	"image_arm32": "linuxserver/minetest:latest",
+	"image_arm64": "linuxserver/minetest:latest",
+	"image_amd64": "linuxserver/minetest:latest",
 	"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
 	"name": "minetest",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-minetest",

@@ -18,8 +18,9 @@
 			"name": "ENCRYPTED_ONLY"
 		}
 	],
-	"image32": "rustdesk/rustdesk-server-s6:latest",
-	"image64": "rustdesk/rustdesk-server-s6:latest",
+	"image_arm32": "rustdesk/rustdesk-server-s6:latest",
+	"image_arm64": "rustdesk/rustdesk-server-s6:latest",
+	"image_amd64": "rustdesk/rustdesk-server-s6:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/rustdesk.png",
 	"name": "rustdesk",
 	"note": "Don't forget to open ports 21115 to 21119 in your router.",

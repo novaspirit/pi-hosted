@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "lsioarmhf/kodi-headless:latest",
-	"image64": "lsioarmhf/kodi-headless:latest",
+	"image_arm32": "lsioarmhf/kodi-headless:latest",
+	"image_arm64": "lsioarmhf/kodi-headless:latest",
+	"image_amd64": "lsioarmhf/kodi-headless:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/kodi-icon.png",
 	"name": "kodi-headless",
 	"officialDoc": "https://hub.docker.com/r/lsioarmhf/kodi-headless-aarch64/",

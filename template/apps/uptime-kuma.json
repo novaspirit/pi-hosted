@@ -4,8 +4,9 @@
 		"Tools"
 	],
 	"description": "It is a self-hosted monitoring tool like 'Uptime Robot'.",
-	"image32": "louislam/uptime-kuma:latest",
-	"image64": "louislam/uptime-kuma:latest",
+	"image_arm32": "louislam/uptime-kuma:latest",
+	"image_arm64": "louislam/uptime-kuma:latest",
+	"image_amd64": "louislam/uptime-kuma:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/uptime-kuma.png",
 	"name": "uptime-kuma",
 	"note": "A fancy self-hosted monitoring tool.",

@@ -22,8 +22,9 @@
 			"name": "VERSION"
 		}
 	],
-	"image32": "linuxserver/plex:latest",
-	"image64": "linuxserver/plex:latest",
+	"image_arm32": "linuxserver/plex:latest",
+	"image_arm64": "linuxserver/plex:latest",
+	"image_amd64": "linuxserver/plex:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/plex-icon.png",
 	"name": "plex",
 	"network": "host",

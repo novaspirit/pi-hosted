@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/headphones:latest",
-	"image64": "linuxserver/headphones:latest",
+	"image_arm32": "linuxserver/headphones:latest",
+	"image_arm64": "linuxserver/headphones:latest",
+	"image_amd64": "linuxserver/headphones:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/headphones-icon.png",
 	"name": "headphones",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-headphones",

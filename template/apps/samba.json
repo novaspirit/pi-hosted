@@ -42,8 +42,9 @@
 			"name": "SHARE"
 		}
 	],
-	"image32": "dperson/samba:latest",
-	"image64": "dperson/samba:latest",
+	"image_arm32": "dperson/samba:latest",
+	"image_arm64": "dperson/samba:latest",
+	"image_amd64": "dperson/samba:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/samba.png",
 	"name": "Samba",
 	"officialDoc": "https://github.com/dperson/samba",

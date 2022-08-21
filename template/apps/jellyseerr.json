@@ -27,8 +27,9 @@
             "name": "TZ"
         }
     ],
-    "image32": "fallenbagel/jellyseerr:latest",
-    "image64": "fallenbagel/jellyseerr:latest",
+    "image_arm32": "fallenbagel/jellyseerr:latest",
+    "image_arm64": "fallenbagel/jellyseerr:latest",
+    "image_amd64": "fallenbagel/jellyseerr:latest",
     "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jellyseerr.png",
     "name": "jellyseerr",
     "platform": "linux",

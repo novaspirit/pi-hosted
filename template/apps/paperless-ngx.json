@@ -47,8 +47,9 @@
 	"name": "paperless-ngx",
 	"officialDoc": "https://github.com/paperless-ngx/paperless-ngx",
         "repository": {
-                "stackfile32": "stack/paperless-ngx.yml",
-                "stackfile64": "stack/paperless-ngx.yml",
+                "stackfile_arm32": "stack/paperless-ngx.yml",
+                "stackfile_arm64": "stack/paperless-ngx.yml",
+                "stackfile_amd64": "stack/paperless-ngx.yml",
                 "url": "https://github.com/pi-hosted/pi-hosted/"
         },
 	"platform": "linux",

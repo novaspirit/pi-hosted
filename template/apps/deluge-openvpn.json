@@ -41,8 +41,8 @@
 			"name": "LOCAL_NETWORK"
 		}
 	],
-	"image32": "sgtsquiggs/deluge-openvpn:arm32v7-latest",
-	"image64": "sgtsquiggs/deluge-openvpn:arm64v8-latest",
+	"image_arm32": "sgtsquiggs/deluge-openvpn:arm32v7-latest",
+	"image_arm64": "sgtsquiggs/deluge-openvpn:arm64v8-latest",
 	"name": "deluge-openvpn",
 	"officialDoc": "https://github.com/sgtsquiggs/docker-deluge-openvpn",
 	"platform": "linux",

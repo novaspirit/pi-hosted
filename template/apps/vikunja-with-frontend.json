@@ -49,8 +49,9 @@
 	"platform": "linux",
 	"preInstallScript": "install_vikunja.sh",
 	"repository": {
-		"stackfile32": "stack/vikunja.yml",
-		"stackfile64": "stack/vikunja.yml",
+		"stackfile_arm32": "stack/vikunja.yml",
+		"stackfile_arm64": "stack/vikunja.yml",
+		"stackfile_amd64": "stack/vikunja.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted/"
 	},
 	"restart_policy": "unless-stopped",

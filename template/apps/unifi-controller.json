@@ -16,8 +16,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/unifi-controller:latest",
-	"image64": "linuxserver/unifi-controller:latest",
+	"image_arm32": "linuxserver/unifi-controller:latest",
+	"image_arm64": "linuxserver/unifi-controller:latest",
+	"image_amd64": "linuxserver/unifi-controller:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/unifi-icon.png",
 	"name": "unifi-controller",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-unifi-controller",

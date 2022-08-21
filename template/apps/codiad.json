@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/codiad:latest",
-	"image64": "linuxserver/codiad:latest",
+	"image_arm32": "linuxserver/codiad:latest",
+	"image_arm64": "linuxserver/codiad:latest",
+	"image_amd64": "linuxserver/codiad:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/codiad-icon.png",
 	"name": "codiad",
 	"officialDoc": "https://github.com/Codiad/Codiad/wiki/Quick-installation-using-Docker",

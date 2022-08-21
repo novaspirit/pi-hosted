@@ -31,8 +31,8 @@
 			"name": "PUBLIC_ADD_VIEW"
 		}
 	],
-	"image32": "archivebox/archivebox:master",
-	"image64": "archivebox/archivebox:master",
+	"image_arm32": "archivebox/archivebox:master",
+	"image_arm64": "archivebox/archivebox:master",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/archivebox.png",
 	"name": "archivebox",
 	"note": "By default an admin user is not created. You can do so by launching a shell in the container and executing 'archivebox manage createsuperuser'. Documentation is Available <a href='https://github.com/ArchiveBox/ArchiveBox/wiki'>here</a>.",

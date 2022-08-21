@@ -51,8 +51,9 @@
 			"name": "DNSPLUGIN"
 		}
 	],
-	"image32": "linuxserver/letsencrypt:latest",
-	"image64": "linuxserver/letsencrypt:latest",
+	"image_arm32": "linuxserver/letsencrypt:latest",
+	"image_arm64": "linuxserver/letsencrypt:latest",
+	"image_amd64": "linuxserver/letsencrypt:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/letsencrypt.png",
 	"name": "letsencrypt",
 	"officialDoc": "https://hub.docker.com/r/linuxserver/letsencrypt",

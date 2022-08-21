@@ -15,8 +15,8 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/freshrss:latest",
-	"image64": "freshrss/freshrss:arm",
+	"image_arm32": "linuxserver/freshrss:latest",
+	"image_arm64": "freshrss/freshrss:arm",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/freshrss-icon.png",
 	"name": "freshrss",
 	"officialDoc": "https://github.com/FreshRSS/FreshRSS/tree/edge/Docker",

@@ -21,8 +21,9 @@
 			"name": "TZ"
 		}
 	],
-	"image32": "linuxserver/bazarr:latest",
-	"image64": "linuxserver/bazarr:latest",
+	"image_arm32": "linuxserver/bazarr:latest",
+	"image_arm64": "linuxserver/bazarr:latest",
+	"image_amd64": "linuxserver/bazarr:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bazarr.png",
 	"name": "bazarr",
 	"officialDoc": "https://wiki.bazarr.media/Getting-Started/Installation/Docker/docker/",

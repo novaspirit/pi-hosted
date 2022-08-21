@@ -20,8 +20,8 @@
 			"name": "TZ"
 		}
 	],
-	"image32": "linuxserver/rdesktop:latest",
-	"image64": "linuxserver/rdesktop:arm64v8-latest",
+	"image_arm32": "linuxserver/rdesktop:latest",
+	"image_arm64": "linuxserver/rdesktop:arm64v8-latest",
 	"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/rdesktop.png",
 	"name": "rdesktop",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-rdesktop",

@@ -83,7 +83,8 @@
 	"platform": "linux",
 	"preInstallScript": "install_photoprism.sh",
 	"repository": {
-		"stackfile64": "stack/photoprism.yml",
+		"stackfile_arm64": "stack/photoprism.yml",
+		"stackfile_amd64": "stack/photoprism.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"title": "PhotoPrism",

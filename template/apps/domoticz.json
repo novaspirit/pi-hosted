@@ -16,8 +16,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/domoticz:latest",
-	"image64": "linuxserver/domoticz:latest",
+	"image_arm32": "linuxserver/domoticz:latest",
+	"image_arm64": "linuxserver/domoticz:latest",
+	"image_amd64": "linuxserver/domoticz:latest",
 	"logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
 	"name": "domoticz",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-domoticz",

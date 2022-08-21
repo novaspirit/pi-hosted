@@ -5,8 +5,9 @@
 		"Webserver"
 	],
 	"description": "Caddy - The Ultimate Server with Automatic HTTPS.  Need to run tools/install_caddy.sh before installing the template.",
-	"image32": "caddy:latest",
-	"image64": "caddy:latest",
+	"image_arm32": "caddy:latest",
+	"image_arm64": "caddy:latest",
+	"image_amd64": "caddy:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/caddy.png",
 	"name": "caddy",
 	"note": "Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",

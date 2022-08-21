@@ -21,8 +21,9 @@
 			"name": "CONTEXT_PATH"
 		}
 	],
-	"image32": "linuxserver/booksonic:latest",
-	"image64": "linuxserver/booksonic:latest",
+	"image_arm32": "linuxserver/booksonic:latest",
+	"image_arm64": "linuxserver/booksonic:latest",
+	"image_amd64": "linuxserver/booksonic:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/booksonic.png",
 	"name": "booksonic",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-booksonic-air",

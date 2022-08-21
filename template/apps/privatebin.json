@@ -18,8 +18,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "privatebin/nginx-fpm-alpine:latest",
-	"image64": "privatebin/nginx-fpm-alpine:latest",
+	"image_arm32": "privatebin/nginx-fpm-alpine:latest",
+	"image_arm64": "privatebin/nginx-fpm-alpine:latest",
+	"image_amd64": "privatebin/nginx-fpm-alpine:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/privatebin.png",
 	"name": "privatebin",
 	"officialDoc": "https://hub.docker.com/r/privatebin/nginx-fpm-alpine",

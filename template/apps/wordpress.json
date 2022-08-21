@@ -30,8 +30,9 @@
 	"piHostedDoc": "wordpress_installation.md",
 	"platform": "linux",
 	"repository": {
-		"stackfile32": "stack/wordpress-stack.yml",
-		"stackfile64": "stack/wordpress-stack.yml",
+		"stackfile_arm32": "stack/wordpress-stack.yml",
+		"stackfile_arm64": "stack/wordpress-stack.yml",
+		"stackfile_amd64": "stack/wordpress-stack.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"title": "Wordpress",

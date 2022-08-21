@@ -16,8 +16,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/couchpotato:latest",
-	"image64": "linuxserver/couchpotato:latest",
+	"image_arm32": "linuxserver/couchpotato:latest",
+	"image_arm64": "linuxserver/couchpotato:latest",
+	"image_amd64": "linuxserver/couchpotato:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/couchpotato-icon.png",
 	"name": "couchpotato",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-couchpotato",

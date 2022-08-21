@@ -61,8 +61,9 @@
 			"name": "RECIPE_DISABLE_AMOUNT"
 		}
 	],
-	"image32": "hkotel/mealie:v0.4.3",
-	"image64": "hkotel/mealie:latest",
+	"image_arm32": "hkotel/mealie:v0.4.3",
+	"image_arm64": "hkotel/mealie:latest",
+	"image_amd64": "hkotel/mealie:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mealie.png",
 	"name": "mealie",
 	"note": "Default Credentials: Username: changeme@email.com Password: MyPassword. Documentation is Available <a href='https://hay-kot.github.io/mealie/documentation/getting-started/install/'>here</a>.",

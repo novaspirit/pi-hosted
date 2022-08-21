@@ -1,7 +1,8 @@
 {
 	"description": "Home Assistant is a free and open-source software for home automation that is designed to be the central control system for smart home devices with focus on local control and privacy.",
-	"image32": "homeassistant/home-assistant:latest",
-	"image64": "homeassistant/home-assistant:latest",
+	"image_arm32": "homeassistant/home-assistant:latest",
+	"image_arm64": "homeassistant/home-assistant:latest",
+	"image_amd64": "homeassistant/home-assistant:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homeassistant.png",
 	"name": "home-assistant",
 	"officialDoc": "https://www.home-assistant.io/installation/raspberrypi#install-home-assistant-container",

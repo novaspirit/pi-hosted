@@ -34,8 +34,9 @@
 			"name": "PROXY_DOMAIN"
 		}
 	],
-	"image32": "linuxserver/code-server:latest",
-	"image64": "linuxserver/code-server:latest",
+	"image_arm32": "linuxserver/code-server:latest",
+	"image_arm64": "linuxserver/code-server:latest",
+	"image_amd64": "linuxserver/code-server:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/code-server.png",
 	"name": "code-server",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-code-server",

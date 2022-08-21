@@ -17,8 +17,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/gazee:latest",
-	"image64": "linuxserver/gazee:latest",
+	"image_arm32": "linuxserver/gazee:latest",
+	"image_arm64": "linuxserver/gazee:latest",
+	"image_amd64": "linuxserver/gazee:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gazee-logo.png",
 	"name": "gazee",
 	"officialDoc": "https://hub.docker.com/r/linuxserver/gazee",

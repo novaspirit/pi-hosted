@@ -21,8 +21,9 @@
 			"name": "MYJD_PASSWORD"
 		}
 	],
-	"image32": "jaymoulin/jdownloader:latest",
-	"image64": "jaymoulin/jdownloader:latest",
+	"image_arm32": "jaymoulin/jdownloader:latest",
+	"image_arm64": "jaymoulin/jdownloader:latest",
+	"image_amd64": "jaymoulin/jdownloader:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jdownloader.png",
 	"name": "JDownloader",
 	"officialDoc": "https://github.com/jaymoulin/docker-jdownloader",

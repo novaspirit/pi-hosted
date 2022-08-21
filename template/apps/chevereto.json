@@ -42,8 +42,9 @@
 			"name": "CHEVERETO_DB_PREFIX"
 		}
 	],
-	"image32": "nmtan/chevereto:latest",
-	"image64": "nmtan/chevereto:latest",
+	"image_arm32": "nmtan/chevereto:latest",
+	"image_arm64": "nmtan/chevereto:latest",
+	"image_amd64": "nmtan/chevereto:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Chevereto.png",
 	"name": "Chevereto",
 	"officialDoc": "https://hub.docker.com/r/nmtan/chevereto",

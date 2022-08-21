@@ -18,8 +18,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/muximux:latest",
-	"image64": "linuxserver/muximux:latest",
+	"image_arm32": "linuxserver/muximux:latest",
+	"image_arm64": "linuxserver/muximux:latest",
+	"image_amd64": "linuxserver/muximux:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/muximux-icon.png",
 	"name": "muximux",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-muximux",

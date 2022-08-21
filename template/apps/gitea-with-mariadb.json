@@ -47,7 +47,8 @@
 	"officialDoc": "https://docs.gitea.io/en-us/install-with-docker/#mysql-database",
 	"platform": "linux",
 	"repository": {
-		"stackfile64": "stack/gitea-mariadb.yml",
+		"stackfile_arm64": "stack/gitea-mariadb.yml",
+		"stackfile_amd64": "stack/gitea-mariadb.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted/"
 	},
 	"restart_policy": "unless-stopped",

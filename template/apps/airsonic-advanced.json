@@ -30,7 +30,8 @@
 			"name": "JAVA_OPTS"
 		}
 	],
-	"image64": "linuxserver/airsonic-advanced:latest",
+	"image_arm64": "linuxserver/airsonic-advanced:latest",
+	"image_amd64": "linuxserver/airsonic-advanced:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/airsonic-logo.png",
 	"name": "airsonic-advanced",
 	"officialDoc": "https://github.com/linuxserver/docker-airsonic-advanced",

@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "uroni/urbackup-server:latest",
-	"image64": "uroni/urbackup-server:latest",
+	"image_arm32": "uroni/urbackup-server:latest",
+	"image_arm64": "uroni/urbackup-server:latest",
+	"image_amd64": "uroni/urbackup-server:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/urbackup.png",
 	"name": "UrBackup",
 	"officialDoc": "https://www.github.com/uroni/urbackup-server-docker",

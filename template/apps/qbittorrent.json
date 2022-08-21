@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/qbittorrent:latest",
-	"image64": "linuxserver/qbittorrent:latest",
+	"image_arm32": "linuxserver/qbittorrent:latest",
+	"image_arm64": "linuxserver/qbittorrent:latest",
+	"image_amd64": "linuxserver/qbittorrent:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/qbittorrent-icon.png",
 	"name": "qbittorrent",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-qbittorrent",

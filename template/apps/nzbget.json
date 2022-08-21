@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/nzbget:latest",
-	"image64": "linuxserver/nzbget:latest",
+	"image_arm32": "linuxserver/nzbget:latest",
+	"image_arm64": "linuxserver/nzbget:latest",
+	"image_amd64": "linuxserver/nzbget:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nzbget-icon.png",
 	"name": "nzbget",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-nzbget",

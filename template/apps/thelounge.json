@@ -15,8 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/thelounge:latest",
-	"image64": "linuxserver/thelounge:latest",
+	"image_arm32": "linuxserver/thelounge:latest",
+	"image_arm64": "linuxserver/thelounge:latest",
+	"image_amd64": "linuxserver/thelounge:latest",
 	"logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
 	"name": "thelounge",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-thelounge",

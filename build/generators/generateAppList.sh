@@ -13,11 +13,19 @@ scriptIcon="![](../build/images/script_icon.png)"
 # Create AppList title
 cp -f "$AppList_TEMPLATE" "$AppList"
 
+# Total apps per arch
+for Arch in {arm32,arm64,amd64}; do
+	total=$(grep -lE '"(image|stackfile)(_'"$Arch"')?":' "$appsfolder"/*.json | wc -l )
+	sed -i "s/XXX_${Arch}_XXX/$total/" "$AppList"
+done
+total=$(find "$appsfolder" -type f -iname '*.json' | wc -l )
+sed -i "s/XXX_total_XXX/$total/" "$AppList"
+
 # Generate App Table
 while IFS='' read -u 9 -r appfile || [[ -n $appfile ]]; do
 
 	# Clear previous variables
-	unset doc script extra vid oweb odoc type has32 has64
+	unset doc script extra vid oweb odoc type Arch
 
 	# Get app json
 	appconf=$( jq '.' "$appfile" )
@@ -26,15 +34,25 @@ while IFS='' read -u 9 -r appfile || [[ -n $appfile ]]; do
 	App=$( echo "$appconf" | jq '.title' | tr -d '"' )
 
 	# App Architecture
+	# tag with no specific architecture is added to all of them
 	if echo "$appconf" | jq -e '.image' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile' &> /dev/null ; then
-		has32='32'
-		has64='64'
-	else
-		if echo "$appconf" | jq -e '.image32' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile32' &> /dev/null ; then has32='32' ; fi
-		if echo "$appconf" | jq -e '.image64' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile64' &> /dev/null ; then has64='64' ; fi
+		Arch='Arm32<br>Arm64<br>Amd64'
 
+	# Parse tags with specific architectures
+	else
+		# Arm32
+		if echo "$appconf" | jq -e '.image_arm32' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile_arm32' &> /dev/null ; then Arch='Arm32' ; fi
+
+		# Arm64
+		if echo "$appconf" | jq -e '.image_arm64' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile_arm64' &> /dev/null ; then
+			Arch="$([[ -n "$Arch" ]] && echo "$Arch<br>" )Arm64"
+		fi
+
+		# Amd64
+		if echo "$appconf" | jq -e '.image_amd64' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile_amd64' &> /dev/null ; then
+			Arch="$([[ -n "$Arch" ]] && echo "$Arch<br>" )Amd64"
+		fi
 	fi
-	[[ -n "$has32" && -n "$has64" ]] && Arch='32/64 bit' || Arch="$has32$has64 bit"
 
 	# Apps Type
 	apptype=$( echo "$appconf" | jq '.type' | tr -d '"' )

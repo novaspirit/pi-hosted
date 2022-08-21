@@ -22,8 +22,9 @@
 			"name": "TZ"
 		}
 	],
-	"image32": "linuxserver/grocy:latest",
-	"image64": "linuxserver/grocy:latest",
+	"image_arm32": "linuxserver/grocy:latest",
+	"image_arm64": "linuxserver/grocy:latest",
+	"image_amd64": "linuxserver/grocy:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/grocy_logo.png",
 	"name": "grocy",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-grocy",

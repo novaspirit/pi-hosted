@@ -41,8 +41,9 @@
                 "name": "DESCRIPTION"
             }
         ],
-        "image32": "instantlinux/nut-upsd:latest",
-        "image64": "instantlinux/nut-upsd:latest",
+        "image_arm32": "instantlinux/nut-upsd:latest",
+        "image_arm64": "instantlinux/nut-upsd:latest",
+        "image_amd64": "instantlinux/nut-upsd:latest",
         "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nut-server.png",
         "name": "NUT Server",
         "officialDoc": "https://hub.docker.com/r/instantlinux/nut-upsd",

@@ -17,8 +17,8 @@
 			"name": "OOKLA_EULA_GDPR"
 		}
 	],
-	"image32": "henrywhitaker3/speedtest-tracker:dev-arm",
-	"image64": "henrywhitaker3/speedtest-tracker:dev-arm",
+	"image_arm32": "henrywhitaker3/speedtest-tracker:dev-arm",
+	"image_arm64": "henrywhitaker3/speedtest-tracker:dev-arm",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/speedtest-tracker.png",
 	"name": "speedtest-tracker",
 	"officialDoc": "https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker",

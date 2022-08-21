@@ -16,7 +16,8 @@
 			"name": "USER_GID"
 		}
 	],
-	"image64": "gitea/gitea:latest",
+	"image_arm64": "gitea/gitea:latest",
+	"image_amd64": "gitea/gitea:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gitea.png",
 	"name": "gitea",
 	"note": "More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables",

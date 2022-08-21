@@ -16,8 +16,9 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "linuxserver/sickgear:latest",
-	"image64": "linuxserver/sickgear:latest",
+	"image_arm32": "linuxserver/sickgear:latest",
+	"image_arm64": "linuxserver/sickgear:latest",
+	"image_amd64": "linuxserver/sickgear:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/sickgear-icon.png",
 	"name": "sickgear",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-sickgear",

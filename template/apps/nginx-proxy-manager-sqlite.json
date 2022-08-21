@@ -21,8 +21,9 @@
 			"name": "TZ"
 		}
 	],
-        "image32": "jc21/nginx-proxy-manager:latest",
-        "image64": "jc21/nginx-proxy-manager:latest",
+        "image_arm32": "jc21/nginx-proxy-manager:latest",
+        "image_arm64": "jc21/nginx-proxy-manager:latest",
+        "image_amd64": "jc21/nginx-proxy-manager:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
 	"name": "nginx-proxy-manager-sqlite",
 	"officialDoc": "https://nginxproxymanager.com/setup/",

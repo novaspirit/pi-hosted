@@ -4,8 +4,9 @@
 		"Tools"
 	],
 	"description": "Another application bookmark dashboard, with fun features.",
-	"image32": "failed2run/dashmachine:latest",
-	"image64": "failed2run/dashmachine:latest",
+	"image_arm32": "failed2run/dashmachine:latest",
+	"image_arm64": "failed2run/dashmachine:latest",
+	"image_amd64": "failed2run/dashmachine:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dashmachine_logo.png",
 	"name": "dashmachine",
 	"officialDoc": "https://github.com/rmountjoy92/DashMachine",

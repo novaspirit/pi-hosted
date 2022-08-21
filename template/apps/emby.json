@@ -22,8 +22,9 @@
 			"name": "TZ"
 		}
 	],
-	"image32": "linuxserver/emby:latest",
-	"image64": "linuxserver/emby:latest",
+	"image_arm32": "linuxserver/emby:latest",
+	"image_arm64": "linuxserver/emby:latest",
+	"image_amd64": "linuxserver/emby:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/emby.png",
 	"name": "emby",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-emby",

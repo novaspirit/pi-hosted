@@ -45,8 +45,9 @@
 	"officialDoc": "https://www.bookstackapp.com/docs/admin/installation/#docker",
 	"platform": "linux",
 	"repository": {
-		"stackfile32": "stack/bookstack.yml",
-		"stackfile64": "stack/bookstack.yml",
+		"stackfile_arm32": "stack/bookstack.yml",
+		"stackfile_arm64": "stack/bookstack.yml",
+		"stackfile_amd64": "stack/bookstack.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"title": "Bookstack",

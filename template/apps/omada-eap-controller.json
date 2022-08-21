@@ -16,8 +16,8 @@
 			"name": "PGID"
 		}
 	],
-	"image32": "mbentley/omada-controller:latest-armv7l",
-	"image64": "mbentley/omada-controller:latest-arm64",
+	"image_arm32": "mbentley/omada-controller:latest-armv7l",
+	"image_arm64": "mbentley/omada-controller:latest-arm64",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/omada.png",
 	"name": "omada-controller",
 	"officialDoc": "https://hub.docker.com/r/mbentley/omada-controller",
