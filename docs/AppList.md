@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 - **Arm32:** 163 apps
 - **Arm64:** 172 apps
-- **Amd64:** 167 apps
+- **Amd64:** 170 apps
 - **Total:** 172 apps
 
 ---
@@ -14,7 +14,7 @@ List of all apps included in this project with info related to it.
 |[Adguardhome](https://adguard.com/en/adguard-home/overview.html)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/AdguardTeam/AdGuardHome/wiki/Docker) |  |  |  |  |
 |[Adguardhome-sync](https://adguard.com/en/adguard-home/overview.html)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-adguardhome-sync#usage) |  |  |  |  |
 |[Airsonic Advanced](https://github.com/airsonic-advanced/airsonic-advanced)|Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-airsonic-advanced) |  |  |  |  |
-|[Airsonic](https://airsonic.github.io/)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://airsonic.github.io/docs/install/docker/) |  |  |  |  |
+|[Airsonic](https://airsonic.github.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://airsonic.github.io/docs/install/docker/) |  |  |  |  |
 |[ArchiSteamFarm](https://github.com/JustArchiNET/ArchiSteamFarm/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Docker/) |  |  |  |  |
 |[Archivebox](https://archivebox.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ArchiveBox/ArchiveBox/wiki/Docker) |  |  |  |  |
 |[AriaNG](https://github.com/hurlenko/aria2-ariang-docker)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/hurlenko/aria2-ariang-docker) |  |  |  |  |
@@ -56,7 +56,7 @@ List of all apps included in this project with info related to it.
 |[Gazee](https://github.com/hubbcaps/gazee)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/gazee) |  |  |  |  |
 |[Gitea](https://gitea.com/)|Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.gitea.io/en-us/install-with-docker/) |  |  |  |  |
 |[Gitea with Mariadb](https://gitea.com/)|Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.gitea.io/en-us/install-with-docker/#mysql-database) |  |  |  |  |
-|[Go-Socks5-Proxy](https://hub.docker.com/r/serjs/go-socks5-proxy)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/serjs/go-socks5-proxy) |  |  |  |  |
+|[Go-Socks5-Proxy](https://hub.docker.com/r/serjs/go-socks5-proxy)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/serjs/go-socks5-proxy) |  |  |  |  |
 |[Gotify](https://gotify.net/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://gotify.net/docs/install) |  |  |  |  |
 |[Grocy](https://grocy.info/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-grocy) |  |  |  |  |
 |[Guacamole](https://guacamole.apache.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oznu/guacamole) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3) |
@@ -68,7 +68,7 @@ List of all apps included in this project with info related to it.
 |[Homebridge](https://homebridge.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |  |
 |[Homer](https://github.com/bastienwirtz/homer)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=_d3J88ootYo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=2) |
 |[HTPC Manager](https://htpc.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-htpcmanager) |  |  |  |  |
-|[Huginn](https://github.com/huginn/huginn)|Arm32<br>Arm64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/huginn/huginn/tree/master/docker) |  |  |  |  |
+|[Huginn](https://github.com/huginn/huginn)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/huginn/huginn/tree/master/docker) |  |  |  |  |
 |[Influxdb 1.8.10](https://www.influxdata.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker) |  |  |  |  |
 |[Invidious](https://invidious.io/)|Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.invidious.io/installation/#docker) |  | [![](../build/images/script_icon.png)](../tools/install_invidious.sh) |  |  |
 |[Jackett](https://github.com/Jackett/Jackett)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jackett) |  |  |  |  |

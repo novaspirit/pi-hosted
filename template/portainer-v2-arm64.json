@@ -124,7 +124,7 @@
 					"name": "JAVA_OPTS"
 				}
 			],
-			"image": "linuxserver/airsonic:amd64-latest",
+			"image": "linuxserver/airsonic:arm64v8-latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/airsonic-logo.png",
 			"name": "airsonic",
 			"platform": "linux",
@@ -1931,7 +1931,7 @@
 				"Proxy"
 			],
 			"description": "Simple socks5 server using go-socks5 with authentication options",
-			"image": "serjs/go-socks5-proxy",
+			"image": "serjs/go-socks5-proxy:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/socks5.png",
 			"name": "socks5-proxy",
 			"platform": "linux",
@@ -2377,7 +2377,7 @@
 				"Tools"
 			],
 			"description": "Create agents that monitor and act on your behalf.",
-			"image": "huginn/huginn:latest",
+			"image": "mjysci/huginn:arm32v7",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/huginn.png",
 			"name": "huginn",
 			"platform": "linux",
