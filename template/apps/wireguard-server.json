@@ -38,8 +38,6 @@
                         "name": "WG_ALLOWED_IPS"
 		}
 	],
-	"image_arm64": "weejewel/wg-easy:latest",
-	"image_amd64": "weejewel/wg-easy:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wireguard.png",
 	"name": "wg-easy",
 	"officialDoc": "https://github.com/WeeJeWel/wg-easy/#1-install-docker",
