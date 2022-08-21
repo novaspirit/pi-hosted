@@ -13,6 +13,7 @@
 	],
 	"image_arm32": "pawelmalak/flame:multiarch",
 	"image_arm64": "pawelmalak/flame:multiarch",
+	"image_amd64": "pawelmalak/flame:multiarch",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/flame.png",
 	"name": "Flame",
 	"officialDoc": "https://github.com/pawelmalak/flame#with-docker-recommended",

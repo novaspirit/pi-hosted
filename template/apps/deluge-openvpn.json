@@ -43,6 +43,7 @@
 	],
 	"image_arm32": "sgtsquiggs/deluge-openvpn:arm32v7-latest",
 	"image_arm64": "sgtsquiggs/deluge-openvpn:arm64v8-latest",
+	"image_amd64": "sgtsquiggs/deluge-openvpn:amd64-latest",
 	"name": "deluge-openvpn",
 	"officialDoc": "https://github.com/sgtsquiggs/docker-deluge-openvpn",
 	"platform": "linux",

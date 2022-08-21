@@ -20,8 +20,9 @@
 			"name": "ARIA2RPCPORT"
 		}
 	],
-	"image_arm32": "hurlenko/aria2-ariang",
-	"image_arm64": "hurlenko/aria2-ariang",
+	"image_arm32": "hurlenko/aria2-ariang:latest",
+	"image_arm64": "hurlenko/aria2-ariang:latest",
+	"image_amd64": "hurlenko/aria2-ariang:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ariang.png",
 	"name": "AriaNG",
 	"officialDoc": "https://github.com/hurlenko/aria2-ariang-docker",
