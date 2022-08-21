@@ -89,6 +89,21 @@
 			]
 		},
 		{
+			"label": "DARK_MODE",
+			"name": "DARK_MODE",
+			"select": [
+				{
+					"default": true,
+					"text": "Enable Dark Mode",
+					"value": "true"
+				},
+				{
+					"text": "Disable Dark Mode",
+					"value": "false"
+				}
+			]
+		},
+		{
 			"label": "LOGIN_ENABLED",
 			"name": "LOGIN_ENABLED",
 			"select": [

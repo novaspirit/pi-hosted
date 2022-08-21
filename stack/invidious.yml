@@ -30,7 +30,7 @@ services:
           locale: en-US
           region: "${REGION}"
           captions: ["", "", ""]
-          dark_mode:
+          dark_mode: ${DARK_MODE}
           thin_mode: false
           feed_menu: ["Popular", "Trending", "Subscriptions", "Playlists"]
           default_home: Trending
