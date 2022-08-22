@@ -2448,12 +2448,12 @@
 					"name": "DOMAIN"
 				},
 				{
-					"description": "Leave it empty if not using a public instance",
+					"description": "Leave false if not using a public instance",
 					"label": "HTTPS_ONLY",
 					"name": "HTTPS_ONLY",
 					"select": [
 						{
-							"default": true,
+							"default": false,
 							"text": "ALLOW HTTP",
 							"value": "false"
 						},
@@ -2475,12 +2475,12 @@
 					"select": [
 						{
 							"default": true,
-							"text": "Disable POPULAR page (better for privacy)",
-							"value": "false"
-						},
-						{
 							"text": "Enable POPULAR videos in this instance",
 							"value": "true"
+						},
+						{
+							"text": "Disable POPULAR page (better for privacy)",
+							"value": "false"
 						}
 					]
 				},
@@ -2490,12 +2490,12 @@
 					"select": [
 						{
 							"default": true,
-							"text": "Disable Statistics",
-							"value": "false"
-						},
-						{
 							"text": "Enable Statistics",
 							"value": "true"
+						},
+						{
+							"text": "Disable Statistics",
+							"value": "false"
 						}
 					]
 				},
