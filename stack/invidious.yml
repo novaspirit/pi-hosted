@@ -4,6 +4,8 @@ services:
   invidious:
     image: quay.io/invidious/invidious:latest-arm64
     name: invidious
+    networks:
+      - invidious_network
     restart: unless-stopped
     ports:
       - "${PORT}:3000"
@@ -12,7 +14,7 @@ services:
         db:
           dbname: invidious
           user: kemal
-          password: "${DB_PASSWORD}"
+          password: ${DB_PASSWORD}
           host: invidious-db
           port: 5432
         check_tables: true
@@ -47,6 +49,8 @@ services:
   invidious-db:
     image: docker.io/library/postgres:14
     name: invidious-db
+    networks:
+      - invidious_network
     restart: unless-stopped
     volumes:
       - /portainer/Files/AppData/Config/invidious/dbdata:/var/lib/postgresql/data
@@ -58,3 +62,7 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+
+networks:
+ invidious_network:
+
