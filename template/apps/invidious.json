@@ -178,7 +178,7 @@
 	"preInstallScript": "install_invidious.sh",
 	"repository": {
 		"stackfile_arm64": "stack/invidious.yml",
-		"stackfile_amd64": "stack/invidious.yml",
+		"stackfile_amd64": "stack/invidious-amd64.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"title": "Invidious",
