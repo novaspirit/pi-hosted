@@ -38,7 +38,7 @@
 			]
 		},
 		{
-			"default": "443",
+			"default": "",
 			"description": "Use 443 if HTTPS_ONLY is enabled or leave it blank",
 			"label": "EXTERNAL_PORT",
 			"name": "EXTERNAL_PORT"
