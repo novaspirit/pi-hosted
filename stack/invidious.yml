@@ -16,9 +16,9 @@ services:
           host: invidious-db
           port: 5432
         check_tables: true
-        domain: "${DOMAIN}"
+        domain: ${DOMAIN}
         https_only: ${HTTPS_ONLY}
-        external_port: "${EXTERNAL_PORT}"
+        external_port: ${EXTERNAL_PORT}
         popular_enabled: ${POPULAR_ENABLED}
         statistics_enabled: ${STATISTICS_ENABLED}
         registration_enabled: ${REGISTRATION_ENABLED}
@@ -28,8 +28,8 @@ services:
         feed_threads: 1
         default_user_preferences:
           locale: en-US
-          region: "${REGION}"
-          captions: ["", "", ""]
+          region: ${REGION}
+          #captions: ["", "", ""]
           dark_mode: ${DARK_MODE}
           thin_mode: false
           feed_menu: ["Popular", "Trending", "Subscriptions", "Playlists"]
@@ -55,6 +55,6 @@ services:
     environment:
       POSTGRES_DB: invidious
       POSTGRES_USER: kemal
-      POSTGRES_PASSWORD: "${DB_PASSWORD}"
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
