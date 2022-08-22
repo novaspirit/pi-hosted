@@ -2601,7 +2601,7 @@
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://invidious.io/\" target=\"_blank\">https://invidious.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.invidious.io/installation/#docker\" target=\"_blank\">https://docs.invidious.io/installation/#docker</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_invidious.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_invidious.sh | bash<br><br>Your device should have at least <b>4 GB</b> of memory.<br>If you want to customise even further, the easy way is to <b>Copy as Custom</b> and modify the stack file manually. Look at the <a href=\\\"https://github.com/iv-org/invidious/blob/master/config/config.example.yml\\\">official config example</a>.",
 			"platform": "linux",
 			"repository": {
-				"stackfile": "stack/invidious.yml",
+				"stackfile": "stack/invidious-amd64.yml",
 				"url": "https://github.com/pi-hosted/pi-hosted"
 			},
 			"title": "Invidious",
