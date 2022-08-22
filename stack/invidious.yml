@@ -3,7 +3,8 @@ services:
 
   invidious:
     image: quay.io/invidious/invidious:latest-arm64
-    name: invidious
+    container_name: invidious
+    hostname: invidious
     networks:
       - invidious_network
     restart: unless-stopped
@@ -48,7 +49,7 @@ services:
 
   invidious-db:
     image: docker.io/library/postgres:14
-    name: invidious-db
+    hostname: invidious-db
     networks:
       - invidious_network
     restart: unless-stopped
