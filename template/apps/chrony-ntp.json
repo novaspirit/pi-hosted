@@ -25,11 +25,10 @@
 	"officialDoc": "https://github.com/cturra/docker-ntp/blob/main/README.md",
 	"platform": "linux",
 	"ports": [
-		"123:123/udp",
+		"123:123/udp"
 	],
 	"restart_policy": "unless-stopped",
 	"title": "Chrony NTP",
 	"type": 1,
-	"videoID": 12,
 	"webpage": "https://github.com/cturra/docker-ntp"
 }
