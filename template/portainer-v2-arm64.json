@@ -5284,38 +5284,6 @@
 		},
 		{
 			"categories": [
-				"Downloaders",
-				"Tools",
-				"Other"
-			],
-			"description": "Prowlarr is an indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps.",
-			"image": "lscr.io/linuxserver/prowlarr:nightly",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-banner.png",
-			"name": "prowlarr",
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://prowlarr.com/\" target=\"_blank\">https://prowlarr.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/linuxserver/docker-prowlarr" target=\"_blank\">https://github.com/linuxserver/docker-prowlarr</a><br><br><br>Please refer to the documentation <a href='https://github.com/linuxserver/docker-prowlarr'/>here</a> to set this up.",
-			"platform": "linux",
-			"env": [
-				{
-					"default": "America/New_York",
-					"label": "Time Zone",
-					"name": "TZ"
-				}
-			],
-			"ports": [
-				"9696:9696/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Prowlarr",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/prowlarr",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Cloud",
 				"Other"
 			],
