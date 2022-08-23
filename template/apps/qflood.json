@@ -1,0 +1,59 @@
+{
+	"categories": [
+		"Downloaders"
+	],
+	"description": "A docker image with qBittorrent and the Flood UI, also optional WireGuard VPN support. See the official documentation for WireGuard VPN support at https://hotio.dev/containers/qflood/",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "002",
+			"label": "UMASK",
+			"name": "UMASK"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "false",
+			"label": "FLOOD_AUTH",
+			"name": "FLOOD_AUTH"
+		}
+	],
+	"image_arm32": "hotio/qflood:latest",
+	"image_arm64": "hotio/qflood:latest",
+	"image_amd64": "hotio/qflood:latest",
+	"logo": "https://raw.githubusercontent.com/jesec/flood/master/flood.svg",
+	"name": "qflood",
+	"note": "The default qBittorrent username is admin and the default password is adminadmin.",
+	"officialDoc": "https://hotio.dev/containers/qflood/",
+	"platform": "linux",
+	"ports": [
+		"3000:3000/tcp",
+		"8080:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "qFlood",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/qFlood",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/app/qBittorrent/downloads"
+		}
+	],
+	"webpage": "https://hotio.dev/containers/qflood/"
+}

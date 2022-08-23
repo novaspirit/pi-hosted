@@ -1,0 +1,40 @@
+version: "3.4"
+services:
+  broker:
+    image: docker.io/library/redis:6.0
+    networks:
+      - paperless_network
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/paperless-ngx/redis/data:/data
+
+  webserver:
+    image: ghcr.io/paperless-ngx/paperless-ngx:latest
+    restart: unless-stopped
+    depends_on:
+      - broker
+    ports:
+      - 8010:8000
+    healthcheck:
+      test: ["CMD", "curl", "-fs", "-S", "--max-time", "2", "http://localhost:8000"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    environment:
+      PAPERLESS_REDIS: redis://broker:6379
+      USERMAP_UID: ${PUID}
+      USERMAP_GID: ${PGID}
+      PAPERLESS_TIME_ZONE: ${TZ}
+      #PAPERLESS_URL: ${PAPERLESSURL}
+      PAPERLESS_SECRET_KEY: ${RANDOMKEY}
+      PAPERLESS_OCR_LANGUAGE: ${LANG}
+    networks:
+      - paperless_network
+    volumes:
+      - /portainer/Files/AppData/Config/paperless-ngx/data:/usr/src/paperless/data
+      - /portainer/Files/AppData/Config/paperless-ngx/media:/usr/src/paperless/media
+      - /portainer/Files/AppData/Config/paperless-ngx/export:/usr/src/paperless/export
+      - /portainer/Files/AppData/Config/paperless-ngx/consume:/usr/src/paperless/consume
+
+networks:
+  paperless_network:

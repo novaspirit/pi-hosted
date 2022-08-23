@@ -1,0 +1,39 @@
+{
+	"categories": [
+		"Dashboard"
+	],
+	"description": "Dashy helps you organize your self-hosted services by making them accessible from a single place",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image_arm32": "lissy93/dashy:latest",
+	"image_arm64": "lissy93/dashy:latest",
+	"image_amd64": "lissy93/dashy:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dashy.png",
+	"name": "Dashy",
+	"officialDoc": "https://dashy.to/docs/quick-start",
+        "preInstallScript": "install_dashy.sh",
+	"platform": "linux",
+	"ports": [
+		"9100:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Dashy",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Dashy/local-conf.yml",
+			"container": "/app/public/conf.yml"
+		}
+	],
+	"webpage": "https://dashy.to"
+}

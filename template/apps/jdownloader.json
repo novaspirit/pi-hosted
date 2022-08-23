@@ -1,0 +1,49 @@
+{
+	"categories": [
+		"Downloaders",
+		"Tools"
+	],
+	"description": "JDownloader docker image",
+	"env": [
+		{
+			"default": "",
+			"label": "MYJD_DEVICE_NAME",
+			"name": "MYJD_DEVICE_NAME"
+		},
+		{
+			"default": "",
+			"label": "MYJD_USER",
+			"name": "MYJD_USER"
+		},
+		{
+			"default": "",
+			"label": "MYJD_PASSWORD",
+			"name": "MYJD_PASSWORD"
+		}
+	],
+	"image_arm32": "jaymoulin/jdownloader:latest",
+	"image_arm64": "jaymoulin/jdownloader:latest",
+	"image_amd64": "jaymoulin/jdownloader:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jdownloader.png",
+	"name": "JDownloader",
+	"officialDoc": "https://github.com/jaymoulin/docker-jdownloader",
+	"platform": "linux",
+	"ports": [
+		"3129:3129/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "JDownloader",
+	"type": 1,
+	"videoID": 4,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/JDownloader",
+			"container": "/opt/JDownloader/app/cfg"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/opt/JDownloader/Downloads"
+		}
+	],
+	"webpage": "https://my.jdownloader.org/"
+}

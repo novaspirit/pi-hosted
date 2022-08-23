@@ -21,8 +21,23 @@ echo "Creating directories..."
 sudo mkdir -p /portainer/Files/AppData/Config/prometheus/config || error "Failed to create config directory!"
 sudo mkdir -p /portainer/Files/AppData/Config/prometheus/data || error "Failed to create data directory for Prometheus!"
 sudo mkdir -p /portainer/Files/AppData/Config/grafana/data || error "Failed to create data directory for Grafana!"
-echo "Downloading Prometheus config files"
-sudo wget -O /portainer/Files/AppData/Config/prometheus/config/prometheus.yml https://raw.githubusercontent.com/oijkn/Docker-Raspberry-PI-Monitoring/main/prometheus/prometheus.yml || error "Failed to download prometheus.yml file!"
+echo "Downloading Prometheus config files if they don't exist"
+if [ -d /portainer/Files/AppData/Config/prometheus/config/prometheus.yml ];
+then
+    echo "/portainer/Files/AppData/Config/prometheus/config/prometheus.yml is a directory removing"
+    rm -rf '/portainer/Files/AppData/Config/prometheus/config/prometheus.yml/'
+fi
+
+if [ ! -f /portainer/Files/AppData/Config/prometheus/config/prometheus.yml ]; 
+then
+	sudo wget -O /portainer/Files/AppData/Config/prometheus/config/prometheus.yml https://raw.githubusercontent.com/oijkn/Docker-Raspberry-PI-Monitoring/main/prometheus/prometheus.yml || error "Failed to download prometheus.yml file!"
+fi
+
+if [ -d /portainer/Files/AppData/Config/grafana/grafana.ini ];
+then
+    echo "/portainer/Files/AppData/Config/grafana/grafana.ini is a directory removing"
+    rm -rf '/portainer/Files/AppData/Config/grafana/grafana.ini'
+fi
 sudo touch /portainer/Files/AppData/Config/grafana/grafana.ini || error "Failed to touch grafana.ini file!"
 echo "Setting permissions..."
 sudo chown -R 472:472 /portainer/Files/AppData/Config/grafana/data || error "Failed to set permissions for Grafana data!"

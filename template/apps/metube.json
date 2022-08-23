@@ -1,0 +1,38 @@
+{
+	"categories": [
+		"Downloader"
+	],
+	"description": "Web GUI for youtube-dl (using the yt-dlp fork) with playlist support. Allows you to download videos from YouTube and dozens of other sites (https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image_arm32": "alexta69/metube:latest",
+	"image_arm64": "alexta69/metube:latest",
+	"image_amd64": "alexta69/metube:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/metube.png",
+	"name": "MeTube",
+	"officialDoc": "https://github.com/alexta69/metube",
+	"platform": "linux",
+	"ports": [
+		"8081:8081/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "MeTube",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/downloads"
+		}
+	],
+	"webpage": "https://hub.docker.com/r/alexta69/metube"
+}

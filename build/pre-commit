@@ -1,0 +1,65 @@
+#!/bin/bash
+
+function error {
+  echo -e "\\e[91m$1\\e[39m"
+  exit 1
+}
+
+# Check dependencies
+jq --version &> /dev/null || error "jq is required, please install it with 'sudo apt install jq'"
+git --version &> /dev/null || error "git is required, please install it with 'sudo apt install git'"
+sha256sum --version &> /dev/null || error "sha256sum is required, please install it with 'sudo apt install coreutils'"
+
+# Check if script from build or script from hook and cd into build folder
+scriptDir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+if [ "$( echo "$scriptDir" | rev | cut -d/ -f1 | rev )" == "build" ]; then
+	cd -- "$scriptDir" &> /dev/null || exit
+else
+	cd -- "$(git rev-parse --show-toplevel)/build" &> /dev/null || exit
+fi
+
+# Get file location (Variables) from env file
+homedir='../'
+. env.sh
+
+# Variable to update
+doUpdate=false
+
+# Check if there is a new app
+CurrentNumOfApps=$( ls "$appsfolder" | wc -l )
+PreviousNumOfApps=$( head -n -1 "$verificationFile" | wc -l)
+[[ $CurrentNumOfApps -eq $PreviousNumOfApps ]] || doUpdate=true
+
+# Check if Template or appinfo has changed
+sha256sum -c --quiet "$verificationFile" &> /dev/null || doUpdate=true
+
+if $doUpdate ; then
+
+	# Make sure tmp folder exists
+	mkdir -p "$( dirname -- "$verificationFile" )"
+
+	echo "Updating documentation..."
+	# Run all scripts
+	echo "Starting joinApps.sh..."
+	./joinApps.sh
+	echo "Starting generateAppList..."
+	./generators/generateAppList.sh
+	echo "Starting generateDocList..."
+	./generators/generateDocList.sh
+	echo "Starting generateREADME..."
+	./generators/generateREADME.sh
+	echo "Starting generateToolsREADME..."
+	./generators/generateToolsREADME.sh
+	echo "Update finished"
+
+	# Update lastrun.sha256
+	sha256sum "$appinfo" > "$verificationFile" 
+	find "$appsfolder" -type f -name '*.json' -exec sha256sum {} + >> "$verificationFile"
+
+	# Add files to stagging
+	git add -- "$README"
+	git add -- "$TOOLSREADME"
+	git add -- "$AppList"
+	git add -- "$DocList"
+
+fi

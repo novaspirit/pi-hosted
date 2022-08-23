@@ -1,0 +1,45 @@
+{
+    "categories": [
+        "Video",
+        "Music",
+        "Other"
+    ],
+    "description": "Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.",
+    "env": [
+        {
+            "default": "1000",
+            "label": "PUID",
+            "name": "PUID"
+        },
+        {
+            "default": "1000",
+            "label": "PGID",
+            "name": "PGID"
+        },
+        {
+            "default": "America/New_York",
+            "label": "TZ",
+            "name": "TZ"
+        }
+    ],
+    "image_arm32": "lscr.io/linuxserver/overseerr:latest",
+    "image_arm64": "lscr.io/linuxserver/overseerr:latest",
+    "image_amd64": "lscr.io/linuxserver/overseerr:latest",
+    "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/overseerr.jpg",
+    "name": "overseerr",
+    "platform": "linux",
+    "ports": [
+        "5055:5055/tcp"
+    ],
+    "restart_policy": "unless-stopped",
+    "title": "Overseerr - Plex Server Request Handler",
+    "type": 1,
+    "volumes": [
+        {
+            "bind": "/portainer/Files/AppData/Config/Overseerr",
+            "container": "config"
+        }
+    ],
+    "officialDoc": "https://hub.docker.com/r/linuxserver/overseerr",
+    "webpage": "https://overseerr.dev/"
+}

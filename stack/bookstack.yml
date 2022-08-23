@@ -7,6 +7,7 @@ services:
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
+      - APP_URL=${APP_URL}
       - DB_HOST=bookstack_db
       - DB_USER=bookstack
       - DB_PASS=${DATABASE_PASSWORD}

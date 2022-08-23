@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+
+  nitter:
+    image: quay.io/unixfox/nitter:latest
+    container_name: nitter
+    networks:
+      - nitter_network
+    restart: unless-stopped
+    depends_on:
+      - redis
+    volumes:
+      - /portainer/Files/AppData/Config/nitter/data:/data
+    ports:
+      - 3300:8080
+    environment:
+      - REDIS_HOST="redis"
+
+  redis:
+    image: redis:alpine
+    container_name: redis
+    networks:
+      - nitter_network
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/nitter/redis:/data
+
+networks:
+  nitter_network:

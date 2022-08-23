@@ -1,0 +1,53 @@
+version: "3.6"
+services:
+  mariadb:
+    hostname: mariadb
+    image: linuxserver/mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+      PUID: ${PUID}
+      PGID: ${PGID}
+      TZ: ${TZ}
+    networks:
+      - redmine_network
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/redmine/database:/config
+  phpmyadmin:
+    image: phpmyadmin:latest
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    ports:
+      - 4181:3000
+    networks:
+      - redmine_network
+    restart: unless-stopped
+      
+  redmine:
+    container_name: redmine
+    hostname: redmine
+    image: redmine:latest
+    environment:
+      REDMINE_DB_MYSQL: mariadb
+      REDMINE_DB_PORT: 3306
+      REDMINE_DB_USERNAME: ${DATABASE_USER}
+      REDMINE_DB_PASSWORD: ${DATABASE_PASSWORD}
+      REDMINE_DB_DATABASE: ${DATABASE_NAME}
+      REDMINE_SECRET_KEY_BASE: ${REDMINE_SECRET_KEY_BASE}
+    networks:
+      - redmine_network
+    ports:
+      - 4180:80
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/redmine/files:/usr/src/redmine/files
+    depends_on:
+      - mariadb
+
+networks:
+  redmine_network:

@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  server:
+    image: yooooomi/your_spotify_server
+    restart: unless-stopped
+    ports:
+      - "${__api_port__}:8080"
+    links:
+      - mongo
+    depends_on:
+      - mongo
+    environment:
+      - API_ENDPOINT=${__api_endpoint__}
+      - CLIENT_ENDPOINT=${__client_endpoint__}
+      - SPOTIFY_PUBLIC=${__your_spotify_client_id__}
+      - SPOTIFY_SECRET=${__your_spotify_secret__}
+      - CORS=all
+      - TIMEZONE=${TZ}
+  mongo:
+    container_name: mongo-your-spotify
+    image: mongo:4.4.8
+    volumes:
+      - /portainer/Files/AppData/Config/your_spotify/DB:/data/db
+
+  web:
+    image: yooooomi/your_spotify_client
+    restart: unless-stopped
+    ports:
+      - "${__client_port__}:3000"
+    environment:
+      - API_ENDPOINT=${__api_endpoint__}

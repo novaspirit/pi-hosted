@@ -1,0 +1,6 @@
+
+.DS_Store
+desktop.ini
+
+# Ignore tmp file in build directory
+build/tmp/

@@ -1,0 +1,42 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "Alternative front-end for Google Translate, serving as a Free and Open Source translator with over a hundred languages available",
+	"env": [
+		{
+			"default": "true",
+			"label": "dark_theme",
+			"name": "dark_theme"
+		},
+		{
+			"default": "lingva.ml",
+			"label": "site_domain",
+			"name": "site_domain"
+		},
+		{
+			"default": "auto",
+			"label": "default_source_lang",
+			"name": "default_source_lang"
+		},
+		{
+			"default": "en",
+			"label": "default_target_lang",
+			"name": "default_target_lang"
+		}
+	],
+	"image_arm64": "cinetube/lingva-translate:latest",
+	"image_amd64": "cinetube/lingva-translate:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lingva-translate.svg",
+	"name": "lingva-translate",
+	"officialDoc": "https://github.com/TheDavidDelta/lingva-translate",
+	"platform": "linux",
+	"ports": [
+		"3010:3000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Lingva Translate",
+	"type": 1,
+	"webpage": "https://lingva.ml/"
+}

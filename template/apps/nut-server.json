@@ -1,0 +1,58 @@
+{
+        "categories": [
+                "Other",
+                "Tools"
+        ],
+        "description": "The purpose of NUT Server is to monitor a UPS attached device",
+        "env": [
+            {
+                "default": "1000",
+                "label": "PUID",
+                "name": "PUID"
+            },
+            {
+                "default": "1000",
+                "label": "PGID",
+                "name": "PGID"
+            },
+            {
+                "default": "none",
+                "label": "SERIAL",
+                "name": "SERIAL"
+            },
+            {
+                "default": "none",
+                "label": "NAME",
+                "name": "NAME"
+            },
+            {
+                "default": "none",
+                "label": "VENDOR ID",
+                "name": "VENDOR ID"
+            },
+            {
+                "default": "none",
+                "label": "API_PASSWORD",
+                "name": "API_PASSWORD"
+            },
+            {
+                "default": "none",
+                "label": "DESCRIPTION",
+                "name": "DESCRIPTION"
+            }
+        ],
+        "image_arm32": "instantlinux/nut-upsd:latest",
+        "image_arm64": "instantlinux/nut-upsd:latest",
+        "image_amd64": "instantlinux/nut-upsd:latest",
+        "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nut-server.png",
+        "name": "NUT Server",
+        "officialDoc": "https://hub.docker.com/r/instantlinux/nut-upsd",
+        "platform": "linux",
+        "ports": [
+            "3493:3493/tcp"
+        ],
+        "restart_policy": "unless-stopped",
+        "title": "NUT Server",
+        "type": 1,
+        "webpage": "https://networkupstools.org"
+}

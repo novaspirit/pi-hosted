@@ -1,0 +1,47 @@
+{
+	"categories": [
+		"Downloader"
+	],
+	"description": "AriaNg is a modern web frontend making aria2 easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment. You can just put AriaNg in your web server and open it in your browser. AriaNg uses responsive layout, and supports any desktop or mobile devices.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "443",
+			"label": "ARIA2RPCPORT",
+			"name": "ARIA2RPCPORT"
+		}
+	],
+	"image_arm32": "hurlenko/aria2-ariang:latest",
+	"image_arm64": "hurlenko/aria2-ariang:latest",
+	"image_amd64": "hurlenko/aria2-ariang:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ariang.png",
+	"name": "AriaNG",
+	"officialDoc": "https://github.com/hurlenko/aria2-ariang-docker",
+	"platform": "linux",
+	"ports": [
+		"8080:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "AriaNG",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/AriaNG",
+			"container": "/aria2/conf"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/aria2/data"
+		}
+	],
+	"webpage": "https://github.com/hurlenko/aria2-ariang-docker"
+}

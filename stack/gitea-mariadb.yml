@@ -1,0 +1,47 @@
+version: "3.7"
+services:
+  mariadb:
+    hostname: mariadb
+    image: linuxserver/mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+      PUID: ${USER_UID}
+      PGID: ${USER_GID}
+      TZ: ${TZ}
+    networks:
+      - gitea-mariadb-network
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/Gitea/Mariadb:/config
+
+  gitea:
+    container_name: gitea
+    hostname: gitea
+    image: gitea/gitea:latest
+    environment:
+      USER_UID: ${USER_UID}
+      USER_GID: ${USER_GID}
+      TZ: ${TZ}
+      GITEA__database__HOST: 'mariadb'
+      GITEA__database__USER: ${DATABASE_USER}
+      GITEA__database__PASSWD: ${DATABASE_PASSWORD}
+      GITEA__database__NAME: ${DATABASE_NAME}
+      GITEA__database__DB_TYPE: mysql
+    networks:
+      - gitea-mariadb-network
+    ports:
+      - 8124:3000      
+      - 222:22      
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/Gitea/data:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    depends_on:
+      - mariadb
+
+networks:
+  gitea-mariadb-network:

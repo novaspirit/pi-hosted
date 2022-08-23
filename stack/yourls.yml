@@ -1,0 +1,52 @@
+version: "3.1"
+services:
+  mariadb:
+    hostname: mariadb
+    image: linuxserver/mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+      PUID: ${PUID}
+      PGID: ${PGID}
+      TZ: ${TZ}
+    networks:
+      - yourls
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/yourls/database:/config
+  phpmyadmin:
+    image: phpmyadmin:latest
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    ports:
+      - 4281:80
+    networks:
+      - yourls
+    restart: unless-stopped
+      
+  yourls:
+    container_name: yourls
+    hostname: yourls
+    image: yourls:latest
+    environment:
+      YOURLS_DB_HOST: mariadb
+      YOURLS_DB_NAME: ${DATABASE_NAME}
+      YOURLS_DB_USER: ${DATABASE_USER}
+      YOURLS_DB_PASS: ${DATABASE_PASSWORD}
+      YOURLS_SITE: ${YOURLS_SITE}
+      YOURLS_USER: ${YOURLS_USERNAME}
+      YOURLS_PASS: ${YOURLS_PASSWORD}
+    networks:
+      - yourls
+    ports:
+      - 4280:80
+    restart: unless-stopped
+    depends_on:
+      - mariadb
+
+networks:
+  yourls:

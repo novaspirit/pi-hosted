@@ -1,13 +1,20 @@
 version: "2.4"
 services:
   cadvisor:
+    command:
+    - '--docker_only=true'
+    - '--housekeeping_interval=30s'
+    - '--disable_metrics=accelerator,cpu_topology,disk,memory_numa,tcp,udp,percpu,sched,process,hugetlb,referenced_memory,resctrl,cpuset,advtcp,memory_numa'
+    - '--store_container_labels=false'
+    - '--event_storage_event_limit=default=0'
+    - '--event_storage_age_limit=default=0'
     container_name: monitoring-cadvisor
     devices:
       - /dev/kmsg:/dev/kmsg
     expose:
       - 8080
     hostname: rpi-cadvisor
-    image: zcube/cadvisor:v0.37.5
+    image: zcube/cadvisor:latest
     ipc: shareable
     networks:
       - rpimonitor_default
@@ -20,6 +27,7 @@ services:
       - /var/run:/var/run:rw
       - /sys:/sys:ro
       - /var/lib/docker/:/var/lib/docker:ro
+      - /etc/machine-id:/etc/machine-id:ro
       
   grafana:
     container_name: monitoring-grafana
@@ -58,6 +66,7 @@ services:
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
       - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=${PROMETHEUS_RETENTION:-15d}'
     container_name: monitoring-prometheus
     expose:
       - 9090

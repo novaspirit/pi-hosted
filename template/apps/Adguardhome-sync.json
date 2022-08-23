@@ -1,0 +1,53 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+  "env": [
+  	{
+  		"name": "PUID",
+  		"label": "PUID",
+  		"default": "1000",
+  		"description": "for UserID"
+  	},
+  	{
+  		"name": "PGID",
+  		"label": "PGID",
+  		"default": "1000",
+  		"description": "for GroupID"
+  	},
+  	{
+  		"name": "TZ",
+  		"label": "TZ",
+  		"default": "America/New_York",
+  		"description": "Specify a timezone to use for example America/New_York"
+  	},
+  	{
+  		"name": "CONFIGFILE",
+  		"label": "CONFIGFILE",
+  		"default": "/config/adguardhome-sync.yaml",
+  		"description": "Set a custom config file."
+  	}
+  ],
+	"description": "[Adguardhome-sync](https://github.com/bakito/adguardhome-sync/) is a tool to synchronize AdGuardHome config to replica instances.",
+	"image_arm32": "linuxserver/adguardhome-sync:latest",
+	"image_arm64": "linuxserver/adguardhome-sync:latest",
+	"image_amd64": "linuxserver/adguardhome-sync:latest",
+	"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/adguardhomesync-icon.png",
+	"name": "Adguardhome-sync",
+	"officialDoc": "https://github.com/linuxserver/docker-adguardhome-sync#usage",
+	"platform": "linux",
+	"ports": [
+		"8080:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Adguardhome-sync",
+	"type": 1,
+	"volumes": [
+		{
+      			"bind": "/portainer/Files/AppData/Config/adguardhome-sync/config",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://adguard.com/en/adguard-home/overview.html"
+}

@@ -1,0 +1,43 @@
+{
+	"categories": [
+		"Backup"
+	],
+	"description": "UrBackup is an easy to setup Open Source client/server backup system, that through a combination of image and file backups accomplishes both data safety and a fast restoration time.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image_arm32": "uroni/urbackup-server:latest",
+	"image_arm64": "uroni/urbackup-server:latest",
+	"image_amd64": "uroni/urbackup-server:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/urbackup.png",
+	"name": "UrBackup",
+	"officialDoc": "https://www.github.com/uroni/urbackup-server-docker",
+	"platform": "linux",
+	"ports": [
+		"55415:55415/tcp",
+		"55414:55414/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "UrBackup",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/urbackup",
+			"container": "/var/urbackup"
+		},
+		{
+			"bind": "/portainer/backups",
+			"container": "/backup"
+		}
+	],
+	"webpage": "https://www.urbackup.org/"
+}

@@ -1,0 +1,76 @@
+{
+	"categories": [
+		"Other",
+		"CMD",
+		"Web",
+		"Tools"
+	],
+	"description": "YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "https://example.com",
+			"label": "YOURLS_SITE",
+			"name": "YOURLS_SITE"
+		},
+		{
+			"default": "admin",
+			"label": "YOURLS_USERNAME",
+			"name": "YOURLS_USERNAME"
+		},
+		{
+			"default": "",
+			"label": "YOURLS_PASSWORD",
+			"name": "YOURLS_PASSWORD"
+		},
+		{
+			"default": "yourls",
+			"label": "DATABASE_NAME",
+			"name": "DATABASE_NAME"
+		},
+		{
+			"default": "yourls",
+			"label": "DATABASE_USER",
+			"name": "DATABASE_USER"
+		},
+		{
+			"default": "",
+			"label": "DATABASE_PASSWORD",
+			"name": "DATABASE_PASSWORD"
+		},
+		{
+			"default": "",
+			"label": "MYSQL_ROOT_PASSWORD",
+			"name": "MYSQL_ROOT_PASSWORD"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/yourls-logo.png",
+	"name": "yourls",
+	"officialDoc": "https://yourls.org/#Install",
+	"platform": "linux",
+        "preInstallScript": "install_yourls.sh",
+ 	"repository": {
+		"stackfile_arm32": "stack/yourls.yml",
+		"stackfile_arm64": "stack/yourls.yml",
+		"stackfile_amd64": "stack/yourls.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted/"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Yourls",
+	"type": 3,
+	"webpage": "https://yourls.org/"
+}

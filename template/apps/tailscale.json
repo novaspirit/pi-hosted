@@ -1,0 +1,37 @@
+{
+	"categories": [
+		"Other",
+		"VPN"
+	],
+	"command": "tailscale up --authkey=$AUTH_KEY",
+	"description": "Connect your devices and users together in your own secure Zero config virtual private network. ",
+	"env": [
+		{
+			"default": "",
+			"description": "Get AUTH KEY from your tailscale.com user panel",
+			"label": "AUTH_KEY",
+			"name": "AUTH_KEY"
+		}
+	],
+	"image_arm32": "tailscale/tailscale:latest",
+	"image_arm64": "tailscale/tailscale:latest",
+	"image_amd64": "tailscale/tailscale:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tailscale-icon.png",
+	"name": "tailscale",
+	"officialDoc": "https://hub.docker.com/r/tailscale/tailscale",
+	"platform": "linux",
+	"restart_policy": "unless-stopped",
+	"title": "Tailscale",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/tailscale",
+			"container": "/var/lib/tailscale"
+		},
+		{
+			"bind": "/dev/net/tun",
+			"container": "/dev/net/tun"
+		}
+	],
+	"webpage": "https://tailscale.com/"
+}

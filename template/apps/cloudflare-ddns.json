@@ -1,0 +1,45 @@
+{
+	"categories": [
+		"DNS",
+		"Tools"
+	],
+	"description": "Cloudflare DDNS - A small and fast DDNS updater for Cloudflare.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "",
+			"label": "CF_API_TOKEN",
+			"name": "CF_API_TOKEN"
+		},
+		{
+			"default": "",
+			"label": "DOMAINS (Comma Separated List)",
+			"name": "DOMAINS"
+		},
+		{
+			"default": "true",
+			"label": "PROXIED",
+			"name": "PROXIED"
+		}
+	],
+	"image_arm32": "favonia/cloudflare-ddns:latest",
+	"image_arm64": "favonia/cloudflare-ddns:latest",
+	"image_amd64": "favonia/cloudflare-ddns:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/cloudflare-ddns.png",
+	"name": "cloudflare-ddns",
+	"officialDoc": "https://github.com/favonia/cloudflare-ddns/",
+	"platform": "linux",
+	"restart_policy": "unless-stopped",
+	"title": "Cloudflare DDNS",
+	"type": 1,
+	"webpage": "https://www.cloudflare.com/en-gb/learning/dns/glossary/dynamic-dns/"
+}

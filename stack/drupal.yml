@@ -1,0 +1,49 @@
+version: "3"
+services:
+  mariadb:
+    hostname: mariadb
+    image: linuxserver/mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+      PUID: ${PGID}
+      PGID: ${PGID}
+      TZ: ${TZ}
+    networks:
+      - drupal_network
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/drupal/database:/config
+  phpmyadmin:
+    image: phpmyadmin:latest
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    ports:
+      - 4081:80
+    networks:
+      - drupal_network
+    restart: unless-stopped
+      
+  druapl:
+    container_name: drupal
+    hostname: drupal
+    image: drupal:latest
+    networks:
+      - drupal_network
+    ports:
+      - 4080:80
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/drupal/modules:/var/www/html/modules
+      - /portainer/Files/AppData/Config/drupal/profiles:/var/www/html/profiles
+      - /portainer/Files/AppData/Config/drupal/themes:/var/www/html/themes
+      - /portainer/Files/AppData/Config/drupal/sites:/var/www/html/sites
+    depends_on:
+      - mariadb
+
+networks:
+  drupal_network:

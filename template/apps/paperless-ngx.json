@@ -1,0 +1,60 @@
+{
+	"categories": [
+		"Cloud",
+		"Management",
+		"Productivity"
+	],
+	"description": "Paperless-ngx is a document management system that transforms your physical documents into a searchable online archive so you can keep, well, less paper.  Paperless-ngx forked from paperless-ng to continue the great work and distribute responsibility of supporting and advancing the project among a team of people. Consider joining us! Discussion of this transition can be found in issues #1599 and #1632.  A demo is available at demo.paperless-ngx.com using login demo / demo. Note: demo content is reset frequently and confidential information should not be uploaded.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID",
+                        "description": "for UserID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID",
+                        "description": "for GroupID"
+		},
+                {
+                        "default": "America/New_York",
+                        "label": "TZ",
+                        "name": "TZ",
+                        "description": "Specify a timezone to use for example America/New_York"
+                },
+		{
+			"default": "",
+			"label": "PAPERLESS_URL",
+			"name": "PAPERLESSURL",
+                        "description": "Example https://paperless.example.com.  It would be best to run this behind a reverse proxy"
+		},
+		{
+			"default": "",
+			"label": "Secret Key",
+			"name": "RANDOMKEY",
+                        "description": "This should be a very long sequence of random characters."
+		},
+                {
+                        "default": "eng",
+                        "label": "OCR Language",
+                        "name": "LANG",
+                        "description": "The default language to use for OCR"
+                }
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/paperless.png",
+	"name": "paperless-ngx",
+	"officialDoc": "https://github.com/paperless-ngx/paperless-ngx",
+        "repository": {
+                "stackfile_arm32": "stack/paperless-ngx.yml",
+                "stackfile_arm64": "stack/paperless-ngx.yml",
+                "stackfile_amd64": "stack/paperless-ngx.yml",
+                "url": "https://github.com/pi-hosted/pi-hosted/"
+        },
+	"platform": "linux",
+	"restart_policy": "unless-stopped",
+	"title": "Paperless NGX",
+        "type": 3,
+	"webpage": "https://github.com/paperless-ngx/paperless-ngx"
+}
