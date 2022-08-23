@@ -1,0 +1,22 @@
+{
+	"categories": [
+		"Other",
+		"Tools",
+		"Web"
+	],
+	"description": "A free and open source alternative Twitter front-end focused on privacy and performance.",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nitter.png",
+	"name": "nitter",
+	"officialDoc": "https://github.com/zedeus/nitter",
+        "repository": {
+                "stackfile_arm32": "stack/nitter.yml",
+                "stackfile_arm64": "stack/nitter.yml",
+                "stackfile_amd64": "stack/nitter.yml",
+                "url": "https://github.com/pi-hosted/pi-hosted/"
+        },
+	"platform": "linux",
+	"restart_policy": "unless-stopped",
+	"title": "Nitter",
+        "type": 3,
+	"webpage": "https://nitter.net/"
+}

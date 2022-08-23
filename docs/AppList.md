@@ -2,10 +2,10 @@
 
 List of all apps included in this project with info related to it.
 
-- **Arm32:** 163 apps
-- **Arm64:** 172 apps
-- **Amd64:** 170 apps
-- **Total:** 172 apps
+- **Arm32:** 164 apps
+- **Arm64:** 173 apps
+- **Amd64:** 171 apps
+- **Total:** 173 apps
 
 ---
 
@@ -108,6 +108,7 @@ List of all apps included in this project with info related to it.
 |[Nginx Proxy Manager v2 with Mysql [DEPRECATED]](https://nginxproxymanager.com/)|Arm32<br>Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://nginxproxymanager.com/setup/#using-mysql-mariadb-database) | [![](../build/images/red_doc_icon.png)](../docs/nginx_proxy_manager.md) | [![](../build/images/script_icon.png)](../tools/nginx-proxy-manager.sh) |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
 |[Nginx Proxy Manager v2 with Sqlite and Goaccess Charts](https://nginxproxymanager.com/)|Arm32<br>Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://nginxproxymanager.com/setup/#running-the-app) | [![](../build/images/red_doc_icon.png)](../docs/nginx_proxy_manager.md) |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
 |[Nginx Proxy Manager v2 with Sqllite](https://nginxproxymanager.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://nginxproxymanager.com/setup/) | [![](../build/images/red_doc_icon.png)](../docs/nginx_proxy_manager.md) |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
+|[Nitter](https://nitter.net/)|Arm32<br>Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/zedeus/nitter) |  |  |  |  |
 |[Node Red](https://nodered.org/)|Arm32<br>Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://nodered.org/docs/getting-started/docker) |  |  |  |  |
 |[NUT Server](https://networkupstools.org)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/instantlinux/nut-upsd) |  |  |  |  |
 |[NZBGet](https://nzbget.net/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nzbget) |  |  |  |  |
