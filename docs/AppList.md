@@ -2,10 +2,10 @@
 
 List of all apps included in this project with info related to it.
 
-- **Arm32:** 164 apps
-- **Arm64:** 173 apps
-- **Amd64:** 171 apps
-- **Total:** 173 apps
+- **Arm32:** 165 apps
+- **Arm64:** 174 apps
+- **Amd64:** 172 apps
+- **Total:** 174 apps
 
 ---
 
@@ -27,6 +27,7 @@ List of all apps included in this project with info related to it.
 |[Calibre Web](https://calibre-ebook.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-calibre-web) |  |  |  |  |
 |[Cardigann](https://github.com/cardigann/cardigann)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/cardigann/) |  |  |  |  |
 |[Chevereto](https://chevereto.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/nmtan/chevereto) |  |  |  |  |
+|[]()|Arm32<br>Arm64<br>Amd64|| [![](../build/images/blue_doc_icon.png)]() | [![](../build/images/red_doc_icon.png)](../docs/) | [![](../build/images/script_icon.png)](../tools/) | [](../tools/) | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)]() |
 |[Cloudflare DDNS](https://www.cloudflare.com/en-gb/learning/dns/glossary/dynamic-dns/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/favonia/cloudflare-ddns/) |  |  |  |  |
 |[Code Server](https://coder.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-code-server) |  |  |  |  |
 |[Codiad](http://codiad.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/Codiad/Codiad/wiki/Quick-installation-using-Docker) |  |  |  |  |
