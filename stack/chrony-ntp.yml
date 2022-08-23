@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  chrony-ntp:
+    environment:
+      - NTP_SERVERS=${NTP_SERVERS}
+      - LOG_LEVEL=${LOG_LEVEL}
+    image: cturra/ntp:latest
+    container_name: chrony-ntp
+    ports:
+      - "123:123/udp"
+    restart: unless-stopped
+    cap_add:
+      - SYS_NICE
+      - SYS_RESOURCE
+      - SYS_TIME
