@@ -6,7 +6,7 @@ services:
     image: quay.io/unixfox/nitter:latest
     container_name: nitter
     networks:
-      - paperless_network
+      - nitter_network
     restart: unless-stopped
     depends_on:
       - redis
@@ -21,7 +21,10 @@ services:
     image: redis:alpine
     container_name: redis
     networks:
-      - paperless_network
+      - nitter_network
     restart: unless-stopped
     volumes:
       - /portainer/Files/AppData/Config/nitter/redis:/data
+
+networks:
+  nitter_network:
