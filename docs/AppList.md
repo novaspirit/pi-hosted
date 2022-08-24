@@ -2,7 +2,7 @@
 
 List of all apps included in this project with info related to it.
 
-- **Arm32:** 165 apps
+- **Arm32:** 164 apps
 - **Arm64:** 174 apps
 - **Amd64:** 172 apps
 - **Total:** 174 apps
@@ -151,7 +151,7 @@ List of all apps included in this project with info related to it.
 |[SickGear](https://github.com/SickGear/SickGear/wiki)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sickgear) |  |  |  |  |
 |[SmokePing](https://oss.oetiker.ch/smokeping/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-smokeping) |  |  |  |  |
 |[Snippet-box](https://github.com/pawelmalak/snippet-box)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/snippet-box#with-docker) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=v-jUyB3fvAo) |
-|[Sonarr](https://sonarr.tv/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sonarr) |  |  |  |  |
+|[Sonarr](https://sonarr.tv/)|Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sonarr) |  |  |  |  |
 |[Speedtest Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker) |  |  |  |  |
 |[Sshwifty](https://sshwifty.herokuapp.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/nirui/sshwifty#docker-image) |  |  |  |  |
 |[SyncThing](https://syncthing.net/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-syncthing) |  |  |  |  |

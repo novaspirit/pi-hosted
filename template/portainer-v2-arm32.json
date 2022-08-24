@@ -5618,54 +5618,6 @@
 		},
 		{
 			"categories": [
-				"Downloaders",
-				"Video"
-			],
-			"description": "Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/sonarr:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/sonarr-icon.png",
-			"name": "sonarr",
-			"platform": "linux",
-			"ports": [
-				"8989:8989/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Sonarr",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Sonarr",
-					"container": "/config"
-				},
-				{
-					"bind": "/dev/rtc",
-					"container": "/dev/rtc"
-				},
-				{
-					"bind": "/portainer/TV",
-					"container": "/tv"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/downloads"
-				}
-			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://sonarr.tv/\" target=\"_blank\">https://sonarr.tv/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-sonarr\" target=\"_blank\">https://docs.linuxserver.io/images/docker-sonarr</a><br><br><br>"
-		},
-		{
-			"categories": [
 				"Tools",
 				"Web",
 				"Other"
