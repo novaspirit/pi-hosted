@@ -2,10 +2,10 @@
 
 List of all apps included in this project with info related to it.
 
-- **Arm32:** 164 apps
-- **Arm64:** 174 apps
-- **Amd64:** 172 apps
-- **Total:** 174 apps
+- **Arm32:** 165 apps
+- **Arm64:** 175 apps
+- **Amd64:** 173 apps
+- **Total:** 175 apps
 
 ---
 
@@ -131,6 +131,7 @@ List of all apps included in this project with info related to it.
 |[PrivateBin](https://privatebin.info/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/privatebin/nginx-fpm-alpine) |  |  |  |  |
 |[ProjectSend](https://www.projectsend.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-projectsend) |  |  |  |  |
 |[ProtonMail Bridge](https://protonmail.com/bridge/)|Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/shenxn/protonmail-bridge) |  |  |  |  |
+|[prowlarr](https://prowlarr.com)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/prowlarr) |  |  |  |  |
 |[Pydio](https://www.pydio.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/pydio) |  |  |  |  |
 |[qBittorrent](https://www.qbittorrent.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-qbittorrent) |  |  |  |  |
 |[qFlood](https://hotio.dev/containers/qflood/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hotio.dev/containers/qflood/) |  |  |  |  |
