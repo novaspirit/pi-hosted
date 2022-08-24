@@ -7102,7 +7102,7 @@
 				"Tools"
 			],
 			"description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
-			"image": "benbusby/whoogle-search:0.7.3",
+			"image": "benbusby/whoogle-search:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/whoogle.png",
 			"name": "whoogle",
 			"platform": "linux",
