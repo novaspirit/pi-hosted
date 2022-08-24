@@ -1,0 +1,43 @@
+{
+	"categories": [
+		"Downloaders"
+	],
+	"description": "Prowlarr is an indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "Time Zone",
+			"name": "TZ"
+		}
+	],
+	"image_arm32": "lscr.io/linuxserver/prowlarr:develop",
+	"image_arm64": "lscr.io/linuxserver/prowlarr:develop",
+	"image_amd64": "lscr.io/linuxserver/prowlarr:develop",
+	"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-banner.png",
+	"name": "prowlarr",
+	"officialDoc": "https://hub.docker.com/r/linuxserver/prowlarr",
+	"platform": "linux",
+	"ports": [
+		"9696:9696/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "prowlarr",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/prowlarr",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://prowlarr.com"
+}
