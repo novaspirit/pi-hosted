@@ -5662,6 +5662,55 @@
 		},
 		{
 			"categories": [
+				"Downloaders",
+				"Books"
+			],
+			"description": "Readarr is an eBook and audiobook collection manager for Usenet and BitTorrent users.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "Time Zone",
+					"name": "TZ"
+				}
+			],
+			"image": "lscr.io/linuxserver/readarr:develop",
+			"logo": "https://github.com/Readarr/Readarr/blob/63ccc155d67c98cf39fbb574783f3805f5459b49/Logo/1024.png",
+			"name": "readarr",
+			"platform": "linux",
+			"ports": [
+				"8787:8787/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "readarr",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/readarr",
+					"container": "/config"
+				},
+				{
+					"bind": "/mnt/Books",
+					"container": "/books"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/readarr/downloads",
+					"container": "/downloads"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://readarr.com/\" target=\"_blank\">https://readarr.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.servarr.com/en/readarr\" target=\"_blank\">https://wiki.servarr.com/en/readarr</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"project-management",
 				"Other",
 				"Tools"
