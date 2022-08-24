@@ -1,7 +1,7 @@
 {
 	"categories": [
 		"Downloaders",
-    "Books"
+		"Books"
 	],
 	"description": "Readarr is an eBook and audiobook collection manager for Usenet and BitTorrent users.",
 	"env": [
@@ -39,14 +39,14 @@
 			"bind": "/portainer/Files/AppData/Config/readarr",
 			"container": "/config"
 		},
-    {
-      "bind": "/mnt/Books",
-      "container": "/books"
-    },
-    {
-      "bind": "/portainer/Files/AppData/Config/readarr/downloads",
-			"container": "/downloads"
+		{
+			"bind": "/mnt/Books",
+			"container": "/books"
 		},
+		{
+			"bind": "/portainer/Files/AppData/Config/readarr/downloads",
+			"container": "/downloads"
+		}
 	],
 	"webpage": "https://readarr.com/"
 }
