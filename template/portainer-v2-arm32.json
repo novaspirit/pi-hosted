@@ -713,10 +713,7 @@
 					"name": "NTP_SERVERS"
 				}
 			],
-			"repository": {
-				"stackfile": "stack/chrony-ntp.yml",
-				"url": "https://github.com/pi-hosted/pi-hosted/"
-			},
+			"image": "cturra/ntp:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/chrony.png",
 			"name": "chrony-ntp",
 			"platform": "linux",
@@ -725,7 +722,7 @@
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Chrony NTP",
-			"type": 3,
+			"type": 1,
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/cturra/docker-ntp\" target=\"_blank\">https://github.com/cturra/docker-ntp</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/cturra/docker-ntp/blob/main/README.md\" target=\"_blank\">https://github.com/cturra/docker-ntp/blob/main/README.md</a><br><br><br>"
 		},
 		{
