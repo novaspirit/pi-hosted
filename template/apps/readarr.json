@@ -24,7 +24,7 @@
 	"image_arm32": "lscr.io/linuxserver/readarr:develop",
 	"image_arm64": "lscr.io/linuxserver/readarr:develop",
 	"image_amd64": "lscr.io/linuxserver/readarr:develop",
-	"logo": "https://github.com/Readarr/Readarr/blob/63ccc155d67c98cf39fbb574783f3805f5459b49/Logo/1024.png",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Readarr.png",
 	"name": "readarr",
 	"officialDoc": "https://wiki.servarr.com/en/readarr",
 	"platform": "linux",
