@@ -2036,7 +2036,7 @@
 				}
 			],
 			"logo": "https://assets-global.website-files.com/5e9fae47f9a5b161fc3f7024/621813dfcf02a2fcaf04b6f3_gl_logo_horiz.svg",
-			"name": "drupal",
+			"name": "graylog",
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/graylog.yml",
