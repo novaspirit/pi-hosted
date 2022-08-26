@@ -1,0 +1,34 @@
+{
+	"categories": [
+		"Management",
+		"Monitor",
+		"Web",
+		"Tools"
+	],
+	"description": "Graylog is a centralized logging solution that allows the user to aggregate and search through logs. It provides a powerful query language, a processing pipeline for data transformation, alerting abilities, and much more.",
+	"env": [
+		{
+			"default": "somepasswordpepper",
+			"label": "GRAYLOG_PASSWORD_SECRET",
+			"name": "PASSWORD_SECRET"
+		},
+		{
+			"default": "http://192.168.0.1:7555",
+			"label": "GRAYLOG_HTTP_EXTERNAL_URI",
+			"name": "HTTP_URI"
+		}
+	],
+	"logo": "https://assets-global.website-files.com/5e9fae47f9a5b161fc3f7024/621813dfcf02a2fcaf04b6f3_gl_logo_horiz.svg",
+	"name": "drupal",
+	"officialDoc": "https://docs.graylog.org/docs/docker",
+	"platform": "linux",
+	"repository": {
+		"stackfile_arm64": "stack/graylog.yml",
+		"stackfile_amd64": "stack/graylog.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted/"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Graylog",
+	"type": 3,
+	"webpage": "https://www.graylog.org/"
+}
