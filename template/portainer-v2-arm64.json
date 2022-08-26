@@ -2017,6 +2017,38 @@
 		},
 		{
 			"categories": [
+				"Management",
+				"Monitor",
+				"Web",
+				"Tools"
+			],
+			"description": "Graylog is a centralized logging solution that allows the user to aggregate and search through logs. It provides a powerful query language, a processing pipeline for data transformation, alerting abilities, and much more.",
+			"env": [
+				{
+					"default": "somepasswordpepper",
+					"label": "GRAYLOG_PASSWORD_SECRET",
+					"name": "PASSWORD_SECRET"
+				},
+				{
+					"default": "http://192.168.0.1:7555",
+					"label": "GRAYLOG_HTTP_EXTERNAL_URI",
+					"name": "HTTP_URI"
+				}
+			],
+			"logo": "https://assets-global.website-files.com/5e9fae47f9a5b161fc3f7024/621813dfcf02a2fcaf04b6f3_gl_logo_horiz.svg",
+			"name": "drupal",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "stack/graylog.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted/"
+			},
+			"restart_policy": "unless-stopped",
+			"title": "Graylog",
+			"type": 3,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.graylog.org\" target=\"_blank\">https://www.graylog.org</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.graylog.org/docs/docker\" target=\"_blank\">https://docs.graylog.org/docs/docker</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools",
 				"Finance"
