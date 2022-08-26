@@ -30,5 +30,5 @@
 	"restart_policy": "unless-stopped",
 	"title": "Graylog",
 	"type": 3,
-	"webpage": "https://www.graylog.org/"
+	"webpage": "https://www.graylog.org"
 }
