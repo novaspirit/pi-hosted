@@ -13,7 +13,7 @@
 			"name": "PASSWORD_SECRET"
 		},
 		{
-			"default": "http://192.168.0.1:7555",
+			"default": "http://192.168.0.1:7555/",
 			"label": "GRAYLOG_HTTP_EXTERNAL_URI",
 			"name": "HTTP_URI"
 		}
