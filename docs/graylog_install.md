@@ -31,6 +31,8 @@ Keep in mind this process of deployment will take roughly 10 minutes to complete
 
 Once the servers are deployed and showing as up (running) you should be able to head to http://192.168.1.10:7555/ in your browser and you'll be greated by the login screen
 
+![image](https://user-images.githubusercontent.com/42878642/187014060-412a8858-54b2-4a22-abd3-de614da6befd.png)
+
 Username: admin </br>
 Password: admin
 
