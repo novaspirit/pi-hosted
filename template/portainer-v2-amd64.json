@@ -2045,7 +2045,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Graylog",
 			"type": 3,
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.graylog.org\" target=\"_blank\">https://www.graylog.org</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.graylog.org/docs/docker\" target=\"_blank\">https://docs.graylog.org/docs/docker</a><br><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.graylog.org\" target=\"_blank\">https://www.graylog.org</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.graylog.org/docs/docker\" target=\"_blank\">https://docs.graylog.org/docs/docker</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/graylog_install.md\" target=\"_blank\">graylog_install.md</a><br><br><br>"
 		},
 		{
 			"categories": [
