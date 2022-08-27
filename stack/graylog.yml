@@ -29,10 +29,10 @@ services:
       - graylog_data:/usr/share/graylog/data
     environment:
       # CHANGE ME (must be at least 16 characters)!
-      - GRAYLOG_PASSWORD_SECRET={$PASSWORD_SECRET}
+      - GRAYLOG_PASSWORD_SECRET=${PASSWORD_SECRET}
       # Password: admin
       - GRAYLOG_ROOT_PASSWORD_SHA2=8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
-      - GRAYLOG_HTTP_EXTERNAL_URI={$HTTP_URI}
+      - GRAYLOG_HTTP_EXTERNAL_URI=${HTTP_URI}
     entrypoint: /usr/bin/tini -- wait-for-it elasticsearch:9200 --  /docker-entrypoint.sh
     links:
         - mongodb:mongo
