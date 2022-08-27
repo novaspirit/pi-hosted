@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-
+![image](https://user-images.githubusercontent.com/42878642/187014416-ffa2e0bd-2e05-4f8b-a3e9-7d04d1572943.png)
 
 # Installation
 
