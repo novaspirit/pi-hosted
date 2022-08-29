@@ -3,9 +3,9 @@
 List of all apps included in this project with info related to it.
 
 - **Arm32:** 166 apps
-- **Arm64:** 176 apps
-- **Amd64:** 174 apps
-- **Total:** 176 apps
+- **Arm64:** 177 apps
+- **Amd64:** 175 apps
+- **Total:** 177 apps
 
 ---
 
@@ -59,6 +59,7 @@ List of all apps included in this project with info related to it.
 |[Gitea with Mariadb](https://gitea.com/)|Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.gitea.io/en-us/install-with-docker/#mysql-database) |  |  |  |  |
 |[Go-Socks5-Proxy](https://hub.docker.com/r/serjs/go-socks5-proxy)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/serjs/go-socks5-proxy) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=IWj1-j2QWvo) |
 |[Gotify](https://gotify.net/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://gotify.net/docs/install) |  |  |  |  |
+|[Graylog](https://www.graylog.org)|Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.graylog.org/docs/docker) | [![](../build/images/red_doc_icon.png)](../docs/graylog_install.md) |  |  |  |
 |[Grocy](https://grocy.info/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-grocy) |  |  |  |  |
 |[Guacamole](https://guacamole.apache.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oznu/guacamole) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3) |
 |[Headphones](https://github.com/rembo10/headphones)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-headphones) |  |  |  |  |
