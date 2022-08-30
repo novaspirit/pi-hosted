@@ -43,7 +43,7 @@
 			"name": "GEOIPUPDATE_LICENSE_KEY"
 		}
 	],
-	"logo": "https://d33wubrfki0l68.cloudfront.net/3986a9ebfee622cb3fed7c0b7d3661e431dcff5c/8fd41/img/icon_top_brand.svg",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/authentik.svg",
 	"name": "authentik",
 	"note": "For this to work properly you will need a GeoIP account.  Go to https://www.maxmind.com/en/geolite2/signup, once done generate a license key and copy in your user number.  For info on emailing in the system see, https://goauthentik.io/docs/installation/docker-compose#email-configuration-optional-but-recommended",
 	"officialDoc": "https://goauthentik.io/docs/",
