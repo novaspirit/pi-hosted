@@ -97,6 +97,16 @@
 			"ID": 17,
 			"Title": "Building NAS with Container",
 			"URL": "https://www.youtube.com/watch?v=9ln6UFH4z8o"
+		},
+		{
+			"ID": 18,
+			"Title": "Reviewing Stats on 25+ containers on my Raspberry Pi",
+			"URL": "https://www.youtube.com/watch?v=_tVj0FX5wYg"
+		},
+		{
+			"ID": "Extra3",
+			"Title": "Biggest Update to Pi-Hosted Portainer.io Template!",
+			"URL": "https://www.youtube.com/watch?v=7R7l6c3wswQ"
 		}
 	],
 	"docs": [
