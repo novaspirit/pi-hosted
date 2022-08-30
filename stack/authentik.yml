@@ -1,0 +1,87 @@
+version: '3.4'
+
+services:
+  postgresql:
+    image: postgres:12-alpine
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d ${POSTGRES_DB} -U ${POSTGRES_USER}"]
+      start_period: 20s
+      interval: 30s
+      retries: 5
+      timeout: 5s
+    volumes:
+      - /portainer/Files/AppData/Config/authentik/postgre:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_DB=${POSTGRES_DB}
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping | grep PONG"]
+      start_period: 20s
+      interval: 30s
+      retries: 5
+      timeout: 3s
+    volumes:
+      - /portainer/Files/AppData/Config/authentik/redis:/data
+  server:
+    image: ghcr.io/goauthentik/server:2022.8.2
+    restart: unless-stopped
+    command: server
+    environment:
+      AUTHENTIK_REDIS__HOST: redis
+      AUTHENTIK_POSTGRESQL__HOST: postgresql
+      AUTHENTIK_POSTGRESQL__USER: ${POSTGRES_USER}
+      AUTHENTIK_POSTGRESQL__NAME: ${POSTGRES_DB}
+      AUTHENTIK_POSTGRESQL__PASSWORD: ${POSTGRES_PASSWORD}
+      AUTHENTIK_SECRET_KEY: ${AUTHENTIK_SECRET_KEY}
+      AUTHENTIK_AUTHENTIK__GEOIP: /geoip/GeoLite2-City.mmdb
+      AUTHENTIK_ERROR_REPORTING__ENABLED: "true"
+      # WORKERS: 2
+    volumes:
+      - /portainer/Files/AppData/Config/authentik/media:/media
+      - /portainer/Files/AppData/Config/authentik/custom-templates:/templates
+      - /portainer/Files/AppData/Config/authentik/geoip:/geoip
+    ports:
+      - "9191:9000"
+      - "7443:9443"
+  worker:
+    image: ghcr.io/goauthentik/server:2022.8.2
+    restart: unless-stopped
+    command: worker
+    environment:
+      AUTHENTIK_REDIS__HOST: redis
+      AUTHENTIK_POSTGRESQL__HOST: postgresql
+      AUTHENTIK_POSTGRESQL__USER: ${POSTGRES_USER}
+      AUTHENTIK_POSTGRESQL__NAME: ${POSTGRES_DB}
+      AUTHENTIK_POSTGRESQL__PASSWORD: ${POSTGRES_PASSWORD}
+      AUTHENTIK_SECRET_KEY: ${AUTHENTIK_SECRET_KEY}
+      AUTHENTIK_AUTHENTIK__GEOIP: /geoip/GeoLite2-City.mmdb
+      #AUTHENTIK_ERROR_REPORTING__ENABLED: "true" #Optional
+      #AUTHENTIK_EMAIL__HOST: localhost #Optional
+      #AUTHENTIK_EMAIL__PORT: 25 #Optional
+      #AUTHENTIK_EMAIL__USERNAME: #Optional
+      #AUTHENTIK_EMAIL__PASSWORD: #Optional
+      #AUTHENTIK_EMAIL__USE_TLS: false #Optional
+      #AUTHENTIK_EMAIL__USE_SSL: false #Optional
+      #AUTHENTIK_EMAIL__TIMEOUT: 10 #Optional
+      #AUTHENTIK_EMAIL__FROM: authentik@localhost #Optional
+    user: root
+    volumes:
+      - /portainer/Files/AppData/Config/authentik/media:/media
+      - /portainer/Files/AppData/Config/authentik/certs:/certs
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /portainer/Files/AppData/Config/authentik/custom-templates:/templates
+      - /portainer/Files/AppData/Config/authentik/geoip:/geoip
+  geoipupdate:
+    image: "maxmindinc/geoipupdate:latest"
+    volumes:
+      - /portainer/Files/AppData/Config/authentik/geoip:/usr/share/GeoIP
+    environment:
+      GEOIPUPDATE_EDITION_IDS: ${GEOIPUPDATE_EDITION_IDS}
+      GEOIPUPDATE_ACCOUNT_ID: ${GEOIPUPDATE_ACCOUNT_ID}
+      GEOIPUPDATE_LICENSE_KEY: ${GEOIPUPDATE_LICENSE_KEY}
+      GEOIPUPDATE_FREQUENCY: "8" #Optional
