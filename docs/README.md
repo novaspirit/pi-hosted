@@ -79,9 +79,9 @@ You're done! Now just click App Templates and deploy applications!
 |Extra2|[3 Huge Announcements!! Discord Giveaway! Pi-Hosted!! & SBC Garage Sale!](https://www.youtube.com/watch?v=Ppv1cUomwn0)||
 |13|[Beginners Guide to WireGuard Docker and Installing Pi-OS 64bit](https://www.youtube.com/watch?v=yB_jAumIxOg)|[Install Doc](../docs/wireguard-install.md)|
 |14|[My Most used container! Snippet Box](https://www.youtube.com/watch?v=v-jUyB3fvAo)||
-|15|[Rust Desk Open Source Remote Desktop](https://www.youtube.com/watch?v=9ln6UFH4z8o)||
+|15|[Rust Desk Open Source Remote Desktop](https://www.youtube.com/watch?v=PDnqFnnbVHg)||
 |16|[Route Docker Traffic Through VPN Container](https://www.youtube.com/watch?v=IWj1-j2QWvo)||
-|17|[Building NAS with Container](https://www.youtube.com/watch?v=PDnqFnnbVHg)||
+|17|[Building NAS with Container](https://www.youtube.com/watch?v=9ln6UFH4z8o)||
 
 ### Aditional Documentation
 
