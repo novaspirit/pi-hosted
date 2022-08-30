@@ -2040,7 +2040,7 @@
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/graylog.yml",
-				"url": "https://github.com/Griffen8280/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			},
 			"restart_policy": "unless-stopped",
 			"title": "Graylog",
