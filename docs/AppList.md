@@ -3,9 +3,9 @@
 List of all apps included in this project with info related to it.
 
 - **Arm32:** 166 apps
-- **Arm64:** 177 apps
-- **Amd64:** 175 apps
-- **Total:** 177 apps
+- **Arm64:** 178 apps
+- **Amd64:** 176 apps
+- **Total:** 178 apps
 
 ---
 
@@ -19,6 +19,7 @@ List of all apps included in this project with info related to it.
 |[Archivebox](https://archivebox.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ArchiveBox/ArchiveBox/wiki/Docker) |  |  |  |  |
 |[AriaNG](https://github.com/hurlenko/aria2-ariang-docker)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/hurlenko/aria2-ariang-docker) |  |  |  |  |
 |[Authelia](https://www.authelia.com/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://www.authelia.com/docs/configuration/) |  |  |  |  |
+|[Authentik](https://goauthentik.io/)|Arm64<br>Amd64|Stack| [![](../build/images/blue_doc_icon.png)](https://goauthentik.io/docs/) |  | [![](../build/images/script_icon.png)](../tools/install_authentik.sh) |  |  |
 |[Bazarr](https://www.bazarr.media/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.bazarr.media/Getting-Started/Installation/Docker/docker/) |  |  |  |  |
 |[Beets](https://beets.io/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-beets) |  |  |  |  |
 |[Booksonic](https://booksonic.org/)|Arm32<br>Arm64<br>Amd64|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-booksonic-air) |  |  |  |  |
