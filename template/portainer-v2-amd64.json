@@ -441,7 +441,7 @@
 					"name": "GEOIPUPDATE_LICENSE_KEY"
 				}
 			],
-			"logo": "https://d33wubrfki0l68.cloudfront.net/3986a9ebfee622cb3fed7c0b7d3661e431dcff5c/8fd41/img/icon_top_brand.svg",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/authentik.svg",
 			"name": "authentik",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://goauthentik.io/\" target=\"_blank\">https://goauthentik.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://goauthentik.io/docs/\" target=\"_blank\">https://goauthentik.io/docs/</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_authentik.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_authentik.sh | <br><br>For this to work properly you will need a GeoIP account.  Go to https://www.maxmind.com/en/geolite2/signup, once done generate a license key and copy in your user number.  For info on emailing in the system see, https://goauthentik.io/docs/installation/docker-compose#email-configuration-optional-but-recommended",
 			"platform": "linux",
