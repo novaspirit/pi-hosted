@@ -62,7 +62,8 @@ for app in template/apps/*.json; do
 	# Pre-Install Script
 	if Script=$( echo "$appjson" | jq -e '.preInstallScript' ) ; then
 		scriptexec=$( jq '.tools[] | select(.File=='"$Script"') | .Exec' "$appinfo" )
-		Script="<br><b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- ${rawrepo}tools/${Script:1:-1} | ${scriptexec:1:-1}"
+		Script="<br><b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- ${rawrepo}tools/${scriptexec:1:-1} | bash"
+		#Script="<br><b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- ${rawrepo}tools/${Script:1:-1} | ${scriptexec:1:-1}"
 		appjson=$( echo "$appjson" | jq 'del(.preInstallScript)' )
 	else
 		unset Script
