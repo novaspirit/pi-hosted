@@ -82,6 +82,8 @@ You're done! Now just click App Templates and deploy applications!
 |15|[Rust Desk Open Source Remote Desktop](https://www.youtube.com/watch?v=PDnqFnnbVHg)||
 |16|[Route Docker Traffic Through VPN Container](https://www.youtube.com/watch?v=IWj1-j2QWvo)||
 |17|[Building NAS with Container](https://www.youtube.com/watch?v=9ln6UFH4z8o)||
+|18|[Reviewing Stats on 25+ containers on my Raspberry Pi](https://www.youtube.com/watch?v=_tVj0FX5wYg)||
+|Extra3|[Biggest Update to Pi-Hosted Portainer.io Template!](https://www.youtube.com/watch?v=7R7l6c3wswQ)||
 
 ### Aditional Documentation
 
