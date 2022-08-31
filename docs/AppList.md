@@ -2,7 +2,7 @@
 
 List of all apps included in this project with info related to it.
 
-- **Arm32:** 168 apps
+- **Arm32:** 167 apps
 - **Arm64:** 180 apps
 - **Amd64:** 178 apps
 - **Total:** 180 apps
@@ -183,7 +183,7 @@ List of all apps included in this project with info related to it.
 |[WebGrab+Plus](http://www.webgrabplus.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-webgrabplus) |  |  |  |
 |[Whoogle](https://github.com/benbusby/whoogle-search)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/benbusby/whoogle-search#g-manual-docker) |  | [![](../build/images/script_icon.png)](../tools/install_whoogle.sh) | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12) |
 |[Wikijs](https://js.wiki/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-wikijs) |  |  |  |
-|[Windows 2000](https://github.com/hectorm/docker-qemu-win2000)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/hectorm/docker-qemu-win2000#start-an-instance) |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13) |
+|[Windows 2000](https://github.com/hectorm/docker-qemu-win2000)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/hectorm/docker-qemu-win2000#start-an-instance) |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13) |
 |[Wireguard Server](https://github.com/WeeJeWel/wg-easy/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/WeeJeWel/wg-easy/#1-install-docker) | [![](../build/images/red_doc_icon.png)](../docs/wireguard-install.md) |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=yB_jAumIxOg) |
 |[Wordpress](https://wordpress.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/docker-library/docs/tree/master/wordpress#-via-docker-stack-deploy-or-docker-compose) | [![](../build/images/red_doc_icon.png)](../docs/wordpress_installation.md) |  |  |
 |[Yacht](https://yacht.sh/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://yacht.sh/docs/Installation/Install#via-docker-compose) |  |  |  |
