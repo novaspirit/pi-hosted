@@ -25,7 +25,11 @@ sed -i "s/XXX_total_XXX/$total/" "$AppList"
 while IFS='' read -u 9 -r appfile || [[ -n $appfile ]]; do
 
 	# Clear previous variables
-	unset doc script extra vid oweb odoc type Arch
+	unset doc script vid oweb odoc type
+
+	hasArm32=':x:'
+	hasArm64=':x:'
+	hasAmd64=':x:'
 
 	# Get app json
 	appconf=$( jq '.' "$appfile" )
@@ -36,22 +40,20 @@ while IFS='' read -u 9 -r appfile || [[ -n $appfile ]]; do
 	# App Architecture
 	# tag with no specific architecture is added to all of them
 	if echo "$appconf" | jq -e '.image' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile' &> /dev/null ; then
-		Arch='Arm32<br>Arm64<br>Amd64'
+		hasArm32=':heavy_check_mark:'
+		hasArm64=':heavy_check_mark:'
+		hasAmd64=':heavy_check_mark:'
 
 	# Parse tags with specific architectures
 	else
 		# Arm32
-		if echo "$appconf" | jq -e '.image_arm32' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile_arm32' &> /dev/null ; then Arch='Arm32' ; fi
+		if echo "$appconf" | jq -e '.image_arm32' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile_arm32' &> /dev/null ; then hasArm32=':heavy_check_mark:' ; fi
 
 		# Arm64
-		if echo "$appconf" | jq -e '.image_arm64' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile_arm64' &> /dev/null ; then
-			Arch="$([[ -n "$Arch" ]] && echo "$Arch<br>" )Arm64"
-		fi
+		if echo "$appconf" | jq -e '.image_arm64' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile_arm64' &> /dev/null ; then hasArm64=':heavy_check_mark:' ; fi
 
 		# Amd64
-		if echo "$appconf" | jq -e '.image_amd64' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile_amd64' &> /dev/null ; then
-			Arch="$([[ -n "$Arch" ]] && echo "$Arch<br>" )Amd64"
-		fi
+		if echo "$appconf" | jq -e '.image_amd64' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile_amd64' &> /dev/null ; then hasAmd64=':heavy_check_mark:' ; fi
 	fi
 
 	# Apps Type
@@ -89,28 +91,6 @@ while IFS='' read -u 9 -r appfile || [[ -n $appfile ]]; do
 		unset script
 	fi
 
-	# Get Extra Script from app info
-	if ExtraScript=$( echo "$appconf" | jq -e '.extraScript' ) ; then
-		# If only one entry
-		if [ "$(echo "$ExtraScript" | wc -l )" == "1" ]; then
-			extra="[${ExtraScript:1:-1}]($Extras${ExtraScript:1:-1})"
-
-		# If multiples entries
-		else
-			n_ext=$(echo "$ExtraScript" | jq '. | length')
-			for n in $(seq 0 $(( n_ext - 1 ))); do
-				ext=$(echo "$ExtraScript" | jq ".[$n]" | tr -d '"')
-				if [ "$n" == "0" ]; then
-					extra="[$ext]($Extras$ext)"
-				else
-					extra="$extra<br>[$ext]($Extras$ext)"
-				fi
-			done
-		fi
-	else
-		unset extra n_ext ExtraScript
-	fi
-
 	# Get Video from app info
 	vid=$(echo "$appconf" | jq ".videoID")
 	if [ "$vid" != "null" ] ; then
@@ -121,7 +101,7 @@ while IFS='' read -u 9 -r appfile || [[ -n $appfile ]]; do
 	fi
 	
 	# Building App Line
-	line="|$oweb|$Arch|$apptype| $odoc | $doc | $script | $extra | $vid |"
+	line="|$oweb|$hasArm32|$hasArm64|$hasAmd64|$apptype| $odoc | $doc | $script | $vid |"
 
 	# Change container type to string (Default to Container when not set)
 	line="${line//|1|/|Container|}"

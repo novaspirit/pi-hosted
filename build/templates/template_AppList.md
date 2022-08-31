@@ -9,5 +9,5 @@ List of all apps included in this project with info related to it.
 
 ---
 
-|App Title|System|Type |Official<br>Doc|PiHosted<br>Doc|Install Script|Extra Scripts|Youtube Video|
-|:--------|:----:|:---:|:-------------:|:-------------:|:------------:|:------------|:-----------:|
+|App Title|Arm32|Arm64|Amd64|Type |Official<br>Doc|PiHosted<br>Doc|Install Script|Youtube Video|
+|:--------|:---:|:---:|:---:|:---:|:-------------:|:-------------:|:------------:|:-----------:|

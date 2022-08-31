@@ -1,0 +1,61 @@
+{
+	"categories": [
+		"Authentication",
+		"Cloud",
+		"Management",
+		"Security"
+	],
+	"description": "Authentik is an open-source Identity Provider focused on flexibility and versatility.  This will start the stack with basic options, to customize further ie. adding email settings then use the editor under the deployed stack and 'Update the stack'",
+	"env": [
+		{
+			"default": "authentik",
+			"label": "POSTGRES_USER",
+			"name": "POSTGRES_USER"
+		},
+		{
+			"default": "authentik",
+			"label": "POSTGRES_DB",
+			"name": "POSTGRES_DB"
+		},
+		{
+			"default": "YOUR_POSTGRE_PASSWORD",
+			"label": "POSTGRES_PASSWORD",
+			"name": "POSTGRES_PASSWORD"
+		},
+		{
+			"default": "YOUR_AUTHENTIK_SECRET_KEY",
+			"label": "AUTHENTIK_SECRET_KEY",
+			"name": "AUTHENTIK_SECRET_KEY"
+		},
+		{
+			"default": "GeoLite2-City",
+			"label": "GEOIPUPDATE_EDITION_IDS",
+			"name": "GEOIPUPDATE_EDITION_IDS"
+		},
+		{
+			"default": "Your GEOIP ID",
+			"label": "GEOIPUPDATE_ACCOUNT_ID",
+			"name": "GEOIPUPDATE_ACCOUNT_ID"
+		},
+		{
+			"default": "Your GEOIP License Key",
+			"label": "GEOIPUPDATE_LICENSE_KEY",
+			"name": "GEOIPUPDATE_LICENSE_KEY"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/authentik.svg",
+	"name": "authentik",
+	"note": "For this to work properly you will need a GeoIP account.  Go to https://www.maxmind.com/en/geolite2/signup, once done generate a license key and copy in your user number.  For info on emailing in the system see, https://goauthentik.io/docs/installation/docker-compose#email-configuration-optional-but-recommended",
+	"officialDoc": "https://goauthentik.io/docs/",
+	"platform": "linux",
+	"preInstallScript": "install_authentik.sh",
+	"repository": {
+		"stackfile_arm64": "stack/authentik.yml",
+		"stackfile_amd64": "stack/authentik.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted/"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Authentik",
+	"type": 3,
+	"webpage": "https://goauthentik.io/"
+}

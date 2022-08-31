@@ -398,6 +398,63 @@
 		},
 		{
 			"categories": [
+				"Authentication",
+				"Cloud",
+				"Management",
+				"Security"
+			],
+			"description": "Authentik is an open-source Identity Provider focused on flexibility and versatility.  This will start the stack with basic options, to customize further ie. adding email settings then use the editor under the deployed stack and 'Update the stack'",
+			"env": [
+				{
+					"default": "authentik",
+					"label": "POSTGRES_USER",
+					"name": "POSTGRES_USER"
+				},
+				{
+					"default": "authentik",
+					"label": "POSTGRES_DB",
+					"name": "POSTGRES_DB"
+				},
+				{
+					"default": "YOUR_POSTGRE_PASSWORD",
+					"label": "POSTGRES_PASSWORD",
+					"name": "POSTGRES_PASSWORD"
+				},
+				{
+					"default": "YOUR_AUTHENTIK_SECRET_KEY",
+					"label": "AUTHENTIK_SECRET_KEY",
+					"name": "AUTHENTIK_SECRET_KEY"
+				},
+				{
+					"default": "GeoLite2-City",
+					"label": "GEOIPUPDATE_EDITION_IDS",
+					"name": "GEOIPUPDATE_EDITION_IDS"
+				},
+				{
+					"default": "Your GEOIP ID",
+					"label": "GEOIPUPDATE_ACCOUNT_ID",
+					"name": "GEOIPUPDATE_ACCOUNT_ID"
+				},
+				{
+					"default": "Your GEOIP License Key",
+					"label": "GEOIPUPDATE_LICENSE_KEY",
+					"name": "GEOIPUPDATE_LICENSE_KEY"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/authentik.svg",
+			"name": "authentik",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://goauthentik.io/\" target=\"_blank\">https://goauthentik.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://goauthentik.io/docs/\" target=\"_blank\">https://goauthentik.io/docs/</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_authentik.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_authentik.sh | bash<br><br>For this to work properly you will need a GeoIP account.  Go to https://www.maxmind.com/en/geolite2/signup, once done generate a license key and copy in your user number.  For info on emailing in the system see, https://goauthentik.io/docs/installation/docker-compose#email-configuration-optional-but-recommended",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "stack/authentik.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted/"
+			},
+			"restart_policy": "unless-stopped",
+			"title": "Authentik",
+			"type": 3
+		},
+		{
+			"categories": [
 				"Video",
 				"Music"
 			],
@@ -1102,7 +1159,7 @@
 					"container": "/app/public/conf.yml"
 				}
 			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://dashy.to\" target=\"_blank\">https://dashy.to</a><br><b>Official Docker Documentation: </b><a href=\"https://dashy.to/docs/quick-start\" target=\"_blank\">https://dashy.to/docs/quick-start</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_dashy.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_dashy.sh | <br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://dashy.to\" target=\"_blank\">https://dashy.to</a><br><b>Official Docker Documentation: </b><a href=\"https://dashy.to/docs/quick-start\" target=\"_blank\">https://dashy.to/docs/quick-start</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_dashy.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_dashy.sh | bash<br><br>"
 		},
 		{
 			"categories": [
@@ -2040,7 +2097,7 @@
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/graylog.yml",
-				"url": "https://github.com/Griffen8280/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			},
 			"restart_policy": "unless-stopped",
 			"title": "Graylog",
@@ -5807,7 +5864,7 @@
 			"image": "rustdesk/rustdesk-server-s6:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/rustdesk.png",
 			"name": "rustdesk",
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://rustdesk.com/\" target=\"_blank\">https://rustdesk.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/rustdesk/rustdesk-server\" target=\"_blank\">https://github.com/rustdesk/rustdesk-server</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=9ln6UFH4z8o\" target=\"_blank\">Rust Desk Open Source Remote Desktop</a><br><br>Don't forget to open ports 21115 to 21119 in your router.",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://rustdesk.com/\" target=\"_blank\">https://rustdesk.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/rustdesk/rustdesk-server\" target=\"_blank\">https://github.com/rustdesk/rustdesk-server</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=PDnqFnnbVHg\" target=\"_blank\">Rust Desk Open Source Remote Desktop</a><br><br>Don't forget to open ports 21115 to 21119 in your router.",
 			"platform": "linux",
 			"ports": [
 				"21115:21115/tcp",
@@ -6025,7 +6082,7 @@
 					"container": "/share"
 				}
 			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.samba.org/\" target=\"_blank\">https://www.samba.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/dperson/samba\" target=\"_blank\">https://github.com/dperson/samba</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=PDnqFnnbVHg\" target=\"_blank\">Building NAS with Container</a><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.samba.org/\" target=\"_blank\">https://www.samba.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/dperson/samba\" target=\"_blank\">https://github.com/dperson/samba</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=9ln6UFH4z8o\" target=\"_blank\">Building NAS with Container</a><br><br>"
 		},
 		{
 			"categories": [
@@ -7494,7 +7551,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Yourls",
 			"type": 3,
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://yourls.org/\" target=\"_blank\">https://yourls.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://yourls.org/#Install\" target=\"_blank\">https://yourls.org/#Install</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_yourls.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_yourls.sh | <br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://yourls.org/\" target=\"_blank\">https://yourls.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://yourls.org/#Install\" target=\"_blank\">https://yourls.org/#Install</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_yourls.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_yourls.sh | bash<br><br>"
 		},
 		{
 			"categories": [
