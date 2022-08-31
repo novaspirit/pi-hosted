@@ -5,6 +5,7 @@
         "Other"
     ],
     "description": "Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.",
+    "note": "This version is not secured and should only be used if you want Docker integration and you don't worry about users on your network.",
     "env": [
         {
             "default": "1000",
