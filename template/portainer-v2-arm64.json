@@ -2873,7 +2873,7 @@
 			],
 			"description": "jfa-go is a user management app for Jellyfin (and now Emby) that provides invite-based account creation as well as other features that make one's instance much easier to manage.",
 			"image": "hrfee/jfa-go:latest",
-			"logo": "https://github.com/hrfee/jfa-go/blob/main/images/banner.svg",
+			"logo": "https://github.com/hrfee/jfa-go/blob/main/images/jfa-go-icon.png",
 			"name": "jfa-go",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://jfa-go.com/\" target=\"_blank\">https://jfa-go.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.jfa-go.com/\" target=\"_blank\">https://wiki.jfa-go.com/</a><br><br><br>This system is setup to work with either Emby or Jellyfin out of the box.  During the initial setup the user will have the option of which server they will be administering.",
 			"platform": "linux",
