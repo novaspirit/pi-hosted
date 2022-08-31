@@ -2,10 +2,10 @@
 
 List of all apps included in this project with info related to it.
 
-- **Arm32:** 166 apps
-- **Arm64:** 178 apps
-- **Amd64:** 176 apps
-- **Total:** 178 apps
+- **Arm32:** 168 apps
+- **Arm64:** 180 apps
+- **Amd64:** 178 apps
+- **Total:** 180 apps
 
 ---
 
@@ -66,6 +66,7 @@ List of all apps included in this project with info related to it.
 |[Headphones](https://github.com/rembo10/headphones)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-headphones) |  |  |  |
 |[Heimdall](https://heimdall.site/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-heimdall) |  |  |  |
 |[Homarr - simple and lightweight homepage for your server](https://homarr.vercel.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ajnart/homarr) |  |  |  |
+|[Homarr-Secured - simple and lightweight homepage for your server](https://homarr.vercel.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ajnart/homarr) |  |  |  |
 |[Home Assistant](https://www.home-assistant.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://www.home-assistant.io/installation/raspberrypi#install-home-assistant-container) |  |  |  |
 |[Homebridge - Debian](https://homebridge.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |
 |[Homebridge](https://homebridge.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |
@@ -78,6 +79,7 @@ List of all apps included in this project with info related to it.
 |[JDownloader](https://my.jdownloader.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/jaymoulin/docker-jdownloader) |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[Jellyfin](https://jellyfin.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jellyfin) |  |  |  |
 |[Jellyseerr - Overseerr Fork with Jellyfin, Emby & Plex Support](https://github.com/Fallenbagel/jellyseerr)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/fallenbagel/jellyseerr) |  |  |  |
+|[Jellyfin-Accounts](https://jfa-go.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.jfa-go.com/) |  |  |  |
 |[Kodi Headless](https://kodi.tv/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/lsioarmhf/kodi-headless-aarch64/) |  |  |  |
 |[Komga](https://github.com/gotson/komga)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://komga.org/) |  |  |  |
 |[LazyLibrarian](https://lazylibrarian.gitlab.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lazylibrarian) |  |  |  |

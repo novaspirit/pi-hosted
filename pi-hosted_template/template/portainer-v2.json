@@ -2003,6 +2003,7 @@
 				"Other"
 			],
 			"description": "Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://homarr.vercel.app/\" target=\"_blank\">https://homarr.vercel.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ajnart/homarr\" target=\"_blank\">https://github.com/ajnart/homarr</a><br><br><br>This version is not secured and should only be used if you want Docker integration and you don't worry about users on your network.",
 			"env": [
 				{
 					"default": "1000",
@@ -2038,8 +2039,48 @@
 					"bind": "/portainer/Files/AppData/Config/Homarr/icons",
 					"container": "/app/public/icons"
 				}
+			]
+		},
+		{
+			"categories": [
+				"Tools",
+				"Web",
+				"Other"
 			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://homarr.vercel.app/\" target=\"_blank\">https://homarr.vercel.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ajnart/homarr\" target=\"_blank\">https://github.com/ajnart/homarr</a><br><br><br>"
+			"description": "Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://homarr.vercel.app/\" target=\"_blank\">https://homarr.vercel.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ajnart/homarr\" target=\"_blank\">https://github.com/ajnart/homarr</a><br><br><br>This version does not allow for interaction with the docker environment for security purposes.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "ghcr.io/ajnart/homarr:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homarr.png",
+			"name": "homarr-secured",
+			"platform": "linux",
+			"ports": [
+				"7575:7575/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Homarr-Secured - simple and lightweight homepage for your server",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Homarr/configs",
+					"container": "/app/data/configs"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Homarr/icons",
+					"container": "/app/public/icons"
+				}
+			]
 		},
 		{
 			"description": "Home Assistant is a free and open-source software for home automation that is designed to be the central control system for smart home devices with focus on local control and privacy.",
@@ -2424,6 +2465,42 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://jellyfin.org/\" target=\"_blank\">https://jellyfin.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-jellyfin\" target=\"_blank\">https://docs.linuxserver.io/images/docker-jellyfin</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Video",
+				"Music",
+				"Photos",
+				"Management"
+			],
+			"description": "jfa-go is a user management app for Jellyfin (and now Emby) that provides invite-based account creation as well as other features that make one's instance much easier to manage.",
+			"image": "hrfee/jfa-go:latest",
+			"logo": "https://github.com/hrfee/jfa-go/raw/main/images/jfa-go-icon.png",
+			"name": "jfa-go",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://jfa-go.com/\" target=\"_blank\">https://jfa-go.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.jfa-go.com/\" target=\"_blank\">https://wiki.jfa-go.com/</a><br><br><br>This system is setup to work with either Emby or Jellyfin out of the box.  During the initial setup the user will have the option of which server they will be administering.",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Jellyfin-Accounts",
+			"type": 1,
+			"network": "bridge",
+			"ports": [
+				"8056:8056/tcp"
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Jelllyfin",
+					"container": "/jf"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/jfago",
+					"container": "/data"
+				},
+				{
+					"bind": "/etc/localtime",
+					"container": "/etc/localtime",
+					"readonly": true
+				}
+			]
 		},
 		{
 			"categories": [

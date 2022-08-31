@@ -1,0 +1,40 @@
+{
+	"categories": [
+		"Video",
+		"Music",
+		"Photos",
+		"Management"
+	],
+	"description": "jfa-go is a user management app for Jellyfin (and now Emby) that provides invite-based account creation as well as other features that make one's instance much easier to manage.",
+	"image_arm32": "hrfee/jfa-go:latest",
+	"image_arm64": "hrfee/jfa-go:latest",
+	"image_amd64": "hrfee/jfa-go:latest",
+	"logo": "https://github.com/hrfee/jfa-go/raw/main/images/jfa-go-icon.png",
+	"name": "jfa-go",
+	"note": "This system is setup to work with either Emby or Jellyfin out of the box.  During the initial setup the user will have the option of which server they will be administering.",
+	"officialDoc": "https://wiki.jfa-go.com/",
+	"platform": "linux",
+	"restart_policy": "unless-stopped",
+	"title": "Jellyfin-Accounts",
+	"type": 1,
+	"network": "bridge",
+	"ports": [
+		"8056:8056/tcp"
+	],
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Jelllyfin",
+			"container": "/jf"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/jfago",
+			"container": "/data"
+		},
+		{
+			"bind": "/etc/localtime",
+			"container": "/etc/localtime",
+			"readonly": true
+		}
+	],
+	"webpage": "https://jfa-go.com/"
+}

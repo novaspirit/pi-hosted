@@ -5,7 +5,7 @@
         "Other"
     ],
     "description": "Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.",
-    "note": "This version is not secured and should only be used if you want Docker integration and you don't worry about users on your network.",
+    "note": "This version does not allow for interaction with the docker environment for security purposes.",
     "env": [
         {
             "default": "1000",
@@ -22,19 +22,15 @@
     "image_arm64": "ghcr.io/ajnart/homarr:latest",
     "image_amd64": "ghcr.io/ajnart/homarr:latest",
     "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homarr.png",
-    "name": "homarr",
+    "name": "homarr-secured",
     "platform": "linux",
     "ports": [
         "7575:7575/tcp"
     ],
     "restart_policy": "unless-stopped",
-    "title": "Homarr - simple and lightweight homepage for your server",
+    "title": "Homarr-Secured - simple and lightweight homepage for your server",
     "type": 1,
     "volumes": [
-        {
-            "bind": "/var/run/docker.sock",
-            "container": "/var/run/docker.sock"
-        },
         {
             "bind": "/portainer/Files/AppData/Config/Homarr/configs",
             "container": "/app/data/configs"
