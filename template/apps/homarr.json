@@ -32,8 +32,7 @@
     "volumes": [
         {
             "bind": "/var/run/docker.sock",
-            "container": "/var/run/docker.sock",
-            "readonly": true
+            "container": "/var/run/docker.sock"
         },
         {
             "bind": "/portainer/Files/AppData/Config/Homarr/configs",
