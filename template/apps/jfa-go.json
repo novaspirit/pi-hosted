@@ -9,7 +9,7 @@
 	"image_arm32": "hrfee/jfa-go:latest",
 	"image_arm64": "hrfee/jfa-go:latest",
 	"image_amd64": "hrfee/jfa-go:latest",
-	"logo": "https://github.com/hrfee/jfa-go/blob/main/images/banner.svg",
+	"logo": "https://github.com/hrfee/jfa-go/blob/main/images/jfa-go-icon.png",
 	"name": "jfa-go",
 	"note": "This system is setup to work with either Emby or Jellyfin out of the box.  During the initial setup the user will have the option of which server they will be administering.",
 	"officialDoc": "https://wiki.jfa-go.com/",
