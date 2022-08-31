@@ -2868,6 +2868,42 @@
 			"categories": [
 				"Video",
 				"Music",
+				"Photos",
+				"Management"
+			],
+			"description": "jfa-go is a user management app for Jellyfin (and now Emby) that provides invite-based account creation as well as other features that make one's instance much easier to manage.",
+			"image": "hrfee/jfa-go:latest",
+			"logo": "https://github.com/hrfee/jfa-go/blob/main/images/banner.svg",
+			"name": "jfa-go",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://jfa-go.com/\" target=\"_blank\">https://jfa-go.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.jfa-go.com/\" target=\"_blank\">https://wiki.jfa-go.com/</a><br><br><br>This system is setup to work with either Emby or Jellyfin out of the box.  During the initial setup the user will have the option of which server they will be administering.",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Jellyfin-Accounts",
+			"type": 1,
+			"network": "bridge",
+			"ports": [
+				"8056:8056/tcp"
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Jelllyfin",
+					"container": "/jf"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/jfago",
+					"container": "/data"
+				},
+				{
+					"bind": "/etc/localtime",
+					"container": "/etc/localtime",
+					"readonly": true
+				}
+			]
+		},
+		{
+			"categories": [
+				"Video",
+				"Music",
 				"Other"
 			],
 			"description": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a a fork of Overseerr built to bring support for Jellyfin & Emby media servers!",
