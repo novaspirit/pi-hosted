@@ -98,4 +98,4 @@ Install, Update, Pre-Install and extra scripts can be found in our [GitHub Tools
 See the list of [contributors](https://github.com/pi-hosted/pi-hosted/graphs/contributors) who participated in this project.
 
 ### Acknowledgment
-* template based on [SelfHosted](https://github.com/SelfhostedPro/selfhosted_templates) Portainer App Template
+* template based on [SelfHosted](https://github.com/SelfhostedPro/selfhosted_templates) Portainer App Template branch on 2021/10/05
