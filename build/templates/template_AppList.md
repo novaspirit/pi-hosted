@@ -2,10 +2,9 @@
 
 List of all apps included in this project with info related to it.
 
-- **Arm32:** XXX_arm32_XXX apps
-- **Arm64:** XXX_arm64_XXX apps
-- **Amd64:** XXX_amd64_XXX apps
-- **Total:** XXX_total_XXX apps
+|**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
+|:-------------------|:--------:|:--------:|:--------:|
+| XXX_arm32_XXX apps | XXX_arm64_XXX apps | XXX_amd64_XXX apps | XXX_total_XXX apps |
 
 ---
 
