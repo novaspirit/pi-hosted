@@ -4,7 +4,7 @@
 		"VPN",
 		"Tools"
 	],
-	"description": "This container contains OpenVPN and Deluge with a configuration where Deluge is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
+	"description": "[DEPRECATED] This container contains OpenVPN and Deluge with a configuration where Deluge is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.  [DEPRECATED] Hasn't been updated in more than 3 years needs replaced",
 	"env": [
 		{
 			"default": "1000",
@@ -51,7 +51,7 @@
 		"8112:8112/tcp"
 	],
 	"restart_policy": "unless-stopped",
-	"title": "Deluge openvpn",
+	"title": "Deluge openvpn [DEPRECATED]",
 	"type": 1,
 	"volumes": [
 		{
