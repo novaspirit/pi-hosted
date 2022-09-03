@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 167 apps | 180 apps | 178 apps | 180 apps |
+| 168 apps | 181 apps | 179 apps | 181 apps |
 
 ---
 
@@ -14,6 +14,7 @@ List of all apps included in this project with info related to it.
 |[Adguardhome-sync](https://adguard.com/en/adguard-home/overview.html)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-adguardhome-sync#usage) |  |  |  |
 |[Airsonic Advanced](https://github.com/airsonic-advanced/airsonic-advanced)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-airsonic-advanced) |  |  |  |
 |[Airsonic](https://airsonic.github.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://airsonic.github.io/docs/install/docker/) |  |  |  |
+|[Apache Httpd](https://httpd.apache.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/httpd) |  |  |  |
 |[ArchiSteamFarm](https://github.com/JustArchiNET/ArchiSteamFarm/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Docker/) |  |  |  |
 |[Archivebox](https://archivebox.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ArchiveBox/ArchiveBox/wiki/Docker) |  |  |  |
 |[AriaNG](https://github.com/hurlenko/aria2-ariang-docker)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/hurlenko/aria2-ariang-docker) |  |  |  |
