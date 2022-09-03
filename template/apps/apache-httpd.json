@@ -1,0 +1,40 @@
+{
+	"categories": [
+		"Web",
+		"Proxy"
+	],
+	"description": "The Apache HTTP Server is a free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image_arm32": "httpd:latest",
+	"image_arm64": "httpd:latest",
+	"image_amd64": "httpd:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/apache-httpd.png",
+	"name": "apache-httpd",
+	"officialDoc": "https://hub.docker.com/_/httpd",
+	"platform": "linux",
+	"ports": [
+		"8080:80/tcp",
+		"8443:443/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Apache Httpd",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/apache-httpd",
+			"container": "/usr/local/apache2/htdocs/"
+		}
+	],
+	"webpage": "https://httpd.apache.org/"
+}
