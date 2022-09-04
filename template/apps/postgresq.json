@@ -1,0 +1,49 @@
+{
+    "categories": [
+        "Other",
+        "Tools"
+    ],
+    "description": "PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.",
+    "env": [
+        {
+            "default": "1000",
+            "label": "PUID",
+            "name": "PUID"
+        },
+        {
+            "default": "1000",
+            "label": "PGID",
+            "name": "PGID"
+        },
+        {
+            "default": "rootpassword",
+            "label": "POSTGRES_PASSWORD",
+            "name": "POSTGRES_PASSWORD"
+        },
+        {
+            "default": "America/New_York",
+            "label": "TZ",
+            "name": "TZ"
+        }
+    ],
+    "image_arm32": "postgres:latest",
+    "image_arm64": "postgres:latest",
+    "image_amd64": "postgres:latest",
+    "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/postgresql.png",
+    "name": "postgresql",
+    "platform": "linux",
+    "ports": [
+        "5432:5432/tcp"
+    ],
+    "restart_policy": "unless-stopped",
+    "title": "PostgreSQL",
+    "type": 1,
+    "volumes": [
+        {
+            "bind": "/portainer/Files/AppData/Config/PostgreSQL",
+            "container": "/var/lib/postgresql/data"
+        }
+    ],
+    "officialDoc": "https://hub.docker.com/_/postgres/",
+    "webpage": "https://www.postgresql.org/"
+}
