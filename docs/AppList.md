@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 168 apps | 181 apps | 179 apps | 181 apps |
+| 169 apps | 182 apps | 180 apps | 182 apps |
 
 ---
 
@@ -40,7 +40,7 @@ List of all apps included in this project with info related to it.
 |[Davos](https://github.com/linuxserver/davos)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-davos) |  |  |  |
 |[DeeMix](https://deemix.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://gitlab.com/Bockiii/deemix-docker) |  |  |  |
 |[Deluge](https://www.deluge-torrent.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-deluge) |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=IWj1-j2QWvo) |
-|[Deluge openvpn](https://www.deluge-torrent.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/sgtsquiggs/docker-deluge-openvpn) |  |  |  |
+|[Deluge openvpn [DEPRECATED]](https://www.deluge-torrent.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/sgtsquiggs/docker-deluge-openvpn) |  |  |  |
 |[Domoticz](https://domoticz.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-domoticz) |  |  |  |
 |[Dozzle](https://dozzle.dev/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/amir20/dozzle) |  |  |  |
 |[Dradis](https://dradisframework.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/raesene/dockerized-security-tools) |  |  |  |
@@ -131,6 +131,7 @@ List of all apps included in this project with info related to it.
 |[Pi-Hole-Unbound](https://pi-hole.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/chriscrowe/docker-pihole-unbound/tree/master/one-container) | [![](../build/images/red_doc_icon.png)](../docs/pi-hole.md) |  |  |
 |[Piwigo](http://piwigo.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-piwigo) |  |  |  |
 |[Plex](https://www.plex.tv/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-plex) |  |  |  |
+|[PostgreSQL](https://www.postgresql.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/postgres/) |  |  |  |
 |[Pritunl](https://pritunl.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/goofball222/pritunl) |  |  |  |
 |[PrivateBin](https://privatebin.info/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/privatebin/nginx-fpm-alpine) |  |  |  |
 |[ProjectSend](https://www.projectsend.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-projectsend) |  |  |  |

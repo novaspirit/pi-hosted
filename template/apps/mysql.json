@@ -41,7 +41,7 @@
     "volumes": [
         {
             "bind": "/portainer/Files/AppData/Config/MySQL",
-            "container": "/var/lib/mysql "
+            "container": "/var/lib/mysql"
         }
     ],
     "officialDoc": "https://hub.docker.com/_/mysql",
