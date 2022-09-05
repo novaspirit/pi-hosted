@@ -1318,7 +1318,7 @@
 				"VPN",
 				"Tools"
 			],
-			"description": "This container contains OpenVPN and Deluge with a configuration where Deluge is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
+			"description": "[DEPRECATED] This container contains OpenVPN and Deluge with a configuration where Deluge is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.  [DEPRECATED] Hasn't been updated in more than 3 years needs replaced",
 			"env": [
 				{
 					"default": "1000",
@@ -1335,6 +1335,22 @@
 					"description": "see https://github.com/sgtsquiggs/docker-deluge-openvpn",
 					"label": "OPENVPN_PROVIDER",
 					"name": "OPENVPN_PROVIDER"
+				},
+				{
+					"description": "Default is false (disabled) only change if you know what you are doing.",
+					"label": "WEBPROXY_ENABLED",
+					"name": "WEBPROXY_ENABLED",
+					"select": [
+						{
+							"default": false,
+							"text": "Disable Web Proxy",
+							"value": "false"
+						},
+						{
+							"text": "Enable Web Proxy",
+							"value": "true"
+						}
+					]
 				},
 				{
 					"label": "OPENVPN_USERNAME",
@@ -1355,14 +1371,14 @@
 					"name": "LOCAL_NETWORK"
 				}
 			],
-			"image": "sgtsquiggs/deluge-openvpn:arm64v8-latest",
+			"image": "ebrianne/docker-deluge-openvpn:latest",
 			"name": "deluge-openvpn",
 			"platform": "linux",
 			"ports": [
 				"8112:8112/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Deluge openvpn",
+			"title": "Deluge openvpn [DEPRECATED]",
 			"type": 1,
 			"volumes": [
 				{
