@@ -28,7 +28,7 @@
         "7575:7575/tcp"
     ],
     "restart_policy": "unless-stopped",
-    "title": "Homarr-Secured - simple and lightweight homepage for your server",
+    "title": "Homarr-Secured",
     "type": 1,
     "volumes": [
         {

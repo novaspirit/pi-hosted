@@ -1,0 +1,54 @@
+{
+    "categories": [
+        "Other",
+        "Tools"
+    ],
+    "description": "PGAdmin is a web-based GUI tool used to interact with the Postgres database sessions, both locally and remote servers as well. You can use PGAdmin to perform any sort of database administration required for a Postgres database.",
+    "env": [
+        {
+            "default": "1000",
+            "label": "PUID",
+            "name": "PUID"
+        },
+        {
+            "default": "1000",
+            "label": "PGID",
+            "name": "PGID"
+        },
+        {
+            "default": "",
+            "label": "PGADMIN_DEFAULT_EMAIL",
+            "name": "PGADMIN_DEFAULT_EMAIL"
+        },
+        {
+            "default": "",
+            "label": "PGADMIN_DEFAULT_PASSWORD",
+            "name": "PGADMIN_DEFAULT_PASSWORD"
+        },
+        {
+            "default": "America/New_York",
+            "label": "TZ",
+            "name": "TZ"
+        }
+    ],
+    "image_arm32": "dpage/pgadmin4:latest",
+    "image_arm64": "dpage/pgadmin4:latest",
+    "image_amd64": "dpage/pgadmin4:latest",
+    "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pgadmin.png",
+    "name": "pgadmin",
+    "platform": "linux",
+    "ports": [
+        "5050:80/tcp"
+    ],
+    "restart_policy": "unless-stopped",
+    "title": "pgAdmin",
+    "type": 1,
+    "volumes": [
+        {
+            "bind": "/portainer/Files/AppData/Config/pgAdmin",
+            "container": "/var/lib/pgadmin"
+        }
+    ],
+    "officialDoc": "https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html",
+    "webpage": "https://www.pgadmin.org/"
+}
