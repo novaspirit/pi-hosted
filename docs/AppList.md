@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 168 apps | 182 apps | 180 apps | 182 apps |
+| 169 apps | 183 apps | 181 apps | 183 apps |
 
 ---
 
@@ -65,8 +65,8 @@ List of all apps included in this project with info related to it.
 |[Guacamole](https://guacamole.apache.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oznu/guacamole) |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3) |
 |[Headphones](https://github.com/rembo10/headphones)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-headphones) |  |  |  |
 |[Heimdall](https://heimdall.site/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-heimdall) |  |  |  |
-|[Homarr - simple and lightweight homepage for your server](https://homarr.vercel.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ajnart/homarr) |  |  |  |
-|[Homarr-Secured - simple and lightweight homepage for your server](https://homarr.vercel.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ajnart/homarr) |  |  |  |
+|[Homarr](https://homarr.vercel.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ajnart/homarr) |  |  |  |
+|[Homarr-Secured](https://homarr.vercel.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ajnart/homarr) |  |  |  |
 |[Home Assistant](https://www.home-assistant.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://www.home-assistant.io/installation/raspberrypi#install-home-assistant-container) |  |  |  |
 |[Homebridge - Debian](https://homebridge.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |
 |[Homebridge](https://homebridge.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |
@@ -78,7 +78,7 @@ List of all apps included in this project with info related to it.
 |[Jackett](https://github.com/Jackett/Jackett)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jackett) |  |  |  |
 |[JDownloader](https://my.jdownloader.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/jaymoulin/docker-jdownloader) |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[Jellyfin](https://jellyfin.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jellyfin) |  |  |  |
-|[Jellyseerr - Overseerr Fork with Jellyfin, Emby & Plex Support](https://github.com/Fallenbagel/jellyseerr)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/fallenbagel/jellyseerr) |  |  |  |
+|[Jellyseerr](https://github.com/Fallenbagel/jellyseerr)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/fallenbagel/jellyseerr) |  |  |  |
 |[Jellyfin-Accounts](https://jfa-go.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.jfa-go.com/) |  |  |  |
 |[Kodi Headless](https://kodi.tv/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/lsioarmhf/kodi-headless-aarch64/) |  |  |  |
 |[Komga](https://github.com/gotson/komga)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://komga.org/) |  |  |  |
@@ -122,8 +122,9 @@ List of all apps included in this project with info related to it.
 |[Ombi](https://ombi.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-ombi) |  |  |  |
 |[Organizr v2](https://organizr.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/organizr/organizr) |  |  |  |
 |[OScam](https://trac.streamboard.tv/oscam/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-oscam) |  |  |  |
-|[Overseerr - Plex Server Request Handler](https://overseerr.dev/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/overseerr) |  |  |  |
+|[Overseerr](https://overseerr.dev/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/overseerr) |  |  |  |
 |[Paperless NGX](https://github.com/paperless-ngx/paperless-ngx)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/paperless-ngx/paperless-ngx) |  |  |  |
+|[pgAdmin](https://www.pgadmin.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html) |  |  |  |
 |[PhotoPrism](https://photoprism.app/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.photoprism.app/getting-started/docker-compose/) | [![](../build/images/red_doc_icon.png)](../docs/photoprism.md) | [![](../build/images/script_icon.png)](../tools/install_photoprism.sh) |  |
 |[PhotoShow](https://github.com/thibaud-rohmer/PhotoShow)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-photoshow) |  |  |  |
 |[Pi-Hole DoH/DoT](https://pi-hole.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oijkn/pihole-doh-dot) | [![](../build/images/red_doc_icon.png)](../docs/pi-hole.md) |  |  |

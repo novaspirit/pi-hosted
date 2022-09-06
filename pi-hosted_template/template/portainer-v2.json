@@ -1993,7 +1993,7 @@
 				"7575:7575/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Homarr - simple and lightweight homepage for your server",
+			"title": "Homarr",
 			"type": 1,
 			"volumes": [
 				{
@@ -2038,7 +2038,7 @@
 				"7575:7575/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Homarr-Secured - simple and lightweight homepage for your server",
+			"title": "Homarr-Secured",
 			"type": 1,
 			"volumes": [
 				{
@@ -2508,7 +2508,7 @@
 				"5055:5055/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Jellyseerr - Overseerr Fork with Jellyfin, Emby & Plex Support",
+			"title": "Jellyseerr",
 			"type": 1,
 			"volumes": [
 				{
@@ -4402,7 +4402,7 @@
 				"5055:5055/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Overseerr - Plex Server Request Handler",
+			"title": "Overseerr",
 			"type": 1,
 			"volumes": [
 				{
@@ -4468,6 +4468,57 @@
 			"title": "Paperless NGX",
 			"type": 3,
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/paperless-ngx/paperless-ngx\" target=\"_blank\">https://github.com/paperless-ngx/paperless-ngx</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/paperless-ngx/paperless-ngx\" target=\"_blank\">https://github.com/paperless-ngx/paperless-ngx</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "PGAdmin is a web-based GUI tool used to interact with the Postgres database sessions, both locally and remote servers as well. You can use PGAdmin to perform any sort of database administration required for a Postgres database.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "",
+					"label": "PGADMIN_DEFAULT_EMAIL",
+					"name": "PGADMIN_DEFAULT_EMAIL"
+				},
+				{
+					"default": "",
+					"label": "PGADMIN_DEFAULT_PASSWORD",
+					"name": "PGADMIN_DEFAULT_PASSWORD"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "dpage/pgadmin4:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pgadmin.png",
+			"name": "pgadmin",
+			"platform": "linux",
+			"ports": [
+				"5050:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "pgAdmin",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/pgAdmin",
+					"container": "/var/lib/pgadmin"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.pgadmin.org/\" target=\"_blank\">https://www.pgadmin.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html\" target=\"_blank\">https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html</a><br><br><br>"
 		},
 		{
 			"categories": [
