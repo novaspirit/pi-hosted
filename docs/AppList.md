@@ -4,11 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-<<<<<<< HEAD
 | 168 apps | 182 apps | 180 apps | 182 apps |
-=======
-| 167 apps | 181 apps | 179 apps | 181 apps |
->>>>>>> 78620ea341f1fea94143e830dd5ffc7a8ab9f37f
 
 ---
 
@@ -74,7 +70,7 @@ List of all apps included in this project with info related to it.
 |[Home Assistant](https://www.home-assistant.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://www.home-assistant.io/installation/raspberrypi#install-home-assistant-container) |  |  |  |
 |[Homebridge - Debian](https://homebridge.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |
 |[Homebridge](https://homebridge.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker) |  |  |  |
-|[Homer](https://github.com/bastienwirtz/homer)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md) |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=_d3J88ootYo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=2) |
+|[Homer](https://github.com/bastienwirtz/homer)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md) |  | [![](../build/images/script_icon.png)](../tools/install_homer.sh) | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=_d3J88ootYo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=2) |
 |[HTPC Manager](https://htpc.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-htpcmanager) |  |  |  |
 |[Huginn](https://github.com/huginn/huginn)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/huginn/huginn/tree/master/docker) |  |  |  |
 |[Influxdb 1.8.10](https://www.influxdata.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker) |  |  |  |
