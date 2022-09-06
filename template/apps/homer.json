@@ -24,6 +24,7 @@
 	"note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
 	"officialDoc": "https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md",
 	"platform": "linux",
+	"preInstallScript": "install_homer.sh",
 	"ports": [
 		"8902:8080/tcp"
 	],
