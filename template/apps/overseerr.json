@@ -32,7 +32,7 @@
         "5055:5055/tcp"
     ],
     "restart_policy": "unless-stopped",
-    "title": "Overseerr - Plex Server Request Handler",
+    "title": "Overseerr",
     "type": 1,
     "volumes": [
         {

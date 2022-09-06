@@ -37,7 +37,7 @@
         "5055:5055/tcp"
     ],
     "restart_policy": "unless-stopped",
-    "title": "Jellyseerr - Overseerr Fork with Jellyfin, Emby & Plex Support",
+    "title": "Jellyseerr",
     "type": 1,
     "volumes": [
         {
