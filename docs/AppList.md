@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 169 apps | 183 apps | 181 apps | 183 apps |
+| 169 apps | 183 apps | 180 apps | 183 apps |
 
 ---
 
@@ -62,7 +62,7 @@ List of all apps included in this project with info related to it.
 |[Gotify](https://gotify.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://gotify.net/docs/install) |  |  |  |
 |[Graylog](https://www.graylog.org)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.graylog.org/docs/docker) | [![](../build/images/red_doc_icon.png)](../docs/graylog_install.md) |  |  |
 |[Grocy](https://grocy.info/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-grocy) |  |  |  |
-|[Guacamole](https://guacamole.apache.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oznu/guacamole) |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3) |
+|[Guacamole](https://guacamole.apache.org/)|:heavy_check_mark:|:heavy_check_mark:|:x:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oznu/guacamole) |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3) |
 |[Headphones](https://github.com/rembo10/headphones)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-headphones) |  |  |  |
 |[Heimdall](https://heimdall.site/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-heimdall) |  |  |  |
 |[Homarr](https://homarr.vercel.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ajnart/homarr) |  |  |  |
