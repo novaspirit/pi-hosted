@@ -6,7 +6,6 @@
 	"description": "A clientless remote desktop gateway.",
 	"image_arm32": "oznu/guacamole:armhf",
 	"image_arm64": "maxwaldorf/guacamole:latest",
-	"image_amd64": "guacamole/guacamole:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/guacamole.png",
 	"name": "guacamole",
 	"note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
