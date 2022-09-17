@@ -1,0 +1,30 @@
+{
+	"categories": [
+		"Dashboard"
+	],
+	"description": "Homepage helps you organize your self-hosted services by making them accessible from a single place",
+	"image_arm32": "ghcr.io/benphelps/homepage:latest",
+	"image_arm64": "ghcr.io/benphelps/homepage:latest",
+	"image_amd64": "ghcr.io/benphelps/homepage:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homepage.png",
+	"name": "Homepage",
+	"officialDoc": "https://github.com/benphelps/homepage",
+	"platform": "linux",
+	"ports": [
+		"3015:3000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Homepage",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Homepage/",
+			"container": "/app/config"
+		},
+		{
+			"bind": "/var/run/docker.sock",
+			"container": "/var/run/docker.sock"
+		}
+	],
+	"webpage": "https://github.com/benphelps/homepage"
+}
