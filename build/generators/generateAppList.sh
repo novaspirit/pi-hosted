@@ -92,14 +92,33 @@ while IFS='' read -u 9 -r appfile || [[ -n $appfile ]]; do
 	fi
 
 	# Get Video from app info
-	vid=$(echo "$appconf" | jq ".videoID")
-	if [ "$vid" != "null" ] ; then
-		vidURL=$(jq ".youtube[] | select(.ID==$vid) | .URL" "$appinfo" | tr -d '"')
-		vid="[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)]($vidURL)"
+	if vidlist=$( echo "$appconf" | jq -e ".videoID" ) ; then
+		# If only one entry
+		if [ "$(echo "$vidlist" | wc -l )" == "1" ]; then
+			vidURL=$(jq ".youtube[] | select(.ID==$vidlist) | .URL" "$appinfo" | tr -d '"')
+			vidTitle=$(jq ".youtube[] | select(.ID==$vidlist) | .Title" "$appinfo" | tr -d '"')
+			vidCh=$(jq ".youtube[] | select(.ID==$vidlist) | .Channel" "$appinfo" | tr -d '"')
+			vid="[![$vidTitle](../build/images/yt-badge-${vidCh}.png \"$vidTitle\")]($vidURL)"
+
+		# If multiple entries
+		else
+			n_vid=$(echo "$vidlist" | jq '. | length')
+			for n in $(seq 0 $(( n_vid - 1 ))); do
+				vidd=$(echo "$vidlist" | jq ".[$n]" )
+				vidURL=$(jq ".youtube[] | select(.ID==$vidd) | .URL" "$appinfo" | tr -d '"')
+				vidTitle=$(jq ".youtube[] | select(.ID==$vidd) | .Title" "$appinfo" | tr -d '"')
+				vidCh=$(jq ".youtube[] | select(.ID==$vidd) | .Channel" "$appinfo" | tr -d '"')
+				if [ "$n" == "0" ] ; then
+					vid="[![$vidTitle](../build/images/yt-badge-${vidCh}.png \"$vidTitle\")]($vidURL)"
+				else
+					vid="$vid<br>[![$vidTitle](../build/images/yt-badge-${vidCh}.png \"$vidTitle\")]($vidURL)"
+				fi
+			done
+		fi
 	else
 		unset vid
 	fi
-	
+
 	# Building App Line
 	line="|$oweb|$hasArm32|$hasArm64|$hasAmd64|$apptype| $odoc | $doc | $script | $vid |"
 
