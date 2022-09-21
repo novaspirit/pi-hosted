@@ -1,11 +1,13 @@
-#!/bin/bash
+#!/bin/sh
 
-function error() {
+error() 
+{
   echo -e "\\e[91m$1\\e[39m"
   exit 1
 }
 
-function check_internet() {
+check_internet() 
+{
   printf "Checking if you are online..."
   wget -q --spider http://github.com
   if [ $? -eq 0 ]; then
