@@ -1,6 +1,11 @@
 {
 	"channels": [
 		{
+			"ID": "rmiddle-tech",
+			"Title": "Rmiddle Tech",
+			"URL": "https://youtube.com/channel/UCk-VRP-uyhbjbZwbMBDm9gg"
+		},
+		{
 			"ID": "novaspirit",
 			"Title": "Novaspirit Tech",
 			"URL": "https://youtube.com/channel/UCrjKdwxaQMSV_NDywgKXVmw"
