@@ -1,4 +1,11 @@
 {
+	"channels": [
+		{
+			"ID": "novaspirit",
+			"Title": "Novaspirit Tech",
+			"URL": "https://youtube.com/channel/UCrjKdwxaQMSV_NDywgKXVmw"
+		}
+	],
 	"youtube": [
 		{
 			"ID": 1,
