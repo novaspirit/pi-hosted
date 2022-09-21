@@ -17,7 +17,7 @@
 	"restart_policy": "unless-stopped",
 	"title": "Guacamole",
 	"type": 1,
-	"videoID": 3,
+	"videoID": "N3",
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/Guacamole",

@@ -65,6 +65,6 @@
 	"restart_policy": "unless-stopped",
 	"title": "Nginx Proxy Manager v2 with Sqlite and Goaccess Charts",
 	"type": 3,
-	"videoID": 9,
+	"videoID": "N9",
 	"webpage": "https://nginxproxymanager.com/"
 }

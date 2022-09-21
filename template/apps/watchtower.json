@@ -16,7 +16,7 @@
 	"restart_policy": "unless-stopped",
 	"title": "Watchtower",
 	"type": 1,
-	"videoID": 6,
+	"videoID": "N6",
 	"volumes": [
 		{
 			"bind": "/var/run/docker.sock",

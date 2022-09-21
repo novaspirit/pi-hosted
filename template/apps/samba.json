@@ -57,7 +57,7 @@
 	"restart_policy": "unless-stopped",
 	"title": "Samba",
 	"type": 1,
-	"videoID": [ 10, 17 ] ,
+	"videoID": [ "N10", "N17" ] ,
 	"volumes": [
 		{
 			"bind": "/portainer/Downloads",
