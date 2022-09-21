@@ -2,6 +2,48 @@
 	"version": "2",
 	"templates": [
 		{
+
+"categories": [
+
+"Other",
+
+"Tool"
+
+],
+
+"description": “SurrealDB is an end-to-end cloud native database for web, mobile, serverless, jamstack, backend, and traditional applications. SurrealDB reduces the development time of modern applications by simplifying your database and API stack, removing the need for most server-side components, allowing you to build secure, performant apps quicker and cheaper. SurrealDB acts as both a database and a modern, realtime, collaborative API backend layer. SurrealDB can run as a single server or in a highly-available, highly-scalable distributed mode - with support for SQL querying from client devices, GraphQL, ACID transactions, WebSocket connections, structured and unstructured data, graph querying, full-text indexing, geospatial querying, and row-by-row permissions-based access.”,
+
+
+"image_arm32": "surrealdb:latest",
+
+"image_arm64: “surrealdb:latest”,
+
+"image_amd64": "surrealdb:latest",
+
+"logo": "https://github.com/YuvanNeko/pi-hosted/blob/master/images/SurrealDB-logo.jpg",
+
+"name":“SurrealDB”,
+
+"platform": "linux",
+
+"ports": [
+
+“8000:8000/tcp"
+
+],
+
+"restart_policy": "unless-stopped",
+
+"title": “SurrealDB”,
+
+"type": 1,
+
+"officialDoc": "https://hub.docker.com/r/surrealdb/surrealdb",
+
+"webpage": "https://surrealdb.com/"
+
+},
+		{
 			"categories": [
 				"Other",
 				"Tools"
