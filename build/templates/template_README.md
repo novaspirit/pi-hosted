@@ -61,8 +61,8 @@ You're done! Now just click App Templates and deploy applications!
 [![Pi-Hosted Playlist](https://i.ytimg.com/vi/cO2-gQ09Jj0/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAfgdX8HlHas2CddSmgwJzergnTzQ)](https://www.youtube.com/watch?v=cO2-gQ09Jj0&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc)
 
 
-|   | Episode                                                                                                                                                                       | Additional Information |
-|---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+|     | Channel | Episode | Additional Information |
+|:---:|:-------:|---------|------------------------|
 <<<<< YOUTUBE TABLE HERE >>>>>
 
 ### Aditional Documentation
