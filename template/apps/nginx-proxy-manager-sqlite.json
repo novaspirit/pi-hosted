@@ -37,7 +37,7 @@
 	"restart_policy": "unless-stopped",
 	"title": "Nginx Proxy Manager v2 with Sqllite",
 	"type": 1,
-	"videoID": "N9",
+	"videoID": "N.09",
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/nginx-proxy-manager/data",

@@ -51,6 +51,6 @@
 	"restart_policy": "unless-stopped",
 	"title": "Nginx Proxy Manager v2 with Mysql [DEPRECATED]",
 	"type": 3,
-	"videoID": "N9",
+	"videoID": "N.09",
 	"webpage": "https://nginxproxymanager.com/"
 }

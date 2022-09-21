@@ -8,31 +8,31 @@
 	],
 	"youtube": [
 		{
-			"ID": "N1",
+			"ID": "N.01",
 			"Title": "Raspberry Pi 4 Server Setup, Docker Install, Portainer Install, Shell In A Box",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=cO2-gQ09Jj0&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=1"
 		},
 		{
-			"ID": "N2",
+			"ID": "N.02",
 			"Title": "Installing and Configuring Homer Dashboard",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=_d3J88ootYo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=2"
 		},
 		{
-			"ID": "N3",
+			"ID": "N.03",
 			"Title": "Manually Installing Guacamole on Portainer",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3"
 		},
 		{
-			"ID": "N4",
+			"ID": "N.04",
 			"Title": "Installing JDownloader and File Browser On The Pi Docker Server",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4"
 		},
 		{
-			"ID": "N5",
+			"ID": "N.05",
 			"Title": "Torrent with Docker and OPENVPN with Transmission and PIA",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=tGLVEq913_4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=5"
@@ -44,45 +44,45 @@
 			"URL": "https://www.youtube.com/watch?v=Zn-VELlaIN4&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=6"
 		},
 		{
-			"ID": "N6",
+			"ID": "N.06",
 			"Title": "Upgrading Portainer and Updating Containers",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=q3wKqk8qVS8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=7"
 		},
 		{
-			"ID": "N7",
+			"ID": "N.07",
 			"Title": "Raspberry Pi Docker Monitoring",
 			"URL": "https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8",
 			"Channel": "novaspirit",
 			"Doc": "rpi_docker_monitor.md"
 		},
 		{
-			"ID": "N8",
+			"ID": "N.08",
 			"Title": "Installing Nextcloud on Raspberry Pi Docker",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=E6IrT3g5Gqc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=9"
 		},
 		{
-			"ID": "N9",
+			"ID": "N.09",
 			"Title": "Installing Nginx Proxy Manager on Docker",
 			"URL": "https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10",
 			"Channel": "novaspirit",
 			"Doc": "nginx_proxy_manager.md"
 		},
 		{
-			"ID": "N10",
+			"ID": "N.10",
 			"Title": "Setting up Raspberry Pi Samba Server For File Sharing on Docker",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=2zZ3_1GRWrM&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=11"
 		},
 		{
-			"ID": "N11",
+			"ID": "N.11",
 			"Title": "How to Install Whoogle to replace using Google and repo notes",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12"
 		},
 		{
-			"ID": "N12",
+			"ID": "N.12",
 			"Title": "Checking out Windows 2000 Docker",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13"
@@ -94,38 +94,38 @@
 			"URL": "https://www.youtube.com/watch?v=Ppv1cUomwn0"
 		},
 		{
-			"ID": "N13",
+			"ID": "N.13",
 			"Title": "Beginners Guide to WireGuard Docker and Installing Pi-OS 64bit",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=yB_jAumIxOg",
 			"Doc": "wireguard-install.md"
 		},
 		{
-			"ID": "N14",
+			"ID": "N.14",
 			"Title": "My Most used container! Snippet Box",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=v-jUyB3fvAo"
 		},
 		{
-			"ID": "N15",
+			"ID": "N.15",
 			"Title": "Rust Desk Open Source Remote Desktop",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=PDnqFnnbVHg"
 		},
 		{
-			"ID": "N16",
+			"ID": "N.16",
 			"Title": "Route Docker Traffic Through VPN Container",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=IWj1-j2QWvo"
 		},
 		{
-			"ID": "N17",
+			"ID": "N.17",
 			"Title": "Building NAS with Container",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=9ln6UFH4z8o"
 		},
 		{
-			"ID": "N18",
+			"ID": "N.18",
 			"Title": "Reviewing Stats on 25+ containers on my Raspberry Pi",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=_tVj0FX5wYg"

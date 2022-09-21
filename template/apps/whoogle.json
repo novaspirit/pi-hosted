@@ -18,7 +18,7 @@
 	"restart_policy": "unless-stopped",
 	"title": "Whoogle",
 	"type": 1,
-	"videoID": "N11",
+	"videoID": "N.11",
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/Whoogle",

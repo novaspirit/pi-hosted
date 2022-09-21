@@ -30,7 +30,7 @@
 	"restart_policy": "unless-stopped",
 	"title": "FileBrowser S6",
 	"type": 1,
-	"videoID": "N4",
+	"videoID": "N.04",
         "volumes": [
                 {
                         "bind": "/portainer/Downloads",

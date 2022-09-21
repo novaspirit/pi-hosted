@@ -19,7 +19,7 @@
 	"restart_policy": "unless-stopped",
 	"title": "Windows 2000",
 	"type": 1,
-	"videoID": "N12",
+	"videoID": "N.12",
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/Win2000/zdrive",
