@@ -62,21 +62,45 @@ for app in template/apps/*.json; do
 	# Pre-Install Script
 	if Script=$( echo "$appjson" | jq -e '.preInstallScript' ) ; then
 		scriptexec=$( jq '.tools[] | select(.File=='"$Script"') | .Exec' "$appinfo" )
-		Script="<br><b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- ${rawrepo}tools/${Script:1:-1} | bash"
-		#Script="<br><b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- ${rawrepo}tools/${Script:1:-1} | ${scriptexec:1:-1}"
+		[ "$scriptexec" == "" ] && scriptexec="-bash-"
+		Script="<br><b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- ${rawrepo}tools/${Script:1:-1} | ${scriptexec:1:-1}"
 		appjson=$( echo "$appjson" | jq 'del(.preInstallScript)' )
 	else
 		unset Script
 	fi
 
 	# Youtube Video
-	if VideoID=$( echo "$appjson" | jq -e '.videoID' ) ; then
-		VideoURL=$( jq '.youtube[] | select(.ID=='"$VideoID"') | .URL' "$appinfo" )
-		VideoTitle=$( jq '.youtube[] | select(.ID=='"$VideoID"') | .Title' "$appinfo" | tr -d '"')
-		VideoURL="<br><b>Youtube Video: </b><a href=$VideoURL target=\"_blank\">$VideoTitle</a><br>"
+	if vidlist=$( echo "$appjson" | jq -e '.videoID' ) ; then
 		appjson=$( echo "$appjson" | jq 'del(.videoID)' )
+		# If only one entry
+		if [ "$(echo "$vidlist" | wc -l )" == "1" ]; then
+			vidInfo=$(jq ".youtube[] | select(.ID==$vidlist)" "$appinfo")
+			vidURL=$(echo "$vidInfo" | jq ".URL" | tr -d '"')
+			vidTitle=$(echo "$vidInfo" | jq ".Title" | tr -d '"')
+			vidCh=$(echo "$vidInfo" | jq ".Channel")
+			vidCh=$(jq ".channels[] | select(.ID==$vidCh) | .Title" "$appinfo" | tr -d '"')
+			VideoURL="<br><b>Youtube Video: </b><a href=$vidURL target=\"_blank\">$vidCh - $vidTitle</a><br>"
+
+		# If multiple entries
+		else
+			n_vid=$(echo "$vidlist" | jq '. | length')
+			for n in $(seq 0 $(( n_vid - 1 ))); do
+				vidd=$(echo "$vidlist" | jq ".[$n]" )
+				vidInfo=$(jq ".youtube[] | select(.ID==$vidd)" "$appinfo")
+				vidURL=$(echo "$vidInfo" | jq ".URL" | tr -d '"')
+				vidTitle=$(echo "$vidInfo" | jq ".Title" | tr -d '"')
+				vidCh=$(echo "$vidInfo" | jq ".Channel")
+				vidCh=$(jq ".channels[] | select(.ID==$vidCh) | .Title" "$appinfo" | tr -d '"')
+				if [ "$n" == "0" ] ; then
+					VideoURL="<br><b>Youtube Videos:</b><br><ul><li><a href=$vidURL target=\"_blank\">$vidCh - $vidTitle</a></li>"
+				else
+					VideoURL="$VideoURL<li><a href=$vidURL target=\"_blank\">$vidCh - $vidTitle</a></li>"
+				fi
+			done
+			VideoURL="$VideoURL</ul><br>"
+		fi
 	else
-		unset VideoID VideoURL
+		unset vidlist VideoURL
 	fi
 
 	# Extra Scripts
