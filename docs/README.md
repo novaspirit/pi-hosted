@@ -47,6 +47,10 @@ wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/install_p
 wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/update_portainer.sh | bash
 ```
 
+### Login to Portainer to update the App Template.
+
+Goto pi-ip:9000 and than login
+
 Click Settings, in the bottom-left corner, and paste the Portainer v2 json file link from below into the "App Templates" box.
 
 You're done! Now just click App Templates and deploy applications!
