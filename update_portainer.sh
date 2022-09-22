@@ -1,22 +1,36 @@
-#!/bin/sh
+#!/bin/bash
 
-error() 
-{
-  echo -e "\\e[91m$1\\e[39m"
-  exit 1
+## error()
+## {
+##   echo -e "\\e[91m$1\\e[39m"
+##   exit 1
+## }
+##
+## check_internet()
+## {
+##   printf "Checking if you are online..."
+##   wget -q --spider http://github.com
+##   if [ $? -eq 0 ]; then
+##     echo "Online. Continuing."
+##   else
+##     error "Offline. Go connect to the internet then run the script again."
+##   fi
+## }
+
+function error () {
+    echo -e "\\e[91m$1\\e[39m"
+    exit 1
 }
 
-check_internet() 
-{
-  printf "Checking if you are online..."
-  wget -q --spider http://github.com
-  if [ $? -eq 0 ]; then
-    echo "Online. Continuing."
-  else
-    error "Offline. Go connect to the internet then run the script again."
-  fi
+function check_internet () {
+    printf "Checking if you are online..."
+    wget -q --spider http://github.com
+    if [ $? -eq 0 ]; then
+        echo "Online. Continuing."
+    else
+        error "Offline. Go connect to the internet then run the script again."
+    fi
 }
-
 check_internet
 
 portainer_pid=`docker ps | grep portainer-ce | awk '{print $1}'`
