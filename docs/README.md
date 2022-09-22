@@ -14,6 +14,7 @@ See the list of apps included in this template [here](AppList.md).
 ### Installation
 Run `install-docker.sh`, to install docker, and add the current user to the docker usergroup.
 
+```
 wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/install_docker.sh | bash
 # need to reboot/logout for changes to take effect
 ```
