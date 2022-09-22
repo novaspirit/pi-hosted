@@ -14,7 +14,7 @@ See the list of apps included in this template [here](AppList.md).
 ### Installation
 Run `install-docker.sh`, to install docker, and add the current user to the docker usergroup.
 ```
-wget -qO- https://git.io/JS96e | bash
+wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/install_docker.sh | bash
 # need to reboot/logout for changes to take effect
 ```
 
@@ -26,7 +26,7 @@ sudo dpkg-query -W libseccomp2
 If you are running a version less that 2.5 you will need to run the *upgrade script.
 
 ```
-wget -qO- https://git.io/JPXdj | bash
+wget -qO- https://raw.githubusercontent.com/novaspirit/pi-hosted/master/tools/update_libseccomp2.sh | bash
 ```
 * The upgrade script is for Pi OS 32bit.  Pi OS 64 beta is untested and the upgrade script wont work with it.
 
@@ -38,22 +38,22 @@ sudo reboot
 
 After a reboot, run `install-portainer.sh`, to install Portainer.io
 ```
-wget -qO- https://git.io/JS96L | bash
+wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/install_portainer.sh | bash
 # to update portainer, run this command
-wget -qO- https://git.io/JS96Y | bash
+wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/update_portainer.sh | bash
 ```
 Click Settings, in the bottom-left corner, and paste the Portainer v2 json file link from below into the "App Templates" box.
 
 You're done! Now just click App Templates and deploy applications!
 
-#### Versions
-| Application  | Supported OS's | URL |
-| ------------- | ------------- | ------------- |
-| Portainer v2 Arm32 | Pi OS | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-arm32.json |
-| Portainer v2 Arm64 | Ubuntu 64, DietPI 64 | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-arm64.json |
-| Portainer v2 Amd64 | Ubuntu, Debian | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-amd64.json |
+#### Portainer Architecture
 
-* Limited testing Operating Systems: Pi OS 64 Beta, DietPI 32 bit
+| Architecture | Tested OS's | URL |
+|--------------|-------------|-----|
+| Arm32 | Pi OS, DietPi | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-arm32.json |
+| Arm64 | Pi OS, Ubuntu, DietPi | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-arm64.json |
+| Amd64 | Ubuntu, Debian | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-amd64.json |
+
 * Amd64 should work on all distros with **scripts written for Debian based distros**
 
 ### Pi-Hosted YouTube series
