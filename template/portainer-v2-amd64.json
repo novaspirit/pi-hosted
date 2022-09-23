@@ -6625,6 +6625,24 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tool"
+			],
+			"description": "SurrealDB is an end-to-end cloud native database for web, mobile, serverless, jamstack, backend, and traditional applications.",
+			"image": "surrealdb/surrealdb:latest",
+			"logo": "",
+			"name": "SurrealDB",
+			"platform": "linux",
+			"ports": [
+				"8000:8000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "SurrealDB",
+			"type": 1,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://surrealdb.com/\" target=\"_blank\">https://surrealdb.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/surrealdb/surrealdb\" target=\"_blank\">https://hub.docker.com/r/surrealdb/surrealdb</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Backup",
 				"Cloud",
 				"Other",
