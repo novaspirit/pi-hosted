@@ -38,6 +38,12 @@ for vid in $(seq 0 $(( nVideos - 1 ))); do
 	# Get Video ID
 	ID=$( echo "$info" | jq '.ID' | tr -d '"' )
 
+	# Channel Info
+	ChID=$( echo "$info" | jq '.Channel' )
+	ChTitle=$( jq ".channels[] | select(.ID==${ChID}) | .Title" "$appinfo" | tr -d '"' )
+	ChURL=$( jq ".channels[] | select(.ID==${ChID}) | .URL" "$appinfo" | tr -d '"' )
+	ChIcon="../build/images/${ChID:1:-1}-logo.png"
+
 	# Get Video URL
 	URL=$( echo "$info" | jq '.URL' | tr -d '"' )
 
@@ -52,7 +58,7 @@ for vid in $(seq 0 $(( nVideos - 1 ))); do
 		unset DocMD
 	fi
 
-	line="|$ID|[$TITLE]($URL)|$DocMD|"
+	line="|$ID|[![$ChTitle]($ChIcon \"$ChTitle\")]($ChURL)|[$TITLE]($URL)|$DocMD|"
 	if [ "$vid" == "0" ] ; then
 		table=$line
 	else
