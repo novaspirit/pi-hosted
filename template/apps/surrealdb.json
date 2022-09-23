@@ -12,7 +12,7 @@
 	"officialDoc": "https://hub.docker.com/r/surrealdb/surrealdb",
 	"platform": "linux",
 	"ports": [
-		"8000:8000/tcp"
+		"8020:8000/tcp"
 	],
 	"restart_policy": "unless-stopped",
 	"title": "SurrealDB",
