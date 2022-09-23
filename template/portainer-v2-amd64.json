@@ -6632,11 +6632,29 @@
 			"image": "surrealdb/surrealdb:latest",
 			"logo": "",
 			"name": "SurrealDB",
+			"env": [
+				{
+					"default": "default_username",
+					"label": "SDB_USERNAME",
+					"name": "SDB_USERNAME"
+				},
+				{
+					"default": "default_password",
+					"label": "SDB_PASSWORD",
+					"name": "SDB_PASSWORD"
+				}
+			],
 			"platform": "linux",
 			"ports": [
 				"8020:8000/tcp"
 			],
-			"command": "start",
+			"command": "start --user ${SDB_USERNAME} --pass ${SDB_PASSWORD} file:/data/database.db",
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/surrealdb/data",
+					"container": "/data"
+				}
+			],
 			"restart_policy": "unless-stopped",
 			"title": "SurrealDB",
 			"type": 1,
