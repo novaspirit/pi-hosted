@@ -1,0 +1,21 @@
+{
+	"categories": [
+		"Other",
+        "Tool"
+	],
+	"description": "SurrealDB is an end-to-end cloud native database for web, mobile, serverless, jamstack, backend, and traditional applications.",
+	"image_arm32": "surrealdb/surrealdb:latest",
+	"image_arm64": "surrealdb/surrealdb:latest",
+	"image_amd64": "surrealdb/surrealdb:latest",
+	"logo": "",
+	"name": "SurrealDB",
+	"officialDoc": "https://hub.docker.com/r/surrealdb/surrealdb",
+	"platform": "linux",
+	"ports": [
+		"8000:8000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "SurrealDB",
+	"type": 1,
+	"webpage": "https://surrealdb.com/"
+}
