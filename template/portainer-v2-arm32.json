@@ -5936,7 +5936,7 @@
 			"name": "SurrealDB",
 			"platform": "linux",
 			"ports": [
-				"8000:8000/tcp"
+				"8020:8000/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "SurrealDB",
