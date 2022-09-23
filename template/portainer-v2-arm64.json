@@ -6727,6 +6727,7 @@
 			"ports": [
 				"8020:8000/tcp"
 			],
+			"command": "start",
 			"restart_policy": "unless-stopped",
 			"title": "SurrealDB",
 			"type": 1,
