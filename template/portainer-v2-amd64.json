@@ -6,7 +6,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "[Adguardhome](https://adguard.com/en/adguard-home/overview.html) AdGuard Home is a network-wide software for blocking ads & tracking.",
+			"description": "AdGuard Home is a network-wide software for blocking ads & tracking.",
 			"image": "adguard/adguardhome:latest",
 			"logo": "https://developer.asustor.com/uploadIcons/0020_999_1595573028_AdGuardhome_256.png",
 			"name": "Adguardhome",
@@ -926,6 +926,31 @@
 			"title": "Cloudflare DDNS",
 			"type": 1,
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.cloudflare.com/en-gb/learning/dns/glossary/dynamic-dns/\" target=\"_blank\">https://www.cloudflare.com/en-gb/learning/dns/glossary/dynamic-dns/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/favonia/cloudflare-ddns/\" target=\"_blank\">https://github.com/favonia/cloudflare-ddns/</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools",
+				"VPN",
+				"Proxy"
+			],
+			"description": "Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. With Tunnel, you do not send traffic to an external IP — instead, a lightweight daemon in your infrastructure (cloudflared) creates outbound-only connections to Cloudflare's edge.",
+			"env": [
+				{
+					"default": "Your_Tunnel_Token_From_The_Zero_Dashboard_Access_Tunnel",
+					"label": "token",
+					"name": "TUNNEL_TOKEN"
+				}
+			],
+			"image": "cloudflare/cloudflared:latest",
+			"logo": "https://www.cloudflare.com/static/61dea7db2b4d1b5325898dd0e25ce458/tunnel-hero-illustration.svg",
+			"name": "Cloudflared",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.cloudflare.com/products/tunnel/\" target=\"_blank\">https://www.cloudflare.com/products/tunnel/</a><br><b>Official Docker Documentation: </b><a href=\"https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/\" target=\"_blank\">https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/</a><br><br><br>Requires a token in order to work. You can find the dashboard <a href='https://dash.teams.cloudflare.com/'>here</a>. Once you logged in, go to Access followed by Tunnels. Create a tunnel. After you gave it a name you'll see in the command section a long string of chacters. This is your token you must copy.",
+			"platform": "linux",
+			"command": "tunnel run",
+			"restart_policy": "unless-stopped",
+			"title": "Cloudflared",
+			"type": 1
 		},
 		{
 			"categories": [

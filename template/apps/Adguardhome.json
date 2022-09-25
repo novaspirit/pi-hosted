@@ -3,7 +3,7 @@
 		"Other",
 		"Tools"
 	],
-	"description": "[Adguardhome](https://adguard.com/en/adguard-home/overview.html) AdGuard Home is a network-wide software for blocking ads & tracking.",
+	"description": "AdGuard Home is a network-wide software for blocking ads & tracking.",
 	"image_arm32": "adguard/adguardhome:latest",
 	"image_arm64": "adguard/adguardhome:latest",
 	"image_amd64": "adguard/adguardhome:latest",

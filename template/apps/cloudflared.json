@@ -1,0 +1,28 @@
+{
+	"categories": [
+		"Other",
+		"Tools",
+		"VPN",
+		"Proxy"
+	],
+	"description": "Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. With Tunnel, you do not send traffic to an external IP — instead, a lightweight daemon in your infrastructure (cloudflared) creates outbound-only connections to Cloudflare's edge.",
+	"env": [
+		{
+			"default": "Your_Tunnel_Token_From_The_Zero_Dashboard_Access_Tunnel",
+			"label": "token",
+			"name": "TUNNEL_TOKEN"
+		}
+	],
+	"image_amd64": "cloudflare/cloudflared:latest",
+	"image_arm64": "cloudflare/cloudflared:latest",
+	"logo": "https://www.cloudflare.com/static/61dea7db2b4d1b5325898dd0e25ce458/tunnel-hero-illustration.svg",
+	"name": "Cloudflared",
+	"note": "Requires a token in order to work. You can find the dashboard <a href='https://dash.teams.cloudflare.com/'>here</a>. Once you logged in, go to Access followed by Tunnels. Create a tunnel. After you gave it a name you'll see in the command section a long string of chacters. This is your token you must copy.",
+	"officialDoc": "https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/",
+	"platform": "linux",
+	"command": "tunnel run",
+	"restart_policy": "unless-stopped",
+	"title": "Cloudflared",
+	"type": 1,
+	"webpage": "https://www.cloudflare.com/products/tunnel/"
+}
