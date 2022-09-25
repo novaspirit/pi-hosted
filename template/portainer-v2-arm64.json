@@ -943,7 +943,7 @@
 				}
 			],
 			"image": "cloudflare/cloudflared:latest",
-			"logo": "https://www.cloudflare.com/static/61dea7db2b4d1b5325898dd0e25ce458/tunnel-hero-illustration.svg",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/cloudflared.svg",
 			"name": "Cloudflared",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.cloudflare.com/products/tunnel/\" target=\"_blank\">https://www.cloudflare.com/products/tunnel/</a><br><b>Official Docker Documentation: </b><a href=\"https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/\" target=\"_blank\">https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/</a><br><br><br>Requires a token in order to work. You can find the dashboard <a href='https://dash.teams.cloudflare.com/'>here</a>. Once you logged in, go to Access followed by Tunnels. Create a tunnel. After you gave it a name you'll see in the command section a long string of chacters. This is your token you must copy.",
 			"platform": "linux",
