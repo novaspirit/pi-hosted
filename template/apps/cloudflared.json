@@ -15,7 +15,7 @@
 	],
 	"image_amd64": "cloudflare/cloudflared:latest",
 	"image_arm64": "cloudflare/cloudflared:latest",
-	"logo": "https://www.cloudflare.com/static/61dea7db2b4d1b5325898dd0e25ce458/tunnel-hero-illustration.svg",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/cloudflared.svg",
 	"name": "Cloudflared",
 	"note": "Requires a token in order to work. You can find the dashboard <a href='https://dash.teams.cloudflare.com/'>here</a>. Once you logged in, go to Access followed by Tunnels. Create a tunnel. After you gave it a name you'll see in the command section a long string of chacters. This is your token you must copy.",
 	"officialDoc": "https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/",
