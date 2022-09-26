@@ -1,6 +1,15 @@
-
+# Ignore MacOS and Windows hidden files
 .DS_Store
 desktop.ini
 
 # Ignore tmp file in build directory
 build/tmp/
+
+# Ignore vscode specific config files
+.vscode/*
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
