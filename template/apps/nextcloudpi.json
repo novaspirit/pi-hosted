@@ -20,7 +20,7 @@
 		}
 	],
 	"extraScript": "reset_premissions_nextcloud.sh",
-	"image_arm32": "ownyourbits/nextcloudpi",
+	"image_arm32": "ownyourbits/nextcloudpi-armhf:latest",
 	"image_arm64": "ownyourbits/nextcloudpi-arm64:latest",
 	"name": "nextcloudpi",
 	"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
