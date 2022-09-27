@@ -13,6 +13,7 @@
 	"note": "It is recommended to manually update your containers but we're including this for those of you that don't care",
 	"officialDoc": "https://containrrr.dev/watchtower/usage-overview/",
 	"platform": "linux",
+	"command": "--cleanup",
 	"restart_policy": "unless-stopped",
 	"title": "Watchtower",
 	"type": 1,
