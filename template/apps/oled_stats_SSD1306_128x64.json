@@ -6,11 +6,13 @@
 	"description": "A quick way to display system stats on a 128x64 I2C OLED display.",
 	"env": [
 		{
-			"default": "8:30",
+			"default": "8",
+			"label": "start displaying screen",
 			"name": "start"
 		},
 		{
-			"default": "23:00",
+			"default": "23",
+			"label": "end displaying screen",
 			"name": "end"
 		}
 	],
