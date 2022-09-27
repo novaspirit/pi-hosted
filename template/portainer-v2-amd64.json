@@ -5413,6 +5413,41 @@
 		},
 		{
 			"categories": [
+				"Other"
+			],
+			"description": "Wireless control of PixelStrips or NeoPixels using a web graphical interface running on a Raspberry Pi.",
+			"image": "macley/pixel-server:latest",
+			"logo": "https://lirp.cdn-website.com/c73f56a6/dms3rep/multi/opt/ir.appnice.controlpad_512x512-640w.png",
+			"name": "pixel-server",
+			"platform": "linux",
+			"ports": [
+				"85:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Pixel-server",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/pixel-server/auth.cfg",
+					"container": "/opt/pixel-server/auth.cfg"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/pixel-server/pixelserver.cfg",
+					"container": "/opt/pixel-server/pixelserver.cfg"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/pixel-server/users.cfg",
+					"container": "/opt/pixel-server/users.cfg"
+				},
+				{
+					"container": "/etc/crontabs/"
+				}
+			],
+			"privileged": true,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"http://www.penguintutor.com/projects/pixel-server\" target=\"_blank\">http://www.penguintutor.com/projects/pixel-server</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/Macleykun/pixel-server\" target=\"_blank\">https://github.com/Macleykun/pixel-server</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/pixel-server_setup.md\" target=\"_blank\">pixel-server_setup.md</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_pixel-server.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_pixel-server.sh | bash<br><br>"
+		},
+		{
+			"categories": [
 				"Video",
 				"Music",
 				"Photos"

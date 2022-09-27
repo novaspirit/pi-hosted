@@ -1,0 +1,40 @@
+{
+	"categories": [
+		"Other"
+	],
+	"description": "Wireless control of PixelStrips or NeoPixels using a web graphical interface running on a Raspberry Pi.",
+	"image_arm32": "macley/pixel-server:latest",
+	"image_arm64": "macley/pixel-server:latest",
+	"image_amd64": "macley/pixel-server:latest",
+	"logo": "https://lirp.cdn-website.com/c73f56a6/dms3rep/multi/opt/ir.appnice.controlpad_512x512-640w.png",
+	"name": "pixel-server",
+	"officialDoc": "https://github.com/Macleykun/pixel-server",
+    "piHostedDoc": "pixel-server_setup.md",
+    "preInstallScript": "install_pixel-server.sh",
+	"platform": "linux",
+	"ports": [
+		"85:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Pixel-server",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/pixel-server/auth.cfg",
+			"container": "/opt/pixel-server/auth.cfg"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/pixel-server/pixelserver.cfg",
+			"container": "/opt/pixel-server/pixelserver.cfg"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/pixel-server/users.cfg",
+			"container": "/opt/pixel-server/users.cfg"
+		},
+		{
+			"container": "/etc/crontabs/"
+		}
+	],
+	"privileged": true,
+	"webpage": "http://www.penguintutor.com/projects/pixel-server"
+}
