@@ -6327,7 +6327,7 @@
 					"name": "RU_REMOVE_CORE_PLUGINS"
 				}
 			],
-			"image": "linuxserver/crazymax/rtorrent-rutorrent:latest",
+			"image": "crazymax/rtorrent-rutorrent:latest",
 			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
 			"name": "rutorrent",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Novik/ruTorrent\" target=\"_blank\">https://github.com/Novik/ruTorrent</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/crazy-max/docker-rtorrent-rutorrent\" target=\"_blank\">https://github.com/crazy-max/docker-rtorrent-rutorrent</a><br><br><br>For ruTorrent basic auth, XMLRPC through nginx and WebDAV on completed downloads, you can populate .htpasswd files with the following command:\\ndocker run --rm -it httpd:2.4-alpine htpasswd -Bbn <username> <password> >> $(pwd)/passwd/webdav.htpasswd",
