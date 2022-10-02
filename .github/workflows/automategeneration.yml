@@ -51,8 +51,8 @@ jobs:
       run: build/generators/generateToolsREADME.sh
     - name: Commit files
       run: |
-        git config --local user.email "workflow@github.com"
-        git config --local user.name "GitHub Workflow"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
         git add -- "$ptArm32"
         git add -- "$ptArm64"
         git add -- "$ptAmd64"
