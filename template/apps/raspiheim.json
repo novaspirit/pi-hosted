@@ -1,0 +1,71 @@
+{
+	"categories": [
+		"Game"
+	],
+	"description": "This container lets you run a Valheim server on a Raspberry Pi.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "Raspiheim",
+			"label": "SERVER_NAME",
+			"name": "SERVER_NAME"
+		},
+		{
+			"default": "Raspiworld",
+			"label": "WORLD_NAME",
+			"name": "WORLD_NAME"
+		},
+		{
+			"default": "Raspipass",
+			"label": "SERVER_PASS",
+			"name": "SERVER_PASS"
+		},
+		{
+			"default": "0",
+			"label": "PUBLIC",
+			"name": "PUBLIC"
+		},
+		{
+			"default": "false",
+			"label": "UPDATE",
+			"name": "UPDATE"
+		},
+		{
+			"default": "false",
+			"label": "PAUSE",
+			"name": "PAUSE"
+		}
+	],
+	"image_arm64": "arokan/raspiheim:latest",
+	"logo": "https://static.wikia.nocookie.net/valheim/images/b/bf/Valheim-logo.png/revision/latest?cb=20210317083440&path-prefix=de",
+	"name": "Raspiheim",
+	"officialDoc": "https://hub.docker.com/r/arokan/raspiheim",
+	"platform": "linux",
+	"ports": [
+		"2456:2456/udp",
+		"2457:2457/udp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Raspiheim",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Raspiheim/data",
+			"container": "/data"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Raspiheim/server",
+			"container": "/valheim"
+		}
+	],
+	"webpage": "https://hub.docker.com/r/arokan/raspiheim"
+}
