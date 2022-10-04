@@ -2851,6 +2851,41 @@
 		},
 		{
 			"categories": [
+				"HomeAutomation"
+			],
+			"description": "IoBroker is a open source IoT platform written in JavaScript that easily connects smarthome components from different manufactures. With the help of plugins (called: adapters) ioBroker is able to communicate with a big variety of IoT hardware and services using different protocols and APIs.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "buanet/iobroker:latest",
+			"logo": "https://github.com/buanet/ioBroker.docker/raw/main/docs/img/iobroker_logo.png",
+			"name": "iobroker",
+			"platform": "linux",
+			"ports": [
+				"8081:8081/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "iobroker",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/iobrokerdata",
+					"container": "/opt/iobroker"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/buanet/ioBroker.docker\" target=\"_blank\">https://github.com/buanet/ioBroker.docker</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/buanet/ioBroker.docker\" target=\"_blank\">https://github.com/buanet/ioBroker.docker</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Downloaders",
 				"Tools"
 			],

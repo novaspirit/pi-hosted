@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 173 apps | 189 apps | 186 apps | 189 apps |
+| 174 apps | 190 apps | 187 apps | 190 apps |
 
 ---
 
@@ -77,6 +77,7 @@ List of all apps included in this project with info related to it.
 |[Huginn](https://github.com/huginn/huginn)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/huginn/huginn/tree/master/docker) |  |  |  |
 |[Influxdb 1.8.10](https://www.influxdata.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker) |  |  |  |
 |[Invidious](https://invidious.io/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.invidious.io/installation/#docker) |  | [![](../build/images/script_icon.png)](../tools/install_invidious.sh) |  |
+|[iobroker](https://github.com/buanet/ioBroker.docker)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/buanet/ioBroker.docker) |  |  |  |
 |[Jackett](https://github.com/Jackett/Jackett)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jackett) |  |  |  |
 |[JDownloader](https://my.jdownloader.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/jaymoulin/docker-jdownloader) |  |  | [![Installing JDownloader and File Browser On The Pi Docker Server](../build/images/yt-badge-novaspirit.png "Installing JDownloader and File Browser On The Pi Docker Server")](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[Jellyfin](https://jellyfin.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jellyfin) |  |  |  |
