@@ -6001,6 +6001,76 @@
 		},
 		{
 			"categories": [
+				"Game"
+			],
+			"description": "This container lets you run a Valheim server on a Raspberry Pi.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "Raspiheim",
+					"label": "SERVER_NAME",
+					"name": "SERVER_NAME"
+				},
+				{
+					"default": "Raspiworld",
+					"label": "WORLD_NAME",
+					"name": "WORLD_NAME"
+				},
+				{
+					"default": "Raspipass",
+					"label": "SERVER_PASS",
+					"name": "SERVER_PASS"
+				},
+				{
+					"default": "0",
+					"label": "PUBLIC",
+					"name": "PUBLIC"
+				},
+				{
+					"default": "false",
+					"label": "UPDATE",
+					"name": "UPDATE"
+				},
+				{
+					"default": "false",
+					"label": "PAUSE",
+					"name": "PAUSE"
+				}
+			],
+			"image": "arokan/raspiheim:latest",
+			"logo": "https://static.wikia.nocookie.net/valheim/images/b/bf/Valheim-logo.png/revision/latest?cb=20210317083440&path-prefix=de",
+			"name": "Raspiheim",
+			"platform": "linux",
+			"ports": [
+				"2456:2456/udp",
+				"2457:2457/udp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Raspiheim",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Raspiheim/data",
+					"container": "/data"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Raspiheim/server",
+					"container": "/valheim"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/arokan/raspiheim\" target=\"_blank\">https://hub.docker.com/r/arokan/raspiheim</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/arokan/raspiheim\" target=\"_blank\">https://hub.docker.com/r/arokan/raspiheim</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other"
 			],
 			"description": "Rdesktop is an Ubuntu based container containing full desktop environments in officially supported flavors accessible via RDP.",
