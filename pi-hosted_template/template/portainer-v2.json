@@ -1657,7 +1657,7 @@
 					"name": "CAPTCHA_SOLVER"
 				},
 				{
-					"default": "Europe/London",
+					"default": "America/New_York",
 					"label": "TZ",
 					"name": "TZ"
 				}
