@@ -15,11 +15,10 @@
 				"53:53/tcp",
 				"53:53/udp",
 				"67:67/udp",
-				"68:68/udp",
 				"80:80/tcp",
 				"443:443/tcp",
 				"443:443/udp",
-				"3000:3000/tcp",
+				"3001:3000/tcp",
 				"853:853/tcp",
 				"784:784/udp",
 				"853:853/udp",
@@ -292,15 +291,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/ArchiSteamFarm/config",
+					"bind": "/portainer/Files/AppData/Config/ArchiSteamFarm/config",
 					"container": "/app/config"
 				},
 				{
-					"bind": "/portainer/Files/AppData/ArchiSteamFarm/plugins",
+					"bind": "/portainer/Files/AppData/Config/ArchiSteamFarm/plugins",
 					"container": "/app/plugins"
 				},
 				{
-					"bind": "/portainer/Files/AppData/ArchiSteamFarm/logs",
+					"bind": "/portainer/Files/AppData/Config/ArchiSteamFarm/logs",
 					"container": "/app/logs"
 				}
 			],
@@ -418,7 +417,7 @@
 			"image": "authelia/authelia:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/authelia.png",
 			"name": "authelia",
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.authelia.com/\" target=\"_blank\">https://www.authelia.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.authelia.com/docs/configuration/\" target=\"_blank\">https://www.authelia.com/docs/configuration/</a><br><br><br>Requires a configuration.yml file in order to work. Documentation is Available <a href='https://docs.authelia.com/deployment/deployment-ha'>here</a>.",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.authelia.com/\" target=\"_blank\">https://www.authelia.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.authelia.com/docs/configuration/\" target=\"_blank\">https://www.authelia.com/docs/configuration/</a><br><br><br>Requires a configuration.yml file in order to work. Documentation is Available <a href='https://www.authelia.com/configuration/prologue/introduction/'>here</a>.",
 			"platform": "linux",
 			"ports": [
 				"9091:9091/tcp"
@@ -1865,6 +1864,46 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pawelmalak/flame\" target=\"_blank\">https://github.com/pawelmalak/flame</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pawelmalak/flame#with-docker-recommended\" target=\"_blank\">https://github.com/pawelmalak/flame#with-docker-recommended</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection.",
+			"env": [
+				{
+					"default": "info",
+					"label": "LOG_LEVEL",
+					"name": "LOG_LEVEL"
+				},
+				{
+					"default": "false",
+					"label": "LOG_HTML",
+					"name": "LOG_HTML"
+				},
+				{
+					"default": "none",
+					"label": "CAPTCHA_SOLVER",
+					"name": "CAPTCHA_SOLVER"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "ghcr.io/flaresolverr/flaresolverr:latest",
+			"logo": "https://raw.githubusercontent.com/FlareSolverr/FlareSolverr/c48d342b9cfb65d7696b96e9867fcff0ae87a0e2/resources/flaresolverr_logo.svg",
+			"name": "FlareSolverr",
+			"platform": "linux",
+			"ports": [
+				"8191:8191"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "FlareSolverr",
+			"type": 1,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Docker Documentation: </b><a href=\"https://github.com/FlareSolverr/FlareSolverr#installation\" target=\"_blank\">https://github.com/FlareSolverr/FlareSolverr#installation</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -6891,7 +6930,7 @@
 					"name": "AUTH_KEY"
 				}
 			],
-			"image": "tailscale/tailscale:latest",
+			"image": "tailscale/tailscale:stable",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tailscale-icon.png",
 			"name": "tailscale",
 			"platform": "linux",
