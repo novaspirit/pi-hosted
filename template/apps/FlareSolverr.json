@@ -1,0 +1,42 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection.",
+	"env": [
+		{
+			"default": "info",
+			"label": "LOG_LEVEL",
+			"name": "LOG_LEVEL"
+		},
+		{
+			"default": "false",
+			"label": "LOG_HTML",
+			"name": "LOG_HTML"
+		},
+		{
+			"default": "none",
+			"label": "CAPTCHA_SOLVER",
+			"name": "CAPTCHA_SOLVER"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		}
+	],
+	"image_arm32": "ghcr.io/flaresolverr/flaresolverr:latest",
+	"image_arm64": "ghcr.io/flaresolverr/flaresolverr:latest",
+	"image_amd64": "ghcr.io/flaresolverr/flaresolverr:latest",
+	"logo": "https://raw.githubusercontent.com/FlareSolverr/FlareSolverr/c48d342b9cfb65d7696b96e9867fcff0ae87a0e2/resources/flaresolverr_logo.svg",
+	"name": "FlareSolverr",
+	"officialDoc": "https://github.com/FlareSolverr/FlareSolverr#installation",
+	"platform": "linux",
+	"ports": [
+		"8191:8191"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "FlareSolverr",
+	"type": 1
+}
