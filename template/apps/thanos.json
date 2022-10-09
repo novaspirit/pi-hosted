@@ -13,7 +13,8 @@
   	}
   ],
 	"description": "[Thanos](https://github.com/aternosorg/thanos) is a tool that allows you to shrink your minecraft worlds by deleting unused chuncks.",
-	"image_amd64": "linuxserver/adguardhome-sync:latest",
+	"image_amd64": "cristianeduardmihai/thanos:latest",
+	"image_arm64": "cristianeduardmihai/thanos:arm64",
 	"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/images/aternos-thanos.png",
 	"name": "Thanos",
 	"officialDoc": "https://github.com/aternosorg/thanos",
