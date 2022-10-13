@@ -7017,7 +7017,7 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.the-diy-life.com/\" target=\"_blank\">https://www.the-diy-life.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/mklements/OLED_Stats_Docker\" target=\"_blank\">https://github.com/mklements/OLED_Stats_Docker</a><br><br><br>Run this command first to enable is2 communication! sudo raspi-config nonint do_i2c 0",
-			"image": "macley/oled_stats:latest",
+			"image": "mklements/oled_stats:latest",
 			"logo": "https://camo.githubusercontent.com/4cf4aaa1e53612347e4d48f152d6d4eea0ce93a6ecacacaa9d44061d0994b408/68747470733a2f2f7777772e7468652d6469792d6c6966652e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032322f30392f3138373137323831322d64653264653635632d626433302d343065372d613835322d3264343234656463323761622e6a7067",
 			"name": "OLED_Stats",
 			"platform": "linux",
