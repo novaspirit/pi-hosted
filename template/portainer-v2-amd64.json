@@ -6991,6 +6991,40 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools",
+				"Minecraft"
+			],
+			"env": [
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "America/New_York",
+					"description": "Specify a timezone to use for example Europe/London"
+				}
+			],
+			"description": "[Thanos](https://github.com/aternosorg/thanos) is a tool that allows you to shrink your minecraft worlds by deleting unused chuncks.",
+			"image": "cristianeduardmihai/thanos:latest",
+			"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/images/aternos-thanos.png",
+			"name": "Thanos",
+			"platform": "linux",
+			"restart_policy": "never",
+			"title": "Thanos",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/mc/output",
+					"container": "/output"
+				},
+				{
+					"bind": "/portainer/mc/input",
+					"container": "/watch"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/aternosorg/thanos\" target=\"_blank\">https://github.com/aternosorg/thanos</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/aternosorg/thanos\" target=\"_blank\">https://github.com/aternosorg/thanos</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Messenger"
 			],
 			"description": "A self-hosted web IRC client",

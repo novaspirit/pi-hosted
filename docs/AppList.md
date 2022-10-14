@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 175 apps | 191 apps | 188 apps | 191 apps |
+| 175 apps | 192 apps | 189 apps | 192 apps |
 
 ---
 
@@ -173,6 +173,7 @@ List of all apps included in this project with info related to it.
 |[SyncThing](https://syncthing.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-syncthing) |  |  |  |
 |[Tailscale](https://tailscale.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/tailscale/tailscale) |  |  |  |
 |[Tautulli](https://tautulli.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-tautulli) |  |  |  |
+|[Thanos](https://github.com/aternosorg/thanos)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/aternosorg/thanos) |  |  |  |
 |[TheLounge](https://thelounge.chat/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-thelounge) |  |  |  |
 |[TiddlyWiki](https://tiddlywiki.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://gitlab.com/nicolaw/tiddlywiki) |  |  |  |
 |[Traefik](https://doc.traefik.io/traefik/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://doc.traefik.io/traefik/getting-started/install-traefik/) |  | [![](../build/images/script_icon.png)](../tools/traefik.sh) |  |
