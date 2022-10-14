@@ -41,6 +41,7 @@
     }
   ],
   "name": "Your Spotify",
+  "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/your-spotify.png",
   "officialDoc": "https://github.com/Yooooomi/your_spotify#readme",
   "webpage": "https://github.com/Yooooomi/your_spotify",
   "note": "Create a Spotify App here: https://developer.spotify.com/dashboard/applications. Don't forget adding Redirect URL: http://192.168.X.Y:3081/oauth/spotify/callback under edit settings of the dashboard.",
