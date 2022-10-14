@@ -60,6 +60,7 @@
 	],
 	"image_arm64": "ebrianne/docker-deluge-openvpn:latest",
 	"image_amd64": "ebrianne/docker-deluge-openvpn:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/deluge-icon.png",
 	"name": "deluge-openvpn",
 	"officialDoc": "https://github.com/sgtsquiggs/docker-deluge-openvpn",
 	"platform": "linux",
