@@ -8,7 +8,7 @@
   	{
   		"name": "TZ",
   		"label": "TZ",
-  		"default": "Europe/London",
+  		"default": "America/New_York",
   		"description": "Specify a timezone to use for example Europe/London"
   	}
   ],
