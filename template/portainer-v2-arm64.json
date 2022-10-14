@@ -4427,6 +4427,7 @@
 				}
 			],
 			"image": "ownyourbits/nextcloudpi-arm64:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nextcloud-icon.png",
 			"name": "nextcloudpi",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://ownyourbits.com/nextcloudpi/\" target=\"_blank\">https://ownyourbits.com/nextcloudpi/</a><br><b>Official Docker Documentation: </b><a href=\"https://ownyourbits.com/2017/06/08/nextcloudpi-docker-for-raspberry-pi/\" target=\"_blank\">https://ownyourbits.com/2017/06/08/nextcloudpi-docker-for-raspberry-pi/</a><br><br><b>Extra useful script: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/reset_premissions_nextcloud.sh\" target=\"_blank\">reset_premissions_nextcloud.sh</a><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=E6IrT3g5Gqc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=9 target=\"_blank\">Novaspirit Tech - Installing Nextcloud on Raspberry Pi Docker</a><br><br>The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
 			"platform": "linux",
