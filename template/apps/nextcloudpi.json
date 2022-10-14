@@ -23,6 +23,7 @@
 	"image_arm32": "ownyourbits/nextcloudpi-armhf:latest",
 	"image_arm64": "ownyourbits/nextcloudpi-arm64:latest",
 	"image_amd64": "ownyourbits/nextcloudpi-x86:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nextcloud-icon.png",
 	"name": "nextcloudpi",
 	"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
 	"officialDoc": "https://ownyourbits.com/2017/06/08/nextcloudpi-docker-for-raspberry-pi/",
