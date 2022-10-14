@@ -1396,6 +1396,7 @@
 				}
 			],
 			"image": "ebrianne/docker-deluge-openvpn:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/deluge-icon.png",
 			"name": "deluge-openvpn",
 			"platform": "linux",
 			"ports": [
