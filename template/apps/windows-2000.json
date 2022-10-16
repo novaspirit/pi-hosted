@@ -4,8 +4,8 @@
 		"Tools"
 	],
 	"description": "A Docker image for Windows 2000 Advanced Server with SP4.",
-	"image_arm64": "hectormolinero/qemu-win2000:latest",
-	"image_amd64": "hectormolinero/qemu-win2000:latest",
+	"image_arm64": "hectorm/qemu-win2000:latest",
+	"image_amd64": "hectorm/qemu-win2000:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/win2000.png",
 	"name": "win2000",
 	"note": "Why? Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should. -- Dr. Ian Malcolm",
