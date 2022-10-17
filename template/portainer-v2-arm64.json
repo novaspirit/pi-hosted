@@ -7925,7 +7925,7 @@
 				"Tools"
 			],
 			"description": "A Docker image for Windows 2000 Advanced Server with SP4.",
-			"image": "hectormolinero/qemu-win2000:latest",
+			"image": "hectorm/qemu-win2000:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/win2000.png",
 			"name": "win2000",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/hectorm/docker-qemu-win2000\" target=\"_blank\">https://github.com/hectorm/docker-qemu-win2000</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/hectorm/docker-qemu-win2000#start-an-instance\" target=\"_blank\">https://github.com/hectorm/docker-qemu-win2000#start-an-instance</a><br><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13 target=\"_blank\">Novaspirit Tech - Checking out Windows 2000 Docker</a><br><br>Why? Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should. -- Dr. Ian Malcolm",
