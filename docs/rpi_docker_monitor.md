@@ -124,6 +124,10 @@ GF_SECURITY_ADMIN_PASSWORD=changeme
 GF_USERS_ALLOW_SIGN_UP=false
 ```
 
+##Default Login Inforamtion
+User: Admin
+Password: Admin
+
 ### Setup Prometheus as the default data source.
  
 ```
