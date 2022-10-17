@@ -6025,6 +6025,34 @@
 		},
 		{
 			"categories": [
+				"Monitor",
+				"Tools"
+			],
+			"description": "Monitor your Raspberry Pi and Dockers using Grafana developed by oijkn. Please download grafana configs from his git https://github.com/oijkn/Docker-Raspberry-PI-Monitoring",
+			"env": [
+				{
+					"default": "15d",
+					"label": "PROMETHEUS_RETENTION",
+					"name": "PROMETHEUS_RETENTION"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/rpi_monitor.png",
+			"name": "RaspberryPi-Docker-Monitor",
+			"platform": "linux",
+			"ports": [
+				"3000:3000/tcp"
+			],
+			"repository": {
+				"stackfile": "stack/raspberrypi-monitoring.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted"
+			},
+			"restart_policy": "unless-stopped",
+			"title": "Raspberry Pi Docker Monitor",
+			"type": 3,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">rpi_docker_monitor.md</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/rpi_docker_monitor.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/rpi_docker_monitor.sh | bash<br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8 target=\"_blank\">Novaspirit Tech - Raspberry Pi Docker Monitoring</a><br><br>"
+		},
+		{
+			"categories": [
 				"Other"
 			],
 			"description": "Rdesktop is an Ubuntu based container containing full desktop environments in officially supported flavors accessible via RDP.",

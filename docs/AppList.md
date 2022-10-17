@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 175 apps | 192 apps | 189 apps | 192 apps |
+| 175 apps | 192 apps | 190 apps | 192 apps |
 
 ---
 
@@ -149,7 +149,7 @@ List of all apps included in this project with info related to it.
 |[qFlood](https://hotio.dev/containers/qflood/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hotio.dev/containers/qflood/) |  |  |  |
 |[Quassel IRC](https://quassel-irc.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-quassel-core) |  |  |  |
 |[Radarr](https://radarr.video/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-radarr) |  |  |  |
-|[Raspberry Pi Docker Monitor](https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md)|:heavy_check_mark:|:heavy_check_mark:|:x:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md) | [![](../build/images/red_doc_icon.png)](../docs/rpi_docker_monitor.md) | [![](../build/images/script_icon.png)](../tools/rpi_docker_monitor.sh) | [![Raspberry Pi Docker Monitoring](../build/images/yt-badge-novaspirit.png "Raspberry Pi Docker Monitoring")](https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8) |
+|[Raspberry Pi Docker Monitor](https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md) | [![](../build/images/red_doc_icon.png)](../docs/rpi_docker_monitor.md) | [![](../build/images/script_icon.png)](../tools/rpi_docker_monitor.sh) | [![Raspberry Pi Docker Monitoring](../build/images/yt-badge-novaspirit.png "Raspberry Pi Docker Monitoring")](https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8) |
 |[Raspiheim](https://hub.docker.com/r/arokan/raspiheim)|:x:|:heavy_check_mark:|:x:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/arokan/raspiheim) |  |  |  |
 |[RDesktop](http://xrdp.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-rdesktop) |  |  |  |
 |[Reactive-Resume](https://rxresu.me/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/martadinata666/reactive-resume) |  |  |  |
