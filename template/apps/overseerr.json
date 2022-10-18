@@ -37,7 +37,7 @@
     "volumes": [
         {
             "bind": "/portainer/Files/AppData/Config/Overseerr",
-            "container": "config"
+            "container": "/config"
         }
     ],
     "officialDoc": "https://hub.docker.com/r/linuxserver/overseerr",
