@@ -1,0 +1,34 @@
+{
+    "categories": [
+		"Other",
+		"Tools"
+    ],
+    "description": "Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.",
+    "env": [
+        {
+            "default": "development",
+            "label": "NODE_ENV",
+            "name": "NODE_ENV"
+        }
+    ],
+    "image_arm32": "ghost:latest",
+    "image_arm64": "ghost:latest",
+    "image_amd64": "ghost:latest",
+    "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ghost.png",
+    "name": "ghost",
+    "platform": "linux",
+    "ports": [
+        "2368:2368/tcp"
+    ],
+    "restart_policy": "unless-stopped",
+    "title": "Ghost",
+    "type": 1,
+    "volumes": [
+        {
+            "bind": "/portainer/Files/AppData/Config/Ghost",
+            "container": "/var/lib/ghost/content"
+        }
+    ],
+    "officialDoc": "https://hub.docker.com/_/ghost",
+    "webpage": "https://github.com/docker-library/docs/tree/master/ghost"
+}

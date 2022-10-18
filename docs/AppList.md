@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 175 apps | 192 apps | 190 apps | 192 apps |
+| 176 apps | 193 apps | 191 apps | 193 apps |
 
 ---
 
@@ -58,6 +58,7 @@ List of all apps included in this project with info related to it.
 |[FoundryVTT Server](https://foundryvtt.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/felddy/foundryvtt) |  |  |  |
 |[FreshRSS](https://www.freshrss.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/FreshRSS/FreshRSS/tree/edge/Docker) |  |  |  |
 |[Gazee](https://github.com/hubbcaps/gazee)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/gazee) |  |  |  |
+|[Ghost](https://github.com/docker-library/docs/tree/master/ghost)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/ghost) |  |  |  |
 |[Gitea](https://gitea.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.gitea.io/en-us/install-with-docker/) |  |  |  |
 |[Gitea with Mariadb](https://gitea.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.gitea.io/en-us/install-with-docker/#mysql-database) |  |  |  |
 |[Go-Socks5-Proxy](https://hub.docker.com/r/serjs/go-socks5-proxy)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/serjs/go-socks5-proxy) |  |  | [![Route Docker Traffic Through VPN Container](../build/images/yt-badge-novaspirit.png "Route Docker Traffic Through VPN Container")](https://www.youtube.com/watch?v=IWj1-j2QWvo) |
