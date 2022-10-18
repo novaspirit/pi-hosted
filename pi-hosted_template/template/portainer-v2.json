@@ -1801,6 +1801,37 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.",
+			"env": [
+				{
+					"default": "development",
+					"label": "NODE_ENV",
+					"name": "NODE_ENV"
+				}
+			],
+			"image": "ghost:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ghost.png",
+			"name": "ghost",
+			"platform": "linux",
+			"ports": [
+				"2368:2368/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Ghost",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Ghost",
+					"container": "/var/lib/ghost/content"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/docker-library/docs/tree/master/ghost\" target=\"_blank\">https://github.com/docker-library/docs/tree/master/ghost</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/ghost\" target=\"_blank\">https://hub.docker.com/_/ghost</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Proxy"
 			],
 			"description": "Simple socks5 server using go-socks5 with authentication options",
