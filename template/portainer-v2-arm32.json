@@ -4540,7 +4540,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/Overseerr",
-					"container": "config"
+					"container": "/config"
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://overseerr.dev/\" target=\"_blank\">https://overseerr.dev/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/overseerr\" target=\"_blank\">https://hub.docker.com/r/linuxserver/overseerr</a><br><br><br>"
