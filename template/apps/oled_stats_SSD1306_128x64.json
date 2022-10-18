@@ -16,7 +16,7 @@
 			"name": "end"
 		}
 	],
-	"note": "Run this command first to enable is2 communication! sudo raspi-config nonint do_i2c 0",
+	"note": "Run this command first to enable is2 communication! \nsudo raspi-config nonint do_i2c 0\nsudo /DietPi/dietpi/func/dietpi-set_hardware i2c enable || sudo /boot/dietpi/func/dietpi-set_hardware i2c enable\n",
 	"image_arm32": "mklements/oled_stats:latest",
 	"image_arm64": "mklements/oled_stats:latest",
 	"image_amd64": "mklements/oled_stats:latest",
