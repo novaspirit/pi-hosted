@@ -2301,7 +2301,7 @@
 					"container": "/www/assets"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Homer",
+					"bind": "/portainer/Files/AppData/Config/Homer/config.yml",
 					"container": "/www/config.yml"
 				}
 			]
