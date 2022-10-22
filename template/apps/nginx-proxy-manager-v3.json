@@ -1,0 +1,52 @@
+{
+	"categories": [
+		"Proxy",
+		"Tools"
+	],
+	"description": "Nginx Proxy Manager v3 Develop enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		}
+	],
+        "image_arm32": "jc21/nginx-proxy-manager:v3-develop",
+        "image_arm64": "jc21/nginx-proxy-manager:v3-develop",
+        "image_amd64": "jc21/nginx-proxy-manager:v3-develop",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
+	"name": "nginx-proxy-manager-v3",
+	"officialDoc": "https://nginxproxymanager.com/setup/",
+	"piHostedDoc": "nginx_proxy_manager.md",
+	"platform": "linux",
+	"ports": [
+		"80:80/tcp",
+		"81:81/tcp",
+		"443:443/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Nginx Proxy Manager v3 Develop",
+	"type": 1,
+	"videoID": "N.09",
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/nginx-proxy-manager-v3/data",
+			"container": "/data"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/nginx-proxy-manager-v3/letsencrypt",
+			"container": "/etc/letsencrypt"
+		}
+	],
+	"webpage": "https://nginxproxymanager.com/"
+}
