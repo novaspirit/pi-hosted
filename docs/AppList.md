@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 176 apps | 193 apps | 191 apps | 193 apps |
+| 177 apps | 194 apps | 192 apps | 194 apps |
 
 ---
 
@@ -118,6 +118,7 @@ List of all apps included in this project with info related to it.
 |[Nginx Proxy Manager v2 with Mysql [DEPRECATED]](https://nginxproxymanager.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://nginxproxymanager.com/setup/#using-mysql-mariadb-database) | [![](../build/images/red_doc_icon.png)](../docs/nginx_proxy_manager.md) | [![](../build/images/script_icon.png)](../tools/nginx-proxy-manager.sh) | [![Installing Nginx Proxy Manager on Docker](../build/images/yt-badge-novaspirit.png "Installing Nginx Proxy Manager on Docker")](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
 |[Nginx Proxy Manager v2 with Sqlite and Goaccess Charts](https://nginxproxymanager.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://nginxproxymanager.com/setup/#running-the-app) | [![](../build/images/red_doc_icon.png)](../docs/nginx_proxy_manager.md) |  | [![Installing Nginx Proxy Manager on Docker](../build/images/yt-badge-novaspirit.png "Installing Nginx Proxy Manager on Docker")](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
 |[Nginx Proxy Manager v2 with Sqllite](https://nginxproxymanager.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://nginxproxymanager.com/setup/) | [![](../build/images/red_doc_icon.png)](../docs/nginx_proxy_manager.md) |  | [![Installing Nginx Proxy Manager on Docker](../build/images/yt-badge-novaspirit.png "Installing Nginx Proxy Manager on Docker")](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
+|[Nginx Proxy Manager v3 Develop](https://nginxproxymanager.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://nginxproxymanager.com/setup/) | [![](../build/images/red_doc_icon.png)](../docs/nginx_proxy_manager.md) |  | [![Installing Nginx Proxy Manager on Docker](../build/images/yt-badge-novaspirit.png "Installing Nginx Proxy Manager on Docker")](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
 |[Nitter](https://nitter.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/zedeus/nitter) |  |  |  |
 |[Node Red](https://nodered.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://nodered.org/docs/getting-started/docker) |  |  |  |
 |[NUT Server](https://networkupstools.org)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/instantlinux/nut-upsd) |  |  |  |
