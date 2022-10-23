@@ -4167,7 +4167,7 @@
 				"Proxy",
 				"Tools"
 			],
-			"description": "Nginx Proxy Manager v3 Develop enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
+			"description": "[Alpha] Nginx Proxy Manager v3 Develop enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
 			"env": [
 				{
 					"default": "1000",
@@ -4195,7 +4195,7 @@
 				"443:443/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Nginx Proxy Manager v3 Develop",
+			"title": "Nginx Proxy Manager v3 [ALPHA] Develop",
 			"type": 1,
 			"volumes": [
 				{
