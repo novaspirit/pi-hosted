@@ -42,10 +42,6 @@
 		{
 			"bind": "/portainer/Files/AppData/Config/nginx-proxy-manager-v3/data",
 			"container": "/data"
-		},
-		{
-			"bind": "/portainer/Files/AppData/Config/nginx-proxy-manager-v3/letsencrypt",
-			"container": "/etc/letsencrypt"
 		}
 	],
 	"webpage": "https://nginxproxymanager.com/"
