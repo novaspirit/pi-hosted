@@ -19,7 +19,7 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm32": "linuxserver/duplicati:latest",
+	"image_arm32": "linuxserver/duplicati:v2.0.6.3-2.0.6.3_beta_2021-06-17-ls135",
 	"image_arm64": "linuxserver/duplicati:latest",
 	"image_amd64": "linuxserver/duplicati:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/duplicati-icon.png",
