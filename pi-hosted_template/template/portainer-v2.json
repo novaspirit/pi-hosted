@@ -1387,7 +1387,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/duplicati:latest",
+			"image": "linuxserver/duplicati:v2.0.6.3-2.0.6.3_beta_2021-06-17-ls135",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/duplicati-icon.png",
 			"name": "duplicati",
 			"platform": "linux",
