@@ -4959,6 +4959,47 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "OctoPrint is an open source 3D printer controller application, which provides a web interface for the connected printers.",
+			"env": [
+				{
+					"default": "development ",
+					"label": "NODE_ENV",
+					"name": "NODE_ENV"
+				},
+				{
+					"default": "true",
+					"label": "ENABLE_MJPG_STREAMER",
+					"name": "ENABLE_MJPG_STREAMER"
+				}
+			],
+			"image": "octoprint/octoprint:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/octoprint.png",
+			"name": "octoprint",
+			"platform": "linux",
+			"ports": [
+				"8051:80/tcp"
+			],
+			"privileged": true,
+			"restart_policy": "unless-stopped",
+			"title": "OctoPrint",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/OctoPrint",
+					"container": "/octoprint"
+				},
+				{
+					"bind": "/dev",
+					"container": "/dev"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://octoprint.org/\" target=\"_blank\">https://octoprint.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/octoprint/octoprint\" target=\"_blank\">https://hub.docker.com/r/octoprint/octoprint</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Management",
 				"Tools"
 			],

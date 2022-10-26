@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 177 apps | 194 apps | 192 apps | 194 apps |
+| 178 apps | 195 apps | 193 apps | 195 apps |
 
 ---
 
@@ -124,6 +124,7 @@ List of all apps included in this project with info related to it.
 |[NUT Server](https://networkupstools.org)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/instantlinux/nut-upsd) |  |  |  |
 |[NZBGet](https://nzbget.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nzbget) |  |  |  |
 |[NZBHydra 2](https://github.com/theotherp/nzbhydra2)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nzbhydra2) |  |  |  |
+|[OctoPrint](https://octoprint.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/octoprint/octoprint) |  |  |  |
 |[System Stats OLED display](https://www.the-diy-life.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/mklements/OLED_Stats_Docker) |  |  |  |
 |[Omada EAP Controller](https://www.tp-link.com/us/business-networking/omada-sdn-controller/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/mbentley/omada-controller) |  |  |  |
 |[Ombi](https://ombi.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-ombi) |  |  |  |
