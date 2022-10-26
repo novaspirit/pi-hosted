@@ -1,0 +1,44 @@
+{
+    "categories": [
+        "Other",
+        "Tools"
+    ],
+    "description": "OctoPrint is an open source 3D printer controller application, which provides a web interface for the connected printers.",
+    "env": [
+        {
+            "default": "development ",
+            "label": "NODE_ENV",
+            "name": "NODE_ENV"
+        },
+        {
+            "default": "true",
+            "label": "ENABLE_MJPG_STREAMER",
+            "name": "ENABLE_MJPG_STREAMER"
+        }
+    ],
+    "image_arm32": "octoprint/octoprint:latest",
+    "image_arm64": "octoprint/octoprint:latest",
+    "image_amd64": "octoprint/octoprint:latest",
+    "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/octoprint.png",
+    "name": "octoprint",
+    "platform": "linux",
+    "ports": [
+        "8051:80/tcp"
+    ],
+    "privileged": true,
+    "restart_policy": "unless-stopped",
+    "title": "OctoPrint",
+    "type": 1,
+    "volumes": [
+        {
+            "bind": "/portainer/Files/AppData/Config/OctoPrint",
+            "container": "/octoprint"
+        },
+        {
+            "bind": "/dev",
+            "container": "/dev"
+        }
+    ],
+    "officialDoc": "https://hub.docker.com/r/octoprint/octoprint",
+    "webpage": "https://octoprint.org/"
+}
