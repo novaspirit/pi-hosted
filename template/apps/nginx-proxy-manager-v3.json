@@ -35,7 +35,7 @@
 		"443:443/tcp"
 	],
 	"restart_policy": "unless-stopped",
-	"title": "Nginx Proxy Manager v3 [DEVEL] NOT READY FOR US",
+	"title": "Nginx Proxy Manager v3 [DEVEL] NOT READY FOR USE",
 	"type": 1,
 	"videoID": "N.09",
 	"volumes": [
