@@ -1909,6 +1909,52 @@
 		{
 			"categories": [
 				"Other",
+				"Tools"
+			],
+			"description": "A distraction-free, database-less note taking app that puts your content first.",
+			"env": [
+				{
+					"default": "password",
+					"label": "FLATNOTES_AUTH_TYPE",
+					"name": "FLATNOTES_AUTH_TYPE"
+				},
+				{
+					"default": "admin",
+					"label": "FLATNOTES_USERNAME",
+					"name": "FLATNOTES_USERNAME"
+				},
+				{
+					"default": "changeme",
+					"label": "FLATNOTES_PASSWORD",
+					"name": "FLATNOTES_PASSWORD"
+				},
+				{
+					"default": "aLongRandomSeriesOfCharacters",
+					"label": "FLATNOTES_SECRET_KEY",
+					"name": "FLATNOTES_SECRET_KEY"
+				}
+			],
+			"image": "dullage/flatnotes:latest",
+			"logo": "https://raw.githubusercontent.com/spandan13/pi-hosted/master/images/flatnotes.png",
+			"name": "flatnotes",
+			"platform": "linux",
+			"ports": [
+				"8715:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "flatnotes",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/flatnotes/data",
+					"container": "/app/data"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Dullage/flatnotes\" target=\"_blank\">https://github.com/Dullage/flatnotes</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/dullage/flatnotes\" target=\"_blank\">https://hub.docker.com/r/dullage/flatnotes</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_flatnotes.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_flatnotes.sh | bash<br><br>"
+		},
+		{
+			"categories": [
+				"Other",
 				"Games"
 			],
 			"description": "This docker image provides the FoundryVTT system for hosting your own virtual table top games.",

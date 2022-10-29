@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 178 apps | 195 apps | 193 apps | 195 apps |
+| 178 apps | 196 apps | 194 apps | 196 apps |
 
 ---
 
@@ -55,6 +55,7 @@ List of all apps included in this project with info related to it.
 |[FileBrowser S6](https://filebrowser.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://filebrowser.org/installation#docker) |  |  | [![Installing JDownloader and File Browser On The Pi Docker Server](../build/images/yt-badge-novaspirit.png "Installing JDownloader and File Browser On The Pi Docker Server")](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[Flame](https://github.com/pawelmalak/flame)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/flame#with-docker-recommended) |  |  |  |
 |FlareSolverr|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/FlareSolverr/FlareSolverr#installation) |  |  |  |
+|[flatnotes](https://github.com/Dullage/flatnotes)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/dullage/flatnotes) |  | [![](../build/images/script_icon.png)](../tools/install_flatnotes.sh) |  |
 |[FoundryVTT Server](https://foundryvtt.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/felddy/foundryvtt) |  |  |  |
 |[FreshRSS](https://www.freshrss.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/FreshRSS/FreshRSS/tree/edge/Docker) |  |  |  |
 |[Gazee](https://github.com/hubbcaps/gazee)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/gazee) |  |  |  |

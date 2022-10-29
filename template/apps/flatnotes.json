@@ -1,0 +1,49 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "A distraction-free, database-less note taking app that puts your content first.",
+	"env": [
+		{
+			"default": "password",
+			"label": "FLATNOTES_AUTH_TYPE",
+			"name": "FLATNOTES_AUTH_TYPE"
+		},
+		{
+			"default": "admin",
+			"label": "FLATNOTES_USERNAME",
+			"name": "FLATNOTES_USERNAME"
+		},
+		{
+			"default": "changeme",
+			"label": "FLATNOTES_PASSWORD",
+			"name": "FLATNOTES_PASSWORD"
+		},
+		{
+			"default": "aLongRandomSeriesOfCharacters",
+			"label": "FLATNOTES_SECRET_KEY",
+			"name": "FLATNOTES_SECRET_KEY"
+		}
+	],
+	"image_arm64": "dullage/flatnotes:latest",
+	"image_amd64": "dullage/flatnotes:latest",
+	"logo": "https://raw.githubusercontent.com/spandan13/pi-hosted/master/images/flatnotes.png",
+	"name": "flatnotes",
+	"officialDoc": "https://hub.docker.com/r/dullage/flatnotes",
+	"platform": "linux",
+	"preInstallScript": "install_flatnotes.sh",
+	"ports": [
+		"8715:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "flatnotes",
+	"type": 1,
+        "volumes": [
+                {
+                        "bind": "/portainer/Files/AppData/Config/flatnotes/data",
+                        "container": "/app/data"
+                }
+	],
+	"webpage": "https://github.com/Dullage/flatnotes"
+}
