@@ -1666,7 +1666,7 @@
 			"name": "FlareSolverr",
 			"platform": "linux",
 			"ports": [
-				"8191:8191"
+				"8191:8191/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "FlareSolverr",
