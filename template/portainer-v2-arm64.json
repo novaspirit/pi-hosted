@@ -3,9 +3,8 @@
 	"templates": [
 		{
 			"categories": [
-				"Other",
+				"continuous-integration",
 				"Tools",
-				"Games"
 			],
 			"description": "Open-source continuous integration tool",
 			"env": [
@@ -40,8 +39,8 @@
 		},
 		{
 			"categories": [
-				"continuous-integration",
-				"tools"
+				"Other",
+				"Tools"
 			],
 			"description": "AdGuard Home is a network-wide software for blocking ads & tracking.",
 			"image": "adguard/adguardhome:latest",
