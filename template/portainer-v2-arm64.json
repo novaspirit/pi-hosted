@@ -4,7 +4,44 @@
 		{
 			"categories": [
 				"Other",
-				"Tools"
+				"Tools",
+				"Games"
+			],
+			"description": "Open-source continuous integration tool",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "jenkins/jenkins:lts-jdk11",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/jenkins.png",
+			"name": "archisteamfarm",
+			"platform": "linux",
+			"ports": [
+			"8080/tcp",
+			"50000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Jenkins",
+			"type": 1,
+			"volumes": [
+				{
+				"container": "/var/jenkins_home"
+				}
+			]
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/JustArchiNET/ArchiSteamFarm/\" target=\"_blank\">https://github.com/JustArchiNET/ArchiSteamFarm/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Docker/\" target=\"_blank\">https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Docker/</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"continuous-integration",
+				"tools"
 			],
 			"description": "AdGuard Home is a network-wide software for blocking ads & tracking.",
 			"image": "adguard/adguardhome:latest",
