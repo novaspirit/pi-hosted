@@ -3,7 +3,7 @@
 		"Other",
 		"Tools"
 	],
-	"description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
+	"description": "A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.",
 	"env": [
 		{
 			"default": "1000",
