@@ -3,7 +3,7 @@
 		"Downloaders",
 		"Tools"
 	],
-	"description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.[",
+	"description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.",
 	"env": [
 		{
 			"default": "1000",
