@@ -634,7 +634,7 @@
 			"categories": [
 				"Wiki"
 			],
-			"description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
+			"description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Featuring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
 			"env": [
 				{
 					"default": "1000",
@@ -2658,7 +2658,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
+			"description": "A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.",
 			"env": [
 				{
 					"default": "1000",
@@ -3006,7 +3006,7 @@
 				"Downloaders",
 				"Tools"
 			],
-			"description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.[",
+			"description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.",
 			"env": [
 				{
 					"default": "1000",
