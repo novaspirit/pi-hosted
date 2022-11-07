@@ -5,7 +5,6 @@
 	],
 	"description": "InfluxDB is an open source time series database for recording metrics, events, and analytics. You will need to add /portainer/Files/AppData/Config/Influxdb/config/influxdb.conf",
 	"hostname": "rpi-influxdb",
-	"image_arm32": "influxdb:latest",
 	"image_arm64": "influxdb:latest",
 	"image_amd64": "influxdb:latest",
 	"logo": "https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/influxdb/logo.png",
