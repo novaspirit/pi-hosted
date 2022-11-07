@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 178 apps | 196 apps | 194 apps | 196 apps |
+| 179 apps | 197 apps | 195 apps | 197 apps |
 
 ---
 
@@ -79,6 +79,7 @@ List of all apps included in this project with info related to it.
 |[HTPC Manager](https://htpc.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-htpcmanager) |  |  |  |
 |[Huginn](https://github.com/huginn/huginn)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/huginn/huginn/tree/master/docker) |  |  |  |
 |[Influxdb 1.8.10](https://www.influxdata.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker) |  |  |  |
+|[Influxdb Latest](https://www.influxdata.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker) |  |  |  |
 |[Invidious](https://invidious.io/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.invidious.io/installation/#docker) |  | [![](../build/images/script_icon.png)](../tools/install_invidious.sh) |  |
 |[iobroker](https://github.com/buanet/ioBroker.docker)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/buanet/ioBroker.docker) |  |  |  |
 |[Jackett](https://github.com/Jackett/Jackett)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jackett) |  |  |  |
