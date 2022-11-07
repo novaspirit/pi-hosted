@@ -3,12 +3,12 @@
 		"Other",
 		"Tools"
 	],
-	"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
+	"description": "Web File Browser which can be used as a middleware or standalone app.",
 	"image_arm32": "filebrowser/filebrowser:latest",
 	"image_arm64": "filebrowser/filebrowser:latest",
 	"image_amd64": "filebrowser/filebrowser:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
-	"name": "filebrowser",
+	"name": "filebrowser-latest",
 	"note": "The default user and password is admin/admin.",
 	"officialDoc": "https://filebrowser.org/installation#docker",
 	"platform": "linux",
@@ -16,7 +16,7 @@
 		"8082:80/tcp"
 	],
 	"restart_policy": "unless-stopped",
-	"title": "FileBrowser",
+	"title": "FileBrowser latest",
 	"type": 1,
 	"videoID": "N.04",
         "volumes": [
