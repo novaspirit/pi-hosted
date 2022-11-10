@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 178 apps | 197 apps | 195 apps | 197 apps |
+| 179 apps | 198 apps | 196 apps | 198 apps |
 
 ---
 
@@ -38,6 +38,7 @@ List of all apps included in this project with info related to it.
 |[Daapd](https://owntone.github.io/owntone-server/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-daapd) |  |  |  |
 |[DashMachine](https://github.com/rmountjoy92/DashMachine)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/rmountjoy92/DashMachine) |  |  |  |
 |[Dashy](https://dashy.to)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://dashy.to/docs/quick-start) |  | [![](../build/images/script_icon.png)](../tools/install_dashy.sh) |  |
+|[DaVinci Postgres Server](https://github.com/pi-hosted/pi-hosted/docs/davinci.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pi-hosted/pi-hosted/docs/davinci.md) |  |  |  |
 |[Davos](https://github.com/linuxserver/davos)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-davos) |  |  |  |
 |[DeeMix](https://deemix.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://gitlab.com/Bockiii/deemix-docker) |  |  |  |
 |[Deluge](https://www.deluge-torrent.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-deluge) |  |  | [![Route Docker Traffic Through VPN Container](../build/images/yt-badge-novaspirit.png "Route Docker Traffic Through VPN Container")](https://www.youtube.com/watch?v=IWj1-j2QWvo) |

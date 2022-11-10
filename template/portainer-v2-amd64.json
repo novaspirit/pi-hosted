@@ -1224,6 +1224,61 @@
 		},
 		{
 			"categories": [
+				"Tool"
+			],
+			"description": "DaVinci Resolve Postgresql Server, Davinci requires a specific version of postgres db, this container will install the version needed",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "database",
+					"label": "POSTGRES_DB",
+					"name": "POSTGRES_DB"
+				},
+				{
+					"default": "postgres",
+					"label": "POSTGRES_USER",
+					"name": "POSTGRES_USER"
+				},
+				{
+					"default": "DaVinci",
+					"label": "POSTGRES_PASSWORD",
+					"name": "POSTGRES_PASSWORD"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "postgres:13",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/resolve.png",
+			"name": "DaVinci Postgres Server",
+			"platform": "linux",
+			"ports": [
+				"5432:5432/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "DaVinci Postgres Server",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/DavinciServer/",
+					"container": "/var/lib/postgresql/data"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pi-hosted/pi-hosted/docs/davinci.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/docs/davinci.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/docs/davinci.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/docs/davinci.md</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"FTP",
 				"Other",
 				"Tools"
