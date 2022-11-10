@@ -2324,6 +2324,27 @@
 		},
 		{
 			"categories": [
+				"Monitor",
+				"Tools"
+			],
+			"description": "Grafana Dashboard anything. Observe everything.  Query, visualize, alert on, and understand your data no matter where it’s stored. With Grafana you can create, explore, and share all of your data through beautiful, flexible dashboards.",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/grafana.png",
+			"name": "grafana",
+			"platform": "linux",
+			"ports": [
+				"3030:3000/tcp"
+			],
+			"repository": {
+				"stackfile": "stack/grafana.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted"
+			},
+			"restart_policy": "unless-stopped",
+			"title": "Grafana",
+			"type": 3,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://grafana.com/grafana/\" target=\"_blank\">https://grafana.com/grafana/</a><br><b>Official Docker Documentation: </b><a href=\"https://grafana.com/docs/grafana/v9.0/setup-grafana/installation/docker/\" target=\"_blank\">https://grafana.com/docs/grafana/v9.0/setup-grafana/installation/docker/</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_grafana.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_grafana.sh | bash<br><br>"
+		},
+		{
+			"categories": [
 				"Management",
 				"Monitor",
 				"Web",

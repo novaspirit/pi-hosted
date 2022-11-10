@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 179 apps | 198 apps | 196 apps | 198 apps |
+| 180 apps | 199 apps | 197 apps | 199 apps |
 
 ---
 
@@ -65,6 +65,7 @@ List of all apps included in this project with info related to it.
 |[Gitea with Mariadb](https://gitea.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.gitea.io/en-us/install-with-docker/#mysql-database) |  |  |  |
 |[Go-Socks5-Proxy](https://hub.docker.com/r/serjs/go-socks5-proxy)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/serjs/go-socks5-proxy) |  |  | [![Route Docker Traffic Through VPN Container](../build/images/yt-badge-novaspirit.png "Route Docker Traffic Through VPN Container")](https://www.youtube.com/watch?v=IWj1-j2QWvo) |
 |[Gotify](https://gotify.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://gotify.net/docs/install) |  |  |  |
+|[Grafana](https://grafana.com/grafana/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://grafana.com/docs/grafana/v9.0/setup-grafana/installation/docker/) |  | [![](../build/images/script_icon.png)](../tools/install_grafana.sh) |  |
 |[Graylog](https://www.graylog.org)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.graylog.org/docs/docker) | [![](../build/images/red_doc_icon.png)](../docs/graylog_install.md) |  |  |
 |[Grocy](https://grocy.info/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-grocy) |  |  |  |
 |[Guacamole](https://guacamole.apache.org/)|:heavy_check_mark:|:heavy_check_mark:|:x:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oznu/guacamole) |  |  | [![Manually Installing Guacamole on Portainer](../build/images/yt-badge-novaspirit.png "Manually Installing Guacamole on Portainer")](https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3) |
