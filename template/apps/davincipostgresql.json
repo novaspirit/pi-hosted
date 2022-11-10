@@ -1,0 +1,58 @@
+{
+	"categories": [
+		"Tool"
+	],
+	"description": "DaVinci Resolve Postgresql Server, Davinci requires a specific version of postgres db, this container will install the version needed",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "database",
+			"label": "POSTGRES_DB",
+			"name": "POSTGRES_DB"
+		},
+		{
+			"default": "postgres",
+			"label": "POSTGRES_USER",
+			"name": "POSTGRES_USER"
+		},
+		{
+			"default": "DaVinci",
+			"label": "POSTGRES_PASSWORD",
+			"name": "POSTGRES_PASSWORD"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		}
+	],
+	"image_arm32": "postgres:13",
+	"image_arm64": "postgres:13",
+	"image_amd64": "postgres:13",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/resolve.png",
+	"name": "DaVinci Postgres Server",
+	"officialDoc": "https://github.com/pi-hosted/pi-hosted/docs/davinci.md",
+	"platform": "linux",
+	"ports": [
+		"5432:5432/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "DaVinci Postgres Server",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/DavinciServer/",
+			"container": "/var/lib/postgresql/data"
+		}
+	],
+	"webpage": "https://github.com/pi-hosted/pi-hosted/docs/davinci.md"
+}
