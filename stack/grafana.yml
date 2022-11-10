@@ -1,0 +1,23 @@
+version: "2.4"
+services:
+  grafana:
+    container_name: grafana
+    environment:
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_PATHS_CONFIG=/etc/grafana/grafana.ini
+      - GF_PATHS_DATA=/var/lib/grafana
+      - GF_PATHS_HOME=/usr/share/grafana
+      - GF_PATHS_LOGS=/var/log/grafana
+      - GF_PATHS_PLUGINS=/var/lib/grafana/plugins
+      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+    hostname: grafana
+    image: grafana/grafana:latest
+    ports:
+      - 3030:3000
+    restart: unless-stopped
+    volumes:
+      # to be modified depending on your needs
+      - /portainer/Files/AppData/Config/grafana/data:/var/lib/grafana
+      - /portainer/Files/AppData/Config/grafana/grafana.ini:/etc/grafana/grafana.ini
+      - /portainer/Files/AppData/Config/grafana/provisioning:/etc/grafana/provisioning
+

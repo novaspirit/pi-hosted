@@ -1,0 +1,25 @@
+{
+	"categories": [
+		"Monitor",
+		"Tools"
+	],
+	"description": "Grafana Dashboard anything. Observe everything.  Query, visualize, alert on, and understand your data no matter where it’s stored. With Grafana you can create, explore, and share all of your data through beautiful, flexible dashboards.",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/grafana.png",
+	"name": "grafana",
+	"officialDoc": "https://grafana.com/docs/grafana/v9.0/setup-grafana/installation/docker/",
+	"platform": "linux",
+	"ports": [
+		"3030:3000/tcp"
+	],
+	"preInstallScript": "install_grafana.sh",
+	"repository": {
+		"stackfile_arm32": "stack/grafana.yml",
+		"stackfile_arm64": "stack/grafana.yml",
+		"stackfile_amd64": "stack/grafana.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Grafana",
+	"type": 3,
+	"webpage": "https://grafana.com/grafana/"
+}
