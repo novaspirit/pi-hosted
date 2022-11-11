@@ -54,5 +54,5 @@
 			"container": "/var/lib/postgresql/data"
 		}
 	],
-	"webpage": "https://github.com/pi-hosted/pi-hosted/docs/davinci.md"
+	"webpage": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/davinci.md"
 }
