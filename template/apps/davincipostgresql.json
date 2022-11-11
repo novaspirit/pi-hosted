@@ -40,7 +40,7 @@
 	"image_amd64": "postgres:13",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/resolve.png",
 	"name": "DaVinci Postgres Server",
-	"officialDoc": "https://github.com/pi-hosted/pi-hosted/docs/davinci.md",
+	"officialDoc": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/davinci.md",
 	"platform": "linux",
 	"ports": [
 		"5432:5432/tcp"
