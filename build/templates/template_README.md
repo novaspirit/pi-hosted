@@ -5,11 +5,11 @@
 This repository is a collection of tutorials for hosting a variety of server applications using [Docker](https://www.docker.com/) and [Portainer](https://github.com/portainer/portainer).
 
 ### App Template for Portainer
-![alt text](https://github.com/pi-hosted/pi-hosted/blob/master/apptemplate.png?raw=true)
+![AppTemplate Image](https://github.com/pi-hosted/pi-hosted/blob/master/apptemplate.png?raw=true)
 
 ### Apps List
 
-See the list of apps included in this template [here](AppList.md).
+See the list of apps included in this template [here](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/AppList.md).
 
 ### Installation
 Run `install-docker.sh`, to install docker, and add the current user to the docker usergroup.
@@ -28,7 +28,7 @@ sudo dpkg-query -W libseccomp2
 
 If you are running a version less that 2.5 you will need to run the *upgrade script*.
 ```
-wget -qO- https://raw.githubusercontent.com/novaspirit/pi-hosted/master/tools/update_libseccomp2.sh | bash
+wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master//tools/update_libseccomp2.sh | bash
 ```
 
 * The upgrade script is for Pi OS 32bit.  Pi OS 64 beta is untested and the upgrade script wont work with it.
@@ -76,11 +76,11 @@ You're done! Now just click App Templates and deploy applications!
 
 ### Aditional Documentation
 
-You can find more tutorials and useful information in our [GitHub Docs](DocumentList.md) folder.
+You can find more tutorials and useful information in our [GitHub Docs](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/DocumentList.md) folder.
 
 ### Included Scripts
 
-Install, Update, Pre-Install and extra scripts can be found in our [GitHub Tools](../tools) folder.
+Install, Update, Pre-Install and extra scripts can be found in our [GitHub Tools](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools) folder.
 
 ### Contributors
 
