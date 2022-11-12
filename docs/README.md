@@ -5,11 +5,11 @@
 This repository is a collection of tutorials for hosting a variety of server applications using [Docker](https://www.docker.com/) and [Portainer](https://github.com/portainer/portainer).
 
 ### App Template for Portainer
-![AppTemplate Image](https://github.com/pi-hosted/pi-hosted/blob/master/apptemplate.png?raw=true)
+![App Template Image](https://github.com/pi-hosted/pi-hosted/blob/master/apptemplate.png?raw=true)
 
 ### Apps List
 
-See the list of apps included in this template [here](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/AppList.md).
+See the list of apps included in this template [here](https://github.com/pi-hosted/pi-hosted/blob/master/docs/AppList.md).
 
 ### Installation
 Run `install-docker.sh`, to install docker, and add the current user to the docker usergroup.
@@ -96,11 +96,11 @@ You're done! Now just click App Templates and deploy applications!
 
 ### Aditional Documentation
 
-You can find more tutorials and useful information in our [GitHub Docs](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/DocumentList.md) folder.
+You can find more tutorials and useful information in our [GitHub Docs](https://github.com/pi-hosted/pi-hosted/blob/master/docs/DocumentList.md) folder.
 
 ### Included Scripts
 
-Install, Update, Pre-Install and extra scripts can be found in our [GitHub Tools](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools) folder.
+Install, Update, Pre-Install and extra scripts can be found in our [GitHub Tools](https://github.com/pi-hosted/pi-hosted/blob/master/tools) folder.
 
 ### Contributors
 
