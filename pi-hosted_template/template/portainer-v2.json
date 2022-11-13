@@ -460,6 +460,46 @@
 		},
 		{
 			"categories": [
+				"DNS",
+				"Tools"
+			],
+			"description": "BIND 9 provides software for Domain Name System (DNS) management including both defining domain names authoritatively for a given DNS zone, and recursively resolving domain names to their IP addresses. In addition to BIND 9's DNS server itself, named, this container also includes tools for performing DNS queries and dynamic updates. Read more on the BIND 9 https://www.isc.org/bind/ ",
+			"env": [
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "ubuntu/bind9:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bind9.png",
+			"name": "bind9",
+			"platform": "linux",
+			"ports": [
+				"53:53/tcp",
+				"53:53/udp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Bind9",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/bind9/named.conf",
+					"container": "etc/bind/named.conf"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/bind9/cache",
+					"container": "/var/cache/bind"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/bind9/bind",
+					"container": "/var/lib/bind"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/ubuntu/bind9\" target=\"_blank\">https://hub.docker.com/r/ubuntu/bind9</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/ubuntu/bind9\" target=\"_blank\">https://hub.docker.com/r/ubuntu/bind9</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_bind9.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_bind9.sh | bash<br><br>"
+		},
+		{
+			"categories": [
 				"Books",
 				"Other"
 			],
