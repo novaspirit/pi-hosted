@@ -1,0 +1,43 @@
+{
+	"categories": [
+		"DNS",
+		"Tools"
+	],
+	"description": "BIND 9 provides software for Domain Name System (DNS) management including both defining domain names authoritatively for a given DNS zone, and recursively resolving domain names to their IP addresses. In addition to BIND 9's DNS server itself, named, this container also includes tools for performing DNS queries and dynamic updates. Read more on the BIND 9 https://www.isc.org/bind/ ",
+	"env": [
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		}
+	],
+        "image_arm32": "ubuntu/bind9:latest",
+        "image_arm64": "ubuntu/bind9:latest",
+        "image_amd64": "ubuntu/bind9:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bind9.png",
+	"name": "bind9",
+	"officialDoc": "https://hub.docker.com/r/ubuntu/bind9",
+	"platform": "linux",
+	"ports": [
+		"53:53/tcp",
+		"53:53/udp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Bind9",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/bind9/named.conf",
+			"container": "etc/bind/named.conf"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/bind9/cache",
+			"container": "/var/cache/bind"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/bind9/bind",
+			"container": "/var/lib/bind"
+		}
+	],
+	"webpage": "https://hub.docker.com/r/ubuntu/bind9"
+}
