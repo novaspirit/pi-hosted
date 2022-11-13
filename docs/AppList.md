@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 182 apps | 201 apps | 199 apps | 201 apps |
+| 181 apps | 201 apps | 199 apps | 201 apps |
 
 ---
 
@@ -22,7 +22,7 @@ List of all apps included in this project with info related to it.
 |[Authentik](https://goauthentik.io/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://goauthentik.io/docs/) |  | [![](../build/images/script_icon.png)](../tools/install_authentik.sh) |  |
 |[Bazarr](https://www.bazarr.media/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.bazarr.media/Getting-Started/Installation/Docker/docker/) |  |  |  |
 |[Beets](https://beets.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-beets) |  |  |  |
-|[Bind9](https://hub.docker.com/r/ubuntu/bind9)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/ubuntu/bind9) |  | [![](../build/images/script_icon.png)](../tools/install_bind9.sh) |  |
+|[Bind9](https://hub.docker.com/r/ubuntu/bind9)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/ubuntu/bind9) |  | [![](../build/images/script_icon.png)](../tools/install_bind9.sh) |  |
 |[Booksonic](https://booksonic.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-booksonic-air) |  |  |  |
 |[Bookstack](https://www.bookstackapp.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://www.bookstackapp.com/docs/admin/installation/#docker) |  |  |  |
 |[Caddy](https://caddyserver.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/caddy) |  | [![](../build/images/script_icon.png)](../tools/install_caddy.sh) |  |
