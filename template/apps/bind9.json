@@ -18,6 +18,7 @@
 	"name": "bind9",
 	"officialDoc": "https://hub.docker.com/r/ubuntu/bind9",
 	"platform": "linux",
+	"preInstallScript": "install_bind9.sh",
 	"ports": [
 		"53:53/tcp",
 		"53:53/udp"
