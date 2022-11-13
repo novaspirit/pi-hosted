@@ -11,7 +11,6 @@
 			"name": "TZ"
 		}
 	],
-        "image_arm32": "ubuntu/bind9:latest",
         "image_arm64": "ubuntu/bind9:latest",
         "image_amd64": "ubuntu/bind9:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bind9.png",
