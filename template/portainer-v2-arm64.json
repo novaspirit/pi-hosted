@@ -3355,7 +3355,7 @@
 				"3d-printers",
 				"Tools"
 			],
-			"description": "Klipper [Testing] Klipper is a 3d-Printer firmware. It combines the power of a general purpose computer with one or more micro-controllers. See the features document for more information on why you should use Klipper.",
+			"description": "Klipper is a 3d-Printer firmware. It combines the power of a general purpose computer with one or more micro-controllers. See the features document for more information on why you should use Klipper.",
 			"env": [
 				{
 					"default": "/dev/ttymxc3",
@@ -3371,7 +3371,7 @@
 				"url": "https://github.com/pi-hosted/pi-hosted/"
 			},
 			"restart_policy": "unless-stopped",
-			"title": "Klipper, Mainsail, Moonraker",
+			"title": "Klipper[Testing], Mainsail, Moonraker",
 			"type": 3,
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/mkuf/klipper\" target=\"_blank\">https://hub.docker.com/r/mkuf/klipper</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/mkuf/klipper\" target=\"_blank\">https://hub.docker.com/r/mkuf/klipper</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_klipper.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_klipper.sh | bash<br><br>"
 		},
