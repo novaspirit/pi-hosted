@@ -2736,8 +2736,8 @@
 			"env": [
 				{
 					"default": "/dev/ttymxc3",
-					"label": "3dPrinterDevice",
-					"name": "3dPrinterDevice"
+					"label": "3D_PRINTER_DEVICE",
+					"name": "3D_PRINTER_DEVICE"
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/drupal.png",
