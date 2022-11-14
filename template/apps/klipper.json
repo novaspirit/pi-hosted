@@ -8,8 +8,8 @@
 	"env": [
 		{
 			"default": "/dev/ttymxc3",
-			"label": "3d-printer-device",
-			"name": "3d-printer-device"
+			"label": "3dPrinterDevice",
+			"name": "3dPrinterDevice"
 		}
 	],
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/drupal.png",

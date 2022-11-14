@@ -4,7 +4,7 @@ services:
     hostname: klipper
     image: mkuf/klipper:latest
     devices:
-      - ${3d-printer-device}:${3d-printer-device}
+      - ${3dPrinterDevice}:${3dPrinterDevice}
     volumes:
       - /portainer/Files/AppData/Config/klipper/klipper/printer.cfg:/opt/printer_data/config/printer.cfg
       - /portainer/Files/AppData/Config/klipper/klipper/logs:/opt/printer_data/logs
