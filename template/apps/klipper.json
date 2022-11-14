@@ -15,6 +15,7 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/drupal.png",
 	"name": "klipper-mainsail-moonraker",
 	"officialDoc": "https://hub.docker.com/r/mkuf/klipper",
+	"note": "First you will need to download a printer.conf file from https://github.com/Klipper3d/klipper/tree/master/config and copy it to ",
 	"platform": "linux",
 	"preInstallScript": "install_klipper.sh",
 	"repository": {
