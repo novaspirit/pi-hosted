@@ -30,9 +30,11 @@ services:
 
   mainsail:
     hostname: mainsail
-    image: mkuf/mainsail:latest
+    image: ghcr.io/mainsail-crew/mainsail:edge
     ports:
       - "4070:80"
+    volumes:
+      - /portainer/Files/AppData/Config/klipper/mainsail/config.json:/usr/share/nginx/html/config.json
     restart: unless-stopped
     networks:
       - klipper

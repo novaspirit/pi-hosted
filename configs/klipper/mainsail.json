@@ -1,0 +1,7 @@
+{
+  "instancesDB": "json",
+  "instances": [
+    { "hostname": "moonraker", "port": 7125 }
+  ]
+}
+
