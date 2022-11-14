@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 181 apps | 201 apps | 199 apps | 201 apps |
+| 182 apps | 202 apps | 200 apps | 202 apps |
 
 ---
 
@@ -127,6 +127,7 @@ List of all apps included in this project with info related to it.
 |[Nginx Proxy Manager v3 [DEVEL] NOT READY FOR USE](https://nginxproxymanager.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://nginxproxymanager.com/setup/) | [![](../build/images/red_doc_icon.png)](../docs/nginx_proxy_manager.md) |  | [![Installing Nginx Proxy Manager on Docker](../build/images/yt-badge-novaspirit.png "Installing Nginx Proxy Manager on Docker")](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
 |[Nitter](https://nitter.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/zedeus/nitter) |  |  |  |
 |[Node Red](https://nodered.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://nodered.org/docs/getting-started/docker) |  |  |  |
+|[]()|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|| [![](../build/images/blue_doc_icon.png)]() | [![](../build/images/red_doc_icon.png)](../docs/) | [![](../build/images/script_icon.png)](../tools/) | [![](../build/images/yt-badge-.png "")]() |
 |[NUT Server](https://networkupstools.org)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/instantlinux/nut-upsd) |  |  |  |
 |[NZBGet](https://nzbget.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nzbget) |  |  |  |
 |[NZBHydra 2](https://github.com/theotherp/nzbhydra2)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nzbhydra2) |  |  |  |

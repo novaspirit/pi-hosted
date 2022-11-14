@@ -1,0 +1,68 @@
+{
+	"categories": [
+		"Other"
+	],
+	"description": "This is an OpenVPN client docker container that uses recommended NordVPN server. It makes routing containers traffic through OpenVPN easy.",
+	"env": [
+		{
+			"default": "user@email.com",
+			"label": "NordVPN user",
+			"name": "USER"
+		},
+		{
+			"default": "password",
+			"label": "NordVPN password",
+			"name": "PASS"
+		},
+		{
+			"default": "Spain;Hong Kong;IE;131",
+			"label": "Countries to connect to (see webpage readme)",
+			"name": "COUNTRY"
+		},
+		{
+			"default": "Standard VPN servers",
+			"label": "Group name filter to which to connect to",
+			"name": "GROUP"
+		},
+		{
+			"default": "10",
+			"label": "Range of servers to pick from the top",
+			"name": "RANDOM_TOP"
+		},
+		{
+			"default": "5 */3 * * *",
+			"label": "Define when to look again for new defined servers",
+			"name": "RECREATE_VPN_CRON"
+		},
+		{
+			"default": "https://www.google.com",
+			"label": "URL to check internet connection is working to",
+			"name": "CHECK_CONNECTION_URL"
+		},
+		{
+			"default": "192.168.1.0/24;192.168.2.0/24",
+			"label": "Subnet to define network access (read Local Network access to services connecting to the internet through the VPN readme to get the right subnet!)",
+			"name": "NETWORK"
+		},
+		{
+			"default": "--mute-replay-warnings",
+			"label": "Used to pass extra parameters to openvpn",
+			"name": "OPENVPN_OPTS"
+		}
+	],
+	"image_arm32": "azinchen/nordvpn:latest",
+	"image_arm64": "azinchen/nordvpn:latest",
+	"image_amd64": "azinchen/nordvpn:latest",
+	"logo": "https://s3.us-east-2.amazonaws.com/ccp-prd-s3-uploads/2022/3/8/03500108885898f010e823eeb284e393b99e1ad5.png",
+	"name": "nord-vpn",
+	"officialDoc": "https://hub.docker.com/r/azinchen/nordvpn",
+	"platform": "linux",
+	"ports": [
+		"8080:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "nord-vpn",
+	"type": 1,
+	"privileged": true,
+        "webpage": "https://github.com/azinchen/nordvpn"
+}
