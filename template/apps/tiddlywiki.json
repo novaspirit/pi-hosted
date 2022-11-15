@@ -10,6 +10,7 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tiddlywiki.png",
 	"name": "tiddlywiki",
 	"officialDoc": "https://gitlab.com/nicolaw/tiddlywiki",
+	"preInstallScript": "install_tiddlywiki.sh",
 	"platform": "linux",
 	"ports": [
 		"8080:8080/tcp"
