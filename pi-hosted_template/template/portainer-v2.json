@@ -159,6 +159,24 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "",
+			"image": "novaspirit/alpine_xfce4_novnc:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/novnc.png",
+			"name": "alpine-xfce4-novnc",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/novaspirit/Alpine_xfce4_noVNC\" target=\"_blank\">https://github.com/novaspirit/Alpine_xfce4_noVNC</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/novaspirit/Alpine_xfce4_noVNC\" target=\"_blank\">https://github.com/novaspirit/Alpine_xfce4_noVNC</a><br><br><br>Default username/password will be alpine/alpine.",
+			"platform": "linux",
+			"ports": [
+				"6080:6080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Alpine Xfce4 noVNC",
+			"type": 1
+		},
+		{
+			"categories": [
 				"Web",
 				"Proxy"
 			],
