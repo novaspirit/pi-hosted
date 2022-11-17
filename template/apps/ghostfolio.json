@@ -1,0 +1,53 @@
+{
+	"categories": [
+		"Other"
+	],
+	"description": "Ghostfolio is a privacy-first, open source dashboard for your personal finances. Break down your asset allocation, know your net worth and make solid, data-driven investment decisions.",
+	"env": [
+		{
+			"default": "ghostfolio_usr",
+			"label": "POSTGRES_USER",
+			"name": "POSTGRES_USER"
+		},
+		{
+			"default": "r2sp88fzvjnj9e24maycjv6e7kukj8wurcmt",
+			"label": "POSTGRES_PASSWORD",
+			"name": "POSTGRES_PASSWORD"
+		},
+		{
+			"default": "ghostfolio_db",
+			"label": "POSTGRES_DB",
+			"name": "POSTGRES_DB"
+		},
+		{
+			"default": "",
+			"label": "ALPHA_VANTAGE_API_KEY",
+			"name": "ALPHA_VANTAGE_API_KEY"
+		},
+		{
+			"default": "4574k48a355hkcbew7h69xazz694bd32xmze",
+			"label": "ACCESS_TOKEN_SALT",
+			"name": "ACCESS_TOKEN_SALT"
+		},
+		{
+			"default": "8k8zvx2krrrh7qcsqnsn73e5bvfesupy3b75",
+			"label": "JWT_SECRET_KEY",
+			"name": "JWT_SECRET_KEY"
+		}
+	],
+	"logo": "https://ghostfol.io/assets/apple-touch-icon.png",
+	"name": "ghostfolio",
+	"officialDoc": "https://github.com/ghostfolio/ghostfolio#self-hosting",
+	"platform": "linux",
+	"repository": {
+		"stackfile_arm32": "stack/ghostfolio.yml",
+		"stackfile_arm64": "stack/ghostfolio.yml",
+		"stackfile_amd64": "stack/ghostfolio.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted/"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Ghostfolio",
+	"type": 3,
+	"webpage": "https://ghostfol.io/"
+}
+ 
