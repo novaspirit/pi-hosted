@@ -239,7 +239,13 @@
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Alpine Xfce4 noVNC",
-			"type": 1
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/alpine-xfce4-novnc/home/",
+					"container": "/home/"
+				}
+			]
 		},
 		{
 			"categories": [
