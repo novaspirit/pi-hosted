@@ -23,7 +23,7 @@ First find Wiregaurd in the listing of templates from the project.
 - `PASSWORD`: Password to access the WebUI interface. If left blank, there will be no login page
 - `WG_PORT`: PORT to use to connect to Wireguard from outside
 - `WG_DEFAULT_DNS`: DNS to use while on VPN. It can point to your router (usually 192.168.x.x) or an external one (like 1.1.1.1 or 8.8.8.8). You can set 2 separating them by comma
-- 'WG_DEFAULT_ADDRESS': Leave it as the default '10.8.0.x' unless you know what you are doing.
+- `WG_DEFAULT_ADDRESS`: Leave it as the default '10.8.0.x' unless you know what you are doing.
 - `WG_ALLOWED_IPS`: IPs which connection will be allowed.
 
 On my network I deploy a Pi-Hole for DNS level ad blocking and I also have multiple networks which all have various devices on them. So for my setup I used the following values, but make sure you use what will work for your setup:
