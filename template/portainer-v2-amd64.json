@@ -6564,30 +6564,6 @@
 		},
 		{
 			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
-			"image": "martadinata666/reactive-resume:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/reactiveresume.png",
-			"name": "reactive-resume",
-			"platform": "linux",
-			"ports": [
-				"7768:80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Reactive-Resume",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/ReactiveResume",
-					"container": "/keepoutoftheway/var/www/html"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://rxresu.me/\" target=\"_blank\">https://rxresu.me/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/martadinata666/reactive-resume\" target=\"_blank\">https://hub.docker.com/r/martadinata666/reactive-resume</a><br><br><br>"
-		},
-		{
-			"categories": [
 				"Downloaders",
 				"Books"
 			],
