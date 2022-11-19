@@ -15,7 +15,7 @@ template_amd64='template/portainer-v2-amd64.json'
 # App info
 repo='https://github.com/pi-hosted/pi-hosted/blob/master/'
 rawrepo='https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/'
-header='<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href="https://github.com/pi-hosted/pi-hosted" target="_blank">https://github.com/pi-hosted/pi-hosted</a></b><br>'
+header='<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href="https://github.com/pi-hosted/pi-hosted" target="_blank">https://github.com/pi-hosted/pi-hosted</a></b><br>'
 
 # Run script from base directory
 scriptDir="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
@@ -53,7 +53,7 @@ for app in template/apps/*.json; do
 
 	# Pi-Hosted Documentation
 	if PHDoc=$( echo "$appjson" | jq -e '.piHostedDoc' ) ; then
-		PHDoc="<br><b>Pi-Hosted dedicated documentation: </b><a href=\"${repo}docs/${PHDoc:1:-1}\" target=\"_blank\">${PHDoc:1:-1}</a>"
+		PHDoc="<br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"${repo}docs/${PHDoc:1:-1}\" target=\"_blank\">${PHDoc:1:-1}</a></h3>"
 		appjson=$( echo "$appjson" | jq 'del(.piHostedDoc)' )
 	else
 		unset PHDoc
@@ -63,7 +63,7 @@ for app in template/apps/*.json; do
 	if Script=$( echo "$appjson" | jq -e '.preInstallScript' ) ; then
 		scriptexec=$( jq '.tools[] | select(.File=='"$Script"') | .Exec' "$appinfo" )
 		[ "$scriptexec" == "" ] && scriptexec="-bash-"
-		Script="<br><b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- ${rawrepo}tools/${Script:1:-1} | ${scriptexec:1:-1}"
+		Script="<br><h3><<b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- ${rawrepo}tools/${Script:1:-1} | ${scriptexec:1:-1}</h3>"
 		appjson=$( echo "$appjson" | jq 'del(.preInstallScript)' )
 	else
 		unset Script
