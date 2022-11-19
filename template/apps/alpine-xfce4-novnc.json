@@ -13,7 +13,8 @@
 	"officialDoc": "https://github.com/novaspirit/Alpine_xfce4_noVNC",
 	"platform": "linux",
 	"ports": [
-		"6080:6080/tcp"
+		"6080:6080/tcp",
+		"56780:56780/tcp"
 	],
 	"restart_policy": "unless-stopped",
 	"title": "Alpine Xfce4 noVNC",
