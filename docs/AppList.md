@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 184 apps | 203 apps | 201 apps | 203 apps |
+| 185 apps | 204 apps | 202 apps | 204 apps |
 
 ---
 
@@ -195,6 +195,7 @@ List of all apps included in this project with info related to it.
 |[Ubooquity](https://vaemendis.net/ubooquity/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-ubooquity) |  |  |  |
 |[UniFi Controller](https://ui.com/consoles)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-unifi-controller) |  |  |  |
 |[UniFi Video](https://github.com/pducharme/UniFi-Video-Controller)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pducharme/UniFi-Video-Controller) |  |  |  |
+|[Unmanic](https://docs.unmanic.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.unmanic.app/docs/installation/docker) |  |  |  |
 |[UnPoller Monitor](https://unpoller.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md) | [![](../build/images/red_doc_icon.png)](../docs/UnPoller-Monitor.md) | [![](../build/images/script_icon.png)](../tools/unpoller-install.sh) |  |
 |[Uptime Kuma](https://github.com/louislam/uptime-kuma)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install#-docker) |  |  |  |
 |[UrBackup](https://www.urbackup.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://www.github.com/uroni/urbackup-server-docker) |  |  |  |

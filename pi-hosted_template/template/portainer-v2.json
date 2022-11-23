@@ -7037,6 +7037,49 @@
 		},
 		{
 			"categories": [
+				"Tools"
+			],
+			"description": "Unmanic is a simple tool for optimising your file library. You can use it to convert your files into a single, uniform format, manage file movements based on timestamps, or execute custom commands against a file based on its file size.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "josh5/unmanic:latest",
+			"logo": "https://docs.unmanic.app/img/icon.png",
+			"name": "unmanic",
+			"platform": "linux",
+			"ports": [
+				"8888:8888/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Unmanic",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/unmanic/config",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/unmanic/library",
+					"container": "/library"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/unmanic/tmp",
+					"container": "/tmp/unmanic"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://docs.unmanic.app/\" target=\"_blank\">https://docs.unmanic.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.unmanic.app/docs/installation/docker\" target=\"_blank\">https://docs.unmanic.app/docs/installation/docker</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Monitor",
 				"Tools"
 			],
