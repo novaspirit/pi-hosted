@@ -5962,31 +5962,6 @@
 					"name": "RT_LOG_LEVEL"
 				},
 				{
-					"default": "6881",
-					"label": "RT_DHT_PORT",
-					"name": "RT_DHT_PORT"
-				},
-				{
-					"default": "8000",
-					"label": "XMLRPC_PORT",
-					"name": "XMLRPC_PORT"
-				},
-				{
-					"default": "8080",
-					"label": "RUTORRENT_PORT",
-					"name": "RUTORRENT_PORT"
-				},
-				{
-					"default": "9000",
-					"label": "WEBDAV_PORT",
-					"name": "WEBDAV_PORT"
-				},
-				{
-					"default": "50000",
-					"label": "RT_INC_PORT",
-					"name": "RT_INC_PORT"
-				},
-				{
 					"default": "erasedata,httprpc",
 					"label": "RU_REMOVE_CORE_PLUGINS",
 					"name": "RU_REMOVE_CORE_PLUGINS"
@@ -5998,11 +5973,11 @@
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Novik/ruTorrent\" target=\"_blank\">https://github.com/Novik/ruTorrent</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/crazy-max/docker-rtorrent-rutorrent\" target=\"_blank\">https://github.com/crazy-max/docker-rtorrent-rutorrent</a><br><br><br>For ruTorrent basic auth, XMLRPC through nginx and WebDAV on completed downloads, you can populate .htpasswd files with the following command:\\ndocker run --rm -it httpd:2.4-alpine htpasswd -Bbn <username> <password> >> $(pwd)/passwd/webdav.htpasswd",
 			"platform": "linux",
 			"ports": [
-				"${RT_DHT_PORT}:${RT_DHT_PORT}/udp",
-				"${XMLRPC_PORT}:${XMLRPC_PORT}/tcp",
-				"${RUTORRENT_PORT}:${RUTORRENT_PORT}/tcp",
-				"${WEBDAV_PORT}:${WEBDAV_PORT}/tcp",
-				"${RT_INC_PORT}:${RT_INC_PORT}/tcp"
+				"6881:6881/udp",
+				"8000:8000/tcp",
+				"8080:8080/tcp",
+				"9001:9000/tcp",
+				"50000:50000/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "ruTorrent",
