@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 185 apps | 204 apps | 202 apps | 204 apps |
+| 186 apps | 205 apps | 203 apps | 205 apps |
 
 ---
 
@@ -181,6 +181,7 @@ List of all apps included in this project with info related to it.
 |[Speedtest Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker) |  |  |  |
 |[Sshwifty](https://sshwifty.herokuapp.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/nirui/sshwifty#docker-image) |  |  |  |
 |[SurrealDB](https://surrealdb.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/surrealdb/surrealdb) |  |  |  |
+|[SWAG - Secure Web Application Gateway](https://github.com/linuxserver/docker-swag)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/general/swag) |  |  |  |
 |[SyncThing](https://syncthing.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-syncthing) |  |  |  |
 |[Tailscale](https://tailscale.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/tailscale/tailscale) |  |  |  |
 |[Tautulli](https://tautulli.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-tautulli) |  |  |  |
