@@ -951,6 +951,42 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Anitvirus"
+			],
+			"description": "ClamAV® is an open source antivirus engine for detecting trojans, viruses, malware & other malicious threats.",
+			"image": "mkodockx/docker-clamav:alpine",
+			"logo": "http://www.clamav.net/assets/clamav-trademark.png",
+			"name": "clamav",
+			"platform": "linux",
+			"ports": [
+				"3310:3310/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Clamav",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/etc/timezone",
+					"container": "/etc/timezone"
+				},
+				{
+					"bind": "/etc/localtime",
+					"container": "/etc/localtime"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/clamav/config",
+					"container": "/etc/clamav"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/clamav/virus_definitions",
+					"container": "/var/lib/clamav"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://docs.clamav.net/\" target=\"_blank\">https://docs.clamav.net/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/mkodockx/docker-clamav\" target=\"_blank\">https://hub.docker.com/r/mkodockx/docker-clamav</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_clamav.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_clamav.sh | bash</h3><br><br>"
+		},
+		{
+			"categories": [
 				"DNS",
 				"Tools"
 			],

@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 186 apps | 205 apps | 203 apps | 205 apps |
+| 187 apps | 206 apps | 204 apps | 206 apps |
 
 ---
 
@@ -31,6 +31,7 @@ List of all apps included in this project with info related to it.
 |[Cardigann](https://github.com/cardigann/cardigann)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/cardigann/) |  |  |  |
 |[Chevereto](https://chevereto.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/nmtan/chevereto) |  |  |  |
 |[Chrony NTP](https://github.com/cturra/docker-ntp)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/cturra/docker-ntp/blob/main/README.md) |  |  |  |
+|[Clamav](https://docs.clamav.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/mkodockx/docker-clamav) |  | [![](../build/images/script_icon.png)](../tools/install_clamav.sh) |  |
 |[Cloudflare DDNS](https://www.cloudflare.com/en-gb/learning/dns/glossary/dynamic-dns/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/favonia/cloudflare-ddns/) |  |  |  |
 |[Cloudflared Tunnel](https://www.cloudflare.com/products/tunnel/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/) |  |  |  |
 |[Code Server](https://coder.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-code-server) |  |  |  |
