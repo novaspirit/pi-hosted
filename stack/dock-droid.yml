@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  grafana:
+    container_name: dock-droid
+    devices: 
+      - "/dev/kvm:/dev/kvm"
+    environment:
+      EXTRA: ${EXTRA}
+    hostname: dock-droid
+    image: sickcodes/dock-droid:latest
+    ports:
+      - 5555:5555
+      - 5999:5999
+    restart: unless-stopped
