@@ -13,7 +13,7 @@
 	"officialDoc": "https://gitlab.com/Bockiii/deemix-docker",
 	"platform": "linux",
 	"ports": [
-		"9666:9666/tcp"
+		"9666:6595/tcp"
 	],
 	"restart_policy": "unless-stopped",
 	"title": "DeeMix",

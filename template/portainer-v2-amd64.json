@@ -1431,7 +1431,7 @@
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://deemix.app/\" target=\"_blank\">https://deemix.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://gitlab.com/Bockiii/deemix-docker\" target=\"_blank\">https://gitlab.com/Bockiii/deemix-docker</a><br><br><br>Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details.",
 			"platform": "linux",
 			"ports": [
-				"9666:9666/tcp"
+				"9666:6595/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "DeeMix",
