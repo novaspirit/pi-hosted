@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 187 apps | 206 apps | 205 apps | 207 apps |
+| 186 apps | 206 apps | 205 apps | 207 apps |
 
 ---
 
@@ -196,7 +196,7 @@ List of all apps included in this project with info related to it.
 |[Transmission OpenVPN Version 4](https://transmissionbt.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://haugene.github.io/docker-transmission-openvpn/run-container/) |  |  |  |
 |[Tvheadend](https://tvheadend.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-tvheadend) |  |  |  |
 |[Ubooquity](https://vaemendis.net/ubooquity/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-ubooquity) |  |  |  |
-|[UniFi Controller](https://ui.com/consoles)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-unifi-controller) |  |  |  |
+|[UniFi Controller](https://ui.com/consoles)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-unifi-controller) |  |  |  |
 |[UniFi Video](https://github.com/pducharme/UniFi-Video-Controller)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pducharme/UniFi-Video-Controller) |  |  |  |
 |[Unmanic](https://docs.unmanic.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.unmanic.app/docs/installation/docker) |  |  |  |
 |[UnPoller Monitor](https://unpoller.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md) | [![](../build/images/red_doc_icon.png)](../docs/UnPoller-Monitor.md) | [![](../build/images/script_icon.png)](../tools/unpoller-install.sh) |  |

@@ -7045,49 +7045,6 @@
 		},
 		{
 			"categories": [
-				"Management",
-				"Tools"
-			],
-			"description": null,
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/unifi-controller:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/unifi-icon.png",
-			"name": "unifi-controller",
-			"platform": "linux",
-			"ports": [
-				"3478:3478/udp",
-				"10001:10001/udp",
-				"8080:8080/tcp",
-				"8081:8081/tcp",
-				"8443:8443/tcp",
-				"8843:8843/tcp",
-				"8880:8880/tcp",
-				"6789:6789/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "UniFi Controller",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Unifi",
-					"container": "/config"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://ui.com/consoles\" target=\"_blank\">https://ui.com/consoles</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-unifi-controller\" target=\"_blank\">https://docs.linuxserver.io/images/docker-unifi-controller</a><br><br><br>"
-		},
-		{
-			"categories": [
 				"CCTV"
 			],
 			"description": "UniFi Video is a powerful and flexible, integrated IP video management surveillance system designed to work with Ubiquiti’s UniFi Video Camera product line. UniFi Video has an intuitive, configurable, and feature‑packed user interface with advanced features such as motion detection, auto‑discovery, user‑level security, storage management, reporting, and mobile device support.",
