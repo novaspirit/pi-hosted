@@ -38,7 +38,7 @@
 	"type": 1,
 	"volumes": [
 		{
-			"bind": "/portainer/Files/AppData/Config/Jelllyfin",
+			"bind": "/portainer/Files/AppData/Config/Jellyfin",
 			"container": "/config"
 		},
 		{
