@@ -12,6 +12,7 @@ services:
       - DB_HOST=db
       - DB_USERNAME=${DB_USERNAME}
       - DB_PASSWORD=${DB_PASSWORD}
+      - APP_ENV=${APP_ENV}
     volumes:
       - monica_data:/var/www/html/storage
     restart: always
