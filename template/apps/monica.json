@@ -1,0 +1,42 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "Monica is a great open source personal relationship management system.",
+  "env": [
+    {
+      "default": "REPLACEMEWITHAWORDOF32CHARACTERS",
+      "label": "APP_KEY",
+      "name": "APP_KEY"
+    },
+    {
+      "default": "production",
+      "label": "APP_ENV",
+      "name": "APP_ENV"
+    },
+    {
+      "default": "panda",
+      "label": "DB_USERNAME",
+      "name": "DB_USERNAME"
+    },
+    {
+      "default": "o8x&max8yt4h@v$q#orvx@72$",
+      "label": "DB_PASSWORD",
+      "name": "DB_PASSWORD"
+    }
+],
+	"logo": "https://avatars0.githubusercontent.com/u/25832602",
+	"name": "monica",
+	"officialDoc": "https://github.com/monicahq/docker#use-monica-docker-image",
+	"platform": "linux",
+	"repository": {
+		"stackfile_arm32": "stack/monica.yml",
+		"stackfile_arm64": "stack/monica.yml",
+		"stackfile_amd64": "stack/monica.yml",
+		"url": "https://github.com/Macleykun/pi-hosted/tree/monica"
+	},
+	"title": "Monica",
+	"type": 3,
+	"webpage": "https://www.monicahq.com/"
+}

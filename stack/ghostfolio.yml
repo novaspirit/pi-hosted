@@ -30,11 +30,3 @@ services:
 
 volumes:
   postgres:
-
-# input we need to ask for the user:
-# ${JWT_SECRET_KEY} (just random text is great)
-# ${ACCESS_TOKEN_SALT} (just random text is great)
-# ${ALPHA_VANTAGE_API_KEY} (optional)
-# ${POSTGRES_DB}
-# ${POSTGRES_USER}
-# ${POSTGRES_PASSWORD}
