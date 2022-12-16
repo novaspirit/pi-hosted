@@ -1,8 +1,8 @@
+---
 version: "3.8"
-
 services:
   monica:
-    image: monica
+    image: monica:latest
     depends_on:
       - db
     ports:
@@ -29,7 +29,7 @@ services:
     restart: always
 
 volumes:
-  data:
-    name: data
+  monica_data:
+    name: monica_data
   mysql:
     name: mysql
