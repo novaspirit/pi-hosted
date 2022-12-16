@@ -11,6 +11,11 @@
       "name": "APP_KEY"
     },
     {
+      "default": "production",
+      "label": "APP_ENV",
+      "name": "APP_ENV"
+    },
+    {
       "default": "panda",
       "label": "DB_USERNAME",
       "name": "DB_USERNAME"
@@ -20,6 +25,7 @@
       "label": "DB_PASSWORD",
       "name": "DB_PASSWORD"
     }
+],
 	"logo": "https://avatars0.githubusercontent.com/u/25832602",
 	"name": "monica",
 	"officialDoc": "https://github.com/monicahq/docker#use-monica-docker-image",
