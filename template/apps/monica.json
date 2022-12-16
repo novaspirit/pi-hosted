@@ -30,13 +30,13 @@
 	"name": "monica",
 	"officialDoc": "https://github.com/monicahq/docker#use-monica-docker-image",
 	"platform": "linux",
-	"restart_policy": "unless-stopped",
+	"repository": {
+		"stackfile_arm32": "stack/monica.yml",
+		"stackfile_arm64": "stack/monica.yml",
+		"stackfile_amd64": "stack/monica.yml",
+		"url": "https://github.com/Macleykun/pi-hosted"
+	},
 	"title": "Monica",
-	"type": 1,
-	"volumes": [
-		{
-			"container": "/var/www/html/storage"
-		}
-	],
+	"type": 3,
 	"webpage": "https://www.monicahq.com/"
 }
