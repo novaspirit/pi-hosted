@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  app:
+    image: monica
+    depends_on:
+      - db
+    ports:
+      - 8585:80
+    environment:
+      - APP_KEY=${APP_KEY}
+      - DB_HOST=db
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - monica_data:/var/www/html/storage
+    restart: always
+
+  db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=true
+      - MYSQL_DATABASE=monica
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - mysql:/var/lib/mysql
+    restart: always
+
+volumes:
+  data:
+    name: data
+  mysql:
+    name: mysql
