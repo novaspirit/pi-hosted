@@ -3,12 +3,40 @@
 		"Other",
 		"Tools"
 	],
-	"description": "InfluxDB is an open source time series database for recording metrics, events, and analytics. You will need to add /portainer/Files/AppData/Config/Influxdb/config/influxdb.conf",
+	"description": "InfluxDB is an open source time series database for recording metrics, events, and analytics.",
+	"env": [
+		{
+			"default": "setup",
+			"label": "DOCKER_INFLUXDB_INIT_MODE",
+			"name": "DOCKER_INFLUXDB_INIT_MODE"
+		},
+		{
+			"default": "your-initial-username",
+			"label": "DOCKER_INFLUXDB_INIT_USERNAME",
+			"name": "DOCKER_INFLUXDB_INIT_USERNAME"
+		},
+		{
+			"default": "your-initial-password",
+			"label": "DOCKER_INFLUXDB_INIT_PASSWORD",
+			"name": "DOCKER_INFLUXDB_INIT_PASSWORD"
+		},
+		{
+			"default": "your-initial-organisation",
+			"label": "DOCKER_INFLUXDB_INIT_ORG",
+			"name": "DOCKER_INFLUXDB_INIT_ORG"
+		},
+		{
+			"default": "your-initial-bucket",
+			"label": "DOCKER_INFLUXDB_INIT_BUCKET",
+			"name": "DOCKER_INFLUXDB_INIT_BUCKET"
+		}
+	],
 	"hostname": "rpi-influxdb",
 	"image_arm64": "influxdb:latest",
 	"image_amd64": "influxdb:latest",
 	"logo": "https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/influxdb/logo.png",
-	"name": "influxdb1810",
+	"name": "influxdb",
+	"note": "Set your initial organisation, bucket, username and password below. Wisit Web UI at http://your_host:8086/ for setting up a tocken.",
 	"officialDoc": "https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker",
 	"platform": "linux",
 	"ports": [
@@ -19,12 +47,12 @@
 	"type": 1,
 	"volumes": [
 		{
-			"bind": "/portainer/Files/AppData/Config/Influxdb/data",
-			"container": "/var/lib/influxdb"
+			"bind": "/portainer/Files/AppData/Config/Influxdb2/data",
+			"container": "/var/lib/influxdb2"
 		},
 		{
-			"bind": "/portainer/Files/AppData/Config/Influxdb/config",
-			"container": "/var/lib/influxdb"
+			"bind": "/portainer/Files/AppData/Config/Influxdb2/config",
+			"container": "/etc/influxdb2"
 		}
 	],
 	"webpage": "https://www.influxdata.com/"
