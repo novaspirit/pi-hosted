@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  app:
+  monica:
     image: monica
     depends_on:
       - db
