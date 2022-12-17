@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 187 apps | 207 apps | 206 apps | 208 apps |
+| 187 apps | 206 apps | 206 apps | 208 apps |
 
 ---
 
@@ -113,7 +113,7 @@ List of all apps included in this project with info related to it.
 |[Minetest](https://www.minetest.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-minetest) |  |  |  |
 |[MinIO](https://min.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.min.io/minio/baremetal/quickstart/quickstart.html) |  |  |  |
 |[Minisatip](https://github.com/catalinii/minisatip)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-minisatip) |  |  |  |
-|[Monica](https://www.monicahq.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/monicahq/docker#use-monica-docker-image) |  |  |  |
+|[Monica](https://www.monicahq.com/)|:heavy_check_mark:|:x:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/monicahq/docker#use-monica-docker-image) |  |  |  |
 |[Mstream](https://mstream.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mstream) |  |  |  |
 |[Murmur](https://www.mumble.info/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/yhaenggi/murmur-docker) |  |  |  |
 |[MusicBrainz](https://musicbrainz.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver-archive/docker-musicbrainz) |  |  |  |
