@@ -26,9 +26,3 @@ services:
     volumes:
       - monica_db:/var/lib/mysql
     restart: always
-
-volumes:
-  monica_data:
-    name: monica_data
-  monica_db:
-    name: monica_db
