@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 186 apps | 206 apps | 205 apps | 207 apps |
+| 185 apps | 206 apps | 205 apps | 207 apps |
 
 ---
 
@@ -118,7 +118,7 @@ List of all apps included in this project with info related to it.
 |[MusicBrainz](https://musicbrainz.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver-archive/docker-musicbrainz) |  |  |  |
 |[Muximux](https://github.com/mescon/Muximux)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-muximux) |  |  |  |
 |[Mylar](https://github.com/mylar3/mylar3)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mylar3) |  |  |  |
-|[MySQL](https://www.mysql.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/mysql) |  |  |  |
+|[MySQL](https://www.mysql.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/mysql) |  |  |  |
 |[n8n](https://n8n.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.n8n.io/getting-started/installation/#docker) |  |  |  |
 |[Netdata](https://www.netdata.cloud/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://learn.netdata.cloud/docs/agent/packaging/docker) |  |  |  |
 |[Nextcloud](https://nextcloud.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nextcloud) |  |  |  |
