@@ -2558,11 +2558,12 @@
 				"Other",
 				"Tools"
 			],
-			"description": "InfluxDB is an open source time series database for recording metrics, events, and analytics. You will need to add /portainer/Files/AppData/Config/Influxdb/config/influxdb.conf",
+			"description": "InfluxDB is an open source time series database for recording metrics, events, and analytics.",
 			"hostname": "rpi-influxdb1810",
 			"image": "influxdb:1.8.10",
 			"logo": "https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/influxdb/logo.png",
 			"name": "influxdb1810",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.influxdata.com/\" target=\"_blank\">https://www.influxdata.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker\" target=\"_blank\">https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker</a><br><br><br>You will need to add /portainer/Files/AppData/Config/Influxdb/config/influxdb.conf",
 			"platform": "linux",
 			"ports": [
 				"8086:8086/tcp"
@@ -2577,10 +2578,9 @@
 				},
 				{
 					"bind": "/portainer/Files/AppData/Config/Influxdb/config",
-					"container": "/var/lib/influxdb"
+					"container": "/etc/influxdb"
 				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.influxdata.com/\" target=\"_blank\">https://www.influxdata.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker\" target=\"_blank\">https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker</a><br><br><br>"
+			]
 		},
 		{
 			"categories": [
@@ -3902,52 +3902,6 @@
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/mylar3/mylar3\" target=\"_blank\">https://github.com/mylar3/mylar3</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-mylar3\" target=\"_blank\">https://docs.linuxserver.io/images/docker-mylar3</a><br><br><br>"
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "MySQL is an open-source relational database management system (RDBMS). It is the most widely used relational database management system (RDBMS) by both large and small businesses. It is the most widely used RDBMS by both large and small businesses.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"default": "rootpassword",
-					"label": "MYSQL_ROOT_PASSWORD",
-					"name": "MYSQL_ROOT_PASSWORD"
-				},
-				{
-					"default": "America/New_York",
-					"label": "TZ",
-					"name": "TZ"
-				}
-			],
-			"image": "mysql:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mysql.png",
-			"name": "mysql",
-			"platform": "linux",
-			"ports": [
-				"3306:3306/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "MySQL",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/MySQL",
-					"container": "/var/lib/mysql"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.mysql.com/\" target=\"_blank\">https://www.mysql.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/mysql\" target=\"_blank\">https://hub.docker.com/_/mysql</a><br><br><br>"
 		},
 		{
 			"categories": [
