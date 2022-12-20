@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  monica:
+    image: monica:latest
+    depends_on:
+      - monica_db
+    ports:
+      - 8585:80
+    environment:
+      - APP_KEY=${APP_KEY}
+      - DB_HOST=monica_db
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - APP_ENV=${APP_ENV}
+    volumes:
+      - /portainer/Files/AppData/Config/Monica/storage:/var/www/html/storage
+    restart: always
+
+  monica_db:
+    image: linuxserver/mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: monica
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+      PUID: ${PGID}
+      PGID: ${PGID}
+      TZ: ${TZ}
+    volumes:
+      - /portainer/Files/AppData/Config/Monica/data:/var/lib/mysql
+    restart: always

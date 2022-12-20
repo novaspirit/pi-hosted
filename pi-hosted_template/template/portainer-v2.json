@@ -3644,6 +3644,45 @@
 		{
 			"categories": [
 				"Other",
+				"Tools"
+			],
+			"description": "Monica is a great open source personal relationship management system.",
+			"env": [
+				{
+					"default": "REPLACEMEWITHAWORDOF32CHARACTERS",
+					"label": "APP_KEY",
+					"name": "APP_KEY"
+				},
+				{
+					"default": "development",
+					"label": "APP_ENV",
+					"name": "APP_ENV"
+				},
+				{
+					"default": "panda",
+					"label": "DB_USERNAME",
+					"name": "DB_USERNAME"
+				},
+				{
+					"default": "o8x&max8yt4h@v$q#orvx@72$",
+					"label": "DB_PASSWORD",
+					"name": "DB_PASSWORD"
+				}
+			],
+			"logo": "https://avatars0.githubusercontent.com/u/25832602",
+			"name": "monica",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "stack/monica.yml",
+				"url": "https://github.com/Macleykun/pi-hosted"
+			},
+			"title": "Monica",
+			"type": 3,
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.monicahq.com/\" target=\"_blank\">https://www.monicahq.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/monicahq/docker#use-monica-docker-image\" target=\"_blank\">https://github.com/monicahq/docker#use-monica-docker-image</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
 				"Music"
 			],
 			"description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
