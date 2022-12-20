@@ -9,8 +9,8 @@ services:
     environment:
       - APP_KEY=${APP_KEY}
       - DB_HOST=monica_db
-      - DB_USERNAME=${DB_USERNAME}
-      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_USERNAME=${DATABASE_USER}
+      - DB_PASSWORD=${DATABASE_PASSWORD}
       - APP_ENV=${APP_ENV}
     volumes:
       - /portainer/Files/AppData/Config/Monica/storage:/var/www/html/storage
