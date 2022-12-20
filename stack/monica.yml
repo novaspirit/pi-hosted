@@ -17,12 +17,15 @@ services:
     restart: always
 
   monica_db:
-    image: mysql:latest
+    image: linuxserver/mariadb:latest
     environment:
-      - MYSQL_RANDOM_ROOT_PASSWORD=true
-      - MYSQL_DATABASE=monica
-      - MYSQL_USER=${DB_USERNAME}
-      - MYSQL_PASSWORD=${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: monica
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+      PUID: ${PGID}
+      PGID: ${PGID}
+      TZ: ${TZ}
     volumes:
       - /portainer/Files/AppData/Config/Monica/data:/var/lib/mysql
     restart: always
