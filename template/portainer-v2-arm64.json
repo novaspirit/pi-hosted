@@ -4379,6 +4379,21 @@
 			"description": "Monica is a great open source personal relationship management system.",
 			"env": [
 				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
 					"default": "REPLACEMEWITHAWORDOF32CHARACTERS",
 					"label": "APP_KEY",
 					"name": "APP_KEY"
@@ -4390,13 +4405,18 @@
 				},
 				{
 					"default": "panda",
-					"label": "DB_USERNAME",
-					"name": "DB_USERNAME"
+					"label": "DATABASE_USER",
+					"name": "DATABASE_USER"
 				},
 				{
 					"default": "o8x&max8yt4h@v$q#orvx@72$",
-					"label": "DB_PASSWORD",
-					"name": "DB_PASSWORD"
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"default": "",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
 				}
 			],
 			"logo": "https://avatars0.githubusercontent.com/u/25832602",
