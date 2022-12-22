@@ -2245,6 +2245,11 @@
 					"default": "development",
 					"label": "NODE_ENV",
 					"name": "NODE_ENV"
+				},
+				{
+					"default": "http://localhost/",
+					"label": "url",
+					"name": "url"
 				}
 			],
 			"image": "ghost:latest",
