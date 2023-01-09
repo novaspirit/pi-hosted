@@ -4,9 +4,9 @@
 		"Tools"
 	],
 	"description": "An alternative private front-end to Reddit",
-	"image_arm32": "spikecodes/libreddit:armv7",
-	"image_arm64": "spikecodes/libreddit:arm",
-	"image_amd64": "spikecodes/libreddit:latest",
+	"image_arm32": "libreddit/libreddit:armv7",
+	"image_arm64": "libreddit/libreddit:arm",
+	"image_amd64": "libreddit/libreddit:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/libreddit.png",
 	"name": "libreddit",
 	"officialDoc": "https://github.com/spikecodes/libreddit#2-docker",

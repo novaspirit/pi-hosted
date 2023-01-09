@@ -2,7 +2,7 @@
 	"categories": [
 		"Video"
 	],
-	"description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
+	"description": "[DEPRECATED] Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
 	"env": [
 		{
 			"default": "1000",

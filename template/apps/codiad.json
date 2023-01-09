@@ -2,7 +2,7 @@
 	"categories": [
 		"Productivity"
 	],
-	"description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
+	"description": "[DEPRECATED] Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
 	"env": [
 		{
 			"default": "1000",
