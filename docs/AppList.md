@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 186 apps | 207 apps | 206 apps | 208 apps |
+| 186 apps | 208 apps | 207 apps | 209 apps |
 
 ---
 
@@ -150,6 +150,7 @@ List of all apps included in this project with info related to it.
 |[Pi-Hole DoH/DoT](https://pi-hole.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oijkn/pihole-doh-dot) | [![](../build/images/red_doc_icon.png)](../docs/pi-hole.md) |  |  |
 |[Pi-Hole](https://pi-hole.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker) | [![](../build/images/red_doc_icon.png)](../docs/pi-hole.md) |  |  |
 |[Pi-Hole-Unbound](https://pi-hole.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/chriscrowe/docker-pihole-unbound/tree/master/one-container) | [![](../build/images/red_doc_icon.png)](../docs/pi-hole.md) |  |  |
+|[]()|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|| [![](../build/images/blue_doc_icon.png)]() | [![](../build/images/red_doc_icon.png)](../docs/) | [![](../build/images/script_icon.png)](../tools/) | [![](../build/images/yt-badge-.png "")]() |
 |[Piwigo](http://piwigo.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-piwigo) |  |  |  |
 |[Pixel-server](http://www.penguintutor.com/projects/pixel-server)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/Macleykun/pixel-server) | [![](../build/images/red_doc_icon.png)](../docs/pixel-server_setup.md) | [![](../build/images/script_icon.png)](../tools/install_pixel-server.sh) |  |
 |[Plex](https://www.plex.tv/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-plex) |  |  |  |
