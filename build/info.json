@@ -296,6 +296,14 @@
 			"Exec": "bash",
 			"Description": "Install Invidious",
 			"wget": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_invidious.sh"
+		},
+                {
+			"File": "install_reactive-resume.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Doc": "reactive-resume_installation.md",
+			"Description": "Install Reactive-Resume",
+			"wget": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_reactive-resume.sh"
 		}
 	]
 }
