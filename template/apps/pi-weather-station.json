@@ -3,7 +3,7 @@
 		"Other",
 		"Tools"
 	],
-	"description": "This is a weather station designed to be used with a Raspberry Pi on the official 7" 800x480 touchscreen. The weather station will require you to have API keys from Mapbox and ClimaCell (v4). Optionally, you can use an API key from LocationIQ to preform reverse geocoding.",
+	"description": "This is a weather station designed to be used with a Raspberry Pi on the official 7 800x480 touchscreen. The weather station will require you to have API keys from Mapbox and ClimaCell (v4). Optionally, you can use an API key from LocationIQ to preform reverse geocoding.",
 	"image_arm64": "seanriggs/pi-weather-station:arm64",
 	"image_amd64": "seanriggs/pi-weather-station",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/weather.png",
