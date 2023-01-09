@@ -4006,6 +4006,41 @@
 		},
 		{
 			"categories": [
+				"Music"
+			],
+			"description": "Simple self-hosted music scrobble database to create personal listening statistics. No recommendations, no social network, no nonsense.",
+			"env": [
+				{
+					"default": "malojapassword",
+					"label": "MALOJA_FORCE_PASSWORD",
+					"name": "MALOJA_FORCE_PASSWORD"
+				},
+				{
+					"default": "/data",
+					"label": "MALOJA_DATA_DIRECTORY",
+					"name": "MALOJA_DATA_DIRECTORY"
+				}
+			],
+			"image": "krateng/maloja:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/maloja.png",
+			"name": "maloja",
+			"platform": "linux",
+			"ports": [
+				"42010:42010/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Maloja",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Maloja/Data",
+					"container": "/data"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/krateng/maloja\" target=\"_blank\">https://github.com/krateng/maloja</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/krateng/maloja/blob/master/README.md\" target=\"_blank\">https://github.com/krateng/maloja/blob/master/README.md</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_maloja.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_maloja.sh | bash</h3><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
