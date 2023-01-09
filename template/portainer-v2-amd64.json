@@ -6077,6 +6077,30 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "This is a weather station designed to be used with a Raspberry Pi on the official 7 800x480 touchscreen. The weather station will require you to have API keys from Mapbox and ClimaCell (v4). Optionally, you can use an API key from LocationIQ to preform reverse geocoding.",
+			"image": "seanriggs/pi-weather-station",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/weather.png",
+			"name": "pi-weather-station",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/SeanRiggs/pi-weather-station\" target=\"_blank\">https://github.com/SeanRiggs/pi-weather-station</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/SeanRiggs/pi-weather-station/blob/master/Docker%20Image/Docker-ReadMe.md\" target=\"_blank\">https://github.com/SeanRiggs/pi-weather-station/blob/master/Docker%20Image/Docker-ReadMe.md</a><br><br><br>MUST DO FIRST! - create volume call weatherdata",
+			"platform": "linux",
+			"ports": [
+				"8888:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "pi-weather-station",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "weatherdata",
+					"container": "/app"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Photos"
 			],
 			"description": "Piwigo is photo gallery software for the web, built by an active community of users and developers.",
