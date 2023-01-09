@@ -1,0 +1,39 @@
+{
+	"categories": [
+		"Music"
+	],
+	"description": "Simple self-hosted music scrobble database to create personal listening statistics. No recommendations, no social network, no nonsense.",
+	"env": [
+		{
+			"default": "malojapassword",
+			"label": "MALOJA_FORCE_PASSWORD",
+			"name": "MALOJA_FORCE_PASSWORD"
+		},
+		{
+			"default": "/data",
+			"label": "MALOJA_DATA_DIRECTORY",
+			"name": "MALOJA_DATA_DIRECTORY"
+		}
+	],
+	"image_arm32": "krateng/maloja:latest",
+	"image_arm64": "krateng/maloja:latest",
+	"image_amd64": "krateng/maloja:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/maloja.png",
+	"name": "maloja",
+	"officialDoc": "https://github.com/krateng/maloja/blob/master/README.md",
+        "preInstallScript": "install_maloja.sh",
+	"platform": "linux",
+	"ports": [
+		"42010:42010/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Maloja",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Maloja/Data",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://github.com/krateng/maloja"
+}
