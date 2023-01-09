@@ -12,6 +12,7 @@ Most of the follwing scripts are only needed if you are trying to load one of th
 |[install_invidious.sh](../tools/install_invidious.sh)||Preinstall|Install Invidious|wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_invidious.sh \| bash|
 |[install_photoprism.sh](../tools/install_photoprism.sh)|[Documentation](../docs/photoprism.md)|Preinstall|Install Photo Prism|wget -qO- https://git.io/JM5Tr \| bash|
 |[install_portainer_agent.sh](../tools/install_portainer_agent.sh)||Preinstall|Install Portainer Agent<br>Portainer agent is used for remote management of the host you install it on.||
+|[install_reactive-resume.sh](../tools/install_reactive-resume.sh)|[Documentation](../docs/reactive-resume_installation.md)|Preinstall|Install Reactive-Resume|wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_reactive-resume.sh \| bash|
 |[install_throttled.sh](../tools/install_throttled.sh)|[Documentation](../docs/throttled.md)|Install|Preinstall Setup for the Throttled Script|wget -qO- https://git.io/JXzw0 \| bash|
 |[install_vikunja.sh](../tools/install_vikunja.sh)||Preinstall|Preinstall Setup for Vikunja|wget -qO- https://git.io/JMsuZ \| bash|
 |[install_whoogle.sh](../tools/install_whoogle.sh)||Preinstall|Install Whoogle|wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_whoogle.sh \| bash|

@@ -6736,6 +6736,91 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
+			"image": "martadinata666/reactive-resume:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/reactiveresume.png",
+			"name": "reactive-resume",
+			"platform": "linux",
+			"env": [
+				{
+					"default": "some-random-alphanumeric123456",
+					"label": "SECRET_KEY",
+					"name": "SECRET_KEY"
+				},
+				{
+					"default": "some-random-alphanumeric123456",
+					"label": "JWT_SECRET",
+					"name": "JWT_SECRET"
+				},
+				{
+					"default": "reactiveresume",
+					"label": "DATABASE_USERNAME",
+					"name": "DATABASE_USERNAME"
+				},
+				{
+					"default": "reactiveresume",
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"default": "use computer IP and Client port http://ip:7768",
+					"label": "PUBLIC_URL",
+					"name": "PUBLIC_URL"
+				},
+				{
+					"default": "use computer IP and Server port http://ip:7769",
+					"label": "PUBLIC_SERVER_URL",
+					"name": "PUBLIC_SERVER_URL"
+				},
+				{
+					"default": "leave blank to disable",
+					"label": "GOGLE_API_KEY",
+					"name": "GOOGLE_API_KEY"
+				},
+				{
+					"label": "DISABLE_SIGNUPS",
+					"name": "DISABLE_SIGNUPS",
+					"select": [
+						{
+							"default": true,
+							"text": "Disable user Signup",
+							"value": "false"
+						},
+						{
+							"text": "Allow user Signup",
+							"value": "true"
+						}
+					]
+				},
+				{
+					"default": "7768",
+					"label": "CLIENT_PORT",
+					"name": "CLIENT_PORT"
+				},
+				{
+					"default": "7769",
+					"label": "SERVER_PORT",
+					"name": "SERVER_PORT"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"repository": {
+				"stackfile": "stack/reactive-resume.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted"
+			},
+			"title": "Reactive-Resume",
+			"type": 3,
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://rxresu.me/\" target=\"_blank\">https://rxresu.me/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/martadinata666/reactive-resume\" target=\"_blank\">https://hub.docker.com/r/martadinata666/reactive-resume</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/reactive-resume_installation.md\" target=\"_blank\">reactive-resume_installation.md</a></h3><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_reactive-resume.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_reactive-resume.sh | bash</h3><br><br>"
+		},
+		{
+			"categories": [
 				"Downloaders",
 				"Books"
 			],
