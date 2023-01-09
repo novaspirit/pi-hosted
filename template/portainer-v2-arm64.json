@@ -651,7 +651,7 @@
 				"Books",
 				"Other"
 			],
-			"description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic",
+			"description": "[DEPRECATED] Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic",
 			"env": [
 				{
 					"default": "1000",
@@ -826,7 +826,7 @@
 			"categories": [
 				"Downloaders"
 			],
-			"description": "Cardigann, a server for adding extra indexers to Sonarr, SickRage and CouchPotato via Torznab and TorrentPotato proxies. Behind the scenes Cardigann logs in and runs searches and then transforms the results into a compatible format.",
+			"description": "[DEPRECATED] Cardigann, a server for adding extra indexers to Sonarr, SickRage and CouchPotato via Torznab and TorrentPotato proxies. Behind the scenes Cardigann logs in and runs searches and then transforms the results into a compatible format.",
 			"env": [
 				{
 					"default": "1000",
@@ -1110,7 +1110,7 @@
 			"categories": [
 				"Productivity"
 			],
-			"description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
+			"description": "[DEPRECATED] Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
 			"env": [
 				{
 					"default": "1000",
@@ -1186,7 +1186,7 @@
 				"Downloaders",
 				"Video"
 			],
-			"description": "CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a \"movies I want\"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.",
+			"description": "[DEPRECATED] CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a \"movies I want\"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.",
 			"env": [
 				{
 					"default": "1000",
@@ -1638,23 +1638,6 @@
 					"container": "/var/run/docker.sock"
 				}
 			]
-		},
-		{
-			"categories": [
-				"Security"
-			],
-			"description": "Dradis Framework: Collaboration and reporting for IT Security teams http://dradisframework.org",
-			"image": "raesene/dradis:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dradis-logo.png",
-			"name": "dradis",
-			"platform": "linux",
-			"ports": [
-				"3100:3000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Dradis",
-			"type": 1,
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://dradisframework.com/\" target=\"_blank\">https://dradisframework.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/raesene/dockerized-security-tools\" target=\"_blank\">https://github.com/raesene/dockerized-security-tools</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -3557,7 +3540,7 @@
 			"categories": [
 				"Video"
 			],
-			"description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
+			"description": "[DEPRECATED] Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
 			"env": [
 				{
 					"default": "1000",
@@ -3741,7 +3724,7 @@
 				"Tools"
 			],
 			"description": "An alternative private front-end to Reddit",
-			"image": "spikecodes/libreddit:arm",
+			"image": "libreddit/libreddit:arm",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/libreddit.png",
 			"name": "libreddit",
 			"platform": "linux",

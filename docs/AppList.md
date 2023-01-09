@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 186 apps | 209 apps | 208 apps | 210 apps |
+| 185 apps | 208 apps | 208 apps | 210 apps |
 
 ---
 
@@ -49,7 +49,7 @@ List of all apps included in this project with info related to it.
 |[Droid Docker VNC](https://hub.docker.com/r/sickcodes/dock-droid)|:x:|:x:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/sickcodes/dock-droid) |  |  | [![Run Android In Docker with this Container!](../build/images/yt-badge-novaspirit.png "Run Android In Docker with this Container!")](https://www.youtube.com/watch?v=GTtdTksS6L0) |
 |[Domoticz](https://domoticz.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-domoticz) |  |  |  |
 |[Dozzle](https://dozzle.dev/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/amir20/dozzle) |  |  |  |
-|[Dradis](https://dradisframework.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/raesene/dockerized-security-tools) |  |  |  |
+|[Dradis](https://dradisframework.com/)|:x:|:x:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/raesene/dockerized-security-tools) |  |  |  |
 |[Drupal](https://www.drupal.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration) |  | [![](../build/images/script_icon.png)](../tools/install_drupal.sh) |  |
 |[Duck DNS](https://www.duckdns.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-duckdns) |  |  |  |
 |[Duplicati](https://www.duplicati.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-duplicati) |  |  |  |
