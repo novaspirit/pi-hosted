@@ -1,0 +1,46 @@
+{
+	"categories": [
+		"Tools",
+                "Productivity"
+	],
+	"description": "This project is a lightweight authentication server that provides an opinionated, simplified LDAP interface for authentication.",
+	"env": [
+		{
+			"default": "somesecretjwt",
+			"label": "LLDAP_JWT_SECRET",
+			"name": "LLDAP_JWT_SECRET"
+		},
+		{
+			"default": "someadminpassword",
+			"label": "LLDAP_LDAP_USER_PASS",
+			"name": "LLDAP_LDAP_USER_PASS"
+		},
+                {
+                        "default": "dc=example,dc=com",
+                        "label": "LLDAP_LDAP_BASE_DN",
+                        "name": "LLDAP_LDAP_BASE_DN"
+                }
+	],
+	"image_arm32": "nitnelave/lldap:stable-debian",
+	"image_arm64": "nitnelave/lldap:stable",
+	"image_amd64": "nitnelave/lldap:stable",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lldap.png",
+	"name": "LLDAP",
+	"officialDoc": "https://github.com/nitnelave/lldap",
+        "preInstallScript": "install_lldap.sh",
+	"platform": "linux",
+	"ports": [
+		"3890:3890/tcp",
+                "17170:17170/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "LLDAP",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/lldap/data",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://github.com/nitnelave/lldap"
+}
