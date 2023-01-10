@@ -4443,7 +4443,7 @@
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/monica.yml",
-				"url": "https://github.com/Macleykun/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted"
 			},
 			"title": "Monica",
 			"type": 3,
