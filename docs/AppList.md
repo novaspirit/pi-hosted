@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 186 apps | 209 apps | 209 apps | 211 apps |
+| 187 apps | 210 apps | 210 apps | 212 apps |
 
 ---
 
@@ -103,6 +103,7 @@ List of all apps included in this project with info related to it.
 |[LibreSpeed](https://librespeed.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-librespeed) |  |  |  |
 |[lidarr](https://lidarr.audio/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lidarr) |  |  |  |
 |[Lingva Translate](https://lingva.ml/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/TheDavidDelta/lingva-translate) |  |  |  |
+|[LLDAP](https://github.com/nitnelave/lldap)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/nitnelave/lldap) |  | [![](../build/images/script_icon.png)](../tools/install_lldap.sh) |  |
 |[Lychee](https://lycheeorg.github.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lychee) |  |  |  |
 |[Lychee With Mariadb](https://lycheeorg.github.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lychee) |  |  |  |
 |[Maloja](https://github.com/krateng/maloja)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/krateng/maloja/blob/master/README.md) |  | [![](../build/images/script_icon.png)](../tools/install_maloja.sh) |  |

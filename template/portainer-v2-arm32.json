@@ -3134,6 +3134,48 @@
 		},
 		{
 			"categories": [
+				"Tools",
+				"Productivity"
+			],
+			"description": "This project is a lightweight authentication server that provides an opinionated, simplified LDAP interface for authentication.",
+			"env": [
+				{
+					"default": "somesecretjwt",
+					"label": "LLDAP_JWT_SECRET",
+					"name": "LLDAP_JWT_SECRET"
+				},
+				{
+					"default": "someadminpassword",
+					"label": "LLDAP_LDAP_USER_PASS",
+					"name": "LLDAP_LDAP_USER_PASS"
+				},
+				{
+					"default": "dc=example,dc=com",
+					"label": "LLDAP_LDAP_BASE_DN",
+					"name": "LLDAP_LDAP_BASE_DN"
+				}
+			],
+			"image": "nitnelave/lldap:stable-debian",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lldap.png",
+			"name": "LLDAP",
+			"platform": "linux",
+			"ports": [
+				"3890:3890/tcp",
+				"17170:17170/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "LLDAP",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/lldap/data",
+					"container": "/data"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/nitnelave/lldap\" target=\"_blank\">https://github.com/nitnelave/lldap</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/nitnelave/lldap\" target=\"_blank\">https://github.com/nitnelave/lldap</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_lldap.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_lldap.sh | bash</h3><br><br>"
+		},
+		{
+			"categories": [
 				"Cloud",
 				"Web",
 				"Management",
