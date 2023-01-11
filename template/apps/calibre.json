@@ -1,0 +1,48 @@
+{
+	"categories": [
+		"Cloud",
+		"Books"
+	],
+	"description": "calibre is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It’s also completely free and open source and great for both casual users and computer experts.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+                },
+                {
+                        "default": "America/New_York",
+                        "label": "TZ",
+                        "name": "TZ"
+		}
+	],
+	"image_arm64": "linuxserver/calibre:latest",
+	"image_amd64": "linuxserver/calibre:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/calibre-web-icon.png",
+	"name": "calibre",
+	"officialDoc": "https://docs.linuxserver.io/images/docker-calibre",
+	"platform": "linux",
+	"ports": [
+		"8084:8080/tcp",
+		"8085:8081/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Calibre",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Books",
+			"container": "/books"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Calibre",
+			"container": "/config"
+		}
+	],
+	"webpage": "https://calibre-ebook.com/"
+}
