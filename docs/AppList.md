@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 187 apps | 210 apps | 210 apps | 212 apps |
+| 187 apps | 211 apps | 211 apps | 213 apps |
 
 ---
 
@@ -27,6 +27,7 @@ List of all apps included in this project with info related to it.
 |[Booksonic](https://booksonic.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-booksonic-air) |  |  |  |
 |[Bookstack](https://www.bookstackapp.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://www.bookstackapp.com/docs/admin/installation/#docker) |  |  |  |
 |[Caddy](https://caddyserver.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/caddy) |  | [![](../build/images/script_icon.png)](../tools/install_caddy.sh) |  |
+|[Calibre](https://calibre-ebook.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-calibre) |  |  |  |
 |[Calibre Web](https://calibre-ebook.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-calibre-web) |  |  |  |
 |[Cardigann](https://github.com/cardigann/cardigann)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/cardigann/) |  |  |  |
 |[Chevereto](https://chevereto.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/nmtan/chevereto) |  |  |  |
