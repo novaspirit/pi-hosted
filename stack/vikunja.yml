@@ -39,7 +39,7 @@ services:
   frontend:
     container_name: frontend
     hostname: frontend
-    image: vikunja/frontend:latest
+    image: vikunja/frontend:0.20
     networks:
       - network
     restart: unless-stopped
