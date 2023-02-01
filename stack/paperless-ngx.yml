@@ -25,9 +25,11 @@ services:
       USERMAP_UID: ${PUID}
       USERMAP_GID: ${PGID}
       PAPERLESS_TIME_ZONE: ${TZ}
-      #PAPERLESS_URL: ${PAPERLESSURL}
+      PAPERLESS_URL: ${PAPERLESSURL}
       PAPERLESS_SECRET_KEY: ${RANDOMKEY}
       PAPERLESS_OCR_LANGUAGE: ${LANG}
+      PAPERLESS_ADMIN_USER: ${ADMIN_USER}
+      PAPERLESS_ADMIN_PASSWORD: ${ADMIN_PASS}
     networks:
       - paperless_network
     volumes:

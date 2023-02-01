@@ -18,12 +18,12 @@
 			"name": "PGID",
                         "description": "for GroupID"
 		},
-                {
-                        "default": "America/New_York",
-                        "label": "TZ",
-                        "name": "TZ",
-                        "description": "Specify a timezone to use for example America/New_York"
-                },
+        {
+            "default": "America/New_York",
+            "label": "TZ",
+            "name": "TZ",
+            "description": "Specify a timezone to use for example America/New_York"
+        },
 		{
 			"default": "",
 			"label": "PAPERLESS_URL",
@@ -32,16 +32,28 @@
 		},
 		{
 			"default": "",
+			"label": "Administrator username",
+			"name": "ADMIN_USER",
+                        "description": "Set the name of the default admin user."
+		},
+		{
+			"default": "",
+			"label": "Administrator password",
+			"name": "ADMIN_PASS",
+                        "description": "Set the password of the default admin user."
+		},
+		{
+			"default": "",
 			"label": "Secret Key",
 			"name": "RANDOMKEY",
                         "description": "This should be a very long sequence of random characters."
 		},
-                {
-                        "default": "eng",
-                        "label": "OCR Language",
-                        "name": "LANG",
-                        "description": "The default language to use for OCR"
-                }
+        {
+            "default": "eng",
+            "label": "OCR Language",
+            "name": "LANG",
+            "description": "The default language to use for OCR"
+        }
 	],
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/paperless.png",
 	"name": "paperless-ngx",

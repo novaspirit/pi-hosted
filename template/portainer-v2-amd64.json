@@ -5854,6 +5854,18 @@
 				},
 				{
 					"default": "",
+					"label": "Administrator username",
+					"name": "ADMIN_USER",
+					"description": "Set the name of the default admin user."
+				},
+				{
+					"default": "",
+					"label": "Administrator password",
+					"name": "ADMIN_PASS",
+					"description": "Set the password of the default admin user."
+				},
+				{
+					"default": "",
 					"label": "Secret Key",
 					"name": "RANDOMKEY",
 					"description": "This should be a very long sequence of random characters."
