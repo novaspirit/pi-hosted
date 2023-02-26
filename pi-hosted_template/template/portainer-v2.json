@@ -2822,6 +2822,49 @@
 		},
 		{
 			"categories": [
+				"Library",
+				"Books"
+			],
+			"description": "Kavita is a fast, feature rich, cross platform reading server.",
+			"image": "kizaing/kavita:latest",
+			"logo": "https://raw.githubusercontent.com/Kareadita/Kavita/develop/Logo/kavita.svg",
+			"name": "Kavita",
+			"platform": "linux",
+			"ports": [
+				"5002:5000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Kavita",
+			"type": 1,
+			"env": [
+				{
+					"default": "Your/Timezone",
+					"label": "Timezone",
+					"name": "TZ"
+				}
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Kavita/manga",
+					"container": "/manga"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Kavita/comics",
+					"container": "/comics"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Kavita/books",
+					"container": "/books"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Kavita/config",
+					"container": "/kavita/config"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.kavitareader.com/#home\" target=\"_blank\">https://www.kavitareader.com/#home</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.kavitareader.com/en/install/docker-install\" target=\"_blank\">https://wiki.kavitareader.com/en/install/docker-install</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"3d-printers",
 				"Tools"

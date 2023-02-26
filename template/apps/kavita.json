@@ -1,0 +1,46 @@
+{
+	"categories": [
+		"Library",
+		"Books"
+	],
+	"description": "Kavita is a fast, feature rich, cross platform reading server.",
+	"image_arm32": "kizaing/kavita:latest",
+	"image_arm64": "kizaing/kavita:latest",
+	"image_amd64": "kizaing/kavita:latest",
+	"logo": "https://raw.githubusercontent.com/Kareadita/Kavita/develop/Logo/kavita.svg",
+	"name": "Kavita",
+	"officialDoc": "https://wiki.kavitareader.com/en/install/docker-install",
+	"platform": "linux",
+	"ports": [
+		"5002:5000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Kavita",
+	"type": 1,
+	"env": [
+		{
+			"default": "Your/Timezone",
+			"label": "Timezone",
+			"name": "TZ"
+		}
+  ],
+	"volumes": [
+		{
+      "bind": "/portainer/Files/AppData/Config/Kavita/manga",
+			"container": "/manga"
+		},
+		{
+      "bind": "/portainer/Files/AppData/Config/Kavita/comics",
+			"container": "/comics"
+		},
+		{
+      "bind": "/portainer/Files/AppData/Config/Kavita/books",
+			"container": "/books"
+		},
+		{
+      "bind": "/portainer/Files/AppData/Config/Kavita/config",
+			"container": "/kavita/config"
+		}
+	],
+	"webpage": "https://www.kavitareader.com/#home"
+}
