@@ -9,7 +9,7 @@
 	"image_amd64": "pihole/pihole:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pihole.png",
 	"name": "pihole",
-	"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53.",
+	"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53. If you like to use Pi-Hole's built in DHCP-Server change the Network type to host and open advance options and scroll to Labels and add: NET_ADMIN with the value True. When you do so, specify a port is no more needed, navigate to your.ip.goes.here/admin.",
 	"officialDoc": "https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker",
 	"piHostedDoc": "pi-hole.md",
 	"platform": "linux",
