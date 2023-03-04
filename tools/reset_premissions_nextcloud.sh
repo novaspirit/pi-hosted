@@ -18,9 +18,9 @@ function check_internet() {
 # check_internet
 
 echo "Setting permissions..."
-sudo chown -R root.root /portainer/Files/AppData/Config/ncdata || error "Failed to set permissions!"
-sudo chown -R 33.33 /portainer/Files/AppData/Config/ncdata/nextcloud || error "Failed to set permissions!"
-sudo chown -R 33.33 /portainer/Files/AppData/Config/ncdata/ncp || error "Failed to set permissions!"
-sudo chown -R 101.102 /portainer/Files/AppData/Config/ncdata/database || error "Failed to set permissions!"
+sudo chown -R root:root /portainer/Files/AppData/Config/ncdata || error "Failed to set permissions!"
+sudo chown -R 33:33 /portainer/Files/AppData/Config/ncdata/nextcloud || error "Failed to set permissions!"
+sudo chown -R 33:33 /portainer/Files/AppData/Config/ncdata/ncp || error "Failed to set permissions!"
+sudo chown -R 101:102 /portainer/Files/AppData/Config/ncdata/database || error "Failed to set permissions!"
 sudo chmod -R 755 /portainer/Files/AppData/Config/ncdata/ || error "Failed to set permissions!"
 echo "Permissions are reset to a working config."
