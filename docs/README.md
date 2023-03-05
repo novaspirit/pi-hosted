@@ -49,7 +49,7 @@ wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/update_po
 
 ### Login to Portainer to update the App Template.
 
-Goto pi-ip:9000 and than login
+Goto pi-ip:9000 and then login
 
 Click Settings, in the bottom-left corner, and paste the Portainer v2 json file link from below into the "App Templates" box.
 
