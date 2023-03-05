@@ -94,6 +94,9 @@ You're done! Now just click App Templates and deploy applications!
 |N.18|[![Novaspirit Tech](../build/images/novaspirit-logo.png "Novaspirit Tech")](https://youtube.com/channel/UCrjKdwxaQMSV_NDywgKXVmw)|[Reviewing Stats on 25+ containers on my Raspberry Pi](https://www.youtube.com/watch?v=_tVj0FX5wYg)||
 |N.Extra3|[![Novaspirit Tech](../build/images/novaspirit-logo.png "Novaspirit Tech")](https://youtube.com/channel/UCrjKdwxaQMSV_NDywgKXVmw)|[Biggest Update to Pi-Hosted Portainer.io Template!](https://www.youtube.com/watch?v=7R7l6c3wswQ)||
 |N.Extra4|[![Novaspirit Tech](../build/images/novaspirit-logo.png "Novaspirit Tech")](https://youtube.com/channel/UCrjKdwxaQMSV_NDywgKXVmw)|[Run Android In Docker with this Container!](https://www.youtube.com/watch?v=GTtdTksS6L0)||
+|N.19|[![Novaspirit Tech](../build/images/novaspirit-logo.png "Novaspirit Tech")](https://youtube.com/channel/UCrjKdwxaQMSV_NDywgKXVmw)|[Control Multiple Dockers From One Location with Portainer Agent](https://www.youtube.com/watch?v=OC-SVcHnm74)||
+|N.20|[![Novaspirit Tech](../build/images/novaspirit-logo.png "Novaspirit Tech")](https://youtube.com/channel/UCrjKdwxaQMSV_NDywgKXVmw)|[Your Personal Weather Station Docker Container](https://www.youtube.com/watch?v=5JfPzvcm0E8)||
+|N.21|[![Novaspirit Tech](../build/images/novaspirit-logo.png "Novaspirit Tech")](https://youtube.com/channel/UCrjKdwxaQMSV_NDywgKXVmw)|[Hosting Without The Need to Port Forward Using This Trick!](https://www.youtube.com/watch?v=-QGbfTY5ExE)||
 
 ### Aditional Documentation
 
