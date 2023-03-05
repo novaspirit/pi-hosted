@@ -6240,7 +6240,7 @@
 			"image": "seanriggs/pi-weather-station:arm64",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/weather.png",
 			"name": "pi-weather-station",
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/SeanRiggs/pi-weather-station\" target=\"_blank\">https://github.com/SeanRiggs/pi-weather-station</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/SeanRiggs/pi-weather-station/blob/master/Docker%20Image/Docker-ReadMe.md\" target=\"_blank\">https://github.com/SeanRiggs/pi-weather-station/blob/master/Docker%20Image/Docker-ReadMe.md</a><br><br><br>MUST DO FIRST! - create volume call weatherdata",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/SeanRiggs/pi-weather-station\" target=\"_blank\">https://github.com/SeanRiggs/pi-weather-station</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/SeanRiggs/pi-weather-station/blob/master/Docker%20Image/Docker-ReadMe.md\" target=\"_blank\">https://github.com/SeanRiggs/pi-weather-station/blob/master/Docker%20Image/Docker-ReadMe.md</a><br><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=5JfPzvcm0E8 target=\"_blank\">Novaspirit Tech - Your Personal Weather Station Docker Container</a><br><br>MUST DO FIRST! - create volume call weatherdata",
 			"platform": "linux",
 			"ports": [
 				"8888:8080/tcp"
