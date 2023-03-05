@@ -146,6 +146,24 @@
 			"Title": "Run Android In Docker with this Container!",
 			"Channel": "novaspirit",
 			"URL": "https://www.youtube.com/watch?v=GTtdTksS6L0"
+		},
+		{
+			"ID": "N.19",
+			"Title": "Control Multiple Dockers From One Location with Portainer Agent",
+			"Channel": "novaspirit",
+			"URL": "https://www.youtube.com/watch?v=OC-SVcHnm74"
+		},
+		{
+			"ID": "N.20",
+			"Title": "Your Personal Weather Station Docker Container",
+			"Channel": "novaspirit",
+			"URL": "https://www.youtube.com/watch?v=5JfPzvcm0E8"
+		},
+		{
+			"ID": "N.21",
+			"Title": "Hosting Without The Need to Port Forward Using This Trick!",
+			"Channel": "novaspirit",
+			"URL": "https://www.youtube.com/watch?v=-QGbfTY5ExE"
 		}
 	],
 	"docs": [
