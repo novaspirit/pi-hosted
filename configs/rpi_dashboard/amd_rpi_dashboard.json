@@ -21,7 +21,7 @@
       "type": "grafana",
       "id": "grafana",
       "name": "Grafana",
-      "version": "9.2.0"
+      "version": "9.3.6"
     },
     {
       "type": "datasource",
@@ -136,7 +136,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.0",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
@@ -217,7 +217,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.0",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
@@ -304,7 +304,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "9.2.0",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
@@ -382,7 +382,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "9.2.0",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
@@ -484,7 +484,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "9.2.0",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
@@ -569,7 +569,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "9.2.0",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
@@ -658,7 +658,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "9.2.0",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
@@ -747,7 +747,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "9.2.0",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
@@ -871,86 +871,13 @@
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
           },
-          "exemplar": true,
-          "expr": "sum(rate(container_cpu_system_seconds_total[$interval]))",
-          "format": "time_series",
-          "hide": true,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "a",
-          "refId": "B",
-          "step": 120
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "expr": "sum(rate(container_cpu_system_seconds_total{name=~\".+\"}[1m]))",
-          "format": "time_series",
-          "hide": true,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "nur container",
-          "refId": "F",
-          "step": 10
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "expr": "sum(rate(container_cpu_system_seconds_total{id=\"/\"}[1m]))",
-          "format": "time_series",
-          "hide": true,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "nur docker host",
-          "metric": "",
-          "refId": "A",
-          "step": 20
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "expr": "sum(rate(process_cpu_seconds_total[$interval])) * 100",
-          "format": "time_series",
-          "hide": true,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "host",
-          "metric": "",
-          "refId": "C",
-          "step": 600
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
           "expr": "sum(rate(container_cpu_system_seconds_total{name=~\".+\"}[1m])) + sum(rate(container_cpu_system_seconds_total{id=\"/\"}[1m])) + sum(rate(process_cpu_seconds_total[1m]))",
           "format": "time_series",
-          "hide": true,
+          "hide": false,
           "intervalFactor": 2,
           "legendFormat": "",
           "refId": "D",
           "step": 120
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "exemplar": true,
-          "expr": "100 - (avg by (instance) (rate(node_cpu_seconds_total{mode=\"idle\",job=\"$job\"}[$interval])) * 100)",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "CPU",
-          "refId": "E"
         }
       ],
       "title": "CPU Usage",
@@ -2317,6 +2244,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
@@ -2349,7 +2278,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -2414,6 +2344,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
@@ -2446,7 +2378,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -2522,6 +2455,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
@@ -2555,7 +2490,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -2640,7 +2576,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -2777,7 +2714,7 @@
         },
         "showHeader": true
       },
-      "pluginVersion": "9.1.0-69790pre",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
@@ -3195,6 +3132,6 @@
   "timezone": "browser",
   "title": "Docker and OS Metrics for x86_64",
   "uid": "Ss3q6hSZkw",
-  "version": 3,
+  "version": 2,
   "weekStart": ""
 }
