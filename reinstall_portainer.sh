@@ -5,6 +5,10 @@ function error() {
   exit 1
 }
 
+function warning() {
+  echo -e "\\e[91m$1\\e[39m"
+}
+
 function check_internet() {
   printf "Checking if you are online..."
   wget -q --spider http://github.com
@@ -21,9 +25,9 @@ portainer_pid=`docker ps | grep portainer-ce | awk '{print $1}'`
 portainer_name=`docker ps | grep portainer-ce | awk '{print $2}'`
 
 echo Removing the old version of Portainer
-sudo docker stop $portainer_pid || error "Failed to stop portainer!"
-sudo docker rm $portainer_pid || error "Failed to remove portainer container!"
-sudo docker rmi $portainer_name || error "Failed to remove/untag images from the container!"
+sudo docker stop $portainer_pid || warning "Failed to stop portainer!"
+sudo docker rm $portainer_pid || warning "Failed to remove portainer container!"
+sudo docker rmi $portainer_name || warning "Failed to remove/untag images from the container!"
 
 echo Pruning unused volumes
 sudo docker volume prune
