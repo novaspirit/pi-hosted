@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 188 apps | 212 apps | 212 apps | 214 apps |
+| 188 apps | 213 apps | 213 apps | 215 apps |
 
 ---
 
@@ -62,6 +62,7 @@ List of all apps included in this project with info related to it.
 |[Flame](https://github.com/pawelmalak/flame)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/flame#with-docker-recommended) |  |  |  |
 |FlareSolverr|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/FlareSolverr/FlareSolverr#installation) |  |  |  |
 |[flatnotes](https://github.com/Dullage/flatnotes)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/dullage/flatnotes) |  | [![](../build/images/script_icon.png)](../tools/install_flatnotes.sh) |  |
+|[FoldingAtHome](https://foldingathome.org/?lng=en)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container|  |  |  |  |
 |[FoundryVTT Server](https://foundryvtt.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/felddy/foundryvtt) |  |  |  |
 |[FreshRSS](https://www.freshrss.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/FreshRSS/FreshRSS/tree/edge/Docker) |  |  |  |
 |[Gazee](https://github.com/hubbcaps/gazee)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/gazee) |  |  |  |
