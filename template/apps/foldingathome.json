@@ -1,0 +1,41 @@
+{
+	"categories": [
+		"tools"
+	],
+	"description": "Crunch numbers for scientists. just click deploy the stack, IMPORTANT!!! make sure you use firefox to open the site.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image_arm64": "lscr.io/linuxserver/foldingathome:latest",
+	"image_amd64": "lscr.io/linuxserver/foldingathome:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/folding-at-home-logo.png",
+	"name": "FoldingAtHome",
+	"platform": "linux",
+	"ports": [
+		"7396:7396/tcp",
+		"36330:36300/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "FoldingAtHome",
+	"type": 1,
+	"volumes": [
+	{
+		"bind": "/portainer/Files/AppData/Config/FoldingAthome/config",
+		"container": "/config"
+	},
+	{
+		"bind": "/portainer/Files/AppData/Config/FoldingAtHome/data",
+		"container": "/data"
+	}
+	],
+	"webpage": "https://foldingathome.org/?lng=en"
+}
