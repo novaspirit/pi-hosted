@@ -15,9 +15,9 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm64": "r3aper/teeworlds-server",
-	"image_amd64": "r3aper/teeworlds-server",
-	"logo": "Teeworlds.png",
+	"image_arm64": "r3aper/teeworlds-server:latest",
+	"image_amd64": "r3aper/teeworlds-server:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Teeworlds.png",
 	"name": "Teeworlds",
 	"platform": "linux",
 	"ports": [
