@@ -1,0 +1,41 @@
+{
+	"categories": [
+		"Games"
+	],
+	"description": "Server for Teeworlds",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image_arm64": "r3aper/teeworlds-server:latest",
+	"image_amd64": "r3aper/teeworlds-server:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Teeworlds.png",
+	"name": "Teeworlds",
+	"platform": "linux",
+	"ports": [
+		"8303/tcp"
+
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Teeworlds",
+	"type": 1,
+	"volumes": [
+	{
+		"bind": "/portainer/Files/AppData/Config/Teeworlds/config",
+		"container": "/config"
+	},
+	{
+		"bind": "/portainer/Files/AppData/Config/Teeworlds/data",
+		"container": "/data"
+	}
+	],
+	"webpage": "https://hub.docker.com/r/r3aper/teeworlds-server"
+}
