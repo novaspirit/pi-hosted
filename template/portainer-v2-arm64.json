@@ -6789,6 +6789,42 @@
 		},
 		{
 			"categories": [
+				"Games"
+			],
+			"description": "QuakeJs is a multiplayer game played from your browser",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "chrisscottthomas/quakejs:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/QuakeJs.png",
+			"name": "QuakeJs",
+			"platform": "linux",
+			"ports": [
+				"4042:80/tcp",
+				"4043:443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "QuakeJs",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/QuakeJs",
+					"container": "/app/public/conf.yml"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://registry.hub.docker.com/r/chrisscottthomas/quakejs/\" target=\"_blank\">https://registry.hub.docker.com/r/chrisscottthomas/quakejs/</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Messenger"
 			],
 			"description": "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core -- much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical. Blowfish support and optional web-ui included.",
