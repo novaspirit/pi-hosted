@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 188 apps | 214 apps | 214 apps | 216 apps |
+| 188 apps | 215 apps | 215 apps | 217 apps |
 
 ---
 
@@ -168,6 +168,7 @@ List of all apps included in this project with info related to it.
 |[Pydio](https://www.pydio.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/pydio) |  |  |  |
 |[qBittorrent](https://www.qbittorrent.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-qbittorrent) |  |  |  |
 |[qFlood](https://hotio.dev/containers/qflood/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hotio.dev/containers/qflood/) |  |  |  |
+|[QuakeJs](https://registry.hub.docker.com/r/chrisscottthomas/quakejs/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container|  |  |  |  |
 |[Quassel IRC](https://quassel-irc.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-quassel-core) |  |  |  |
 |[Radarr](https://radarr.video/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-radarr) |  |  |  |
 |[Raspberry Pi Docker Monitor](https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md) | [![](../build/images/red_doc_icon.png)](../docs/rpi_docker_monitor.md) | [![](../build/images/script_icon.png)](../tools/rpi_docker_monitor.sh) | [![Raspberry Pi Docker Monitoring](../build/images/yt-badge-novaspirit.png "Raspberry Pi Docker Monitoring")](https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8) |
