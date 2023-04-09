@@ -1,0 +1,40 @@
+{
+	"categories": [
+		"Games"
+	],
+	"description": "QuakeJs is a multiplayer game played from your browser",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+
+	"image_arm64": "chrisscottthomas/quakejs:latest",
+	"image_amd64": "chrisscottthomas/quakejs:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/QuakeJs.png",
+	"name": "QuakeJs",
+	"platform": "linux",
+	"ports": [
+		"4042:80/tcp",
+        "4043:443/tcp"
+
+
+	],
+	"restart_policy": "unless-stopped",
+	"title": "QuakeJs",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/QuakeJs",
+			"container": "/app/public/conf.yml"
+		}
+	],
+	"webpage": "https://registry.hub.docker.com/r/chrisscottthomas/quakejs/"
+}
