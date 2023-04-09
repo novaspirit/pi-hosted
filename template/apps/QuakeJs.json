@@ -22,7 +22,10 @@
 	"name": "QuakeJs",
 	"platform": "linux",
 	"ports": [
-		"8082:80/tcp"
+		"4042:80/tcp",
+        "4043:443/tcp"
+
+
 	],
 	"restart_policy": "unless-stopped",
 	"title": "QuakeJs",
