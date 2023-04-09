@@ -8042,6 +8042,45 @@
 		},
 		{
 			"categories": [
+				"Games"
+			],
+			"description": "Server for Teeworlds",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "r3aper/teeworlds-server:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Teeworlds.png",
+			"name": "Teeworlds",
+			"platform": "linux",
+			"ports": [
+				"8303/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Teeworlds",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Teeworlds/config",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Teeworlds/data",
+					"container": "/data"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/r3aper/teeworlds-server\" target=\"_blank\">https://hub.docker.com/r/r3aper/teeworlds-server</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools",
 				"Minecraft"
