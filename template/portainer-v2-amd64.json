@@ -2076,7 +2076,7 @@
 				}
 			],
 			"image": "lscr.io/linuxserver/firefox:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dashy.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/firefox.png",
 			"name": "Firefox",
 			"platform": "linux",
 			"ports": [
