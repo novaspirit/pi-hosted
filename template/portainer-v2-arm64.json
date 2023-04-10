@@ -6716,7 +6716,7 @@
 				}
 			],
 			"image": "lscr.io/linuxserver/pwndrop:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Readarr.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pwndrop.png",
 			"name": "Pwndrop",
 			"platform": "linux",
 			"ports": [
