@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 188 apps | 215 apps | 215 apps | 217 apps |
+| 189 apps | 217 apps | 217 apps | 219 apps |
 
 ---
 
@@ -59,6 +59,7 @@ List of all apps included in this project with info related to it.
 |[EmbyStat](https://github.com/mregni/EmbyStat)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-embystat) |  |  |  |
 |[FileBrowser latest](https://filebrowser.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://filebrowser.org/installation#docker) |  |  | [![Installing JDownloader and File Browser On The Pi Docker Server](../build/images/yt-badge-novaspirit.png "Installing JDownloader and File Browser On The Pi Docker Server")](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[FileBrowser S6](https://filebrowser.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://filebrowser.org/installation#docker) |  |  | [![Installing JDownloader and File Browser On The Pi Docker Server](../build/images/yt-badge-novaspirit.png "Installing JDownloader and File Browser On The Pi Docker Server")](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
+|[Firefox](https://hub.docker.com/r/linuxserver/firefox)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container|  |  |  |  |
 |[Flame](https://github.com/pawelmalak/flame)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/flame#with-docker-recommended) |  |  |  |
 |FlareSolverr|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/FlareSolverr/FlareSolverr#installation) |  |  |  |
 |[flatnotes](https://github.com/Dullage/flatnotes)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/dullage/flatnotes) |  | [![](../build/images/script_icon.png)](../tools/install_flatnotes.sh) |  |
@@ -165,6 +166,7 @@ List of all apps included in this project with info related to it.
 |[ProjectSend](https://www.projectsend.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-projectsend) |  |  |  |
 |[ProtonMail Bridge](https://protonmail.com/bridge/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/shenxn/protonmail-bridge) |  |  |  |
 |[prowlarr](https://prowlarr.com)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/prowlarr) |  |  |  |
+|[Pwndrop](https://hub.docker.com/r/linuxserver/pwndrop)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/pwndrop) |  |  |  |
 |[Pydio](https://www.pydio.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/pydio) |  |  |  |
 |[qBittorrent](https://www.qbittorrent.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-qbittorrent) |  |  |  |
 |[qFlood](https://hotio.dev/containers/qflood/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hotio.dev/containers/qflood/) |  |  |  |

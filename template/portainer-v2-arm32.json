@@ -5612,6 +5612,52 @@
 		},
 		{
 			"categories": [
+				"Downloaders",
+				"File hosting"
+			],
+			"description": "Pwndrop is a self-deployable file hosting service for red teamers, allowing to easily upload and share payloads over HTTP and WebDAV.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "Time Zone",
+					"name": "TZ"
+				},
+				{
+					"default": "/pwndrop",
+					"label": "SECRET_PATH",
+					"name": "SECRET_PATH"
+				}
+			],
+			"image": "lscr.io/linuxserver/pwndrop:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Readarr.png",
+			"name": "Pwndrop",
+			"platform": "linux",
+			"ports": [
+				"4047:8787/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Pwndrop",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/pwndrop",
+					"container": "/app/public/conf.yml"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/linuxserver/pwndrop\" target=\"_blank\">https://hub.docker.com/r/linuxserver/pwndrop</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/pwndrop\" target=\"_blank\">https://hub.docker.com/r/linuxserver/pwndrop</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Cloud",
 				"Other"
 			],
