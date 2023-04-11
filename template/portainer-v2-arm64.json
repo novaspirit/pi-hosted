@@ -2018,6 +2018,48 @@
 		},
 		{
 			"categories": [
+				"Downloaders",
+				"File hosting"
+			],
+			"description": "FIleZilla Client is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "Time Zone",
+					"name": "TZ"
+				}
+			],
+			"image": "lscr.io/linuxserver/filezilla:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filezilla.png",
+			"name": "Filezilla",
+			"platform": "linux",
+			"ports": [
+				"4048:3000/tcp",
+				"4049:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Filezilla",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/filezilla",
+					"container": "/app/public/conf.yml"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/linuxserver/filezilla\" target=\"_blank\">https://hub.docker.com/r/linuxserver/filezilla</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/filezilla\" target=\"_blank\">https://hub.docker.com/r/linuxserver/filezilla</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"browser"
 			],
 			"description": "Firefox in docker",
