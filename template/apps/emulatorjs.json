@@ -35,11 +35,15 @@
 	"restart_policy": "unless-stopped",
 	"title": "Emulatorjs",
 	"type": 1,
-	"volumes": [
-		{
-			"bind": "/portainer/Files/AppData/Config/emulatorjs",
-			"container": "/app/public/conf.yml"
-		}
+    "volumes": [
+        {
+            "bind": "/portainer/Files/AppData/Config/emulatorjs/config",
+            "container": "/app/public/conf.yml"
+        },
+        {
+            "bind": "/portainer/Files/AppData/Config/emulatorjs/data",
+            "container": "/app/public/conf.yml"
+        }
 	],
 	"webpage": "https://hub.docker.com/r/linuxserver/emulatorjs"
 }
