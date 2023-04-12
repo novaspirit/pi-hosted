@@ -42,7 +42,7 @@
         },
         {
             "bind": "/portainer/Files/AppData/Config/emulatorjs/data",
-            "container": "/app/public/conf.yml"
+            "container": "/app/public/data.yml"
         }
 	],
 	"webpage": "https://hub.docker.com/r/linuxserver/emulatorjs"
