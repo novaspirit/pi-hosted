@@ -30,7 +30,7 @@
 	"platform": "linux",
 	"ports": [
 		"4010:3000/tcp",
-        "4011:443"
+        "4011:443/tcp"
 	],
 	"restart_policy": "unless-stopped",
 	"title": "Kasm",
