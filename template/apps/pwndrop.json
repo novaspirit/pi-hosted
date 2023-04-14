@@ -42,7 +42,7 @@
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/pwndrop",
-			"container": "/app/public/conf.yml"
+			"container": "/config"
 		}
 
 	],

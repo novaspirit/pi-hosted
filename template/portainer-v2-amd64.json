@@ -2095,7 +2095,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/filezilla",
-					"container": "/app/public/conf.yml"
+					"container": "/config"
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/linuxserver/filezilla\" target=\"_blank\">https://hub.docker.com/r/linuxserver/filezilla</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/filezilla\" target=\"_blank\">https://hub.docker.com/r/linuxserver/filezilla</a><br><br><br>"
@@ -2131,7 +2131,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/firefox",
-					"container": "/app/public/conf.yml"
+					"container": "/config"
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/linuxserver/firefox\" target=\"_blank\">https://hub.docker.com/r/linuxserver/firefox</a><br><br><br>"
@@ -3691,6 +3691,60 @@
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Fallenbagel/jellyseerr\" target=\"_blank\">https://github.com/Fallenbagel/jellyseerr</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/fallenbagel/jellyseerr\" target=\"_blank\">https://hub.docker.com/r/fallenbagel/jellyseerr</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Utilities",
+				"tools"
+			],
+			"description": "Kasm is a web-accessible desktop environment.",
+			"env": [
+				{
+					"default": "4011",
+					"label": "KASM_PORT",
+					"name": "KASM_PORT"
+				},
+				{
+					"default": "",
+					"label": "DOCKER_HUB_USERNAME",
+					"name": "DOCKER_HUB_USERNAME"
+				},
+				{
+					"default": "",
+					"label": "DOCKER_HUB_PASSWORD",
+					"name": "DOCKER_HUB_PASSWORD"
+				}
+			],
+			"image": "lscr.io/linuxserver/kasm:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/kasm-server.png",
+			"name": "Kasm",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.kasmweb.com/\" target=\"_blank\">https://www.kasmweb.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/linuxserver/docker-kasm\" target=\"_blank\">https://github.com/linuxserver/docker-kasm</a><br><br><br>make sure you fill out your username and password in the DOCKER_HUB_USERNAME/PASSWORD areas",
+			"platform": "linux",
+			"ports": [
+				"4010:3000/tcp",
+				"4011:443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Kasm",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/kasm/data",
+					"container": "/data"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/kasm/profiles",
+					"container": "/profiles"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/kasm/dev_input",
+					"container": "/dev_input"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/kasm/run_udev_data",
+					"container": "/udev_data"
+				}
+			]
 		},
 		{
 			"categories": [
@@ -6788,7 +6842,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/pwndrop",
-					"container": "/app/public/conf.yml"
+					"container": "/config"
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/linuxserver/pwndrop\" target=\"_blank\">https://hub.docker.com/r/linuxserver/pwndrop</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/pwndrop\" target=\"_blank\">https://hub.docker.com/r/linuxserver/pwndrop</a><br><br><br>"
@@ -6957,12 +7011,6 @@
 			"restart_policy": "unless-stopped",
 			"title": "QuakeJs",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/QuakeJs",
-					"container": "/app/public/conf.yml"
-				}
-			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://registry.hub.docker.com/r/chrisscottthomas/quakejs/\" target=\"_blank\">https://registry.hub.docker.com/r/chrisscottthomas/quakejs/</a><br><br><br>"
 		},
 		{
