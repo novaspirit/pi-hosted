@@ -38,7 +38,7 @@
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/filezilla",
-			"container": "/app/public/conf.yml"
+			"container": "/config"
 		}
 
 	],
