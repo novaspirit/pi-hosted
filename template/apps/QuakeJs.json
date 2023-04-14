@@ -30,11 +30,5 @@
 	"restart_policy": "unless-stopped",
 	"title": "QuakeJs",
 	"type": 1,
-	"volumes": [
-		{
-			"bind": "/portainer/Files/AppData/Config/QuakeJs",
-			"container": "/app/public/conf.yml"
-		}
-	],
 	"webpage": "https://registry.hub.docker.com/r/chrisscottthomas/quakejs/"
 }

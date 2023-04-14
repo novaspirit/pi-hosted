@@ -30,7 +30,7 @@
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/firefox",
-			"container": "/app/public/conf.yml"
+			"container": "/config"
 		}
 	],
 	"webpage": "https://hub.docker.com/r/linuxserver/firefox"
