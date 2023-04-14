@@ -1734,7 +1734,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/filezilla",
-					"container": "/app/public/conf.yml"
+					"container": "/config"
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/linuxserver/filezilla\" target=\"_blank\">https://hub.docker.com/r/linuxserver/filezilla</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/filezilla\" target=\"_blank\">https://hub.docker.com/r/linuxserver/filezilla</a><br><br><br>"
@@ -5693,7 +5693,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/pwndrop",
-					"container": "/app/public/conf.yml"
+					"container": "/config"
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/linuxserver/pwndrop\" target=\"_blank\">https://hub.docker.com/r/linuxserver/pwndrop</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/pwndrop\" target=\"_blank\">https://hub.docker.com/r/linuxserver/pwndrop</a><br><br><br>"
