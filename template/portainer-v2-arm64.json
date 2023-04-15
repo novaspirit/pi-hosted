@@ -3706,6 +3706,7 @@
 				"4010:3000/tcp",
 				"4011:443/tcp"
 			],
+			"privileged": true,
 			"restart_policy": "unless-stopped",
 			"title": "Kasm",
 			"type": 1,
