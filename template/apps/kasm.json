@@ -24,6 +24,11 @@
 			"default": "",
 			"label": "MODPROBE_CMD",
 			"name": "MODPROBE_CMD"
+		},
+		{
+			"default": "",
+			"label": "OTLP_ENDPOINT",
+			"name": "OTLP_ENDPOINT"
 		}
       ],
 	"image_arm64": "lscr.io/linuxserver/kasm:latest",
