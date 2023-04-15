@@ -29,7 +29,7 @@ sudo docker stop $portainer_pid || warning "Failed to stop portainer!"
 sudo docker rm $portainer_pid || warning "Failed to remove portainer container!"
 sudo docker rmi $portainer_name || warning "Failed to remove/untag images from the container!"
 
-echo Pruning unused volumes
+echo Pruning unused volume.  If asked answer yes.
 sudo docker volume prune
 
 echo now doing a fresh install of portainer
