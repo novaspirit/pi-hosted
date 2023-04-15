@@ -19,7 +19,12 @@
           "default": "",
           "label": "DOCKER_HUB_PASSWORD",
           "name": "DOCKER_HUB_PASSWORD"
-        }
+        },
+		{
+			"default": "",
+			"label": "MODPROBE_CMD",
+			"name": "MODPROBE_CMD"
+		}
       ],
 	"image_arm64": "lscr.io/linuxserver/kasm:latest",
 	"image_amd64": "lscr.io/linuxserver/kasm:latest",
