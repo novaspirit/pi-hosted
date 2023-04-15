@@ -3685,6 +3685,29 @@
 					"default": "4011",
 					"label": "KASM_PORT",
 					"name": "KASM_PORT"
+<<<<<<< HEAD
+=======
+				},
+				{
+					"default": "",
+					"label": "DOCKER_HUB_USERNAME",
+					"name": "DOCKER_HUB_USERNAME"
+				},
+				{
+					"default": "",
+					"label": "DOCKER_HUB_PASSWORD",
+					"name": "DOCKER_HUB_PASSWORD"
+				},
+				{
+					"default": "",
+					"label": "MODPROBE_CMD",
+					"name": "MODPROBE_CMD"
+				},
+				{
+					"default": "",
+					"label": "OTLP_ENDPOINT",
+					"name": "OTLP_ENDPOINT"
+>>>>>>> a60261a762f8757a6752778edab6b918bb2de4e8
 				}
 			],
 			"image": "lscr.io/linuxserver/kasm:latest",
