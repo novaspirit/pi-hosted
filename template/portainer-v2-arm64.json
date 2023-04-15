@@ -3708,6 +3708,10 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/kasm/profiles",
 					"container": "/profiles"
+				},
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
 				}
 			]
 		},
