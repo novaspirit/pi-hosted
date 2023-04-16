@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 190 apps | 219 apps | 219 apps | 221 apps |
+| 190 apps | 220 apps | 220 apps | 222 apps |
 
 ---
 
@@ -99,6 +99,7 @@ List of all apps included in this project with info related to it.
 |[Jellyseerr](https://github.com/Fallenbagel/jellyseerr)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/fallenbagel/jellyseerr) |  |  |  |
 |[Jellyfin-Accounts](https://jfa-go.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.jfa-go.com/) |  |  |  |
 |[Kasm](https://www.kasmweb.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-kasm) |  |  |  |
+|[Kasm with renderD128 support](https://www.kasmweb.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-kasm) |  |  |  |
 |[Kavita](https://www.kavitareader.com/#home)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.kavitareader.com/en/install/docker-install) |  |  |  |
 |[Klipper[Testing], Mainsail, Moonraker](https://hub.docker.com/r/mkuf/klipper)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/mkuf/klipper) |  | [![](../build/images/script_icon.png)](../tools/install_klipper.sh) |  |
 |[Kodi Headless](https://kodi.tv/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/lsioarmhf/kodi-headless-aarch64/) |  |  |  |
