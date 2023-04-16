@@ -15,7 +15,7 @@
 	"image_amd64": "lscr.io/linuxserver/kasm:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/kasm-server.png",
 	"name": "Kasm",
-    	"note": "!!!MAKE SURE YOU USE HTTPS!!!<br>!!!MAKE SURE YOU USE PORT 4011 FIRST THEN INSTALL IT<br>DO NOT INSTALL EVERYTHING AT ONCE(unless you know what you are doing)!!!<br>!!!ALERT!!! MAKE SURE YOU SAVE THE ADMIN USERNAME AND REGULAR USERNAME DO NOT FORGET THIS STEP, IT WOULD BE SOMETHING LIKE THIS admin@kasm.local, user@kasm.local !!!ALERT!!!",
+        "note": "<b>Important: Check and see if /dev/dri/renderD128 exists on your host if it does please use the one with renderD128 support.</b><br>!!!MAKE SURE YOU USE HTTPS!!!<br>!!!MAKE SURE YOU USE PORT 4011 FIRST THEN INSTALL IT<br>DO NOT INSTALL EVERYTHING AT ONCE(unless you know what you are doing)!!!<br>!!!ALERT!!! MAKE SURE YOU SAVE THE ADMIN USERNAME AND REGULAR USERNAME DO NOT FORGET THIS STEP, IT WOULD BE SOMETHING LIKE THIS admin@kasm.local, user@kasm.local !!!ALERT!!!",
 	"officialDoc": "https://github.com/linuxserver/docker-kasm",
 	"platform": "linux",
 	"ports": [
