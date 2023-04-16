@@ -2790,7 +2790,7 @@
 			"categories": [
 				"Tools",
 				"Web",
-				"Other"
+				"dashboard"
 			],
 			"description": "Heimdall is a way to organise all those links to your most used web sites and web applications in a simple way.",
 			"env": [
@@ -3690,7 +3690,7 @@
 			"image": "lscr.io/linuxserver/kasm:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/kasm-server.png",
 			"name": "Kasm",
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.kasmweb.com/\" target=\"_blank\">https://www.kasmweb.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/linuxserver/docker-kasm\" target=\"_blank\">https://github.com/linuxserver/docker-kasm</a><br><br><br>",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.kasmweb.com/\" target=\"_blank\">https://www.kasmweb.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/linuxserver/docker-kasm\" target=\"_blank\">https://github.com/linuxserver/docker-kasm</a><br><br><br>!!!MAKE SURE YOU USE HTTPS!!!<br>!!!MAKE SURE YOU USE PORT 4011 FIRST THEN INSTALL IT<br>DO NOT INSTALL EVERYTHING AT ONCE(unless you know what you are doing)!!!<br>!!!ALERT!!! MAKE SURE YOU SAVE THE ADMIN USERNAME AND REGULAR USERNAME DO NOT FORGET THIS STEP, IT WOULD BE SOMETHING LIKE THIS admin@kasm.local, user@kasm.local !!!ALERT!!!",
 			"platform": "linux",
 			"ports": [
 				"4010:4010/tcp",
