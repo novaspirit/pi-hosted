@@ -35,6 +35,7 @@
     "image_arm64": "dpage/pgadmin4:latest",
     "image_amd64": "dpage/pgadmin4:latest",
     "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pgadmin.png",
+    "preInstallScript": "install_pgadmin.sh",
     "name": "pgadmin",
     "platform": "linux",
     "ports": [
@@ -45,7 +46,7 @@
     "type": 1,
     "volumes": [
         {
-            "bind": "/portainer/Files/AppData/Config/pgAdmin",
+            "bind": "/portainer/Files/AppData/Config/pgadmin",
             "container": "/var/lib/pgadmin"
         }
     ],
