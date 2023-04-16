@@ -6,7 +6,7 @@
 	"description": "Kasm is a web-accessible desktop environment.",
 	"env": [
         	{
-	        	"default": "4011",
+	        	"default": "4010",
 	        	"label": "KASM_PORT",
 	        	"name": "KASM_PORT"
 	        }
@@ -19,8 +19,8 @@
 	"officialDoc": "https://github.com/linuxserver/docker-kasm",
 	"platform": "linux",
 	"ports": [
-		"4010:3000/tcp",
-	        "4011:4011/tcp"
+	        "4010:4010/tcp"
+		"4011:3000/tcp",
 	],
 	"privileged": true,
 	"restart_policy": "unless-stopped",
