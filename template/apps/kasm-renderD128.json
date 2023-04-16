@@ -1,0 +1,44 @@
+{
+	"categories": [
+		"Utilities",
+		"tools"
+	],
+	"description": "Kasm is a web-accessible desktop environment.  Include /dev/dri/renderD128 support make sure your envoirment includes the driver.",
+	"env": [
+        	{
+	        	"default": "4010",
+	        	"label": "KASM_PORT",
+	        	"name": "KASM_PORT"
+	        }
+	],
+	"image_arm64": "lscr.io/linuxserver/kasm:latest",
+	"image_amd64": "lscr.io/linuxserver/kasm:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/kasm-server.png",
+	"name": "Kasm-renderD128",
+    	"note": "!!!MAKE SURE YOU USE HTTPS!!!<br>!!!MAKE SURE YOU USE PORT 4011 FIRST THEN INSTALL IT<br>DO NOT INSTALL EVERYTHING AT ONCE(unless you know what you are doing)!!!<br>!!!ALERT!!! MAKE SURE YOU SAVE THE ADMIN USERNAME AND REGULAR USERNAME DO NOT FORGET THIS STEP, IT WOULD BE SOMETHING LIKE THIS admin@kasm.local, user@kasm.local !!!ALERT!!!",
+	"officialDoc": "https://github.com/linuxserver/docker-kasm",
+	"platform": "linux",
+	"ports": [
+	        "4010:4010/tcp",
+		"4011:3000/tcp"
+	],
+	"privileged": true,
+	"restart_policy": "unless-stopped",
+	"title": "Kasm with renderD128 support",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/kasm/opt",
+			"container": "/opt"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/kasm/profiles",
+			"container": "/profiles"
+		},
+		{
+			"bind": "/dev/dri/renderD128",
+			"container": "/dev/dri/renderD128"
+                }
+	],
+	"webpage": "https://www.kasmweb.com/"
+}
