@@ -3676,6 +3676,43 @@
 		},
 		{
 			"categories": [
+				"Utilities",
+				"tools"
+			],
+			"description": "Kasm is a web-accessible desktop environment.",
+			"env": [
+				{
+					"default": "4010",
+					"label": "KASM_PORT",
+					"name": "KASM_PORT"
+				}
+			],
+			"image": "lscr.io/linuxserver/kasm:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/kasm-server.png",
+			"name": "Kasm",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.kasmweb.com/\" target=\"_blank\">https://www.kasmweb.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/linuxserver/docker-kasm\" target=\"_blank\">https://github.com/linuxserver/docker-kasm</a><br><br><br>",
+			"platform": "linux",
+			"ports": [
+				"4010:4010/tcp",
+				"4011:3000/tcp"
+			],
+			"privileged": true,
+			"restart_policy": "unless-stopped",
+			"title": "Kasm",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/kasm/opt",
+					"container": "/opt"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/kasm/profiles",
+					"container": "/profiles"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Library",
 				"Books"
 			],
