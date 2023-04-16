@@ -3716,7 +3716,7 @@
 				"Utilities",
 				"tools"
 			],
-			"description": "Kasm is a web-accessible desktop environment.  Include /dev/dri/renderD128 support make sure your envoirment includes the driver.",
+			"description": "Kasm is a web-accessible desktop environment.  Include /dev/dri/renderD128 support make sure your envoirment includes the drivers.",
 			"env": [
 				{
 					"default": "4010",
