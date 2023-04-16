@@ -3694,7 +3694,7 @@
 			"platform": "linux",
 			"ports": [
 				"4010:3000/tcp",
-				"4011:443/tcp"
+				"4011:4011/tcp"
 			],
 			"privileged": true,
 			"restart_policy": "unless-stopped",
