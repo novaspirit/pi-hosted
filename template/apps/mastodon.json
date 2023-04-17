@@ -203,9 +203,9 @@
   "image_arm64": "lscr.io/linuxserver/mastodon:latest",
   "image_amd64": "lscr.io/linuxserver/mastodon:latest",
 
-  "logo": "https://joinmastodon.org/static/logo.svg",
+  "logo": "",
   "name": "Mastodon",
-  "officialDoc": "https://github.com/linuxserver/docker-mastodon",
+  "officialDoc": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mastodon.png",
   "platform": "linux",
   "ports": [
     "11000:80/tcp",
