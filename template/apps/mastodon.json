@@ -1,0 +1,225 @@
+{
+    "categories": [
+      "Social Networking"
+    ],
+    "description": "Mastodon is a free, open-source social network server.",
+    "env": [
+      {
+        "default": "1000",
+        "label": "PUID",
+        "name": "PUID"
+      },
+      {
+        "default": "1000",
+        "label": "PGID",
+        "name": "PGID"
+      },
+      {
+        "default": "Etc/UTC",
+        "label": "TZ",
+        "name": "TZ"
+      },
+      {
+        "default": "example.com",
+        "label": "LOCAL_DOMAIN",
+        "name": "LOCAL_DOMAIN"
+      },
+      {
+        "default": "redis",
+        "label": "REDIS_HOST",
+        "name": "REDIS_HOST"
+      },
+      {
+        "default": "6379",
+        "label": "REDIS_PORT",
+        "name": "REDIS_PORT"
+      },
+      {
+        "default": "db",
+        "label": "DB_HOST",
+        "name": "DB_HOST"
+      },
+      {
+        "default": "mastodon",
+        "label": "DB_USER",
+        "name": "DB_USER"
+      },
+      {
+        "default": "mastodon",
+        "label": "DB_NAME",
+        "name": "DB_NAME"
+      },
+      {
+        "default": "mastodon",
+        "label": "DB_PASS",
+        "name": "DB_PASS"
+      },
+      {
+        "default": "5432",
+        "label": "DB_PORT",
+        "name": "DB_PORT"
+      },
+      {
+        "default": "false",
+        "label": "ES_ENABLED",
+        "name": "ES_ENABLED"
+      },
+      {
+        "default": "",
+        "label": "SECRET_KEY_BASE",
+        "name": "SECRET_KEY_BASE"
+      },
+      {
+        "default": "",
+        "label": "OTP_SECRET",
+        "name": "OTP_SECRET"
+      },
+      {
+        "default": "",
+        "label": "VAPID_PRIVATE_KEY",
+        "name": "VAPID_PRIVATE_KEY"
+      },
+      {
+        "default": "",
+        "label": "VAPID_PUBLIC_KEY",
+        "name": "VAPID_PUBLIC_KEY"
+      },
+      {
+        "default": "mail.example.com",
+        "label": "SMTP_SERVER",
+        "name": "SMTP_SERVER"
+      },
+      {
+        "default": "25",
+        "label": "SMTP_PORT",
+        "name": "SMTP_PORT"
+      },
+      {
+        "default": "",
+        "label": "SMTP_LOGIN",
+        "name": "SMTP_LOGIN"
+      },
+      {
+        "default": "",
+        "label": "SMTP_PASSWORD",
+        "name": "SMTP_PASSWORD"
+      },
+      {
+        "default": "notifications@example.com",
+        "label": "SMTP_FROM_ADDRESS",
+        "name": "SMTP_FROM_ADDRESS"
+      },
+      {
+        "default": "false",
+        "label": "S3_ENABLED",
+        "name": "S3_ENABLED"
+      },
+      {
+        "default": "mastodon.example.com",
+        "label": "WEB_DOMAIN",
+        "name": "WEB_DOMAIN",
+        "optional": true
+      },
+      {
+        "default": "es",
+        "label": "ES_HOST",
+        "name": "ES_HOST",
+        "optional": true
+      },
+      {
+        "default": "9200",
+        "label": "ES_PORT",
+        "name": "ES_PORT",
+        "optional": true
+    },
+    {
+      "default": "elastic",
+      "label": "ES_USER",
+      "name": "ES_USER",
+      "optional": true
+    },
+    {
+      "default": "elastic",
+      "label": "ES_PASS",
+      "name": "ES_PASS",
+      "optional": true
+    },
+    {
+      "default": "",
+      "label": "S3_BUCKET",
+      "name": "S3_BUCKET",
+      "optional": true
+    },
+    {
+      "default": "",
+      "label": "AWS_ACCESS_KEY_ID",
+      "name": "AWS_ACCESS_KEY_ID",
+      "optional": true
+    },
+    {
+      "default": "",
+      "label": "AWS_SECRET_ACCESS_KEY",
+      "name": "AWS_SECRET_ACCESS_KEY",
+      "optional": true
+    },
+    {
+      "default": "",
+      "label": "S3_ALIAS_HOST",
+      "name": "S3_ALIAS_HOST",
+      "optional": true
+    },
+    {
+      "default": "false",
+      "label": "SIDEKIQ_ONLY",
+      "name": "SIDEKIQ_ONLY",
+      "optional": true
+    },
+    {
+      "default": "",
+      "label": "SIDEKIQ_QUEUE",
+      "name": "SIDEKIQ_QUEUE",
+      "optional": true
+    },
+    {
+      "default": "false",
+      "label": "SIDEKIQ_DEFAULT",
+      "name": "SIDEKIQ_DEFAULT",
+      "optional": true
+    },
+    {
+      "default": "5",
+      "label": "SIDEKIQ_THREADS",
+      "name": "SIDEKIQ_THREADS",
+      "optional": true
+    },
+    {
+      "default": "5",
+      "label": "DB_POOL",
+      "name": "DB_POOL",
+      "optional": true
+    }
+  ],
+  "image_arm32": "lscr.io/linuxserver/mastodon:latest",
+  "image_arm64": "lscr.io/linuxserver/mastodon:latest",
+  "image_amd64": "lscr.io/linuxserver/mastodon:latest",
+
+  "logo": "https://joinmastodon.org/static/logo.svg",
+  "name": "Mastodon",
+  "officialDoc": "https://github.com/linuxserver/docker-mastodon",
+  "platform": "linux",
+  "ports": [
+    "11000:80/tcp",
+    "11001:443/tcp"
+  ],
+  "privileged": false,
+  "restart_policy": "unless-stopped",
+  "title": "Mastodon",
+  "type": 1,
+  "volumes": [
+    {
+      "bind": "/portainer/Files/AppData/Config/mastodon/config",
+      "container": "/config"
+    }
+  ],
+  "webpage": "https://joinmastodon.org/"
+}
