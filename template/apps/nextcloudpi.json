@@ -20,7 +20,6 @@
 		}
 	],
 	"extraScript": "reset_premissions_nextcloud.sh",
-	"image_arm32": "ownyourbits/nextcloudpi-armhf:latest",
 	"image_arm64": "ownyourbits/nextcloudpi-arm64:latest",
 	"image_amd64": "ownyourbits/nextcloudpi-x86:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nextcloud-icon.png",
