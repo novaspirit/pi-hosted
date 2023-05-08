@@ -17,7 +17,7 @@
         "environment": {
           "PUID": "1000",
           "PGID": "1000",
-          "TZ": "Etc/UTC"
+          "TZ": "America/New_York"
         },
         "volumes": [
             {
