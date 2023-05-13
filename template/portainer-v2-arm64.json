@@ -8539,7 +8539,7 @@
 			],
 			"image": "haugene/transmission-openvpn:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/transmission-icon.png",
-			"name": "transmission-openvpn-v4",
+			"name": "transmission-openvpn-latest",
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://transmissionbt.com/\" target=\"_blank\">https://transmissionbt.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://haugene.github.io/docker-transmission-openvpn/run-container/\" target=\"_blank\">https://haugene.github.io/docker-transmission-openvpn/run-container/</a><br><br><br>List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",
 			"platform": "linux",
 			"ports": [
@@ -8547,7 +8547,7 @@
 			],
 			"privileged": true,
 			"restart_policy": "unless-stopped",
-			"title": "Transmission OpenVPN Version 4",
+			"title": "Transmission OpenVPN Latest",
 			"type": 1,
 			"volumes": [
 				{
@@ -8621,7 +8621,7 @@
 			],
 			"privileged": true,
 			"restart_policy": "unless-stopped",
-			"title": "Transmission-OpenVPN",
+			"title": "Transmission OpenVPN v3",
 			"type": 1,
 			"volumes": [
 				{
