@@ -53,7 +53,7 @@
 	"image_arm64": "haugene/transmission-openvpn:latest",
 	"image_amd64": "haugene/transmission-openvpn:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/transmission-icon.png",
-	"name": "transmission-openvpn-v4",
+	"name": "transmission-openvpn-latest",
 	"note": "List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",
 	"officialDoc": "https://haugene.github.io/docker-transmission-openvpn/run-container/",
 	"platform": "linux",
@@ -62,7 +62,7 @@
 	],
 	"privileged": true,
 	"restart_policy": "unless-stopped",
-	"title": "Transmission OpenVPN Version 4",
+	"title": "Transmission OpenVPN Latest",
 	"type": 1,
 	"volumes": [
 		{
