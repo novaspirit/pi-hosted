@@ -7001,6 +7001,10 @@
 			"type": 1,
 			"volumes": [
 				{
+					"bind": "/portainer/Files/AppData/Config/transmission-openvpn",
+					"container": "/config"
+				},
+				{
 					"bind": "/portainer/Downloads",
 					"container": "/data"
 				},
@@ -7074,6 +7078,10 @@
 			"title": "Transmission OpenVPN v3",
 			"type": 1,
 			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/transmission-openvpn",
+					"container": "/config"
+				},
 				{
 					"bind": "/portainer/Downloads",
 					"container": "/data"
