@@ -65,6 +65,10 @@
 	"title": "Transmission OpenVPN Latest",
 	"type": 1,
 	"volumes": [
+                {
+                        "bind": "/portainer/Files/AppData/Config/transmission-openvpn",
+                        "container": "/config"
+                },
 		{
 			"bind": "/portainer/Downloads",
 			"container": "/data"
