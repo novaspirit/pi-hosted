@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 188 apps | 220 apps | 220 apps | 222 apps |
+| 188 apps | 221 apps | 221 apps | 223 apps |
 
 ---
 
@@ -49,6 +49,7 @@ List of all apps included in this project with info related to it.
 |[Deluge openvpn [DEPRECATED]](https://www.deluge-torrent.org/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/sgtsquiggs/docker-deluge-openvpn) |  |  |  |
 |[Droid Docker VNC](https://hub.docker.com/r/sickcodes/dock-droid)|:x:|:x:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/sickcodes/dock-droid) |  |  | [![Run Android In Docker with this Container!](../build/images/yt-badge-novaspirit.png "Run Android In Docker with this Container!")](https://www.youtube.com/watch?v=GTtdTksS6L0) |
 |[Domoticz](https://domoticz.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-domoticz) |  |  |  |
+|Container|:x:|:x:|:x:|Container|  |  |  |  |
 |[Dozzle](https://dozzle.dev/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/amir20/dozzle) |  |  |  |
 |[Dradis](https://dradisframework.com/)|:x:|:x:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/raesene/dockerized-security-tools) |  |  |  |
 |[Drupal](https://www.drupal.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration) |  | [![](../build/images/script_icon.png)](../tools/install_drupal.sh) |  |
