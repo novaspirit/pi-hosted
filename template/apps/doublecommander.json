@@ -1,0 +1,46 @@
+{
+	"categories": [
+		"Files",
+		"Management"
+	],
+	"container_name": "doublecommander",
+	"description": "Double Commander",
+	"env": {
+		"TZ": "Etc/UTC"
+	},
+        "env": [
+                {
+                        "default": "1000",
+                        "label": "PUID",
+                        "name": "PUID"
+                },
+                {
+                        "default": "1000",
+                        "label": "PGID",
+                        "name": "PGID"
+                },
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		}
+        ],
+	"image_arm64": "lscr.io/linuxserver/doublecommander:latest",
+	"image_amd64": "lscr.io/linuxserver/doublecommander:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/doublecommander.png",
+	"name": "doublecommander",
+        "platform": "linux",
+	"ports": [
+		"11500:11500/tcp",
+		"11502:11502/tcp"
+	],
+	"restart": "unless-stopped",
+        "title": "doublecommander",
+        "type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/doublecommander",
+			"container": "/config"
+		}
+	]
+}
