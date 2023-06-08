@@ -30,7 +30,7 @@
 	"image_arm64": "ghcr.io/hotio/whisparr:latest",
 	"image_amd64": "ghcr.io/hotio/whisparr:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/whisparr-icon.png",
-	"name": "sonarr",
+	"name": "whisparr",
 	"officialDoc": "https://wiki.servarr.com/en/whisparr",
 	"platform": "linux",
 	"ports": [
