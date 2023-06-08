@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 188 apps | 221 apps | 221 apps | 223 apps |
+| 188 apps | 222 apps | 222 apps | 224 apps |
 
 ---
 
@@ -223,6 +223,7 @@ List of all apps included in this project with info related to it.
 |[Vlmcsd - KMS](https://hub.docker.com/r/mikolatero/vlmcsd)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/mikolatero/docker-vlmcsd) |  |  |  |
 |[Watchtower](https://containrrr.dev/watchtower/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://containrrr.dev/watchtower/usage-overview/) |  |  | [![Upgrading Portainer and Updating Containers](../build/images/yt-badge-novaspirit.png "Upgrading Portainer and Updating Containers")](https://www.youtube.com/watch?v=q3wKqk8qVS8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=7) |
 |[WebGrab+Plus](http://www.webgrabplus.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-webgrabplus) |  |  |  |
+|[Whisparr](https://hotio.dev/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.servarr.com/en/whisparr) |  |  |  |
 |[Whoogle](https://github.com/benbusby/whoogle-search)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/benbusby/whoogle-search#g-manual-docker) |  | [![](../build/images/script_icon.png)](../tools/install_whoogle.sh) | [![How to Install Whoogle to replace using Google and repo notes](../build/images/yt-badge-novaspirit.png "How to Install Whoogle to replace using Google and repo notes")](https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12) |
 |[Wikijs](https://js.wiki/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-wikijs) |  |  |  |
 |[Windows 2000](https://github.com/hectorm/docker-qemu-win2000)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/hectorm/docker-qemu-win2000#start-an-instance) |  |  | [![Checking out Windows 2000 Docker](../build/images/yt-badge-novaspirit.png "Checking out Windows 2000 Docker")](https://www.youtube.com/watch?v=57Gnp0424Qc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=13) |
