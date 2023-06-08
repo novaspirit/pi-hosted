@@ -1,0 +1,57 @@
+{
+	"categories": [
+		"Downloaders",
+		"Video",
+		"adult"
+	],
+	"description": "Whisparr is an adult movie collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new movies and will interface with clients and indexers to grab, sort, and rename them. It can also be configured to automatically upgrade the quality of existing files in the library when a better quality format becomes available.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "002",
+			"label": "UMASK",
+			"name": "UMASK"
+		}
+	],
+	"image_arm64": "ghcr.io/hotio/whisparr:latest",
+	"image_amd64": "ghcr.io/hotio/whisparr:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/whisparr-icon.png",
+	"name": "sonarr",
+	"officialDoc": "https://wiki.servarr.com/en/whisparr",
+	"platform": "linux",
+	"ports": [
+		"6969:6969/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Whisparr",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Whisparr",
+			"container": "/config"
+		},
+		{
+			"bind": "/dev/rtc",
+			"container": "/dev/rtc"
+		},
+		{
+			"bind": "/portainer/Adult",
+			"container": "/Adult"
+		}
+	],
+	"webpage": "https://hotio.dev/"
+}
