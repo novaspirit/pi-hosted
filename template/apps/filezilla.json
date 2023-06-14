@@ -21,7 +21,6 @@
 			"name": "TZ"
 		}
 	],
-	"image_arm32": "lscr.io/linuxserver/filezilla:latest",
 	"image_arm64": "lscr.io/linuxserver/filezilla:latest",
 	"image_amd64": "lscr.io/linuxserver/filezilla:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filezilla.png",
