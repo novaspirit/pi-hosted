@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 188 apps | 222 apps | 222 apps | 224 apps |
+| 187 apps | 222 apps | 222 apps | 224 apps |
 
 ---
 
@@ -60,7 +60,7 @@ List of all apps included in this project with info related to it.
 |[EmbyStat](https://github.com/mregni/EmbyStat)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-embystat) |  |  |  |
 |[FileBrowser latest](https://filebrowser.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://filebrowser.org/installation#docker) |  |  | [![Installing JDownloader and File Browser On The Pi Docker Server](../build/images/yt-badge-novaspirit.png "Installing JDownloader and File Browser On The Pi Docker Server")](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[FileBrowser S6](https://filebrowser.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://filebrowser.org/installation#docker) |  |  | [![Installing JDownloader and File Browser On The Pi Docker Server](../build/images/yt-badge-novaspirit.png "Installing JDownloader and File Browser On The Pi Docker Server")](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
-|[Filezilla](https://hub.docker.com/r/linuxserver/filezilla)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/filezilla) |  |  |  |
+|[Filezilla](https://hub.docker.com/r/linuxserver/filezilla)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/filezilla) |  |  |  |
 |[Firefox](https://hub.docker.com/r/linuxserver/firefox)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container|  |  |  |  |
 |[Flame](https://github.com/pawelmalak/flame)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/flame#with-docker-recommended) |  |  |  |
 |FlareSolverr|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/FlareSolverr/FlareSolverr#installation) |  |  |  |
