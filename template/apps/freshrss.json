@@ -15,7 +15,6 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm32": "linuxserver/freshrss:latest",
 	"image_arm64": "linuxserver/freshrss:latest",
 	"image_amd64": "linuxserver/freshrss:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/freshrss-icon.png",

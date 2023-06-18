@@ -26,7 +26,6 @@
 			"name": "SECRET_PATH"
 		}
 	],
-	"image_arm32": "lscr.io/linuxserver/pwndrop:latest",
 	"image_arm64": "lscr.io/linuxserver/pwndrop:latest",
 	"image_amd64": "lscr.io/linuxserver/pwndrop:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/pwndrop.png",

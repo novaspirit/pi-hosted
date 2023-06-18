@@ -15,7 +15,6 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm32": "linuxserver/daapd:latest",
 	"image_arm64": "linuxserver/daapd:latest",
 	"image_amd64": "linuxserver/daapd:latest",
 	"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-icon.png",

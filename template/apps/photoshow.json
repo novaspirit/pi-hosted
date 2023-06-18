@@ -15,7 +15,6 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm32": "linuxserver/photoshow:latest",
 	"image_arm64": "linuxserver/photoshow:latest",
 	"image_amd64": "linuxserver/photoshow:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/photoshow-icon.png",

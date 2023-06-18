@@ -16,7 +16,6 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm32": "linuxserver/domoticz:latest",
 	"image_arm64": "linuxserver/domoticz:latest",
 	"image_amd64": "linuxserver/domoticz:latest",
 	"logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",

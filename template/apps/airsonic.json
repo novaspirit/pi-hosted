@@ -30,7 +30,6 @@
 			"name": "JAVA_OPTS"
 		}
 	],
-	"image_arm32": "linuxserver/airsonic:arm32v7-latest",
 	"image_arm64": "linuxserver/airsonic:arm64v8-latest",
 	"image_amd64": "linuxserver/airsonic:amd64-latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/airsonic-logo.png",

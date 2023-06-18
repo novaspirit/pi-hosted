@@ -18,7 +18,6 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm32": "linuxserver/syncthing:latest",
 	"image_arm64": "linuxserver/syncthing:latest",
 	"image_amd64": "linuxserver/syncthing:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/syncthing-icon.png",

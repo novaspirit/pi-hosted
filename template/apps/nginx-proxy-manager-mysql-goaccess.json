@@ -68,7 +68,6 @@
 	],
 	"preInstallScript": "nginx-proxy-manager.sh",
 	"repository": {
-		"stackfile_arm32": "stack/nginx-proxy-manager-goaccess.yml",
 		"stackfile_arm64": "stack/nginx-proxy-manager-goaccess.yml",
 		"stackfile_amd64": "stack/nginx-proxy-manager-goaccess.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"

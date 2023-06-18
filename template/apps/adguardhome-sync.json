@@ -30,7 +30,6 @@
   	}
   ],
 	"description": "[Adguardhome-sync](https://github.com/bakito/adguardhome-sync/) is a tool to synchronize AdGuardHome config to replica instances.",
-	"image_arm32": "linuxserver/adguardhome-sync:latest",
 	"image_arm64": "linuxserver/adguardhome-sync:latest",
 	"image_amd64": "linuxserver/adguardhome-sync:latest",
 	"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/adguardhomesync-icon.png",

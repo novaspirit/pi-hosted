@@ -15,7 +15,6 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm32": "linuxserver/thelounge:latest",
 	"image_arm64": "linuxserver/thelounge:latest",
 	"image_amd64": "linuxserver/thelounge:latest",
 	"logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",

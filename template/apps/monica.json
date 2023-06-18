@@ -51,7 +51,6 @@
 	"officialDoc": "https://github.com/monicahq/docker#use-monica-docker-image",
 	"platform": "linux",
 	"repository": {
-		"stackfile_arm32": "stack/monica.yml",
 		"stackfile_arm64": "stack/monica.yml",
 		"stackfile_amd64": "stack/monica.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"

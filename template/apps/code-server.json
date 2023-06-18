@@ -34,7 +34,6 @@
 			"name": "PROXY_DOMAIN"
 		}
 	],
-	"image_arm32": "linuxserver/code-server:latest",
 	"image_arm64": "linuxserver/code-server:latest",
 	"image_amd64": "linuxserver/code-server:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/code-server.png",

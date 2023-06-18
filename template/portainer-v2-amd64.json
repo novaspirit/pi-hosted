@@ -228,7 +228,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "",
+			"description": "Alpine xfce4 novnc",
 			"image": "novaspirit/alpine_xfce4_novnc:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/novnc.png",
 			"name": "alpine-xfce4-novnc",
@@ -645,55 +645,6 @@
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/ubuntu/bind9\" target=\"_blank\">https://hub.docker.com/r/ubuntu/bind9</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/ubuntu/bind9\" target=\"_blank\">https://hub.docker.com/r/ubuntu/bind9</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_bind9.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_bind9.sh | bash</h3><br><br>"
-		},
-		{
-			"categories": [
-				"Books",
-				"Other"
-			],
-			"description": "[DEPRECATED] Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"default": "booksonic",
-					"label": "CONTEXT_PATH",
-					"name": "CONTEXT_PATH"
-				}
-			],
-			"image": "linuxserver/booksonic:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/booksonic.png",
-			"name": "booksonic",
-			"platform": "linux",
-			"ports": [
-				"4041:4040/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Booksonic",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Books",
-					"container": "/books"
-				},
-				{
-					"bind": "/portainer/Files/Podcasts",
-					"container": "/podcast"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/Booksonic",
-					"container": "/config"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://booksonic.org/\" target=\"_blank\">https://booksonic.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-booksonic-air\" target=\"_blank\">https://docs.linuxserver.io/images/docker-booksonic-air</a><br><br><br>"
 		},
 		{
 			"categories": [

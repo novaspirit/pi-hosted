@@ -15,7 +15,6 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm32": "linuxserver/webgrabplus:latest",
 	"image_arm64": "linuxserver/webgrabplus:latest",
 	"image_amd64": "linuxserver/webgrabplus:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/webgrabplus.png",
