@@ -6,7 +6,7 @@
 	"description": "A simple rss downloader",
 	"env": [
         	{
-                "RSS_FEED_URL": "example.com/rss",
+                "RSS_FEED_URL": "https://example.com/rss",
                 "label": "RSS_FEED_URL",
                 "name": "RSS_FEED_URL"
 	        	
