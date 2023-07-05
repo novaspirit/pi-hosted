@@ -64,7 +64,6 @@
 	"platform": "linux",
         "preInstallScript": "install_yourls.sh",
  	"repository": {
-		"stackfile_arm32": "stack/yourls.yml",
 		"stackfile_arm64": "stack/yourls.yml",
 		"stackfile_amd64": "stack/yourls.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted/"

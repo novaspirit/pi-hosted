@@ -22,7 +22,6 @@
             "name": "TZ"
         }
     ],
-    "image_arm32": "lscr.io/linuxserver/overseerr:latest",
     "image_arm64": "lscr.io/linuxserver/overseerr:latest",
     "image_amd64": "lscr.io/linuxserver/overseerr:latest",
     "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/overseerr.png",

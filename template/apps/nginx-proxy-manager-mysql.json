@@ -43,7 +43,6 @@
 	],
 	"preInstallScript": "nginx-proxy-manager.sh",
 	"repository": {
-		"stackfile_arm32": "stack/nginx-proxy-manager.yml",
 		"stackfile_arm64": "stack/nginx-proxy-manager.yml",
 		"stackfile_amd64": "stack/nginx-proxy-manager.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"

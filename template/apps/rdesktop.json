@@ -20,7 +20,6 @@
 			"name": "TZ"
 		}
 	],
-	"image_arm32": "linuxserver/rdesktop:latest",
 	"image_arm64": "linuxserver/rdesktop:arm64v8-latest",
 	"image_amd64": "linuxserver/rdesktop:latest",
 	"logo": "https://raw.githubusercontent.com/novaspirit/pi-hosted/master/images/rdesktop.png",

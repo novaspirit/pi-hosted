@@ -21,7 +21,6 @@
 			"name": "TZ"
 		}
 	],
-	"image_arm32": "lscr.io/linuxserver/readarr:develop",
 	"image_arm64": "lscr.io/linuxserver/readarr:develop",
 	"image_amd64": "lscr.io/linuxserver/readarr:develop",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Readarr.png",

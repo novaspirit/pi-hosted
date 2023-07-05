@@ -3,7 +3,7 @@
 		"Other",
 		"Tools"
 	],
-	"description": "",
+	"description": "Alpine xfce4 novnc",
 	"image_arm32": "novaspirit/alpine_xfce4_novnc:latest",
 	"image_arm64": "novaspirit/alpine_xfce4_novnc:latest",
 	"image_amd64": "novaspirit/alpine_xfce4_novnc:latest",

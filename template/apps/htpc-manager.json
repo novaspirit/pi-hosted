@@ -17,7 +17,6 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm32": "linuxserver/htpcmanager:latest",
 	"image_arm64": "linuxserver/htpcmanager:latest",
 	"image_amd64": "linuxserver/htpcmanager:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/htpcmanager-icon.png",

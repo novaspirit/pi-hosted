@@ -20,7 +20,6 @@
 			"name": "UMASK"
 		}
 	],
-	"image_arm32": "linuxserver/deluge:latest",
 	"image_arm64": "linuxserver/deluge:latest",
 	"image_amd64": "linuxserver/deluge:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/deluge-icon.png",

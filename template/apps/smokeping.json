@@ -15,7 +15,6 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm32": "linuxserver/smokeping:latest",
 	"image_arm64": "linuxserver/smokeping:latest",
 	"image_amd64": "linuxserver/smokeping:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/smokeping-icon.png",

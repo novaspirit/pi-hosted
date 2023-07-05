@@ -228,7 +228,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "",
+			"description": "Alpine xfce4 novnc",
 			"image": "novaspirit/alpine_xfce4_novnc:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/novnc.png",
 			"name": "alpine-xfce4-novnc",
@@ -645,55 +645,6 @@
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/ubuntu/bind9\" target=\"_blank\">https://hub.docker.com/r/ubuntu/bind9</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/ubuntu/bind9\" target=\"_blank\">https://hub.docker.com/r/ubuntu/bind9</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_bind9.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_bind9.sh | bash</h3><br><br>"
-		},
-		{
-			"categories": [
-				"Books",
-				"Other"
-			],
-			"description": "[DEPRECATED] Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"default": "booksonic",
-					"label": "CONTEXT_PATH",
-					"name": "CONTEXT_PATH"
-				}
-			],
-			"image": "linuxserver/booksonic:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/booksonic.png",
-			"name": "booksonic",
-			"platform": "linux",
-			"ports": [
-				"4041:4040/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Booksonic",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Books",
-					"container": "/books"
-				},
-				{
-					"bind": "/portainer/Files/Podcasts",
-					"container": "/podcast"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/Booksonic",
-					"container": "/config"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://booksonic.org/\" target=\"_blank\">https://booksonic.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-booksonic-air\" target=\"_blank\">https://docs.linuxserver.io/images/docker-booksonic-air</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -8034,78 +7985,6 @@
 			"title": "SurrealDB",
 			"type": 1,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://surrealdb.com/\" target=\"_blank\">https://surrealdb.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/surrealdb/surrealdb\" target=\"_blank\">https://hub.docker.com/r/surrealdb/surrealdb</a><br><br><br>"
-		},
-		{
-			"categories": [
-				"Tools",
-				"Web"
-			],
-			"description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it swag htpasswd -c /config/nginx/.htpasswd &lt;username&gt;",
-			"env": [
-				{
-					"default": "abc@example.com",
-					"label": "EMAIL",
-					"name": "EMAIL"
-				},
-				{
-					"default": "-Xms256m -Xmx512m",
-					"label": "URL",
-					"name": "URL"
-				},
-				{
-					"default": "www,",
-					"label": "SUBDOMAINS",
-					"name": "SUBDOMAINS"
-				},
-				{
-					"default": "false",
-					"label": "ONLY_SUBDOMAINS",
-					"name": "ONLY_SUBDOMAINS"
-				},
-				{
-					"default": "2048",
-					"label": "DHLEVEL",
-					"name": "DHLEVEL"
-				},
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"default": "http",
-					"label": "VALIDATION",
-					"name": "VALIDATION"
-				},
-				{
-					"default": "http",
-					"label": "DNSPLUGIN",
-					"name": "DNSPLUGIN"
-				}
-			],
-			"image": "linuxserver/swag:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/swag.png",
-			"name": "swag",
-			"platform": "linux",
-			"ports": [
-				"80:80/tcp",
-				"443:443/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "SWAG - Secure Web Application Gateway",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/swag",
-					"container": "/config"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/linuxserver/docker-swag\" target=\"_blank\">https://github.com/linuxserver/docker-swag</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/general/swag\" target=\"_blank\">https://docs.linuxserver.io/general/swag</a><br><br><br>"
 		},
 		{
 			"categories": [

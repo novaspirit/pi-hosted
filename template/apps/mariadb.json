@@ -36,7 +36,6 @@
 			"name": "MYSQL_ROOT_PASSWORD"
 		}
 	],
-	"image_arm32": "linuxserver/mariadb:arm32v7-latest",
 	"image_arm64": "linuxserver/mariadb:arm64v8-latest",
 	"image_amd64": "linuxserver/mariadb:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mariadb-icon.png",

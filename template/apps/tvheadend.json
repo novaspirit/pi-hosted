@@ -16,7 +16,6 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm32": "linuxserver/tvheadend:latest",
 	"image_arm64": "linuxserver/tvheadend:latest",
 	"image_amd64": "linuxserver/tvheadend:latest",
 	"logo": "http://i.imgur.com/zGSUAT4.png",

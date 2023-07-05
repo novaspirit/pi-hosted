@@ -20,7 +20,6 @@
 			"name": "TZ"
 		}
 	],
-	"image_arm32": "lscr.io/linuxserver/prowlarr:develop",
 	"image_arm64": "lscr.io/linuxserver/prowlarr:develop",
 	"image_amd64": "lscr.io/linuxserver/prowlarr:develop",
 	"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-banner.png",

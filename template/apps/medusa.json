@@ -16,7 +16,6 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm32": "linuxserver/medusa:latest",
 	"image_arm64": "linuxserver/medusa:latest",
 	"image_amd64": "linuxserver/medusa:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/medusa-icon.png",

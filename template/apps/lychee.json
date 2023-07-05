@@ -43,7 +43,6 @@
 			"name": "DB_PORT"
 		}
 	],
-	"image_arm32": "linuxserver/lychee:arm32v7-latest",
 	"image_arm64": "linuxserver/lychee:arm64v8-latest",
 	"image_amd64": "linuxserver/lychee:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/lychee-icon.png",

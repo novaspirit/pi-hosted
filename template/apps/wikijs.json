@@ -4,7 +4,6 @@
 		"Tools"
 	],
 	"description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
-	"image_arm32": "linuxserver/wikijs:latest",
 	"image_arm64": "linuxserver/wikijs:latest",
 	"image_amd64": "linuxserver/wikijs:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wikijs.png",
