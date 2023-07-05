@@ -12,7 +12,7 @@
 	        	
 	        },
             {
-                "DOWNLOAD_DIR": "/portainer/Files/AppData/Config/rss-dl",
+                "DOWNLOAD_DIR": "/downloads",
                 "label": "DOWNLOAD_DIR",
                 "name": "DOWNLOAD_DIR"
             }
