@@ -6,7 +6,7 @@
 	"description": "A simple rss downloader",
 	"env": [
         	{
-	        	"RSS_FEED_URL": "example.com",
+	        	"RSS_FEED_URL": "example.com/rss",
 	        	"DOWNLOAD_DIR": "/portainer/Files/AppData/Config/rss-dl"
 	        	
 	        }
