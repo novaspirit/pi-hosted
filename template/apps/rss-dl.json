@@ -10,7 +10,12 @@
                 "label": "RSS_FEED_URL",
                 "name": "RSS_FEED_URL"
 	        	
-	        }
+	        },
+            {
+                "DOWNLOAD_DIR": "/portainer/Files/AppData/Config/rss-dl",
+                "label": "DOWNLOAD_DIR",
+                "name": "DOWNLOAD_DIR"
+            }
 	],
 	"image_arm64": "bossman7309/rss-dl",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/rss-dlImage.png",
