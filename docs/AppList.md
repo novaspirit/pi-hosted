@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 105 apps | 220 apps | 220 apps | 222 apps |
+| 105 apps | 221 apps | 220 apps | 223 apps |
 
 ---
 
@@ -183,6 +183,7 @@ List of all apps included in this project with info related to it.
 |[readarr](https://readarr.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.servarr.com/en/readarr) |  |  |  |
 |[Redmine](https://www.redmine.org/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/redmine) |  |  |  |
 |[Resilio Sync](https://www.resilio.com/individuals/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-resilio-sync) |  |  |  |
+|[rss-dl](https://github.com/bossman7309/rss-dl)|:x:|:heavy_check_mark:|:x:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/bossman7309/rss-dl) |  |  |  |
 |[RustDesk](https://rustdesk.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/rustdesk/rustdesk-server) |  |  | [![Rust Desk Open Source Remote Desktop](../build/images/yt-badge-novaspirit.png "Rust Desk Open Source Remote Desktop")](https://www.youtube.com/watch?v=PDnqFnnbVHg) |
 |[ruTorrent](https://github.com/Novik/ruTorrent)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/crazy-max/docker-rtorrent-rutorrent) |  |  |  |
 |[SABnzbd](https://sabnzbd.org/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sabnzbd) |  |  |  |

@@ -7476,6 +7476,40 @@
 		},
 		{
 			"categories": [
+				"Utilities",
+				"tools"
+			],
+			"description": "A simple rss downloader",
+			"env": [
+				{
+					"RSS_FEED_URL": "https://example.com/rss",
+					"label": "RSS_FEED_URL",
+					"name": "RSS_FEED_URL"
+				},
+				{
+					"DOWNLOAD_DIR": "/downloads",
+					"label": "DOWNLOAD_DIR",
+					"name": "DOWNLOAD_DIR"
+				}
+			],
+			"image": "bossman7309/rss-dl",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/rss-dlImage.png",
+			"name": "rss-dl",
+			"platform": "linux",
+			"privileged": true,
+			"restart_policy": "unless-stopped",
+			"title": "rss-dl",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/rss-dl",
+					"container": "/downloads"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/bossman7309/rss-dl\" target=\"_blank\">https://github.com/bossman7309/rss-dl</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/bossman7309/rss-dl\" target=\"_blank\">https://github.com/bossman7309/rss-dl</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
