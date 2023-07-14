@@ -8617,7 +8617,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/unifi-controller:latest",
+			"image": "lscr.io/linuxserver/unifi-controller:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/unifi-icon.png",
 			"name": "unifi-controller",
 			"platform": "linux",
