@@ -36,7 +36,7 @@
 	"ports": [
 		"30000:30000/tcp"
 	],
-	"restart_polocy": "unless-stopped",
+	"restart_policy": "unless-stopped",
 	"title": "FoundryVTT Server",
 	"type": 1,
 	"volumes": [
