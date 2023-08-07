@@ -1254,7 +1254,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "oznu/homebridge:latest",
+			"image": "homebridge/homebridge:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homebridge.png",
 			"name": "homebridge",
 			"network": "host",
@@ -1303,7 +1303,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "oznu/homebridge:debian-arm32v7",
+			"image": "homebridge/homebridge:ubuntu-arm32v7",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homebridge.png",
 			"name": "homebridge-debian",
 			"network": "host",
