@@ -2196,7 +2196,7 @@
 			"name": "flatnotes",
 			"platform": "linux",
 			"ports": [
-				"8715:80/tcp"
+				"8715:8080/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "flatnotes",
