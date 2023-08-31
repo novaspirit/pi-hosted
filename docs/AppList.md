@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 105 apps | 221 apps | 220 apps | 223 apps |
+| 106 apps | 222 apps | 221 apps | 224 apps |
 
 ---
 
@@ -153,6 +153,7 @@ List of all apps included in this project with info related to it.
 |[OScam](https://trac.streamboard.tv/oscam/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-oscam) |  |  |  |
 |[Overseerr](https://overseerr.dev/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/overseerr) |  |  |  |
 |[Paperless NGX](https://github.com/paperless-ngx/paperless-ngx)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/paperless-ngx/paperless-ngx) |  |  |  |
+|[Passbolt](https://github.com/pi-hosted/pi-hosted/blob/master/docs/passbolt.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/pi-hosted/pi-hosted/blob/master/docs/passbolt.md) | [![](../build/images/red_doc_icon.png)](../docs/passbolt.md) |  |  |
 |[pgAdmin](https://www.pgadmin.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html) |  | [![](../build/images/script_icon.png)](../tools/install_pgadmin.sh) |  |
 |[PhotoPrism](https://photoprism.app/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.photoprism.app/getting-started/docker-compose/) | [![](../build/images/red_doc_icon.png)](../docs/photoprism.md) | [![](../build/images/script_icon.png)](../tools/install_photoprism.sh) |  |
 |[PhotoShow](https://github.com/thibaud-rohmer/PhotoShow)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-photoshow) |  |  |  |
