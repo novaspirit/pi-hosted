@@ -1,0 +1,67 @@
+version: "3.9"
+services:
+  passbolt-db:
+    container_name: passbolt-db
+    environment:
+      PUID: ${PUID}
+      PGID: ${PGID}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    hostname: passbolt-db
+    image: linuxserver/mariadb:arm64v8-latest
+    networks:
+      - passbolt_default
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/passbolt/db:/config
+
+  passbolt:
+    container_name: passbolt
+    command:
+      [
+        "/usr/bin/wait-for.sh",
+        "-t",
+        "0",
+        "passbolt-db:3306",
+        "--",
+        "/docker-entrypoint.sh",
+      ]
+    depends_on:
+      - passbolt-db
+    environment:
+      APP_FULL_BASE_URL: ${PASSBOLT_URL}
+      DATASOURCES_DEFAULT_HOST: passbolt-db
+      DATASOURCES_DEFAULT_USERNAME: ${MYSQL_USER}
+      DATASOURCES_DEFAULT_PASSWORD: ${MYSQL_PASSWORD}
+      DATASOURCES_DEFAULT_DATABASE: ${MYSQL_DATABASE}
+      EMAIL_DEFAULT_FROM_NAME: ${EMAIL_FROM_NAME}
+      EMAIL_DEFAULT_FROM: ${EMAIL_FROM_ADDRESS}
+      EMAIL_TRANSPORT_DEFAULT_HOST: ${EMAIL_SMTP_SERVER}
+      EMAIL_TRANSPORT_DEFAULT_PORT: ${EMAIL_SMTP_PORT}
+      EMAIL_TRANSPORT_DEFAULT_USERNAME: ${EMAIL_USERNAME}
+      EMAIL_TRANSPORT_DEFAULT_PASSWORD: ${EMAIL_PASSWORD}
+      EMAIL_TRANSPORT_DEFAULT_TLS: ${EMAIL_TLS}
+    hostname: passbolt
+    image: passbolt/passbolt:latest-ce
+    networks:
+      - passbolt_default
+    ports:
+    #  - 80:80
+      - ${PASSBOLT_PORT}:443
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/passbolt/certs/cert.pem:/etc/ssl/certs/certificate.crt:ro
+      - /portainer/Files/AppData/Config/passbolt/certs/key.pem:/etc/ssl/certs/certificate.key:ro
+      - gpg:/etc/passbolt/gpg
+      - jwt:/etc/passbolt/jwt
+
+networks:
+  passbolt_default:
+      name: passbolt
+      driver: bridge
+  
+volumes:
+  gpg:
+  jwt:

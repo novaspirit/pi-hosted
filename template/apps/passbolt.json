@@ -1,0 +1,120 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "Passbolt is a free and open source password manager designed for collaboration. With Passbolt you can securely generate, store, manage and monitor your team credentials. Get access to all of your logins and passwords from multiple browsers or even your mobile phone.",
+	"env": [
+	{
+		"default": "1000",
+		"description": "Enter your user's PUID here",
+		"label": "PUID",
+		"name": "PUID"
+	},
+	{
+		"default": "1000",
+		"description": "Enter your user's PGID here",
+		"label": "PGID",
+		"name": "PGID"
+	},
+	{
+		"default": "Europe/Zurich",
+		"description": "Enter your time zone here. See examples https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+		"label": "TZ",
+		"name": "TZ"
+	},
+	{
+		"default": "",
+		"description": "Enter your MySql root password here",
+		"label": "MYSQL_ROOT_PASSWORD",
+		"name": "MYSQL_ROOT_PASSWORD"
+	},
+	{
+		"default": "passbolt",
+		"description": "Enter your Passbolt database name here",
+		"label": "MYSQL_DATABASE",
+		"name": "MYSQL_DATABASE"
+	},
+	{
+		"default": "passbolt",
+		"description": "Enter your Passbolt database user here",
+		"label": "MYSQL_USER",
+		"name": "MYSQL_USER"
+	},
+	{
+		"default": "",
+		"description": "Enter your Passbolt database password here",
+		"label": "MYSQL_PASSWORD",
+		"name": "MYSQL_PASSWORD"
+	},
+	{
+		"default": "443",
+		"description": "Enter your Passbolt https port here",
+		"label": "PASSBOLT_PORT",
+		"name": "PASSBOLT_PORT"
+	},
+	{
+		"default": "https://passbolt.local",
+		"description": "Enter your full Passbolt https base URL here. Including port if different from 443",
+		"label": "PASSBOLT_URL",
+		"name": "PASSBOLT_URL"
+	},
+	{
+		"default": "Passbolt",
+		"description": "Enter your from email name",
+		"label": "EMAIL_FROM_NAME",
+		"name": "EMAIL_FROM_NAME"
+	},
+	{
+		"default": "",
+		"description": "Enter your from email address",
+		"label": "EMAIL_FROM_ADDRESS",
+		"name": "EMAIL_FROM_ADDRESS"
+	},
+	{
+		"default": "smtp.gmail.com",
+		"description": "Enter your email smtp server here",
+		"label": "EMAIL_SMTP_SERVER",
+		"name": "EMAIL_SMTP_SERVER"
+	},
+	{
+		"default": "587",
+		"description": "Enter your email smtp port here",
+		"label": "EMAIL_SMTP_PORT",
+		"name": "EMAIL_SMTP_PORT"
+	},
+	{
+		"default": "",
+		"description": "Enter your email username here",
+		"label": "EMAIL_USERNAME",
+		"name": "EMAIL_USERNAME"
+	},
+	{
+		"default": "",
+		"description": "Enter your email password here",
+		"label": "EMAIL_PASSWORD",
+		"name": "EMAIL_PASSWORD"
+	},
+	{
+		"default": "true",
+		"description": "Enter set TLS here",
+		"label": "EMAIL_TLS",
+		"name": "EMAIL_TLS"
+	}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/passbolt.png",
+	"name": "Passbolt",
+	"officialDoc": "https://github.com/pi-hosted/pi-hosted/blob/master/docs/passbolt.md",
+	"piHostedDoc": "passbolt.md",
+	"platform": "linux",
+	"repository": {
+		"stackfile_arm32": "stack/passbolt.yml",
+		"stackfile_arm64": "stack/passbolt.yml",
+		"stackfile_amd64": "stack/passbolt.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "Passbolt",
+	"type": 3,
+	"webpage": "https://github.com/pi-hosted/pi-hosted/blob/master/docs/passbolt.md"
+}
