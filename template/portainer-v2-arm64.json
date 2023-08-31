@@ -6213,7 +6213,7 @@
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/passbolt.yml",
-				"url": "https://github.com/pi-hosted/pi-hosted"
+				"url": "https://github.com/blenherr/pi-hosted"
 			},
 			"restart_policy": "unless-stopped",
 			"title": "Passbolt",
