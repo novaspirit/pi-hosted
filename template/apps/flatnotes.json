@@ -42,7 +42,7 @@
         "volumes": [
                 {
                         "bind": "/portainer/Files/AppData/Config/flatnotes/data",
-                        "container": "/app/data"
+                        "container": "/data"
                 }
 	],
 	"webpage": "https://github.com/Dullage/flatnotes"
