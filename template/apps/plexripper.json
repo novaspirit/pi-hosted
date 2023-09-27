@@ -33,7 +33,7 @@
 		},
 		{
 			"bind": "/portainer/Downloads",
-			"container": "/storage"
+			"container": "/Downloads"
 		},
 		{
 			"bind": "/portainer/Downloads/Movies",
