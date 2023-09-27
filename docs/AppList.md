@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 222 apps | 221 apps | 224 apps |
+| 106 apps | 223 apps | 221 apps | 225 apps |
 
 ---
 
@@ -78,6 +78,7 @@ List of all apps included in this project with info related to it.
 |[Graylog](https://www.graylog.org)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.graylog.org/docs/docker) | [![](../build/images/red_doc_icon.png)](../docs/graylog_install.md) |  |  |
 |[Grocy](https://grocy.info/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-grocy) |  |  |  |
 |[Guacamole](https://guacamole.apache.org/)|:heavy_check_mark:|:heavy_check_mark:|:x:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oznu/guacamole) |  |  | [![Manually Installing Guacamole on Portainer](../build/images/yt-badge-novaspirit.png "Manually Installing Guacamole on Portainer")](https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3) |
+|[HandBrake](https://hub.docker.com/r/jlesage/handbrake)|:x:|:heavy_check_mark:|:x:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/jlesage/docker-handbrake) |  |  |  |
 |[Headphones](https://github.com/rembo10/headphones)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-headphones) |  |  |  |
 |[Heimdall](https://heimdall.site/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-heimdall) |  |  |  |
 |[Homarr](https://homarr.vercel.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ajnart/homarr) |  |  |  |
