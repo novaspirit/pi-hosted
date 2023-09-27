@@ -6746,6 +6746,53 @@
 		},
 		{
 			"categories": [
+				"Downloader"
+			],
+			"description": "PlexRipper is a cross-platform media downloader that indexes the Plex servers you have access to and allows you to download everything while adding it to your own Plex server.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "plexripper/plexripper:latest",
+			"logo": "https://raw.githubusercontent.com/PlexRipper/PlexRipper/dev/export/plexripper/logo/full/full-logo-256.png",
+			"name": "PlexRipper",
+			"platform": "linux",
+			"ports": [
+				"7000:7000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "PlexRipper",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/PlexRipper",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/storage"
+				},
+				{
+					"bind": "/portainer/Downloads/Movies",
+					"container": "/Movies"
+				},
+				{
+					"bind": "/portainer/Downloads/TvShows",
+					"container": "/TvShows"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/plexripper/plexripper\" target=\"_blank\">https://hub.docker.com/r/plexripper/plexripper</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/PlexRipper/PlexRipper\" target=\"_blank\">https://github.com/PlexRipper/PlexRipper</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],

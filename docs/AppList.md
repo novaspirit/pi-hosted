@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 222 apps | 222 apps | 225 apps |
+| 106 apps | 222 apps | 223 apps | 226 apps |
 
 ---
 
@@ -165,6 +165,7 @@ List of all apps included in this project with info related to it.
 |[Piwigo](http://piwigo.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-piwigo) |  |  |  |
 |[Pixel-server](http://www.penguintutor.com/projects/pixel-server)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/Macleykun/pixel-server) | [![](../build/images/red_doc_icon.png)](../docs/pixel-server_setup.md) | [![](../build/images/script_icon.png)](../tools/install_pixel-server.sh) |  |
 |[Plex](https://www.plex.tv/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-plex) |  |  |  |
+|[PlexRipper](https://hub.docker.com/r/plexripper/plexripper)|:x:|:x:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/PlexRipper/PlexRipper) |  |  |  |
 |[PostgreSQL](https://www.postgresql.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/postgres/) |  |  |  |
 |[Pritunl](https://pritunl.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/goofball222/pritunl) |  |  |  |
 |[PrivateBin](https://privatebin.info/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/privatebin/nginx-fpm-alpine) |  |  |  |
