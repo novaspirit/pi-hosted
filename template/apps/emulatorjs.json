@@ -1,0 +1,43 @@
+{
+	"categories": [
+		"Games"
+	],
+	"description": "In browser web based emulation portable to nearly any device for many retro consoles. A mix of emulators is used between Libretro and EmulatorJS.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image_amd64": "lscr.io/linuxserver/emulatorjs:latest",
+	"image_arm64": "lscr.io/linuxserver/emulatorjs:latest",
+	"logo": "https://raw.githubusercontent.com/EmulatorJS/EmulatorJS/main/docs/Logo-light.png",
+	"name": "EmulatorJS",
+	"officialDoc": "https://github.com/EmulatorJS/EmulatorJS",
+	"platform": "linux",
+	"ports": [
+		"3003:3000/tcp",
+		"3008:80/tcp",
+		"4001:4001/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "EmulatorJS",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/emulatorjs",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads/Roms",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://hub.docker.com/r/linuxserver/emulatorjs"
+}
