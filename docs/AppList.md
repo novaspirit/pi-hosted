@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 222 apps | 223 apps | 226 apps |
+| 106 apps | 223 apps | 224 apps | 227 apps |
 
 ---
 
@@ -150,6 +150,7 @@ List of all apps included in this project with info related to it.
 |[System Stats OLED display](https://www.the-diy-life.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/mklements/OLED_Stats_Docker) |  |  |  |
 |[Omada EAP Controller](https://www.tp-link.com/us/business-networking/omada-sdn-controller/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/mbentley/omada-controller) |  |  |  |
 |[Ombi](https://ombi.io/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-ombi) |  |  |  |
+|[OpenSpeedTest](https://hub.docker.com/r/openspeedtest/latest)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/openspeedtest/Speed-Test) |  |  |  |
 |[Organizr v2](https://organizr.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/organizr/organizr) |  |  |  |
 |[OScam](https://trac.streamboard.tv/oscam/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-oscam) |  |  |  |
 |[Overseerr](https://overseerr.dev/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/overseerr) |  |  |  |

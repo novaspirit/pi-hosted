@@ -5988,6 +5988,35 @@
 		},
 		{
 			"categories": [
+				"Tools"
+			],
+			"description": "Free & Open-Source HTML5 Network Performance Estimation Tool",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "openspeedtest/latest",
+			"logo": "https://raw.githubusercontent.com/openspeedtest/Speed-Test/main/assets/images/icons/android-chrome-192x192.png",
+			"name": "OpenSpeedTest",
+			"platform": "linux",
+			"ports": [
+				"30000:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "OpenSpeedTest",
+			"type": 1,
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/openspeedtest/latest\" target=\"_blank\">https://hub.docker.com/r/openspeedtest/latest</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/openspeedtest/Speed-Test\" target=\"_blank\">https://github.com/openspeedtest/Speed-Test</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
