@@ -15,7 +15,7 @@
 			"name": "PGID"
 		}
 	],
-	"image_amd64": "cura-novnc",
+	"image_amd64": "mikeah/cura-novnc",
 	"logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Logo_for_Cura_Software.png/120px-Logo_for_Cura_Software.png",
 	"name": "Cura NoVNC",
 	"officialDoc": "https://github.com/helfrichmichael/cura-novnc",
