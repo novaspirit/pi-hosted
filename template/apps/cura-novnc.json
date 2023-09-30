@@ -1,0 +1,35 @@
+{
+	"categories": [
+		"Tools"
+	],
+	"description": "This is a super basic noVNC build using supervisor to serve Cura in your favorite web browser. ",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image_amd64": "cura-novnc",
+	"logo": "https://raw.githubusercontent.com/PlexRipper/PlexRipper/dev/export/plexripper/logo/full/full-logo-256.png",
+	"name": "Cura NoVNC",
+	"officialDoc": "https://github.com/helfrichmichael/cura-novnc",
+	"platform": "linux",
+	"ports": [
+		"9080:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Cura-NoVNC",
+	"type": 1,
+	"volumes": [
+		{
+			"container": "/configs"
+		}
+	],
+	"webpage": "https://hub.docker.com/r/mikeah/cura-novnc"
+}
