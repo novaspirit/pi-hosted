@@ -1224,6 +1224,40 @@
 		},
 		{
 			"categories": [
+				"Tools"
+			],
+			"description": "This is a super basic noVNC build using supervisor to serve Cura in your favorite web browser. ",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "cura-novnc",
+			"logo": "https://raw.githubusercontent.com/PlexRipper/PlexRipper/dev/export/plexripper/logo/full/full-logo-256.png",
+			"name": "Cura NoVNC",
+			"platform": "linux",
+			"ports": [
+				"9080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Cura-NoVNC",
+			"type": 1,
+			"volumes": [
+				{
+					"container": "/configs"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/mikeah/cura-novnc\" target=\"_blank\">https://hub.docker.com/r/mikeah/cura-novnc</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/helfrichmichael/cura-novnc\" target=\"_blank\">https://github.com/helfrichmichael/cura-novnc</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Music"
 			],
 			"description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",

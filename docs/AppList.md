@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 224 apps | 225 apps | 228 apps |
+| 106 apps | 224 apps | 226 apps | 229 apps |
 
 ---
 
@@ -38,6 +38,7 @@ List of all apps included in this project with info related to it.
 |[Codiad](http://codiad.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/Codiad/Codiad/wiki/Quick-installation-using-Docker) |  |  |  |
 |[COPS](https://blog.slucas.fr/projects/calibre-opds-php-server/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-cops) |  |  |  |
 |[CouchPotato](https://couchpota.to/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-couchpotato) |  |  |  |
+|[Cura-NoVNC](https://hub.docker.com/r/mikeah/cura-novnc)|:x:|:x:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/helfrichmichael/cura-novnc) |  |  |  |
 |[Daapd](https://owntone.github.io/owntone-server/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-daapd) |  |  |  |
 |[DashMachine](https://github.com/rmountjoy92/DashMachine)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/rmountjoy92/DashMachine) |  |  |  |
 |[Dashy](https://dashy.to)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://dashy.to/docs/quick-start) |  | [![](../build/images/script_icon.png)](../tools/install_dashy.sh) |  |
