@@ -4,7 +4,9 @@
   "name": "wallabag",
   "description": "wallabag is a self hostable application for saving web pages: Save and classify articles. Read them later. Freely.",
   "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wallabag.png",
-  "image": "wallabag/wallabag:latest",
+  "image_arm64": "wallabag/wallabag:latest",
+  "image_amd64": "wallabag/wallabag:latest",
+  
   "categories": [
     "Tools",
     "Productivity",
