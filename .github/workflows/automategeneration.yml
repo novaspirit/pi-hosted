@@ -4,7 +4,7 @@ on:
   push:
     branches:
     - '**'
-  #schedule:
+  # schedule:
   #- cron:  '15 0 * * *'
 env:
  appsfolder: template/apps
