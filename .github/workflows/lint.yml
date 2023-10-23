@@ -11,6 +11,7 @@ name: Lint Code Base
 # https://help.github.com/en/articles/workflow-syntax-for-github-actions
 #
 
+
 #############################
 # Start the job on all push #
 #############################
