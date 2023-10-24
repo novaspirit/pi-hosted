@@ -9195,6 +9195,99 @@
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/mikolatero/vlmcsd\" target=\"_blank\">https://hub.docker.com/r/mikolatero/vlmcsd</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/mikolatero/docker-vlmcsd\" target=\"_blank\">https://github.com/mikolatero/docker-vlmcsd</a><br><br><br>"
 		},
 		{
+			"type": 1,
+			"title": "Wallbag",
+			"name": "wallabag",
+			"description": "wallabag is a self hostable application for saving web pages: Save and classify articles. Read them later. Freely.",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wallabag.png",
+			"image": "wallabag/wallabag:latest",
+			"categories": [
+				"Tools",
+				"Productivity",
+				"Web",
+				"Other"
+			],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"volumes": [
+				{
+					"container": "/var/www/wallabag/data",
+					"bind": "/portainer/Files/AppData/Wallabag/data"
+				},
+				{
+					"container": "/var/www/wallabag/web/assets/images",
+					"bind": "/portainer/Files/AppData/Wallabag/images"
+				}
+			],
+			"ports": [
+				"80:80/tcp"
+			],
+			"env": [
+				{
+					"name": "SYMFONY__ENV__SECRET",
+					"label": "Secret",
+					"default": "ovmpmAWXRCabNlMgzlzFXDYmCFfzGv",
+					"description": "This should be set to a random string of characters."
+				},
+				{
+					"name": "SYMFONY__ENV__DOMAIN_NAME",
+					"label": "Domain Name",
+					"default": "https://wallabag.example.com"
+				},
+				{
+					"name": "SYMFONY__ENV__MAILER_HOST",
+					"label": "SMTP Host",
+					"default": "127.0.0.1"
+				},
+				{
+					"name": "SYMFONY__ENV__MAILER_USER",
+					"label": "SMTP Username",
+					"default": "~"
+				},
+				{
+					"name": "SYMFONY__ENV__MAILER_PASSWORD",
+					"label": "SMTP Password",
+					"default": "~"
+				},
+				{
+					"name": "SYMFONY__ENV__FROM_EMAIL",
+					"label": "SMTP From Email",
+					"default": "wallabag@example.com"
+				},
+				{
+					"name": "SYMFONY__ENV__FOSUSER_REGISTRATION",
+					"label": "Enable public user registration?",
+					"select": [
+						{
+							"text": "Yes",
+							"value": "true",
+							"default": true
+						},
+						{
+							"text": "No",
+							"value": "false"
+						}
+					]
+				},
+				{
+					"name": "SYMFONY__ENV__FOSUSER_CONFIRMATION",
+					"label": "Require registration confirmation?",
+					"select": [
+						{
+							"text": "Yes",
+							"value": "true",
+							"default": true
+						},
+						{
+							"text": "No",
+							"value": "false"
+						}
+					]
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><br><br>"
+		},
+		{
 			"categories": [
 				"Other",
 				"Tools",
