@@ -22,66 +22,12 @@
       "80:80/tcp"
     ],
     "env": [
-      {
-        "name": "SYMFONY__ENV__SECRET",
-        "label": "Secret",
-        "default": "ovmpmAWXRCabNlMgzlzFXDYmCFfzGv",
-        "description": "This should be set to a random string of characters."
-      },
+      
       {
         "name": "SYMFONY__ENV__DOMAIN_NAME",
         "label": "Domain Name",
-        "default": "https://wallabag.example.com"
+        "default": "https://wallabag.example.com:80"
       },
-      {
-        "name": "SYMFONY__ENV__MAILER_HOST",
-        "label": "SMTP Host",
-        "default": "127.0.0.1"
-      },
-      {
-        "name": "SYMFONY__ENV__MAILER_USER",
-        "label": "SMTP Username",
-        "default": "~"
-      },
-      {
-        "name": "SYMFONY__ENV__MAILER_PASSWORD",
-        "label": "SMTP Password",
-        "default": "~"
-      },
-      {
-        "name": "SYMFONY__ENV__FROM_EMAIL",
-        "label": "SMTP From Email",
-        "default": "wallabag@example.com"
-      },
-      {
-        "name": "SYMFONY__ENV__FOSUSER_REGISTRATION",
-        "label": "Enable public user registration?",
-        "select": [
-          {
-            "text": "Yes",
-            "value": "true",
-            "default": true
-          },
-          {
-            "text": "No",
-            "value": "false"
-          }
-        ]
-      },
-      {
-        "name": "SYMFONY__ENV__FOSUSER_CONFIRMATION",
-        "label": "Require registration confirmation?",
-        "select": [
-          {
-            "text": "Yes",
-            "value": "true",
-            "default": true
-          },
-          {
-            "text": "No",
-            "value": "false"
-          }
-        ]
-      }
     ]
+      
   }
