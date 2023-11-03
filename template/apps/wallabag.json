@@ -27,7 +27,7 @@
         "name": "SYMFONY__ENV__DOMAIN_NAME",
         "label": "Domain Name",
         "default": "https://wallabag.example.com:80"
-      },
+      }
     ]
       
   }
