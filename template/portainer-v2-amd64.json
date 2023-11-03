@@ -9243,7 +9243,7 @@
 		},
 		{
 			"type": 1,
-			"title": "Wallbag",
+			"title": "Wallabag",
 			"name": "wallabag",
 			"description": "wallabag is a self hostable application for saving web pages: Save and classify articles. Read them later. Freely.",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wallabag.png",
@@ -9258,12 +9258,12 @@
 			"restart_policy": "unless-stopped",
 			"volumes": [
 				{
-					"container": "/var/www/wallabag/data",
+					"container": "/opt/wallabag/data:/var/www/html/data",
 					"bind": "/portainer/Files/AppData/Wallabag/data"
 				},
 				{
-					"container": "/opt/wallabag/images: /var/www/wallabag/web/assets/images",
-					"bind": "/portainer/Files/AppData/Wallabag/images"
+					"container": "/opt/wallabag/assets:/var/www/html/web/assets",
+					"bind": "/portainer/Files/AppData/Wallabag/assets"
 				}
 			],
 			"ports": [
