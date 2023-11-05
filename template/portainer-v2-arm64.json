@@ -9211,13 +9211,13 @@
 			"restart_policy": "unless-stopped",
 			"volumes": [],
 			"ports": [
-				"80:80/tcp"
+				"90:80/tcp"
 			],
 			"env": [
 				{
 					"name": "SYMFONY__ENV__DOMAIN_NAME",
 					"label": "Domain Name",
-					"default": "https://wallabag.example.com:80"
+					"default": "https://wallabag.example.com:90"
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><br><br>"
