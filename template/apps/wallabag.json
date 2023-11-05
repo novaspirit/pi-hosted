@@ -19,14 +19,14 @@
       
     ],
     "ports": [
-      "80:80/tcp"
+      "90:80/tcp"
     ],
     "env": [
       
       {
         "name": "SYMFONY__ENV__DOMAIN_NAME",
         "label": "Domain Name",
-        "default": "https://wallabag.example.com:80"
+        "default": "https://wallabag.example.com:90"
       }
     ]
       
