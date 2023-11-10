@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 222 apps | 221 apps | 224 apps |
+| 106 apps | 224 apps | 226 apps | 229 apps |
 
 ---
 
@@ -38,6 +38,7 @@ List of all apps included in this project with info related to it.
 |[Codiad](http://codiad.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/Codiad/Codiad/wiki/Quick-installation-using-Docker) |  |  |  |
 |[COPS](https://blog.slucas.fr/projects/calibre-opds-php-server/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-cops) |  |  |  |
 |[CouchPotato](https://couchpota.to/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-couchpotato) |  |  |  |
+|[Cura-NoVNC](https://hub.docker.com/r/mikeah/cura-novnc)|:x:|:x:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/helfrichmichael/cura-novnc) |  |  |  |
 |[Daapd](https://owntone.github.io/owntone-server/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-daapd) |  |  |  |
 |[DashMachine](https://github.com/rmountjoy92/DashMachine)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/rmountjoy92/DashMachine) |  |  |  |
 |[Dashy](https://dashy.to)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://dashy.to/docs/quick-start) |  | [![](../build/images/script_icon.png)](../tools/install_dashy.sh) |  |
@@ -57,6 +58,7 @@ List of all apps included in this project with info related to it.
 |[Eclipse Mosquitto MQTT](https://mosquitto.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://mosquitto.org/) |  | [![](../build/images/script_icon.png)](../tools/install_mosquitto.sh) |  |
 |[Emby](https://emby.media/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-emby) |  |  |  |
 |[EmbyStat](https://github.com/mregni/EmbyStat)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-embystat) |  |  |  |
+|[EmulatorJS](https://hub.docker.com/r/linuxserver/emulatorjs)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/EmulatorJS/EmulatorJS) |  |  |  |
 |[FileBrowser latest](https://filebrowser.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://filebrowser.org/installation#docker) |  |  | [![Installing JDownloader and File Browser On The Pi Docker Server](../build/images/yt-badge-novaspirit.png "Installing JDownloader and File Browser On The Pi Docker Server")](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[FileBrowser S6](https://filebrowser.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://filebrowser.org/installation#docker) |  |  | [![Installing JDownloader and File Browser On The Pi Docker Server](../build/images/yt-badge-novaspirit.png "Installing JDownloader and File Browser On The Pi Docker Server")](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[Filezilla](https://hub.docker.com/r/linuxserver/filezilla)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/filezilla) |  |  |  |
@@ -78,6 +80,7 @@ List of all apps included in this project with info related to it.
 |[Graylog](https://www.graylog.org)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.graylog.org/docs/docker) | [![](../build/images/red_doc_icon.png)](../docs/graylog_install.md) |  |  |
 |[Grocy](https://grocy.info/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-grocy) |  |  |  |
 |[Guacamole](https://guacamole.apache.org/)|:heavy_check_mark:|:heavy_check_mark:|:x:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oznu/guacamole) |  |  | [![Manually Installing Guacamole on Portainer](../build/images/yt-badge-novaspirit.png "Manually Installing Guacamole on Portainer")](https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3) |
+|[HandBrake](https://hub.docker.com/r/jlesage/handbrake)|:x:|:x:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/jlesage/docker-handbrake) |  |  |  |
 |[Headphones](https://github.com/rembo10/headphones)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-headphones) |  |  |  |
 |[Heimdall](https://heimdall.site/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-heimdall) |  |  |  |
 |[Homarr](https://homarr.vercel.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ajnart/homarr) |  |  |  |
@@ -149,6 +152,7 @@ List of all apps included in this project with info related to it.
 |[System Stats OLED display](https://www.the-diy-life.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/mklements/OLED_Stats_Docker) |  |  |  |
 |[Omada EAP Controller](https://www.tp-link.com/us/business-networking/omada-sdn-controller/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/mbentley/omada-controller) |  |  |  |
 |[Ombi](https://ombi.io/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-ombi) |  |  |  |
+|[OpenSpeedTest](https://hub.docker.com/r/openspeedtest/latest)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/openspeedtest/Speed-Test) |  |  |  |
 |[Organizr v2](https://organizr.app/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/organizr/organizr) |  |  |  |
 |[OScam](https://trac.streamboard.tv/oscam/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-oscam) |  |  |  |
 |[Overseerr](https://overseerr.dev/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/overseerr) |  |  |  |
@@ -164,6 +168,7 @@ List of all apps included in this project with info related to it.
 |[Piwigo](http://piwigo.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-piwigo) |  |  |  |
 |[Pixel-server](http://www.penguintutor.com/projects/pixel-server)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/Macleykun/pixel-server) | [![](../build/images/red_doc_icon.png)](../docs/pixel-server_setup.md) | [![](../build/images/script_icon.png)](../tools/install_pixel-server.sh) |  |
 |[Plex](https://www.plex.tv/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-plex) |  |  |  |
+|[PlexRipper](https://hub.docker.com/r/plexripper/plexripper)|:x:|:x:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/PlexRipper/PlexRipper) |  |  |  |
 |[PostgreSQL](https://www.postgresql.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/postgres/) |  |  |  |
 |[Pritunl](https://pritunl.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/goofball222/pritunl) |  |  |  |
 |[PrivateBin](https://privatebin.info/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/privatebin/nginx-fpm-alpine) |  |  |  |

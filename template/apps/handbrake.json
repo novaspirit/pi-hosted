@@ -1,0 +1,48 @@
+{
+	"categories": [
+		"Downloader"
+	],
+	"description": "This project implements a Docker container for HandBrake. The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image_amd64": "jlesage/handbrake",
+	"logo": "https://camo.githubusercontent.com/0156e7756fa49886748421553158970ca7600e31559f331b1b4e6dd127103bcd/68747470733a2f2f696d616765732e7765736572762e6e6c2f3f75726c3d7261772e67697468756275736572636f6e74656e742e636f6d2f6a6c65736167652f646f636b65722d74656d706c617465732f6d61737465722f6a6c65736167652f696d616765732f68616e646272616b652d69636f6e2e706e6726773d313130",
+	"name": "HandBrake",
+	"officialDoc": "https://github.com/jlesage/docker-handbrake",
+	"platform": "linux",
+	"ports": [
+		"5800:5800/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "HandBrake",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/HandBrake",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/storage"
+		},
+		{
+			"bind": "/portainer/Downloads/output",
+			"container": "/output"
+		},
+		{
+			"bind": "/portainer/Downloads/watch",
+			"container": "/watch"
+		}
+	],
+	"webpage": "https://hub.docker.com/r/jlesage/handbrake"
+}

@@ -1224,6 +1224,40 @@
 		},
 		{
 			"categories": [
+				"Tools"
+			],
+			"description": "This is a super basic noVNC build using supervisor to serve Cura in your favorite web browser. ",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "mikeah/cura-novnc",
+			"logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Logo_for_Cura_Software.png/120px-Logo_for_Cura_Software.png",
+			"name": "CuraNoVNC",
+			"platform": "linux",
+			"ports": [
+				"9080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Cura-NoVNC",
+			"type": 1,
+			"volumes": [
+				{
+					"container": "/configs"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/mikeah/cura-novnc\" target=\"_blank\">https://hub.docker.com/r/mikeah/cura-novnc</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/helfrichmichael/cura-novnc\" target=\"_blank\">https://github.com/helfrichmichael/cura-novnc</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Music"
 			],
 			"description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
@@ -1975,6 +2009,47 @@
 					"container": "/config"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Games"
+			],
+			"description": "In browser web based emulation portable to nearly any device for many retro consoles. A mix of emulators is used between Libretro and EmulatorJS.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "lscr.io/linuxserver/emulatorjs:latest",
+			"logo": "https://raw.githubusercontent.com/EmulatorJS/EmulatorJS/main/docs/Logo-light.png",
+			"name": "EmulatorJS",
+			"platform": "linux",
+			"ports": [
+				"3003:3000/tcp",
+				"3008:80/tcp",
+				"4001:4001/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "EmulatorJS",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/emulatorjs",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads/Roms",
+					"container": "/data"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/linuxserver/emulatorjs\" target=\"_blank\">https://hub.docker.com/r/linuxserver/emulatorjs</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/EmulatorJS/EmulatorJS\" target=\"_blank\">https://github.com/EmulatorJS/EmulatorJS</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -2754,6 +2829,53 @@
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://grocy.info/\" target=\"_blank\">https://grocy.info/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-grocy\" target=\"_blank\">https://docs.linuxserver.io/images/docker-grocy</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Downloader"
+			],
+			"description": "This project implements a Docker container for HandBrake. The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "jlesage/handbrake",
+			"logo": "https://camo.githubusercontent.com/0156e7756fa49886748421553158970ca7600e31559f331b1b4e6dd127103bcd/68747470733a2f2f696d616765732e7765736572762e6e6c2f3f75726c3d7261772e67697468756275736572636f6e74656e742e636f6d2f6a6c65736167652f646f636b65722d74656d706c617465732f6d61737465722f6a6c65736167652f696d616765732f68616e646272616b652d69636f6e2e706e6726773d313130",
+			"name": "HandBrake",
+			"platform": "linux",
+			"ports": [
+				"5800:5800/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "HandBrake",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/HandBrake",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/storage"
+				},
+				{
+					"bind": "/portainer/Downloads/output",
+					"container": "/output"
+				},
+				{
+					"bind": "/portainer/Downloads/watch",
+					"container": "/watch"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/jlesage/handbrake\" target=\"_blank\">https://hub.docker.com/r/jlesage/handbrake</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/jlesage/docker-handbrake\" target=\"_blank\">https://github.com/jlesage/docker-handbrake</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -5941,6 +6063,35 @@
 		},
 		{
 			"categories": [
+				"Tools"
+			],
+			"description": "Free & Open-Source HTML5 Network Performance Estimation Tool",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "openspeedtest/latest",
+			"logo": "https://raw.githubusercontent.com/openspeedtest/Speed-Test/main/assets/images/icons/android-chrome-192x192.png",
+			"name": "OpenSpeedTest",
+			"platform": "linux",
+			"ports": [
+				"30000:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "OpenSpeedTest",
+			"type": 1,
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/openspeedtest/latest\" target=\"_blank\">https://hub.docker.com/r/openspeedtest/latest</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/openspeedtest/Speed-Test\" target=\"_blank\">https://github.com/openspeedtest/Speed-Test</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
@@ -6696,6 +6847,53 @@
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.plex.tv/\" target=\"_blank\">https://www.plex.tv/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-plex\" target=\"_blank\">https://docs.linuxserver.io/images/docker-plex</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Downloader"
+			],
+			"description": "PlexRipper is a cross-platform media downloader that indexes the Plex servers you have access to and allows you to download everything while adding it to your own Plex server.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "plexripper/plexripper:latest",
+			"logo": "https://raw.githubusercontent.com/PlexRipper/PlexRipper/dev/export/plexripper/logo/full/full-logo-256.png",
+			"name": "PlexRipper",
+			"platform": "linux",
+			"ports": [
+				"7000:7000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "PlexRipper",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/PlexRipper",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/Downloads"
+				},
+				{
+					"bind": "/portainer/Downloads/Movies",
+					"container": "/Movies"
+				},
+				{
+					"bind": "/portainer/Downloads/TvShows",
+					"container": "/TvShows"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/plexripper/plexripper\" target=\"_blank\">https://hub.docker.com/r/plexripper/plexripper</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/PlexRipper/PlexRipper\" target=\"_blank\">https://github.com/PlexRipper/PlexRipper</a><br><br><br>"
 		},
 		{
 			"categories": [

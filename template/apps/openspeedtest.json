@@ -1,0 +1,31 @@
+{
+	"categories": [
+		"Tools"
+	],
+	"description": "Free & Open-Source HTML5 Network Performance Estimation Tool",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image_amd64": "openspeedtest/latest",
+	"image_arm64": "openspeedtest/latest",
+	"logo": "https://raw.githubusercontent.com/openspeedtest/Speed-Test/main/assets/images/icons/android-chrome-192x192.png",
+	"name": "OpenSpeedTest",
+	"officialDoc": "https://github.com/openspeedtest/Speed-Test",
+	"platform": "linux",
+	"ports": [
+		"30000:3000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "OpenSpeedTest",
+	"type": 1,
+	"webpage": "https://hub.docker.com/r/openspeedtest/latest"
+}

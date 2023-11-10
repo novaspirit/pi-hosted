@@ -1,0 +1,48 @@
+{
+	"categories": [
+		"Downloader"
+	],
+	"description": "PlexRipper is a cross-platform media downloader that indexes the Plex servers you have access to and allows you to download everything while adding it to your own Plex server.",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		}
+	],
+	"image_amd64": "plexripper/plexripper:latest",
+	"logo": "https://raw.githubusercontent.com/PlexRipper/PlexRipper/dev/export/plexripper/logo/full/full-logo-256.png",
+	"name": "PlexRipper",
+	"officialDoc": "https://github.com/PlexRipper/PlexRipper",
+	"platform": "linux",
+	"ports": [
+		"7000:7000/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "PlexRipper",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/PlexRipper",
+			"container": "/config"
+		},
+		{
+			"bind": "/portainer/Downloads",
+			"container": "/Downloads"
+		},
+		{
+			"bind": "/portainer/Downloads/Movies",
+			"container": "/Movies"
+		},
+		{
+			"bind": "/portainer/Downloads/TvShows",
+			"container": "/TvShows"
+		}
+	],
+	"webpage": "https://hub.docker.com/r/plexripper/plexripper"
+}
