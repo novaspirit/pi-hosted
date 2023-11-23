@@ -1,7 +1,7 @@
 version: "2"
 services:
   app:
-    image: martadinata666/reactive-resume:latest
+    image: martadinata666/reactive-resume:v3.8.4
     restart: unless-stopped
     environment:
       - SECRET_KEY=${SECRET_KEY}
@@ -16,8 +16,8 @@ services:
       - PUBLIC_URL=${PUBLIC_URL}
       - PUBLIC_SERVER_URL=${PUBLIC_SERVER_URL}
     volumes:
-      - /portainer/Files/AppData/Config/reactive-resume/uploads:/home/debian/reactiveresume/server/dist/assets/uploads
-      - /portainer/Files/AppData/Config/reactive-resume/exports:/home/debian/reactiveresume/server/dist/assets/exports
+      - /portainer/Files/AppData/Config/reactive-resume/uploads:/home/docker/reactiveresume/server/dist/assets/uploads
+      - /portainer/Files/AppData/Config/reactive-resume/exports:/home/docker/reactiveresume/server/dist/assets/exports
     ports:
       - ${CLIENT_PORT}:3000
       - ${SERVER_PORT}:3100
