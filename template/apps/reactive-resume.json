@@ -4,10 +4,10 @@
 		"Tools"
 	],
 	"description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
-	"image_arm64": "martadinata666/reactive-resume:latest",
-	"image_amd64": "martadinata666/reactive-resume:latest",
+	"image_arm64": "martadinata666/reactive-resume:v3.8.4",
+	"image_amd64": "martadinata666/reactive-resume:v3.8.4",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/reactiveresume.png",
-	"name": "reactive-resume",
+	"name": "reactive-resume v3",
 	"officialDoc": "https://hub.docker.com/r/martadinata666/reactive-resume",
 	"preInstallScript": "install_reactive-resume.sh",
 	"platform": "linux",
