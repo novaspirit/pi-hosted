@@ -47,6 +47,8 @@ wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/install_p
 wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/update_portainer.sh | bash
 ```
 
+**This does not work for ARM32 based systems. See below.**
+
 ### Login to Portainer to update the App Template.
 
 Goto pi-ip:9000 and then login
@@ -65,7 +67,11 @@ You're done! Now just click App Templates and deploy applications!
 
 * Amd64 should work on all distros with **scripts written for Debian based distros**
 
-## ** Important notice arm32 support is slowly getting dropped we recommend you upgrade to arm64 as soon as possible
+### ARM32 support
+
+**ARM32 support is slowly getting dropped, we recommend you upgrade to ARM64 as soon as possible**
+
+The above script to install Portainer doesn't work, as the `portainer/portainer-ce:latest` Docker image doesn't support ARM32 any more. You can run the commands in the script directly and use `portainer/portainer-cs:linux-arm-2.11.1-alpine` instead.
 
 ### Pi-Hosted YouTube series
 
