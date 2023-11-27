@@ -1,0 +1,24 @@
+{
+	"categories": [
+		"HomeAutomation",
+		"Other",
+		"Tools"
+	],
+	"description": "A Fauxmo frontend that facilitates multi-device control via Alexa services by emulating wemo devices, enabling users to turn computers on/off seamlessly using voice commands.",
+	"image_arm64": "cristianeduardmihai/alexa-wol:latest",
+	"image_amd64": "cristianeduardmihai/alexa-wol:latest",
+	"logo": "https://raw.githubusercontent.com/CristianEduardMihai/alexa-wol/main/images/logo.jpg",
+	"name": "Alexa Wake On Lan",
+	"officialDoc": "https://github.com/CristianEduardMihai/alexa-wol",
+	"platform": "linux",
+	"network": "host",
+	"restart_policy": "unless-stopped",
+	"title": "Alexa Wake On Lan",
+	"type": 1,
+	"volumes": [
+		{
+      "bind": "/portainer/Files/AppData/Config/AlexaWakeOnLan/config",
+			"container": "/alexa/api/config"
+		}
+	]
+}
