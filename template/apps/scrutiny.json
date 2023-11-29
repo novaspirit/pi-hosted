@@ -4,7 +4,6 @@
 		"Tools"
 	],
 	"description": "WebUI for smartd S.M.A.R.T monitoring",
-	"image_arm32": "ghcr.io/analogj/scrutiny:master-omnibus",
 	"image_arm64": "ghcr.io/analogj/scrutiny:master-omnibus",
 	"image_amd64": "ghcr.io/analogj/scrutiny:master-omnibus",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/scrutiny.png",
