@@ -3871,12 +3871,12 @@
 					"name": "POSTGRES_PASSWORD"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/BigoudOps/joplin-serveradd/images/joplin.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/joplin.png",
 			"name": "joplin-server",
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/joplin-server.yml",
-				"url": "https://github.com/BigoudOps/joplin-serveradd/"
+				"url": "https://github.com/pi-hosted/pi-hosted/master/"
 			},
 			"restart_policy": "unless-stopped",
 			"title": "Joplin server",
