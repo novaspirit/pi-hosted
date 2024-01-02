@@ -232,7 +232,7 @@
 			"description": "A Fauxmo frontend that facilitates multi-device control via Alexa services by emulating wemo devices, enabling users to turn computers on/off seamlessly using voice commands.",
 			"image": "cristianeduardmihai/alexa-wol:latest",
 			"logo": "https://raw.githubusercontent.com/CristianEduardMihai/alexa-wol/main/images/logo.jpg",
-			"name": "Alexa Wake On Lan",
+			"name": "Alexa-Wake-On-Lan",
 			"platform": "linux",
 			"network": "host",
 			"restart_policy": "unless-stopped",
@@ -5642,7 +5642,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "jc21/nginx-proxy-manager:v3-develop",
+			"image": "jc21/nginx-proxy-manager:v3",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
 			"name": "nginx-proxy-manager-v3",
 			"platform": "linux",
