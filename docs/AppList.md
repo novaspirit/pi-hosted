@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 225 apps | 227 apps | 230 apps |
+| 106 apps | 226 apps | 228 apps | 231 apps |
 
 ---
 
@@ -102,6 +102,7 @@ List of all apps included in this project with info related to it.
 |[Jellyfin](https://jellyfin.org/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-jellyfin) |  |  |  |
 |[Jellyseerr](https://github.com/Fallenbagel/jellyseerr)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/fallenbagel/jellyseerr) |  |  |  |
 |[Jellyfin-Accounts](https://jfa-go.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.jfa-go.com/) |  |  |  |
+|[Joplin server](https://hub.docker.com/r/etechonomy/joplin-server)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/etechonomy/joplin-server) |  |  |  |
 |[Kasm](https://www.kasmweb.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-kasm) |  |  |  |
 |[Kasm with renderD128 support](https://www.kasmweb.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linuxserver/docker-kasm) |  |  |  |
 |[Kavita](https://www.kavitareader.com/#home)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.kavitareader.com/en/install/docker-install) |  |  |  |
