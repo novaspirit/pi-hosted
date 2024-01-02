@@ -21,9 +21,9 @@
 			"name": "TZ"
 		}
 	],
-        "image_arm32": "jc21/nginx-proxy-manager:v3-develop",
-        "image_arm64": "jc21/nginx-proxy-manager:v3-develop",
-        "image_amd64": "jc21/nginx-proxy-manager:v3-develop",
+        "image_arm32": "jc21/nginx-proxy-manager:v3",
+        "image_arm64": "jc21/nginx-proxy-manager:v3",
+        "image_amd64": "jc21/nginx-proxy-manager:v3",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
 	"name": "nginx-proxy-manager-v3",
 	"officialDoc": "https://nginxproxymanager.com/setup/",
