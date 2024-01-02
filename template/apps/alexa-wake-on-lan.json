@@ -8,7 +8,7 @@
 	"image_arm64": "cristianeduardmihai/alexa-wol:latest",
 	"image_amd64": "cristianeduardmihai/alexa-wol:latest",
 	"logo": "https://raw.githubusercontent.com/CristianEduardMihai/alexa-wol/main/images/logo.jpg",
-	"name": "Alexa Wake On Lan",
+	"name": "Alexa-Wake-On-Lan",
 	"officialDoc": "https://github.com/CristianEduardMihai/alexa-wol",
 	"platform": "linux",
 	"network": "host",
