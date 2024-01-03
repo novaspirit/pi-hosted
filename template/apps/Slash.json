@@ -1,0 +1,26 @@
+{
+	"categories": [
+		"Other",
+		"Web"
+	],
+	"description": "Slash is an open source, self-hosted bookmarks and link sharing platform. It allows you to organize your links with tags, and share them with custom shortened URLs. Slash also supports team sharing of link libraries for easy collaboration.",
+	"image_arm64": "yourselfhosted/slash:latest",
+	"image_amd64": "yourselfhosted/slash:latest",
+	"logo": "https://raw.githubusercontent.com/yourselfhosted/slash/main/frontend/web/public/logo.png",
+	"name": "slash",
+	"officialDoc": "https://github.com/yourselfhosted/slash",
+	"platform": "linux",
+	"ports": [
+		"5231:5231/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Slash",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Slash",
+			"container": "/var/opt//slash"
+		}
+	],
+	"webpage": "https://github.com/yourselfhosted/slash"
+}

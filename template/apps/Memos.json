@@ -1,0 +1,26 @@
+{
+	"categories": [
+		"Other",
+		"Web"
+	],
+	"description": "A privacy-first, lightweight note-taking service.",
+	"image_arm64": "ghcr.io/usememos/memos:latest",
+	"image_amd64": "ghcr.io/usememos/memos:latest",
+	"logo": "https://raw.githubusercontent.com/usememos/memos/main/web/public/logo.png",
+	"name": "memos",
+	"officialDoc": "https://github.com/usememos/memos",
+	"platform": "linux",
+	"ports": [
+		"5230:5230/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Memos",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Memos",
+			"container": "/var/opt/memos"
+		}
+	],
+	"webpage": "https://usememos.com"
+}

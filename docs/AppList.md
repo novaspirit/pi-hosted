@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 227 apps | 229 apps | 232 apps |
+| 106 apps | 229 apps | 231 apps | 234 apps |
 
 ---
 
@@ -35,6 +35,7 @@ List of all apps included in this project with info related to it.
 |[Clamav](https://docs.clamav.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/mkodockx/docker-clamav) |  | [![](../build/images/script_icon.png)](../tools/install_clamav.sh) |  |
 |[Cloudflare DDNS](https://www.cloudflare.com/en-gb/learning/dns/glossary/dynamic-dns/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/favonia/cloudflare-ddns/) |  |  |  |
 |[Cloudflared Tunnel](https://www.cloudflare.com/products/tunnel/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/) |  |  |  |
+|[Collabora Online Development Edition (CODE)](https://www.collaboraoffice.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://sdk.collaboraonline.com/docs/installation/CODE_Docker_image.html) |  |  |  |
 |[Code Server](https://coder.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-code-server) |  |  |  |
 |[Codiad](http://codiad.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/Codiad/Codiad/wiki/Quick-installation-using-Docker) |  |  |  |
 |[COPS](https://blog.slucas.fr/projects/calibre-opds-php-server/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-cops) |  |  |  |
@@ -115,6 +116,7 @@ List of all apps included in this project with info related to it.
 |[LibreSpeed](https://librespeed.org/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-librespeed) |  |  |  |
 |[lidarr](https://lidarr.audio/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lidarr) |  |  |  |
 |[Lingva Translate](https://lingva.ml/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/TheDavidDelta/lingva-translate) |  |  |  |
+|[linkstack](https://linkstack.org/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linkstackorg/linkstack#readme) |  |  |  |
 |[LLDAP](https://github.com/nitnelave/lldap)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/nitnelave/lldap) |  | [![](../build/images/script_icon.png)](../tools/install_lldap.sh) |  |
 |[Lychee](https://lycheeorg.github.io/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lychee) |  |  |  |
 |[Lychee With Mariadb](https://lycheeorg.github.io/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lychee) |  |  |  |
@@ -122,6 +124,7 @@ List of all apps included in this project with info related to it.
 |[MariaDB](https://mariadb.org/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mariadb) |  |  |  |
 |[Mealie](https://hay-kot.github.io/mealie/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hay-kot.github.io/mealie/documentation/getting-started/install/) |  |  |  |
 |[Medusa](https://pymedusa.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-medusa) |  |  |  |
+|[Memos](https://usememos.com)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/usememos/memos) |  |  |  |
 |[MeTube](https://hub.docker.com/r/alexta69/metube)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/alexta69/metube) |  |  |  |
 |[Minecraft Server](https://www.minecraft.net/en-us)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/itzg/docker-minecraft-server#using-docker-compose) |  |  |  |
 |[Minetest](https://www.minetest.net/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-minetest) |  |  |  |
@@ -201,6 +204,7 @@ List of all apps included in this project with info related to it.
 |[Shiori](https://github.com/go-shiori/shiori)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/nicholaswilde/docker-shiori) |  |  |  |
 |[SickChill](https://docs.linuxserver.io/images/docker-sickchill)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://sickchill.github.io/) |  |  |  |
 |[SickGear](https://github.com/SickGear/SickGear/wiki)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sickgear) |  |  |  |
+|[Slash](https://github.com/yourselfhosted/slash)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/yourselfhosted/slash) |  |  |  |
 |[SmokePing](https://oss.oetiker.ch/smokeping/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-smokeping) |  |  |  |
 |[Snippet-box](https://github.com/pawelmalak/snippet-box)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/snippet-box#with-docker) |  |  | [![My Most used container! Snippet Box](../build/images/yt-badge-novaspirit.png "My Most used container! Snippet Box")](https://www.youtube.com/watch?v=v-jUyB3fvAo) |
 |[Sonarr](https://sonarr.tv/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sonarr) |  |  |  |

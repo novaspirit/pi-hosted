@@ -1,0 +1,70 @@
+{
+	"categories": [
+		"Other",
+		"tools"
+	],
+	"description": "Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs for instructions on installing the template to work with NextCloud.",
+        "env": [
+                {
+			"description": "User name for the admin console.",
+                        "default": "admin",
+                        "label": "username",
+                        "name": "username"
+                },
+                {
+			"description": "Password for the admin console.",
+                        "default": "z#wYaMnS4!?9RK",
+                        "label": "password",
+                        "name": "password"
+                },
+                {
+			"description": "When this environment variable is set (is not “”), then startup script will not generate a new SSL certificate signed by a dummy CA. It is useful, if you want to use your own SSL certificate for some reason.",
+                        "default": "",
+                        "label": "DONT_GEN_SSL_CERT",
+                        "name": "DONT_GEN_SSL_CERT"
+                },
+                {
+			"description": "When this environment variable is set (is not “”), then startup script will generate a new SSL certificate signed by a dummy CA for this domain, not for localhost",
+                        "default": "",
+                        "label": "cert_domain",
+                        "name": "cert_domain"
+                },
+                {
+			"description": "When this environment variable is set (is not “”), then its value will be used as server name in /etc/coolwsd/coolwsd.xml. Without this, CODE is not delivering a correct host for the websocket connection in case of a proxy in front of it.",
+                        "default": "collabora.domain.tld | http://IP:Port",
+                        "label": "server_name",
+                        "name": "server_name"
+                },
+                {
+			"description": "By default only limited set of spelling dictionaries and thesauri are configured for CODE, mainly for performance reasons. The default set of languages is the following: de_DE en_GB en_US es_ES fr_FR it nl pt_BR pt_PT ru. With the dictionaries environment variable you can change this list. The dictionaries environment variable should contain the space separated list of language codes (optionally followed by country code). In order to save resources, it makes sense to load only those dictionaries that are actually needed.",
+                        "default": "",
+                        "label": "dictionaries",
+                        "name": "dictionaries"
+                },
+                {
+			"description": "You can pass extra command line parameters to coolwsd via this environment variable. For example, if you want to start coolwsd without SSL, when you test or develop, the syntax is: -e ''extra_params=--o:ssl.enable=false''. To learn about all possible options, refer to the self-documented /etc/coolwsd/coolwsd.xml configuration file in the Docker image.",
+                        "default": "--o:ssl.enable=false --o:ssl.termination=true",
+                        "label": "extra_params",
+                        "name": "extra_params"
+                },
+                {
+			"description": "The domain of your NextCloud instance.",
+                        "default": "nextcloud.domain.tld",
+                        "label": "domain",
+                        "name": "domain"
+                }
+        ],
+	"image_arm64": "collabora/code:latest",
+	"image_amd64": "collabora/code:latest",
+	"logo": "https://www.collaboraoffice.com/wp-content/uploads/2022/03/collabora-productivity-nav-icon.png",
+	"name": "collabora",
+	"officialDoc": "https://sdk.collaboraonline.com/docs/installation/CODE_Docker_image.html",
+	"platform": "linux",
+	"ports": [
+		"9980:9980/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Collabora Online Development Edition (CODE)",
+	"type": 1,
+	"webpage": "https://www.collaboraoffice.com/"
+}

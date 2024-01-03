@@ -1,0 +1,58 @@
+{
+	"categories": [
+		"Other",
+		"Web"
+	],
+	"description": "The Ultimate Link Management Solution",
+	"env": [
+		{
+			"default": "name@domain.tld",
+			"label": "SERVER_ADMIN",
+			"name": "SERVER_ADMIN"
+		},
+		{
+			"default": "HTTP_Domain",
+			"label": "HTTP_SERVER_NAME",
+			"name": "HTTP_SERVER_NAME"
+		},
+		{
+			"default": "HTTPS_Domain",
+			"label": "HTTPS_SERVER_NAME",
+			"name": "HTTPS_SERVER_NAME"
+		},
+		{
+			"default": "info",
+			"label": "LOG_LEVEL",
+			"name": "LOG_LEVEL"
+		},
+		{
+			"default": "Europe/London",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "256M",
+			"label": "PHP_MEMORY_LIMIT",
+			"name": "PHP_MEMORY_LIMIT"
+		},
+		{
+			"default": "8M",
+			"label": "UPLOAD_MAX_FILESIZE",
+			"name": "UPLOAD_MAX_FILESIZE"
+		}
+	],
+	"image_arm64": "linkstackorg/linkstack:latest",
+	"image_amd64": "linkstackorg/linkstack:latest",
+	"logo": "https://raw.githubusercontent.com/LinkStackOrg/branding/main/logo/png/logo.png",
+	"name": "LinkStack",
+	"officialDoc": "https://github.com/linkstackorg/linkstack#readme",
+	"platform": "linux",
+	"ports": [
+		"8822:80/tcp",
+		"8844:443/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "linkstack",
+	"type": 1,
+	"webpage": "https://linkstack.org/"
+}
