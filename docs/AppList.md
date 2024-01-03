@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 226 apps | 228 apps | 231 apps |
+| 106 apps | 227 apps | 229 apps | 232 apps |
 
 ---
 
@@ -196,6 +196,7 @@ List of all apps included in this project with info related to it.
 |[ruTorrent](https://github.com/Novik/ruTorrent)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/crazy-max/docker-rtorrent-rutorrent) |  |  |  |
 |[SABnzbd](https://sabnzbd.org/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sabnzbd) |  |  |  |
 |[Samba](https://www.samba.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/dperson/samba) |  |  | [![Setting up Raspberry Pi Samba Server For File Sharing on Docker](../build/images/yt-badge-novaspirit.png "Setting up Raspberry Pi Samba Server For File Sharing on Docker")](https://www.youtube.com/watch?v=2zZ3_1GRWrM&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=11)<br>[![Building NAS with Container](../build/images/yt-badge-novaspirit.png "Building NAS with Container")](https://www.youtube.com/watch?v=9ln6UFH4z8o) |
+|[scrutiny](https://github.com/AnalogJ/scrutiny)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/AnalogJ/scrutiny) |  |  |  |
 |[SearXNG](https://docs.searxng.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.searxng.org/admin/installation-docker.html) | [![](../build/images/red_doc_icon.png)](../docs/searxng.md) |  |  |
 |[Shiori](https://github.com/go-shiori/shiori)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/nicholaswilde/docker-shiori) |  |  |  |
 |[SickChill](https://docs.linuxserver.io/images/docker-sickchill)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://sickchill.github.io/) |  |  |  |
