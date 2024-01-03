@@ -7987,6 +7987,38 @@
 				"Other",
 				"Tools"
 			],
+			"description": "WebUI for smartd S.M.A.R.T monitoring",
+			"image": "ghcr.io/analogj/scrutiny:master-omnibus",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/scrutiny.png",
+			"name": "scrutiny",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/AnalogJ/scrutiny\" target=\"_blank\">https://github.com/AnalogJ/scrutiny</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/AnalogJ/scrutiny\" target=\"_blank\">https://github.com/AnalogJ/scrutiny</a><br><br><br>Set your port (default: 8080) and deploy the container. Edit container, enable SYS_RAWIO capability, add device /dev/sda in host and container field, finaly deploy the container again.",
+			"platform": "linux",
+			"ports": [
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "scrutiny",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/scrutiny/config",
+					"container": "/opt/scrutiny/config"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/scrutiny/influxdb",
+					"container": "/opt/scrutiny/influxdb"
+				},
+				{
+					"bind": "/run/udev",
+					"container": "/run/udev"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
 			"description": "Open-Source Privacy-respecting metasearch engine",
 			"env": [
 				{

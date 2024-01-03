@@ -1,0 +1,35 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "WebUI for smartd S.M.A.R.T monitoring",
+	"image_arm64": "ghcr.io/analogj/scrutiny:master-omnibus",
+	"image_amd64": "ghcr.io/analogj/scrutiny:master-omnibus",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/scrutiny.png",
+	"name": "scrutiny",
+	"note": "Set your port (default: 8080) and deploy the container. Edit container, enable SYS_RAWIO capability, add device /dev/sda in host and container field, finaly deploy the container again.",
+	"officialDoc": "https://github.com/AnalogJ/scrutiny",
+	"platform": "linux",
+	"ports": [
+		"8080:8080/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "scrutiny",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/scrutiny/config",
+			"container": "/opt/scrutiny/config"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/scrutiny/influxdb",
+			"container": "/opt/scrutiny/influxdb"
+		},
+		{
+			"bind": "/run/udev",
+			"container": "/run/udev"
+		}
+	],
+	"webpage": "https://github.com/AnalogJ/scrutiny"
+}
