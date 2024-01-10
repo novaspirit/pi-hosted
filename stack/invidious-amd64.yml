@@ -27,6 +27,7 @@ services:
         registration_enabled: ${REGISTRATION_ENABLED}
         login_enabled: ${LOGIN_ENABLED}
         captcha_enabled: ${CAPTCHA_ENABLED}
+        hmac_key: ${HMAC_KEY}
         channel_threads: 1
         feed_threads: 1
         default_user_preferences:

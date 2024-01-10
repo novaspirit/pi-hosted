@@ -134,6 +134,11 @@
 			]
 		},
 		{
+			"default": "CHANGE_ME!!!",
+			"label": "HMAC_KEY",
+			"name": "HMAC_KEY"
+		},
+		{
 			"default": "US",
 			"description": "Look in the configuration example (link above) for more codes",
 			"label": "REGION",
