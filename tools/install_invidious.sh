@@ -41,3 +41,4 @@ sudo chmod +x "${BASE_DIR}/$f"
 
 echo "Preparation completed, proceed installation in portainer"
 echo -e "Suggestion for \\e[1mDB_PASSWORD\\e[39m: \\e[33m$(openssl rand -base64 24)\\e[39m"
+echo -e "Suggestion for \\e[1mHMAC_KEY\\e[39m: \\e[33m$(openssl rand -hex 20)\\e[39m"
