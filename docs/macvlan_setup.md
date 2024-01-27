@@ -126,6 +126,8 @@ Enable **Enable manual container attachment** so we can add containers to this n
 
 This is all for the creation network, just click in **Create the network**.
 
+If you get an error at this point that the Pool overlaps, and you are sure you entered IP addresses correctly, the error may be resolved by sshing into the pi and running the command ```service docker restart```
+
 
 ## Connect a docker to this network
 
@@ -188,7 +190,7 @@ After=network.target
 ExecStart=/usr/local/bin/macvlan-setup.sh
 
 [Install]
-WantedBy=default.targe
+WantedBy=default.target
 ```
 
 After creating the file, enable it with systemd:
