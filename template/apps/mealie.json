@@ -70,7 +70,7 @@
 	"officialDoc": "https://hay-kot.github.io/mealie/documentation/getting-started/install/",
 	"platform": "linux",
 	"ports": [
-		"9925:80/tcp"
+		"9925:9000/tcp"
 	],
 	"restart_policy": "unless-stopped",
 	"title": "Mealie",
