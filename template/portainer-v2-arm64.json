@@ -2201,7 +2201,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "lscr.io/linuxserver/firefox:latest",
+			"image": "linuxserver/firefox:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/firefox.png",
 			"name": "Firefox",
 			"platform": "linux",
