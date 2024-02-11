@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 230 apps | 233 apps | 235 apps |
+| 106 apps | 230 apps | 233 apps | 236 apps |
 
 ---
 
@@ -207,7 +207,8 @@ List of all apps included in this project with info related to it.
 |[SmokePing](https://oss.oetiker.ch/smokeping/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-smokeping) |  |  |  |
 |[Snippet-box](https://github.com/pawelmalak/snippet-box)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/snippet-box#with-docker) |  |  | [![My Most used container! Snippet Box](../build/images/yt-badge-novaspirit.png "My Most used container! Snippet Box")](https://www.youtube.com/watch?v=v-jUyB3fvAo) |
 |[Sonarr](https://sonarr.tv/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sonarr) |  |  |  |
-|[Speedtest Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker) |  |  |  |
+|[Speedtest Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker)|:heavy_check_mark:|:x:|:x:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker) |  |  |  |
+|[Speedtest Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker) |  |  |  |
 |[Sshwifty](https://sshwifty.herokuapp.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/nirui/sshwifty#docker-image) |  |  |  |
 |[SurrealDB](https://surrealdb.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/surrealdb/surrealdb) |  |  |  |
 |[SyncThing](https://syncthing.net/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-syncthing) |  |  |  |
