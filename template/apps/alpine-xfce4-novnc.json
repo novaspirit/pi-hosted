@@ -21,8 +21,8 @@
 	"type": 1,
         "volumes": [
                 {
-                        "bind": "/portainer/Files/AppData/Config/alpine-xfce4-novnc/home/apline/downloads",
-                        "container": "/home/apline/downloads"
+                        "bind": "/portainer/Files/AppData/Config/alpine-xfce4-novnc/home/alpine/downloads",
+                        "container": "/home/alpine/downloads"
                 }
         ],
 	"webpage": "https://github.com/novaspirit/Alpine_xfce4_noVNC"
