@@ -15,8 +15,8 @@
 			"name": "PGID"
 		}
 	],
-	"image_arm64": "lscr.io/linuxserver/firefox:latest",
-	"image_amd64": "lscr.io/linuxserver/firefox:latest",
+	"image_arm64": "linuxserver/firefox:latest",
+	"image_amd64": "linuxserver/firefox:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/firefox.png",
 	"name": "Firefox",
 	"platform": "linux",
