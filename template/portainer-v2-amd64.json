@@ -10033,6 +10033,63 @@
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://wiki.znc.in/ZNC\" target=\"_blank\">https://wiki.znc.in/ZNC</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-znc\" target=\"_blank\">https://docs.linuxserver.io/images/docker-znc</a><br><br><br>"
+		},
+		{
+			"categories": [
+			  "Video",
+			  "Music",
+			  "Photos"
+			],
+			"description": "🔥Midarr, the minimal lightweight media server",
+			"env": [
+			  {
+				"default":"http://localhost:4000",
+				"label":"URL",
+				"name" : "URL"
+			  },
+			  {
+				"default": "my_user",
+				"label": "POSTGRES_USER",
+				"name": "POSTGRES_USER"
+			  },
+			  {
+				"default": "my_password",
+				"label": "POSTGRES_PASSWORD",
+				"name": "POSTGRES_PASSWORD"
+			  },
+			  {
+				"default": "admin@email.com",
+				"label": "ADMIN_EMAIL",
+				"name": "ADMIN_EMAIL"
+			  },
+			  {
+				"default": "somepassword",
+				"label": "ADMIN_PASSWORD",
+				"name": "ADMIN_PASSWORD"
+			  },
+			  {
+				"default": "someApiKey",
+				"label": "SONARR_API_KEY",
+				"name": "SONARR_API_KEY"
+			  },
+			  {
+				"default": "someApiKey",
+				"label": "RADARR_API_KEY",
+				"name": "RADARR_API_KEY"
+			  }
+			],
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/midarr.svg",
+			"name": "midarr",
+			"platform": "linux",
+			"repository": {
+			  "stackfile": "stack/midarr.yml",
+			  "url": "https://github.com/pi-hosted/pi-hosted/master/"
+			},
+			"restart_policy": "unless-stopped",
+			"title": "Midarr",
+			"type": 3,
+			"webpage": "https://github.com/midarrlabs/midarr-server",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/midarrlabs/midarr-server\" target=\"_blank\">https://github.com/midarrlabs/midarr-server</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/midarrlabs/midarr-server\" target=\"_blank\">https://github.com/midarrlabs/midarr-server</a><br><br><br>"
 		}
 	]
 }
