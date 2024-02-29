@@ -1,0 +1,58 @@
+{
+    "categories": [
+      "Video",
+      "Music",
+      "Photos"
+    ],
+    "description": "🔥Midarr, the minimal lightweight media server",
+    "env": [
+      {
+        "default":"http://localhost:4000",
+        "label":"URL",
+        "name" : "URL"
+      },
+      {
+        "default": "my_user",
+        "label": "POSTGRES_USER",
+        "name": "POSTGRES_USER"
+      },
+      {
+        "default": "my_password",
+        "label": "POSTGRES_PASSWORD",
+        "name": "POSTGRES_PASSWORD"
+      },
+      {
+        "default": "admin@email.com",
+        "label": "ADMIN_EMAIL",
+        "name": "ADMIN_EMAIL"
+      },
+      {
+        "default": "somepassword",
+        "label": "ADMIN_PASSWORD",
+        "name": "ADMIN_PASSWORD"
+      },
+      {
+        "default": "someApiKey",
+        "label": "SONARR_API_KEY",
+        "name": "SONARR_API_KEY"
+      },
+      {
+        "default": "someApiKey",
+        "label": "RADARR_API_KEY",
+        "name": "RADARR_API_KEY"
+      }
+    ],
+    "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/midarr.svg",
+    "name": "midarr",
+    "officialDoc": "https://github.com/midarrlabs/midarr-server",
+    "platform": "linux",
+    "repository": {
+      "stackfile_arm64": "stack/midarr.yml",
+      "stackfile_amd64": "stack/midarr.yml",    
+      "url": "https://github.com/pi-hosted/pi-hosted/master/"
+    },
+      "restart_policy": "unless-stopped",
+      "title": "Midarr",
+      "type": 3,
+      "webpage": "https://github.com/midarrlabs/midarr-server"
+}
