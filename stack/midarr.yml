@@ -1,0 +1,50 @@
+volumes:
+  database-data:
+
+services:
+  midarr:
+    container_name: midarr
+    image: ghcr.io/midarrlabs/midarr-server:latest
+    ports:
+      - 4000:4000
+    volumes:
+      - ${HOST_MEDIA_PATH}:/media
+    environment:
+#       App config
+      - APP_URL=${URL}
+
+#       Database config
+      - DB_USERNAME=${POSTGRES_USER}
+      - DB_PASSWORD=${POSTGRES_PASSWORD}
+      - DB_DATABASE=my_database
+      - DB_HOSTNAME=midarr
+
+#       Admin account
+      - SETUP_ADMIN_EMAIL=${ADMIN_EMAIL}
+      - SETUP_ADMIN_NAME=admin
+      - SETUP_ADMIN_PASSWORD=${ADMIN_PASSWORD} # minimum length 12
+
+#       Radarr integration
+      - RADARR_BASE_URL=localhost:7878
+      - RADARR_API_KEY=${RADARR_API_KEY}
+
+#       Sonarr integration
+      - SONARR_BASE_URL=localhost:8989
+      - SONARR_API_KEY=${SONARR_API_KEY}
+    restart: unless-stopped
+    depends_on:
+      postgresql:
+        condition: service_healthy
+
+  postgresql:
+    container_name: postgresql
+    image: postgres
+    volumes:
+      - database-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=my_database
+    restart: unless-stopped
+    healthcheck:
+      test: "exit 0"
