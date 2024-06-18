@@ -32,5 +32,10 @@ sudo docker rmi $portainer_name || warning "Failed to remove/untag images from t
 echo Pruning unused volume.  If asked answer yes.
 sudo docker volume prune -f
 
+sudo docker pull portainer/portainer-ce:latest || error "Failed to pull latest Portainer docker image!"
+
+sudo rm -rf /portainer/Files/AppData/Config/portainer
+sudo mkdir -p /portainer/Files/AppData/Config/portainer || error "Failed to create the Portainer Config Folder"
+
 echo now doing a fresh install of portainer
-sudo docker run -d -p 9000:9000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest --logo "https://pi-hosted.com/pi-hosted-logo.png" || error "Failed to execute newer version of Portainer!"
+sudo docker run -d -p 9000:9000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /portainer/Files/AppData/Config/portainer:/data portainer/portainer-ce:latest --logo "https://pi-hosted.com/pi-hosted-logo.png" || error "Failed to run Portainer docker image!"
