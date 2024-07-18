@@ -13,7 +13,7 @@ services:
       - WG_DEFAULT_DNS=${WG_DEFAULT_DNS}
       - WG_ALLOWED_IPS=${WG_ALLOWED_IPS}
       
-    image: weejewel/wg-easy
+    image: ghcr.io/wg-easy/wg-easy:latest
     container_name: wg-easy
     volumes:
       - /portainer/Files/AppData/Config/wireguard:/etc/wireguard
