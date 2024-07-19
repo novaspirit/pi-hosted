@@ -24,7 +24,7 @@
         "preInstallScript": "install_dashy.sh",
 	"platform": "linux",
 	"ports": [
-		"9100:80/tcp"
+		"9100:8080/tcp"
 	],
 	"restart_policy": "unless-stopped",
 	"title": "Dashy",
