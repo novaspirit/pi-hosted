@@ -1732,8 +1732,8 @@
 			"name": "doublecommander",
 			"platform": "linux",
 			"ports": [
-				"11500:11500/tcp",
-				"11502:11502/tcp"
+				"11500:3000/tcp",
+				"11502:3001/tcp"
 			],
 			"restart": "unless-stopped",
 			"title": "doublecommander",
