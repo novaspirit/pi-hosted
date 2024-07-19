@@ -4,12 +4,12 @@
 		"Books"
 	],
 	"description": "Kavita is a fast, feature rich, cross platform reading server.",
-	"image_arm32": "kizaing/kavita:latest",
-	"image_arm64": "kizaing/kavita:latest",
-	"image_amd64": "kizaing/kavita:latest",
+	"image_arm32": "jvmilazz0/kavita:latest",
+	"image_arm64": "jvmilazz0/kavita:latest",
+	"image_amd64": "jvmilazz0/kavita:latest",
 	"logo": "https://raw.githubusercontent.com/Kareadita/Kavita/develop/Logo/kavita.svg",
 	"name": "Kavita",
-	"officialDoc": "https://wiki.kavitareader.com/en/install/docker-install",
+	"officialDoc": "https://wiki.kavitareader.com/installation/docker",
 	"platform": "linux",
 	"ports": [
 		"5002:5000/tcp"
@@ -42,5 +42,5 @@
 			"container": "/kavita/config"
 		}
 	],
-	"webpage": "https://www.kavitareader.com/#home"
+	"webpage": "https://www.kavitareader.com/"
 }

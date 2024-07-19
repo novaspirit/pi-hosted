@@ -1,0 +1,36 @@
+{
+	"categories": [
+		"Finance"
+	],
+	"description": "Open-Source Personal Subscription Tracker.",
+	"image_amd64": "bellamy/wallos:latest",
+	"image_arm64": "bellamy/wallos:latest",
+	"logo": "https://raw.githubusercontent.com/ellite/Wallos/main/images/wallossolidwhite.png",
+	"name": "wallos",
+	"officialDoc": "https://github.com/ellite/Wallos",
+	"platform": "linux",
+	"env": [
+		{
+			"default": "Europe/London",
+			"label": "TZ",
+			"name": "TZ"
+		}
+	],
+	"ports": [
+		"8282:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Wallos",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Wallos/db",
+			"container": "/var/www/html/db"
+		},
+		{
+			"bind": "/portainer/Files/AppData/Config/Wallos/logos",
+			"container": "/var/www/html/images/uploads/logos"
+		}
+	],
+	"webpage": "https://github.com/ellite/Wallos"
+}

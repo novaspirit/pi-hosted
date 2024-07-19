@@ -277,58 +277,6 @@
 		},
 		{
 			"categories": [
-				"Wiki"
-			],
-			"description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Featuring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"default": "America/New_York",
-					"label": "TZ",
-					"name": "TZ"
-				},
-				{
-					"label": "DATABASE_PASSWORD",
-					"name": "DATABASE_PASSWORD"
-				},
-				{
-					"label": "MYSQL_ROOT_PASSWORD",
-					"name": "MYSQL_ROOT_PASSWORD"
-				},
-				{
-					"default": "http://192.168.X.Y:6875",
-					"description": "Address to access Bookstack. If using a domain, add it here. If not set correctly the app will not be accessible",
-					"label": "APP_URL",
-					"name": "APP_URL"
-				},
-				{
-					"default": "6875",
-					"label": "PORT",
-					"name": "PORT"
-				}
-			],
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bookstack2.png",
-			"name": "bookstack",
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.bookstackapp.com/\" target=\"_blank\">https://www.bookstackapp.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.bookstackapp.com/docs/admin/installation/#docker\" target=\"_blank\">https://www.bookstackapp.com/docs/admin/installation/#docker</a><br><br><br>Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
-			"platform": "linux",
-			"repository": {
-				"stackfile": "stack/bookstack.yml",
-				"url": "https://github.com/pi-hosted/pi-hosted"
-			},
-			"title": "Bookstack",
-			"type": 3
-		},
-		{
-			"categories": [
 				"Tools",
 				"Web",
 				"Webserver"
@@ -1558,7 +1506,7 @@
 				"Books"
 			],
 			"description": "Kavita is a fast, feature rich, cross platform reading server.",
-			"image": "kizaing/kavita:latest",
+			"image": "jvmilazz0/kavita:latest",
 			"logo": "https://raw.githubusercontent.com/Kareadita/Kavita/develop/Logo/kavita.svg",
 			"name": "Kavita",
 			"platform": "linux",
@@ -1593,7 +1541,7 @@
 					"container": "/kavita/config"
 				}
 			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.kavitareader.com/#home\" target=\"_blank\">https://www.kavitareader.com/#home</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.kavitareader.com/en/install/docker-install\" target=\"_blank\">https://wiki.kavitareader.com/en/install/docker-install</a><br><br><br>"
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.kavitareader.com/\" target=\"_blank\">https://www.kavitareader.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.kavitareader.com/installation/docker\" target=\"_blank\">https://wiki.kavitareader.com/installation/docker</a><br><br><br>"
 		},
 		{
 			"categories": [

@@ -716,7 +716,7 @@
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/bookstack.yml",
-				"url": "https://github.com/pi-hosted/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted/"
 			},
 			"title": "Bookstack",
 			"type": 3
@@ -4040,7 +4040,7 @@
 				"Books"
 			],
 			"description": "Kavita is a fast, feature rich, cross platform reading server.",
-			"image": "kizaing/kavita:latest",
+			"image": "jvmilazz0/kavita:latest",
 			"logo": "https://raw.githubusercontent.com/Kareadita/Kavita/develop/Logo/kavita.svg",
 			"name": "Kavita",
 			"platform": "linux",
@@ -4075,7 +4075,7 @@
 					"container": "/kavita/config"
 				}
 			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.kavitareader.com/#home\" target=\"_blank\">https://www.kavitareader.com/#home</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.kavitareader.com/en/install/docker-install\" target=\"_blank\">https://wiki.kavitareader.com/en/install/docker-install</a><br><br><br>"
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.kavitareader.com/\" target=\"_blank\">https://www.kavitareader.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.kavitareader.com/installation/docker\" target=\"_blank\">https://wiki.kavitareader.com/installation/docker</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -9524,6 +9524,40 @@
 			"title": "Vlmcsd - KMS",
 			"type": 1,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/mikolatero/vlmcsd\" target=\"_blank\">https://hub.docker.com/r/mikolatero/vlmcsd</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/mikolatero/docker-vlmcsd\" target=\"_blank\">https://github.com/mikolatero/docker-vlmcsd</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Finance"
+			],
+			"description": "Open-Source Personal Subscription Tracker.",
+			"image": "bellamy/wallos:latest",
+			"logo": "https://raw.githubusercontent.com/ellite/Wallos/main/images/wallossolidwhite.png",
+			"name": "wallos",
+			"platform": "linux",
+			"env": [
+				{
+					"default": "Europe/London",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"ports": [
+				"8282:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Wallos",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Wallos/db",
+					"container": "/var/www/html/db"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Wallos/logos",
+					"container": "/var/www/html/images/uploads/logos"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/ellite/Wallos\" target=\"_blank\">https://github.com/ellite/Wallos</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ellite/Wallos\" target=\"_blank\">https://github.com/ellite/Wallos</a><br><br><br>"
 		},
 		{
 			"categories": [
