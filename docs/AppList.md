@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 104 apps | 231 apps | 234 apps | 237 apps |
+| 104 apps | 230 apps | 233 apps | 236 apps |
 
 ---
 
@@ -140,7 +140,6 @@ List of all apps included in this project with info related to it.
 |[n8n](https://n8n.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.n8n.io/getting-started/installation/#docker) |  |  |  |
 |[Netdata](https://www.netdata.cloud/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://learn.netdata.cloud/docs/agent/packaging/docker) |  |  |  |
 |[Nextcloud](https://nextcloud.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nextcloud) |  |  |  |
-|[NextcloudPi](https://ownyourbits.com/nextcloudpi/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://ownyourbits.com/2017/06/08/nextcloudpi-docker-for-raspberry-pi/) |  |  | [![Installing Nextcloud on Raspberry Pi Docker](../build/images/yt-badge-novaspirit.png "Installing Nextcloud on Raspberry Pi Docker")](https://www.youtube.com/watch?v=E6IrT3g5Gqc&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=9) |
 |[Nginx](https://nginx.org/en/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nginx) |  |  |  |
 |[Nginx Proxy Manager v2 with Mysql and Goaccess Charts [DEPRECATED]](https://nginxproxymanager.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://nginxproxymanager.com/setup/#using-mysql-mariadb-database) | [![](../build/images/red_doc_icon.png)](../docs/nginx_proxy_manager.md) | [![](../build/images/script_icon.png)](../tools/nginx-proxy-manager.sh) | [![Installing Nginx Proxy Manager on Docker](../build/images/yt-badge-novaspirit.png "Installing Nginx Proxy Manager on Docker")](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
 |[Nginx Proxy Manager v2 with Mysql [DEPRECATED]](https://nginxproxymanager.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://nginxproxymanager.com/setup/#using-mysql-mariadb-database) | [![](../build/images/red_doc_icon.png)](../docs/nginx_proxy_manager.md) | [![](../build/images/script_icon.png)](../tools/nginx-proxy-manager.sh) | [![Installing Nginx Proxy Manager on Docker](../build/images/yt-badge-novaspirit.png "Installing Nginx Proxy Manager on Docker")](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
