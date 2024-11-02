@@ -3,22 +3,12 @@
 		"DNS",
 		"Tools"
 	],
-	"description": "Cloudflare DDNS - A small and fast DDNS updater for Cloudflare.",
+	"description": "A robust Cloudflare DDNS updater with a small footprint. The program will detect your machine's public IP addresses and update DNS records using the Cloudflare API.",
 	"env": [
 		{
-			"default": "1000",
-			"label": "PUID",
-			"name": "PUID"
-		},
-		{
-			"default": "1000",
-			"label": "PGID",
-			"name": "PGID"
-		},
-		{
 			"default": "",
-			"label": "CF_API_TOKEN",
-			"name": "CF_API_TOKEN"
+			"label": "CLOUDFLARE_API_TOKEN",
+			"name": "CLOUDFLARE_API_TOKEN"
 		},
 		{
 			"default": "",
