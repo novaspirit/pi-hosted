@@ -28,7 +28,7 @@
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/bind9/named.conf",
-			"container": "etc/bind/named.conf"
+			"container": "/etc/bind/named.conf"
 		},
 		{
 			"bind": "/portainer/Files/AppData/Config/bind9/cache",
