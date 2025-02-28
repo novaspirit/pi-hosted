@@ -272,6 +272,7 @@ for app in template/apps/*.json; do
 		# clean variables before next loop
 		unset appjson_arm32v2 appjson_arm64v2 appjson_amd64v2 note
 		unset appjson_arm32v3 appjson_arm64v3 appjson_amd64v3
+	fi
 done
 
 # Create Templates
