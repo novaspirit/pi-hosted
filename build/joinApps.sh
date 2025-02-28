@@ -289,6 +289,8 @@ echo "Creating template $template_arm64v3"
 echo "$json_amd64v3" | jq --tab '.templates |= sort_by(.title | ascii_upcase)' > "$template_amd64v3"
 echo "Creating template $template_amd64v3"
 
+cat "$template_amd64v3"
+
 # Keep old template up to date
 cp -f "$template_arm32v2" "$Oldtemplate_arm32v2"
 echo "Creating template $Oldtemplate_arm32v2"
