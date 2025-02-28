@@ -43,7 +43,7 @@ for app in template/apps/*.json; do
 		if [[ $? -ne 0 ]]; then
 			echo "Invalid JSON in $app. Skipping..."
 			continue
-		fI
+		fi
 
 		# Add the sequential "id" for v3
     		appjson_v3=$(jq --argjson id "$id_counter" '. + {id: $id}' <<< "$appjson")
