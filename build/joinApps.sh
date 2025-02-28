@@ -39,6 +39,7 @@ for app in template/apps/*.json; do
     
 		# Adding app template to 32 and 64 bits variables
 		appjson=$(jq -e '.' < "$app" 2>/dev/null)
+		appjson_v3=$(jq -e '.' < "$app" 2>/dev/null)
   
 		if [[ $? -ne 0 ]]; then
 			echo "Invalid JSON in $app. Skipping..."
@@ -51,6 +52,7 @@ for app in template/apps/*.json; do
 
    		# Improve Notes
 		note=$( echo "$appjson" | jq '.note' )
+		note=$( echo "$appjson_v3" | jq '.note' )
 		# Clean Notes
 		[ "$note" == "null" ] && unset note
 			note=${note:1: -1}
@@ -59,7 +61,7 @@ for app in template/apps/*.json; do
 		if oweb=$( echo "$appjson" | jq -e '.webpage' ) ; then
 			oweb="<br><b>Official Webpage: </b><a href=\"${oweb:1:-1}\" target=\"_blank\">${oweb:1:-1}</a>"
 			appjson=$( echo "$appjson" | jq 'del(.webpage)' )
-			appjson_V3=$( echo "$appjson" | jq 'del(.webpage)' )
+			appjson_V3=$( echo "$appjson_v3" | jq 'del(.webpage)' )
 		else
 			unset oweb
 		fi
@@ -68,7 +70,7 @@ for app in template/apps/*.json; do
 		if odoc=$( echo "$appjson" | jq -e '.officialDoc' ) ; then
 			odoc="<br><b>Official Docker Documentation: </b><a href=\"${odoc:1:-1}\" target=\"_blank\">${odoc:1:-1}</a>"
 			appjson=$( echo "$appjson" | jq 'del(.officialDoc)' )
-			appjson_V3=$( echo "$appjson" | jq 'del(.officialDoc)' )
+			appjson_V3=$( echo "$appjson_v3" | jq 'del(.officialDoc)' )
 		else
 			unset odoc
 		fi
@@ -77,7 +79,7 @@ for app in template/apps/*.json; do
 		if PHDoc=$( echo "$appjson" | jq -e '.piHostedDoc' ) ; then
 			PHDoc="<br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"${repo}docs/${PHDoc:1:-1}\" target=\"_blank\">${PHDoc:1:-1}</a></h3>"
 			appjson=$( echo "$appjson" | jq 'del(.piHostedDoc)' )
-			appjson_V3=$( echo "$appjson" | jq 'del(.piHostedDoc)' )
+			appjson_V3=$( echo "$appjson_v3" | jq 'del(.piHostedDoc)' )
 		else
 			unset PHDoc
 		fi
@@ -88,7 +90,7 @@ for app in template/apps/*.json; do
 			[ "$scriptexec" == "" ] && scriptexec="-bash-"
 			Script="<br><h3><b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- ${rawrepo}tools/${Script:1:-1} | ${scriptexec:1:-1}</h3>"
 			appjson=$( echo "$appjson" | jq 'del(.preInstallScript)' )
-			appjson_V3=$( echo "$appjson" | jq 'del(.preInstallScript)' )
+			appjson_V3=$( echo "$appjson_v3" | jq 'del(.preInstallScript)' )
 		else
 			unset Script
 		fi
@@ -96,7 +98,7 @@ for app in template/apps/*.json; do
 		# Youtube Video
 		if vidlist=$( echo "$appjson" | jq -e '.videoID' ) ; then
 			appjson=$( echo "$appjson" | jq 'del(.videoID)' )
-			appjson_v3=$( echo "$appjson" | jq 'del(.videoID)' )
+			appjson_v3=$( echo "$appjson_v3" | jq 'del(.videoID)' )
 			# If only one entry
 			if [ "$(echo "$vidlist" | wc -l )" == "1" ]; then
 				vidInfo=$(jq ".youtube[] | select(.ID==$vidlist)" "$appinfo")
@@ -131,7 +133,7 @@ for app in template/apps/*.json; do
 		# Extra Scripts
 		if ExtraScript=$( echo "$appjson" | jq -e '.extraScript' ) ; then
 			appjson=$( echo "$appjson" | jq 'del(.extraScript)' )
-			appjson_v3=$( echo "$appjson" | jq 'del(.extraScript)' )
+			appjson_v3=$( echo "$appjson_v3" | jq 'del(.extraScript)' )
 			# If only one entry
 			if [ "$(echo "$ExtraScript" | wc -l )" == "1" ]; then
 				ExtraHTML="<br><b>Extra useful script: </b><a href=\"${repo}tools/${ExtraScript:1:-1}\" target=\"_blank\">${ExtraScript:1:-1}</a>"
@@ -154,7 +156,7 @@ for app in template/apps/*.json; do
 		note="$header$oweb$odoc$PHDoc<br>$Script$ExtraHTML<br>$VideoURL<br>$note"
 
 		appjson=$( echo "$appjson" | jq --arg n "$note" '.note = $n' )
-		appjson_v3=$( echo "$appjson" | jq --arg n "$note" '.note = $n' )
+		appjson_v3=$( echo "$appjson_v3" | jq --arg n "$note" '.note = $n' )
 
 		# Splitting into 32 and 64 bit jsons
 		appjson_arm32v2=$appjson
@@ -200,7 +202,7 @@ for app in template/apps/*.json; do
 			# Parsing arm 64 bit apps
 			if  echo "$appjson_arm64v3" | grep -qE '"(image|stackfile)_arm64":' ; then
 				# Rename key
-				appjson_arm64v3=$( echo "$appjson_arm64v2" | sed -E 's/"(image|stackfile)_arm64":/"\1":/' )
+				appjson_arm64v3=$( echo "$appjson_arm64v3" | sed -E 's/"(image|stackfile)_arm64":/"\1":/' )
 			else
 				# App does not contain 64bit template
 				unset appjson_arm64v3
@@ -288,8 +290,6 @@ echo "$json_arm64v3" | jq --tab '.templates |= sort_by(.title | ascii_upcase)' >
 echo "Creating template $template_arm64v3"
 echo "$json_amd64v3" | jq --tab '.templates |= sort_by(.title | ascii_upcase)' > "$template_amd64v3"
 echo "Creating template $template_amd64v3"
-
-cat "$template_amd64v3"
 
 # Keep old template up to date
 cp -f "$template_arm32v2" "$Oldtemplate_arm32v2"
