@@ -8,9 +8,12 @@ on:
   #- cron:  '15 0 * * *'
 env:
  appsfolder: template/apps
- ptArm32: template/portainer-v2-arm32.json
- ptArm64: template/portainer-v2-arm64.json
- ptAmd64: template/portainer-v2-amd64.json
+ ptArm32v2: template/portainer-v2-arm32.json
+ ptArm64v2: template/portainer-v2-arm64.json
+ ptAmd64v2: template/portainer-v2-amd64.json
+ ptArm32v3: template/portainer-v3-arm32.json
+ ptArm64v3: template/portainer-v3-arm64.json
+ ptAmd64v3: template/portainer-v3-amd64.json
  README: docs/README.md
  README_TEMPLATE: build/templates/template_README.md
  TOOLSREADME: tools/README.md
@@ -53,9 +56,12 @@ jobs:
       run: |
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
-        git add -- "$ptArm32"
-        git add -- "$ptArm64"
-        git add -- "$ptAmd64"
+        git add -- "$ptArm32v2"
+        git add -- "$ptArm64v2"
+        git add -- "$ptAmd64v2"
+        git add -- "$ptArm32v3"
+        git add -- "$ptArm64v3"
+        git add -- "$ptAmd64v3"
         git add ./pi-hosted_template/template/portainer-v2.json
         git add -- "$README"
         git add -- "$TOOLSREADME"
