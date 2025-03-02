@@ -59,14 +59,14 @@ You're done! Now just click App Templates and deploy applications!
 
 #### Portainer Architecture
 
-Portainer V2.1 or lower
+Portainer V2.21 or lower
 | Architecture | Tested OS's | URL |
 | ------------ | ----------- | --- |
 | **Arm32 | Pi OS, DietPi | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-arm32.json |
 | Arm64   | Pi OS, Ubuntu, DietPi | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-arm64.json |
 | Amd64   | Ubuntu, Debian | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v2-amd64.json |
 
-Portainer V2.2 or higher
+Portainer V2.22 or higher
 | Architecture | Tested OS's | URL |
 | ------------ | ----------- | --- |
 | Arm64   | Pi OS, Ubuntu, DietPi | https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/template/portainer-v3-arm64.json |
