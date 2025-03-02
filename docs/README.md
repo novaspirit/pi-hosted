@@ -53,7 +53,7 @@ wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/update_po
 
 Goto pi-ip:9000 and then login
 
-Click Settings, in the bottom-left corner, and paste the Portainer v3 json file link from below into the "App Templates" box.
+Click Settings, in the bottom-left corner, and paste the Portainer v2 json file link from below into the "App Templates" box.
 
 You're done! Now just click App Templates and deploy applications!
 
