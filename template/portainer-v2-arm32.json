@@ -1263,7 +1263,7 @@
 				"Dashboard"
 			],
 			"description": "Homepage helps you organize your self-hosted services by making them accessible from a single place",
-			"image": "ghcr.io/gethomepage/homepage:latest",
+			"image": "ghcr.io/gethomepage/homepage:v0.10.9",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homepage.png",
 			"name": "Homepage",
 			"platform": "linux",
