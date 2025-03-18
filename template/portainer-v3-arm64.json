@@ -1398,6 +1398,31 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Easy and safe way to manage your crontab file",
+			"image": "rmiddle/crontab-ui:master",
+			"name": "crontab-ui",
+			"platform": "linux",
+			"ports": [
+				"5011:5000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "crontab-ui",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/crontab-ui/crontab-ui",
+					"container": "/crontab-ui"
+				}
+			],
+			"webpage": "",
+			"id": 38,
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"\" target=\"_blank\"></a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Music"
 			],
 			"description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
@@ -1435,7 +1460,7 @@
 				}
 			],
 			"webpage": "https://owntone.github.io/owntone-server/",
-			"id": 39,
+			"id": 40,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://owntone.github.io/owntone-server/\" target=\"_blank\">https://owntone.github.io/owntone-server/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-daapd\" target=\"_blank\">https://docs.linuxserver.io/images/docker-daapd</a><br><br><br>"
 		},
 		{
@@ -1462,7 +1487,7 @@
 				}
 			],
 			"webpage": "https://github.com/rmountjoy92/DashMachine",
-			"id": 40,
+			"id": 41,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/rmountjoy92/DashMachine\" target=\"_blank\">https://github.com/rmountjoy92/DashMachine</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/rmountjoy92/DashMachine\" target=\"_blank\">https://github.com/rmountjoy92/DashMachine</a><br><br><br>"
 		},
 		{
@@ -1501,7 +1526,7 @@
 				}
 			],
 			"webpage": "https://dashy.to",
-			"id": 41,
+			"id": 42,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://dashy.to\" target=\"_blank\">https://dashy.to</a><br><b>Official Docker Documentation: </b><a href=\"https://dashy.to/docs/quick-start\" target=\"_blank\">https://dashy.to/docs/quick-start</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_dashy.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_dashy.sh | bash</h3><br><br>"
 		},
 		{
@@ -1559,7 +1584,7 @@
 				}
 			],
 			"webpage": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/davinci.md",
-			"id": 42,
+			"id": 43,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/davinci.md\" target=\"_blank\">https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/davinci.md</a><br><b>Official Docker Documentation: </b><a href=\"https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/davinci.md\" target=\"_blank\">https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/davinci.md</a><br><br><br>"
 		},
 		{
@@ -1603,7 +1628,7 @@
 				}
 			],
 			"webpage": "https://github.com/linuxserver/davos",
-			"id": 43,
+			"id": 44,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/linuxserver/davos\" target=\"_blank\">https://github.com/linuxserver/davos</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-davos\" target=\"_blank\">https://docs.linuxserver.io/images/docker-davos</a><br><br><br>"
 		},
 		{
@@ -1635,7 +1660,7 @@
 				}
 			],
 			"webpage": "https://deemix.app/",
-			"id": 44
+			"id": 45
 		},
 		{
 			"categories": [
@@ -1682,7 +1707,7 @@
 				}
 			],
 			"webpage": "https://www.deluge-torrent.org/",
-			"id": 46,
+			"id": 47,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.deluge-torrent.org/\" target=\"_blank\">https://www.deluge-torrent.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-deluge\" target=\"_blank\">https://docs.linuxserver.io/images/docker-deluge</a><br><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=IWj1-j2QWvo target=\"_blank\">Novaspirit Tech - Route Docker Traffic Through VPN Container</a><br><br>"
 		},
 		{
@@ -1770,7 +1795,7 @@
 				}
 			],
 			"webpage": "https://www.deluge-torrent.org/",
-			"id": 45,
+			"id": 46,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.deluge-torrent.org/\" target=\"_blank\">https://www.deluge-torrent.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/sgtsquiggs/docker-deluge-openvpn\" target=\"_blank\">https://github.com/sgtsquiggs/docker-deluge-openvpn</a><br><br><br>"
 		},
 		{
@@ -1811,7 +1836,7 @@
 				}
 			],
 			"webpage": "https://domoticz.com/",
-			"id": 48,
+			"id": 49,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://domoticz.com/\" target=\"_blank\">https://domoticz.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-domoticz\" target=\"_blank\">https://docs.linuxserver.io/images/docker-domoticz</a><br><br><br>"
 		},
 		{
@@ -1855,7 +1880,7 @@
 					"container": "/config"
 				}
 			],
-			"id": 49,
+			"id": 50,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><br><br>"
 		},
 		{
@@ -1883,7 +1908,7 @@
 				}
 			],
 			"webpage": "https://dozzle.dev/",
-			"id": 50
+			"id": 51
 		},
 		{
 			"categories": [
@@ -1943,7 +1968,7 @@
 			"title": "Drupal",
 			"type": 3,
 			"webpage": "https://www.drupal.org/",
-			"id": 52,
+			"id": 53,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.drupal.org/\" target=\"_blank\">https://www.drupal.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration\" target=\"_blank\">https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_drupal.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_drupal.sh | bash</h3><br><br>"
 		},
 		{
@@ -1988,7 +2013,7 @@
 			"title": "Duck DNS",
 			"type": 1,
 			"webpage": "https://www.duckdns.org/",
-			"id": 53,
+			"id": 54,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.duckdns.org/\" target=\"_blank\">https://www.duckdns.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-duckdns\" target=\"_blank\">https://docs.linuxserver.io/images/docker-duckdns</a><br><br><br>"
 		},
 		{
@@ -2039,7 +2064,7 @@
 				}
 			],
 			"webpage": "https://www.duplicati.com/",
-			"id": 54,
+			"id": 55,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.duplicati.com/\" target=\"_blank\">https://www.duplicati.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-duplicati\" target=\"_blank\">https://docs.linuxserver.io/images/docker-duplicati</a><br><br><br>"
 		},
 		{
@@ -2076,7 +2101,7 @@
 				}
 			],
 			"webpage": "https://mosquitto.org/",
-			"id": 55,
+			"id": 56,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://mosquitto.org/\" target=\"_blank\">https://mosquitto.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://mosquitto.org/\" target=\"_blank\">https://mosquitto.org/</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_mosquitto.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_mosquitto.sh | bash</h3><br><br>"
 		},
 		{
@@ -2130,7 +2155,7 @@
 				}
 			],
 			"webpage": "https://emby.media/",
-			"id": 56,
+			"id": 57,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://emby.media/\" target=\"_blank\">https://emby.media/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-emby\" target=\"_blank\">https://docs.linuxserver.io/images/docker-emby</a><br><br><br>"
 		},
 		{
@@ -2158,7 +2183,7 @@
 				}
 			],
 			"webpage": "https://github.com/mregni/EmbyStat",
-			"id": 57
+			"id": 58
 		},
 		{
 			"categories": [
@@ -2201,7 +2226,7 @@
 				}
 			],
 			"webpage": "https://hub.docker.com/r/linuxserver/emulatorjs",
-			"id": 58,
+			"id": 59,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/linuxserver/emulatorjs\" target=\"_blank\">https://hub.docker.com/r/linuxserver/emulatorjs</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/EmulatorJS/EmulatorJS\" target=\"_blank\">https://github.com/EmulatorJS/EmulatorJS</a><br><br><br>"
 		},
 		{
@@ -2237,7 +2262,7 @@
 				}
 			],
 			"webpage": "https://filebrowser.org/",
-			"id": 60
+			"id": 61
 		},
 		{
 			"categories": [
@@ -2284,7 +2309,7 @@
 				}
 			],
 			"webpage": "https://filebrowser.org/",
-			"id": 59
+			"id": 60
 		},
 		{
 			"categories": [
@@ -2328,7 +2353,7 @@
 				}
 			],
 			"webpage": "https://hub.docker.com/r/linuxserver/filezilla",
-			"id": 61,
+			"id": 62,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/linuxserver/filezilla\" target=\"_blank\">https://hub.docker.com/r/linuxserver/filezilla</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/filezilla\" target=\"_blank\">https://hub.docker.com/r/linuxserver/filezilla</a><br><br><br>"
 		},
 		{
@@ -2404,7 +2429,7 @@
 				}
 			],
 			"webpage": "https://github.com/pawelmalak/flame",
-			"id": 62,
+			"id": 63,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pawelmalak/flame\" target=\"_blank\">https://github.com/pawelmalak/flame</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pawelmalak/flame#with-docker-recommended\" target=\"_blank\">https://github.com/pawelmalak/flame#with-docker-recommended</a><br><br><br>"
 		},
 		{
@@ -2496,7 +2521,7 @@
 				}
 			],
 			"webpage": "https://github.com/Dullage/flatnotes",
-			"id": 63,
+			"id": 64,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Dullage/flatnotes\" target=\"_blank\">https://github.com/Dullage/flatnotes</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/dullage/flatnotes\" target=\"_blank\">https://hub.docker.com/r/dullage/flatnotes</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_flatnotes.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_flatnotes.sh | bash</h3><br><br>"
 		},
 		{
@@ -2538,7 +2563,7 @@
 				}
 			],
 			"webpage": "https://foldingathome.org/?lng=en",
-			"id": 64,
+			"id": 65,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://foldingathome.org/?lng=en\" target=\"_blank\">https://foldingathome.org/?lng=en</a><br><br><br>"
 		},
 		{
@@ -2587,7 +2612,7 @@
 				}
 			],
 			"webpage": "https://foundryvtt.com/",
-			"id": 65,
+			"id": 66,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://foundryvtt.com/\" target=\"_blank\">https://foundryvtt.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/felddy/foundryvtt\" target=\"_blank\">https://hub.docker.com/r/felddy/foundryvtt</a><br><br><br>"
 		},
 		{
@@ -2625,7 +2650,7 @@
 				}
 			],
 			"webpage": "https://www.freshrss.org/",
-			"id": 66,
+			"id": 67,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.freshrss.org/\" target=\"_blank\">https://www.freshrss.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/FreshRSS/FreshRSS/tree/edge/Docker\" target=\"_blank\">https://github.com/FreshRSS/FreshRSS/tree/edge/Docker</a><br><br><br>"
 		},
 		{
@@ -2673,7 +2698,7 @@
 				}
 			],
 			"webpage": "https://github.com/hubbcaps/gazee",
-			"id": 67,
+			"id": 68,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/hubbcaps/gazee\" target=\"_blank\">https://github.com/hubbcaps/gazee</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/gazee\" target=\"_blank\">https://hub.docker.com/r/linuxserver/gazee</a><br><br><br>"
 		},
 		{
@@ -2712,7 +2737,7 @@
 			],
 			"officialDoc": "https://hub.docker.com/_/ghost",
 			"webpage": "https://github.com/docker-library/docs/tree/master/ghost",
-			"id": 68,
+			"id": 69,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/docker-library/docs/tree/master/ghost\" target=\"_blank\">https://github.com/docker-library/docs/tree/master/ghost</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/ghost\" target=\"_blank\">https://hub.docker.com/_/ghost</a><br><br><br>"
 		},
 		{
@@ -2764,7 +2789,7 @@
 			"title": "Ghostfolio",
 			"type": 3,
 			"webpage": "https://ghostfol.io/",
-			"id": 69,
+			"id": 70,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://ghostfol.io/\" target=\"_blank\">https://ghostfol.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ghostfolio/ghostfolio#self-hosting\" target=\"_blank\">https://github.com/ghostfolio/ghostfolio#self-hosting</a><br><br><br>"
 		},
 		{
@@ -2813,7 +2838,7 @@
 				}
 			],
 			"webpage": "https://gitea.com/",
-			"id": 71
+			"id": 72
 		},
 		{
 			"categories": [
@@ -2871,7 +2896,7 @@
 			"title": "Gitea with Mariadb",
 			"type": 3,
 			"webpage": "https://gitea.com/",
-			"id": 70
+			"id": 71
 		},
 		{
 			"categories": [
@@ -2890,7 +2915,7 @@
 			"title": "Go-Socks5-Proxy",
 			"type": 1,
 			"webpage": "https://hub.docker.com/r/serjs/go-socks5-proxy",
-			"id": 72,
+			"id": 73,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/serjs/go-socks5-proxy\" target=\"_blank\">https://hub.docker.com/r/serjs/go-socks5-proxy</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/serjs/go-socks5-proxy\" target=\"_blank\">https://hub.docker.com/r/serjs/go-socks5-proxy</a><br><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=IWj1-j2QWvo target=\"_blank\">Novaspirit Tech - Route Docker Traffic Through VPN Container</a><br><br>"
 		},
 		{
@@ -2935,7 +2960,7 @@
 				}
 			],
 			"webpage": "https://gotify.net/",
-			"id": 73
+			"id": 74
 		},
 		{
 			"categories": [
@@ -2959,7 +2984,7 @@
 			"title": "Grafana",
 			"type": 3,
 			"webpage": "https://grafana.com/grafana/",
-			"id": 74,
+			"id": 75,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://grafana.com/grafana/\" target=\"_blank\">https://grafana.com/grafana/</a><br><b>Official Docker Documentation: </b><a href=\"https://grafana.com/docs/grafana/v9.0/setup-grafana/installation/docker/\" target=\"_blank\">https://grafana.com/docs/grafana/v9.0/setup-grafana/installation/docker/</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_grafana.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_grafana.sh | bash</h3><br><br>"
 		},
 		{
@@ -2995,7 +3020,7 @@
 			"title": "Graylog",
 			"type": 3,
 			"webpage": "https://www.graylog.org",
-			"id": 75,
+			"id": 76,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.graylog.org\" target=\"_blank\">https://www.graylog.org</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.graylog.org/docs/docker\" target=\"_blank\">https://docs.graylog.org/docs/docker</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/graylog_install.md\" target=\"_blank\">graylog_install.md</a></h3><br><br><br>"
 		},
 		{
@@ -3040,7 +3065,7 @@
 				}
 			],
 			"webpage": "https://grocy.info/",
-			"id": 76,
+			"id": 77,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://grocy.info/\" target=\"_blank\">https://grocy.info/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-grocy\" target=\"_blank\">https://docs.linuxserver.io/images/docker-grocy</a><br><br><br>"
 		},
 		{
@@ -3068,7 +3093,7 @@
 				}
 			],
 			"webpage": "https://guacamole.apache.org/",
-			"id": 77
+			"id": 78
 		},
 		{
 			"categories": [
@@ -3113,7 +3138,7 @@
 				}
 			],
 			"webpage": "https://github.com/rembo10/headphones",
-			"id": 79,
+			"id": 80,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/rembo10/headphones\" target=\"_blank\">https://github.com/rembo10/headphones</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-headphones\" target=\"_blank\">https://docs.linuxserver.io/images/docker-headphones</a><br><br><br>"
 		},
 		{
@@ -3154,7 +3179,7 @@
 				}
 			],
 			"webpage": "https://heimdall.site/",
-			"id": 80,
+			"id": 81,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://heimdall.site/\" target=\"_blank\">https://heimdall.site/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-heimdall\" target=\"_blank\">https://docs.linuxserver.io/images/docker-heimdall</a><br><br><br>"
 		},
 		{
@@ -3203,7 +3228,7 @@
 			],
 			"officialDoc": "https://github.com/ajnart/homarr",
 			"webpage": "https://homarr.vercel.app/",
-			"id": 82
+			"id": 83
 		},
 		{
 			"categories": [
@@ -3247,7 +3272,7 @@
 			],
 			"officialDoc": "https://github.com/ajnart/homarr",
 			"webpage": "https://homarr.vercel.app/",
-			"id": 81
+			"id": 82
 		},
 		{
 			"description": "Home Assistant is a free and open-source software for home automation that is designed to be the central control system for smart home devices with focus on local control and privacy.",
@@ -3269,7 +3294,7 @@
 				}
 			],
 			"webpage": "https://www.home-assistant.io/",
-			"id": 83,
+			"id": 84,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.home-assistant.io/\" target=\"_blank\">https://www.home-assistant.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.home-assistant.io/installation/raspberrypi#install-home-assistant-container\" target=\"_blank\">https://www.home-assistant.io/installation/raspberrypi#install-home-assistant-container</a><br><br><br>"
 		},
 		{
@@ -3322,7 +3347,7 @@
 				}
 			],
 			"webpage": "https://homebridge.io/",
-			"id": 85
+			"id": 86
 		},
 		{
 			"categories": [
@@ -3374,7 +3399,7 @@
 				}
 			],
 			"webpage": "https://homebridge.io/",
-			"id": 84
+			"id": 85
 		},
 		{
 			"categories": [
@@ -3410,7 +3435,7 @@
 				}
 			],
 			"webpage": "https://github.com/benphelps/homepage",
-			"id": 86,
+			"id": 87,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/benphelps/homepage\" target=\"_blank\">https://github.com/benphelps/homepage</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/benphelps/homepage\" target=\"_blank\">https://github.com/benphelps/homepage</a><br><br><br>"
 		},
 		{
@@ -3451,7 +3476,7 @@
 				}
 			],
 			"webpage": "https://github.com/bastienwirtz/homer",
-			"id": 87
+			"id": 88
 		},
 		{
 			"categories": [
@@ -3490,7 +3515,7 @@
 				}
 			],
 			"webpage": "https://htpc.io/",
-			"id": 88,
+			"id": 89,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://htpc.io/\" target=\"_blank\">https://htpc.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-htpcmanager\" target=\"_blank\">https://docs.linuxserver.io/images/docker-htpcmanager</a><br><br><br>"
 		},
 		{
@@ -3517,7 +3542,7 @@
 				}
 			],
 			"webpage": "https://github.com/huginn/huginn",
-			"id": 89,
+			"id": 90,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/huginn/huginn\" target=\"_blank\">https://github.com/huginn/huginn</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/huginn/huginn/tree/master/docker\" target=\"_blank\">https://github.com/huginn/huginn/tree/master/docker</a><br><br><br>"
 		},
 		{
@@ -3550,7 +3575,7 @@
 				}
 			],
 			"webpage": "https://www.influxdata.com/",
-			"id": 90
+			"id": 91
 		},
 		{
 			"categories": [
@@ -3609,7 +3634,7 @@
 				}
 			],
 			"webpage": "https://www.influxdata.com/",
-			"id": 91
+			"id": 92
 		},
 		{
 			"categories": [
@@ -3801,7 +3826,7 @@
 			"title": "Invidious",
 			"type": 3,
 			"webpage": "https://invidious.io/",
-			"id": 92
+			"id": 93
 		},
 		{
 			"categories": [
@@ -3838,7 +3863,7 @@
 				}
 			],
 			"webpage": "https://github.com/buanet/ioBroker.docker",
-			"id": 93,
+			"id": 94,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/buanet/ioBroker.docker\" target=\"_blank\">https://github.com/buanet/ioBroker.docker</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/buanet/ioBroker.docker\" target=\"_blank\">https://github.com/buanet/ioBroker.docker</a><br><br><br>"
 		},
 		{
@@ -3881,7 +3906,7 @@
 				}
 			],
 			"webpage": "https://github.com/Jackett/Jackett",
-			"id": 94,
+			"id": 95,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Jackett/Jackett\" target=\"_blank\">https://github.com/Jackett/Jackett</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-jackett\" target=\"_blank\">https://docs.linuxserver.io/images/docker-jackett</a><br><br><br>"
 		},
 		{
@@ -3929,7 +3954,7 @@
 				}
 			],
 			"webpage": "https://my.jdownloader.org/",
-			"id": 95,
+			"id": 96,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://my.jdownloader.org/\" target=\"_blank\">https://my.jdownloader.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/jaymoulin/docker-jdownloader\" target=\"_blank\">https://github.com/jaymoulin/docker-jdownloader</a><br><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4 target=\"_blank\">Novaspirit Tech - Installing JDownloader and File Browser On The Pi Docker Server</a><br><br>"
 		},
 		{
@@ -3983,7 +4008,7 @@
 				}
 			],
 			"webpage": "https://jellyfin.org/",
-			"id": 96,
+			"id": 97,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://jellyfin.org/\" target=\"_blank\">https://jellyfin.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-jellyfin\" target=\"_blank\">https://docs.linuxserver.io/images/docker-jellyfin</a><br><br><br>"
 		},
 		{
@@ -4023,7 +4048,7 @@
 				}
 			],
 			"webpage": "https://jfa-go.com/",
-			"id": 98
+			"id": 99
 		},
 		{
 			"categories": [
@@ -4072,7 +4097,7 @@
 			],
 			"officialDoc": "https://hub.docker.com/r/fallenbagel/jellyseerr",
 			"webpage": "https://github.com/Fallenbagel/jellyseerr",
-			"id": 97,
+			"id": 98,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Fallenbagel/jellyseerr\" target=\"_blank\">https://github.com/Fallenbagel/jellyseerr</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/fallenbagel/jellyseerr\" target=\"_blank\">https://hub.docker.com/r/fallenbagel/jellyseerr</a><br><br><br>"
 		},
 		{
@@ -4127,7 +4152,7 @@
 			"title": "Joplin server",
 			"type": 3,
 			"webpage": "https://hub.docker.com/r/etechonomy/joplin-server",
-			"id": 99,
+			"id": 100,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/etechonomy/joplin-server\" target=\"_blank\">https://hub.docker.com/r/etechonomy/joplin-server</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/etechonomy/joplin-server\" target=\"_blank\">https://github.com/etechonomy/joplin-server</a><br><br><br>"
 		},
 		{
@@ -4168,7 +4193,7 @@
 				}
 			],
 			"webpage": "https://www.kasmweb.com/",
-			"id": 101
+			"id": 102
 		},
 		{
 			"categories": [
@@ -4212,7 +4237,7 @@
 				}
 			],
 			"webpage": "https://www.kasmweb.com/",
-			"id": 100
+			"id": 101
 		},
 		{
 			"categories": [
@@ -4257,7 +4282,7 @@
 				}
 			],
 			"webpage": "https://www.kavitareader.com/",
-			"id": 102,
+			"id": 103,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.kavitareader.com/\" target=\"_blank\">https://www.kavitareader.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.kavitareader.com/installation/docker\" target=\"_blank\">https://wiki.kavitareader.com/installation/docker</a><br><br><br>"
 		},
 		{
@@ -4288,7 +4313,7 @@
 			"title": "Klipper[Testing], Mainsail, Moonraker",
 			"type": 3,
 			"webpage": "https://hub.docker.com/r/mkuf/klipper",
-			"id": 103
+			"id": 104
 		},
 		{
 			"categories": [
@@ -4327,7 +4352,7 @@
 				}
 			],
 			"webpage": "https://kodi.tv/",
-			"id": 104,
+			"id": 105,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://kodi.tv/\" target=\"_blank\">https://kodi.tv/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/lsioarmhf/kodi-headless-aarch64/\" target=\"_blank\">https://hub.docker.com/r/lsioarmhf/kodi-headless-aarch64/</a><br><br><br>"
 		},
 		{
@@ -4363,7 +4388,7 @@
 				}
 			],
 			"webpage": "https://github.com/gotson/komga",
-			"id": 105,
+			"id": 106,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/gotson/komga\" target=\"_blank\">https://github.com/gotson/komga</a><br><b>Official Docker Documentation: </b><a href=\"https://komga.org/\" target=\"_blank\">https://komga.org/</a><br><br><br>"
 		},
 		{
@@ -4406,7 +4431,7 @@
 				}
 			],
 			"webpage": "https://lazylibrarian.gitlab.io/",
-			"id": 106,
+			"id": 107,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://lazylibrarian.gitlab.io/\" target=\"_blank\">https://lazylibrarian.gitlab.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-lazylibrarian\" target=\"_blank\">https://docs.linuxserver.io/images/docker-lazylibrarian</a><br><br><br>"
 		},
 		{
@@ -4481,7 +4506,7 @@
 				}
 			],
 			"webpage": "https://letsencrypt.org/",
-			"id": 107,
+			"id": 108,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://letsencrypt.org/\" target=\"_blank\">https://letsencrypt.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/letsencrypt\" target=\"_blank\">https://hub.docker.com/r/linuxserver/letsencrypt</a><br><br><br>"
 		},
 		{
@@ -4508,7 +4533,7 @@
 				}
 			],
 			"webpage": "https://libreddit.silkky.cloud/",
-			"id": 108,
+			"id": 109,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://libreddit.silkky.cloud/\" target=\"_blank\">https://libreddit.silkky.cloud/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/spikecodes/libreddit#2-docker\" target=\"_blank\">https://github.com/spikecodes/libreddit#2-docker</a><br><br><br>"
 		},
 		{
@@ -4547,7 +4572,7 @@
 				}
 			],
 			"webpage": "https://librespeed.org/",
-			"id": 109,
+			"id": 110,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://librespeed.org/\" target=\"_blank\">https://librespeed.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-librespeed\" target=\"_blank\">https://docs.linuxserver.io/images/docker-librespeed</a><br><br><br>"
 		},
 		{
@@ -4594,7 +4619,7 @@
 				}
 			],
 			"webpage": "https://lidarr.audio/",
-			"id": 110,
+			"id": 111,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://lidarr.audio/\" target=\"_blank\">https://lidarr.audio/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-lidarr\" target=\"_blank\">https://docs.linuxserver.io/images/docker-lidarr</a><br><br><br>"
 		},
 		{
@@ -4637,7 +4662,7 @@
 			"title": "Lingva Translate",
 			"type": 1,
 			"webpage": "https://lingva.ml/",
-			"id": 111,
+			"id": 112,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://lingva.ml/\" target=\"_blank\">https://lingva.ml/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/TheDavidDelta/lingva-translate\" target=\"_blank\">https://github.com/TheDavidDelta/lingva-translate</a><br><br><br>"
 		},
 		{
@@ -4742,7 +4767,7 @@
 				}
 			],
 			"webpage": "https://github.com/nitnelave/lldap",
-			"id": 112,
+			"id": 113,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/nitnelave/lldap\" target=\"_blank\">https://github.com/nitnelave/lldap</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/nitnelave/lldap\" target=\"_blank\">https://github.com/nitnelave/lldap</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_lldap.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_lldap.sh | bash</h3><br><br>"
 		},
 		{
@@ -4812,7 +4837,7 @@
 				}
 			],
 			"webpage": "https://lycheeorg.github.io/",
-			"id": 114,
+			"id": 115,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://lycheeorg.github.io/\" target=\"_blank\">https://lycheeorg.github.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-lychee\" target=\"_blank\">https://docs.linuxserver.io/images/docker-lychee</a><br><br><br>"
 		},
 		{
@@ -4872,7 +4897,7 @@
 			"title": "Lychee With Mariadb",
 			"type": 3,
 			"webpage": "https://lycheeorg.github.io/",
-			"id": 113,
+			"id": 114,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://lycheeorg.github.io/\" target=\"_blank\">https://lycheeorg.github.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-lychee\" target=\"_blank\">https://docs.linuxserver.io/images/docker-lychee</a><br><br><br>"
 		},
 		{
@@ -4911,7 +4936,7 @@
 				}
 			],
 			"webpage": "https://github.com/krateng/maloja",
-			"id": 115,
+			"id": 116,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/krateng/maloja\" target=\"_blank\">https://github.com/krateng/maloja</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/krateng/maloja/blob/master/README.md\" target=\"_blank\">https://github.com/krateng/maloja/blob/master/README.md</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_maloja.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_maloja.sh | bash</h3><br><br>"
 		},
 		{
@@ -4970,7 +4995,7 @@
 				}
 			],
 			"webpage": "https://mariadb.org/",
-			"id": 116,
+			"id": 117,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://mariadb.org/\" target=\"_blank\">https://mariadb.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-mariadb\" target=\"_blank\">https://docs.linuxserver.io/images/docker-mariadb</a><br><br><br>"
 		},
 		{
@@ -5055,7 +5080,7 @@
 				}
 			],
 			"webpage": "https://hay-kot.github.io/mealie/",
-			"id": 117
+			"id": 118
 		},
 		{
 			"categories": [
@@ -5101,7 +5126,7 @@
 				}
 			],
 			"webpage": "https://pymedusa.com/",
-			"id": 118,
+			"id": 119,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://pymedusa.com/\" target=\"_blank\">https://pymedusa.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-medusa\" target=\"_blank\">https://docs.linuxserver.io/images/docker-medusa</a><br><br><br>"
 		},
 		{
@@ -5166,7 +5191,7 @@
 				}
 			],
 			"webpage": "https://hub.docker.com/r/alexta69/metube",
-			"id": 119,
+			"id": 120,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/alexta69/metube\" target=\"_blank\">https://hub.docker.com/r/alexta69/metube</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/alexta69/metube\" target=\"_blank\">https://github.com/alexta69/metube</a><br><br><br>"
 		},
 		{
@@ -5201,7 +5226,7 @@
 				}
 			],
 			"webpage": "https://www.minecraft.net/en-us",
-			"id": 120,
+			"id": 121,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.minecraft.net/en-us\" target=\"_blank\">https://www.minecraft.net/en-us</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/itzg/docker-minecraft-server#using-docker-compose\" target=\"_blank\">https://github.com/itzg/docker-minecraft-server#using-docker-compose</a><br><br><br>"
 		},
 		{
@@ -5238,7 +5263,7 @@
 				}
 			],
 			"webpage": "https://www.minetest.net/",
-			"id": 121,
+			"id": 122,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.minetest.net/\" target=\"_blank\">https://www.minetest.net/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-minetest\" target=\"_blank\">https://docs.linuxserver.io/images/docker-minetest</a><br><br><br>"
 		},
 		{
@@ -5295,7 +5320,7 @@
 				}
 			],
 			"webpage": "https://min.io/",
-			"id": 122,
+			"id": 123,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://min.io/\" target=\"_blank\">https://min.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.min.io/minio/baremetal/quickstart/quickstart.html\" target=\"_blank\">https://docs.min.io/minio/baremetal/quickstart/quickstart.html</a><br><br><br>"
 		},
 		{
@@ -5331,7 +5356,7 @@
 			"title": "Minisatip",
 			"type": 1,
 			"webpage": "https://github.com/catalinii/minisatip",
-			"id": 123,
+			"id": 124,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/catalinii/minisatip\" target=\"_blank\">https://github.com/catalinii/minisatip</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-minisatip\" target=\"_blank\">https://docs.linuxserver.io/images/docker-minisatip</a><br><br><br>"
 		},
 		{
@@ -5393,7 +5418,7 @@
 			"title": "Monica",
 			"type": 3,
 			"webpage": "https://www.monicahq.com/",
-			"id": 124,
+			"id": 125,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.monicahq.com/\" target=\"_blank\">https://www.monicahq.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/monicahq/docker#use-monica-docker-image\" target=\"_blank\">https://github.com/monicahq/docker#use-monica-docker-image</a><br><br><br>"
 		},
 		{
@@ -5436,7 +5461,7 @@
 				}
 			],
 			"webpage": "https://mstream.io/",
-			"id": 125,
+			"id": 126,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://mstream.io/\" target=\"_blank\">https://mstream.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-mstream\" target=\"_blank\">https://docs.linuxserver.io/images/docker-mstream</a><br><br><br>"
 		},
 		{
@@ -5494,7 +5519,7 @@
 				}
 			],
 			"webpage": "https://www.mumble.info/",
-			"id": 126,
+			"id": 127,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.mumble.info/\" target=\"_blank\">https://www.mumble.info/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/yhaenggi/murmur-docker\" target=\"_blank\">https://github.com/yhaenggi/murmur-docker</a><br><br><br>"
 		},
 		{
@@ -5543,7 +5568,7 @@
 				}
 			],
 			"webpage": "https://musicbrainz.org/",
-			"id": 127,
+			"id": 128,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://musicbrainz.org/\" target=\"_blank\">https://musicbrainz.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/linuxserver-archive/docker-musicbrainz\" target=\"_blank\">https://github.com/linuxserver-archive/docker-musicbrainz</a><br><br><br>"
 		},
 		{
@@ -5584,7 +5609,7 @@
 				}
 			],
 			"webpage": "https://github.com/mescon/Muximux",
-			"id": 128,
+			"id": 129,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/mescon/Muximux\" target=\"_blank\">https://github.com/mescon/Muximux</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-muximux\" target=\"_blank\">https://docs.linuxserver.io/images/docker-muximux</a><br><br><br>"
 		},
 		{
@@ -5631,7 +5656,7 @@
 				}
 			],
 			"webpage": "https://github.com/mylar3/mylar3",
-			"id": 129,
+			"id": 130,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/mylar3/mylar3\" target=\"_blank\">https://github.com/mylar3/mylar3</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-mylar3\" target=\"_blank\">https://docs.linuxserver.io/images/docker-mylar3</a><br><br><br>"
 		},
 		{
@@ -5680,7 +5705,7 @@
 			],
 			"officialDoc": "https://hub.docker.com/_/mysql",
 			"webpage": "https://www.mysql.com/",
-			"id": 130,
+			"id": 131,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.mysql.com/\" target=\"_blank\">https://www.mysql.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/mysql\" target=\"_blank\">https://hub.docker.com/_/mysql</a><br><br><br>"
 		},
 		{
@@ -5725,7 +5750,7 @@
 				}
 			],
 			"webpage": "https://n8n.io/",
-			"id": 131
+			"id": 132
 		},
 		{
 			"categories": [
@@ -5788,7 +5813,7 @@
 				}
 			],
 			"webpage": "https://www.netdata.cloud/",
-			"id": 132
+			"id": 133
 		},
 		{
 			"categories": [
@@ -5840,7 +5865,7 @@
 			"title": "Nextcloud",
 			"type": 3,
 			"webpage": "https://nextcloud.com/",
-			"id": 133
+			"id": 134
 		},
 		{
 			"categories": [
@@ -5879,7 +5904,7 @@
 				}
 			],
 			"webpage": "https://nginx.org/en/",
-			"id": 139,
+			"id": 140,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginx.org/en/\" target=\"_blank\">https://nginx.org/en/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-nginx\" target=\"_blank\">https://docs.linuxserver.io/images/docker-nginx</a><br><br><br>"
 		},
 		{
@@ -5959,7 +5984,7 @@
 			"title": "Nginx Proxy Manager v2 with Mysql and Goaccess Charts [DEPRECATED]",
 			"type": 3,
 			"webpage": "https://nginxproxymanager.com/",
-			"id": 134,
+			"id": 135,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#using-mysql-mariadb-database\" target=\"_blank\">https://nginxproxymanager.com/setup/#using-mysql-mariadb-database</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a></h3><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/nginx-proxy-manager.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/nginx-proxy-manager.sh | bash</h3><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10 target=\"_blank\">Novaspirit Tech - Installing Nginx Proxy Manager on Docker</a><br><br>"
 		},
 		{
@@ -6014,7 +6039,7 @@
 			"title": "Nginx Proxy Manager v2 with Mysql [DEPRECATED]",
 			"type": 3,
 			"webpage": "https://nginxproxymanager.com/",
-			"id": 135,
+			"id": 136,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#using-mysql-mariadb-database\" target=\"_blank\">https://nginxproxymanager.com/setup/#using-mysql-mariadb-database</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a></h3><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/nginx-proxy-manager.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/nginx-proxy-manager.sh | bash</h3><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10 target=\"_blank\">Novaspirit Tech - Installing Nginx Proxy Manager on Docker</a><br><br>"
 		},
 		{
@@ -6083,7 +6108,7 @@
 			"title": "Nginx Proxy Manager v2 with Sqlite and Goaccess Charts",
 			"type": 3,
 			"webpage": "https://nginxproxymanager.com/",
-			"id": 136,
+			"id": 137,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#running-the-app\" target=\"_blank\">https://nginxproxymanager.com/setup/#running-the-app</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a></h3><br><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10 target=\"_blank\">Novaspirit Tech - Installing Nginx Proxy Manager on Docker</a><br><br>"
 		},
 		{
@@ -6134,7 +6159,7 @@
 				}
 			],
 			"webpage": "https://nginxproxymanager.com/",
-			"id": 137,
+			"id": 138,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/\" target=\"_blank\">https://nginxproxymanager.com/setup/</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a></h3><br><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10 target=\"_blank\">Novaspirit Tech - Installing Nginx Proxy Manager on Docker</a><br><br>"
 		},
 		{
@@ -6181,7 +6206,7 @@
 				}
 			],
 			"webpage": "https://nginxproxymanager.com/",
-			"id": 138,
+			"id": 139,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/\" target=\"_blank\">https://nginxproxymanager.com/setup/</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a></h3><br><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10 target=\"_blank\">Novaspirit Tech - Installing Nginx Proxy Manager on Docker</a><br><br>"
 		},
 		{
@@ -6203,7 +6228,7 @@
 			"title": "Nitter",
 			"type": 3,
 			"webpage": "https://nitter.net/",
-			"id": 140,
+			"id": 141,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nitter.net/\" target=\"_blank\">https://nitter.net/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/zedeus/nitter\" target=\"_blank\">https://github.com/zedeus/nitter</a><br><br><br>"
 		},
 		{
@@ -6240,7 +6265,7 @@
 			"title": "Node Red",
 			"type": 3,
 			"webpage": "https://nodered.org/",
-			"id": 141,
+			"id": 142,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nodered.org/\" target=\"_blank\">https://nodered.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://nodered.org/docs/getting-started/docker\" target=\"_blank\">https://nodered.org/docs/getting-started/docker</a><br><br><br>"
 		},
 		{
@@ -6308,7 +6333,7 @@
 			"type": 1,
 			"privileged": true,
 			"webpage": "https://github.com/azinchen/nordvpn",
-			"id": 142,
+			"id": 143,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/azinchen/nordvpn\" target=\"_blank\">https://github.com/azinchen/nordvpn</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/azinchen/nordvpn\" target=\"_blank\">https://hub.docker.com/r/azinchen/nordvpn</a><br><br><br>"
 		},
 		{
@@ -6366,7 +6391,7 @@
 			"title": "NUT Server",
 			"type": 1,
 			"webpage": "https://networkupstools.org",
-			"id": 143,
+			"id": 144,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://networkupstools.org\" target=\"_blank\">https://networkupstools.org</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/instantlinux/nut-upsd\" target=\"_blank\">https://hub.docker.com/r/instantlinux/nut-upsd</a><br><br><br>"
 		},
 		{
@@ -6408,7 +6433,7 @@
 				}
 			],
 			"webpage": "https://nzbget.net/",
-			"id": 144,
+			"id": 145,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nzbget.net/\" target=\"_blank\">https://nzbget.net/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-nzbget\" target=\"_blank\">https://docs.linuxserver.io/images/docker-nzbget</a><br><br><br>"
 		},
 		{
@@ -6452,7 +6477,7 @@
 				}
 			],
 			"webpage": "https://github.com/theotherp/nzbhydra2",
-			"id": 145,
+			"id": 146,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/theotherp/nzbhydra2\" target=\"_blank\">https://github.com/theotherp/nzbhydra2</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-nzbhydra2\" target=\"_blank\">https://docs.linuxserver.io/images/docker-nzbhydra2</a><br><br><br>"
 		},
 		{
@@ -6496,7 +6521,7 @@
 			],
 			"officialDoc": "https://hub.docker.com/r/octoprint/octoprint",
 			"webpage": "https://octoprint.org/",
-			"id": 146,
+			"id": 147,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://octoprint.org/\" target=\"_blank\">https://octoprint.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/octoprint/octoprint\" target=\"_blank\">https://hub.docker.com/r/octoprint/octoprint</a><br><br><br>"
 		},
 		{
@@ -6542,7 +6567,7 @@
 				}
 			],
 			"webpage": "https://www.tp-link.com/us/business-networking/omada-sdn-controller/",
-			"id": 148,
+			"id": 149,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.tp-link.com/us/business-networking/omada-sdn-controller/\" target=\"_blank\">https://www.tp-link.com/us/business-networking/omada-sdn-controller/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/mbentley/omada-controller\" target=\"_blank\">https://hub.docker.com/r/mbentley/omada-controller</a><br><br><br>"
 		},
 		{
@@ -6583,7 +6608,7 @@
 				}
 			],
 			"webpage": "https://ombi.io/",
-			"id": 149,
+			"id": 150,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://ombi.io/\" target=\"_blank\">https://ombi.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-ombi\" target=\"_blank\">https://docs.linuxserver.io/images/docker-ombi</a><br><br><br>"
 		},
 		{
@@ -6615,7 +6640,7 @@
 			"title": "OpenSpeedTest",
 			"type": 1,
 			"webpage": "https://hub.docker.com/r/openspeedtest/latest",
-			"id": 150,
+			"id": 151,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/openspeedtest/latest\" target=\"_blank\">https://hub.docker.com/r/openspeedtest/latest</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/openspeedtest/Speed-Test\" target=\"_blank\">https://github.com/openspeedtest/Speed-Test</a><br><br><br>"
 		},
 		{
@@ -6654,7 +6679,7 @@
 				}
 			],
 			"webpage": "https://organizr.app/",
-			"id": 151,
+			"id": 152,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://organizr.app/\" target=\"_blank\">https://organizr.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/organizr/organizr\" target=\"_blank\">https://hub.docker.com/r/organizr/organizr</a><br><br><br>"
 		},
 		{
@@ -6693,7 +6718,7 @@
 				}
 			],
 			"webpage": "https://trac.streamboard.tv/oscam/",
-			"id": 152,
+			"id": 153,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://trac.streamboard.tv/oscam/\" target=\"_blank\">https://trac.streamboard.tv/oscam/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-oscam\" target=\"_blank\">https://docs.linuxserver.io/images/docker-oscam</a><br><br><br>"
 		},
 		{
@@ -6738,7 +6763,7 @@
 			],
 			"officialDoc": "https://hub.docker.com/r/linuxserver/overseerr",
 			"webpage": "https://overseerr.dev/",
-			"id": 153,
+			"id": 154,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://overseerr.dev/\" target=\"_blank\">https://overseerr.dev/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/overseerr\" target=\"_blank\">https://hub.docker.com/r/linuxserver/overseerr</a><br><br><br>"
 		},
 		{
@@ -6810,7 +6835,7 @@
 			"title": "Paperless NGX",
 			"type": 3,
 			"webpage": "https://github.com/paperless-ngx/paperless-ngx",
-			"id": 154,
+			"id": 155,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/paperless-ngx/paperless-ngx\" target=\"_blank\">https://github.com/paperless-ngx/paperless-ngx</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/paperless-ngx/paperless-ngx\" target=\"_blank\">https://github.com/paperless-ngx/paperless-ngx</a><br><br><br>"
 		},
 		{
@@ -6930,7 +6955,7 @@
 			"title": "Passbolt",
 			"type": 3,
 			"webpage": "https://github.com/pi-hosted/pi-hosted/blob/master/docs/passbolt.md",
-			"id": 155,
+			"id": 156,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/passbolt.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/passbolt.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/passbolt.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/passbolt.md</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/passbolt.md\" target=\"_blank\">passbolt.md</a></h3><br><br><br>"
 		},
 		{
@@ -6985,7 +7010,7 @@
 			],
 			"officialDoc": "https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html",
 			"webpage": "https://www.pgadmin.org/",
-			"id": 156,
+			"id": 157,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.pgadmin.org/\" target=\"_blank\">https://www.pgadmin.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html\" target=\"_blank\">https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_pgadmin.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_pgadmin.sh | bash</h3><br><br>"
 		},
 		{
@@ -7079,7 +7104,7 @@
 			"title": "PhotoPrism",
 			"type": 3,
 			"webpage": "https://photoprism.app/",
-			"id": 157
+			"id": 158
 		},
 		{
 			"categories": [
@@ -7124,7 +7149,7 @@
 				}
 			],
 			"webpage": "https://github.com/thibaud-rohmer/PhotoShow",
-			"id": 158,
+			"id": 159,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/thibaud-rohmer/PhotoShow\" target=\"_blank\">https://github.com/thibaud-rohmer/PhotoShow</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-photoshow\" target=\"_blank\">https://docs.linuxserver.io/images/docker-photoshow</a><br><br><br>"
 		},
 		{
@@ -7161,7 +7186,7 @@
 				}
 			],
 			"webpage": "https://pi-hole.net/",
-			"id": 161
+			"id": 162
 		},
 		{
 			"categories": [
@@ -7197,7 +7222,7 @@
 				}
 			],
 			"webpage": "https://pi-hole.net/",
-			"id": 159
+			"id": 160
 		},
 		{
 			"categories": [
@@ -7272,7 +7297,7 @@
 				}
 			],
 			"webpage": "https://pi-hole.net/",
-			"id": 160
+			"id": 161
 		},
 		{
 			"categories": [
@@ -7299,7 +7324,7 @@
 				}
 			],
 			"webpage": "https://github.com/SeanRiggs/pi-weather-station",
-			"id": 162
+			"id": 163
 		},
 		{
 			"categories": [
@@ -7336,7 +7361,7 @@
 				}
 			],
 			"webpage": "http://piwigo.org/",
-			"id": 163,
+			"id": 164,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"http://piwigo.org/\" target=\"_blank\">http://piwigo.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-piwigo\" target=\"_blank\">https://docs.linuxserver.io/images/docker-piwigo</a><br><br><br>"
 		},
 		{
@@ -7376,7 +7401,7 @@
 			],
 			"privileged": true,
 			"webpage": "http://www.penguintutor.com/projects/pixel-server",
-			"id": 164,
+			"id": 165,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"http://www.penguintutor.com/projects/pixel-server\" target=\"_blank\">http://www.penguintutor.com/projects/pixel-server</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/Macleykun/pixel-server\" target=\"_blank\">https://github.com/Macleykun/pixel-server</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/pixel-server_setup.md\" target=\"_blank\">pixel-server_setup.md</a></h3><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_pixel-server.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_pixel-server.sh | bash</h3><br><br>"
 		},
 		{
@@ -7427,7 +7452,7 @@
 				}
 			],
 			"webpage": "https://www.plex.tv/",
-			"id": 165,
+			"id": 166,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.plex.tv/\" target=\"_blank\">https://www.plex.tv/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-plex\" target=\"_blank\">https://docs.linuxserver.io/images/docker-plex</a><br><br><br>"
 		},
 		{
@@ -7476,7 +7501,7 @@
 			],
 			"officialDoc": "https://hub.docker.com/_/postgres/",
 			"webpage": "https://www.postgresql.org/",
-			"id": 167,
+			"id": 168,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.postgresql.org/\" target=\"_blank\">https://www.postgresql.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/postgres/\" target=\"_blank\">https://hub.docker.com/_/postgres/</a><br><br><br>"
 		},
 		{
@@ -7520,7 +7545,7 @@
 			"title": "Pritunl",
 			"type": 3,
 			"webpage": "https://pritunl.com/",
-			"id": 168
+			"id": 169
 		},
 		{
 			"categories": [
@@ -7565,7 +7590,7 @@
 				}
 			],
 			"webpage": "https://privatebin.info/",
-			"id": 169,
+			"id": 170,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://privatebin.info/\" target=\"_blank\">https://privatebin.info/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/privatebin/nginx-fpm-alpine\" target=\"_blank\">https://hub.docker.com/r/privatebin/nginx-fpm-alpine</a><br><br><br>"
 		},
 		{
@@ -7610,7 +7635,7 @@
 				}
 			],
 			"webpage": "https://www.projectsend.org/",
-			"id": 170,
+			"id": 171,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.projectsend.org/\" target=\"_blank\">https://www.projectsend.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-projectsend\" target=\"_blank\">https://docs.linuxserver.io/images/docker-projectsend</a><br><br><br>"
 		},
 		{
@@ -7641,7 +7666,7 @@
 				}
 			],
 			"webpage": "https://protonmail.com/bridge/",
-			"id": 171
+			"id": 172
 		},
 		{
 			"categories": [
@@ -7683,7 +7708,7 @@
 				}
 			],
 			"webpage": "https://prowlarr.com",
-			"id": 172,
+			"id": 173,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://prowlarr.com\" target=\"_blank\">https://prowlarr.com</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/prowlarr\" target=\"_blank\">https://hub.docker.com/r/linuxserver/prowlarr</a><br><br><br>"
 		},
 		{
@@ -7732,7 +7757,7 @@
 				}
 			],
 			"webpage": "https://hub.docker.com/r/linuxserver/pwndrop",
-			"id": 173,
+			"id": 174,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/linuxserver/pwndrop\" target=\"_blank\">https://hub.docker.com/r/linuxserver/pwndrop</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/pwndrop\" target=\"_blank\">https://hub.docker.com/r/linuxserver/pwndrop</a><br><br><br>"
 		},
 		{
@@ -7775,7 +7800,7 @@
 				}
 			],
 			"webpage": "https://www.pydio.com/",
-			"id": 174,
+			"id": 175,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.pydio.com/\" target=\"_blank\">https://www.pydio.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/pydio\" target=\"_blank\">https://hub.docker.com/r/linuxserver/pydio</a><br><br><br>"
 		},
 		{
@@ -7819,7 +7844,7 @@
 				}
 			],
 			"webpage": "https://www.qbittorrent.org/",
-			"id": 175,
+			"id": 176,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.qbittorrent.org/\" target=\"_blank\">https://www.qbittorrent.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-qbittorrent\" target=\"_blank\">https://docs.linuxserver.io/images/docker-qbittorrent</a><br><br><br>"
 		},
 		{
@@ -7878,7 +7903,7 @@
 				}
 			],
 			"webpage": "https://hotio.dev/containers/qflood/",
-			"id": 176
+			"id": 177
 		},
 		{
 			"categories": [
@@ -7947,7 +7972,7 @@
 				}
 			],
 			"webpage": "https://quassel-irc.org/",
-			"id": 177,
+			"id": 178,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://quassel-irc.org/\" target=\"_blank\">https://quassel-irc.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-quassel-core\" target=\"_blank\">https://docs.linuxserver.io/images/docker-quassel-core</a><br><br><br>"
 		},
 		{
@@ -7994,7 +8019,7 @@
 				}
 			],
 			"webpage": "https://radarr.video/",
-			"id": 178,
+			"id": 179,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://radarr.video/\" target=\"_blank\">https://radarr.video/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-radarr\" target=\"_blank\">https://docs.linuxserver.io/images/docker-radarr</a><br><br><br>"
 		},
 		{
@@ -8027,7 +8052,7 @@
 			"title": "Raspberry Pi Docker Monitor",
 			"type": 3,
 			"webpage": "https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md",
-			"id": 179,
+			"id": 180,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">rpi_docker_monitor.md</a></h3><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/rpi_docker_monitor.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/rpi_docker_monitor.sh | bash</h3><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8 target=\"_blank\">Novaspirit Tech - Raspberry Pi Docker Monitoring</a><br><br>"
 		},
 		{
@@ -8070,7 +8095,7 @@
 				}
 			],
 			"webpage": "http://xrdp.org/",
-			"id": 180,
+			"id": 181,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"http://xrdp.org/\" target=\"_blank\">http://xrdp.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-rdesktop\" target=\"_blank\">https://docs.linuxserver.io/images/docker-rdesktop</a><br><br><br>"
 		},
 		{
@@ -8160,7 +8185,7 @@
 			"title": "Reactive-Resume",
 			"type": 3,
 			"webpage": "https://rxresu.me/",
-			"id": 181,
+			"id": 182,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://rxresu.me/\" target=\"_blank\">https://rxresu.me/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/martadinata666/reactive-resume\" target=\"_blank\">https://hub.docker.com/r/martadinata666/reactive-resume</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/reactive-resume_installation.md\" target=\"_blank\">reactive-resume_installation.md</a></h3><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_reactive-resume.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_reactive-resume.sh | bash</h3><br><br>"
 		},
 		{
@@ -8212,7 +8237,7 @@
 				}
 			],
 			"webpage": "https://readarr.com/",
-			"id": 182,
+			"id": 183,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://readarr.com/\" target=\"_blank\">https://readarr.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.servarr.com/en/readarr\" target=\"_blank\">https://wiki.servarr.com/en/readarr</a><br><br><br>"
 		},
 		{
@@ -8280,7 +8305,7 @@
 			"title": "Redmine",
 			"type": 3,
 			"webpage": "https://www.redmine.org/",
-			"id": 183
+			"id": 184
 		},
 		{
 			"categories": [
@@ -8328,7 +8353,7 @@
 				}
 			],
 			"webpage": "https://www.resilio.com/individuals/",
-			"id": 184,
+			"id": 185,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.resilio.com/individuals/\" target=\"_blank\">https://www.resilio.com/individuals/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-resilio-sync\" target=\"_blank\">https://docs.linuxserver.io/images/docker-resilio-sync</a><br><br><br>"
 		},
 		{
@@ -8359,7 +8384,7 @@
 				}
 			],
 			"webpage": "https://git.bossman7309.net/bossman7309/rss-dl",
-			"id": 185,
+			"id": 186,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://git.bossman7309.net/bossman7309/rss-dl\" target=\"_blank\">https://git.bossman7309.net/bossman7309/rss-dl</a><br><br><br>"
 		},
 		{
@@ -8406,7 +8431,7 @@
 				}
 			],
 			"webpage": "https://rustdesk.com/",
-			"id": 186
+			"id": 187
 		},
 		{
 			"categories": [
@@ -8476,7 +8501,7 @@
 				}
 			],
 			"webpage": "https://github.com/Novik/ruTorrent",
-			"id": 187
+			"id": 188
 		},
 		{
 			"categories": [
@@ -8522,7 +8547,7 @@
 				}
 			],
 			"webpage": "https://sabnzbd.org/",
-			"id": 188,
+			"id": 189,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://sabnzbd.org/\" target=\"_blank\">https://sabnzbd.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-sabnzbd\" target=\"_blank\">https://docs.linuxserver.io/images/docker-sabnzbd</a><br><br><br>"
 		},
 		{
@@ -8589,7 +8614,7 @@
 				}
 			],
 			"webpage": "https://www.samba.org/",
-			"id": 189,
+			"id": 190,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.samba.org/\" target=\"_blank\">https://www.samba.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/dperson/samba\" target=\"_blank\">https://github.com/dperson/samba</a><br><br><br><b>Youtube Videos:</b><br><ul><li><a href=https://www.youtube.com/watch?v=2zZ3_1GRWrM&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=11 target=\"_blank\">Novaspirit Tech - Setting up Raspberry Pi Samba Server For File Sharing on Docker</a></li><li><a href=https://www.youtube.com/watch?v=9ln6UFH4z8o target=\"_blank\">Novaspirit Tech - Building NAS with Container</a></li></ul><br><br>"
 		},
 		{
@@ -8625,7 +8650,7 @@
 				}
 			],
 			"webpage": "https://github.com/AnalogJ/scrutiny",
-			"id": 190
+			"id": 191
 		},
 		{
 			"categories": [
@@ -8664,7 +8689,7 @@
 				}
 			],
 			"webpage": "https://docs.searxng.org/",
-			"id": 191,
+			"id": 192,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://docs.searxng.org/\" target=\"_blank\">https://docs.searxng.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.searxng.org/admin/installation-docker.html\" target=\"_blank\">https://docs.searxng.org/admin/installation-docker.html</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/searxng.md\" target=\"_blank\">searxng.md</a></h3><br><br><br>"
 		},
 		{
@@ -8691,7 +8716,7 @@
 				}
 			],
 			"webpage": "https://github.com/go-shiori/shiori",
-			"id": 192,
+			"id": 193,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/go-shiori/shiori\" target=\"_blank\">https://github.com/go-shiori/shiori</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/nicholaswilde/docker-shiori\" target=\"_blank\">https://github.com/nicholaswilde/docker-shiori</a><br><br><br>"
 		},
 		{
@@ -8738,7 +8763,7 @@
 				}
 			],
 			"webpage": "https://docs.linuxserver.io/images/docker-sickchill",
-			"id": 193,
+			"id": 194,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://docs.linuxserver.io/images/docker-sickchill\" target=\"_blank\">https://docs.linuxserver.io/images/docker-sickchill</a><br><b>Official Docker Documentation: </b><a href=\"https://sickchill.github.io/\" target=\"_blank\">https://sickchill.github.io/</a><br><br><br>"
 		},
 		{
@@ -8785,7 +8810,7 @@
 				}
 			],
 			"webpage": "https://github.com/SickGear/SickGear/wiki",
-			"id": 194,
+			"id": 195,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/SickGear/SickGear/wiki\" target=\"_blank\">https://github.com/SickGear/SickGear/wiki</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-sickgear\" target=\"_blank\">https://docs.linuxserver.io/images/docker-sickgear</a><br><br><br>"
 		},
 		{
@@ -8854,7 +8879,7 @@
 				}
 			],
 			"webpage": "https://oss.oetiker.ch/smokeping/",
-			"id": 195,
+			"id": 196,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://oss.oetiker.ch/smokeping/\" target=\"_blank\">https://oss.oetiker.ch/smokeping/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-smokeping\" target=\"_blank\">https://docs.linuxserver.io/images/docker-smokeping</a><br><br><br>"
 		},
 		{
@@ -8882,7 +8907,7 @@
 				}
 			],
 			"webpage": "https://github.com/pawelmalak/snippet-box",
-			"id": 196
+			"id": 197
 		},
 		{
 			"categories": [
@@ -8932,7 +8957,7 @@
 				}
 			],
 			"webpage": "https://sonarr.tv/",
-			"id": 197,
+			"id": 198,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://sonarr.tv/\" target=\"_blank\">https://sonarr.tv/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-sonarr\" target=\"_blank\">https://docs.linuxserver.io/images/docker-sonarr</a><br><br><br>"
 		},
 		{
@@ -8967,7 +8992,7 @@
 				}
 			],
 			"webpage": "https://github.com/henrywhitaker3/Speedtest-Tracker",
-			"id": 199,
+			"id": 200,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/henrywhitaker3/Speedtest-Tracker\" target=\"_blank\">https://github.com/henrywhitaker3/Speedtest-Tracker</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker\" target=\"_blank\">https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker</a><br><br><br>"
 		},
 		{
@@ -8988,7 +9013,7 @@
 			"title": "Sshwifty",
 			"type": 1,
 			"webpage": "https://sshwifty.herokuapp.com/",
-			"id": 200,
+			"id": 201,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://sshwifty.herokuapp.com/\" target=\"_blank\">https://sshwifty.herokuapp.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/nirui/sshwifty#docker-image\" target=\"_blank\">https://github.com/nirui/sshwifty#docker-image</a><br><br><br>"
 		},
 		{
@@ -9028,7 +9053,7 @@
 			"title": "SurrealDB",
 			"type": 1,
 			"webpage": "https://surrealdb.com/",
-			"id": 201,
+			"id": 202,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://surrealdb.com/\" target=\"_blank\">https://surrealdb.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/surrealdb/surrealdb\" target=\"_blank\">https://hub.docker.com/r/surrealdb/surrealdb</a><br><br><br>"
 		},
 		{
@@ -9074,7 +9099,7 @@
 				}
 			],
 			"webpage": "https://syncthing.net/",
-			"id": 202,
+			"id": 203,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://syncthing.net/\" target=\"_blank\">https://syncthing.net/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-syncthing\" target=\"_blank\">https://docs.linuxserver.io/images/docker-syncthing</a><br><br><br>"
 		},
 		{
@@ -9117,7 +9142,7 @@
 			"network": "host",
 			"privileged": true,
 			"webpage": "https://www.the-diy-life.com/",
-			"id": 147
+			"id": 148
 		},
 		{
 			"categories": [
@@ -9153,7 +9178,7 @@
 				}
 			],
 			"webpage": "https://tailscale.com/",
-			"id": 203,
+			"id": 204,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://tailscale.com/\" target=\"_blank\">https://tailscale.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/tailscale/tailscale\" target=\"_blank\">https://hub.docker.com/r/tailscale/tailscale</a><br><br><br>"
 		},
 		{
@@ -9196,7 +9221,7 @@
 				}
 			],
 			"webpage": "https://tautulli.com/",
-			"id": 204,
+			"id": 205,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://tautulli.com/\" target=\"_blank\">https://tautulli.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-tautulli\" target=\"_blank\">https://docs.linuxserver.io/images/docker-tautulli</a><br><br><br>"
 		},
 		{
@@ -9274,7 +9299,7 @@
 				}
 			],
 			"webpage": "https://github.com/aternosorg/thanos",
-			"id": 205,
+			"id": 206,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/aternosorg/thanos\" target=\"_blank\">https://github.com/aternosorg/thanos</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/aternosorg/thanos\" target=\"_blank\">https://github.com/aternosorg/thanos</a><br><br><br>"
 		},
 		{
@@ -9312,7 +9337,7 @@
 				}
 			],
 			"webpage": "https://thelounge.chat/",
-			"id": 206,
+			"id": 207,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://thelounge.chat/\" target=\"_blank\">https://thelounge.chat/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-thelounge\" target=\"_blank\">https://docs.linuxserver.io/images/docker-thelounge</a><br><br><br>"
 		},
 		{
@@ -9340,7 +9365,7 @@
 				}
 			],
 			"webpage": "https://tiddlywiki.com/",
-			"id": 207,
+			"id": 208,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://tiddlywiki.com/\" target=\"_blank\">https://tiddlywiki.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://gitlab.com/nicolaw/tiddlywiki\" target=\"_blank\">https://gitlab.com/nicolaw/tiddlywiki</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_tiddlywiki.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_tiddlywiki.sh | bash</h3><br><br>"
 		},
 		{
@@ -9384,7 +9409,7 @@
 				}
 			],
 			"webpage": "https://doc.traefik.io/traefik/",
-			"id": 208
+			"id": 209
 		},
 		{
 			"categories": [
@@ -9429,7 +9454,7 @@
 				}
 			],
 			"webpage": "https://transmissionbt.com/",
-			"id": 211,
+			"id": 212,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://transmissionbt.com/\" target=\"_blank\">https://transmissionbt.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-transmission\" target=\"_blank\">https://docs.linuxserver.io/images/docker-transmission</a><br><br><br>"
 		},
 		{
@@ -9511,7 +9536,7 @@
 				}
 			],
 			"webpage": "https://transmissionbt.com/",
-			"id": 209
+			"id": 210
 		},
 		{
 			"categories": [
@@ -9592,7 +9617,7 @@
 				}
 			],
 			"webpage": "https://transmissionbt.com/",
-			"id": 210
+			"id": 211
 		},
 		{
 			"categories": [
@@ -9634,7 +9659,7 @@
 				}
 			],
 			"webpage": "https://tvheadend.org/",
-			"id": 212,
+			"id": 213,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://tvheadend.org/\" target=\"_blank\">https://tvheadend.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-tvheadend\" target=\"_blank\">https://docs.linuxserver.io/images/docker-tvheadend</a><br><br><br>"
 		},
 		{
@@ -9684,7 +9709,7 @@
 				}
 			],
 			"webpage": "https://vaemendis.net/ubooquity/",
-			"id": 213,
+			"id": 214,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://vaemendis.net/ubooquity/\" target=\"_blank\">https://vaemendis.net/ubooquity/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-ubooquity\" target=\"_blank\">https://docs.linuxserver.io/images/docker-ubooquity</a><br><br><br>"
 		},
 		{
@@ -9730,7 +9755,7 @@
 				}
 			],
 			"webpage": "https://ui.com/consoles",
-			"id": 214,
+			"id": 215,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://ui.com/consoles\" target=\"_blank\">https://ui.com/consoles</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-unifi-controller\" target=\"_blank\">https://docs.linuxserver.io/images/docker-unifi-controller</a><br><br><br>"
 		},
 		{
@@ -9790,7 +9815,7 @@
 				}
 			],
 			"webpage": "https://github.com/pducharme/UniFi-Video-Controller",
-			"id": 215,
+			"id": 216,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pducharme/UniFi-Video-Controller\" target=\"_blank\">https://github.com/pducharme/UniFi-Video-Controller</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pducharme/UniFi-Video-Controller\" target=\"_blank\">https://github.com/pducharme/UniFi-Video-Controller</a><br><br><br>"
 		},
 		{
@@ -9836,7 +9861,7 @@
 				}
 			],
 			"webpage": "https://docs.unmanic.app/",
-			"id": 216,
+			"id": 217,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://docs.unmanic.app/\" target=\"_blank\">https://docs.unmanic.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.unmanic.app/docs/installation/docker\" target=\"_blank\">https://docs.unmanic.app/docs/installation/docker</a><br><br><br>"
 		},
 		{
@@ -9862,7 +9887,7 @@
 			"title": "UnPoller Monitor",
 			"type": 3,
 			"webpage": "https://unpoller.com/",
-			"id": 217,
+			"id": 218,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://unpoller.com/\" target=\"_blank\">https://unpoller.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md\" target=\"_blank\">https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/UnPoller-Monitor.md\" target=\"_blank\">UnPoller-Monitor.md</a></h3><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/unpoller-install.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/unpoller-install.sh | bash</h3><br><br>"
 		},
 		{
@@ -9890,7 +9915,7 @@
 				}
 			],
 			"webpage": "https://github.com/louislam/uptime-kuma",
-			"id": 218
+			"id": 219
 		},
 		{
 			"categories": [
@@ -9932,7 +9957,7 @@
 				}
 			],
 			"webpage": "https://www.urbackup.org/",
-			"id": 219,
+			"id": 220,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.urbackup.org/\" target=\"_blank\">https://www.urbackup.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.github.com/uroni/urbackup-server-docker\" target=\"_blank\">https://www.github.com/uroni/urbackup-server-docker</a><br><br><br>"
 		},
 		{
@@ -9961,7 +9986,7 @@
 				}
 			],
 			"webpage": "https://github.com/dani-garcia/vaultwarden",
-			"id": 220
+			"id": 221
 		},
 		{
 			"categories": [
@@ -10021,7 +10046,7 @@
 			"title": "Vikunja With Frontend",
 			"type": 3,
 			"webpage": "https://vikunja.io/",
-			"id": 221,
+			"id": 222,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://vikunja.io/\" target=\"_blank\">https://vikunja.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://vikunja.io/docs/full-docker-example/#example-with-nginx-as-proxy\" target=\"_blank\">https://vikunja.io/docs/full-docker-example/#example-with-nginx-as-proxy</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_vikunja.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_vikunja.sh | bash</h3><br><br>"
 		},
 		{
@@ -10042,7 +10067,7 @@
 			"title": "Vlmcsd - KMS",
 			"type": 1,
 			"webpage": "https://hub.docker.com/r/mikolatero/vlmcsd",
-			"id": 222,
+			"id": 223,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/mikolatero/vlmcsd\" target=\"_blank\">https://hub.docker.com/r/mikolatero/vlmcsd</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/mikolatero/docker-vlmcsd\" target=\"_blank\">https://github.com/mikolatero/docker-vlmcsd</a><br><br><br>"
 		},
 		{
@@ -10079,7 +10104,7 @@
 				}
 			],
 			"webpage": "https://github.com/ellite/Wallos",
-			"id": 223,
+			"id": 224,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/ellite/Wallos\" target=\"_blank\">https://github.com/ellite/Wallos</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ellite/Wallos\" target=\"_blank\">https://github.com/ellite/Wallos</a><br><br><br>"
 		},
 		{
@@ -10106,7 +10131,7 @@
 				}
 			],
 			"webpage": "https://containrrr.dev/watchtower/",
-			"id": 224
+			"id": 225
 		},
 		{
 			"categories": [
@@ -10144,7 +10169,7 @@
 				}
 			],
 			"webpage": "http://www.webgrabplus.com/",
-			"id": 225,
+			"id": 226,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"http://www.webgrabplus.com/\" target=\"_blank\">http://www.webgrabplus.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-webgrabplus\" target=\"_blank\">https://docs.linuxserver.io/images/docker-webgrabplus</a><br><br><br>"
 		},
 		{
@@ -10202,7 +10227,7 @@
 				}
 			],
 			"webpage": "https://hotio.dev/",
-			"id": 226,
+			"id": 227,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hotio.dev/\" target=\"_blank\">https://hotio.dev/</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.servarr.com/en/whisparr\" target=\"_blank\">https://wiki.servarr.com/en/whisparr</a><br><br><br>"
 		},
 		{
@@ -10230,7 +10255,7 @@
 				}
 			],
 			"webpage": "https://github.com/benbusby/whoogle-search",
-			"id": 227,
+			"id": 228,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/benbusby/whoogle-search\" target=\"_blank\">https://github.com/benbusby/whoogle-search</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/benbusby/whoogle-search#g-manual-docker\" target=\"_blank\">https://github.com/benbusby/whoogle-search#g-manual-docker</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_whoogle.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_whoogle.sh | bash</h3><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12 target=\"_blank\">Novaspirit Tech - How to Install Whoogle to replace using Google and repo notes</a><br><br>"
 		},
 		{
@@ -10261,7 +10286,7 @@
 				}
 			],
 			"webpage": "https://js.wiki/",
-			"id": 228,
+			"id": 229,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://js.wiki/\" target=\"_blank\">https://js.wiki/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-wikijs\" target=\"_blank\">https://docs.linuxserver.io/images/docker-wikijs</a><br><br><br>"
 		},
 		{
@@ -10291,7 +10316,7 @@
 				}
 			],
 			"webpage": "https://github.com/hectorm/docker-qemu-win2000",
-			"id": 229
+			"id": 230
 		},
 		{
 			"categories": [
@@ -10345,7 +10370,7 @@
 			"title": "Wireguard Server",
 			"type": 3,
 			"webpage": "https://github.com/WeeJeWel/wg-easy/",
-			"id": 230,
+			"id": 231,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/WeeJeWel/wg-easy/\" target=\"_blank\">https://github.com/WeeJeWel/wg-easy/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/WeeJeWel/wg-easy/#1-install-docker\" target=\"_blank\">https://github.com/WeeJeWel/wg-easy/#1-install-docker</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/wireguard-install.md\" target=\"_blank\">wireguard-install.md</a></h3><br><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=yB_jAumIxOg target=\"_blank\">Novaspirit Tech - Beginners Guide to WireGuard Docker and Installing Pi-OS 64bit</a><br><br>"
 		},
 		{
@@ -10386,7 +10411,7 @@
 			"title": "Wordpress",
 			"type": 3,
 			"webpage": "https://wordpress.com/",
-			"id": 231
+			"id": 232
 		},
 		{
 			"categories": [
@@ -10416,7 +10441,7 @@
 				}
 			],
 			"webpage": "https://yacht.sh/",
-			"id": 232,
+			"id": 233,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://yacht.sh/\" target=\"_blank\">https://yacht.sh/</a><br><b>Official Docker Documentation: </b><a href=\"https://yacht.sh/docs/Installation/Install#via-docker-compose\" target=\"_blank\">https://yacht.sh/docs/Installation/Install#via-docker-compose</a><br><br><br>"
 		},
 		{
@@ -10475,7 +10500,7 @@
 			},
 			"title": "your-spotify",
 			"type": 3,
-			"id": 233
+			"id": 234
 		},
 		{
 			"categories": [
@@ -10550,7 +10575,7 @@
 			"title": "Yourls",
 			"type": 3,
 			"webpage": "https://yourls.org/",
-			"id": 234,
+			"id": 235,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://yourls.org/\" target=\"_blank\">https://yourls.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://yourls.org/#Install\" target=\"_blank\">https://yourls.org/#Install</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_yourls.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_yourls.sh | bash</h3><br><br>"
 		},
 		{
@@ -10593,7 +10618,7 @@
 				}
 			],
 			"webpage": "https://github.com/Tzahi12345/YoutubeDL-Material",
-			"id": 235,
+			"id": 236,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Tzahi12345/YoutubeDL-Material\" target=\"_blank\">https://github.com/Tzahi12345/YoutubeDL-Material</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/Tzahi12345/YoutubeDL-Material#docker\" target=\"_blank\">https://github.com/Tzahi12345/YoutubeDL-Material#docker</a><br><br><br>"
 		},
 		{
@@ -10631,7 +10656,7 @@
 				}
 			],
 			"webpage": "https://wiki.znc.in/ZNC",
-			"id": 236,
+			"id": 237,
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://wiki.znc.in/ZNC\" target=\"_blank\">https://wiki.znc.in/ZNC</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-znc\" target=\"_blank\">https://docs.linuxserver.io/images/docker-znc</a><br><br><br>"
 		}
 	]
