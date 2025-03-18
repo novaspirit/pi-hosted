@@ -1305,29 +1305,6 @@
 		},
 		{
 			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "Easy and safe way to manage your crontab file",
-			"image": "rmiddle/crontab-ui:master",
-			"name": "crontab-ui",
-			"platform": "linux",
-			"ports": [
-				"5011:5000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "crontab-ui",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/crontab-ui/crontab-ui",
-					"container": "/crontab-ui"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"\" target=\"_blank\"></a><br><br><br>"
-		},
-		{
-			"categories": [
 				"Music"
 			],
 			"description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
