@@ -19,20 +19,6 @@ wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/install_d
 ```
 You need to reboot/logout for changes to take effect
 
-### Pi OS Buster  
-On Oct 30, 2021 Pi OS bullseye was released and this is no longer needed.  Older Pi OS buster releases run an old version of libseccomp that is causing problems with many containers that are preventing them from running.  To fix this we need to manually install a newer version of libseccomp.  However we first need to check and see if you are running an older version.  To check please run sudo dpkg-query -W libseccomp.
-
-```
-sudo dpkg-query -W libseccomp2
-```
-
-If you are running a version less that 2.5 you will need to run the *upgrade script*.
-```
-wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master//tools/update_libseccomp2.sh | bash
-```
-
-* The upgrade script is for Pi OS 32bit.  Pi OS 64 beta is untested and the upgrade script wont work with it.
-
 ### Reboot for changes to take effect
 
 ```
