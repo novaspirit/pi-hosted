@@ -3,8 +3,8 @@ version: '3.1'
 services:
 
   wordpress:
-    image: wordpress
-    container_name: wordpress
+    image: wordpress:latest
+    container_name: wordpress:latest
     restart: unless-stopped
     ports:
       - ${WEB_SERVER_PORT}:80
