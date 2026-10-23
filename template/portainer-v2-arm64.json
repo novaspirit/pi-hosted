@@ -450,6 +450,42 @@
 		},
 		{
 			"categories": [
+				"Media",
+				"Audiobooks"
+			],
+			"description": "A self-hosted Audible-style audiobook & podcast server with full M4B chapter support.",
+			"image": "ghcr.io/advplyr/audiobookshelf:latest",
+			"logo": "https://raw.githubusercontent.com/advplyr/audiobookshelf/refs/heads/master/client/static/Logo.png",
+			"name": "audiobookshelf",
+			"platform": "linux",
+			"ports": [
+				"13378:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "AudioBookshelf",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/AudioBookshelf/config",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/AudioBookshelf/metadata",
+					"container": "/metadata"
+				},
+				{
+					"bind": "/portainer/Files/AudioBooks",
+					"container": "/audiobooks"
+				},
+				{
+					"bind": "/portainer/Files/Podcasts",
+					"container": "/podcasts"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://audiobookshelf.org\" target=\"_blank\">https://audiobookshelf.org</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/advplyr/audiobookshelf\" target=\"_blank\">https://github.com/advplyr/audiobookshelf</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools",
 				"Authentication"
@@ -668,6 +704,65 @@
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/ubuntu/bind9\" target=\"_blank\">https://hub.docker.com/r/ubuntu/bind9</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/ubuntu/bind9\" target=\"_blank\">https://hub.docker.com/r/ubuntu/bind9</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_bind9.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_bind9.sh | bash</h3><br><br>"
+		},
+		{
+			"categories": [
+				"Books",
+				"Media",
+				"Tools"
+			],
+			"description": "BookBridge synchronises reading progress between Audiobookshelf, Kavita, KOReader, BookFusion and other supported platforms. Configure integrations through the BookBridge web interface after installation.",
+			"env": [
+				{
+					"default": "Europe/London",
+					"description": "Container timezone.",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "INFO",
+					"description": "Logging level (DEBUG, INFO, WARNING, ERROR).",
+					"label": "LOG_LEVEL",
+					"name": "LOG_LEVEL"
+				},
+				{
+					"default": "",
+					"description": "Optional custom secret key used for credential encryption.",
+					"label": "BOOKBRIDGE_SECRET_KEY",
+					"name": "BOOKBRIDGE_SECRET_KEY"
+				},
+				{
+					"default": "",
+					"description": "Optional dedicated KoSync port. Set to 5758 to enable split-port mode.",
+					"label": "KOSYNC_PORT",
+					"name": "KOSYNC_PORT"
+				}
+			],
+			"image": "ghcr.io/cporcellijr/bookbridge:latest",
+			"logo": "https://raw.githubusercontent.com/cporcellijr/bookbridge/main/static/img/bookbridge-logo.png",
+			"name": "bookbridge",
+			"platform": "linux",
+			"ports": [
+				"8086:5757/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "BookBridge",
+			"type": 1,
+			"volumes": [
+				{
+					"container": "/data",
+					"host": "/portainer/Files/AppData/Config/BookBridge"
+				},
+				{
+					"container": "/books",
+					"host": "/portainer/Files/Books"
+				},
+				{
+					"container": "/audiobooks",
+					"host": "/portainer/Files/AudioBooks"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/cporcellijr/bookbridge\" target=\"_blank\">https://github.com/cporcellijr/bookbridge</a><br><b>Official Docker Documentation: </b><a href=\"https://cporcellijr.github.io/bookbridge/\" target=\"_blank\">https://cporcellijr.github.io/bookbridge/</a><br><br><br>"
 		},
 		{
 			"categories": [

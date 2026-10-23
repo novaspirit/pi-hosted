@@ -1,0 +1,38 @@
+{
+  "categories": [
+    "Media",
+    "Audiobooks"
+  ],
+  "description": "A self-hosted Audible-style audiobook & podcast server with full M4B chapter support.",
+  "image_arm64": "ghcr.io/advplyr/audiobookshelf:latest",
+  "image_amd64": "ghcr.io/advplyr/audiobookshelf:latest",
+  "logo": "https://raw.githubusercontent.com/advplyr/audiobookshelf/refs/heads/master/client/static/Logo.png",
+  "name": "audiobookshelf",
+  "officialDoc": "https://github.com/advplyr/audiobookshelf",
+  "platform": "linux",
+  "ports": [
+    "13378:80/tcp"
+  ],
+  "restart_policy": "unless-stopped",
+  "title": "AudioBookshelf",
+  "type": 1,
+  "volumes": [
+    {
+      "bind": "/portainer/Files/AppData/Config/AudioBookshelf/config",
+      "container": "/config"
+    },
+    {
+      "bind": "/portainer/Files/AppData/Config/AudioBookshelf/metadata",
+      "container": "/metadata"
+    },
+    {
+      "bind": "/portainer/Files/AudioBooks",
+      "container": "/audiobooks"
+    },
+    {
+      "bind": "/portainer/Files/Podcasts",
+      "container": "/podcasts"
+    }
+  ],
+  "webpage": "https://audiobookshelf.org"
+}
